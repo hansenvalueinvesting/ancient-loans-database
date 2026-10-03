@@ -30,8 +30,7 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
   `docs/app.js` to match.
 
 ## Current phase
-Schema v0.2 (single `loans` table) applied; `date` column removed from schema.sql →
-Hansen drops it in SQL Editor → next: begin data entry.
+Schema v0.2 (single `loans` table, 11 fields, no `date`) applied → next: begin data entry.
 
 ## Status
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
