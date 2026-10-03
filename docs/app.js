@@ -52,7 +52,8 @@ async function load() {
         document: doc?.title || '',
         lender: names('lender'),
         borrower: names('borrower'),
-        year: l.date_start_year ?? doc?.date_start_year ?? null,
+        year: l.date_start_year,
+        yearEnd: l.date_end_year ?? l.date_start_year,
       };
     });
 
@@ -70,8 +71,8 @@ async function load() {
 
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-// Astronomical year → display (0 = 1 BC).
-const fmtYear = (y) => (y == null ? '' : y > 0 ? `AD ${y}` : `${1 - y} BC`);
+// Historical year (no year 0) → display: -100 → '100 BC', 57 → 'AD 57'.
+const fmtYear = (y) => (y == null ? '' : y > 0 ? `AD ${y}` : `${-y} BC`);
 
 function fmtRange(start, end) {
   if (start == null) return '';
@@ -80,11 +81,7 @@ function fmtRange(start, end) {
 
 const badge = (certainty) => (certainty && certainty !== 'certain' ? ` <i>(${esc(certainty)})</i>` : '');
 
-function fmtPrincipal(l) {
-  if (l.principal_amount == null) return '';
-  const what = [l.principal_unit, l.principal_commodity && `of ${l.principal_commodity}`].filter(Boolean).join(' ');
-  return `${Number(l.principal_amount).toLocaleString()} ${esc(what)}`;
-}
+const fmtNum = (n) => (n == null ? '' : Number(n).toLocaleString());
 
 const fmtRate = (r) => (r == null ? '' : `${Number(r).toLocaleString()}%`);
 
@@ -109,7 +106,8 @@ function filtered() {
     if (region && l.region !== region) return false;
     if (type && l.loan_type !== type) return false;
     if (unit && l.principal_unit !== unit) return false;
-    if (from != null && (l.year == null || l.year < from)) return false;
+    // Keep loans whose date range overlaps the requested range.
+    if (from != null && (l.year == null || l.yearEnd < from)) return false;
     if (to != null && (l.year == null || l.year > to)) return false;
     if (q) {
       const hay = [l.id, l.document, l.place, l.doc?.place, l.notes, l.date_text, l.security,
@@ -139,7 +137,9 @@ function render() {
       <td>${esc(fmtRange(l.date_start_year, l.date_end_year))}${badge(l.date_certainty)}</td>
       <td>${esc(l.place)}</td>
       <td>${esc(l.loan_type)}</td>
-      <td>${fmtPrincipal(l)}${badge(l.principal_certainty)}</td>
+      <td>${fmtNum(l.principal_amount)}${badge(l.principal_certainty)}</td>
+      <td>${esc(l.principal_unit)}</td>
+      <td>${esc(l.principal_commodity)}</td>
       <td>${fmtRate(l.interest_rate_annual)}${badge(l.interest_certainty)}</td>
       <td>${esc(l.lender)}</td>
       <td>${esc(l.borrower)}</td>
@@ -178,7 +178,9 @@ function showDetail(id) {
       ['Year', esc(fmtRange(l.date_start_year, l.date_end_year))],
       ['Calendar', esc(l.calendar)],
       ['Place', l.place && `${esc(l.place)} ${l.pleiades_id ? link(`https://pleiades.stoa.org/places/${l.pleiades_id}`, '(Pleiades)') : ''}`],
-      ['Principal', fmtPrincipal(l) && `${fmtPrincipal(l)}${badge(l.principal_certainty)}`],
+      ['Principal', fmtNum(l.principal_amount) && `${fmtNum(l.principal_amount)}${badge(l.principal_certainty)}`],
+      ['Unit', esc(l.principal_unit)],
+      ['Commodity', esc(l.principal_commodity)],
       ['Currency', esc(l.currency)],
       ['Interest (as stated)', esc(l.interest_text) && `${esc(l.interest_text)}${badge(l.interest_certainty)}`],
       ['Interest p.a.', fmtRate(l.interest_rate_annual)],
@@ -190,7 +192,7 @@ function showDetail(id) {
 
     <h3>Parties</h3>
     ${l.parties.length ? `<ul>${l.parties.map((p) => `
-      <li><strong>${esc(p.role)}</strong>: ${esc(p.party?.name)}
+      <li><strong>${esc(p.role)}</strong>: ${esc(p.party?.name)}${p.party?.party_type === 'institution' ? ' (institution)' : ''}
         ${p.party?.name_original ? `(${esc(p.party.name_original)})` : ''}
         ${[p.party?.occupation, p.party?.origin].filter(Boolean).map(esc).join(', ')}
         ${badge(p.certainty)}
@@ -212,7 +214,7 @@ function showDetail(id) {
     ])}
 
     ${d.editions?.length ? `<h3>Editions</h3><ul>${d.editions.map((e) => `
-      <li>${esc(e.citation)}${e.is_principal ? ' <i>(principal)</i>' : ''} ${link(e.url, 'link')}</li>`).join('')}</ul>` : ''}
+      <li>${esc(e.citation)}${e.is_reference ? ' <i>(reference edition)</i>' : ''} ${link(e.url, 'link')}</li>`).join('')}</ul>` : ''}
   `;
   if (!$('detail').open) $('detail').showModal();
   history.replaceState(null, '', `#${id}`);
@@ -226,7 +228,7 @@ function openFromHash() {
 // ---------- CSV export ----------
 
 function downloadCsv() {
-  const cols = ['id', 'document', 'region', 'loan_type', 'date_text', 'date_start_year', 'date_end_year', 'calendar',
+  const cols = ['id', 'document_id', 'document', 'region', 'loan_type', 'date_text', 'date_start_year', 'date_end_year', 'calendar',
     'date_certainty', 'place', 'pleiades_id', 'principal_amount', 'principal_unit', 'principal_commodity', 'currency',
     'principal_certainty', 'interest_text', 'interest_rate_annual', 'interest_certainty', 'term_text', 'term_months',
     'security', 'penalty', 'lender', 'borrower', 'notes'];

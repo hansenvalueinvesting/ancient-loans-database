@@ -19,6 +19,8 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
   loans, loan_parties.
 - Stable IDs, never changed or reused: ALD-00001, DOC-00001, ED-00001, PTY-00001.
 - Verified data only; null = unknown; mark uncertainty (certain/damaged/restored/inferred).
+- Years: historical integers, no year 0 (100 BC = -100, AD 57 = 57). Displayed as BC/AD.
+- Everything displayed must be true and academically accepted; check conventions before adding.
 - Plain SQL only (portable); no Supabase-only features in the schema.
 - `schema.sql` is a one-time setup script. Never re-run it against the live database.
   Apply schema changes as `ALTER` statements and update `schema.sql`, `codebook.md`, and
@@ -27,7 +29,9 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
 ## Status
 - Done: schema, website, release workflow, docs.
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
-- Verified: `schema.sql` applied; RLS on; anon/authenticated have SELECT only; security
+- Live DB matches `schema.sql` (migrations applied via Supabase MCP: `academic_conventions`,
+  `rename_is_principal_to_is_reference`).
+- Verified: schema applied; RLS on; anon/authenticated have SELECT only; security
   advisor clean. Tables empty.
 - Supabase connected to Claude as a claude.ai connector (MCP); use it for all data entry.
 - Pending (Hansen): GitHub Pages source must be `main` / `/docs` (currently shows README).

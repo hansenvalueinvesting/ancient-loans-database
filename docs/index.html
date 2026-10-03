@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ancient Loans Database</title>
-  <meta name="description" content="A standardized record of documented loans in the ancient world.">
+  <meta name="description" content="Working record of documented loans in the ancient world.">
 </head>
 <body>
   <h1>Ancient Loans Database</h1>
@@ -15,12 +15,12 @@
     <label>Region <select id="f-region"><option value="">All</option></select></label>
     <label>Loan type <select id="f-type"><option value="">All</option></select></label>
     <label>Unit <select id="f-unit"><option value="">All</option></select></label>
-    <label>From year <input id="f-from" type="number" size="6" title="Negative = BC"></label>
-    <label>To year <input id="f-to" type="number" size="6" title="Negative = BC"></label>
+    <label>From year <input id="f-from" type="number" size="6" title="Negative = BC, e.g. -100 = 100 BC"></label>
+    <label>To year <input id="f-to" type="number" size="6" title="Negative = BC, e.g. -100 = 100 BC"></label>
     <button id="btn-reset" type="button">Reset</button>
     <button id="btn-csv" type="button">Download CSV</button>
   </p>
-  <p><small>Years: negative = BC (astronomical, 0 = 1 BC). Click a column to sort, a row for details.</small></p>
+  <p><small>Years: negative = BC, e.g. -100 = 100 BC. Click a column to sort, a row for details.</small></p>
 
   <p id="status" role="status">Loading…</p>
 
@@ -32,6 +32,8 @@
         <th data-sort="place">Place</th>
         <th data-sort="loan_type">Type</th>
         <th data-sort="principal_amount">Principal</th>
+        <th data-sort="principal_unit">Unit</th>
+        <th data-sort="principal_commodity">Commodity</th>
         <th data-sort="interest_rate_annual">Interest p.a.</th>
         <th data-sort="lender">Lender</th>
         <th data-sort="borrower">Borrower</th>
