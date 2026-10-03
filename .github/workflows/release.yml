@@ -1,4 +1,4 @@
-# Pushing a tag like v0.1 exports every table from the database as CSV
+# Pushing a tag like v0.1 exports the loans table from the database as CSV
 # and publishes it as a GitHub Release. Requires repo secret SUPABASE_DB_URL.
 name: Release data
 
@@ -20,10 +20,7 @@ jobs:
         run: |
           name="ald-${GITHUB_REF_NAME}"
           mkdir "$name"
-          for t in places units unit_conversions documents document_references loans loan_principals \
-                   loan_documents securities loan_events parties loan_parties party_relationships record_log; do
-            psql "$DB_URL" -v ON_ERROR_STOP=1 -c "\copy (select * from $t order by 1) to '$name/$t.csv' with (format csv, header true)"
-          done
+          psql "$DB_URL" -v ON_ERROR_STOP=1 -c "\copy (select * from loans order by id) to '$name/loans.csv' with (format csv, header true)"
           cp schema.sql codebook.md LICENSE "$name"/
           zip -r "$name.zip" "$name"
       - name: Publish release

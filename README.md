@@ -30,7 +30,7 @@ This repository contains no data, only the website, the schema, and the document
 
 ## Releasing a data version
 
-Push a tag, e.g. `git tag v0.1 && git push origin v0.1`. A GitHub Action exports every table as CSV and publishes `ald-v0.1.zip` (CSVs, schema, codebook, license) as a Release.
+Push a tag, e.g. `git tag v0.1 && git push origin v0.1`. A GitHub Action exports the loans table as CSV and publishes `ald-v0.1.zip` (CSV, schema, codebook, license) as a Release.
 
 ## Citation & license
 

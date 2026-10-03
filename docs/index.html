@@ -11,18 +11,15 @@
   <p>Working record of documented loans in the ancient world. Created and maintained by Hansen Zheng.</p>
 
   <p>
-    <label>Search <input id="f-search" type="search" placeholder="ID, citation, place, person, notes"></label>
-    <label>Region <select id="f-region"><option value="">All</option></select></label>
-    <label>Unit <select id="f-unit"><option value="">All</option></select></label>
-    <label>Interest <select id="f-interest"><option value="">All</option></select></label>
-    <label>Purpose <select id="f-purpose"><option value="">All</option></select></label>
-    <label>Verification <select id="f-status"><option value="">All</option></select></label>
+    <label>Search <input id="f-search" type="search" placeholder="ID, place, person, source"></label>
+    <label>Place <select id="f-place"><option value="">All</option></select></label>
+    <label>Currency <select id="f-currency"><option value="">All</option></select></label>
     <label>From year <input id="f-from" type="number" title="Negative = BCE, e.g. -100 = 100 BCE"></label>
     <label>To year <input id="f-to" type="number" title="Negative = BCE, e.g. -100 = 100 BCE"></label>
     <button id="btn-reset" type="button">Reset</button>
     <button id="btn-csv" type="button">Download CSV</button>
   </p>
-  <p><small>Years: negative = BCE, e.g. -100 = 100 BCE. Dates are given in the Julian calendar. Click a column to sort, a row for details.</small></p>
+  <p><small>Year filter: negative = BCE, e.g. -100 = 100 BCE. Click a column to sort.</small></p>
 
   <p id="status" role="status">Loading…</p>
 
@@ -32,24 +29,17 @@
         <th data-sort="id">ID</th>
         <th data-sort="year">Date</th>
         <th data-sort="place">Place</th>
-        <th data-sort="amountSort">Principal</th>
-        <th data-sort="unitNames">Unit</th>
-        <th data-sort="commodity">Commodity</th>
-        <th data-sort="interest_type">Interest</th>
-        <th data-sort="interest_rate_annual">Interest p.a.</th>
-        <th data-sort="lender">Lender</th>
+        <th data-sort="amount">Amount</th>
+        <th data-sort="currency">Currency</th>
         <th data-sort="borrower">Borrower</th>
-        <th data-sort="document">Document</th>
-        <th data-sort="verification_status">Verification</th>
+        <th data-sort="lender">Lender</th>
+        <th data-sort="interest">Interest</th>
+        <th data-sort="duration">Duration</th>
+        <th data-sort="source">Source</th>
       </tr>
     </thead>
     <tbody></tbody>
   </table>
-
-  <dialog id="detail" aria-labelledby="detail-title">
-    <form method="dialog"><button>Close</button></form>
-    <div id="detail-body"></div>
-  </dialog>
 
   <hr>
   <p>Data CC BY 4.0, code MIT</p>
