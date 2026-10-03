@@ -11,16 +11,18 @@
   <p>Working record of documented loans in the ancient world. Created and maintained by Hansen Zheng.</p>
 
   <p>
-    <label>Search <input id="f-search" type="search" placeholder="ID, document, place, person, notes"></label>
+    <label>Search <input id="f-search" type="search" placeholder="ID, citation, place, person, notes"></label>
     <label>Region <select id="f-region"><option value="">All</option></select></label>
-    <label>Loan type <select id="f-type"><option value="">All</option></select></label>
     <label>Unit <select id="f-unit"><option value="">All</option></select></label>
-    <label>From year <input id="f-from" type="number" size="6" title="Negative = BC, e.g. -100 = 100 BC"></label>
-    <label>To year <input id="f-to" type="number" size="6" title="Negative = BC, e.g. -100 = 100 BC"></label>
+    <label>Interest <select id="f-interest"><option value="">All</option></select></label>
+    <label>Purpose <select id="f-purpose"><option value="">All</option></select></label>
+    <label>Verification <select id="f-status"><option value="">All</option></select></label>
+    <label>From year <input id="f-from" type="number" title="Negative = BCE, e.g. -100 = 100 BCE"></label>
+    <label>To year <input id="f-to" type="number" title="Negative = BCE, e.g. -100 = 100 BCE"></label>
     <button id="btn-reset" type="button">Reset</button>
     <button id="btn-csv" type="button">Download CSV</button>
   </p>
-  <p><small>Years: negative = BC, e.g. -100 = 100 BC. Click a column to sort, a row for details.</small></p>
+  <p><small>Years: negative = BCE, e.g. -100 = 100 BCE. Dates are given in the Julian calendar. Click a column to sort, a row for details.</small></p>
 
   <p id="status" role="status">Loading…</p>
 
@@ -30,14 +32,15 @@
         <th data-sort="id">ID</th>
         <th data-sort="year">Date</th>
         <th data-sort="place">Place</th>
-        <th data-sort="loan_type">Type</th>
-        <th data-sort="principal_amount">Principal</th>
-        <th data-sort="principal_unit">Unit</th>
-        <th data-sort="principal_commodity">Commodity</th>
+        <th data-sort="amountSort">Principal</th>
+        <th data-sort="unitNames">Unit</th>
+        <th data-sort="commodity">Commodity</th>
+        <th data-sort="interest_type">Interest</th>
         <th data-sort="interest_rate_annual">Interest p.a.</th>
         <th data-sort="lender">Lender</th>
         <th data-sort="borrower">Borrower</th>
         <th data-sort="document">Document</th>
+        <th data-sort="verification_status">Verification</th>
       </tr>
     </thead>
     <tbody></tbody>

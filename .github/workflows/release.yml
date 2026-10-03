@@ -20,7 +20,8 @@ jobs:
         run: |
           name="ald-${GITHUB_REF_NAME}"
           mkdir "$name"
-          for t in documents editions parties loans loan_parties; do
+          for t in places units unit_conversions documents document_references loans loan_principals \
+                   loan_documents securities loan_events parties loan_parties party_relationships record_log; do
             psql "$DB_URL" -v ON_ERROR_STOP=1 -c "\copy (select * from $t order by 1) to '$name/$t.csv' with (format csv, header true)"
           done
           cp schema.sql codebook.md LICENSE "$name"/

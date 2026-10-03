@@ -42,8 +42,10 @@ Schema v0.1 written and applied to Supabase → next: codebook.md
   not part of schema.sql). Left as is.
 - Destructive SQL via the Supabase MCP needs approval that cannot appear in cloud
   sessions; Hansen runs such statements in the SQL Editor.
-- Out of date vs v0.1 (pending Hansen's go-ahead): `docs/app.js` + `docs/index.html`
-  (site will fail to load), `release.yml` table list, README setup text, `codebook.md`.
+- Site (`docs/`) and `release.yml` rebuilt for v0.1 and browser-tested with mock data.
+  Site displays years as BCE/CE (matching schema.sql) and Julian month/day.
+- `anon` holds Supabase's default INSERT/UPDATE/DELETE grants, but RLS has SELECT
+  policies only, so writes are refused. `codebook.md` still describes the pre-v0.1 schema.
 - Supabase connected to Claude as a claude.ai connector (MCP); use it for all data entry.
 - Pending (Hansen): GitHub Pages source must be `main` / `/docs`.
   `SUPABASE_DB_URL` secret untested until first release tag.
