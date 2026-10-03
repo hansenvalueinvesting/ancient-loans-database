@@ -25,8 +25,12 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
 
 ## Status
 - Done: schema, website, release workflow, docs.
-- Pending (Hansen): create the Supabase project, run `schema.sql`, fill `docs/config.js`,
-  enable GitHub Pages (main, /docs), add the `SUPABASE_DB_URL` secret.
+- Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
+- Verified: `schema.sql` applied; RLS on; anon/authenticated have SELECT only; security
+  advisor clean. Tables empty.
+- Supabase connected to Claude as a claude.ai connector (MCP); use it for all data entry.
+- Pending (Hansen): GitHub Pages source must be `main` / `/docs` (currently shows README).
+  `SUPABASE_DB_URL` secret reported added; untested until first release tag.
 
 ## Working rules
 - Work on `main`; commit directly as you go.
