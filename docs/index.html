@@ -5,83 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ancient Loans Database</title>
   <meta name="description" content="A standardized record of documented loans in the ancient world.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <h1>Ancient Loans Database</h1>
-      <p class="tagline">Working record of documented loans in the ancient world. Created and maintained by Hansen Zheng.</p>
-    </div>
-  </header>
+  <h1>Ancient Loans Database</h1>
+  <p>Working record of documented loans in the ancient world. Created and maintained by Hansen Zheng.</p>
 
-  <main class="wrap">
-    <section class="filters" aria-label="Filters">
-      <label class="field grow">
-        <span>Search</span>
-        <input id="f-search" type="search" placeholder="ID, document, place, person, notes…">
-      </label>
-      <label class="field">
-        <span>Region</span>
-        <select id="f-region"><option value="">All</option></select>
-      </label>
-      <label class="field">
-        <span>Loan type</span>
-        <select id="f-type"><option value="">All</option></select>
-      </label>
-      <label class="field">
-        <span>Unit</span>
-        <select id="f-unit"><option value="">All</option></select>
-      </label>
-      <label class="field year">
-        <span>From year</span>
-        <input id="f-from" type="number" placeholder="-300" title="Negative = BC">
-      </label>
-      <label class="field year">
-        <span>To year</span>
-        <input id="f-to" type="number" placeholder="300" title="Negative = BC">
-      </label>
-      <div class="actions">
-        <button id="btn-reset" type="button" class="secondary">Reset</button>
-        <button id="btn-csv" type="button">Download CSV</button>
-      </div>
-    </section>
+  <p>
+    <label>Search <input id="f-search" type="search" placeholder="ID, document, place, person, notes"></label>
+    <label>Region <select id="f-region"><option value="">All</option></select></label>
+    <label>Loan type <select id="f-type"><option value="">All</option></select></label>
+    <label>Unit <select id="f-unit"><option value="">All</option></select></label>
+    <label>From year <input id="f-from" type="number" size="6" title="Negative = BC"></label>
+    <label>To year <input id="f-to" type="number" size="6" title="Negative = BC"></label>
+    <button id="btn-reset" type="button">Reset</button>
+    <button id="btn-csv" type="button">Download CSV</button>
+  </p>
+  <p><small>Years: negative = BC (astronomical, 0 = 1 BC). Click a column to sort, a row for details.</small></p>
 
-    <p id="status" class="status" role="status">Loading…</p>
+  <p id="status" role="status">Loading…</p>
 
-    <div class="table-wrap">
-      <table id="loans">
-        <thead>
-          <tr>
-            <th data-sort="id">ID</th>
-            <th data-sort="year">Date</th>
-            <th data-sort="place">Place</th>
-            <th data-sort="loan_type">Type</th>
-            <th data-sort="principal_amount" class="num">Principal</th>
-            <th data-sort="interest_rate_annual" class="num">Interest p.a.</th>
-            <th data-sort="lender">Lender</th>
-            <th data-sort="borrower">Borrower</th>
-            <th data-sort="document">Document</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </main>
+  <table id="loans" border="1" cellpadding="4" cellspacing="0">
+    <thead>
+      <tr>
+        <th data-sort="id">ID</th>
+        <th data-sort="year">Date</th>
+        <th data-sort="place">Place</th>
+        <th data-sort="loan_type">Type</th>
+        <th data-sort="principal_amount">Principal</th>
+        <th data-sort="interest_rate_annual">Interest p.a.</th>
+        <th data-sort="lender">Lender</th>
+        <th data-sort="borrower">Borrower</th>
+        <th data-sort="document">Document</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
   <dialog id="detail" aria-labelledby="detail-title">
-    <form method="dialog" class="close-row"><button aria-label="Close">×</button></form>
+    <form method="dialog"><button>Close</button></form>
     <div id="detail-body"></div>
   </dialog>
 
-  <footer class="wrap site-footer">
-    <a href="https://github.com/hansenvalueinvesting/ancient-loans-database">Source &amp; codebook</a> ·
-    <a href="https://github.com/hansenvalueinvesting/ancient-loans-database/releases">Data releases</a> ·
+  <hr>
+  <p>
+    <a href="https://github.com/hansenvalueinvesting/ancient-loans-database">Source &amp; codebook</a> |
+    <a href="https://github.com/hansenvalueinvesting/ancient-loans-database/releases">Data releases</a> |
     Data CC BY 4.0, code MIT
-  </footer>
+  </p>
 
   <script src="config.js"></script>
   <script src="app.js"></script>

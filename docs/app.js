@@ -25,7 +25,7 @@ async function fetchTable(table) {
 
 async function load() {
   if (!SUPABASE_URL || !SUPABASE_KEY) {
-    return setStatus('Database not configured: set SUPABASE_URL and SUPABASE_KEY in docs/config.js.', true);
+    return setStatus('Database not configured: set SUPABASE_URL and SUPABASE_KEY in docs/config.js.');
   }
   try {
     const [loans, documents, editions, parties, loanParties] = await Promise.all(
@@ -62,7 +62,7 @@ async function load() {
     render();
     openFromHash();
   } catch (err) {
-    setStatus(`Could not load data. ${err.message}`, true);
+    setStatus(`Could not load data. ${err.message}`);
   }
 }
 
@@ -78,7 +78,7 @@ function fmtRange(start, end) {
   return end != null && end !== start ? `${fmtYear(start)} – ${fmtYear(end)}` : fmtYear(start);
 }
 
-const badge = (certainty) => (certainty && certainty !== 'certain' ? `<span class="badge">${esc(certainty)}</span>` : '');
+const badge = (certainty) => (certainty && certainty !== 'certain' ? ` <i>(${esc(certainty)})</i>` : '');
 
 function fmtPrincipal(l) {
   if (l.principal_amount == null) return '';
@@ -88,9 +88,8 @@ function fmtPrincipal(l) {
 
 const fmtRate = (r) => (r == null ? '' : `${Number(r).toLocaleString()}%`);
 
-function setStatus(msg, isError = false) {
+function setStatus(msg) {
   $('status').textContent = msg;
-  $('status').classList.toggle('error', isError);
 }
 
 function fillSelect(id, values) {
@@ -136,20 +135,20 @@ function render() {
   state.shown = sortRows(filtered());
   $('loans').querySelector('tbody').innerHTML = state.shown.map((l) => `
     <tr data-id="${esc(l.id)}">
-      <td class="id">${esc(l.id)}</td>
+      <td>${esc(l.id)}</td>
       <td>${esc(fmtRange(l.date_start_year, l.date_end_year))}${badge(l.date_certainty)}</td>
       <td>${esc(l.place)}</td>
       <td>${esc(l.loan_type)}</td>
-      <td class="num">${fmtPrincipal(l)}${badge(l.principal_certainty)}</td>
-      <td class="num">${fmtRate(l.interest_rate_annual)}${badge(l.interest_certainty)}</td>
+      <td>${fmtPrincipal(l)}${badge(l.principal_certainty)}</td>
+      <td>${fmtRate(l.interest_rate_annual)}${badge(l.interest_certainty)}</td>
       <td>${esc(l.lender)}</td>
       <td>${esc(l.borrower)}</td>
       <td>${esc(l.document)}</td>
     </tr>`).join('');
 
   document.querySelectorAll('th[data-sort]').forEach((th) => {
-    th.classList.toggle('sorted-asc', th.dataset.sort === state.sortKey && state.sortDir === 1);
-    th.classList.toggle('sorted-desc', th.dataset.sort === state.sortKey && state.sortDir === -1);
+    th.dataset.label ||= th.textContent;
+    th.textContent = th.dataset.label + (th.dataset.sort === state.sortKey ? (state.sortDir === 1 ? ' ▲' : ' ▼') : '');
   });
   setStatus(`${state.shown.length.toLocaleString()} of ${state.loans.length.toLocaleString()} loans`);
 }
@@ -170,7 +169,7 @@ function showDetail(id) {
 
   $('detail-body').innerHTML = `
     <h2 id="detail-title">${esc(l.id)}</h2>
-    <p class="tagline">${esc(d.title)}</p>
+    <p>${esc(d.title)}</p>
 
     <h3>Loan</h3>
     ${rows([
@@ -196,7 +195,7 @@ function showDetail(id) {
         ${[p.party?.occupation, p.party?.origin].filter(Boolean).map(esc).join(', ')}
         ${badge(p.certainty)}
         ${p.party?.tm_per_id ? link(`https://www.trismegistos.org/person/${p.party.tm_per_id}`, 'TM') : ''}
-      </li>`).join('')}</ul>` : '<p class="tagline">None recorded.</p>'}
+      </li>`).join('')}</ul>` : '<p>None recorded.</p>'}
 
     <h3>Document</h3>
     ${rows([
@@ -213,7 +212,7 @@ function showDetail(id) {
     ])}
 
     ${d.editions?.length ? `<h3>Editions</h3><ul>${d.editions.map((e) => `
-      <li>${esc(e.citation)}${e.is_principal ? ' <span class="badge">principal</span>' : ''} ${link(e.url, 'link')}</li>`).join('')}</ul>` : ''}
+      <li>${esc(e.citation)}${e.is_principal ? ' <i>(principal)</i>' : ''} ${link(e.url, 'link')}</li>`).join('')}</ul>` : ''}
   `;
   if (!$('detail').open) $('detail').showModal();
   history.replaceState(null, '', `#${id}`);

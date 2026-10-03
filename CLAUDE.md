@@ -9,6 +9,7 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
 ## Architecture
 - **Supabase (Postgres)**: the only home of the data. The repo contains no data.
 - **Repo** = publication only: `docs/` (GitHub Pages site), `schema.sql`, `codebook.md`.
+- Site is plain HTML + one JS file. No CSS, no styling (Hansen's preference).
 - **Releases**: pushing tag `vX.Y` runs `.github/workflows/release.yml`, which exports all
   tables to CSV from the database (secret `SUPABASE_DB_URL`).
 - Site reads Supabase's REST API with the public key in `docs/config.js`; RLS is read-only.
