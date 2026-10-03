@@ -14,8 +14,7 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 | Field | Definition | Example |
 |---|---|---|
 | `id` | Assigned automatically | `ALD-00001` |
-| `date` | Date of the loan in modern form, as given by the edition | `29 March 57 CE`, `c. 100 BCE` |
-| `year` | The year as a number, for sorting and filtering. Negative = BCE; there is no year 0 (1 BCE is followed by 1 CE). For a date range, use the earliest year | `57`, `-100` |
+| `year` | Year of the loan as a number. Negative = BCE; there is no year 0 (1 BCE is followed by 1 CE). If the source gives a range, use the earliest year | `57`, `-100` |
 | `place` | Where the loan was made | `Oxyrhynchus` |
 | `amount` | Amount lent, as a number | `100` |
 | `currency` | Currency or unit of `amount`, singular. For loans in kind, add the commodity in brackets | `drachma`, `artaba (wheat)` |

@@ -8,8 +8,7 @@ create sequence loan_seq;
 
 create table loans (
   id          text primary key default 'ALD-' || lpad(nextval('loan_seq')::text, 5, '0'),
-  date        text,                          -- modern form, e.g. '29 March 57 CE'
-  year        int check (year <> 0),         -- for sorting; negative = BCE, no year 0
+  year        int check (year <> 0),         -- negative = BCE, no year 0
   place       text,                          -- where the loan was made
   amount      numeric,
   currency    text,                          -- currency or unit, e.g. 'drachma', 'artaba (wheat)'

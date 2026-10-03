@@ -42,6 +42,9 @@ const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '
 
 const fmtNum = (n) => (n == null ? '' : Number(n).toLocaleString());
 
+// Year integer → display: -100 → '100 BCE', 57 → '57 CE'.
+const fmtYear = (y) => (y == null ? '' : y < 0 ? `${-y} BCE` : `${y} CE`);
+
 const fmtSource = (l) => (l.source_url
   ? `<a href="${esc(l.source_url)}" target="_blank" rel="noopener">${esc(l.source)}</a>`
   : esc(l.source));
@@ -69,7 +72,7 @@ function filtered() {
     if (from != null && (l.year == null || l.year < from)) return false;
     if (to != null && (l.year == null || l.year > to)) return false;
     if (q) {
-      const hay = [l.id, l.date, l.place, l.currency, l.borrower, l.lender, l.interest, l.duration, l.source]
+      const hay = [l.id, fmtYear(l.year), l.place, l.currency, l.borrower, l.lender, l.interest, l.duration, l.source]
         .join(' ').toLowerCase();
       if (!hay.includes(q)) return false;
     }
@@ -93,7 +96,7 @@ function render() {
   $('loans').querySelector('tbody').innerHTML = state.shown.map((l) => `
     <tr>
       <td>${esc(l.id)}</td>
-      <td>${esc(l.date)}</td>
+      <td>${esc(fmtYear(l.year))}</td>
       <td>${esc(l.place)}</td>
       <td>${fmtNum(l.amount)}</td>
       <td>${esc(l.currency)}</td>
@@ -114,7 +117,7 @@ function render() {
 // ---------- CSV export ----------
 
 function downloadCsv() {
-  const cols = ['id', 'date', 'year', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url'];
+  const cols = ['id', 'year', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url'];
   const cell = (v) => (v == null ? '' : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
   const csv = [cols.join(','), ...state.shown.map((l) => cols.map((c) => cell(l[c])).join(','))].join('\n');
   const a = Object.assign(document.createElement('a'), {

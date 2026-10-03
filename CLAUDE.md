@@ -11,17 +11,18 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
 - **Repo** = publication only: `docs/` (GitHub Pages site), `schema.sql`, `codebook.md`.
 - Site is plain HTML + one JS file. No CSS, no styling (Hansen's preference).
 - **Releases**: pushing tag `vX.Y` runs `.github/workflows/release.yml`, which exports all
-  tables to CSV from the database (secret `SUPABASE_DB_URL`).
+  `loans` to CSV from the database (secret `SUPABASE_DB_URL`).
 - Site reads Supabase's REST API with the public key in `docs/config.js`; RLS is read-only.
 
 ## Data standards
 - Follow `codebook.md` exactly. One table, `loans`; one row per loan.
-- Fields: id, date, year, place, amount, currency, borrower, lender, interest, duration,
+- Fields: id, year, place, amount, currency, borrower, lender, interest, duration,
   source (required citation), source_url. Nothing else is collected for now (Hansen's
   decision: no data on documents, people, places yet).
 - IDs ALD-00001… assigned by sequence; never changed or reused.
 - Verified data only; empty = unknown; record what the source says.
-- `year`: integer, negative = BCE, no year 0 (enforced). `date` is free text.
+- `year`: integer, negative = BCE, no year 0 (enforced); displayed as '57 CE' / '100 BCE'.
+  No date field (Hansen's decision: year is enough).
 - Everything displayed must be true and academically accepted; check conventions before adding.
 - Plain SQL only (portable); no Supabase-only features in the schema.
 - `schema.sql` is a one-time setup script. Never re-run it against the live database.
@@ -29,7 +30,8 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
   `docs/app.js` to match.
 
 ## Current phase
-Schema v0.2 (single `loans` table) applied → next: begin data entry.
+Schema v0.2 (single `loans` table) applied; `date` column removed from schema.sql →
+Hansen drops it in SQL Editor → next: begin data entry.
 
 ## Status
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
