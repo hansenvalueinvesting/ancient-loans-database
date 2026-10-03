@@ -30,19 +30,23 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
   `docs/app.js` to match.
 
 ## Current phase
-Schema v0.1 written (schema.sql) → apply to Supabase as migration `ald_schema_v0_1`
-(blocked, see Status) → next: codebook.md
+Schema v0.1 written and applied to Supabase → next: codebook.md
 
 ## Status
-- Done: schema v0.1 file, website, release workflow, docs (website, codebook, release
-  workflow still target the pre-v0.1 schema).
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
-- Live DB: pre-v0.1 tables (all verified empty). Migration `drop_pre_v0_1_tables` timed
-  out (outcome unconfirmed) and further DB actions were blocked by the permission
-  classifier; v0.1 NOT applied. Awaiting Hansen's decision.
+- Live DB = `schema.sql` v0.1 (migration `ald_schema_v0_1`; earlier migrations
+  `academic_conventions`, `rename_is_principal_to_is_reference` belong to the removed
+  pre-v0.1 schema). Verified: 14 tables, 17 enums, RLS on all, 14 SELECT-only
+  "public read" policies. Tables empty.
+- Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's auto-enable-RLS event trigger,
+  not part of schema.sql). Left as is.
+- Destructive SQL via the Supabase MCP needs approval that cannot appear in cloud
+  sessions; Hansen runs such statements in the SQL Editor.
+- Out of date vs v0.1 (pending Hansen's go-ahead): `docs/app.js` + `docs/index.html`
+  (site will fail to load), `release.yml` table list, README setup text, `codebook.md`.
 - Supabase connected to Claude as a claude.ai connector (MCP); use it for all data entry.
-- Pending (Hansen): GitHub Pages source must be `main` / `/docs` (currently shows README).
-  `SUPABASE_DB_URL` secret reported added; untested until first release tag.
+- Pending (Hansen): GitHub Pages source must be `main` / `/docs`.
+  `SUPABASE_DB_URL` secret untested until first release tag.
 
 ## Working rules
 - Work on `main`; commit directly as you go.
