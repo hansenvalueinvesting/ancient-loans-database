@@ -14,12 +14,12 @@
     <label>Search <input id="f-search" type="search" placeholder="ID, year, place, person, source"></label>
     <label>Place <select id="f-place"><option value="">All</option></select></label>
     <label>Currency <select id="f-currency"><option value="">All</option></select></label>
-    <label>From year <input id="f-from" type="number" title="Negative = BCE, e.g. -100 = 100 BCE"></label>
-    <label>To year <input id="f-to" type="number" title="Negative = BCE, e.g. -100 = 100 BCE"></label>
+    <label>From year <input id="f-from" type="text" size="8" placeholder="100 BC"></label>
+    <label>To year <input id="f-to" type="text" size="8" placeholder="AD 57"></label>
     <button id="btn-reset" type="button">Reset</button>
     <button id="btn-csv" type="button">Download CSV</button>
   </p>
-  <p><small>Year filter: negative = BCE, e.g. -100 = 100 BCE. Click a column to sort, an ID for the full record.</small></p>
+  <p><small>Years are written 100 BC / AD 57. Click a column to sort, an ID for the full record.</small></p>
 
   <p id="status" role="status">Loading…</p>
 
@@ -27,7 +27,7 @@
     <thead>
       <tr>
         <th data-sort="id">ID</th>
-        <th data-sort="year">Year</th>
+        <th data-sort="year_sort">Year</th>
         <th data-sort="place">Place</th>
         <th data-sort="amount">Amount</th>
         <th data-sort="currency">Currency</th>

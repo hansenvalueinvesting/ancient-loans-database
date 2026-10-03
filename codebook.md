@@ -14,7 +14,7 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 | Field | Definition | Example |
 |---|---|---|
 | `id` | Assigned automatically | `ALD-00001` |
-| `year` | Year of the loan as a number. Negative = BCE; there is no year 0 (1 BCE is followed by 1 CE). If the source gives a range, use the earliest year | `57`, `-100` |
+| `year` | Year of the loan, written `AD n` or `n BC` (AD before the number, BC after). There is no year 0: 1 BC is followed by AD 1. If the source gives a range, use the earliest year | `AD 57`, `100 BC` |
 | `place` | Where the loan was made | `Oxyrhynchus` |
 | `amount` | Amount lent, as a number | `100` |
 | `currency` | Currency or unit of `amount`, singular. For loans in kind, add the commodity in brackets | `drachma`, `artaba (wheat)` |
@@ -25,3 +25,4 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 | `source` | Citation of the primary source, in standard form (papyri: *Checklist of Editions of Greek, Latin, Demotic and Coptic Papyri, Ostraca and Tablets*). Required | `P.Oxy. 3 506` |
 | `source_url` | Link to the source online, if available | `https://papyri.info/...` |
 | `notes` | Any additional comments. Shown only on the loan's own page, not in the main table | |
+| `year_sort` | Filled automatically from `year`, for sorting (`100 BC` = `-100`, `AD 57` = `57`). Never entered by hand | `-100` |

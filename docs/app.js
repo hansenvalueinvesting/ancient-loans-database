@@ -50,8 +50,17 @@ const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '
 
 const fmtNum = (n) => (n == null ? '' : Number(n).toLocaleString());
 
-// Year integer → display: -100 → '100 BCE', 57 → '57 CE'.
-const fmtYear = (y) => (y == null ? '' : y < 0 ? `${-y} BCE` : `${y} CE`);
+// Year filter input → sortable number: '100 BC' → -100, 'AD 57' / '57 AD' / '57' → 57.
+// Returns null for empty input, NaN for input that is not a year.
+function parseYear(s) {
+  s = s.trim().toUpperCase();
+  if (!s) return null;
+  const m = s.match(/^(?:(\d+)\s*(BC|AD)?|(AD|BC)\s*(\d+))$/);
+  if (!m) return NaN;
+  const n = Number(m[1] ?? m[4]), era = m[2] ?? m[3];
+  if (n === 0) return NaN;
+  return era === 'BC' ? -n : n;
+}
 
 const fmtSource = (l) => (l.source_url
   ? `<a href="${esc(l.source_url)}" target="_blank" rel="noopener">${esc(l.source)}</a>`
@@ -71,16 +80,15 @@ function fillSelect(id, values) {
 function filtered() {
   const q = $('f-search').value.trim().toLowerCase();
   const place = $('f-place').value, currency = $('f-currency').value;
-  const from = $('f-from').value === '' ? null : Number($('f-from').value);
-  const to = $('f-to').value === '' ? null : Number($('f-to').value);
+  const from = parseYear($('f-from').value), to = parseYear($('f-to').value);
 
   return state.loans.filter((l) => {
     if (place && l.place !== place) return false;
     if (currency && l.currency !== currency) return false;
-    if (from != null && (l.year == null || l.year < from)) return false;
-    if (to != null && (l.year == null || l.year > to)) return false;
+    if (from != null && (l.year_sort == null || l.year_sort < from)) return false;
+    if (to != null && (l.year_sort == null || l.year_sort > to)) return false;
     if (q) {
-      const hay = [l.id, fmtYear(l.year), l.place, l.currency, l.borrower, l.lender, l.interest, l.duration, l.source]
+      const hay = [l.id, l.year, l.place, l.currency, l.borrower, l.lender, l.interest, l.duration, l.source]
         .join(' ').toLowerCase();
       if (!hay.includes(q)) return false;
     }
@@ -90,7 +98,7 @@ function filtered() {
 
 function sortRows(rows) {
   const { sortKey: k, sortDir: d } = state;
-  const numeric = k === 'year' || k === 'amount';
+  const numeric = k === 'year_sort' || k === 'amount';
   return rows.sort((a, b) => {
     const x = a[k], y = b[k];
     if (x == null || x === '') return 1;
@@ -104,7 +112,7 @@ function render() {
   $('loans').querySelector('tbody').innerHTML = state.shown.map((l) => `
     <tr>
       <td><a href="loan.html?id=${encodeURIComponent(l.id)}">${esc(l.id)}</a></td>
-      <td>${esc(fmtYear(l.year))}</td>
+      <td>${esc(l.year)}</td>
       <td>${esc(l.place)}</td>
       <td>${fmtNum(l.amount)}</td>
       <td>${esc(l.currency)}</td>
@@ -119,13 +127,16 @@ function render() {
     th.dataset.label ||= th.textContent;
     th.textContent = th.dataset.label + (th.dataset.sort === state.sortKey ? (state.sortDir === 1 ? ' ▲' : ' ▼') : '');
   });
-  setStatus(`${state.shown.length.toLocaleString()} of ${state.loans.length.toLocaleString()} loans`);
+  const bad = ['f-from', 'f-to'].filter((id) => Number.isNaN(parseYear($(id).value)));
+  setStatus(bad.length
+    ? 'Year filter not understood: enter a year like 100 BC or AD 57.'
+    : `${state.shown.length.toLocaleString()} of ${state.loans.length.toLocaleString()} loans`);
 }
 
 // ---------- CSV export ----------
 
 function downloadCsv() {
-  const cols = ['id', 'year', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url', 'notes'];
+  const cols = ['id', 'year', 'year_sort', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url', 'notes'];
   const cell = (v) => (v == null ? '' : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
   const csv = [cols.join(','), ...state.shown.map((l) => cols.map((c) => cell(l[c])).join(','))].join('\n');
   const a = Object.assign(document.createElement('a'), {
@@ -150,7 +161,7 @@ async function loadLoan() {
     document.title = `${l.id} | Ancient Loans Database`;
     $('loan-id').textContent = l.id;
     const fields = [
-      ['Year', esc(fmtYear(l.year))],
+      ['Year', esc(l.year)],
       ['Place', esc(l.place)],
       ['Amount', fmtNum(l.amount)],
       ['Currency', esc(l.currency)],

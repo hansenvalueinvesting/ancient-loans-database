@@ -8,7 +8,7 @@ create sequence loan_seq;
 
 create table loans (
   id          text primary key default 'ALD-' || lpad(nextval('loan_seq')::text, 5, '0'),
-  year        int check (year <> 0),         -- negative = BCE, no year 0
+  year        text check (year ~ '^(AD [1-9][0-9]*|[1-9][0-9]* BC)$'),  -- e.g. 'AD 57', '100 BC'
   place       text,                          -- where the loan was made
   amount      numeric,
   currency    text,                          -- currency or unit, e.g. 'drachma', 'artaba (wheat)'
@@ -18,7 +18,10 @@ create table loans (
   duration    text,                          -- e.g. '6 months'
   source      text not null,                 -- citation to the primary source, e.g. 'P.Oxy. 3 506'
   source_url  text,                          -- link to the source, if available
-  notes       text                           -- additional comments; shown on the loan's own page only
+  notes       text,                          -- additional comments; shown on the loan's own page only
+  year_sort   int generated always as (      -- automatic, for sorting: '100 BC' = -100, 'AD 57' = 57
+                case when year ~ '^[1-9][0-9]* BC$' then -split_part(year, ' ', 1)::int
+                     when year ~ '^AD [1-9][0-9]*$' then split_part(year, ' ', 2)::int end) stored
 );
 
 -- Public access: read-only.
