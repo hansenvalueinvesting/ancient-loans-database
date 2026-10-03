@@ -30,7 +30,8 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
   `docs/app.js` to match.
 
 ## Current phase
-Schema v0.1 written and applied to Supabase → next: codebook.md
+Schema v0.2 written (schema.sql: single `loans` table) → Hansen drops v0.1 objects in SQL
+Editor → apply v0.2 → update site, release.yml, codebook.md, this file.
 
 ## Status
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
