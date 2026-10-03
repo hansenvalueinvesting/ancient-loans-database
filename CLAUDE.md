@@ -9,7 +9,8 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
 ## Architecture
 - **Supabase (Postgres)**: the only home of the data. The repo contains no data.
 - **Repo** = publication only: `docs/` (GitHub Pages site), `schema.sql`, `codebook.md`.
-- Site is plain HTML + one JS file. No CSS, no styling (Hansen's preference).
+- Site is plain HTML + one JS file (`app.js` serves `index.html` and `loan.html`). No CSS,
+  no styling (Hansen's preference).
 - **Releases**: pushing tag `vX.Y` runs `.github/workflows/release.yml`, which exports all
   `loans` to CSV from the database (secret `SUPABASE_DB_URL`).
 - Site reads Supabase's REST API with the public key in `docs/config.js`; RLS is read-only.
@@ -17,7 +18,7 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
 ## Data standards
 - Follow `codebook.md` exactly. One table, `loans`; one row per loan.
 - Fields: id, year, place, amount, currency, borrower, lender, interest, duration,
-  source (required citation), source_url. Nothing else is collected for now (Hansen's
+  source (required citation), source_url, notes. Nothing else is collected for now (Hansen's
   decision: no data on documents, people, places yet).
 - IDs ALD-00001… assigned by sequence; never changed or reused.
 - Verified data only; empty = unknown; record what the source says.
@@ -30,19 +31,23 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
   `docs/app.js` to match.
 
 ## Current phase
-Schema v0.2 (single `loans` table, 11 fields, no `date`) applied → next: begin data entry.
+Schema v0.2 (single `loans` table, 12 fields incl. `notes`) applied. Test loan ALD-00001
+inserted for Hansen to check the site → delete it (SQL Editor) → begin data entry.
 
 ## Status
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
 - Live DB = `schema.sql` v0.2 (migration `ald_schema_v0_2`; earlier migrations belong to
   removed schemas). Verified: 1 table, RLS on, SELECT-only "public read" policy; anon has
-  SELECT only (no insert/update/delete grants). Table empty.
+  SELECT only (no insert/update/delete grants). Contains only test loan ALD-00001.
+  Migrations since v0.2: `add_loans_notes`; `date` dropped by Hansen in SQL Editor.
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's auto-enable-RLS event trigger,
   not part of schema.sql). Left as is.
 - Destructive SQL via the Supabase MCP needs approval that cannot appear in cloud
   sessions; Hansen runs such statements in the SQL Editor. Inserts work via MCP.
-- Site (`docs/`): table of all fields (source linked when source_url set), filters (search,
-  place, currency, year range), sorting, CSV download. Browser-tested with mock data.
+- Site (`docs/`): main table of all fields except notes (ID links to `loan.html?id=…`,
+  source linked when source_url set), filters (search, place, currency, year range),
+  sorting, CSV download (includes notes). `loan.html` shows every field incl. notes.
+  Browser-tested with mock data.
 - `release.yml` exports `loans` as CSV. `SUPABASE_DB_URL` secret untested until first tag.
 - Supabase connected to Claude as a claude.ai connector (MCP); use it for all data entry.
 - Pending (Hansen): GitHub Pages source must be `main` / `/docs`.

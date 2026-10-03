@@ -1,5 +1,5 @@
-// The Ancient Loans Database — frontend.
-// Loads the loans table from Supabase's REST API once, then filters in the browser.
+// The Ancient Loans Database — frontend for index.html (all loans) and loan.html (one loan).
+// Reads the loans table from Supabase's REST API.
 
 const { SUPABASE_URL, SUPABASE_KEY } = window.ALD_CONFIG;
 const PAGE = 1000; // Supabase returns at most 1000 rows per request
@@ -20,6 +20,14 @@ async function fetchLoans() {
     rows.push(...page);
     if (page.length < PAGE) return rows;
   }
+}
+
+async function fetchLoan(id) {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/loans?select=*&id=eq.${encodeURIComponent(id)}`, {
+    headers: { apikey: SUPABASE_KEY },
+  });
+  if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
+  return (await res.json())[0];
 }
 
 async function load() {
@@ -95,7 +103,7 @@ function render() {
   state.shown = sortRows(filtered());
   $('loans').querySelector('tbody').innerHTML = state.shown.map((l) => `
     <tr>
-      <td>${esc(l.id)}</td>
+      <td><a href="loan.html?id=${encodeURIComponent(l.id)}">${esc(l.id)}</a></td>
       <td>${esc(fmtYear(l.year))}</td>
       <td>${esc(l.place)}</td>
       <td>${fmtNum(l.amount)}</td>
@@ -117,7 +125,7 @@ function render() {
 // ---------- CSV export ----------
 
 function downloadCsv() {
-  const cols = ['id', 'year', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url'];
+  const cols = ['id', 'year', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url', 'notes'];
   const cell = (v) => (v == null ? '' : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
   const csv = [cols.join(','), ...state.shown.map((l) => cols.map((c) => cell(l[c])).join(','))].join('\n');
   const a = Object.assign(document.createElement('a'), {
@@ -128,19 +136,54 @@ function downloadCsv() {
   URL.revokeObjectURL(a.href);
 }
 
+// ---------- loan page ----------
+
+async function loadLoan() {
+  const id = new URLSearchParams(location.search).get('id');
+  if (!id) return setStatus('No loan ID given.');
+  if (!SUPABASE_URL || !SUPABASE_KEY) {
+    return setStatus('Database not configured: set SUPABASE_URL and SUPABASE_KEY in docs/config.js.');
+  }
+  try {
+    const l = await fetchLoan(id);
+    if (!l) return setStatus(`Loan ${id} not found.`);
+    document.title = `${l.id} | Ancient Loans Database`;
+    $('loan-id').textContent = l.id;
+    const fields = [
+      ['Year', esc(fmtYear(l.year))],
+      ['Place', esc(l.place)],
+      ['Amount', fmtNum(l.amount)],
+      ['Currency', esc(l.currency)],
+      ['Borrower', esc(l.borrower)],
+      ['Lender', esc(l.lender)],
+      ['Interest', esc(l.interest)],
+      ['Duration', esc(l.duration)],
+      ['Source', fmtSource(l)],
+      ['Notes', esc(l.notes).replace(/\n/g, '<br>')],
+    ];
+    $('loan').innerHTML = fields.map(([k, v]) => `<tr><th align="left">${k}</th><td>${v}</td></tr>`).join('');
+    setStatus('');
+  } catch (err) {
+    setStatus(`Could not load data. ${err.message}`);
+  }
+}
+
 // ---------- wiring ----------
 
-const FILTERS = ['f-search', 'f-place', 'f-currency', 'f-from', 'f-to'];
-FILTERS.forEach((id) => $(id).addEventListener('input', render));
-$('btn-reset').addEventListener('click', () => {
-  FILTERS.forEach((id) => { $(id).value = ''; });
-  render();
-});
-$('btn-csv').addEventListener('click', downloadCsv);
-document.querySelectorAll('th[data-sort]').forEach((th) => th.addEventListener('click', () => {
-  state.sortDir = state.sortKey === th.dataset.sort ? -state.sortDir : 1;
-  state.sortKey = th.dataset.sort;
-  render();
-}));
-
-load();
+if ($('loan')) {
+  loadLoan();
+} else {
+  const FILTERS = ['f-search', 'f-place', 'f-currency', 'f-from', 'f-to'];
+  FILTERS.forEach((id) => $(id).addEventListener('input', render));
+  $('btn-reset').addEventListener('click', () => {
+    FILTERS.forEach((id) => { $(id).value = ''; });
+    render();
+  });
+  $('btn-csv').addEventListener('click', downloadCsv);
+  document.querySelectorAll('th[data-sort]').forEach((th) => th.addEventListener('click', () => {
+    state.sortDir = state.sortKey === th.dataset.sort ? -state.sortDir : 1;
+    state.sortKey = th.dataset.sort;
+    render();
+  }));
+  load();
+}

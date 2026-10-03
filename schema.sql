@@ -17,7 +17,8 @@ create table loans (
   interest    text,                          -- as stated, e.g. '1% per month'
   duration    text,                          -- e.g. '6 months'
   source      text not null,                 -- citation to the primary source, e.g. 'P.Oxy. 3 506'
-  source_url  text                           -- link to the source, if available
+  source_url  text,                          -- link to the source, if available
+  notes       text                           -- additional comments; shown on the loan's own page only
 );
 
 -- Public access: read-only.

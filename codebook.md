@@ -24,3 +24,4 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 | `duration` | Term of the loan as stated | `6 months`, `until the harvest` |
 | `source` | Citation of the primary source, in standard form (papyri: *Checklist of Editions of Greek, Latin, Demotic and Coptic Papyri, Ostraca and Tablets*). Required | `P.Oxy. 3 506` |
 | `source_url` | Link to the source online, if available | `https://papyri.info/...` |
+| `notes` | Any additional comments. Shown only on the loan's own page, not in the main table | |
