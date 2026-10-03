@@ -1,0 +1,31 @@
+# Pushing a tag like v0.1 exports every table from the database as CSV
+# and publishes it as a GitHub Release. Requires repo secret SUPABASE_DB_URL.
+name: Release data
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export database
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          name="ald-${GITHUB_REF_NAME}"
+          mkdir "$name"
+          for t in documents editions parties loans loan_parties; do
+            psql "$DB_URL" -v ON_ERROR_STOP=1 -c "\copy (select * from $t order by 1) to '$name/$t.csv' with (format csv, header true)"
+          done
+          cp schema.sql codebook.md LICENSE "$name"/
+          zip -r "$name.zip" "$name"
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" "ald-${GITHUB_REF_NAME}.zip" --title "ALD $GITHUB_REF_NAME" --generate-notes
