@@ -20,7 +20,8 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
 - Fields: id, year, place, amount, currency, borrower, lender, interest, duration,
   source (required citation), source_url, notes (+ automatic year_sort). Nothing else is collected for now (Hansen's
   decision: no data on documents, people, places yet).
-- IDs ALD-00001… assigned by sequence; never changed or reused.
+- IDs: sequential 6-digit `ALD-000001`… (Hansen's decision; no meaning encoded), assigned
+  by sequence, format enforced; never changed or reused.
 - Verified data only; empty = unknown; record what the source says.
 - `year`: text 'AD 57' / '100 BC' (format enforced; no year 0). `year_sort` integer is
   generated automatically from it for sorting/filtering. No date field (year is enough).
@@ -31,15 +32,18 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
   `docs/app.js` to match.
 
 ## Current phase
-Schema v0.2 (single `loans` table, 12 fields incl. `notes`) applied. Test loan ALD-00001
-inserted, checked and deleted by Hansen; year switched to BC/AD text → begin data entry.
+Schema v0.2 (single `loans` table, 12 fields incl. `notes`) applied; years BC/AD; IDs
+6-digit, sequence reset (first real loan = ALD-000001) → begin data entry with research
+agents (blocked until papyri.info, aquila.zaw.uni-heidelberg.de, www.trismegistos.org,
+quod.lib.umich.edu are allowed in the environment's network settings).
 
 ## Status
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
 - Live DB = `schema.sql` v0.2 (migration `ald_schema_v0_2`; earlier migrations belong to
   removed schemas). Verified: 1 table, RLS on, SELECT-only "public read" policy; anon has
   SELECT only (no insert/update/delete grants). Table empty.
-  Migrations since v0.2: `add_loans_notes`, `year_as_bc_ad_text`; `date` dropped by Hansen.
+  Migrations since v0.2: `add_loans_notes`, `year_as_bc_ad_text`, `six_digit_ids`; `date`
+  dropped by Hansen.
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's auto-enable-RLS event trigger,
   not part of schema.sql). Left as is.
 - Destructive SQL via the Supabase MCP needs approval that cannot appear in cloud

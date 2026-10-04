@@ -7,8 +7,10 @@
 create sequence loan_seq;
 
 create table loans (
-  id          text primary key default 'ALD-' || lpad(nextval('loan_seq')::text, 5, '0'),
-  year        text check (year ~ '^(AD [1-9][0-9]*|[1-9][0-9]* BC)$'),  -- e.g. 'AD 57', '100 BC'
+  id          text primary key default 'ALD-' || lpad(nextval('loan_seq')::text, 6, '0')
+              constraint loans_id_format check (id ~ '^ALD-[0-9]{6}$'),  -- sequential: ALD-000001, ...
+  year        text constraint loans_year_format
+              check (year ~ '^(AD [1-9][0-9]*|[1-9][0-9]* BC)$'),  -- e.g. 'AD 57', '100 BC'
   place       text,                          -- where the loan was made
   amount      numeric,
   currency    text,                          -- currency or unit, e.g. 'drachma', 'artaba (wheat)'

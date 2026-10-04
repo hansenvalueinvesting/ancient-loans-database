@@ -5,7 +5,7 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 ## General rules
 
 - **One row per loan.** A loan is one credit transaction. If a source records several loans, each gets its own row.
-- **Stable IDs.** IDs (`ALD-00001`, `ALD-00002`, ...) are assigned automatically, never changed and never reused. Gaps in the sequence are normal.
+- **Stable IDs.** IDs are sequential (`ALD-000001`, `ALD-000002`, ...), assigned automatically in order of entry, never changed and never reused. The number carries no meaning; year, place and source are in their own fields. Gaps in the sequence are normal.
 - **Empty means unknown.** Leave a field empty when the source does not say. Never guess.
 - **Record what the source says.** Do not convert or interpret values beyond what each field asks for.
 
@@ -13,7 +13,7 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 
 | Field | Definition | Example |
 |---|---|---|
-| `id` | Assigned automatically | `ALD-00001` |
+| `id` | Assigned automatically | `ALD-000001` |
 | `year` | Year of the loan, written `AD n` or `n BC` (AD before the number, BC after). There is no year 0: 1 BC is followed by AD 1. If the source gives a range, use the earliest year | `AD 57`, `100 BC` |
 | `place` | Where the loan was made | `Oxyrhynchus` |
 | `amount` | Amount lent, as a number | `100` |
