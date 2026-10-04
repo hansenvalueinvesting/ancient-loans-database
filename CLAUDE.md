@@ -87,9 +87,12 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   not part of schema.sql). Left as is.
 - Destructive SQL via the Supabase MCP needs approval that cannot appear in cloud
   sessions; Hansen runs such statements in the SQL Editor. Inserts work via MCP.
-- Site (`docs/`): main table of all fields except notes (ID links to `loan.html?id=…`,
+- Site (`docs/`): main page = catalogue tree under "All loans" (Time period by century |
+  Location: region > place | Currency, side by side, counts from view `loan_catalogue`,
+  migration `loan_catalogue_view`); a node (URL hash, e.g. #period=2) loads only its loans,
+  without notes. Table of all fields except notes (ID links to `loan.html?id=…`,
   source linked when source_url set), filters (search, place, currency, year range),
-  sorting, CSV download (includes notes). Year filter hints show the earliest and latest year
+  sorting, CSV download (fetches notes for the selection). Year filter hints show the earliest and latest year
   on record. `loan.html` shows every field incl. notes.
   Browser-tested with mock data.
 - `release.yml` exports `loans` as CSV. `SUPABASE_DB_URL` secret untested until first tag.

@@ -10,7 +10,23 @@
   <h1>Ancient Loans Database</h1>
   <p>Open working record of documented loans in the ancient world. Created and maintained by Hansen Zheng.</p>
 
-  <p>
+  <p><small>This is a work in progress and may contain mistakes. IDs are assigned in sequential order as loans are added to the database.</small></p>
+
+  <h2>Catalogue</h2>
+  <ul>
+    <li><a href="#all">All loans</a> <span id="cat-total"></span>
+      <table cellpadding="8">
+        <tr valign="top">
+          <td><b>Time period</b><ul id="cat-period"></ul></td>
+          <td><b>Location</b><ul id="cat-location"></ul></td>
+          <td><b>Currency</b><ul id="cat-currency"></ul></td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+
+  <h2 id="sel-title" hidden></h2>
+  <p id="controls" hidden>
     <label>Search <input id="f-search" type="search" placeholder="ID, year, place, person, source"></label>
     <label>Place <select id="f-place"><option value="">All</option></select></label>
     <label>Currency <select id="f-currency"><option value="">All</option></select></label>
@@ -19,11 +35,10 @@
     <button id="btn-reset" type="button">Reset</button>
     <button id="btn-csv" type="button">Download CSV</button>
   </p>
-  <p><small>This is a work in progress and may contain mistakes. IDs are assigned in sequential order as loans are added to the database.</small></p>
 
-  <p id="status" role="status">Loading…</p>
+  <p id="status" role="status">Loading catalogue…</p>
 
-  <table id="loans" border="1" cellpadding="4" cellspacing="0">
+  <table id="loans" hidden border="1" cellpadding="4" cellspacing="0">
     <thead>
       <tr>
         <th data-sort="id">ID</th>

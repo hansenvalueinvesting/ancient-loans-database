@@ -1,4 +1,4 @@
-// The Ancient Loans Database — frontend for index.html (all loans) and loan.html (one loan).
+// The Ancient Loans Database — frontend for index.html (catalogue and loan lists) and loan.html (one loan).
 // Reads the loans table from Supabase's REST API.
 
 const { SUPABASE_URL, SUPABASE_KEY } = window.ALD_CONFIG;
@@ -9,25 +9,85 @@ const state = { loans: [], sortKey: 'id', sortDir: 1, shown: [] };
 
 // ---------- data ----------
 
-async function fetchLoans() {
+// Table columns; notes (the long original text) is loaded only on a loan's own page and for CSV.
+const LIST_COLS = 'id,year,year_sort,place,amount,currency,borrower,lender,interest,duration,source,source_url';
+
+async function get(path) {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, { headers: { apikey: SUPABASE_KEY } });
+  if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
+  return res.json();
+}
+
+// All rows of `table` matching the PostgREST filter string `where`, in pages.
+async function fetchAll(table, cols, where) {
   const rows = [];
   for (let offset = 0; ; offset += PAGE) {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/loans?select=*&order=id&limit=${PAGE}&offset=${offset}`, {
-      headers: { apikey: SUPABASE_KEY },
-    });
-    if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
-    const page = await res.json();
+    const page = await get(`${table}?select=${cols}${where}&order=id&limit=${PAGE}&offset=${offset}`);
     rows.push(...page);
     if (page.length < PAGE) return rows;
   }
 }
 
-async function fetchLoan(id) {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/loans?select=*&id=eq.${encodeURIComponent(id)}`, {
-    headers: { apikey: SUPABASE_KEY },
-  });
-  if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
-  return (await res.json())[0];
+const fetchLoan = async (id) => (await get(`loans?select=*&id=eq.${encodeURIComponent(id)}`))[0];
+
+// ---------- catalogue ----------
+
+const ordinal = (n) => n + (n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
+const centuryLabel = (c) => (c < 0 ? `${ordinal(-c)} century BC` : `${ordinal(c)} century AD`);
+const q = encodeURIComponent;
+const pgq = (v) => `"${String(v).replace(/"/g, '\\"')}"`; // value quoted for PostgREST or=()
+
+// Selection (from the URL hash) → title and PostgREST filter.
+function selection() {
+  const h = location.hash.slice(1);
+  if (!h) return null;
+  if (h === 'all') return { title: 'All loans', where: '' };
+  const [key, raw = ''] = h.split('=');
+  const v = decodeURIComponent(raw);
+  if (key === 'period') {
+    if (!v) return { title: 'Year unknown', where: '&year_sort=is.null' };
+    const c = Number(v);
+    const [lo, hi] = c > 0 ? [(c - 1) * 100 + 1, c * 100] : [c * 100, (c + 1) * 100 - 1];
+    return { title: centuryLabel(c), where: `&year_sort=gte.${lo}&year_sort=lte.${hi}` };
+  }
+  if (key === 'region') return { title: v, where: `&or=(place.eq.${q(pgq(v))},place.like.${q(pgq(`*, ${v}`))})` };
+  if (key === 'place') return v ? { title: v, where: `&place=eq.${q(v)}` } : { title: 'Place unknown', where: '&place=is.null' };
+  if (key === 'currency') return v ? { title: v, where: `&currency=eq.${q(v)}` } : { title: 'Currency unknown', where: '&currency=is.null' };
+  return null;
+}
+
+const node = (href, label, n) => `<a href="#${href}">${esc(label)}</a> (${n.toLocaleString()})`;
+
+// Sum counts of catalogue rows by key(row).
+function tally(rows, key) {
+  const m = new Map();
+  rows.forEach((r) => { const k = key(r); m.set(k, (m.get(k) || 0) + r.loans); });
+  return m;
+}
+
+async function loadCatalogue() {
+  const rows = await get('loan_catalogue?select=*');
+  $('cat-total').textContent = `(${rows.reduce((t, r) => t + r.loans, 0).toLocaleString()})`;
+
+  // Time period: centuries BC (earliest first), then AD, then unknown.
+  const periods = [...tally(rows, (r) => r.century)].sort(([a], [b]) => (a ?? Infinity) - (b ?? Infinity));
+  $('cat-period').innerHTML = periods.map(([c, n]) => `<li>${c == null
+    ? node('period=', 'Year unknown', n) : node(`period=${c}`, centuryLabel(c), n)}</li>`).join('');
+
+  // Location: region, then its places.
+  const regions = [...tally(rows, (r) => r.region)].sort(([a], [b]) => (a == null) - (b == null) || String(a).localeCompare(b));
+  $('cat-location').innerHTML = regions.map(([reg, n]) => {
+    if (reg == null) return `<li>${node('place=', 'Place unknown', n)}</li>`;
+    const places = [...tally(rows.filter((r) => r.region === reg), (r) => r.place)].sort(([a], [b]) => a.localeCompare(b));
+    const short = (pl) => (pl === reg ? pl : pl.slice(0, -(reg.length + 2)));
+    return `<li><details><summary>${node(`region=${q(reg)}`, reg, n)}</summary><ul>${
+      places.map(([pl, m]) => `<li>${node(`place=${q(pl)}`, short(pl), m)}</li>`).join('')}</ul></details></li>`;
+  }).join('');
+
+  // Currency.
+  const currencies = [...tally(rows, (r) => r.currency)].sort(([a], [b]) => (a == null) - (b == null) || String(a).localeCompare(b));
+  $('cat-currency').innerHTML = currencies.map(([cur, n]) => `<li>${cur == null
+    ? node('currency=', 'Currency unknown', n) : node(`currency=${q(cur)}`, cur, n)}</li>`).join('');
 }
 
 async function load() {
@@ -35,14 +95,31 @@ async function load() {
     return setStatus('Database not configured: set SUPABASE_URL and SUPABASE_KEY in docs/config.js.');
   }
   try {
-    state.loans = await fetchLoans();
-    fillSelect('f-place', state.loans.map((l) => l.place));
-    fillSelect('f-currency', state.loans.map((l) => l.currency));
-    setYearPlaceholders();
-    render();
+    await loadCatalogue();
+    await showSelection();
   } catch (err) {
     setStatus(`Could not load data. ${err.message}`);
   }
+}
+
+// Load and show the loans of the selected catalogue node.
+async function showSelection() {
+  const sel = selection();
+  ['sel-title', 'controls', 'loans'].forEach((id) => { $(id).hidden = !sel; });
+  if (!sel) { state.loans = []; return setStatus('Choose a category above.'); }
+  $('sel-title').textContent = sel.title;
+  setStatus('Loading…');
+  try {
+    state.loans = await fetchAll('loans', LIST_COLS, sel.where);
+  } catch (err) {
+    return setStatus(`Could not load data. ${err.message}`);
+  }
+  ['f-place', 'f-currency'].forEach((id) => { $(id).length = 1; });
+  ['f-search', 'f-from', 'f-to'].forEach((id) => { $(id).value = ''; });
+  fillSelect('f-place', state.loans.map((l) => l.place));
+  fillSelect('f-currency', state.loans.map((l) => l.currency));
+  setYearPlaceholders();
+  render();
 }
 
 // ---------- formatting ----------
@@ -154,10 +231,14 @@ function render() {
 
 // ---------- CSV export ----------
 
-function downloadCsv() {
+async function downloadCsv() {
+  setStatus('Preparing CSV…');
+  const notes = new Map((await fetchAll('loans', 'id,notes', selection().where)).map((r) => [r.id, r.notes]));
+  const rows = state.shown.map((l) => ({ ...l, notes: notes.get(l.id) }));
+  render();
   const cols = ['id', 'year', 'year_sort', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url', 'notes'];
   const cell = (v) => (v == null ? '' : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
-  const csv = [cols.join(','), ...state.shown.map((l) => cols.map((c) => cell(l[c])).join(','))].join('\n');
+  const csv = [cols.join(','), ...rows.map((l) => cols.map((c) => cell(l[c])).join(','))].join('\n');
   const a = Object.assign(document.createElement('a'), {
     href: URL.createObjectURL(new Blob([csv], { type: 'text/csv' })),
     download: 'ald-loans.csv',
@@ -209,7 +290,8 @@ if ($('loan')) {
     FILTERS.forEach((id) => { $(id).value = ''; });
     render();
   });
-  $('btn-csv').addEventListener('click', downloadCsv);
+  $('btn-csv').addEventListener('click', () => downloadCsv().catch((err) => setStatus(`Could not prepare CSV. ${err.message}`)));
+  window.addEventListener('hashchange', showSelection);
   document.querySelectorAll('th[data-sort]').forEach((th) => th.addEventListener('click', () => {
     state.sortDir = state.sortKey === th.dataset.sort ? -state.sortDir : 1;
     state.sortKey = th.dataset.sort;

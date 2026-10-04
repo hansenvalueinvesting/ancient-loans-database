@@ -28,6 +28,18 @@ create table loans (
                      when year ~ '^[0-9]' then -substring(year from '^([0-9]+)')::int end) stored
 );
 
+-- Catalogue counts for the site's catalogue tree (century, region, place, currency).
+-- century: 1 = AD 1-100, -1 = 100-1 BC; region: the part of place after the last comma.
+create view loan_catalogue with (security_invoker = true) as
+select case when year_sort > 0 then (year_sort + 99) / 100
+            when year_sort < 0 then -((-year_sort + 99) / 100) end as century,
+       coalesce(substring(place from ', ([^,]+)$'), place) as region,
+       place,
+       currency,
+       count(*) as loans
+from loans
+group by 1, 2, 3, 4;
+
 -- Public access: read-only.
 alter table loans enable row level security;
 create policy "public read" on loans for select using (true);
@@ -35,6 +47,6 @@ do $$
 begin
   if exists (select 1 from pg_roles where rolname = 'anon') then
     revoke all on loans from anon, authenticated;
-    grant select on loans to anon, authenticated;
+    grant select on loans, loan_catalogue to anon, authenticated;
   end if;
 end $$;
