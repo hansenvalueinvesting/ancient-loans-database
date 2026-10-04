@@ -32,28 +32,37 @@ scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
   `docs/app.js` to match.
 
 ## Current phase
-Data entry, pilot: Greek loan contracts from P.Oxy. (Roman Egypt). Texts are read from
-papyri.info's open data (github.com/papyri/idp.data, CC BY 3.0: DDbDP texts, HGV metadata),
-because papyri.info's site has a bot check. Network: papyri.info + aquila reachable;
-trismegistos.org has an incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
-- Inserted: 20 rows. ALD-000001 = P.Oxy. 3 507, ALD-000002 = P.Oxy. 44 3198 (both AD 146,
-  Hansen's decision; date issues in notes); ALD-000003–000020 = 18 rows from 17 P.Oxy. texts
-  (AD 21–258, chronological; P.Oxy. 3 506 has 2 loans). P.Oxy. 14 1710 left out (only names
-  survive).
-- Inclusion rule (Hansen, in codebook.md): loan contracts + money loans mentioned in petitions
-  or letters (unless already recorded from the contract). Nothing else for now.
-- Formats used in the pilot (not yet in codebook.md, awaiting Hansen): interest as formula +
-  % ; duration as stated (length + exact date in notes); names "X son of Y", edition spelling;
-  empty interest when none stated; one row per loan mentioned.
-- Place rule (Hansen, in codebook.md): place + region/province at the time, e.g. "Oxyrhynchus,
-  Egypt", "Sinary (Oxyrhynchite nome), Egypt". All 20 rows updated. Also open: crediting idp.data
-  (CC BY) on the site.
+Data entry. First full pass done: Roman Egypt (30 BC - AD 284), all HGV records tagged
+"Darlehen" or titled "loan" (932 documents). Texts read from papyri.info's open data
+(github.com/papyri/idp.data, CC BY 3.0: DDbDP texts, HGV metadata), because papyri.info's
+site has a bot check. Network: papyri.info + aquila reachable; trismegistos.org has an
+incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
+- DB: 448 rows (ALD-000001-000448). 932 documents reviewed: 439 included, 493 excluded
+  (receipts/cancellations 168, state seed grain 109, too fragmentary 57, no text 39,
+  deposits 37, registers/abstracts 30, court 10, duplicates 6, other 37). Review log
+  (CSV, per document) was sent to Hansen; it is not in the repo (repo holds no data).
+- Year = HGV date (earliest year of range/first alternative) unless the loan itself is dated
+  differently (e.g. HGV dates a later receipt); century-only dates noted in notes.
+- Inclusion rule (Hansen, in codebook.md): loan contracts (money or kind) + money loans
+  mentioned in petitions or letters (unless already recorded from the contract).
+- Place rule (Hansen, in codebook.md): place + region/province at the time ("Oxyrhynchus,
+  Egypt", "Sinary (Oxyrhynchite nome), Egypt"; Dura = "Parthian Empire" before c. 165).
+- Formats used (not yet in codebook.md, awaiting Hansen): interest as formula + % ("1 drachma
+  per mina per month (1% per month)"; "interest-bearing (rate not stated)"); duration as
+  stated; names "X son of Y", Latinized; empty interest when none stated; source in Checklist
+  form (journal first editions "ZPE 222 (2022) 179").
+- Coordinator decisions awaiting Hansen: prochreia (advance loans in leases) included; a
+  separate loan mentioned inside a contract gets its own row only if called a loan with its
+  amount; money+grain in one contract = one money row (grain in notes); letters asking for /
+  instructing a loan not shown to be made excluded; crossed-out contracts included.
+- Next candidates: loans HGV does not tag (search Greek texts for loan wording); Ptolemaic
+  and later periods. Also open: crediting idp.data (CC BY) on the site.
 
 ## Status
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
 - Live DB = `schema.sql` v0.2 (migration `ald_schema_v0_2`; earlier migrations belong to
   removed schemas). Verified: 1 table, RLS on, SELECT-only "public read" policy; anon has
-  SELECT only (no insert/update/delete grants). 20 rows (see Current phase).
+  SELECT only (no insert/update/delete grants). 448 rows (see Current phase).
   Migrations since v0.2: `add_loans_notes`, `year_as_bc_ad_text`, `six_digit_ids`; `date`
   dropped by Hansen.
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's auto-enable-RLS event trigger,
