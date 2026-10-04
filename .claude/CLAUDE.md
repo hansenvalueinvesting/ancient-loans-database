@@ -78,14 +78,14 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
 ## Next (handoff)
 - Hansen: finish Roman Egypt, exactly as the first pass was done: find DDbDP texts dated
   30 BC - AD 284 containing loan vocabulary (δαν-, χρῆσις/χρήσ-, ἔντοκ-, προχρ-) that are not in
-  `reviewed.md`, then run them through the same steps (`pipeline/README.md`, `pipeline/EXTRACT.md`).
-  Working scripts stay in the scratch folder; do not add new tools to the repo.
+  `reviewed.md` (sparse clone of idp.data), then the same steps: extraction against codebook.md,
+  second pass for missed loans, original text + translation, audit of every field against the
+  Greek, insert, verify. Working scripts stay in the scratch folder; do not add tools to the repo.
 - Do not change inclusion rules, the codebook or formats without Hansen's explicit instruction in
   the conversation; raise questions with Hansen instead of deciding them.
 - Record every reviewed document in `reviewed.md` (Hansen's tracking file; keep its Coverage table
   current).
-- Repo now also holds `reviewed.md` (review ledger) and `pipeline/` (instructions + scripts, no data)
-  at Hansen's request.
+- Repo also holds `reviewed.md` (review ledger) at Hansen's request.
 - `.claude/settings.json` allows `mcp__Supabase__execute_sql` without prompts (new sessions).
 - Database reads can also use the public REST API (curl with the key in docs/config.js).
 
