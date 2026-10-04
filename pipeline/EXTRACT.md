@@ -16,8 +16,7 @@ with reason "no text available".
 Every loan transaction a document attests, none missed and none repeated:
 1. Loan contracts, in money or in kind: δάνειον / ἐδάνεισεν / δεδάνεισμαι; acknowledgements of a
    loan received (cheirographa, synchoreseis, homologiai); antichretic and paramone loans; loans
-   secured by mortgage; copies and drafts of loan contracts; advance loans in leases (προχρεία)
-   called a loan; crossed-out contracts (say so in your reason). Applications to register a loan
+   secured by mortgage; copies and drafts of loan contracts; crossed-out contracts (say so in your reason). Applications to register a loan
    count only if they contain the loan's terms.
 2. Loans mentioned in petitions or letters (in money or in kind), unless already recorded from
    their own contract.
@@ -26,8 +25,13 @@ Every loan transaction a document attests, none missed and none repeated:
    text does not call a loan (rents, prices, "other sums owed").
 4. A contract lending money AND goods (or two commodities) = one row per part. Not the "price of"
    goods sold on credit, not interest or penalties.
+5. Loans recorded in accounts, lists, registers and abstracts of contracts (Hansen): every entry
+   the text calls a loan (δάνειον, χρῆσις, ἐδάνεισεν, εἰς χρῆσιν...) gets its own row.
+NOT LOANS (Hansen): advances (προχρεία, πρόχρησις, προέχρησα) unless the text also calls them a
+loan (δάνειον, χρῆσις, ἐδάνεισεν), in leases, labour or apprenticeship contracts or elsewhere;
+a creditor word alone (δανειστής "lender", "our creditor") without a loan the text describes.
 EXCLUDE (give the reason): repayment receipts and cancellations (unless they name an earlier loan,
-see 3: then a row for that loan); accounts, lists, registers and abstracts of contracts; court
+see 3: then a row for that loan); accounts, lists and registers without a loan (see 5); court
 proceedings; deposits (parathēkē) unless called a loan; sales with deferred delivery unless called
 a loan; state seed-grain grants; requests for a loan not shown to be made; anything too
 fragmentary to show a loan.
