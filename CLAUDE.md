@@ -50,7 +50,12 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   translations), headed "Original Text:" and "English translation:". Done for all 448 rows.
 - Duration dates (Hansen; academic convention): original dating, then BC/AD in brackets:
   "Phamenoth 30, year 10 of Antoninus (= 26 March AD 147)". Day -> Julian date; Egyptian month
-  -> Roman month pair ("(= May/June AD 146)"); regnal year -> "(= AD 146/147)". Done (294 rows). Honorific months: Sebastos (Eusebeios) = Thoth, Soter = Phaophi (Gaius/Claudius),
+  -> Roman month pair ("(= May/June AD 146)"); regnal year -> "(= AD 146/147)". Done (294 rows).
+  Emperor always named, unambiguously (Hansen): Caesar -> Augustus, Antoninus -> Antoninus Pius,
+  Antoninus and Verus -> Marcus Aurelius and Lucius Verus; HGV alternative dates -> all reigns
+  given ("of Claudius or Nero (= AD 51/52 or AD 65/66)"); unknown -> "(emperor not named)".
+  Open: ALD-000001 (P.Oxy. 3 507) dating formula names Marcus Aurelius (= AD 169) but HGV and
+  the year field say AD 146 (Antoninus Pius). Honorific months: Sebastos (Eusebeios) = Thoth, Soter = Phaophi (Gaius/Claudius),
   Domitianos = Phaophi, Neos Sebastos = Hathyr, Neroneios = Choiak, Hadrianos = Choiak,
   Theogeneios = Tybi, Germanikeios = Pachon, Soterios = Payni (Domitian), Drousieus = Epeiph,
   Kaisareios = Mesore. Undatable year (uncertain document date) stays relative ("of the current year"). Pipeline: scratchpad tbuild.py/TRANSLATE.md/tcheck.py.
