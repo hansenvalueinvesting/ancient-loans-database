@@ -2,118 +2,145 @@
 Created and maintained by Hansen Zheng.
 
 ## Purpose
-A systematic, standardized record of every documented loan in the ancient world, for
-scholars to search, compare, and analyze ancient credit. Starts with Roman Egypt
-(papyri); the schema extends to all regions.
+A systematic, standardized record of every documented loan in the ancient world, for scholars
+to search, compare and analyze ancient credit. Started with Roman Egypt (papyri); the method
+below applies to any source as the database expands.
+
+## Working rules (read first)
+- Hansen decides. Do only what Hansen asks in the conversation. Start simple; build step by step.
+- Never change inclusion rules, `codebook.md`, field formats or the schema on your own. If a
+  source raises a question the rules do not answer, ask Hansen; do not decide it and do not label
+  your own choices as Hansen's.
+- Do not add tools, scripts or data files to the repo. Working files live in the session's
+  scratch folder (they are lost when the session ends, so record results in the database and
+  `reviewed.md`).
+- Work on `main`; commit directly as you go. Be concise and organized.
+- Only one session should write to the database at a time.
+- Keep this file current: when Hansen decides something, record it here (and in `codebook.md` if
+  it concerns a field).
 
 ## Architecture
-- **Supabase (Postgres)**: the only home of the data. The repo contains no data.
-- **Repo** = publication only: `docs/` (GitHub Pages site), `schema.sql`, `codebook.md`.
-- Site is plain HTML + one JS file (`app.js` serves `index.html` and `loan.html`). No CSS,
-  no styling (Hansen's preference).
-- **Releases**: pushing tag `vX.Y` runs `.github/workflows/release.yml`, which exports all
-  `loans` to CSV from the database (secret `SUPABASE_DB_URL`).
-- Site reads Supabase's REST API with the public key in `docs/config.js`; RLS is read-only.
+- **Supabase (Postgres)**: the only home of the data. Project ref `zzlrdlkdngxkkcrtolpx`.
+  Use the Supabase connector (MCP `execute_sql`) for inserts/updates; `.claude/settings.json`
+  allows it without prompts. Reads can also use the public REST API (curl with the publishable key
+  in `docs/config.js`). Destructive SQL (drop, alter type) cannot be approved in cloud sessions:
+  give Hansen a short SQL file to run in the Supabase SQL Editor.
+- **Repo** = publication only: `docs/` (GitHub Pages site), `schema.sql`, `codebook.md`,
+  `reviewed.md` (review ledger). No data.
+- Site: plain HTML + `docs/app.js`, no CSS (Hansen's preference). Main page = catalogue tree under
+  "All loans": Time period (centuries) | Location (region > place) | Currency (Coinage / Commodity,
+  list `COINAGE` in app.js), side by side; counts from view `loan_catalogue`; a node (URL hash,
+  e.g. `#period=2`) loads only its loans, without notes. `loan.html` shows one loan incl. notes.
+- Releases: pushing tag `vX.Y` runs `.github/workflows/release.yml` (CSV export, secret
+  `SUPABASE_DB_URL`, untested until first tag).
+- Schema: `schema.sql` (v0.3) is a one-time setup script; never re-run it. Schema changes =
+  `ALTER` statements (run by Hansen) + update `schema.sql`, `codebook.md`, `docs/app.js`.
 
 ## Data standards
-- Follow `codebook.md` exactly. One table, `loans`; one row per loan.
-- Fields: id, year, place, amount, currency, borrower, lender, interest, duration,
-  source (required citation), source_url, notes (+ automatic year_sort). Nothing else is collected for now (Hansen's
-  decision: no data on documents, people, places yet).
-- IDs: sequential 6-digit `ALD-000001`… (Hansen's decision; no meaning encoded), assigned
-  by sequence, format enforced; never changed or reused.
-- Verified data only; empty = unknown; record what the source says.
-- `year`: text 'AD 57' / '100 BC' (format enforced; no year 0). `year_sort` integer is
-  generated automatically from it for sorting/filtering. No date field (year is enough).
-- Everything displayed must be true and academically accepted; check conventions before adding.
-- Plain SQL only (portable); no Supabase-only features in the schema.
-- `schema.sql` is a one-time setup script. Never re-run it against the live database.
-  Apply schema changes as `ALTER` statements and update `schema.sql`, `codebook.md`, and
-  `docs/app.js` to match.
+- Follow `codebook.md` exactly. One table `loans`, one row per loan. Fields: id, year, place,
+  amount, currency, borrower, lender, interest, duration, source, source_url, notes (+ generated
+  year_sort). Nothing else is collected (Hansen).
+- Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
-## Current phase
-Data entry. First full pass done: Roman Egypt (30 BC - AD 284), all HGV records tagged
-"Darlehen" or titled "loan" (932 documents). Texts read from papyri.info's open data
-(github.com/papyri/idp.data, CC BY 3.0: DDbDP texts, HGV metadata), because papyri.info's
-site has a bot check. Network: papyri.info + aquila reachable; trismegistos.org has an
-incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
-- DB: 479 rows (ALD-000001-000479; 449-479 = commodity parts and earlier loans found by the every-transaction review). 932 documents reviewed: 439 included, 493 excluded
-  (receipts/cancellations 168, state seed grain 109, too fragmentary 57, no text 39,
-  deposits 37, registers/abstracts 30, court 10, duplicates 6, other 37). Review log
-  (CSV, per document) was sent to Hansen; it is not in the repo (repo holds no data).
-- Year (Hansen): uncertain years as ranges ("AD 101-200"; alternatives -> span), from HGV,
-  unless the loan itself is dated differently. Live (173 ranges).
-- Inclusion rule (Hansen, in codebook.md): every loan transaction, none missed, none repeated:
-  contracts (money or kind), loans in petitions/letters, earlier loans a document calls loans.
-  Money + goods in one contract = one row per part.
-- Notes (Hansen): only original text + English translation (Leiden as in DDbDP; AI-drafted
-  translations), headed "Original Text:" and "English translation:". Done for all 448 rows.
-- Duration dates (Hansen; academic convention): original dating, then BC/AD in brackets:
-  "Phamenoth 30, year 10 of Antoninus (= 26 March AD 147)". Day -> Julian date; Egyptian month
-  -> Roman month pair ("(= May/June AD 146)"); regnal year -> "(= AD 146/147)". Done (294 rows).
-  Emperor always named, unambiguously (Hansen): Caesar -> Augustus, Antoninus -> Antoninus Pius,
-  Antoninus and Verus -> Marcus Aurelius and Lucius Verus; HGV alternative dates -> all reigns
-  given ("of Claudius or Nero (= AD 51/52 or AD 65/66)"); unknown -> "(emperor not named)".
-  Open: ALD-000001 (P.Oxy. 3 507) dating formula names Marcus Aurelius (= AD 169) but HGV and
-  the year field say AD 146 (Antoninus Pius). Honorific months: Sebastos (Eusebeios) = Thoth, Soter = Phaophi (Gaius/Claudius),
+### What counts (Hansen)
+Every loan transaction a source documents, none missed, none repeated:
+- loan contracts, in money or in kind (incl. acknowledgements, antichretic and paramone loans,
+  mortgage loans, copies and drafts, crossed-out contracts, advance loans called a loan);
+- loans mentioned in petitions or letters;
+- earlier or other loans a document calls loans, incl. loans it annuls or replaces (amount may be
+  lost);
+- a contract lending money and goods (or two goods) = one row per part (not the "price of" goods
+  sold on credit, not interest or penalties).
+Excluded: repayment receipts and cancellations (except an earlier loan they name), accounts,
+registers and abstracts of contracts, court proceedings, deposits not called a loan, sales with
+deferred delivery not called a loan, state seed-grain grants, requests for a loan not shown to be
+made, texts too fragmentary to show a loan. A loan already in the database is never entered again.
+
+### Field formats (as used in all 479 rows)
+- **year**: from the document's date (for papyri: HGV). Certain year `AD 57` / `100 BC`;
+  uncertain = full range of possible years `AD 101-200`, `24-23 BC`, `30 BC-AD 14`
+  (alternative dates -> span from earliest to latest). An earlier loan named in a document gets
+  its own year only if certain, else empty.
+- **place**: where the loan was made, then the region/province at the time: `Oxyrhynchus, Egypt`,
+  `Tebtunis (Arsinoite nome), Egypt`, `Arsinoe, Egypt`, `Arsinoite nome, Egypt`; keep a "(?)"
+  doubt; Dura = `Parthian Empire` before c. AD 165.
+- **amount**: the principal as written; whole number or fraction in lowest terms, never decimals
+  (`100`, `12 1/6`, `2/3`; 1 1/2 1/5 = `1 7/10`). Talents -> drachmas at 6,000; obols at 6 per
+  drachma. Lost, or wholly restored by the editor -> empty.
+- **currency**: singular, lowercase: `drachma`, `denarius`, `talent`, `artaba (wheat)`,
+  `keramion (wine)`.
+- **borrower / lender**: Latinized English names (Dioscorus, Sarapion, Aurelius Theon),
+  `X son of Y` / `X daughter of Y`, `alias Z`; several people separated by `; `. Partly
+  preserved: `[...]eles son of Acusilaus`. Wholly lost: empty. A name restored by the editor
+  counts as given. No titles or occupations.
+- **interest**: formula then percentage: `1 drachma per mina per month (1% per month)`,
+  `3 obols per mina per month (½% per month)`, `one-half (50%)`; `interest-bearing (rate not
+  stated)` (e.g. ἔντοκος without a rate); `interest-bearing (rate lost)`; `interest-free` only if
+  the text says so; empty if none stated. Penalty interest is not the loan's interest.
+- **duration**: the term as the document writes it, each date followed by its BC/AD equivalent:
+  `until Payni, year 16 of Hadrian (= May/June AD 132)`, `until Phamenoth 30, year 20 of
+  Antoninus Pius (= 26 March AD 157)`, `6 months`. Day -> Julian date; Egyptian month -> Roman
+  month pair; regnal year -> `AD 146/147`. Emperor always named unambiguously (Caesar ->
+  Augustus, Antoninus -> Antoninus Pius, Antoninus and Verus -> Marcus Aurelius and Lucius
+  Verus); several possible reigns -> all given; none -> `(emperor not named)`; undatable stays
+  relative (`of the current year`). Honorific months: Sebastos = Thoth, Soter = Phaophi,
   Domitianos = Phaophi, Neos Sebastos = Hathyr, Neroneios = Choiak, Hadrianos = Choiak,
-  Theogeneios = Tybi, Germanikeios = Pachon, Soterios = Payni (Domitian), Drousieus = Epeiph,
-  Kaisareios = Mesore. Undatable year (uncertain document date) stays relative ("of the current year").
-- Amounts (Hansen): fractions, never decimals ("12 1/6"); talents converted at 6,000 dr., obols at 6 per drachma.
-- Audit vs the Greek (Hansen: correct anything that doesn't match): all rows checked; 96 field
-  corrections applied (interest-bearing loans, names, amounts, durations, places). Partial names as "[...]eles son of X".
-- Place rule (Hansen, in codebook.md): place + region/province at the time ("Oxyrhynchus,
-  Egypt", "Sinary (Oxyrhynchite nome), Egypt"; Dura = "Parthian Empire" before c. 165).
-- Formats used (not yet in codebook.md, awaiting Hansen): interest as formula + % ("1 drachma
-  per mina per month (1% per month)"; "interest-bearing (rate not stated)"); duration as
-  stated; names "X son of Y", Latinized; empty interest when none stated; source in Checklist
-  form (journal first editions "ZPE 222 (2022) 179").
-- Coordinator decisions awaiting Hansen: prochreia (advance loans in leases) included; a
-  separate loan mentioned inside a contract gets its own row only if called a loan with its
-  amount; letters asking for /
-  instructing a loan not shown to be made excluded; crossed-out contracts included.
-- Next candidates: loans HGV does not tag (search Greek texts for loan wording); Ptolemaic
-  and later periods. Also open: crediting idp.data (CC BY) on the site.
+  Theogeneios = Tybi, Germanikeios = Pachon, Soterios = Payni, Drousieus = Epeiph,
+  Kaisareios = Mesore. A goods row shares the duration of the money row of the same contract.
+- **source**: standard citation (papyri: Checklist form, arabic volume numbers): `P.Oxy. 3 506`,
+  `BGU 1 101`, `SB 6 9109`, journal first editions `ZPE 222 (2022) 179`.
+- **source_url**: the online edition (papyri: `https://papyri.info/ddbdp/<ddb id>`).
+- **notes**: exactly two sections, nothing else:
+  ```
+  Original Text:
+  <the original text, line by line with line numbers, copied exactly from the edition in its
+  Leiden notation: [ ] restored, ( ) expanded, ⟦ ⟧ deleted, ⟨ ⟩ added, { } surplus, [...] lost>
 
-## Next (handoff)
-- Hansen: finish Roman Egypt, exactly as the first pass was done: find DDbDP texts dated
-  30 BC - AD 284 containing loan vocabulary (δαν-, χρῆσις/χρήσ-, ἔντοκ-, προχρ-) that are not in
-  `reviewed.md` (sparse clone of idp.data), then the same steps: extraction against codebook.md,
-  second pass for missed loans, original text + translation, audit of every field against the
-  Greek, insert, verify. Working scripts stay in the scratch folder; do not add tools to the repo.
-- Do not change inclusion rules, the codebook or formats without Hansen's explicit instruction in
-  the conversation; raise questions with Hansen instead of deciding them.
-- Record every reviewed document in `reviewed.md` (Hansen's tracking file; keep its Coverage table
-  current).
-- Repo also holds `reviewed.md` (review ledger) at Hansen's request.
-- `.claude/settings.json` allows `mcp__Supabase__execute_sql` without prompts (new sessions).
-- Database reads can also use the public REST API (curl with the key in docs/config.js).
+  English translation:
+  <faithful translation of exactly that text; lost text as [...]; uncertain words marked (?)>
+  ```
+  Whole text normally; if a sheet holds several unrelated documents, only the lines of the
+  loan's document. All rows from one document share its note.
+
+## Method (repeatable for any source)
+1. **Source.** Use an open digital corpus with original texts and metadata (Roman Egypt:
+   github.com/papyri/idp.data, CC BY 3.0, DDbDP texts + HGV metadata; papyri.info itself has a
+   bot check). Check reachability first (trismegistos.org: TLS issue; quod.lib.umich.edu:
+   blocked). Add the corpus to the Coverage table in `reviewed.md`.
+2. **Candidates.** Select documents in scope (period, place) by metadata tags (e.g. HGV
+   "Darlehen" or a title with "loan") and by full-text search for loan vocabulary (Greek:
+   δαν-, χρῆσις/χρήσ-, ἔντοκ-, προχρ-; accent-insensitive). Drop every document already in
+   `reviewed.md`.
+3. **Extraction.** Subagents read the original text of each candidate (batches of ~25; render
+   the edition faithfully, never regularize spellings or add numeral values) and return per
+   document: include/exclude, reason, and loan rows in the formats above. Translations are aids
+   only; the original text decides.
+4. **Completeness pass.** A second pass per included document for loans the first pass missed:
+   goods lent alongside money, earlier loans the text calls loans. Never duplicate.
+5. **Notes.** Subagents produce the original text (copied by script from the rendered edition,
+   never retyped) and an English translation. Check by script that every line of the original
+   text appears in the source. Build the note in the format above.
+6. **Audit.** Subagents check every field of every row against the original text and correct
+   real mismatches (names, patronymics, amounts, interest, duration, place). Reject guesses
+   (wholly restored amounts, inferred names or roles). Unclear cases go to Hansen.
+7. **Insert.** Plain SQL `INSERT` via the connector, in large batches. IDs are assigned by the
+   database. Insertion order is not batch order (rows were inserted by date), so key later
+   updates by id or by source_url + a check value, never by assumed order.
+8. **Verify.** After every write: row counts, and md5 of each note against the expected text
+   (text copied through agents can lose or alter characters; private-use characters from the
+   edition are dropped in transfer). Fix mismatches.
+9. **Record.** Add every reviewed document to `reviewed.md` (included with its ALD IDs, or
+   excluded with the reason) and update its Coverage table; update the status below; commit.
 
 ## Status
-- Notes = original text + English translation (Hansen's decision); AI-drafted translations.
-- Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
-- Live DB = `schema.sql` v0.3 (year ranges, amount = text fractions; run by Hansen in the SQL Editor). Base migration `ald_schema_v0_2`; earlier migrations belong to
-  removed schemas). Verified: 1 table, RLS on, SELECT-only "public read" policy; anon has
-  SELECT only (no insert/update/delete grants). 479 rows (see Current phase).
-  Migrations since v0.2: `add_loans_notes`, `year_as_bc_ad_text`, `six_digit_ids`; `date`
-  dropped by Hansen.
-- Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's auto-enable-RLS event trigger,
-  not part of schema.sql). Left as is.
-- Destructive SQL via the Supabase MCP needs approval that cannot appear in cloud
-  sessions; Hansen runs such statements in the SQL Editor. Inserts work via MCP.
-- Site (`docs/`): main page = catalogue tree under "All loans" (Time period by century |
-  Location: region > place | Currency: Coinage (list COINAGE in app.js) / Commodity (all other) > currency, side by side, counts from view `loan_catalogue`,
-  migration `loan_catalogue_view`); a node (URL hash, e.g. #period=2) loads only its loans,
-  without notes. Table of all fields except notes (ID links to `loan.html?id=…`,
-  source linked when source_url set), filters (search, place, currency, year range),
-  sorting, CSV download (fetches notes for the selection). Year filter hints show the earliest and latest year
-  on record. `loan.html` shows every field incl. notes.
-  Browser-tested with mock data.
-- `release.yml` exports `loans` as CSV. `SUPABASE_DB_URL` secret untested until first tag.
-- Supabase connected to Claude as a claude.ai connector (MCP); use it for all data entry.
-- Pending (Hansen): GitHub Pages source must be `main` / `/docs`.
-
-## Working rules
-- Work on `main`; commit directly as you go.
-- Start simple; build step by step with Hansen. Do nothing without explicit instruction.
-- Be concise and organized.
+- DB: 479 rows (ALD-000001 to 000479). Schema v0.3 (year ranges; amount = text fraction).
+  View `loan_catalogue` for the site. RLS on, public SELECT only.
+- Done: Roman Egypt (30 BC - AD 284), HGV records tagged as loans: 932 documents reviewed,
+  439 included, 493 excluded (see `reviewed.md`). Notes, durations, audit (96 corrections) done
+  for all rows.
+- Next (Hansen): finish Roman Egypt: full-text candidates (step 2) not yet in `reviewed.md`,
+  then steps 3-9. Later: Late Antique Egypt (284-641), Ptolemaic Egypt, sources outside Egypt.
+- Open questions for Hansen: ALD-000001 (P.Oxy. 3 507) dating formula names Marcus Aurelius
+  (= AD 169) but HGV and the year field say AD 146; crediting idp.data (CC BY) on the site;
+  GitHub Pages source must be `main` / `/docs`.
+- Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's own trigger, not ours). Left as is.
