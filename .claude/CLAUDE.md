@@ -58,7 +58,7 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   the year field say AD 146 (Antoninus Pius). Honorific months: Sebastos (Eusebeios) = Thoth, Soter = Phaophi (Gaius/Claudius),
   Domitianos = Phaophi, Neos Sebastos = Hathyr, Neroneios = Choiak, Hadrianos = Choiak,
   Theogeneios = Tybi, Germanikeios = Pachon, Soterios = Payni (Domitian), Drousieus = Epeiph,
-  Kaisareios = Mesore. Undatable year (uncertain document date) stays relative ("of the current year"). Pipeline: scratchpad tbuild.py/TRANSLATE.md/tcheck.py.
+  Kaisareios = Mesore. Undatable year (uncertain document date) stays relative ("of the current year").
 - Amounts (Hansen): fractions, never decimals ("12 1/6"); talents converted at 6,000 dr., obols at 6 per drachma.
 - Audit vs the Greek (Hansen: correct anything that doesn't match): all rows checked; 96 field
   corrections applied (interest-bearing loans, names, amounts, durations, places). Partial names as "[...]eles son of X".
