@@ -37,7 +37,7 @@ Data entry. First full pass done: Roman Egypt (30 BC - AD 284), all HGV records 
 (github.com/papyri/idp.data, CC BY 3.0: DDbDP texts, HGV metadata), because papyri.info's
 site has a bot check. Network: papyri.info + aquila reachable; trismegistos.org has an
 incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
-- DB: 448 rows (ALD-000001-000448). 932 documents reviewed: 439 included, 493 excluded
+- DB: 479 rows (ALD-000001-000479; 449-479 = commodity parts and earlier loans found by the every-transaction review). 932 documents reviewed: 439 included, 493 excluded
   (receipts/cancellations 168, state seed grain 109, too fragmentary 57, no text 39,
   deposits 37, registers/abstracts 30, court 10, duplicates 6, other 37). Review log
   (CSV, per document) was sent to Hansen; it is not in the repo (repo holds no data).
@@ -75,7 +75,7 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
 - Live DB = `schema.sql` v0.3 (year ranges, amount = text fractions; run by Hansen in the SQL Editor). Base migration `ald_schema_v0_2`; earlier migrations belong to
   removed schemas). Verified: 1 table, RLS on, SELECT-only "public read" policy; anon has
-  SELECT only (no insert/update/delete grants). 448 rows (see Current phase).
+  SELECT only (no insert/update/delete grants). 479 rows (see Current phase).
   Migrations since v0.2: `add_loans_notes`, `year_as_bc_ad_text`, `six_digit_ids`; `date`
   dropped by Hansen.
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's auto-enable-RLS event trigger,
