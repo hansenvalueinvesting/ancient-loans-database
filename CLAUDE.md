@@ -88,7 +88,7 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
 - Destructive SQL via the Supabase MCP needs approval that cannot appear in cloud
   sessions; Hansen runs such statements in the SQL Editor. Inserts work via MCP.
 - Site (`docs/`): main page = catalogue tree under "All loans" (Time period by century |
-  Location: region > place | Currency, side by side, counts from view `loan_catalogue`,
+  Location: region > place | Currency: Coinage (list COINAGE in app.js) / Commodity (all other) > currency, side by side, counts from view `loan_catalogue`,
   migration `loan_catalogue_view`); a node (URL hash, e.g. #period=2) loads only its loans,
   without notes. Table of all fields except notes (ID links to `loan.html?id=…`,
   source linked when source_url set), filters (search, place, currency, year range),

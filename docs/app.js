@@ -52,9 +52,18 @@ function selection() {
   }
   if (key === 'region') return { title: v, where: `&or=(place.eq.${q(pgq(v))},place.like.${q(pgq(`*, ${v}`))})` };
   if (key === 'place') return v ? { title: v, where: `&place=eq.${q(v)}` } : { title: 'Place unknown', where: '&place=is.null' };
+  if (key === 'kind' && KINDS[v]) {
+    return { title: KINDS[v], where: v === 'coinage' ? `&currency=in.${coinList}` : `&currency=not.in.${coinList}` };
+  }
   if (key === 'currency') return v ? { title: v, where: `&currency=eq.${q(v)}` } : { title: 'Currency unknown', where: '&currency=is.null' };
   return null;
 }
+
+// Currency kinds: coinage (money and units of account) vs commodity (loans in kind).
+// Any recorded currency not listed here is a commodity.
+const COINAGE = ['aureus', 'denarius', 'drachma', 'gold coin', 'mina', 'obol', 'sestertius', 'solidus', 'stater', 'talent', 'tetradrachm'];
+const KINDS = { coinage: 'Coinage', commodity: 'Commodity' };
+const coinList = q(`(${COINAGE.map(pgq).join(',')})`);
 
 const node = (href, label, n) => `<a href="#${href}">${esc(label)}</a> (${n.toLocaleString()})`;
 
@@ -84,10 +93,15 @@ async function loadCatalogue() {
       places.map(([pl, m]) => `<li>${node(`place=${q(pl)}`, short(pl), m)}</li>`).join('')}</ul></details></li>`;
   }).join('');
 
-  // Currency.
-  const currencies = [...tally(rows, (r) => r.currency)].sort(([a], [b]) => (a == null) - (b == null) || String(a).localeCompare(b));
-  $('cat-currency').innerHTML = currencies.map(([cur, n]) => `<li>${cur == null
-    ? node('currency=', 'Currency unknown', n) : node(`currency=${q(cur)}`, cur, n)}</li>`).join('');
+  // Currency: coinage, commodity, unknown.
+  const currencies = [...tally(rows, (r) => r.currency)].sort(([a], [b]) => String(a).localeCompare(b));
+  const kind = (cur) => (COINAGE.includes(cur) ? 'coinage' : 'commodity');
+  $('cat-currency').innerHTML = Object.keys(KINDS).map((k) => {
+    const list = currencies.filter(([cur]) => cur != null && kind(cur) === k);
+    if (!list.length) return '';
+    return `<li><details><summary>${node(`kind=${k}`, KINDS[k], list.reduce((t, [, n]) => t + n, 0))}</summary><ul>${
+      list.map(([cur, n]) => `<li>${node(`currency=${q(cur)}`, cur, n)}</li>`).join('')}</ul></details></li>`;
+  }).join('') + currencies.filter(([cur]) => cur == null).map(([, n]) => `<li>${node('currency=', 'Currency unknown', n)}</li>`).join('');
 }
 
 async function load() {
