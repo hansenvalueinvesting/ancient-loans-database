@@ -38,6 +38,7 @@ async function load() {
     state.loans = await fetchLoans();
     fillSelect('f-place', state.loans.map((l) => l.place));
     fillSelect('f-currency', state.loans.map((l) => l.currency));
+    setYearPlaceholders();
     render();
   } catch (err) {
     setStatus(`Could not load data. ${err.message}`);
@@ -66,6 +67,17 @@ function parseYear(s) {
   const n = Number(m[1] ?? m[4]), era = m[2] ?? m[3];
   if (n === 0) return NaN;
   return era === 'BC' ? -n : n;
+}
+
+// year_sort → '100 BC' / 'AD 57'.
+const fmtYear = (n) => (n < 0 ? `${-n} BC` : `AD ${n}`);
+
+// Year filter hints: earliest and latest year_sort on record.
+function setYearPlaceholders() {
+  const ys = state.loans.map((l) => l.year_sort).filter((y) => y != null);
+  if (!ys.length) return;
+  $('f-from').placeholder = fmtYear(Math.min(...ys));
+  $('f-to').placeholder = fmtYear(Math.max(...ys));
 }
 
 const fmtSource = (l) => (l.source_url
