@@ -17,11 +17,11 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 | `id` | Assigned automatically | `ALD-000001` |
 | `year` | Year of the loan, written `AD n` or `n BC` (AD before the number, BC after). There is no year 0: 1 BC is followed by AD 1. If the year is not certain, give the range of possible years: `AD 101-200`, `24-23 BC`, `30 BC-AD 14` | `AD 57`, `100 BC`, `AD 101-200` |
 | `place` | Where the loan was made, followed by the region or province it belonged to at the time (in its standard English name), so every place can be located and grouped. A village may also name its district in brackets | `Oxyrhynchus, Egypt`, `Sinary (Oxyrhynchite nome), Egypt` |
-| `amount` | Amount lent, as a number | `100` |
+| `amount` | Amount lent (the principal), as written in the source: a whole number, or a fraction in lowest terms (`whole num/den`). Never decimals | `100`, `12 1/6`, `2/3` |
 | `currency` | Currency or unit of `amount`, singular. For loans in kind, add the commodity in brackets | `drachma`, `artaba (wheat)` |
 | `borrower` | Name(s) of the borrower(s); separate several with `;` | `Tryphon` |
 | `lender` | Name(s) of the lender(s); separate several with `;` | `Thaisous` |
-| `interest` | Interest as stated in the source | `1% per month`, `interest-free` |
+| `interest` | Interest as stated: the formula, then the rate as a percentage in brackets. `interest-bearing (rate not stated)` if the source calls the loan interest-bearing without a rate; `interest-bearing (rate lost)` if the rate is in a lost part of the text. Empty if no interest is stated | `1 drachma per mina per month (1% per month)` |
 | `duration` | Term of the loan as stated | `6 months`, `until the harvest` |
 | `source` | Citation of the primary source, in standard form (papyri: *Checklist of Editions of Greek, Latin, Demotic and Coptic Papyri, Ostraca and Tablets*). Required | `P.Oxy. 3 506` |
 | `source_url` | Link to the source online, if available | `https://papyri.info/...` |

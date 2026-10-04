@@ -62,10 +62,10 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   and later periods. Also open: crediting idp.data (CC BY) on the site.
 
 ## Status
-- PENDING (Hansen): run `year_ranges.sql` (scratchpad; migration to schema v0.3 = year ranges, + year updates) in the SQL Editor. schema.sql/codebook.md already describe v0.3. Then insert 31 new rows (newrows.sql: commodity parts + earlier loans named as loans).
+- PENDING (Hansen): run `schema_v03.sql` (scratchpad; year ranges + amount as text fractions) in the SQL Editor. schema.sql/codebook.md/app.js already describe v0.3. Then Claude runs post_corr.sql (year ranges, 94 audit corrections vs the Greek) and post_new.sql (31 new rows) via MCP.
 - Notes = original text + English translation (Hansen's decision); AI-drafted translations.
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
-- Live DB = `schema.sql` v0.2 (migration `ald_schema_v0_2`; earlier migrations belong to
+- Live DB = `schema.sql` v0.2 until schema_v03.sql is run (migration `ald_schema_v0_2`; earlier migrations belong to
   removed schemas). Verified: 1 table, RLS on, SELECT-only "public read" policy; anon has
   SELECT only (no insert/update/delete grants). 448 rows (see Current phase).
   Migrations since v0.2: `add_loans_notes`, `year_as_bc_ad_text`, `six_digit_ids`; `date`

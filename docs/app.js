@@ -48,7 +48,13 @@ async function load() {
 
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-const fmtNum = (n) => (n == null ? '' : Number(n).toLocaleString());
+// Amounts are text: a whole number or a fraction, e.g. '100', '12 1/6', '2/3'.
+function amountValue(s) {
+  const m = String(s).match(/^(?:(\d+)(?: (\d+)\/(\d+))?|(\d+)\/(\d+))$/);
+  if (!m) return NaN;
+  return m[4] ? m[4] / m[5] : Number(m[1]) + (m[2] ? m[2] / m[3] : 0);
+}
+const fmtAmount = (s) => (s == null ? '' : String(s).replace(/^\d+/, (w) => Number(w).toLocaleString()));
 
 // Year filter input → sortable number: '100 BC' → -100, 'AD 57' / '57 AD' / '57' → 57.
 // Returns null for empty input, NaN for input that is not a year.
@@ -103,7 +109,8 @@ function sortRows(rows) {
     const x = a[k], y = b[k];
     if (x == null || x === '') return 1;
     if (y == null || y === '') return -1;
-    return (numeric ? Number(x) - Number(y) : String(x).localeCompare(String(y))) * d;
+    const num = (v) => (k === 'amount' ? amountValue(v) : Number(v));
+    return (numeric ? num(x) - num(y) : String(x).localeCompare(String(y))) * d;
   });
 }
 
@@ -114,7 +121,7 @@ function render() {
       <td><a href="loan.html?id=${encodeURIComponent(l.id)}">${esc(l.id)}</a></td>
       <td>${esc(l.year)}</td>
       <td>${esc(l.place)}</td>
-      <td>${fmtNum(l.amount)}</td>
+      <td>${fmtAmount(l.amount)}</td>
       <td>${esc(l.currency)}</td>
       <td>${esc(l.borrower)}</td>
       <td>${esc(l.lender)}</td>
@@ -163,7 +170,7 @@ async function loadLoan() {
     const fields = [
       ['Year', esc(l.year)],
       ['Place', esc(l.place)],
-      ['Amount', fmtNum(l.amount)],
+      ['Amount', fmtAmount(l.amount)],
       ['Currency', esc(l.currency)],
       ['Borrower', esc(l.borrower)],
       ['Lender', esc(l.lender)],
