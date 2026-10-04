@@ -82,7 +82,8 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   sessions; Hansen runs such statements in the SQL Editor. Inserts work via MCP.
 - Site (`docs/`): main table of all fields except notes (ID links to `loan.html?id=…`,
   source linked when source_url set), filters (search, place, currency, year range),
-  sorting, CSV download (includes notes). `loan.html` shows every field incl. notes.
+  sorting, CSV download (includes notes). Year filter hints show the earliest and latest year
+  on record. `loan.html` shows every field incl. notes.
   Browser-tested with mock data.
 - `release.yml` exports `loans` as CSV. `SUPABASE_DB_URL` secret untested until first tag.
 - Supabase connected to Claude as a claude.ai connector (MCP); use it for all data entry.
