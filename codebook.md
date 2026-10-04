@@ -4,7 +4,7 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 
 ## General rules
 
-- **What counts.** Every loan transaction a source documents, none missed and none repeated: loan contracts (in money or in kind), loans mentioned in petitions or letters, and earlier loans a document refers to as loans (including loans it annuls or replaces). A loan already recorded from another document is not entered again.
+- **What counts.** Every loan transaction a source documents, none missed and none repeated: loan contracts (in money or in kind), loans mentioned in petitions or letters, earlier loans a document refers to as loans (including loans it annuls or replaces), and loans recorded in accounts, registers and abstracts of contracts. Not loans: advances (*prochreia*) the source does not call a loan, and debts known only from the word "lender" (*daneistes*). A loan already recorded from another document is not entered again.
 - **One row per loan.** A loan is one credit transaction. If a source records several loans, each gets its own row. A contract that lends both money and goods (e.g. drachmas and wheat) gets one row per part.
 - **Stable IDs.** IDs are sequential (`ALD-000001`, `ALD-000002`, ...), assigned automatically in order of entry, never changed and never reused. The number carries no meaning; year, place and source are in their own fields. Gaps in the sequence are normal.
 - **Empty means unknown.** Leave a field empty when the source does not say. Never guess.
