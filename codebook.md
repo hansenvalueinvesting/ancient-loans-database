@@ -16,7 +16,7 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 |---|---|---|
 | `id` | Assigned automatically | `ALD-000001` |
 | `year` | Year of the loan, written `AD n` or `n BC` (AD before the number, BC after). There is no year 0: 1 BC is followed by AD 1. If the source gives a range, use the earliest year | `AD 57`, `100 BC` |
-| `place` | Where the loan was made, followed by the modern country or region in which it lies, so every place can be located and grouped. A village may also name its district in brackets | `Oxyrhynchus, Egypt`, `Sinary (Oxyrhynchite nome), Egypt` |
+| `place` | Where the loan was made, followed by the region or province it belonged to at the time (in its standard English name), so every place can be located and grouped. A village may also name its district in brackets | `Oxyrhynchus, Egypt`, `Sinary (Oxyrhynchite nome), Egypt` |
 | `amount` | Amount lent, as a number | `100` |
 | `currency` | Currency or unit of `amount`, singular. For loans in kind, add the commodity in brackets | `drachma`, `artaba (wheat)` |
 | `borrower` | Name(s) of the borrower(s); separate several with `;` | `Tryphon` |
