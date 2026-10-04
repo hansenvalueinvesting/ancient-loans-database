@@ -59,6 +59,8 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   and later periods. Also open: crediting idp.data (CC BY) on the site.
 
 ## Status
+- PENDING (Hansen): run `year_ranges.sql` (scratchpad; migration to schema v0.3 = year ranges, + year updates) in the SQL Editor. schema.sql/codebook.md already describe v0.3. Then insert 31 new rows (newrows.sql: commodity parts + earlier loans named as loans).
+- Notes = original text + English translation (Hansen's decision); AI-drafted translations.
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
 - Live DB = `schema.sql` v0.2 (migration `ald_schema_v0_2`; earlier migrations belong to
   removed schemas). Verified: 1 table, RLS on, SELECT-only "public read" policy; anon has

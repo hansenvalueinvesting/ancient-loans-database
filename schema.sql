@@ -1,5 +1,5 @@
 -- =====================================================================
--- The Ancient Loans Database (ALD) — schema v0.2
+-- The Ancient Loans Database (ALD) — schema v0.3
 -- Created and maintained by Hansen Zheng
 -- Plain PostgreSQL. Field definitions: codebook.md.
 -- =====================================================================
@@ -10,7 +10,8 @@ create table loans (
   id          text primary key default 'ALD-' || lpad(nextval('loan_seq')::text, 6, '0')
               constraint loans_id_format check (id ~ '^ALD-[0-9]{6}$'),  -- sequential: ALD-000001, ...
   year        text constraint loans_year_format
-              check (year ~ '^(AD [1-9][0-9]*|[1-9][0-9]* BC)$'),  -- e.g. 'AD 57', '100 BC'
+              check (year ~ '^(AD [1-9][0-9]*(-[1-9][0-9]*)?|[1-9][0-9]*(-[1-9][0-9]*)? BC|[1-9][0-9]* BC-AD [1-9][0-9]*)$'),
+                                             -- e.g. 'AD 57', '100 BC', 'AD 101-200', '30 BC-AD 14'
   place       text,                          -- where the loan was made
   amount      numeric,
   currency    text,                          -- currency or unit, e.g. 'drachma', 'artaba (wheat)'
@@ -21,9 +22,9 @@ create table loans (
   source      text not null,                 -- citation to the primary source, e.g. 'P.Oxy. 3 506'
   source_url  text,                          -- link to the source, if available
   notes       text,                          -- additional comments; shown on the loan's own page only
-  year_sort   int generated always as (      -- automatic, for sorting: '100 BC' = -100, 'AD 57' = 57
-                case when year ~ '^[1-9][0-9]* BC$' then -split_part(year, ' ', 1)::int
-                     when year ~ '^AD [1-9][0-9]*$' then split_part(year, ' ', 2)::int end) stored
+  year_sort   int generated always as (      -- automatic, for sorting: '100 BC' = -100, 'AD 57' = 57 (range: first year)
+                case when year ~ '^AD ' then substring(year from '^AD ([0-9]+)')::int
+                     when year ~ '^[0-9]' then -substring(year from '^([0-9]+)')::int end) stored
 );
 
 -- Public access: read-only.
