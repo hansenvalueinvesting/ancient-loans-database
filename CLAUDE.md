@@ -42,7 +42,7 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   deposits 37, registers/abstracts 30, court 10, duplicates 6, other 37). Review log
   (CSV, per document) was sent to Hansen; it is not in the repo (repo holds no data).
 - Year (Hansen): uncertain years as ranges ("AD 101-200"; alternatives -> span), from HGV,
-  unless the loan itself is dated differently. Pending migration (see Status).
+  unless the loan itself is dated differently. Live (173 ranges).
 - Inclusion rule (Hansen, in codebook.md): every loan transaction, none missed, none repeated:
   contracts (money or kind), loans in petitions/letters, earlier loans a document calls loans.
   Money + goods in one contract = one row per part.
@@ -54,6 +54,9 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   Domitianos = Phaophi, Neos Sebastos = Hathyr, Neroneios = Choiak, Hadrianos = Choiak,
   Theogeneios = Tybi, Germanikeios = Pachon, Soterios = Payni (Domitian), Drousieus = Epeiph,
   Kaisareios = Mesore. Undatable year (uncertain document date) stays relative ("of the current year"). Pipeline: scratchpad tbuild.py/TRANSLATE.md/tcheck.py.
+- Amounts (Hansen): fractions, never decimals ("12 1/6"); talents converted at 6,000 dr., obols at 6 per drachma.
+- Audit vs the Greek (Hansen: correct anything that doesn't match): all rows checked; 96 field
+  corrections applied (interest-bearing loans, names, amounts, durations, places). Partial names as "[...]eles son of X".
 - Place rule (Hansen, in codebook.md): place + region/province at the time ("Oxyrhynchus,
   Egypt", "Sinary (Oxyrhynchite nome), Egypt"; Dura = "Parthian Empire" before c. 165).
 - Formats used (not yet in codebook.md, awaiting Hansen): interest as formula + % ("1 drachma
@@ -68,10 +71,9 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   and later periods. Also open: crediting idp.data (CC BY) on the site.
 
 ## Status
-- PENDING (Hansen): run `schema_v03.sql` (scratchpad; year ranges + amount as text fractions) in the SQL Editor. schema.sql/codebook.md/app.js already describe v0.3. Then Claude runs post_corr.sql (year ranges, 94 audit corrections vs the Greek) and post_new.sql (31 new rows) via MCP.
 - Notes = original text + English translation (Hansen's decision); AI-drafted translations.
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
-- Live DB = `schema.sql` v0.2 until schema_v03.sql is run (migration `ald_schema_v0_2`; earlier migrations belong to
+- Live DB = `schema.sql` v0.3 (year ranges, amount = text fractions; run by Hansen in the SQL Editor). Base migration `ald_schema_v0_2`; earlier migrations belong to
   removed schemas). Verified: 1 table, RLS on, SELECT-only "public read" policy; anon has
   SELECT only (no insert/update/delete grants). 448 rows (see Current phase).
   Migrations since v0.2: `add_loans_notes`, `year_as_bc_ad_text`, `six_digit_ids`; `date`
