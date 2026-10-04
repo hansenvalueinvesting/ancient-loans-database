@@ -48,9 +48,9 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   Money + goods in one contract = one row per part.
 - Notes (Hansen): only original text + English translation (Leiden as in DDbDP; AI-drafted
   translations), headed "Original Text:" and "English translation:". Done for all 448 rows.
-- Duration dates in BC/AD (Hansen): day -> Julian date ("until 26 March AD 147"); Egyptian
-  month -> Roman month pair ("May/June AD 146"); regnal year -> "AD 146/147". Done for all rows
-  (294 converted). Honorific months: Sebastos (Eusebeios) = Thoth, Soter = Phaophi (Gaius/Claudius),
+- Duration dates (Hansen; academic convention): original dating, then BC/AD in brackets:
+  "Phamenoth 30, year 10 of Antoninus (= 26 March AD 147)". Day -> Julian date; Egyptian month
+  -> Roman month pair ("(= May/June AD 146)"); regnal year -> "(= AD 146/147)". Done (294 rows). Honorific months: Sebastos (Eusebeios) = Thoth, Soter = Phaophi (Gaius/Claudius),
   Domitianos = Phaophi, Neos Sebastos = Hathyr, Neroneios = Choiak, Hadrianos = Choiak,
   Theogeneios = Tybi, Germanikeios = Pachon, Soterios = Payni (Domitian), Drousieus = Epeiph,
   Kaisareios = Mesore. Undatable year (uncertain document date) stays relative ("of the current year"). Pipeline: scratchpad tbuild.py/TRANSLATE.md/tcheck.py.
