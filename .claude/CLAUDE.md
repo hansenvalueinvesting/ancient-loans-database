@@ -75,6 +75,16 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
 - Next candidates: loans HGV does not tag (search Greek texts for loan wording); Ptolemaic
   and later periods. Also open: crediting idp.data (CC BY) on the site.
 
+## Next (handoff)
+- Hansen: finish Roman Egypt. Full-text search of all DDbDP texts dated 30 BC - AD 284 for loan
+  vocabulary (δαν-, χρῆσις/χρήσ-, ἔντοκ-, προχρ-), excluding documents in `reviewed.md`; then the
+  pipeline in `pipeline/README.md`. Record every reviewed document in `reviewed.md` (Hansen's
+  tracking file; keep its Coverage table current).
+- Repo now also holds `reviewed.md` (review ledger) and `pipeline/` (instructions + scripts, no data)
+  at Hansen's request.
+- `.claude/settings.json` allows `mcp__Supabase__execute_sql` without prompts (new sessions).
+- Database reads can also use the public REST API (curl with the key in docs/config.js).
+
 ## Status
 - Notes = original text + English translation (Hansen's decision); AI-drafted translations.
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
