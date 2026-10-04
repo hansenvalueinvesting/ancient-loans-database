@@ -44,8 +44,9 @@ trismegistos.org has an incomplete TLS chain; quod.lib.umich.edu blocked by Clou
   or letters (unless already recorded from the contract). Nothing else for now.
 - Formats used in the pilot (not yet in codebook.md, awaiting Hansen): interest as formula +
   % ; duration as stated (length + exact date in notes); names "X son of Y", edition spelling;
-  empty interest when none stated; one row per loan mentioned; place "Oxyrhynchus, Egypt"
-  (2 rows "Sinary (Oxyrhynchite nome)" unchanged). Also open: crediting idp.data
+  empty interest when none stated; one row per loan mentioned.
+- Place rule (Hansen, in codebook.md): place + modern country/region, e.g. "Oxyrhynchus,
+  Egypt", "Sinary (Oxyrhynchite nome), Egypt". All 20 rows updated. Also open: crediting idp.data
   (CC BY) on the site.
 
 ## Status
