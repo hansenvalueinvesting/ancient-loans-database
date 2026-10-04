@@ -40,6 +40,8 @@ trismegistos.org has an incomplete TLS chain; quod.lib.umich.edu blocked by Clou
   Hansen's decision; date issues in notes); ALD-000003–000020 = 18 rows from 17 P.Oxy. texts
   (AD 21–258, chronological; P.Oxy. 3 506 has 2 loans). P.Oxy. 14 1710 left out (only names
   survive).
+- Inclusion rule (Hansen, in codebook.md): loan contracts + money loans mentioned in petitions
+  or letters (unless already recorded from the contract). Nothing else for now.
 - Formats used in the pilot (not yet in codebook.md, awaiting Hansen): interest as formula +
   % ; duration as stated (length + exact date in notes); names "X son of Y", edition spelling;
   empty interest when none stated; one row per loan mentioned. Also open: crediting idp.data

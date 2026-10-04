@@ -4,6 +4,7 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 
 ## General rules
 
+- **What counts.** Loan contracts (in money or in kind), and loans of money mentioned in petitions or letters, unless the same loan is already recorded from its contract. Nothing else for now.
 - **One row per loan.** A loan is one credit transaction. If a source records several loans, each gets its own row.
 - **Stable IDs.** IDs are sequential (`ALD-000001`, `ALD-000002`, ...), assigned automatically in order of entry, never changed and never reused. The number carries no meaning; year, place and source are in their own fields. Gaps in the sequence are normal.
 - **Empty means unknown.** Leave a field empty when the source does not say. Never guess.
