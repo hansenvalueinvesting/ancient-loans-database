@@ -41,10 +41,13 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   (receipts/cancellations 168, state seed grain 109, too fragmentary 57, no text 39,
   deposits 37, registers/abstracts 30, court 10, duplicates 6, other 37). Review log
   (CSV, per document) was sent to Hansen; it is not in the repo (repo holds no data).
-- Year = HGV date (earliest year of range/first alternative) unless the loan itself is dated
-  differently (e.g. HGV dates a later receipt); century-only dates noted in notes.
-- Inclusion rule (Hansen, in codebook.md): loan contracts (money or kind) + money loans
-  mentioned in petitions or letters (unless already recorded from the contract).
+- Year (Hansen): uncertain years as ranges ("AD 101-200"; alternatives -> span), from HGV,
+  unless the loan itself is dated differently. Pending migration (see Status).
+- Inclusion rule (Hansen, in codebook.md): every loan transaction, none missed, none repeated:
+  contracts (money or kind), loans in petitions/letters, earlier loans a document calls loans.
+  Money + goods in one contract = one row per part.
+- Notes (Hansen): only original text + English translation (Leiden as in DDbDP; AI-drafted
+  translations). Done for all 448 rows. Pipeline: scratchpad tbuild.py/TRANSLATE.md/tcheck.py.
 - Place rule (Hansen, in codebook.md): place + region/province at the time ("Oxyrhynchus,
   Egypt", "Sinary (Oxyrhynchite nome), Egypt"; Dura = "Parthian Empire" before c. 165).
 - Formats used (not yet in codebook.md, awaiting Hansen): interest as formula + % ("1 drachma
@@ -53,7 +56,7 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   form (journal first editions "ZPE 222 (2022) 179").
 - Coordinator decisions awaiting Hansen: prochreia (advance loans in leases) included; a
   separate loan mentioned inside a contract gets its own row only if called a loan with its
-  amount; money+grain in one contract = one money row (grain in notes); letters asking for /
+  amount; letters asking for /
   instructing a loan not shown to be made excluded; crossed-out contracts included.
 - Next candidates: loans HGV does not tag (search Greek texts for loan wording); Ptolemaic
   and later periods. Also open: crediting idp.data (CC BY) on the site.
