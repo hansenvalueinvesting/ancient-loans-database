@@ -47,7 +47,13 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   contracts (money or kind), loans in petitions/letters, earlier loans a document calls loans.
   Money + goods in one contract = one row per part.
 - Notes (Hansen): only original text + English translation (Leiden as in DDbDP; AI-drafted
-  translations). Done for all 448 rows. Pipeline: scratchpad tbuild.py/TRANSLATE.md/tcheck.py.
+  translations), headed "Original Text:" and "English translation:". Done for all 448 rows.
+- Duration dates in BC/AD (Hansen): day -> Julian date ("until 26 March AD 147"); Egyptian
+  month -> Roman month pair ("May/June AD 146"); regnal year -> "AD 146/147". Done for all rows
+  (294 converted). Honorific months: Sebastos (Eusebeios) = Thoth, Soter = Phaophi (Gaius/Claudius),
+  Domitianos = Phaophi, Neos Sebastos = Hathyr, Neroneios = Choiak, Hadrianos = Choiak,
+  Theogeneios = Tybi, Germanikeios = Pachon, Soterios = Payni (Domitian), Drousieus = Epeiph,
+  Kaisareios = Mesore. Undatable year (uncertain document date) stays relative ("of the current year"). Pipeline: scratchpad tbuild.py/TRANSLATE.md/tcheck.py.
 - Place rule (Hansen, in codebook.md): place + region/province at the time ("Oxyrhynchus,
   Egypt", "Sinary (Oxyrhynchite nome), Egypt"; Dura = "Parthian Empire" before c. 165).
 - Formats used (not yet in codebook.md, awaiting Hansen): interest as formula + % ("1 drachma
