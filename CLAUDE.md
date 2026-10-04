@@ -36,19 +36,20 @@ Data entry, pilot: Greek loan contracts from P.Oxy. (Roman Egypt). Texts are rea
 papyri.info's open data (github.com/papyri/idp.data, CC BY 3.0: DDbDP texts, HGV metadata),
 because papyri.info's site has a bot check. Network: papyri.info + aquila reachable;
 trismegistos.org has an incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
-- Inserted: ALD-000001 = P.Oxy. 3 507, ALD-000002 = P.Oxy. 44 3198 (both AD 146, Hansen's
-  decision; date issues recorded in notes).
-- Drafted, awaiting Hansen's approval (not inserted): 18 rows from 17 P.Oxy. texts (AD 21–258);
-  P.Oxy. 14 1710 left out (only names survive).
-- Open format questions for Hansen: interest as formula + % ; duration as stated (length in
-  notes); names "X son of Y"; empty interest when none stated; one row per loan mentioned;
-  crediting idp.data (CC BY) on the site.
+- Inserted: 20 rows. ALD-000001 = P.Oxy. 3 507, ALD-000002 = P.Oxy. 44 3198 (both AD 146,
+  Hansen's decision; date issues in notes); ALD-000003–000020 = 18 rows from 17 P.Oxy. texts
+  (AD 21–258, chronological; P.Oxy. 3 506 has 2 loans). P.Oxy. 14 1710 left out (only names
+  survive).
+- Formats used in the pilot (not yet in codebook.md, awaiting Hansen): interest as formula +
+  % ; duration as stated (length + exact date in notes); names "X son of Y", edition spelling;
+  empty interest when none stated; one row per loan mentioned. Also open: crediting idp.data
+  (CC BY) on the site.
 
 ## Status
 - Supabase project ref `zzlrdlkdngxkkcrtolpx`; URL + publishable key set in `docs/config.js`.
 - Live DB = `schema.sql` v0.2 (migration `ald_schema_v0_2`; earlier migrations belong to
   removed schemas). Verified: 1 table, RLS on, SELECT-only "public read" policy; anon has
-  SELECT only (no insert/update/delete grants). 2 rows (see Current phase).
+  SELECT only (no insert/update/delete grants). 20 rows (see Current phase).
   Migrations since v0.2: `add_loans_notes`, `year_as_bc_ad_text`, `six_digit_ids`; `date`
   dropped by Hansen.
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's auto-enable-RLS event trigger,
