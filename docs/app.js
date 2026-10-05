@@ -60,10 +60,11 @@ function selection() {
 }
 
 // Currency kinds: coinage (money and units of account) vs commodity (loans in kind).
-// A currency is coinage if all its units are listed here (e.g. 'talent; drachma'); any other is a commodity.
+// A currency is coinage if all its units are listed here (e.g. 'talent; drachma'), with or without
+// the metal the source names ('drachma (copper)'); any other is a commodity.
 const COINAGE = ['aureus', 'denarius', 'drachma', 'gold coin', 'mina', 'obol', 'sestertius', 'solidus', 'stater', 'talent', 'tetradrachm'];
 const KINDS = { coinage: 'Coinage', commodity: 'Commodity' };
-const kind = (cur) => (cur.split('; ').every((u) => COINAGE.includes(u)) ? 'coinage' : 'commodity');
+const kind = (cur) => (cur.split('; ').every((u) => COINAGE.includes(u.replace(/ \((copper|silver|gold|bronze)\)$/, ''))) ? 'coinage' : 'commodity');
 let coinList = ''; // PostgREST list of the recorded coinage currencies, set by loadCatalogue
 
 const node = (href, label, n) => `<a href="#${href}">${esc(label)}</a> (${n.toLocaleString()})`;
