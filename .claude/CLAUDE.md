@@ -73,7 +73,9 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   its unit: `2 talents 4800 drachmas`, `53 drachmas 2 obols` (currency `talent; drachma`,
   `drachma; obol`). Lost, or wholly restored by the editor -> empty.
 - **currency**: singular, lowercase: `drachma`, `denarius`, `talent`, `artaba (wheat)`,
-  `keramion (wine)`; several units `talent; drachma`.
+  `keramion (wine)`; several units `talent; drachma`. Record whatever the source says (Hansen,
+  Oct 2026): a metal the source names goes in brackets, `drachma (copper)`, `talent (copper)`,
+  `stater (gold)`.
 - **borrower / lender**: Latinized English names (Dioscorus, Sarapion, Aurelius Theon),
   `X son of Y` / `X daughter of Y`, `alias Z`; several people separated by `; `. Partly
   preserved: `[...]eles son of Acusilaus`. Wholly lost: empty. A name restored by the editor
@@ -92,6 +94,9 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   Domitianos = Phaophi, Neos Sebastos = Hathyr, Neroneios = Choiak, Hadrianos = Choiak,
   Theogeneios = Tybi, Germanikeios = Pachon, Soterios = Payni, Drousieus = Epeiph,
   Kaisareios = Mesore. A goods row shares the duration of the money row of the same contract.
+  Ptolemaic kings and queens in standard form (`year 5 of Ptolemy III Euergetes`). Convert dates
+  as the evidence allows (Hansen: "convert it however makes sense"); anything not properly
+  identifiable stays blank (no equivalent given).
 - **source**: standard citation (papyri: Checklist form, arabic volume numbers): `P.Oxy. 3 506`,
   `BGU 1 101`, `SB 6 9109`, journal first editions `ZPE 222 (2022) 179`.
 - **source_url**: the online edition (papyri: `https://papyri.info/ddbdp/<ddb id>`).
@@ -151,7 +156,11 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 - Done (Oct 2026): Roman Egypt full-text pass: 549 further documents reviewed, 117 included
   (ALD-000480 to 000614, 135 rows), 432 excluded (see `reviewed.md`). Original rules kept;
   creditor-word-only rows and advances outside leases inserted at Hansen's OK.
-- Next (Hansen): Late Antique Egypt (284-641), Ptolemaic Egypt, sources outside Egypt.
+- Next (Hansen, Oct 2026): Ptolemaic Egypt first (332-30 BC; same method: 355 HGV records tagged
+  as loans, then a full-text pass, ~212 candidates), then the Roman world outside Egypt, then
+  Late Antique Egypt. Language does not matter (Hansen): Demotic and other texts are included,
+  with original text and English translation, from the primary source or its documentation.
+  First batch shown to Hansen before inserting.
 - Hansen decisions (Oct 2026): amounts of BGU 4 1132, CPR 1 203, P.Oxy. 12 1473 kept as is;
   "Muziris, India" kept; ALD-000001 dated by HGV/BL (loan AD 146 under Antoninus Pius; l. 41
   titles of Marcus Aurelius are a later addition, BL I 325) -> duration fixed to Antoninus Pius.
