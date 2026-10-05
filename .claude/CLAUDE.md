@@ -69,6 +69,9 @@ Hansen (Oct 2026, loan audit): a row needs a loan shown by the PRESERVED text (l
 the standard "I have from you ... I will repay" acknowledgement outside the editor's brackets);
 advances (πρόχρησις, προχρεία) and debts (ὀφείλω) not called a loan are excluded everywhere,
 superseding the earlier OKs for advances outside leases and the O.Claud. receipts.
+Hansen (Oct 2026): the WORD does not decide. "Whether or not we count it as a loan depends on
+whether the transaction itself is a loan", whether or not the text uses the word for loan
+(e.g. work payments called δάνειον are payments for a service, not loans).
 
 ### Field formats (as used in all 479 rows)
 - **year**: from the document's date (for papyri: HGV). Certain year `AD 57` / `100 BC`;
