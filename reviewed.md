@@ -8,9 +8,9 @@ every new batch of documents.
 
 | Corpus | Scope | Reviewed | Included | Excluded | Status |
 |---|---|---|---|---|---|
-| Roman Egypt, papyri (DDbDP texts, HGV metadata via papyri.info / idp.data) | HGV records dated 30 BC - AD 284 tagged "Darlehen" (loan) or titled as a loan | 932 | 440 | 492 | Done |
-| Roman Egypt, papyri | All other texts dated 30 BC - AD 284 containing loan vocabulary (full-text search: δαν-, χρῆσις, ἔντοκ-, προχρ-) | 549 | 117 | 432 | Done |
-| Ptolemaic Egypt, papyri (DDbDP texts, HGV metadata via idp.data) | HGV records dated 332-30 BC tagged "Darlehen" (loan) or titled as a loan | 361 | 189 | 172 | Done (full-text pass and Demotic texts not started) |
+| Roman Egypt, papyri (DDbDP texts, HGV metadata via papyri.info / idp.data) | HGV records dated 30 BC - AD 284 tagged "Darlehen" (loan) or titled as a loan | 932 | 405 | 527 | Done |
+| Roman Egypt, papyri | All other texts dated 30 BC - AD 284 containing loan vocabulary (full-text search: δαν-, χρῆσις, ἔντοκ-, προχρ-) | 549 | 96 | 453 | Done |
+| Ptolemaic Egypt, papyri (DDbDP texts, HGV metadata via idp.data) | HGV records dated 332-30 BC tagged "Darlehen" (loan) or titled as a loan | 361 | 185 | 176 | Done (full-text pass and Demotic texts not started) |
 | Late Antique Egypt (AD 284-641), outside Egypt | - | 0 | 0 | 0 | Not started |
 
 Excluded documents fall outside the inclusion rule in `codebook.md` (e.g. repayment receipts,
@@ -121,11 +121,11 @@ ALD IDs = rows in the database.
 | BGU 10 1966 | 5002 | 5002 | 246-221 BC | included | loan contract (end only; 'ἔγγυος τοῦ δανείου' preserved) | ALD-000646 |
 | P.Cair. Zen. 3 59504 | 1142 | 1142 | 246-243 BC | included | bank notice of a loan on mortgage of a vineyard at Philadelphia | ALD-000647 |
 | BGU 10 1981 | 2692 | 2692 | 245-244 BC | excluded | possibly the same contract as SB 12 11058 (TM 2931); skipped (Hansen) |  |
-| P.Col. 4 83 | 1796 | 1796 | 245-244 BC | included | petition; mentions a loan of 70 silver dr. by Nicon to Simon and the 115-dr. loan contract that replaced it | ALD-000648, ALD-000649 |
+| P.Col. 4 83 | 1796 | 1796 | 245-244 BC | included | petition; mentions a loan of 70 silver dr. by Nicon to Simon and the 115-dr. loan contract that replaced it; ALD-000649 removed after loan audit (Hansen, Oct 2026: The 115-dr contract is the 70-dr loan of ALD-000648 capitalised with its interest: same debt rewritten; possible double count (Hansen to decide).) | ALD-000648 |
 | P.Cair. Zen. 3 59355 | 998 | 998 | 244 BC | included | statement to arbitrators (court-type document) naming a loan contract not recorded elsewhere | ALD-000622 |
 | P.Ross. Georg. 2 1 + 2 | 2931 | 2931a | 244 BC | excluded | duplicate of HGV 2931b (same contract, TM 2931; this record holds only the prescript, ll. 1-3) |  |
 | P.Strasb. 2 92 | 3919 | 3919 | 244-243 BC | included | lease of rooms with an interest-bearing loan explicitly called δάνειον ἔντοκον (use of the rooms in place of interest) | ALD-000650 |
-| SB 12 11058 | 2931 | 2931b | 244 BC | included | loan contract (interest-free, repayable in yearly instalments) | ALD-000651 |
+| SB 12 11058 | 2931 | 2931b | 244 BC | excluded | removed after loan audit (Hansen, Oct 2026): SB 12 11058 is a second copy/duplicate of the same Parmenion-Philippus 150-dr loan recorded as ALD-000652 (SB 12 11059). |  |
 | SB 12 11059 | 4390 | 4390 | 244 BC | included | loan contract | ALD-000652 |
 | SB 22 15237 | 1850 | 1850 | 244-242 BC | excluded | pawn (hoes pledged for 12 copper drachmas), not called a loan |  |
 | PSI 4 389 | 2073 | 2073 | 243 BC | included | loan contract | ALD-000653 |
@@ -178,7 +178,7 @@ ALD IDs = rows in the database.
 | BGU 10 1970 | 2688 | 2688 | 213-212 BC | excluded | too fragmentary to show a loan: ἐδάνεισεν and ἀποδότω wholly restored; only 'olyra artabas ... this grain in [month]' survives, no parties or amount |  |
 | BGU 14 2396 | 2704 | 2704 | 213-212 BC | included | loan contract | ALD-000688 |
 | P.Frankf. 1 | 2790 | 2790 | 213 BC | excluded | lease of a cleruchic plot with an interest-free advance (πρόδομα) of 60 copper dr.; not called a loan (antichretic lease) |  |
-| BGU 10 1963 | 2685 | 2685 | 212-211 BC | included | loan contract | ALD-000689 |
+| BGU 10 1963 | 2685 | 2685 | 212-211 BC | excluded | removed after loan audit (Hansen, Oct 2026): Loan verb wholly restored; only a per-mina rate and lender's partial name survive (likely a loan, but not shown by loan wording). |  |
 | BGU 10 1965 | 2686 | 2686 | 212-211 BC | included | loan contract (fragment) | ALD-000690 |
 | BGU 6 1280 | 4551 | 4551 | 210 BC | excluded | antichretic lease of a dwelling (μίσθωσις) securing 70 dr.; not called a loan in the preserved text |  |
 | P.Petr. 2 47 | 2903 | 2903 | 210-209 BC | excluded | settlement/quittance between Donomazis and Histiaeus (330 dr.); no loan shown |  |
@@ -206,7 +206,7 @@ ALD IDs = rows in the database.
 | SB 30 17369 | 385 | 385 | 200-101 BC | excluded | too fragmentary to show a loan (only a repayment clause for wheat; loan wording wholly restored) |  |
 | SPP 1 1 - 2 I | 79440 | 79440 | 200-101 BC | excluded | petition about money and the price of wine owed to Platon; no loan shown |  |
 | SB 24 16295 | 8810 | 8810 | 199 BC | included | petition; names money and wheat given by Theambesis to Heliodorus at interest | ALD-000700, ALD-000701 |
-| BGU 10 1967 | 5003 | 5003 | 193-192 BC | included | loan acknowledgement (money); lender, interest and term lost | ALD-000704 |
+| BGU 10 1967 | 5003 | 5003 | 193-192 BC | excluded | removed after loan audit (Hansen, Oct 2026): Only 'acknowledges that he has from ... 6000 dr.' survives; no loan word or repayment clause, so a loan is not shown. |  |
 | JJP 42 (2012) 36 no. 1 | 43252 | 43252 | 193 BC | excluded | contract for transport work with an advance (προδοῦναι) of 1 talent; not called a loan (owner rule 4) |  |
 | P.Köln 14 562 | 697570 | 697570 | 192-176 BC | excluded | summons over the price of wine; no loan |  |
 | P.Lond. 2 223 (S. 3) | 78456 | 78456 | 190-189 BC | excluded | account/land list; no loan |  |
@@ -258,7 +258,7 @@ ALD IDs = rows in the database.
 | P.Yale 4 141 | 873596 | 873596 | 137 BC | included | petition; mentions loan of 10 1/2 art. wheat by contract | ALD-000737 |
 | P.Yale 4 144 | 873599 | 873599 | 137 BC | excluded | too fragmentary to show a loan (no loan word preserved) |  |
 | P.Yale 4 147 | 873587 | 873587 | 137 BC | included | petition; mentions loan of wheat by Straton to Perses (six-witness contract) | ALD-000740 |
-| P.Amh. 2 44 | 2651 | 2651 | 136 BC | included | loan of wheat (inner and outer copy, one loan) | ALD-000741 |
+| P.Amh. 2 44 | 2651 | 2651 | 136 BC | excluded | removed after loan audit (Hansen, Oct 2026): Loan wording is essentially the editor's restoration; the surviving delivery/penalty clause would also fit a sale with deferred delivery. |  |
 | P.Grenf. 2 17 | 60 | 60 | 136 BC | excluded | pawn (iron cone held in pledge), not called a loan |  |
 | PSI 13 1311 | 2934 | 2934 | 136 BC | included | loan contract (inner and outer copy, one loan); dowry balance recast as a loan | ALD-000742 |
 | SB 26 16637 | 662 | 662 | 136-97 BC | included | loan of wheat (fragment) | ALD-000743 |
@@ -392,7 +392,7 @@ ALD IDs = rows in the database.
 | BGU 16 2665 | 23389 | 23389 | 28-27 BC | excluded | private letter; χρῆσις = use, no loan |  |
 | P.Ryl. 4 602 | 13021 | 13021 | 25 BC | included | loan contract | ALD-000022 |
 | BGU 4 1161 | 18611 | 18611 | 24-23 BC | included | loan contract | ALD-000023 |
-| BGU 4 1118 | 18560 | 18560 | 22 BC | included | garden lease with interest-free advance (προχρῆσις) of 2,500 drachmas received by the lessees | ALD-000482 |
+| BGU 4 1118 | 18560 | 18560 | 22 BC | excluded | removed after loan audit (Hansen, Oct 2026): Interest-free advance (πρόχρησις) to the lessees inside a garden lease; not called a loan. |  |
 | BASP 53 (2016) 95 | 703270 | 703270 | 20-19 BC | included | loan contract | ALD-000025 |
 | P.Lips. 2 127 | 44411 | 44411 | 20 BC | included | loan contract | ALD-000024 |
 | P.Lips. 2 128 | 44409 | 44409 | 19 BC | included | loan contract | ALD-000026 |
@@ -426,11 +426,11 @@ ALD IDs = rows in the database.
 | BGU 4 1164 | 18614 | 18614 | 13-12 BC | excluded | receipt for repayment |  |
 | BGU 4 1166 | 18616 | 18616 | 13 BC | included | loan contract (synchoresis) | ALD-000040 |
 | BGU 4 1167 | 18619 | 18619 | 13-12 BC | included | loan contract with mortgage (synchoresis), 120 dr. interest-free | ALD-000489 |
-| ZPE 199 (2016) 150 | 18497 | 18497 | 13 BC | included | loan contract | ALD-000032, ALD-000454 |
+| ZPE 199 (2016) 150 | 18497 | 18497 | 13 BC | included | loan contract | ALD-000032, ALD-000454, ALD-000837 |
 | BGU 4 1167 | 18617 | 18617 | 12 BC | excluded | receipt for repayment |  |
 | BGU 4 1167 | 18618 | 18618 | 12 BC | excluded | receipt for repayment |  |
 | SB 20 14375 | 23723 | 23723 | 12 BC | included | loan contract (synchoresis) | ALD-000042 |
-| BGU 4 1136 | 18580 | 18580 | 11-10 BC | included | loan from an eranos (cheirograph) | ALD-000043 |
+| BGU 4 1136 | 18580 | 18580 | 11-10 BC | excluded | removed after loan audit (Hansen, Oct 2026): Loan wording (ἀνειλόμεθα ... ἔρανον, ἀποδώσομεν) wholly restored; preserved text shows only 60 dr. paid in 5-dr. instalments to a president of eranoi (likely an eranos loan, but not shown). |  |
 | BGU 4 1152 | 18601 | 18601 | 11-10 BC | excluded | receipt for repayment |  |
 | BGU 4 1157 | 18607 | 18607 | 11-10 BC | included | hire-sale of a boat reciting an earlier interest-bearing loan of 1,032 dr. (called δάνειον), repaid and annulled here | ALD-000491 |
 | BGU 4 1168 | 18620 | 18620 | 11-10 BC | excluded | receipt for repayment |  |
@@ -470,7 +470,7 @@ ALD IDs = rows in the database.
 | O.Bodl. 2 2544 | 73131 | 73131 | AD 1-400 | excluded | too fragmentary (mentions a lender, no loan shown) |  |
 | P.Amst. 1 40 | 24938 | 24938 | AD 1-100 | excluded | dowry/settlement document; mentions unspecified paternal loans (plural, no parties or amounts) she paid off; no distinct loan transaction |  |
 | P.Bas. 2 12 | 827775 | 827775 | AD 1-100 | excluded | too fragmentary |  |
-| P.Bingen 66 | 44506 | 44506 | AD 1-200 | included | declaration (prosapographe) of land serving as security for a loan, with loan terms | ALD-000056 |
+| P.Bingen 66 | 44506 | 44506 | AD 1-200 | excluded | removed after loan audit (Hansen, Oct 2026): Fragment of a (pros)apographe concerning catoecic land; κεφαλαίου, τόκου and all loan wording are restored, no loan shown in the preserved text. |  |
 | P.Dub. 7 | 25917 | 25917 | AD 1-200 | excluded | abstract of contracts |  |
 | P.Fouad 1 33 | 25717 | 25717 | AD 1-100 | included | donatio mortis causa mentioning a loan owed by Peto[...] (dáneion), half of which is disposed of | ALD-000495 |
 | P.Freib. 4 56 | 24901 | 24901 | AD 1-200 | excluded | private letter asking to advance wages; not a loan |  |
@@ -490,7 +490,7 @@ ALD IDs = rows in the database.
 | P.Wash. Univ. 2 78 | 25298 | 25298 | AD 1-50 | excluded | register of contracts |  |
 | PSI 6 687 | 25446 | 25446 | AD 1-200 | excluded | register of contracts |  |
 | PSI Com 12 3 | 700715 | 700715 | AD 1-100 | excluded | too fragmentary: petition mentions a debt under an Egyptian loan contract, but the text breaks off before showing whether it was a loan of money |  |
-| SB 12 11021 | 25066 | 25066 | AD 1-200 | included | letter: Theon to collect from Euagrius the money of an advance loan (prochresis); amount unclear | ALD-000498 |
+| SB 12 11021 | 25066 | 25066 | AD 1-200 | excluded | removed after loan audit (Hansen, Oct 2026): Letter asking to collect an advance (πρόχρησις); not called a loan. |  |
 | SB 16 13041 | 25058 | 25058 | AD 1-200 | excluded | too fragmentary: the loan terms and the word 'loan' survive only in restorations (antichretic loan with right of habitation per the edition) |  |
 | SB 26 16567 | 97128 | 97128 | AD 1-200 | included | loan contract (homologia) | ALD-000057 |
 | SB 28 17097 | 383682 | 383682 | AD 1-125 | excluded | letter asking a friend to advance fodder; request for a loan not shown to be made |  |
@@ -610,7 +610,7 @@ ALD IDs = rows in the database.
 | PSI 8 911 | 13811 | 13811 | AD 56 | excluded | duplicate copy of P.Mich. 5 335 (same loan, recorded under HGV 12144) |  |
 | P.Hamb. 1 1 | 21035 | 21035 | AD 57 | excluded | receipt for repayment (bank diagraphe) |  |
 | P.Oxy. 2 269 | 20540 | 20540 | AD 57 | included | loan contract (pilot) | ALD-000007 |
-| P.Strasb. 7 663 | 16504 | 16504 | AD 57-58 | included | loan acknowledgement (cheirographon) | ALD-000100 |
+| P.Strasb. 7 663 | 16504 | 16504 | AD 57-58 | excluded | removed after loan audit (Hansen, Oct 2026): No loan word or 'ἔχω παρὰ σοῦ' survives; only 'ὁμολ[ογῶ ...] ... ἀποδώσω' in a text tied to a lease (μίσθωσις) and receipt, so it may be rent/debt; not shown to be a loan. |  |
 | ZPE 213 (2020) 192 | 832445 | 832445 | AD 57 | excluded | letter; chreseis = 'need', no loan |  |
 | JJP 40 (2010) 268 | 244111 | 244111 | AD 58 | included | paramone loan contract (crossed out) | ALD-000102 |
 | SB 10 10249 | 16687 | 16687 | AD 58-59 | included | loan contract | ALD-000101 |
@@ -654,7 +654,7 @@ ALD IDs = rows in the database.
 | BGU 11 2121 | 9622 | 9622 | AD 81-96 | excluded | receipt for repayment |  |
 | P.Lond. 2 283 | 11668 | 11668 | AD 81 | excluded | no text available (DDbDP has a single word) |  |
 | P.Oxy. 12 1471 | 21872 | 21872 | AD 81 | included | loan contract (pilot) | ALD-000009 |
-| P.Oxy. 49 3466 | 15628 | 15628 | AD 81-96 | included | loan in a petition: Demetria to hold the gold until recovery of the loan (daneion) of 3,600 drachmas owed by Phanias | ALD-000511 |
+| P.Oxy. 49 3466 | 15628 | 15628 | AD 81-96 | excluded | removed after loan audit (Hansen, Oct 2026): The loan word is wholly the editor's restoration (only '-ίου' survives); otherwise a dispute in which Demetria claims 3,600 dr. from Phanias. |  |
 | SB 8 9765 | 22900 | 22900 | AD 81 | excluded | receipt for repayment |  |
 | P.Flor. 1 82 | 23583 | 23583 | AD 82-83 | included | loan in kind (cheirographon) | ALD-000114 |
 | P.Oxy. 2 286 | 20557 | 20557 | AD 82 | included | earlier loan in a petition: Philumene lent 2,000 drachmas with interest to the petitioner and her mother Thaesis by contract of Pharmouthi, year 9 of Vespasian | ALD-000510 |
@@ -667,8 +667,8 @@ ALD IDs = rows in the database.
 | P.Flor. 1 61 | 23571 | 23571 | AD 85 | excluded | court proceedings (loan of wheat mentioned in a hearing before the prefect) |  |
 | P.Oxy. 66 4532 | 78604 | 78604 | AD 85 | included | extract of a loan contract from the record office (full terms) | ALD-000117 |
 | P.Athen. 28 | 10133 | 10133 | AD 86 | excluded | deposit (parathēkē), not called a loan |  |
-| P.Flor. 1 86 | 23585 | 23585 | AD 86 | included | petition (application to the archidikastes) concerning unpaid money loans | ALD-000120, ALD-000121, ALD-000122, ALD-000123, ALD-000124 |
-| P.Oxy. 75 5052 | 128893 | 128893 | AD 86-87 | included | acknowledgement of a money debt from a loan, with undertaking to repay | ALD-000118 |
+| P.Flor. 1 86 | 23585 | 23585 | AD 86 | included | petition (application to the archidikastes) concerning unpaid money loans; ALD-000124 removed after loan audit (Hansen, Oct 2026: The 413 dr. are a sum owed (ὀφειλομένων) by bank transfer, not called a loan (only the συγγραφαί are δάνεια).) | ALD-000120, ALD-000121, ALD-000122, ALD-000123 |
+| P.Oxy. 75 5052 | 128893 | 128893 | AD 86-87 | excluded | removed after loan audit (Hansen, Oct 2026): The 80 dr. are a debt (ὀφείλω, by cheirograph and bank transfer) never called a loan; the document itself is an undertaking to repay the heir. |  |
 | P.Oxy. Hels. 31 | 15813 | 15813 | AD 86 | included | copy of a loan contract on mortgage | ALD-000119 |
 | PSI 12 1235 | 17404 | 17404 | AD 86-89 | excluded | extract from bank records: repayment and cancellation of a loan |  |
 | P.Dura 18 | 17216 | 17216 | AD 87 | excluded | deed of gift (loan mentioned only in passing; Parthian Dura) |  |
@@ -679,7 +679,7 @@ ALD IDs = rows in the database.
 | SB 16 12758 | 14661 | 14661 | AD 88 | excluded | sale of land |  |
 | SB 20 14287 | 23707 | 23707 | AD 88-89 | excluded | state seed-grain loan (order to deliver seed) |  |
 | BGU 13 2330 | 9721 | 9721 | AD 89 | included | loan of money (with advance payment for wheat) | ALD-000130 |
-| P.Alex. 8 | 10073 | 10073 | AD 89 | included | paramone loan | ALD-000126 |
+| P.Alex. 8 | 10073 | 10073 | AD 89 | excluded | removed after loan audit (Hansen, Oct 2026): No loan word or repayment clause survives; 'ἀντὶ τῶν τόκων' is restored, and the borrower also receives monthly pay, so it may be an advance on a service (paramone) contract rather than a loan. |  |
 | P.Amh. 2 68 | 21673 | 21673 | AD 89-92 | excluded | official correspondence on purchase of state land; no loan |  |
 | P.Hamb. 1 30 | 11378 | 11378 | AD 89 | included | antichretic loan (habitation in lieu of interest) | ALD-000127 |
 | P.Mich. 9 566 r | 12058 | 12058 | AD 89 | included | loan of money with restraint on alienation of property | ALD-000128 |
@@ -708,7 +708,7 @@ ALD IDs = rows in the database.
 | P.Mich. 21 847 | 383469 | 383469 | AD 96-97 | excluded | receipt for repayment |  |
 | P.Mich. 9 571 | 12063 | 12063a | AD 96 | excluded | deposit (paratheke), not called a loan |  |
 | P.Mich. 9 571 | 12063 | 12063b | AD 96-98 | excluded | receipt / withdrawal from a deposit (paratheke), not called a loan |  |
-| P.Strasb. 9 826 | 13245 | 13245 | AD 96-98 | included | loan of money secured on land (very fragmentary) | ALD-000140 |
+| P.Strasb. 9 826 | 13245 | 13245 | AD 96-98 | excluded | removed after loan audit (Hansen, Oct 2026): All loan wording (ὁμολογεῖ, ἔχειν, χρῆσιν ἔντοκον, ἀπόδοσιν) is the editor's restoration; preserved text shows only a name, 'κεφαλαίου' and security clauses. |  |
 | P.Lond. 2 143 | 11628 | 11628 | AD 97 | excluded | receipt for repayment (acknowledgement of receipt of remaining 160 of 200 drachmas owed, with quitclaim) |  |
 | P.Oxy. 2 274 | 20545 | 20545 | AD 97 | excluded | register of property (mentions three loan contracts securing a mortgage, without terms) |  |
 | BASP 57 (2020) 27 no. 2 | 25611 | 25611 | AD 98 | included | loan of money | ALD-000152 |
@@ -734,7 +734,7 @@ ALD IDs = rows in the database.
 | P.Tebt. Pad. 1 20 | 412074 | 412074 | AD 98-117 | included | loan of money (copy from registry) | ALD-000153 |
 | P.Tebt. Wall 1 | 13644 | 13644 | AD 98-138 | included | loan of money | ALD-000147 |
 | PUG 2 62 | 15534 | 15534 | AD 98 | included | loan of money on mortgage | ALD-000148 |
-| SB 10 10274 | 16751 | 16751 | AD 98 | included | advance loan (prochreia) in a land lease | ALD-000149 |
+| SB 10 10274 | 16751 | 16751 | AD 98 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (προχρεία) given within a land lease, repayable at the vintage; not called a loan (lease advance). |  |
 | SB 18 13234 | 8681 | 8681 | AD 98-99 | included | loan of money | ALD-000156 |
 | P.Brem. 68 | 19654 | 19654a | AD 99 | included | loan contract on mortgage (with bank diagraphe of the same loan) | ALD-000159 |
 | P.Brem. 68 | 19654 | 19654b | AD 99 | excluded | bank diagraphe for the same loan on the same papyrus (P.Brem. 68); recorded under HGV 19654a |  |
@@ -743,7 +743,7 @@ ALD IDs = rows in the database.
 | P.Oxy. 46 3274 | 15740 | 15740 | AD 99-117 | excluded | too fragmentary: petition on paying a brother's debts to creditors, particulars lost |  |
 | P.Princ. 2 32 | 17358 | 17358 | AD 99-100 | included | loan of money and wheat | ALD-000158, ALD-000473 |
 | P.Ryl. 2 173 | 12955 | 12955 | AD 99 | included | loan of money | ALD-000157 |
-| P.Fouad 1 49 | 11192 | 11192 | AD 100 | included | loan contract of money and barley (crossed out) | ALD-000516, ALD-000517 |
+| P.Fouad 1 49 | 11192 | 11192 | AD 100 | included | loan contract of money and barley (crossed out); ALD-000517 removed after loan audit (Hansen, Oct 2026: The barley clause is too damaged to show a separate loan of barley (the context of ll. 12-13 is lost).) | ALD-000516 |
 | P.Strasb. 3 151 | 13173 | 13173 | AD 100 | excluded | sale of a house |  |
 | AnalPap 28 (2016) 31 no. 1 | 704663 | 704663 | AD 101-200 | excluded | account/register of payments (entries 'for use' within an account) |  |
 | BGU 1 185 | 28232 | 28232 | AD 101-200 | excluded | list of house owners |  |
@@ -768,7 +768,7 @@ ALD IDs = rows in the database.
 | P.Aberd. 20 | 28276 | 28276 | AD 101-200 | excluded | official undertaking (transport), no loan |  |
 | P.Aberd. 69 | 28299 | 28299 | AD 101-200 | excluded | letter too fragmentary to show a loan (isolated χρῆσις) |  |
 | P.Diog. 17 | 26616 | 26616 | AD 101-300 | included | loan in a petition: homologia of chresis of Julia Apollonarion, secured by mortgage, claimed by the former high priest | ALD-000518 |
-| P.Dura 21 | 27074 | 27074 | AD 101-150 | included | antichretic loan (services in lieu of interest) | ALD-000167 |
+| P.Dura 21 | 27074 | 27074 | AD 101-150 | excluded | removed after loan audit (Hansen, Oct 2026): All loan wording (and 'ἀργύριον') is restored; preserved text shows only repayment, services (χρεῖαι) and a hypothec, not a loan or its terms. |  |
 | P.Erl. 60 | 28576 | 28576 | AD 101-200 | excluded | too fragmentary (mortgage of part of a house; loan not shown in surviving text) |  |
 | P.Erl. 62 | 28578 | 28578 | AD 101-200 | included | loan contract with mortgage (fragment) | ALD-000175 |
 | P.Flor. 3 316 | 27868 | 27868 | AD 101-200 | included | loan contract (money) | ALD-000172 |
@@ -792,12 +792,12 @@ ALD IDs = rows in the database.
 | P.Mil. Vogl. 3 146 | 28846 | 28846 | AD 101-200 | excluded | receipt for repayment |  |
 | P.Münch. 3 68 | 28887 | 28887 | AD 101-200 | included | settlement fragment refers to the loan owed by [...] to Didymus | ALD-000519 |
 | P.Münch. 3 85 | 28889 | 28889 | AD 101-150 | included | cession: Diogenes' debt to the lender (δανιστής) Kalletis to be paid from the ceded property | ALD-000520 |
-| P.NYU 2 29 | 26671 | 26671 | AD 101-125 | included | loan contract with mortgage | ALD-000163 |
+| P.NYU 2 29 | 26671 | 26671 | AD 101-125 | excluded | removed after loan audit (Hansen, Oct 2026): No loan word, amount or party survives; only an interest-per-mina formula, a repayment date and a security clause (κεφαλαίου restored). Borderline: likely a loan, but not shown. |  |
 | P.Oslo 3 133 | 28912 | 28912 | AD 101-200 | excluded | sale of a crop with advance payment, not called a loan |  |
 | P.Oxy. 3 510 | 20641 | 20641 | AD 101 | excluded | receipt for repayment and release of mortgage |  |
 | P.Oxy. 3 526 | 28366 | 28366 | AD 101-150 | excluded | no loan (private letter with a saying about interest) |  |
 | P.Oxy. 31 2583 | 26936 | 26936 | AD 101-200 | excluded | division of inherited property; advance (prochresis) for common farming not called a loan |  |
-| P.Oxy. 50 3589 | 26536 | 26536 | AD 101-200 | included | loan (prochresis) of money within a land lease | ALD-000161 |
+| P.Oxy. 50 3589 | 26536 | 26536 | AD 101-200 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (πρόχρησις) given by a lessor to his lessee inside a land lease, not a separate loan. |  |
 | P.Oxy. 58 3917 | 27301 | 27301 | AD 101-125 | excluded | no loan mentioned (letter about a court hearing concerning a mortgage) |  |
 | P.Oxy. 8 1125 | 28982 | 28982 | AD 101-200 | included | loan (prochresis) in a land lease | ALD-000179 |
 | P.Palau Rib. 9 | 29460 | 29460 | AD 101-200 | excluded | receipt for repayment |  |
@@ -809,14 +809,14 @@ ALD IDs = rows in the database.
 | P.Ryl. 2 336 | 27931 | 27931 | AD 101-200 | excluded | abstracts of loans (register); no text available |  |
 | P.Select 22 | 26922 | 26922 | AD 101-200 | excluded | contract of a secretary with tax collectors; prochresis = advance of payments, not a loan |  |
 | P.Sijp. 49 | 110214 | 110214 | AD 101-200 | excluded | receipt for repayment (with cancellation of the bank cheirographon) |  |
-| P.Strasb. 1 56 | 27754 | 27754 | AD 101-300 | included | report in a property dispute: house mortgaged for an advance loan (prochreia) of 1500 drachmas | ALD-000521 |
+| P.Strasb. 1 56 | 27754 | 27754 | AD 101-300 | excluded | removed after loan audit (Hansen, Oct 2026): Pledge and 'advance' (προχρεία) noted in an archive report; not called a loan. |  |
 | P.Strasb. 4 231 | 26979 | 26979 | AD 101-150 | included | loan of wheat with interest (homologia) | ALD-000166 |
 | P.Strasb. 5 344 | 27778 | 27778 | AD 101-150 | included | loan contract | ALD-000170 |
 | P.Strasb. 5 374 | 27785 | 27785 | AD 101-200 | included | loan of money and wheat (cheirographon) | ALD-000171, ALD-000457 |
 | P.Strasb. 8 746 | 26835 | 26835 | AD 101-200 | included | loan contract on security (fragmentary) | ALD-000164 |
 | P.Strasb. 9 811 | 26520 | 26520 | AD 101-150 | excluded | sale of real estate (fragment) |  |
 | P.Strasb. 9 854 | 26525 | 26525 | AD 101-300 | excluded | agricultural account |  |
-| P.Tebt. 2 435 | 28429 | 28429 | AD 101-225 | included | money loan in a petition | ALD-000174 |
+| P.Tebt. 2 435 | 28429 | 28429 | AD 101-225 | excluded | removed after loan audit (Hansen, Oct 2026): Petition: the loan verb is wholly restored; preserved text shows only a sum of 600 dr. and a debt (χ[ρέος, partly restored). |  |
 | P.Tebt. Wall 10 | 26611 | 26611 | AD 101-125 | excluded | sale of real estate |  |
 | P.Vars. 38 | 27539 | 27539 | AD 101-300 | excluded | no text available |  |
 | P.Wisc. 1 1 | 26917 | 26917 | AD 101-125 | excluded | court proceedings |  |
@@ -853,7 +853,7 @@ ALD IDs = rows in the database.
 | P.Oxy. 22 2342 | 22214 | 22214 | AD 102 | excluded | petition about a deceased partner's estate and wine trade debts; no transaction called a loan |  |
 | P.Oxy. 3 508 | 20640 | 20640 | AD 102 | included | contract of surety for two earlier mortgage loans (daneia) by Heraclas; one row per loan | ALD-000515, ALD-000523 |
 | P.Sarap. 13 | 17027 | 17027 | AD 102 | included | loan acknowledgement (chresis entokos) | ALD-000180 |
-| SB 14 11284 | 18114 | 18114 | AD 102-116 | included | copy of a loan contract | ALD-000181 |
+| SB 14 11284 | 18114 | 18114 | AD 102-116 | excluded | removed after loan audit (Hansen, Oct 2026): All the loan wording (ὁμολογῶ ἔχειν, χρῆσιν ἔντοκον) is editor's restoration; the preserved text shows only drachmas, a principal and a penalty clause. |  |
 | SPP 4 p. 114 | 20693 | 20693 | AD 102 | included | supplementary property declaration: property devolved to the declarant's wife from an overdue loan (ekprothesmon daneion) contracted by Pauseiris and his wife Theodous through the Oxyrhynchus record office | ALD-000524 |
 | AnalPap 30 (2018) 41 | 19310 | 19310 | AD 103 | included | cheirographon: interest-bearing loan of 8 artabas of wheat | ALD-000525 |
 | BGU 1 281 | 9027 | 9027 | AD 103-116 | excluded | receipt for repayment (by heirs of the deceased borrower) |  |
@@ -862,7 +862,7 @@ ALD IDs = rows in the database.
 | P.Flor. 1 81 | 23582 | 23582 | AD 103 | included | additional loan of money on mortgage | ALD-000186, ALD-000456, ALD-000467 |
 | P.Mert. 1 14 | 21294 | 21294 | AD 103 | included | loan of wheat (cheirographon) | ALD-000185 |
 | P.Mil. Vogl. 2 108 | 12354 | 12354 | AD 103 | included | loan of money (cheirographon) | ALD-000182 |
-| P.Münch. 3 95 | 12478 | 12478 | AD 103-115 | included | loan of money with mesiteia (fragment) | ALD-000183 |
+| P.Münch. 3 95 | 12478 | 12478 | AD 103-115 | excluded | removed after loan audit (Hansen, Oct 2026): Too fragmentary to show a loan: only scraps (.δαν[, τόκου) in a text that also mentions buyers and a kleros; no parties or amount. |  |
 | P.NYU 2 26 | 121973 | 121973 | AD 103 | excluded | receipt for (part-)repayment |  |
 | P.Oxy. 3 511 | 20642 | 20642 | AD 103 | included | loan contract (pilot) | ALD-000011 |
 | P.Sarap. 14 | 17028 | 17028 | AD 103 | included | loan of money (cheirographon) | ALD-000184 |
@@ -885,10 +885,10 @@ ALD IDs = rows in the database.
 | P.IFAO 3 13 | 11507 | 11507 | AD 107 | excluded | receipt for repayment |  |
 | P.Fam. Tebt. 11 | 10728 | 10728a | AD 108-109 | included | loan of money on mesiteia (cheirographon) | ALD-000193 |
 | O.Krok. 1 41 | 88630 | 88630 | AD 109 | excluded | official circulars, no loan |  |
-| P.Kron. 8 | 11593 | 11593 | AD 109 | included | loan of money | ALD-000194 |
+| P.Kron. 8 | 11593 | 11593 | AD 109 | excluded | removed after loan audit (Hansen, Oct 2026): Every loan word is editor's restoration (ἔχειν, χρῆσιν, ἀπόδοσιν). The preserved text shows only a principal in drachmas received from Heraclides by mutual sureties. Very probably a loan, but not shown. |  |
 | P.Soterichos 25 | 13140 | 13140 | AD 109 | excluded | receipt for repayment |  |
 | P.Strasb. 8 764 | 13438 | 13438 | AD 109-110 | excluded | no text available |  |
-| SB 16 12611 | 14625 | 14625 | AD 109-112 | included | copy of a loan contract | ALD-000195 |
+| SB 16 12611 | 14625 | 14625 | AD 109-112 | excluded | removed after loan audit (Hansen, Oct 2026): Only the receipt of 400 dr. survives; the text breaks off before any loan word or repayment clause, so it could also be a deposit or another transaction. |  |
 | SPP 4 pp. 116-117 | 14981 | 14981 | AD 109-110 | included | loan of money | ALD-000196 |
 | CPR 1 28 | 9858 | 9858 | AD 110 | excluded | copy of a marriage contract, no loan |  |
 | O.Claud. 1 172 | 24180 | 24180 | AD 110-120 | excluded | no loan survives (unspecified debt in a letter) |  |
@@ -902,7 +902,7 @@ ALD IDs = rows in the database.
 | P.Kron. 9 | 11594 | 11594 | AD 111 | included | loan of 20 artabas of wheat and 20 artabas of barley (one row per commodity) | ALD-000526, ALD-000527 |
 | P.Oslo 3 118 | 12568 | 12568 | AD 111-112 | excluded | tax receipt (loan only referred to) |  |
 | PSI 8 929 | 13820 | 13820 | AD 111 | included | loan in kind | ALD-000197 |
-| SPP 20 3 | 15017 | 15017 | AD 111 | included | acknowledgement of consolidated money debts with request for a new term | ALD-000198 |
+| SPP 20 3 | 15017 | 15017 | AD 111 | excluded | removed after loan audit (Hansen, Oct 2026): A debt acknowledgement (ὀφείλειν) consolidating earlier bank and cheirograph debts with a new term. No loan word survives. |  |
 | P.Fam. Tebt. 11 | 10728 | 10728b | AD 112 | excluded | deposit (parathēkē) not called a loan |  |
 | P.Ryl. 2 174 | 12956 | 12956 | AD 112 | excluded | receipt for repayment |  |
 | PSI 10 1153 | 13860 | 13860 | AD 112-113 | excluded | sale of a vineyard |  |
@@ -949,17 +949,17 @@ ALD IDs = rows in the database.
 | P.Oxy. 12 1547 | 21913 | 21913 | AD 119 | excluded | census return; the loan contract (δανείου συγγραφή) is entirely restored by the editor, too fragmentary to show a loan |  |
 | P.Sijp. 43 | 20655 | 20655 | AD 119-120 | excluded | will; permission to borrow, no loan made |  |
 | BGU 1 69 | 9113 | 9113 | AD 120 | included | loan contract (cheirographon) between soldiers | ALD-000214 |
-| P.Hamb. 1 32 | 11381 | 11381 | AD 120 | included | acknowledgement of debt to be repaid (cheirographon; novation of price of wheat) | ALD-000212 |
+| P.Hamb. 1 32 | 11381 | 11381 | AD 120 | excluded | removed after loan audit (Hansen, Oct 2026): Not called a loan: the money is 'from the price of wheat', so this is the price of goods bought on credit. |  |
 | P.Mich. 3 188 | 11991 | 11991 | AD 120 | included | antichretic loan (habitation in lieu of interest) | ALD-000213 |
-| SB 20 14338 | 23720 | 23720 | AD 120 | included | advance (πρόχρησις) of wheat in a land lease, repaid in two instalments | ALD-000529 |
+| SB 20 14338 | 23720 | 23720 | AD 120 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (πρόχρησις) inside a lease; not called a loan. |  |
 | P.Athen. 29 | 10134 | 10134 | AD 121 | excluded | receipt for repayment |  |
 | P.Dura 20 | 17218 | 17218 | AD 121 | included | antichretic paramone loan | ALD-000216 |
 | P.Kron. 11 | 11531 | 11531 | AD 121 | excluded | receipt for repayment |  |
-| P.Sarap. 20 | 17036 | 17036 | AD 121 | included | advance (προχρεία) of money repaid by 31 days of work | ALD-000530 |
+| P.Sarap. 20 | 17036 | 17036 | AD 121 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (προχρεία) repaid by 31 days' work; not called a loan. |  |
 | P.Strasb. 5 437 | 13334 | 13334 | AD 121 | included | loan contract with security | ALD-000215 |
 | P.Fam. Tebt. 22 | 10740 | 10740 | AD 122 | included | loan contract (homologia), cancelled by crossing out | ALD-000218 |
 | P.Ups. Frid 3 | 15678 | 15678a | AD 122 | included | loan contract (cheirographon), later crossed out with receipt of repayment | ALD-000219 |
-| SB 12 10781 | 16063 | 16063 | AD 122-123 | included | loan of money mentioned in a petition | ALD-000220 |
+| SB 12 10781 | 16063 | 16063 | AD 122-123 | excluded | removed after loan audit (Hansen, Oct 2026): Petition fragment: a written security for money received survives, but no loan word, no amount and no terms; too fragmentary to show a loan. |  |
 | O.Bankes 1 | 699544 | 699544 | AD 123 | included | loan on mortgage (brief record on ostracon) | ALD-000223 |
 | P.Fam. Tebt. 23 | 10741 | 10741 | AD 123 | excluded | sale (cession) of catoecic land; ἀνεπιδάνιστα formula only |  |
 | P.Louvre 2 109 | 88776 | 88776 | AD 123-137 | excluded | cession of catoecic land; ἀνεπιδάνιστα formula only |  |
@@ -977,9 +977,9 @@ ALD IDs = rows in the database.
 | P.Gen. 1 26 | 11221 | 11221 | AD 125 | excluded | receipt for repayment |  |
 | P.Gen. 2 102 | 11250 | 11250 | AD 125-129 | excluded | cancellation/discharge of a loan |  |
 | P.Heid. 10 448 | 381907 | 381907 | AD 125-126 | included | loan contract (cheirographon), annulled after repayment | ALD-000226 |
-| P.Mil. Vogl. 6 267 | 12432 | 12432 | AD 125-126 | included | land lease with interest-free advance (προχρεία) of 50 drachmas for farm work | ALD-000532 |
-| P.Oxy. 50 3557 | 15381 | 15381 | AD 125-126 | included | loan of money (debt under written security) mentioned in a petition for execution | ALD-000225 |
-| P.Sarap. 51 | 17068 | 17068 | AD 125 | included | harvest contract with advance (προχρεία) of 40 drachmas to be repaid | ALD-000533 |
+| P.Mil. Vogl. 6 267 | 12432 | 12432 | AD 125-126 | excluded | removed after loan audit (Hansen, Oct 2026): Interest-free advance for farm work inside a lease (the 'advance' wording itself is restored); not called a loan. |  |
+| P.Oxy. 50 3557 | 15381 | 15381 | AD 125-126 | excluded | removed after loan audit (Hansen, Oct 2026): Petition about a debt (ὀφειλομένων) under a written security, with a principal and overdue interest. No loan word; a loan in substance but not called one. |  |
+| P.Sarap. 51 | 17068 | 17068 | AD 125 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (προχρεία) to harvesters against wages; not called a loan. |  |
 | O.Claud. 2 243 | 29663 | 29663 | AD 126-175 | excluded | private letter; προχρεία = advance payment for goods, no loan |  |
 | O.Claud. 2 266 | 29686 | 29686 | AD 126-175 | included | loan of money mentioned in a private letter | ALD-000229 |
 | P.Berl.Monte 9 | 869384 | 869384 | AD 126-175 | excluded | deposit (parathēkē), not called a loan (petition for execution) |  |
@@ -990,8 +990,8 @@ ALD IDs = rows in the database.
 | ZPE 197 (2016) 205 | 697599 | 697599 | AD 126-200 | included | loan contract (money; beginning lost) | ALD-000230 |
 | ZPE 214 (2020) 232 | 20683 | 20683 | AD 126 | excluded | will; χρῆσις = usufruct, no loan |  |
 | P.Mil. Vogl. 1 25 | 12345 | 12345 | AD 127 | excluded | court proceedings (deposit, parathēkē) |  |
-| P.Mil. Vogl. 2 104 | 12350 | 12350 | AD 127 | included | advance loan (prochreia) in a land-lease offer | ALD-000231 |
-| SB 20 14635 | 23777 | 23777 | AD 127 | included | money loan mentioned in a petition | ALD-000232 |
+| P.Mil. Vogl. 2 104 | 12350 | 12350 | AD 127 | excluded | removed after loan audit (Hansen, Oct 2026): An advance within a lease offer, for farm work on the kleros, repayable without interest; not called a loan. |  |
+| SB 20 14635 | 23777 | 23777 | AD 127 | excluded | removed after loan audit (Hansen, Oct 2026): Petition about a debt (ὀφειλομένων) with interest; the contract reference (κατὰ συνγραφὴν) is restored and no loan word survives. A loan in substance but not called one, like ALD-000225. |  |
 | SPP 22 4 | 18239 | 18239 | AD 127-128 | included | bank order (diagraphe) paying out an interest-bearing loan (χρῆσις ἔντοκος) of 520 drachmas; col. 2 is payment of a price | ALD-000535 |
 | BGU 1 339 | 9063 | 9063 | AD 128 | included | loan contract (homologia), antichretic on default | ALD-000234, ALD-000479 |
 | P.Amh. 2 112 | 10095 | 10095 | AD 128 | excluded | receipt for repayment |  |
@@ -1085,7 +1085,7 @@ ALD IDs = rows in the database.
 | P.Laur. 2 28 | 21242 | 21242 | AD 138-160 | included | loan contract (mortgage) | ALD-000261 |
 | P.Lond. 2 196 | 19965 | 19965 | AD 138-161 | excluded | court proceedings |  |
 | P.Mil. Vogl. 2 52 | 12356 | 12356 | AD 138 | excluded | account of receipts and expenses (entry 'of a loan' 20 drachmas is an account item) |  |
-| P.Oxy. 4 729 | 20429 | 20429 | AD 138 | included | lease of a vineyard: lessor advances 3,000 drachmas to the lessees as prochreia, repayable interest-free (atokous) | ALD-000546 |
+| P.Oxy. 4 729 | 20429 | 20429 | AD 138 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (προχρεία) by the lessor to vineyard lessees within a lease, for irrigation costs; not called a loan. |  |
 | P.Strasb. 1 13 | 13152 | 13152 | AD 138-161 | included | loan contract (homologia) | ALD-000257 |
 | P.Strasb. 4 293 | 13234 | 13234 | AD 138-161 | included | loan contract (daneion) | ALD-000258 |
 | P.Strasb. 6 509 | 13386 | 13386 | AD 138-161 | excluded | abstracts of contracts |  |
@@ -1124,7 +1124,7 @@ ALD IDs = rows in the database.
 | P.Oxy. 1 98 | 20757 | 20757 | AD 141-142 | excluded | receipt for repayment |  |
 | P.Tebt. 2 389 | 13545 | 13545 | AD 141 | included | loan through a bank | ALD-000276 |
 | P.Yale 1 65 | 16841 | 16841 | AD 141-144 | excluded | receipt for repayment |  |
-| ZPE 206 (2018) 185 | 69890 | 69890 | AD 141 | included | acknowledgement of debt (Latin) | ALD-000277 |
+| ZPE 206 (2018) 185 | 69890 | 69890 | AD 141 | excluded | removed after loan audit (Hansen, Oct 2026): Money 'entrusted' (demandatos), returnable on demand: a deposit, not called a loan. |  |
 | BGU 11 2070 | 26951 | 26951 | AD 142-144 | excluded | court proceedings |  |
 | Chrest.Mitt. 372 | 9923 | 9923 | AD 142 | excluded | court proceedings (collection of precedents on soldiers' marriages) |  |
 | Chrest.Mitt. 88 | 9924 | 9924 | AD 142 | included | petition narrating a lawsuit: the petitioner's father Iulius Agrippianus was lender (danistes) to Drusilla's husband Apollinarius since year 13 of Hadrian; capital and interest owed | ALD-000550 |
@@ -1132,7 +1132,7 @@ ALD IDs = rows in the database.
 | P.Oxy. 85 5515 | 957525 | 957525 | AD 142 | excluded | surety for wheat taxes advanced (prochresthesas) by the tax collector; not called a loan |  |
 | P.Tebt. 2 365 | 13522 | 13522 | AD 142 | excluded | receipt for grain paid to the sitologi (transport dues); advance by tax collector, not a loan |  |
 | P.Tebt. 2 398 | 13554 | 13554 | AD 142 | excluded | release / no-claim declaration after payment |  |
-| BGU 3 741 | 20057 | 20057 | AD 143 | included | loan contract (synchoresis) secured by mortgage | ALD-000285, ALD-000286 |
+| BGU 3 741 | 20057 | 20057 | AD 143 | included | loan contract (synchoresis) secured by mortgage; ALD-000286 removed after loan audit (Hansen, Oct 2026: Earlier sum is called an obligation (ὀφείλει) under another synchoresis with interest, not called a loan.) | ALD-000285 |
 | O.Claud. 3 610 | 73792 | 73792 | AD 143-144 | included | acknowledgement of a money loan (ostracon) | ALD-000287 |
 | O.Narm. 1 61 | 40908 | 40908 | AD 143-199 | excluded | account |  |
 | P.Hamb. 4 251 | 41550 | 41550 | AD 143-144 | excluded | register of contracts |  |
@@ -1170,7 +1170,7 @@ ALD IDs = rows in the database.
 | P.Strasb. 5 383 | 13293 | 13293 | AD 147-155 | included | loan contract (homologia), fragmentary | ALD-000297 |
 | PSI 13 1323 | 13873 | 13873 | AD 147-148 | excluded | no specific loan survives (general complaint against a moneylender) |  |
 | SB 20 14303 | 14858 | 14858 | AD 147 | excluded | extracts from census declarations |  |
-| SB 20 14401 | 14880 | 14880 | AD 147 | included | petition against the moneylender Ptolemaeus son of Pappus: his loan to the petitioner at a stater per mina, and 3 1/2 talents lent in one village | ALD-000553, ALD-000554 |
+| SB 20 14401 | 14880 | 14880 | AD 147 | included | petition against the moneylender Ptolemaeus son of Pappus: his loan to the petitioner at a stater per mina, and 3 1/2 talents lent in one village; ALD-000554 removed after loan audit (Hansen, Oct 2026: An allegation of total lending of 3 1/2 talents to many people in one village, not an individual loan; borderline, for Hansen.) | ALD-000553 |
 | Tyche 35 (2020) 196 | 321597 | 321597 | AD 147 | included | petition: the petitioners' father borrowed 3,500 drachmas from Capitolinus son of Diodorus in year 4 of Hadrian | ALD-000555 |
 | BGU 2 445 | 9176 | 9176 | AD 148-149 | included | receipt for partial repayment (824 of 1,520 dr.); row for the loan it names (ἐδανίσατο), mortgage on catoecic land | ALD-000556 |
 | O.Claud. 3 587 | 73770 | 73770 | AD 148-149 | included | acknowledgement of a loan (χρῆσις) on ostracon; object and amount lost | ALD-000557 |
@@ -1217,9 +1217,9 @@ ALD IDs = rows in the database.
 | P.Flor. 1 1 | 23525 | 23525 | AD 153 | included | loan contract with mortgage (hypotheke) | ALD-000315 |
 | P.Fouad 1 45 | 20991 | 20991 | AD 153 | excluded | no text available |  |
 | P.Gen. 2 106 | 17387 | 17387 | AD 153-154 | included | loan contract (cheirographon) with antichresis on default | ALD-000314 |
-| P.Kron. 46 | 11568 | 11568 | AD 153 | included | lease offer with advance (εἰς προχρείας λόγον) of 48 dr., repayable interest-free with 48 dr. for seed | ALD-000562 |
+| P.Kron. 46 | 11568 | 11568 | AD 153 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (προχρεία) within a land lease, not called a loan. |  |
 | P.Strasb. 1 54 | 18683 | 18683 | AD 153-154 | excluded | deposit (parathesis) of wheat, not called a loan |  |
-| P.Horak 80 | 48168 | 48168 | AD 154 | included | loan contract with hypallagma (fragment) | ALD-000320 |
+| P.Horak 80 | 48168 | 48168 | AD 154 | excluded | removed after loan audit (Hansen, Oct 2026): Loan word (χρῆσιν ἔντοκον), amount and security are all editorial restoration; preserved text shows only 'has received ... coined silver'. |  |
 | P.Mert. 3 110 | 11946 | 11946 | AD 154 | included | loan contract (homologia) of money and barley | ALD-000317, ALD-000461 |
 | P.Mich. 6 428 | 12266 | 12266 | AD 154 | excluded | sale of a house |  |
 | P.Mil. Vogl. 2 68 | 12363 | 12363 | AD 154 | included | loan contract (crossed out, i.e. cancelled) | ALD-000318 |
@@ -1355,10 +1355,10 @@ ALD IDs = rows in the database.
 | P.Münch. 3 97 | 12480 | 12480 | AD 161-180 | included | loan contract | ALD-000332 |
 | P.Oxy. 3 653 | 20692 | 20692 | AD 161 | excluded | no text available (court proceedings) |  |
 | P.Oxy. 77 5109 | 140175 | 140175 | AD 161-162 | included | loan contract in kind (barley) | ALD-000334 |
-| P.Phil. 16 | 17562 | 17562 | AD 161 | included | money debt mentioned in a letter (procuration) | ALD-000335 |
+| P.Phil. 16 | 17562 | 17562 | AD 161 | excluded | removed after loan audit (Hansen, Oct 2026): Order to pay a sum 'which I owe him from hand': a debt, not called a loan (translation adds 'as a loan'). |  |
 | P.Princ. 2 35 | 12831 | 12831 | AD 161 | excluded | receipt for repayment |  |
 | P.Strasb. 4 204 | 13196 | 13196 | AD 161-169 | included | loan contract (bank diagraphe) | ALD-000333 |
-| P.Strasb. 5 303 | 18761 | 18761 | AD 161-169 | included | loan contract (fragment) | ALD-000336 |
+| P.Strasb. 5 303 | 18761 | 18761 | AD 161-169 | excluded | removed after loan audit (Hansen, Oct 2026): Too fragmentary: only a total and a repayment clause; no loan word, no parties, nature of the debt unknown. |  |
 | PSI 15 1527 | 16864 | 16864 | AD 161 | included | declaration of fiduciary title to a mortgage; earlier loan (ἐδάνεισα) by cheirographon of Phamenoth year 13 of Antoninus Pius | ALD-000559 |
 | SB 10 10723 | 14332 | 14332 | AD 161 | excluded | receipt for repayment |  |
 | SB 18 13895 | 14769 | 14769 | AD 161 | excluded | receipt for repayment |  |
@@ -1397,7 +1397,7 @@ ALD IDs = rows in the database.
 | P.Oxy. 67 4589 | 78622 | 78622i | AD 171-172 | excluded | notices of transfer of grain credit (sitologos diastolai); προχρεία = state grain advance account, no private loan |  |
 | BGU 2 514 | 9209 | 9209 | AD 172 | excluded | receipt for repayment |  |
 | BGU 2 520 | 9214 | 9214 | AD 172 | excluded | deposit (paratheke), not called a loan |  |
-| P.Flor. 1 68 | 23576 | 23576 | AD 172 | included | notification to the strategus (petition to the archidikastes) on publication of cheirographa: Castor, Eudaemon and Demetria children of Antimachus borrowed from the petitioner's father (loan verb restored by the editor) | ALD-000571 |
+| P.Flor. 1 68 | 23576 | 23576 | AD 172 | excluded | removed after loan audit (Hansen, Oct 2026): The loan wording (ἐδανείσαντο ... κατὰ διαγραφὴν) is entirely the editor's restoration (l. 6/7); the preserved text shows only the three names and publication of cheirographs. |  |
 | P.Oxy. 67 4589 | 78622 | 78622e | AD 172-173 | excluded | notices of transfer of grain credit (sitologos diastolai); προχρεία = state grain advance account, no private loan |  |
 | P.Oxy. 67 4589 | 78622 | 78622f | AD 172-173 | excluded | notices of transfer of grain credit (sitologos diastolai); προχρεία = state grain advance account, no private loan |  |
 | P.Oxy. 67 4589 | 78622 | 78622j | AD 172-173 | excluded | notices of transfer of grain credit (sitologos diastolai); προχρεία = state grain advance account, no private loan |  |
@@ -1415,7 +1415,7 @@ ALD IDs = rows in the database.
 | BGU 11 2117 | 26961 | 26961 | AD 176-200 | included | loan contract (cheirograph) | ALD-000352 |
 | BGU 13 2338 | 9727 | 9727 | AD 176 | excluded | receipt for repayment |  |
 | BGU 3 823 | 9370 | 9370 | AD 176-179 | excluded | other copy of the petition of Tapetheus (BGU 3 970); loan recorded under HGV 9420 |  |
-| BGU 7 1574 | 9481 | 9481 | AD 176 | included | money loan mentioned in a petition (objection to a payment order) | ALD-000355 |
+| BGU 7 1574 | 9481 | 9481 | AD 176 | excluded | removed after loan audit (Hansen, Oct 2026): Petition contesting sums 'owed' under a synchoresis on mortgage; not called a loan in preserved text, and the petitioner denies any money was paid to him. |  |
 | P.Aberd. 56 | 10010 | 10010 | AD 176 | included | paramone contract: χρῆσις of 200 drachmas against service | ALD-000572 |
 | P.Bour. 28 | 27306 | 27306 | AD 176-200 | excluded | receipt for repayment |  |
 | P.Bour. 53 | 27322 | 27322 | AD 176-200 | excluded | too fragmentary (only one deleted word of text survives) |  |
@@ -1425,7 +1425,7 @@ ALD IDs = rows in the database.
 | P.Oxy. 14 1648 | 29012 | 29012 | AD 176-200 | excluded | abstracts of contracts (register of an archive) |  |
 | P.Oxy. 17 2112 | 27200 | 27200 | AD 176-200 | excluded | list of judicial decisions |  |
 | P.Ryl. 2 75 | 27880 | 27880 | AD 176-200 | excluded | court proceedings (extracts of prefect's decisions) |  |
-| P.Tebt. 2 342 | 28415 | 28415 | AD 176-200 | included | report on confiscated property quoting a pottery lease with an interest-free advance (προχρεία) of 640 drachmas to the lessees | ALD-000573 |
+| P.Tebt. 2 342 | 28415 | 28415 | AD 176-200 | excluded | removed after loan audit (Hansen, Oct 2026): Interest-free advance (προχρεία) to lessees within a lease of a pottery; not called a loan. |  |
 | P.Tebt.Quen. 26 | 738087 | 738087 | AD 176-225 | excluded | letter fragment; προχρῆσαι too fragmentary to show a loan |  |
 | SB 1 4425 | 29414 | 29414 | AD 176-200 | excluded | estate accounts of oil and wine |  |
 | SB 22 15325 | 43177 | 43177 | AD 176 | included | application to register a loan cheirograph (demosiosis), with the loan's terms | ALD-000354 |
@@ -1563,12 +1563,12 @@ ALD IDs = rows in the database.
 | SB 12 11119 | 40820 | 40820 | AD 195 | excluded | receipt for repayment of an advance (prochreia), not called a loan |  |
 | CPR 7 31 | 15838 | 15838 | AD 196-197 | included | acknowledgement of an interest-bearing loan (χρῆσις ἔντοκος) repayable in wheat; 248 dr. = capital and interest together | ALD-000583 |
 | P.Oxy. 66 4531 | 78603 | 78603 | AD 196 | excluded | report to the strategus on public seed advances (prochreia); no loan |  |
-| P.Tebt. 2 338 | 13496 | 13496 | AD 196 | included | sitologoi report of wheat repaid by Patron for a loan (χρῆσις, restored) he had received for collectors' rates; amount lost | ALD-000584 |
-| O.Claud. 3 630 | 73812 | 73812 | AD 197 | included | acknowledgement of a loan (ostracon), fragmentary | ALD-000371 |
+| P.Tebt. 2 338 | 13496 | 13496 | AD 196 | excluded | removed after loan audit (Hansen, Oct 2026): The loan word [χρῆσι]ν is entirely restored; sitologi's report of grain measured to Patron's account for collectors' levies (state context), no loan shown in preserved text. |  |
+| O.Claud. 3 630 | 73812 | 73812 | AD 197 | excluded | removed after loan audit (Hansen, Oct 2026): Only 'I will repay from ration/pay' survives; no loan word, amount or parties (Hansen kept the O.Claud. receipts earlier). |  |
 | P.IFAO 1 12 | 21160 | 21160 | AD 197 | included | loan contract (cheirographon), fragmentary | ALD-000370 |
 | P.Oxy. 10 1262 | 21775 | 21775 | AD 197 | excluded | state seed-grain loan (receipt for seed) |  |
 | P.Oxy. 49 3474 | 15634 | 15634 | AD 197-198 | excluded | state seed-grain loan (application for seed) |  |
-| P.Oxy. 6 910 | 20373 | 20373 | AD 197 | included | lease of land with an advance of seed wheat (ἐν προχρείᾳ) to the lessee | ALD-000585 |
+| P.Oxy. 6 910 | 20373 | 20373 | AD 197 | excluded | removed after loan audit (Hansen, Oct 2026): Seed advance (προχρεία) from landowner to lessee within a land lease; not called a loan. |  |
 | P.Bodl. 1 19 | 22577 | 22577 | AD 198 | excluded | state seed-grain grant (strategos' order to sitologoi) |  |
 | P.Oxy. 47 3363 | 22473 | 22473 | AD 198-200 | excluded | lease of taxes; fragmentary mention of interest, no loan |  |
 | P.Tebt. 2 397 | 13553 | 13553 | AD 198 | included | settlement/receipt cancelling an earlier loan (the debtors called δεδανεισμένοι) made by agreement of Mesore 8, year 13 of Antoninus Pius | ALD-000558 |
@@ -1688,7 +1688,7 @@ ALD IDs = rows in the database.
 | SB 10 10725 | 17430 | 17430 | AD 214 | excluded | letter; 'loan of the blank rolls' mentioned without parties or amount; too unclear |  |
 | SB 6 9432 | 14228 | 14228 | AD 214 | excluded | state seed-grain loan receipt |  |
 | SB 6 9432 | 14229 | 14229 | AD 214 | excluded | state seed-grain loan receipt |  |
-| BGU 11 2045 | 9579 | 9579 | AD 215 | included | loan contract | ALD-000394 |
+| BGU 11 2045 | 9579 | 9579 | AD 215 | excluded | removed after loan audit (Hansen, Oct 2026): Receipt verb and χρῆσιν ἔντοκον wholly restored; only 'silver drachmas' and a repayment fragment survive (probably a loan, but not shown). |  |
 | BGU 2 362 | 9139 | 9139 | AD 215-216 | excluded | temple account (BGU 2 362); loans appear only as account entries |  |
 | O.Tebt. Pad. 18 | 45164 | 45164 | AD 215 | excluded | tax receipt |  |
 | O.Tebt. Pad. 19 | 45165 | 45165 | AD 215 | excluded | tax receipt |  |
@@ -1700,7 +1700,7 @@ ALD IDs = rows in the database.
 | P.Oxy. 12 1474 | 21875 | 21875 | AD 216 | included | application to register a loan, with a copy of the loan contract and its terms | ALD-000392 |
 | P.Tebt. 2 333 | 13492 | 13492 | AD 216 | excluded | petition about missing persons (no loan) |  |
 | BGU 11 2048 | 16910 | 16910 | AD 217 | included | loan acknowledgement in kind (wheat) | ALD-000396 |
-| BGU 2 614 | 9264 | 9264 | AD 217 | included | petition: petitioner advanced (προχρεία, προέχρησα) 4,000 drachmas from his own funds at the request of his late wife's mother Longinia alias Thermutharion, and seeks repayment from her heirs | ALD-000598 |
+| BGU 2 614 | 9264 | 9264 | AD 217 | excluded | removed after loan audit (Hansen, Oct 2026): Money advanced (προχρεία) for public expenses of the late wife, reclaimed from her heirs; not called a loan. Note: advances outside leases were earlier inserted at Hansen's OK - confirm. |  |
 | CPR 17 11 | 17772 | 17772c | AD 217-218 | excluded | too fragmentary to show it is a loan (CPR 17 11, lines 11-19: names, a bank payment (diagraphe) and a total of 940 drachmas survive, no loan wording) |  |
 | CPR 17 11 | 17772 | 17772f | AD 217-218 | excluded | too fragmentary to show it is a loan (CPR 17 11, lines 29-35: address to the banker Aurelius Zoilus, names and 'silver drachmas' survive, amount and loan wording lost) |  |
 | CPR 17 11 | 17772 | 17772g | AD 217-218 | included | loan contract (cheirograph) | ALD-000397 |
@@ -1723,11 +1723,11 @@ ALD IDs = rows in the database.
 | CPR 17 17 | 17792 | 17792f | AD 217 | included | bank loan contract (copy among several on one sheet) | ALD-000405 |
 | CPR 17 18 | 17795 | 17795b | AD 217-218 | included | loan contract with mortgage (fragmentary) | ALD-000406 |
 | CPR 17 19 | 17797 | 17797a, 17797b, 17797c | AD 217-218 | excluded | too fragmentary |  |
-| CPR 17 23 | 17804 | 17804b | AD 217-218 | included | bank loan contract | ALD-000407 |
-| CPR 17 25 | 17808 | 17808b | AD 217-218 | included | bank loan contract (fragmentary) | ALD-000408 |
+| CPR 17 23 | 17804 | 17804b | AD 217-218 | excluded | removed after loan audit (Hansen, Oct 2026): Receipt verb lost and repayment verb restored ('ἀ' only); loan wording not preserved (likely a bank loan like its neighbours). |  |
+| CPR 17 25 | 17808 | 17808b | AD 217-218 | excluded | removed after loan audit (Hansen, Oct 2026): Too fragmentary; 'restore to her whenever she wishes' fits a deposit as well as a loan. |  |
 | CPR 17 26 | 17810 | 17810a, 17810b | AD 217-218 | excluded | too fragmentary |  |
 | CPR 17 27 | 17812 | 17812a | AD 217-218 | included | bank loan contract (fragmentary) | ALD-000409 |
-| CPR 17 27 | 17812 | 17812b | AD 217-218 | included | bank loan contract (fragmentary) | ALD-000410 |
+| CPR 17 27 | 17812 | 17812b | AD 217-218 | excluded | removed after loan audit (Hansen, Oct 2026): Too fragmentary: only address to the banker and 'silver' survive; χρείαν restored. |  |
 | CPR 17 43 | 17833 | 17833a, 17833b | AD 217-218 | excluded | too fragmentary |  |
 | O.Tebt. Pad. 25 | 45171 | 45171 | AD 217 | excluded | tax receipt (laographia); no loan |  |
 | O.Tebt. Pad. 27 | 45173 | 45173 | AD 217 | excluded | tax receipt (laographia); no loan |  |
@@ -1738,19 +1738,19 @@ ALD IDs = rows in the database.
 | SB 20 14958 | 14906 | 14906 | AD 217 | excluded | tax receipt (laographia); no loan |  |
 | BGU 7 1650 | 9531 | 9531 | AD 218 | excluded | receipt for repayment |  |
 | O.Tebt. Pad. 48 | 45193 | 45193 | AD 218-219 | excluded | tax receipt (zytera); no loan |  |
-| P.Leit. 7 | 23655 | 23655 | AD 219-224 | included | petition: petitioner was forced to give the cooks 1,000 drachmas as an advance (εἰς προχρείας λόγον), to be credited back to him in his term of office | ALD-000599 |
+| P.Leit. 7 | 23655 | 23655 | AD 219-224 | excluded | removed after loan audit (Hansen, Oct 2026): Compulsory advance by an official to the cooks, part of a liturgy complaint; not called a loan. |  |
 | P.Louvre 3 193 | 140211 | 140211 | AD 219-221 | included | loan contract (cheirographon) | ALD-000412 |
-| P.Princ. 3 144 | 12848 | 12848 | AD 219-240 | included | antichretic loan contract | ALD-000411 |
+| P.Princ. 3 144 | 12848 | 12848 | AD 219-240 | excluded | removed after loan audit (Hansen, Oct 2026): χρῆσιν and δανεῖσθαι wholly restored; preserved text shows capital repaid with house-habitation (antichretic arrangement) but no loan word. |  |
 | SB 6 9432 | 14230 | 14230 | AD 220-224 | excluded | state seed-grain loan (receipt to sitologoi) |  |
 | BGU 4 1015 | 18490 | 18490 | AD 221-222 | included | loan contract in kind | ALD-000414 |
 | P.Harr. 2 227 | 11454 | 11454 | AD 221 | excluded | agreement to share expenses (no loan recorded) |  |
-| P.Mich. 18 792 | 22197 | 22197 | AD 221 | included | receipt of an advance (προχρεία) under a vineyard irrigation lease: cattle valued at 1,500 drachmas, and the first instalment (500 dr.) of a 1,500-drachma money advance, to be repaid according to the lease; one row per part | ALD-000600, ALD-000601 |
+| P.Mich. 18 792 | 22197 | 22197 | AD 221 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (προχρεία) within a vineyard-irrigation lease; not called a loan.; Cattle handed over at a valuation as an advance within a lease; not called a loan. |  |
 | SB 4 7467 | 14023 | 14023 | AD 221 | included | loan contract (cheirographon) | ALD-000413 |
 | ZPE 191 (2014) 251 | 371975 | 371975 | AD 221 | excluded | another copy of P.Mich. 18 792; loans recorded under HGV 22197 |  |
 | BGU 2 667 | 9300 | 9300 | AD 222 | excluded | house sale (ἀνεπιδάνειστος clause only); no loan |  |
 | P.Diog. 30 | 10702 | 10702 | AD 222-235 | included | loan contract in kind | ALD-000415 |
 | P.Flor. 1 48 | 23562 | 23562 | AD 222 | excluded | receipt for repayment |  |
-| P.Oxy. 14 1630 | 21941 | 21941 | AD 222-226 | included | lease at increased rent: the lessee Heron had given an advance (προχρεία) to the cultivators Hermogenes son of Petenephotes and Isidorus, which he tried to recover (with other expenses, 3 talents 400 dr. in all; advance alone not stated) | ALD-000602 |
+| P.Oxy. 14 1630 | 21941 | 21941 | AD 222-226 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (προχρεία) and expenses for agricultural work in a lease offer; not called a loan. |  |
 | P.Oxy. 14 1634 | 21946 | 21946 | AD 222 | included | sale of a mortgaged house: part of the price (2 talents 3,600 dr.) offset against a debt owed to the buyer under a security of year 3, Thoth, which the text calls a loan (δεδανεικέναι, δανείου) | ALD-000603 |
 | P.Prag. 2 163 | 21617 | 21617 | AD 222 | excluded | too fragmentary (only a surety clause survives) |  |
 | P.Vet. Aelii 13 | 14679 | 14679 | AD 222-255 | included | application for demosiosis of a receipt: Aurelius Sarapodorus acknowledges repayment of the money he lent (ἐδάνισα) to Aelius Syrion by two cheirographa; two earlier loans, amounts lost | ALD-000604, ALD-000605 |
@@ -1776,7 +1776,7 @@ ALD IDs = rows in the database.
 | P.Vindob. Tandem 23 | 15461 | 15461 | AD 225 | included | loan of 400 drachmas at 1 drachma per mina per month and of vegetable seed (amount lost), repayable in Epeiph year 5 (two copies of the cheirographon); one row per part | ALD-000606, ALD-000607 |
 | BGU 3 989 | 20105 | 20105 | AD 226 | included | loan contract (six-witness contract) | ALD-000423 |
 | CPR 1 3 | 31841 | 31841 | AD 226-275 | included | sale of a third of a house: the price of 2,000 drachmas was paid through the bank to the seller's creditor (δανιστής) Aurelius Heraclius alias Artemidorus; earlier loan, amount not stated | ALD-000608 |
-| P.Euphr. 17 | 44675 | 44675 | AD 226-275 | included | money debt with interest mentioned in a private letter | ALD-000425 |
+| P.Euphr. 17 | 44675 | 44675 | AD 226-275 | excluded | removed after loan audit (Hansen, Oct 2026): Private letter acknowledging sums owed (ὀφείλω); not called a loan. |  |
 | P.Flor. 1 24 | 32135 | 32135 | AD 226-275 | excluded | register of contracts |  |
 | P.Flor. 1 25 | 32137 | 32137 | AD 226-275 | excluded | no text available |  |
 | P.Michael. 18 | 31558 | 31558 | AD 226-275 | excluded | inventory/account of goods (εἰς χρῆσιν = for use); no loan |  |
@@ -1795,7 +1795,7 @@ ALD IDs = rows in the database.
 | SB 1 4370 | 23124 | 23124 | AD 229 | included | loan contract on mortgage (agoranomic) | ALD-000428 |
 | SPP 20 30 | 15018 | 15018 | AD 230 | excluded | receipt for repayment |  |
 | P.Mil. Vogl. 4 243 | 21434 | 21434 | AD 231-263 | included | loan contract (chresis) | ALD-000437 |
-| P.Oxy. 67 4596 | 78638 | 78638 | AD 232-264 | included | apprenticeship contract with advance (προχρεία) of 400 dr., interest-free, repayable after the term | ALD-000609 |
+| P.Oxy. 67 4596 | 78638 | 78638 | AD 232-264 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (prochreia) in an apprenticeship contract, not called a loan (Hansen earlier OK'd advances outside leases). |  |
 | SPP 20 34 | 18699 | 18699 | AD 232 | excluded | state seed-grain application |  |
 | BGU 7 1658 | 9538 | 9538 | AD 234 | excluded | receipt for repayment |  |
 | P.Fay. 90 | 10933 | 10933 | AD 234 | included | loan contract (vegetable seed) | ALD-000429 |
@@ -1842,20 +1842,20 @@ ALD IDs = rows in the database.
 | P.Lond. 3 954 | 22747 | 22747 | AD 260 | excluded | lease of a plot (χρῆσις = use) |  |
 | P.Oxy. 12 1527 | 21901 | 21901 | AD 261-262 | excluded | account of grain arrears |  |
 | BGU 7 1649 | 9530 | 9530 | AD 264 | included | loan contract in kind (cheirographon) | ALD-000438 |
-| P.Oxy. 31 2586 | 16900 | 16900 | AD 264 | included | apprenticeship contract with advance (προχρεία) of 400 dr., repayable at end of term | ALD-000612 |
+| P.Oxy. 31 2586 | 16900 | 16900 | AD 264 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (prochreia) in an apprenticeship contract, not called a loan (Hansen earlier OK'd advances outside leases). |  |
 | P.Nekr. 17 | 22626 | 22626 | AD 265 | excluded | receipt for repayment (copy) |  |
 | CPR 35 35 | 22973 | 22973 | AD 266 | excluded | request to the council for an advance (prochreia) from city funds for buying timber; public advance, not a loan |  |
 | SPP 5 23 | 22940 | 22940 | AD 266-268 | excluded | council proceedings, fragmentary (a loan from city funds mentioned) |  |
 | PSI 4 295 | 19282 | 19282 | AD 268-269 | included | receipt for payment of the rest of capital and interest of an earlier loan (ἐδάνισεν κατὰ δάνιον) to the addressee's half-brother Heraclides; lender's name and amount lost | ALD-000613 |
-| P.Col. 10 280 | 22273 | 22273 | AD 269-277 | included | advance loan (prochreia) in a vineyard lease: lessees acknowledge 1,200 drachmas on account, the rest in monthly instalments, from the prochreia for irrigation; total not certainly preserved | ALD-000614 |
+| P.Col. 10 280 | 22273 | 22273 | AD 269-277 | excluded | removed after loan audit (Hansen, Oct 2026): Advance in a vineyard lease for irrigation work, not called a loan. |  |
 | P.Erl. 101 | 20958 | 20958 | AD 269-270 | excluded | estate account (wheat ἐν χρήσει within an account) |  |
 | P.Ryl. 2 117 | 19505 | 19505 | AD 269 | excluded | petition renouncing an inheritance; a man only claims to be the deceased's creditor (δανιστής), no loan specified |  |
-| P.Fouad 1 52 | 20994 | 20994 | AD 272 | included | loan contract (advance, prochreia) | ALD-000439 |
+| P.Fouad 1 52 | 20994 | 20994 | AD 272 | excluded | removed after loan audit (Hansen, Oct 2026): Advance (prochreia) to a bakery manager for the compulsory purchase (synone); not called a loan. |  |
 | P.Oxy. 12 1413 | 21823 | 21823 | AD 272 | excluded | proceedings of the council; oil supplied 'ἐκ προχρείας' (in advance), not a loan transaction |  |
 | P.Bingen 117 | 44516 | 44516 | AD 276-325 | excluded | list of household items (χρήσεως = for use) |  |
 | P.Oxy. 12 1588 | 31770 | 31770 | AD 276-300 | excluded | letter about creditors' demands; money received not called a loan, borrowing only contemplated |  |
 | P.Oxy. 14 1711 | 31794 | 31794 | AD 276-300 | included | loan contract (chresis) | ALD-000444 |
-| P.Oxy. 36 2775 | 30384 | 30384 | AD 276-300 | included | acknowledgement of a seed-wheat loan (cheirographon) | ALD-000442 |
+| P.Oxy. 36 2775 | 30384 | 30384 | AD 276-300 | excluded | removed after loan audit (Hansen, Oct 2026): Debt acknowledgement (ὀφείλειν) for seed received from a manager of treasury (fiscus) land; not called a loan, close to state seed grain. |  |
 | P.Oxy. 6 907 | 20370 | 20370 | AD 276 | excluded | will (προχρεῖαι only among appurtenances of a vineyard) |  |
 | P.Oxy. 75 5062 | 128903 | 128903 | AD 276-300 | excluded | letter about enforcing a bond against a debtor; debt not specified as a loan (only general 'debtors frighten the lenders') |  |
 | P.Oxy. Hels. 43 | 30199 | 30199 | AD 276-300 | included | loan contract (chresis) | ALD-000440 |

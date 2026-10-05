@@ -65,6 +65,10 @@ Hansen (Oct 2026, Ptolemaic pass):
 - not called a loan -> skipped: pawns, loans of animals or tools for use, advances for work or
   freight, debt acknowledgements, antichretic leases ("basically rent").
 (Roman Egypt registers excluded earlier are not re-reviewed unless Hansen asks.)
+Hansen (Oct 2026, loan audit): a row needs a loan shown by the PRESERVED text (loan wording or
+the standard "I have from you ... I will repay" acknowledgement outside the editor's brackets);
+advances (πρόχρησις, προχρεία) and debts (ὀφείλω) not called a loan are excluded everywhere,
+superseding the earlier OKs for advances outside leases and the O.Claud. receipts.
 
 ### Field formats (as used in all 479 rows)
 - **year**: from the document's date (for papyri: HGV). Certain year `AD 57` / `100 BC`;
@@ -159,8 +163,13 @@ Hansen (Oct 2026, Ptolemaic pass):
    with its ALD IDs, or excluded with the reason) and update its Coverage table; update the status below; commit.
 
 ## Status
-- DB: 835 rows (ALD-000001 to 000836; ALD-000475, a duplicate of 000454, deleted by Hansen,
-  Oct 2026). Schema v0.3 (year ranges; amount = text fraction).
+- DB: 770 rows (ALD-000001 to 000837, with gaps). Loan audit (Oct 2026, Hansen): all 835 rows
+  read against the original text; 66 removed (64 not shown to be a loan: loan wording only in the
+  editor's restoration, advances, debts not called a loan, deposit/credit sale/pledge, too
+  fragmentary; 2 duplicates: ALD-000649, 651); 87 field fixes (amounts with `[...]`, restored
+  rates/units/names emptied, missing years); ALD-000475 had been wrongly deleted (ZPE 199 (2016)
+  150 names two 120-dr. loans) and was re-added as ALD-000837. SQL run by Hansen, verified.
+  67 rows kept with only the loan word preserved (audit category B). Schema v0.3 (year ranges; amount = text fraction).
   View `loan_catalogue` for the site. RLS on, public SELECT only.
 - Done: Roman Egypt (30 BC - AD 284), HGV records tagged as loans: 932 documents reviewed,
   440 included, 492 excluded (see `reviewed.md`). Notes, durations, audit (96 corrections) done
