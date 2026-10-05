@@ -159,7 +159,7 @@ Hansen (Oct 2026, Ptolemaic pass):
    with its ALD IDs, or excluded with the reason) and update its Coverage table; update the status below; commit.
 
 ## Status
-- DB: 613 rows (ALD-000001 to 000614; ALD-000475, a duplicate of 000454, deleted by Hansen,
+- DB: 835 rows (ALD-000001 to 000836; ALD-000475, a duplicate of 000454, deleted by Hansen,
   Oct 2026). Schema v0.3 (year ranges; amount = text fraction).
   View `loan_catalogue` for the site. RLS on, public SELECT only.
 - Done: Roman Egypt (30 BC - AD 284), HGV records tagged as loans: 932 documents reviewed,
@@ -177,6 +177,13 @@ Hansen (Oct 2026, Ptolemaic pass):
   `drachma (silver)` / `drachma (copper)` etc. as the text says; Macedonian-month terms get no
   equivalent; Egyptian-calendar terms converted with the wandering calendar when the document's
   date is exact.
+- Done (Oct 2026): Ptolemaic Egypt, HGV records tagged as loans: 361 documents reviewed, 189
+  included (ALD-000615 to 000836, 222 rows), 168 excluded, 4 pending Hansen (P.Dion. 20, BGU 10
+  1981, P.Dion. 11, P.Oxy. 14 1644; see `reviewed.md`). Notes (original text + translation),
+  audit and md5 checks done; 53 Egyptian-calendar terms converted (wandering calendar, regnal
+  epochs; checked against the loan year). Loan acknowledgements ("I have from you ... I will
+  repay") counted as loans; debt acknowledgements (ὀφείλημα) not. Next: Ptolemaic full-text
+  pass (~212 candidates), then Demotic texts (need an open source).
 - Hansen decisions (Oct 2026): amounts of BGU 4 1132, CPR 1 203, P.Oxy. 12 1473 kept as is;
   "Muziris, India" kept; ALD-000001 dated by HGV/BL (loan AD 146 under Antoninus Pius; l. 41
   titles of Marcus Aurelius are a later addition, BL I 325) -> duration fixed to Antoninus Pius.

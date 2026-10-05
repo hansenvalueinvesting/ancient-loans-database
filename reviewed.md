@@ -10,7 +10,8 @@ every new batch of documents.
 |---|---|---|---|---|---|
 | Roman Egypt, papyri (DDbDP texts, HGV metadata via papyri.info / idp.data) | HGV records dated 30 BC - AD 284 tagged "Darlehen" (loan) or titled as a loan | 932 | 440 | 492 | Done |
 | Roman Egypt, papyri | All other texts dated 30 BC - AD 284 containing loan vocabulary (full-text search: δαν-, χρῆσις, ἔντοκ-, προχρ-) | 549 | 117 | 432 | Done |
-| Late Antique Egypt (AD 284-641), Ptolemaic Egypt (332-30 BC), outside Egypt | - | 0 | 0 | 0 | Not started |
+| Ptolemaic Egypt, papyri (DDbDP texts, HGV metadata via idp.data) | HGV records dated 332-30 BC tagged "Darlehen" (loan) or titled as a loan | 361 | 189 | 168 | Done (4 pending Hansen; full-text pass and Demotic texts not started) |
+| Late Antique Egypt (AD 284-641), outside Egypt | - | 0 | 0 | 0 | Not started |
 
 Excluded documents fall outside the inclusion rule in `codebook.md` (e.g. repayment receipts,
 state seed-grain loans, deposits, registers, texts too fragmentary to identify a loan).
@@ -25,6 +26,367 @@ ALD IDs = rows in the database.
 
 | Edition | TM | HGV | Date | Decision | Reason | ALD IDs |
 |---|---|---|---|---|---|---|
+| P.Athen. 6 | 77952 | 77952 | 325-1 BC | excluded | petition fragment; mentions interest and repayment but too fragmentary to show a loan |  |
+| BGU 3 1005 | 56470 | 56470 | 300-201 BC | included | loan contract (wheat, interest-free) | ALD-000615 |
+| BGU 6 1246 | 7322 | 7322 | 300-201 BC | excluded | petition; loans of unspecified cash (κέρματα), no amount or unit; skipped (Hansen) |  |
+| BGU 6 1279 | 7330 | 7330 | 300-201 BC | excluded | too fragmentary to show a loan (only interest and security clauses survive) |  |
+| P.Hal. 17 | 78265 | 78265 | 300-201 BC | excluded | draft letter; too fragmentary to show a loan |  |
+| P.Yale 1 26 | 8263 | 8263 | 300-276 BC | excluded | too fragmentary (only paramone clauses survive) |  |
+| P.Zen. Pestm. 57 | 1888 | 1888 | 300-201 BC | excluded | letter; mentions grain being lent out, no specific loan shown |  |
+| P.Zen. Pestm. 73 | 1904 | 1904 | 300-201 BC | excluded | too fragmentary; no loan |  |
+| SB 22 15531 | 47375 | 47375 | 300-101 BC | included | loan contract fragment (copper money to a man and his wife) | ALD-000621 |
+| P. XV. Congr. 9 | 78819 | 78819 | 275-226 BC | excluded | memorandum about money; no loan |  |
+| P.Cair. Zen. 4 59798 | 1423 | 1423 | 275-226 BC | excluded | account naming a loan; accounts excluded |  |
+| P.Col. 4 114 c | 2341 | 2341 | 275-226 BC | excluded | letter fragment; too fragmentary to show a loan |  |
+| P.Hamb. 4 239 | 43305 | 43305 | 275-226 BC | excluded | lease with prodoma (advance on rent), not called a loan |  |
+| P.Lond. 7 2066 | 1627 | 1627 | 275-226 BC | excluded | letter about grain-measurement accounts; mentions a register of loans, no specific loan |  |
+| P.Lond. 7 2161 | 1721 | 1721 | 275-226 BC | excluded | account/list of grain loans at one-half interest; accounts excluded |  |
+| PSI 4 417 ll. 17-39 | 2430 | 2430 | 275-226 BC | excluded | letter about a debt of grain (ὀφείλημα) for Zenon's farms; not a loan |  |
+| P.Cair. Zen. 1 59001 | 663 | 663 | 274-273 BC | included | loan contract (double document) | ALD-000616 |
+| SB 12 11054 | 4385 | 4385 | 272-266 BC | included | contract prescript; names a loan made by Hermias son of Pyrrhias | ALD-000617 |
+| P.Sorb. 3 71 | 121853 | 121853 | 268-267 BC | included | loan contract of hay (double document) | ALD-000618 |
+| P.Hib. 1 88 | 2819 | 2819 | 263 BC | included | loan contract (money) | ALD-000619 |
+| P.Hib. 1 150 | 2830 | 2830 | 261 BC | excluded | no text available (duplicate of P.Hib. 1 85; only a lacuna in DDbDP) |  |
+| P.Hib. 1 85 | 2818 | 2818 | 261 BC | excluded | state seed-grain grant (seed for royal land via the nomarch), not a loan |  |
+| P.Petr. 3 89 | 7544 | 7544 | 261 BC | excluded | state seed-grain loan; excluded |  |
+| P.Hib. 2 207 | 5191 | 5191 | 260-245 BC | included | letter; orders repayment of a loan by contract with interest from Sostratus (100 dr.) | ALD-000620 |
+| P.Cair. Zen. 1 59010 | 671 | 671 | 259 BC | excluded | account naming a loan; accounts excluded |  |
+| PSI 6 554 | 2174 | 2174 | 258 BC | excluded | report in letter form about complaints against Melas; no loan shown |  |
+| P.Cair. Zen. 1 59074 | 729 | 729 | 257 BC | excluded | letter about silver plates and small change (κερμάτιον); no loan |  |
+| P.Cair. Zen. 1 59113 | 762 | 762 | 257 BC | excluded | state-type grain advance to a cultivator (Zenon estate): seed barley and barley δάνειον for his land |  |
+| P.Cair. Zen. 1 59114 | 763 | 763 | 257 BC | excluded | receipt for seed wheat (σπέρμα) for the recipient's land; not called a loan |  |
+| P.Cair. Zen. 1 59115 | 764 | 764 | 257 BC | included | acknowledgement of a money loan (duplicate text) | ALD-000623 |
+| P.Cair. Zen. 4 59549 | 1184 | 1184 | 257 BC | included | acknowledgement of a money loan for clearing brushwood (duplicate text) | ALD-000624 |
+| P.Lond. 7 1953 | 1516 | 1516 | 257 BC | excluded | state-type grain loans to cultivators (δάνειον εἰς τὸ κάτεργον) with seed wheat; order to measure out |  |
+| P.Sorb. 1 17 | 3132 | 3132 | 257 BC | excluded | state seed-grain loan: 40 art. of wheat from the royal grain (ἀπὸ τοῦ βασιλικοῦ σίτου) for sowing a kleros |  |
+| P.Cair. Zen. 1 59120 | 769 | 769 | 256 BC | excluded | letter; small change (κερμάτιον, no amount) taken in advance against pledged cups; not called a loan |  |
+| P.Cair. Zen. 4 59656 | 1287 | 1287 | 256-248 BC | excluded | memorandum requesting a seed loan (δάνεισον); not shown to be made |  |
+| P.Col. 3 22 | 1742 | 1742 | 256 BC | excluded | payment for wood-cutting (3 dr. 2 ob.); not called a loan |  |
+| P.Col. 3 23 | 1743 | 1743 | 256 BC | included | acknowledgement of a money loan for wood-cutting (duplicate text) | ALD-000625 |
+| P.Col. 3 24 | 1744 | 1744 | 256 BC | included | acknowledgement of a money loan for wood-cutting (duplicate text) | ALD-000626 |
+| P.Col. 3 25 | 1745 | 1745 | 256 BC | excluded | payment for weeding; not called a loan |  |
+| P.Col. 3 27 | 1746 | 1746 | 256 BC | excluded | wages for wood-cutting and burning (25 dr.); not a loan |  |
+| P.Col. 3 28 | 1747 | 1747 | 256 BC | excluded | wages for wood-cutting; not a loan |  |
+| P.Köln 16 642 | 754285 | 754285 | 256 BC | included | loan contract (novation of an earlier debt under another contract) | ALD-000627 |
+| P.Köln 16 643 | 754286 | 754286 | 256 BC | excluded | draft of P.Köln 16 642; duplicate of HGV 754285 |  |
+| P.Petr. 2 5 (b) | 2905 | 2905 | 256-255 BC | excluded | no text available |  |
+| P.Cair. Zen. 2 59182 | 828 | 828 | 255 BC | excluded | money from Zenon to farmers for clearing brushwood on leased land; advance for work, not called a loan |  |
+| P.Iand. Zen. 2 | 819 | 819 | 255 BC | included | loan contract: money lent to nine farmers for buying draught animals (double document) | ALD-000628, ALD-000629, ALD-000630, ALD-000631, ALD-000632, ALD-000633, ALD-000634, ALD-000635, ALD-000636 |
+| P.Petr. 3 53 (j) | 7476 | 7476 | 255-237 BC | excluded | letter; mentions creditors (δανειστάς) generally, no specific loan |  |
+| SB 14 11590 | 2431 | 2431 | 255-247 BC | included | acknowledgement of receipt of a loan by contract (fragment) | ALD-000637 |
+| SB 16 12812 | 4173 | 4173 | 255 BC | included | loan contract fragment (wheat) | ALD-000638 |
+| P.Cair. Zen. 3 59417 | 1057 | 1057 | 254 BC | excluded | letter with account of money received and paid out; no loan |  |
+| P.Col. 3 41 | 1758 | 1758 | 254 BC | excluded | letter; request to raise an eranos for Metrodorus, loan not shown to be made |  |
+| P.Köln 17 653 | 703400 | 703400 | 253 BC | included | loan contract (homologia with oath) | ALD-000639 |
+| P.Lond. 7 1986 | 1548 | 1548 | 252 BC | included | loan contract | ALD-000640 |
+| P.Lond. 7 2160 | 1720 | 1720 | 252-251 BC | excluded | account fragments, no loan record |  |
+| P.Zen. Pestm. 20 | 1851 | 1851 | 252 BC | included | advance of rent called a loan (δάνειον) | ALD-000641 |
+| P.Cair. Zen. 2 59265 | 909 | 909 | 251 BC | included | borrower's acknowledgement of receipt of a loan under a deposited contract | ALD-000642 |
+| P.Cair. Zen. 2 59278 | 922 | 922 | 251-250 BC | excluded | letter fragment mentioning 'the loan' (τοῦ δανείου); too fragmentary to show a loan |  |
+| P.Cair. Zen. 2 59293 | 937 | 937 | 251 BC | excluded | account of barley, no loan record (one entry 'Κοροιβίδηι δάνειον κρ(ιθῆς) ψ'; accounts stay excluded) |  |
+| P.Hamb. 2 183 | 4337 | 4337 | 251 BC | included | loan of hay (inner and outer text, one loan) | ALD-000643 |
+| P.Lille 1 39 | 3241 | 3241 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Lille 1 40 | 3242 | 3242 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Lille 1 41 | 3243 | 3243 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Lille 1 42 | 3244 | 3244 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Lille 1 43 | 3245 | 3245 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Lille 1 49 | 3250 | 3250 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Lille 1 50 | 3251 | 3251 | 251-250 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Lille 1 51 | 3252 | 3252 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Sorb. 1 23 | 3138 | 3138 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Sorb. 1 24 | 3139 | 3139 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Sorb. 1 25 | 3140 | 3140 | 251 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Sorb. 1 27 | 3142 | 3142 | 251-250 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Sorb. 1 28 | 3143 | 3143 | 251-250 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Sorb. 1 29 | 3144 | 3144 | 251-250 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Sorb. 1 30 | 3145 | 3145 | 251-250 BC | excluded | state loan of grain to cultivators/cleruchs (δάνειον εἰς κάτεργον, order of Diogenes), excluded (owner decision 1) |  |
+| P.Cair. Zen. 3 59306 | 950 | 950 | 250 BC | excluded | letter about rent payments; lentils given to Theopompus not called a loan |  |
+| P.Hib. 1 124 | 7825 | 7825 | 250 BC | excluded | not called a loan; too fragmentary to show a loan (undertaking by Menonides to repay 18 3/4 artabas of olyra to Zenodorus the oikonomos 'according to this symbolon', execution 'as for royal dues'; the part stating what he received is lost) |  |
+| P.Hib. 1 125 | 8253 | 8253 | 250 BC | excluded | too fragmentary to show a loan (verso docket only) |  |
+| P.Hib. 1 126 | 8254 | 8254 | 250 BC | excluded | too fragmentary to show a loan |  |
+| P.Hib. 2 210 | 5193 | 5193 | 250-240 BC | excluded | sale with deferred delivery not called a loan (price of 9 1/4 artabas of olyra received from Zenodorus the oikonomos, grain to be delivered in Pharmouthi) |  |
+| P.Lille 1 44 | 3246 | 3246 | 250 BC | excluded | state grain loan to a royal cultivator (δάνειον εἰς κάτεργον, order to measure out 120 art. wheat to Socmenis son of Collouthus) |  |
+| P.Lille 1 45 | 3247 | 3247 | 250 BC | excluded | state grain loan to royal cultivators (δάνειον εἰς κάτεργον, 60 and 40 art. wheat-barley to Socnouchis and Petesouchus) |  |
+| P.Lille 1 46 | 3248 | 3248 | 250 BC | excluded | state grain loan to a royal cultivator (δάνειον εἰς κάτεργον, 40 art. to Demetrius) |  |
+| P.Lille 1 47 | 3249 | 3249 | 250 BC | excluded | state grain loan to royal cultivators of Theogonis, Talithis and Kerkeosiris (δάνειον εἰς κάτεργον καὶ ποιολογίαν) |  |
+| P.Sorb. 1 26 | 3141 | 3141 | 250 BC | excluded | state grain loan to royal cultivators (δάνειον εἰς κάτεργον, 100 art. to Pasis, 50 art. to Horus son of Scosothes) |  |
+| P.Sorb. 1 31 | 3146 | 3146 | 250 BC | excluded | state grain loan (order to measure out a δάνειον of 60 art. old barley to Melanippus per the prostagma of Aristandrus) |  |
+| P.Cair. Zen. 3 59327 | 971 | 971 | 249 BC | excluded | account; pawns not called a loan (list of silver vessels held as pledges, with interest reckonings) |  |
+| P.Corn. 2 | 2302 | 2302 | 249 BC | excluded | sale with deferred delivery not called a loan (20 silver dr. received from Zenon against delivery of 40 artabas of wheat in Payni, year 37) |  |
+| P.Lond. 7 2002 | 970 | 970c | 249 BC | excluded | account, no loan record (Zenon's disbursement account; entry 'δάνειον ἀργυρίου 20 dr.' to Ammonius and several πρόχρησις advances) |  |
+| P.Hib. 1 86 | 8233 | 8233 | 248 BC | included | loan of olyra (acknowledgement, two copies on one sheet) | ALD-000644 |
+| P.Lond. 7 2006 | 1568 | 1568 | 248 BC | excluded | pawn not called a loan (letter: garments pledged in Choiak with Theodorus the money-lender for 80 silver dr., interest 1/2 + 1/4 obol per 4 dr.) |  |
+| P.Cair. Zen. 3 59341 a | 984 | 984a | 247 BC | excluded | no text available |  |
+| SB 12 10782 | 4346 | 4346 | 247-246 BC | included | loan of olyra (acknowledgement) | ALD-000645 |
+| BGU 10 1966 | 5002 | 5002 | 246-221 BC | included | loan contract (end only; 'ἔγγυος τοῦ δανείου' preserved) | ALD-000646 |
+| P.Cair. Zen. 3 59504 | 1142 | 1142 | 246-243 BC | included | bank notice of a loan on mortgage of a vineyard at Philadelphia | ALD-000647 |
+| BGU 10 1981 | 2692 | 2692 | 245-244 BC | pending | pending Hansen: possibly the same contract as SB 12 11058 (TM 2931) |  |
+| P.Col. 4 83 | 1796 | 1796 | 245-244 BC | included | petition; mentions a loan of 70 silver dr. by Nicon to Simon and the 115-dr. loan contract that replaced it | ALD-000648, ALD-000649 |
+| P.Cair. Zen. 3 59355 | 998 | 998 | 244 BC | included | statement to arbitrators (court-type document) naming a loan contract not recorded elsewhere | ALD-000622 |
+| P.Ross. Georg. 2 1 + 2 | 2931 | 2931a | 244 BC | excluded | duplicate of HGV 2931b (same contract, TM 2931; this record holds only the prescript, ll. 1-3) |  |
+| P.Strasb. 2 92 | 3919 | 3919 | 244-243 BC | included | lease of rooms with an interest-bearing loan explicitly called δάνειον ἔντοκον (use of the rooms in place of interest) | ALD-000650 |
+| SB 12 11058 | 2931 | 2931b | 244 BC | included | loan contract (interest-free, repayable in yearly instalments) | ALD-000651 |
+| SB 12 11059 | 4390 | 4390 | 244 BC | included | loan contract | ALD-000652 |
+| SB 22 15237 | 1850 | 1850 | 244-242 BC | excluded | pawn (hoes pledged for 12 copper drachmas), not called a loan |  |
+| PSI 4 389 | 2073 | 2073 | 243 BC | included | loan contract | ALD-000653 |
+| P.Hib. 2 261 | 2834 | 2834 | 240 BC | included | loan contract (beginning only; borrower and amount lost) | ALD-000654 |
+| P.Hib. 2 262 | 2835 | 2835 | 240 BC | excluded | too fragmentary to show a loan ('ἐδάνεισεν' wholly restored); possible duplicate of HGV 2834 |  |
+| P.Lille 1 56 | 3261 | 3261 | 239 BC | included | loan note | ALD-000655 |
+| SB 6 8969 | 5718 | 5718 | 237 BC | excluded | Greek deposit docket under a Demotic mortgage-loan contract; the loan text (Demotic) is not in this edition |  |
+| P.Petr. 3 8 | 2904 | 2904 | 236 BC | excluded | no text available |  |
+| P.Petr. 3 55 (a) | 2917 | 2917 | 235-234 BC | excluded | no text available |  |
+| CPR 18 24 | 7765 | 7765 | 232 BC | excluded | too fragmentary to show a loan (register entry; all loan words restored) |  |
+| P.Petr. 2 21 (a) | 7402 | 7402a | 232-231 BC | excluded | court proceedings; fragmentary (same dispute as HGV 7402c) |  |
+| P.Petr. 2 21 (b) plus (d) | 7402 | 7402b | 232-231 BC | excluded | court proceedings; too fragmentary |  |
+| P.Petr. 2 21 (c)-(d) | 7402 | 7402c | 232-231 BC | included | court document naming a loan | ALD-000656 |
+| SB 6 8970 | 5719 | 5719 | 232 BC | excluded | Greek deposit docket under a Demotic mortgage-loan contract; the loan text (Demotic) is not in this edition |  |
+| CPR 18 14 | 7799 | 7799 | 231 BC | included | register entry: loan contract (Theogonis contract register) | ALD-000657 |
+| CPR 18 16 | 7759 | 7759 | 231 BC | included | register entry: loan contract (Theogonis contract register) | ALD-000658 |
+| CPR 18 18 | 7763 | 7763 | 231 BC | included | register entry: paramone loan contract (Theogonis contract register) | ALD-000659 |
+| SB 18 13255 | 2540 | 2540 | 231 BC | included | loan contract (inner and outer text = one loan) | ALD-000660 |
+| BGU 14 2367 | 2698 | 2698 | 225-201 BC | excluded | fragment of a law on loan contracts; no loan |  |
+| P.Ryl. 4 584 | 43475 | 43475 | 225-201 BC | included | mortgage loan (renewal undertaking; vineyard mortgaged by Arsinoe to Demetrius) | ALD-000661 |
+| PUG 3 119 | 8150 | 8150 | 225-201 BC | excluded | too fragmentary to show a loan (register of contract abstracts; no loan wording preserved) |  |
+| P.Sorb. 1 38 | 3153 | 3153 | 224 BC | excluded | letter about the state barley loan to farmers; no individual loan |  |
+| P.Tebt. 3.1 815 | 7752 | 7752 | 223-222 BC | included | register of contract abstracts; loan entries | ALD-000662, ALD-000663, ALD-000664, ALD-000665, ALD-000666, ALD-000667, ALD-000668, ALD-000669, ALD-000670, ALD-000671, ALD-000672 |
+| P.Enteux. 45 | 3320 | 3320 | 222 BC | included | petition; mentions loan of 150 copper drachmas by Philon to Apollonius and his mother Philotis | ALD-000675 |
+| P.Sorb. 1 41 | 3156 | 3156 | 222 BC | excluded | letter about state loans measured out to cleruchs; no individual loan |  |
+| P.Sorb. 1 49 | 3164 | 3164 | 222 BC | excluded | letter; price of grain paid in advance, not called a loan |  |
+| BGU 10 1964 | 4342 | 4342 | 221-214 BC | excluded | antichretic arrangement framed as a lease (500 dr. 'rent'), not called a loan |  |
+| BGU 14 2395 | 2669 | 2669b | 221 BC | included | loan contract (inner and outer text), interest partly paid by lease of a tower | ALD-000676 |
+| BGU 6 1273 | 2669 | 2669a | 221 BC | excluded | no text available; same contract as HGV 2669b |  |
+| P.Enteux. 41 | 3316 | 3316 | 221 BC | excluded | petition; loan for use of a she-ass (χρησάμενος ὄνον), not a loan of money or goods |  |
+| P.Enteux. 42 | 3317 | 3317 | 221 BC | included | petition; mentions loan (χρησάμενος) of 4 dr. copper to Dositheus | ALD-000677 |
+| P.Enteux. 44 | 3319 | 3319 | 221 BC | included | petition; mentions two loans of copper drachmas to Nephorsuchis (10 dr. from Dioscurides, 14 dr. from Nicanor) | ALD-000673, ALD-000674 |
+| P.Enteux. 46 | 3321 | 3321 | 221 BC | excluded | petition; barley owed 'through the hand' (ὀφείλων διὰ χερός), not called a loan |  |
+| P.Enteux. 49 | 3324 | 3324 | 221 BC | excluded | petition; loan contract of 1000 dr. alleged fictitious (no χρῆσις took place), loan not shown to be made |  |
+| P.Enteux. 50 | 3325 | 3325 | 221 BC | excluded | petition; alleged Egyptian contract of 420 dr. denied, not called a loan |  |
+| P.Sorb. 3 111 | 2604 | 2604 | 221 BC | included | petition; mentions loan of 200 dr. at interest (contract deposited with Calliphon) between the petitioner and Antilochus | ALD-000678 |
+| P.Enteux. 104 | 3368 | 3368 | 219-217 BC | excluded | official's report on a petition (procès-verbal); a loan of copper is mentioned (δανεισαμένου αὐτοῦ χαλκοῦ) but parties and sum are lost |  |
+| BGU 6 1274 | 2670 | 2670 | 218-217 BC | included | loan contract | ALD-000679 |
+| BGU 14 2394 | 4008 | 4008 | 216-215 BC | excluded | receipt for repayment of grain (olyra 81 art., wheat); the preserved text does not call the debt a loan |  |
+| BGU 10 1969 | 2687 | 2687 | 215-214 BC | included | loan of wheat (inner and outer text) | ALD-000680 |
+| BGU 14 2393 | 2703 | 2703 | 215-214 BC | included | loan of olyra | ALD-000681 |
+| BGU 6 1275 | 2671 | 2671 | 215-214 BC | included | loan of olyra | ALD-000682 |
+| BGU 6 1276 | 2672 | 2672 | 215-214 BC | included | loan contract, interest-free | ALD-000683 |
+| BGU 6 1277 | 2673 | 2673 | 215-214 BC | excluded | copy of the loan in HGV 2703 (same parties, date, 50 art. olyra, terms) |  |
+| BGU 6 1278 | 2674 | 2674 | 215-214 BC | included | loan of olyra (inner and outer text) | ALD-000684 |
+| P.Köln 5 218 | 3179 | 3179 | 215-214 BC | included | loan contract of money (fragmentary) | ALD-000685 |
+| BGU 10 1945 | 2678 | 2678 | 214-213 BC | excluded | too fragmentary to show a loan (lease or grain loan?) |  |
+| BGU 10 1960 | 2684 | 2684 | 214-213 BC | included | loan contract of copper money (fragmentary) | ALD-000686 |
+| BGU 10 1961 | 5001 | 5001 | 213-212 BC | included | loan contract | ALD-000687 |
+| BGU 10 1970 | 2688 | 2688 | 213-212 BC | excluded | too fragmentary to show a loan: ἐδάνεισεν and ἀποδότω wholly restored; only 'olyra artabas ... this grain in [month]' survives, no parties or amount |  |
+| BGU 14 2396 | 2704 | 2704 | 213-212 BC | included | loan contract | ALD-000688 |
+| P.Frankf. 1 | 2790 | 2790 | 213 BC | excluded | lease of a cleruchic plot with an interest-free advance (πρόδομα) of 60 copper dr.; not called a loan (antichretic lease) |  |
+| BGU 10 1963 | 2685 | 2685 | 212-211 BC | included | loan contract | ALD-000689 |
+| BGU 10 1965 | 2686 | 2686 | 212-211 BC | included | loan contract (fragment) | ALD-000690 |
+| BGU 6 1280 | 4551 | 4551 | 210 BC | excluded | antichretic lease of a dwelling (μίσθωσις) securing 70 dr.; not called a loan in the preserved text |  |
+| P.Petr. 2 47 | 2903 | 2903 | 210-209 BC | excluded | settlement/quittance between Donomazis and Histiaeus (330 dr.); no loan shown |  |
+| P.Köln 5 220 | 3181 | 3181 | 208 BC | excluded | acknowledgement of apomoira wine owed to tax farmers, commuted to money; not called a loan |  |
+| BGU 7 1505 | 4755 | 4755 | 206 BC | excluded | account, no loan record |  |
+| P.Trier 1 11 | 703248 | 703248 | 205-180 BC | included | court document naming a loan | ALD-000691 |
+| P.Heid. 8 420 | 47298 | 47298 | 201 BC | excluded | pawnbroker's account (pledges); pawns not called a loan |  |
+| BGU 6 1281 | 7331 | 7331 | 200-101 BC | excluded | too fragmentary to show a loan |  |
+| P.Amh. 2 161 | 77943 | 77943 | 200-101 BC | excluded | too fragmentary to show a loan (only 'συγγραφοφύλαξ') |  |
+| P.Amh. 2 32 R | 44032 | 44032 | 200-101 BC | excluded | official report on cleruchic land; no loan in this text |  |
+| P.Dura 15 | 78173 | 78173 | 200-101 BC | excluded | sale subject to redemption; the loan word is wholly restored (δανεισθῆ]ναι), so not called a loan in the preserved text |  |
+| P.Hamb. 1 28 | 43857 | 43857 | 200-151 BC | included | mortgage loan (slave as security) | ALD-000692 |
+| P.Leid.Inst. 2 25 | 971473 | 971473 | 200-101 BC | included | receipt for repayment; names the earlier loan of 4 copper talents | ALD-000693 |
+| P.Ryl. 4 585 | 8144 | 8144 | 200-176 BC | included | loan contract with assignment of salary on oath | ALD-000694 |
+| P.Ryl. 4 670 | 78760 | 78760 | 200-176 BC | included | loan contract (fragment; ὁμολογῶ ἔχειν τὸ δάνειον) | ALD-000695 |
+| P.Tebt. 3.2 970 | 7992 | 7992 | 200-176 BC | included | mortgage loan contract (slave as security) | ALD-000696 |
+| PSI 1 64 | 78828 | 78828 | 200-1 BC | included | oath of a woman to her partner; mentions a loan of 5 copper talents to her | ALD-000697 |
+| SB 10 10226 | 5914 | 5914 | 200-101 BC | excluded | letter ordering a payment of 1060 copper dr.; no loan |  |
+| SB 10 10228 | 5916 | 5916 | 200-101 BC | included | loan contract (fragment) | ALD-000698 |
+| SB 18 13154 | 2528 | 2528 | 200-1 BC | included | antichretic loan (called δάνειον; lender lives in the house rent-free) | ALD-000699 |
+| SB 24 16166 | 45407 | 45407 | 200-176 BC | excluded | letter; request for a loan of 3 minas (interest 20 dr.) not shown to be made |  |
+| SB 3 7169 | 7272 | 7272 | 200-101 BC | included | maritime loan contract (voyage to the Aromatophoros) | ALD-000702 |
+| SB 3 7170 | 78882 | 78882 | 200-101 BC | included | loan contract fragment; parties, amount and terms lost | ALD-000703 |
+| SB 30 17368 | 372 | 372 | 200-101 BC | excluded | too fragmentary to show a loan (only penalty clauses survive) |  |
+| SB 30 17369 | 385 | 385 | 200-101 BC | excluded | too fragmentary to show a loan (only a repayment clause for wheat; loan wording wholly restored) |  |
+| SPP 1 1 - 2 I | 79440 | 79440 | 200-101 BC | excluded | petition about money and the price of wine owed to Platon; no loan shown |  |
+| SB 24 16295 | 8810 | 8810 | 199 BC | included | petition; names money and wheat given by Theambesis to Heliodorus at interest | ALD-000700, ALD-000701 |
+| BGU 10 1967 | 5003 | 5003 | 193-192 BC | included | loan acknowledgement (money); lender, interest and term lost | ALD-000704 |
+| JJP 42 (2012) 36 no. 1 | 43252 | 43252 | 193 BC | excluded | contract for transport work with an advance (προδοῦναι) of 1 talent; not called a loan (owner rule 4) |  |
+| P.Köln 14 562 | 697570 | 697570 | 192-176 BC | excluded | summons over the price of wine; no loan |  |
+| P.Lond. 2 223 (S. 3) | 78456 | 78456 | 190-189 BC | excluded | account/land list; no loan |  |
+| P.Trier 1 9 | 703246 | 703246 | 187 BC | included | court document naming a loan (syngraphophylax's testimony with copy of a loan contract in kind) | ALD-000708 |
+| P.Heid. 8 412 | 47290 | 47290 | 186 BC | included | court document naming a loan (application for retrial on a loan contract for 100 artabas of wheat) | ALD-000709 |
+| BGU 10 1968 | 5004 | 5004 | 184 BC | included | loan contract (money, interest-free) | ALD-000714 |
+| P.Trier 1 1 | 703238 | 703238 | 184 BC | included | court document naming a loan (summons for non-repayment of a copper loan by Protion to Archepolis) | ALD-000705 |
+| P.Trier 1 2 | 703239 | 703239 | 184 BC | included | court document naming a loan (summons for non-repayment of 4000 copper drachmas) | ALD-000715 |
+| P.Trier 1 4 | 703241 | 703241 | 184-183 BC | included | court document naming a loan (summons for non-repayment of 5 artabas of arakos) | ALD-000706 |
+| P.Trier 1 5 | 703242 | 703242 | 184-183 BC | included | court document naming a loan (summons for non-repayment of 120 artabas of wheat) | ALD-000707 |
+| P.Trier 1 3 | 128461 | 128461 | 183 BC | included | court document naming a loan (summons for non-repayment of 2000 copper drachmas by Anicetus to Ptolemaeus) | ALD-000711 |
+| P.Trier 1 6 | 703243 | 703243 | 183 BC | included | court document naming a loan (summons for non-repayment of a wheat loan to Ptolemaeus) | ALD-000713 |
+| P.Tebt. 3.1 817 | 5396 | 5396 | 182 BC | included | loan contract on mortgage (copper money, interest-free) | ALD-000716 |
+| SB 24 16296 | 79429 | 79429 | 182 BC | excluded | acknowledgements of sums received 'from the common funds', not called a loan (owner rule 4) |  |
+| P.Trier 1 10 | 703247 | 703247 | 181 BC | included | court document naming a loan (syngraphophylax's testimony with copy of a loan contract of 3000 copper drachmas) | ALD-000712 |
+| P.Köln Sarapion 4 | 977101 | 977101 | 180 BC | included | petition; names a loan of 7 copper talents by Sarapion to Petosiris | ALD-000710 |
+| P.Strasb. 9 882 | 3982 | 3982 | 180 BC | excluded | too fragmentary to show a loan (mortgage and sums only, no loan wording) |  |
+| P.Amh. 2 42 | 2649 | 2649 | 179 BC | included | receipt for repayment; names the earlier loan of 900 artabas of wheat | ALD-000717 |
+| P.Freib. 3 36-37 | 43915 | 43915 | 179-178 BC | included | mortgage loan from Epigenes named in a registered acknowledgement (year 3) | ALD-000718 |
+| P.Tebt. 3.2 851 | 5420 | 5420 | 177-176 BC | excluded | account of receipts in kind, no loan record |  |
+| BGU 10 1971 | 8313 | 8313 | 175-126 BC | included | receipt for repayment of a wheat loan; earlier loan named | ALD-000719 |
+| CdE 89 (2014) 351 | 489701 | 489701 | 175-126 BC | included | royal oath confirming a loan of 300 artabas | ALD-000720 |
+| P.Erasm. 1 14 | 44711 | 44711 | 175-126 BC | excluded | advance for freight (prochresis), not called a loan; only penalty clause survives |  |
+| UPZ 1 124 | 3516 | 3516 | 175 BC | excluded | petition; 6 art. wheat owed under a contract, not called a loan |  |
+| P.Tebt. 3.1 818 | 2945 | 2945 | 174 BC | included | loan contract (renewal of a debt from a partnership as a loan) | ALD-000721 |
+| SB 30 17332 | 246 | 246 | 174 BC | included | loan of wheat | ALD-000722 |
+| BGU 6 1272 | 2668 | 2668 | 173 BC | excluded | too fragmentary to show a loan (lease or loan; loan word restored) |  |
+| P.Amh. 2 43 | 2650 | 2650 | 173 BC | included | loan of wheat | ALD-000723 |
+| P.Freib. 3 12 b | 58490 | 58490 | 172-162 BC | included | loan contract fragment (end of contract; parties and amount lost) | ALD-000724 |
+| P.Köln 14 561 | 697569 | 697569 | 172 BC | included | court document naming a loan | ALD-000725 |
+| P.Mich. 3 190 | 2888 | 2888 | 172 BC | included | loan of money | ALD-000726 |
+| P.Tebt. 3.2 850 | 5419 | 5419 | 170 BC | excluded | account of corn (seed grain), no loan record |  |
+| P.David 4 | 5045 | 5045 | 167 BC | included | acknowledgement of a loan of wine (with the hemiolia) | ALD-000727 |
+| SB 16 12372 | 4109 | 4109 | 161 BC | included | loan of money | ALD-000728 |
+| SB 22 15240 | 8348 | 8348 | 156 BC | included | loan of seed wheat (private) | ALD-000729 |
+| BGU 6 1258 A | 4545 | 4545 | 154-153 BC | included | register of contracts; three loan entries | ALD-000730, ALD-000731, ALD-000732 |
+| UPZ 1 65 | 3456 | 3456 | 154 BC | excluded | letter; asks how much certain persons have, no loan shown |  |
+| P.Tebt. 3.2 980 | 5481 | 5481 | 153 BC | excluded | too fragmentary to show a loan (only penalty clause survives) |  |
+| P.Erasm. 1 12 | 5056 | 5056 | 152 BC | excluded | advance for freight (prochresis), not called a loan |  |
+| P.Erasm. 1 13 | 5057 | 5057 | 152 BC | excluded | advance for freight, not called a loan |  |
+| P.Erasm. 1 15 | 5058 | 5058 | 152 BC | excluded | advance for freight (prochresis), not called a loan |  |
+| UPZ 1 68 | 3459 | 3459 | 152 BC | included | letter; mentions copper money lent by Ptolemaeus to Petosiris, Semphthes and Sarapion | ALD-000733 |
+| BGU 10 2006 | 8330 | 8330 | 150-101 BC | included | letter fragment; mentions a loan (δάνειον) to/from Polycritus | ALD-000734 |
+| UPZ 1 118 | 3510 | 3510 | 147 BC | included | court document naming a loan | ALD-000736 |
+| SB 8 9679 | 5791 | 5791 | 146 BC | excluded | too fragmentary to show a loan |  |
+| P.Giss. Bibl. 1 1 | 44587 | 44587 | 144 BC | excluded | too fragmentary to show a loan (no loan word preserved) |  |
+| P.Köln 8 350 | 41541 | 41541 | 143 BC | included | loan of wheat | ALD-000738 |
+| P.Yale 4 139 | 873594 | 873594 | 137 BC | excluded | petition about a balance of account for farmed land, not called a loan |  |
+| P.Yale 4 141 | 873596 | 873596 | 137 BC | included | petition; mentions loan of 10 1/2 art. wheat by contract | ALD-000737 |
+| P.Yale 4 144 | 873599 | 873599 | 137 BC | excluded | too fragmentary to show a loan (no loan word preserved) |  |
+| P.Yale 4 147 | 873587 | 873587 | 137 BC | included | petition; mentions loan of wheat by Straton to Perses (six-witness contract) | ALD-000740 |
+| P.Amh. 2 44 | 2651 | 2651 | 136 BC | included | loan of wheat (inner and outer copy, one loan) | ALD-000741 |
+| P.Grenf. 2 17 | 60 | 60 | 136 BC | excluded | pawn (iron cone held in pledge), not called a loan |  |
+| PSI 13 1311 | 2934 | 2934 | 136 BC | included | loan contract (inner and outer copy, one loan); dowry balance recast as a loan | ALD-000742 |
+| SB 26 16637 | 662 | 662 | 136-97 BC | included | loan of wheat (fragment) | ALD-000743 |
+| P.Lond. 2 220 R (S. 5) | 5888 | 5888 | 133 BC | excluded | surety for producing a man from prison, no loan |  |
+| P.Polit. Iud. 8 | 44624 | 44624 | 133 BC | included | petition; mentions mortgage loan of 12 tal. copper (year 33) | ALD-000739 |
+| P.Köln 9 366 | 47501 | 47501 | 132 BC | included | receipt for repayment; names earlier loan of 15 talents copper | ALD-000744 |
+| P.Dryton 16 | 254 | 254 | 131 BC | included | loan of wheat | ALD-000745 |
+| P.Dryton 30 | 4198 | 4198 | 131-113 BC | included | loan contract (fragment; end only) | ALD-000746 |
+| VBP 2 2 | 8140 | 8140 | 130 BC | included | loan contract (six-witness, inner and outer copy, one loan) | ALD-000748 |
+| P.Dryton 17 | 255 | 255 | 129 BC | included | loan of money | ALD-000749 |
+| SB 6 9420 | 5774 | 5774 | 129 BC | included | petition; price of 100 art. wheat recorded as an (Egyptian) contract of loan | ALD-000747 |
+| P.Dryton 19 | 257 | 257 | 127 BC | included | loan of money | ALD-000750 |
+| P.Grenf. 2 18 | 61 | 61 | 127 BC | included | loan of money | ALD-000751 |
+| P.Dion. 33 | 3114 | 3114 | 125-101 BC | included | loan acknowledgement (wheat) | ALD-000752 |
+| P.Tebt. 3.2 972 | 7993 | 7993 | 125-101 BC | included | abstracts of contracts; loan entries included (owner rule 3) | ALD-000753, ALD-000754, ALD-000755 |
+| SB 16 12985 | 4197 | 4197 | 125-101 BC | included | receipt for repayment; names earlier loan contract | ALD-000756 |
+| SB 22 15537 | 79082 | 79082 | 124 BC | included | loan of wheat (fragment, two women borrowers) | ALD-000757 |
+| SB 30 17333 | 133407 | 133407 | 124 BC | included | loan contract (fragment) | ALD-000758 |
+| SB 6 9366 | 5738 | 5738 | 124 BC | included | loan contract in wheat and money (copy) | ALD-000759, ALD-000760 |
+| P.Grenf. 2 19 | 238 | 238 | 118 BC | included | receipt for repayment; names earlier loan of 120 art. barley (year 50, Choiak) | ALD-000762 |
+| P.Lond. 2 225 | 5889 | 5889 | 118 BC | included | loan contract of wheat (fragment) | ALD-000765 |
+| P.Dryton 25 | 215 | 215 | 117 BC | included | loan of wheat | ALD-000767 |
+| P.Dion. 26 | 3110 | 3110 | 116 BC | included | loan of wheat (novation) replacing an earlier loan contract | ALD-000768, ALD-000769 |
+| P.Dion. 34 | 3115 | 3115 | 116 BC | excluded | acknowledgement of receiving the price of wheat for later delivery (sale with deferred delivery, not called a loan) |  |
+| P.Fay. 11 | 8084 | 8084 | 116 BC | included | petition; mentions three loans of wheat (7 1/2, 45, 25 art.) by Demetrius to Theotimus son of Phileas | ALD-000761, ALD-000763, ALD-000764 |
+| P.Tebt. 1 111 | 3747 | 3747 | 116 BC | excluded | state grain from the sitologoi's granary (state loan, owner rule 1) |  |
+| P.Amh. 2 32 V | 44082 | 44082 | 114 BC | included | loan acknowledgement (wheat) | ALD-000771 |
+| P.Tebt. 4 1136 | 3900 | 3900 | 114 BC | excluded | account of (state) grain loans |  |
+| SB 18 13847 | 279 | 279 | 114-97 BC | included | loan contract (fragment; only execution clause) | ALD-000772 |
+| P.Amh. 2 46 | 121 | 121 | 113 BC | included | loan of wheat | ALD-000773 |
+| P.Amh. 2 47 | 122 | 122 | 113 BC | included | loan of wheat | ALD-000774 |
+| P.Dion. 21 | 3105 | 3105 | 113 BC | included | loan of wheat | ALD-000775 |
+| P.Dion. 27 | 3111 | 3111 | 113-112 BC | included | loan of wheat (novation) | ALD-000776 |
+| P.Grenf. 2 21 | 218 | 218 | 113 BC | included | loan of money | ALD-000777 |
+| P.Lond. 3 1203 (S. 9) | 90 | 90 | 113 BC | excluded | debt acknowledgement (ὀφείλημα) not called a loan (owner rule 4) |  |
+| P.Tebt. 1 89 | 3725 | 3725 | 113 BC | excluded | account (grain report of the komogrammateus), no loan record |  |
+| P.Tebt. 3.1 792 | 5378 | 5378 | 113 BC | excluded | petition; mentions only state seed-grain loans |  |
+| P.Dion. 13 | 3096 | 3096 | 112 BC | included | loan of wheat | ALD-000778 |
+| P.Oslo 3 140 | 5252 | 5252 | 112 BC | excluded | too fragmentary to show a loan (recto only end of a paramone/apprenticeship contract) |  |
+| P.Bingen 39 | 8351 | 8351 | 111 BC | included | loan of wheat | ALD-000779 |
+| P.Bingen 40 | 654 | 654 | 111-110 BC | included | loan of wheat(?) (fragment) | ALD-000780 |
+| P.Cair. Goodsp. 8 | 203 | 203 | 111 BC | included | loan of money | ALD-000781 |
+| P.Dion. 22 | 3106 | 3106 | 111 BC | included | loan of wheat (interest-free) | ALD-000782 |
+| P.Dion. 28 | 3102 | 3102 | 111 BC | included | receipt for repayment; names earlier loan of 250 art. wheat by Didymus (year 7, Thoth 9) | ALD-000783 |
+| P.Dion. 35 | 3116 | 3116 | 111 BC | included | receipt for repayment; names earlier loan of 45 art. wheat on a double symbolon (year 54 = 1) | ALD-000766 |
+| P.Lond. 2 218 | 213 | 213 | 111 BC | included | loan of wheat | ALD-000784 |
+| SB 28 17265 | 645 | 645 | 111-110 BC | excluded | register of contracts; no text available |  |
+| P.Cair. Goodsp. 8 (fragment pg. 12) | 204 | 204 | 110 BC | included | loan by Panobchounis son of Nechoutes on a fragment of P.Cair. Goodsp. 8 (text in DDbDP under HGV 203) | ALD-000785 |
+| P.Dion. 14 | 3097 | 3097 | 110 BC | included | loan of wheat | ALD-000786 |
+| P.Dion. 29 | 3103 | 3103 | 110 BC | included | receipt for repayment; names earlier loan of 40 art. wheat by Andron (year 7, Tybi 17) | ALD-000787 |
+| P.Adler 4 | 3 | 3 | 109 BC | excluded | debt acknowledgement for sums additionally owed under the contract of Taisis; not called a loan (owner decision 4) |  |
+| P.Dion. 15 | 3098 | 3098 | 109 BC | included | loan of wheat | ALD-000788 |
+| P.Dion. 16 | 3099 | 3099 | 109 BC | included | loan of wheat | ALD-000789 |
+| P.Dion. 41 | 3122 | 3122 | 109 BC | excluded | too fragmentary to show a loan |  |
+| P.Grenf. 1 26 | 48348 | 48348 | 109 BC | included | release (repayment) of a loan; names earlier loan of 56 art. wheat (year 3, Thoth) | ALD-000770 |
+| P.Amh. 2 49 | 211 | 211 | 108 BC | included | loan contract (fragment; borrowers called οἱ δεδανεισμένοι) | ALD-000790 |
+| P.Dion. 11 | 3094 | 3094 | 108 BC | pending | pending Hansen: petition; unclear whether the 150-artaba loan was actually paid out |  |
+| P.Dion. 12 | 3095 | 3095 | 108 BC | excluded | duplicate of HGV 3094 (copy of the same petition; loan entered there) |  |
+| P.Dion. 17 | 3100 | 3100 | 108 BC | included | loan of wheat | ALD-000791 |
+| P.Dion. 23 | 3107 | 3107 | 108 BC | included | loan of wheat | ALD-000792 |
+| P.Dion. 3 | 3086 | 3086 | 108 BC | excluded | too fragmentary to show a loan (only the date line survives) |  |
+| P.Grenf. 1 28 | 220 | 220 | 108 BC | included | loan of wheat (fragment) | ALD-000793 |
+| P.Dion. 18 | 3101 | 3101 | 107 BC | included | loan of wheat | ALD-000795 |
+| P.Dion. 32 | 3113 | 3113 | 107 BC | included | loan of wheat (cheirographon, with one-half interest) | ALD-000796 |
+| P.Lips. 1 7 | 82 | 82 | 107 BC | included | receipt for repayment; names an earlier loan contract issued by Patus to Neandrus (year 33, Choiak 1) | ALD-000735 |
+| P.Par. 9 | 43645 | 43645 | 107 BC | excluded | account of deliveries and debts, no loan record |  |
+| SB 18 13846 | 89 | 89 | 107 BC | included | receipt for repayment; names earlier loan of 8 copper talents (year 9, Mecheir) | ALD-000794 |
+| P.Adler 6 | 5 | 5 | 106 BC | included | loan of castor seed | ALD-000797 |
+| P.Amh. 2 48 | 123 | 123 | 106 BC | included | loan of wine | ALD-000798 |
+| P.Amh. 2 50 | 124 | 124 | 106 BC | included | loan of money | ALD-000799 |
+| P.Dion. 24 | 3108 | 3108 | 106 BC | included | loan of wheat | ALD-000800 |
+| PSI 9 1023 | 5575 | 5575 | 106 BC | included | receipt for partial repayment; names earlier loan of 4 talents | ALD-000801 |
+| P.Dion. 19 | 2847 | 2847 | 105 BC | included | loan of wheat | ALD-000802 |
+| P.Dion. 20 | 2848 | 2848 | 105 BC | pending | pending Hansen: possibly the same loan as P.Dion. 19 restated the next day |  |
+| P.Dion. 30 | 3104 | 3104 | 105 BC | excluded | receipt for the loan in HGV 3108 (P.Dion. 24) |  |
+| P.Dryton 29 | 66 | 66 | 105 BC | included | loan of salt | ALD-000803 |
+| P.Grenf. 2 24 | 68 | 68 | 105 BC | included | loan of wine | ALD-000804 |
+| P.Dion. 25 | 3109 | 3109 | 104 BC | included | loan of wheat | ALD-000805 |
+| P.Dion. 31 | 3112 | 3112 | 104 BC | excluded | receipt for the loan in HGV 3109 (P.Dion. 25) |  |
+| P.Grenf. 2 31 | 75 | 75 | 104 BC | included | receipt for a share of a loan; names earlier loan | ALD-000806 |
+| P.Grenf. 2 26 | 70 | 70 | 103 BC | excluded | settlement among heirs about debts paid to creditors; no specific loan |  |
+| P.Grenf. 2 27 | 71 | 71 | 103 BC | included | loan of money; names earlier loan guaranteed by borrowers | ALD-000807, ALD-000808 |
+| P.Grenf. 2 28 | 72 | 72 | 103 BC | excluded | cession (ἀφίσταται) of land bought; no loan |  |
+| P.Grenf. 2 29 | 73 | 73 | 102 BC | included | loan of wheat and barley (two rows) | ALD-000810, ALD-000811 |
+| P.Grenf. 2 30 | 74 | 74 | 102 BC | included | receipt for repayment; names earlier loan of 2 talents | ALD-000809 |
+| P.Adler 10 | 10 | 10 | 101 BC | included | loan of money | ALD-000812 |
+| P.Grenf. 1 31 | 48349 | 48349 | 101-100 BC | included | loan of barley (beginning lost) | ALD-000813 |
+| BGU 6 1255 | 7326 | 7326 | 100-1 BC | excluded | petition; claim for a share of the father's debts paid, not a loan |  |
+| P.Adler 15 | 15 | 15 | 100 BC | included | loan of wheat and barley (two rows) | ALD-000814, ALD-000815 |
+| P.Rainer Cent. 50 | 8604 | 8604 | 100-51 BC | excluded | petition, too fragmentary to show a loan |  |
+| P.Lond. 3 1205 | 92 | 92 | 99 BC | included | loan of wheat (rest lost) | ALD-000816 |
+| P.Ryl. 4 586 | 5736 | 5736a | 99 BC | excluded | no text available |  |
+| SB 6 9255 | 5736 | 5736b | 99 BC | excluded | no text available |  |
+| P.Adler 19 | 19 | 19 | 98 BC | included | loan of iron (homologia at the agoranomus' office) | ALD-000817 |
+| UPZ 2 190 | 3592 | 3592 | 98 BC | included | loan of wheat (novation of an earlier debt) | ALD-000818 |
+| P.Tebt. 1 110 | 3746 | 3746 | 92 BC | included | loan of wheat (acknowledgement) | ALD-000819 |
+| UPZ 1 125 | 3517 | 3517 | 89 BC | included | loan contract (money) | ALD-000820 |
+| BGU 14 2374 | 3994 | 3994 | 88-81 BC | included | petition; mentions a loan contract (δανείσας, κατὰ συγγραφὴν δανείου) of 22 1/2 choes and 26 copper talents | ALD-000821, ALD-000822 |
+| P.Bour. 12 | 305 | 305 | 88 BC | excluded | letter (political news), no loan |  |
+| BGU 18 .1 2732 | 69806 | 69806 | 87-85 BC | excluded | petition requesting state seed-grain loan (εἰς δάνεια τοῦ ... σπόρου), not shown made |  |
+| P.Ryl. 4 587 | 5303 | 5303 | 87 BC | included | loan contract (copper money) | ALD-000823 |
+| BGU 18 .1 2734 | 69808 | 69808 | 86-85 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Berl. Salm. 14 | 78012 | 78012 | 86 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Berl. Salm. 3 | 78001 | 78001 | 86 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Berl. Salm. 4 | 78002 | 78002 | 86 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Berl. Salm. 5 | 78003 | 78003 | 86 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Berl. Salm. 9 | 78007 | 78007 | 86-85 BC | excluded | state seed-grain grant (request by a private landowner for seed from the state) |  |
+| BGU 18 .1 2758 | 69831 | 69831 | 85-84 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Hamb. 1 58 | 5131 | 5131 | 83 BC | included | loan of wheat (subscriptions of a six-witness contract) | ALD-000825 |
+| BGU 18 .1 2754 | 47218 | 47218 | 78 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Berl. Salm. 18 | 47215 | 47215 | 78 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Berl. Salm. 20 | 47217 | 47217 | 78 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Ryl. 4 588 | 5304 | 5304 | 78 BC | included | receipt for repayment; names the earlier loan of 8 talents 2500 copper drachmas | ALD-000824 |
+| SB 5 8755 | 5712 | 5712 | 78 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| SB 5 8756 | 5713 | 5713 | 78 BC | excluded | state seed-grain loan (royal granary, εἰς δάνεια σπέρματα / τοῦ εἰς τὸ ... σπόρου) |  |
+| P.Mert. 1 6 | 5239 | 5239 | 77 BC | included | loan of wheat | ALD-000826 |
+| BGU 10 1972 | 7812 | 7812 | 75-26 BC | included | loan of grain (acknowledgement) | ALD-000827 |
+| SB 6 9405 | 5768 | 5768 | 75 BC | included | receipt for repayment; names earlier loan of 13 art. barley (Petesuchus to Pacrates and Thais) | ALD-000828 |
+| JJP 44 (2014) 104 no. 1 | 43045 | 43045 | 74 BC | included | loan of radish seed | ALD-000829 |
+| SB 5 7532 | 5697 | 5697 | 74 BC | included | loan contract (double document) | ALD-000830 |
+| JJP 44 (2014) 108 no. 2 | 700717 | 700717 | 71 BC | included | loan of money | ALD-000831 |
+| BGU 20 2844 | 316207 | 316207 | 68 BC | included | receipt for repayment; names earlier loan by Agathodorus to Theodorus and Heraclea | ALD-000832 |
+| SB 26 16745 | 5907 | 5907 | 66-65 BC | included | loan of wheat | ALD-000833 |
+| P.Oxy. 14 1644 | 5258 | 5258 | 63-62 BC | pending | pending Hansen: δάνειον ἔντοκον within the family, possibly a fictitious contract |  |
+| BGU 8 1818 | 4897 | 4897 | 60-59 BC | included | petition; mentions loan contract for 150 art. wheat | ALD-000834 |
+| BGU 8 1823 | 4902 | 4902 | 60-55 BC | included | petition; mentions loan of copper by petitioner to three persons | ALD-000835 |
+| P.Bingen 57 | 44501 | 44501 | 50-1 BC | excluded | too fragmentary to show a loan |  |
+| SB 8 9764 | 5793 | 5793 | 49 BC | included | loan of wheat (acknowledgement) | ALD-000836 |
 | BGU 16 2577 | 23299 | 23299 | 30 BC-AD 14 | excluded | tax list (laographia), no loan |  |
 | SB 16 12700 | 17452 | 17452 | 30 BC-AD 14 | included | loan contract | ALD-000021 |
 | BGU 16 2665 | 23389 | 23389 | 28-27 BC | excluded | private letter; χρῆσις = use, no loan |  |
