@@ -1,7 +1,7 @@
 -- =====================================================================
 -- The Ancient Loans Database (ALD) — schema v0.3
 -- Created and maintained by Hansen Zheng
--- Plain PostgreSQL. Field definitions: codebook.md.
+-- Plain PostgreSQL. Field definitions: codebook.md (this folder).
 -- =====================================================================
 
 create sequence loan_seq;

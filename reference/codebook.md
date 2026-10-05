@@ -1,6 +1,6 @@
 # ALD Codebook
 
-Field definitions for the Ancient Loans Database. The structure is defined in `schema.sql`.
+Field definitions for the Ancient Loans Database. The structure is defined in `schema.sql` (this folder).
 
 ## General rules
 

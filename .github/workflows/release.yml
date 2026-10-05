@@ -21,7 +21,7 @@ jobs:
           name="ald-${GITHUB_REF_NAME}"
           mkdir "$name"
           psql "$DB_URL" -v ON_ERROR_STOP=1 -c "\copy (select * from loans order by id) to '$name/loans.csv' with (format csv, header true)"
-          cp schema.sql codebook.md LICENSE "$name"/
+          cp reference/schema.sql reference/codebook.md LICENSE "$name"/
           zip -r "$name.zip" "$name"
       - name: Publish release
         env:

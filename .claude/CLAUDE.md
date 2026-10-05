@@ -8,16 +8,16 @@ below applies to any source as the database expands.
 
 ## Working rules (read first)
 - Hansen decides. Do only what Hansen asks in the conversation. Start simple; build step by step.
-- Never change inclusion rules, `codebook.md`, field formats or the schema on your own. If a
+- Never change inclusion rules, `reference/codebook.md`, field formats or the schema on your own. If a
   source raises a question the rules do not answer, ask Hansen; do not decide it and do not label
   your own choices as Hansen's.
 - Do not add tools, scripts or data files to the repo. Working files live in the session's
   scratch folder (they are lost when the session ends, so record results in the database and
-  `reviewed.md`).
+  the README change log).
 - Work on `main`; commit and push directly to `main` (Hansen, Oct 2026). Be concise and organized.
 - Only one session should write to the database at a time.
-- Keep this file current: when Hansen decides something, record it here (and in `codebook.md` if
-  it concerns a field).
+- Keep this file current: when Hansen decides something, record it here (and in `reference/codebook.md`
+  if it concerns a field). Log every data change in the README change log (Hansen, Oct 2026).
 
 ## Architecture
 - **Supabase (Postgres)**: the only home of the data. Project ref `zzlrdlkdngxkkcrtolpx`.
@@ -25,19 +25,21 @@ below applies to any source as the database expands.
   allows it without prompts. Reads can also use the public REST API (curl with the publishable key
   in `docs/config.js`). Destructive SQL (drop, alter type) cannot be approved in cloud sessions:
   give Hansen a short SQL file to run in the Supabase SQL Editor.
-- **Repo** = publication only: `docs/` (GitHub Pages site), `schema.sql`, `codebook.md`,
-  `reviewed.md` (review ledger). No data.
+- **Repo** = publication only: `README.md` (brief description + change log), `docs/` (GitHub
+  Pages site), `reference/` (`schema.sql`, `codebook.md`). No data. The review ledger
+  `reviewed.md` was removed (Hansen, Oct 2026); its last version is in git history
+  (`git show 4d2672d:reviewed.md`).
 - Site: plain HTML + `docs/app.js`, no CSS (Hansen's preference). Main page = catalogue tree under
   "All loans": Time period (centuries) | Location (region > place) | Currency (Coinage / Commodity,
   list `COINAGE` in app.js), side by side; counts from view `loan_catalogue`; a node (URL hash,
   e.g. `#period=2`) loads only its loans, without notes. `loan.html` shows one loan incl. notes.
 - Releases: pushing tag `vX.Y` runs `.github/workflows/release.yml` (CSV export, secret
   `SUPABASE_DB_URL`, untested until first tag).
-- Schema: `schema.sql` (v0.3) is a one-time setup script; never re-run it. Schema changes =
-  `ALTER` statements (run by Hansen) + update `schema.sql`, `codebook.md`, `docs/app.js`.
+- Schema: `reference/schema.sql` (v0.3) is a one-time setup script; never re-run it. Schema changes =
+  `ALTER` statements (run by Hansen) + update `reference/schema.sql`, `reference/codebook.md`, `docs/app.js`.
 
 ## Data standards
-- Follow `codebook.md` exactly. One table `loans`, one row per loan. Fields: id, year, place,
+- Follow `reference/codebook.md` exactly. One table `loans`, one row per loan. Fields: id, year, place,
   amount, currency, borrower, lender, interest, duration, source, source_url, notes (+ generated
   year_sort). Nothing else is collected (Hansen).
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
@@ -143,11 +145,11 @@ debt acknowledgements are not loans in substance (Hansen).
 1. **Source.** Use an open digital corpus with original texts and metadata (Roman Egypt:
    github.com/papyri/idp.data, CC BY 3.0, DDbDP texts + HGV metadata; papyri.info itself has a
    bot check). Check reachability first (trismegistos.org: TLS issue; quod.lib.umich.edu:
-   blocked). Add the corpus to the Coverage table in `reviewed.md`.
+   blocked).
 2. **Candidates.** Select documents in scope (period, place) by metadata tags (e.g. HGV
    "Darlehen" or a title with "loan") and by full-text search for loan vocabulary (Greek:
    δαν-, χρῆσις/χρήσ-, ἔντοκ-, προχρ-; accent-insensitive). Drop every document already in
-   `reviewed.md`.
+   the database (`source`) or in the old ledger (`git show 4d2672d:reviewed.md`).
 3. **Extraction.** Subagents read the original text of each candidate (batches of ~25; render
    the edition faithfully, never regularize spellings or add numeral values) and return per
    document: include/exclude, reason, and loan rows in the formats above. Translations are aids
@@ -166,11 +168,20 @@ debt acknowledgements are not loans in substance (Hansen).
 8. **Verify.** After every write: row counts, and md5 of each note against the expected text
    (text copied through agents can lose or alter characters; private-use characters from the
    edition are dropped in transfer). Fix mismatches.
-9. **Record.** Add every reviewed document to `reviewed.md`, one row per HGV record (included
-   with its ALD IDs, or excluded with the reason) and update its Coverage table; update the status below; commit.
+9. **Record.** Add a README change-log entry (ranges, not one line per loan: "Added
+   ALD-XXXXXX - XXXXXX: <corpus, place, period>"; removals with their IDs); update the status
+   below; commit.
 
 ## Status
-- DB: 770 rows (ALD-000001 to 000837, with gaps). Loan audit (Oct 2026, Hansen): all 835 rows
+- DB: 727 rows (ALD-000001 to 000837, with gaps). Substance check (Oct 2026, Hansen: "delete
+  anything that isn't a loan"; on the unclear cases Hansen said "follow your instincts"): all 770
+  rows checked against the loan definition; 43 removed (advance and credit sales, work pay, rent,
+  dowry, pawn, old debts rewritten as loans, paramone where service pays off the money, Mons
+  Claudianus pay/food advances, mirror acknowledgements P.Oxy. 49 3493/3494, maintenance capital
+  UPZ 1 118, too fragmentary); IDs in the README change log. Kept: antichretic loans whose
+  principal is repaid (use replaces only the interest), ALD-000347 (money borrowed on a pledged
+  slave), ALD-000697. Run by Hansen, verified.
+- Before that: 770 rows. Loan audit (Oct 2026, Hansen): all 835 rows
   read against the original text; 66 removed (64 not shown to be a loan: loan wording only in the
   editor's restoration, advances, debts not called a loan, deposit/credit sale/pledge, too
   fragmentary; 2 duplicates: ALD-000649, 651); 87 field fixes (amounts with `[...]`, restored
@@ -182,10 +193,10 @@ debt acknowledgements are not loans in substance (Hansen).
   P.Michael. 9 200 dr.; SPP 22 83 second entry; P.Flor. 3 316 15 artabas). Schema v0.3 (year ranges; amount = text fraction).
   View `loan_catalogue` for the site. RLS on, public SELECT only.
 - Done: Roman Egypt (30 BC - AD 284), HGV records tagged as loans: 932 documents reviewed,
-  440 included, 492 excluded (see `reviewed.md`). Notes, durations, audit (96 corrections) done
+  440 included, 492 excluded (old ledger, see Architecture). Notes, durations, audit (96 corrections) done
   for all rows.
 - Done (Oct 2026): Roman Egypt full-text pass: 549 further documents reviewed, 117 included
-  (ALD-000480 to 000614, 135 rows), 432 excluded (see `reviewed.md`). Original rules kept;
+  (ALD-000480 to 000614, 135 rows), 432 excluded (old ledger, see Architecture). Original rules kept;
   creditor-word-only rows and advances outside leases inserted at Hansen's OK.
 - Next (Hansen, Oct 2026): Ptolemaic Egypt first (332-30 BC; same method: 355 HGV records tagged
   as loans, then a full-text pass, ~212 candidates), then the Roman world outside Egypt, then
@@ -199,7 +210,7 @@ debt acknowledgements are not loans in substance (Hansen).
 - Done (Oct 2026): Ptolemaic Egypt, HGV records tagged as loans: 361 documents reviewed, 189
   included (ALD-000615 to 000836, 222 rows), 172 excluded (incl. P.Dion. 20, BGU 10 1981,
   P.Dion. 11, P.Oxy. 14 1644: possible duplicates / loan not shown to be made, skipped by
-  Hansen; see `reviewed.md`). Notes (original text + translation),
+  Hansen; see the old ledger). Notes (original text + translation),
   audit and md5 checks done; 53 Egyptian-calendar terms converted (wandering calendar, regnal
   epochs; checked against the loan year). Loan acknowledgements ("I have from you ... I will
   repay") counted as loans; debt acknowledgements (ὀφείλημα) not. Next: Ptolemaic full-text
@@ -218,9 +229,6 @@ debt acknowledgements are not loans in substance (Hansen).
 - Fixed: ALD-000464's note now holds lines 1-13 of BGU 4 1150 (its own 1,000-dr. loan; run by
   Hansen in the SQL Editor, verified). Note updates via the connector time out (approval
   prompt); give Hansen SQL for those.
-- `reviewed.md` cleaned up (Oct 2026): HGV column added (one row per HGV record, no ambiguous
-  repeats), editions written as in the database's `source`; BGU 4 1150 I (18597a) marked included
-  with ALD-000464 (the earlier loan its receipt names).
 - No-conversion fix (Oct 2026): 12 rows put back into the document's units (ALD-000078, 187, 201,
   244, 427, 444, 465, 554, 576, 580, 592, 603); amount check widened for sums in several units
   (run by Hansen in the SQL Editor, verified). Rows written in drachmas with a talent equivalent
