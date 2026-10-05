@@ -71,7 +71,9 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   (`100`, `12 1/6`, `2/3`; 1 1/2 1/5 = `1 7/10`). Never convert currency (Hansen, Oct 2026): keep
   the unit(s) the document uses; a sum in several units follows the document, each number with
   its unit: `2 talents 4800 drachmas`, `53 drachmas 2 obols` (currency `talent; drachma`,
-  `drachma; obol`). Lost, or wholly restored by the editor -> empty.
+  `drachma; obol`). Lost, or wholly restored by the editor -> empty. Preserved part with more
+  lost -> preserved part + ` [...]`: `1 [...]` (Hansen, Oct 2026: "keep 1 talent, but indicate
+  that there is more missing").
 - **currency**: singular, lowercase: `drachma`, `denarius`, `talent`, `artaba (wheat)`,
   `keramion (wine)`; several units `talent; drachma`. Record whatever the source says (Hansen,
   Oct 2026): a metal the source names goes in brackets, `drachma (copper)`, `talent (copper)`,
@@ -160,7 +162,11 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   as loans, then a full-text pass, ~212 candidates), then the Roman world outside Egypt, then
   Late Antique Egypt. Language does not matter (Hansen): Demotic and other texts are included,
   with original text and English translation, from the primary source or its documentation.
-  First batch shown to Hansen before inserting.
+  Batch 1 (25 docs) approved by Hansen; BGU 6 1246 skipped (Hansen); accounts, registers and
+  state seed loans that mention a loan stay excluded (as in Roman Egypt). Ptolemaic currency:
+  `drachma (silver)` / `drachma (copper)` etc. as the text says; Macedonian-month terms get no
+  equivalent; Egyptian-calendar terms converted with the wandering calendar when the document's
+  date is exact.
 - Hansen decisions (Oct 2026): amounts of BGU 4 1132, CPR 1 203, P.Oxy. 12 1473 kept as is;
   "Muziris, India" kept; ALD-000001 dated by HGV/BL (loan AD 146 under Antoninus Pius; l. 41
   titles of Marcus Aurelius are a later addition, BL I 325) -> duration fixed to Antoninus Pius.

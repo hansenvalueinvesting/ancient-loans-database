@@ -13,9 +13,8 @@ create table loans (
               check (year ~ '^(AD [1-9][0-9]*(-[1-9][0-9]*)?|[1-9][0-9]*(-[1-9][0-9]*)? BC|[1-9][0-9]* BC-AD [1-9][0-9]*)$'),
                                              -- e.g. 'AD 57', '100 BC', 'AD 101-200', '30 BC-AD 14'
   place       text,                          -- where the loan was made
-  amount      text constraint loans_amount_format   -- as written: '100', '12 1/6', '2/3', or in several units '2 talents 4800 drachmas'
-              check (amount ~ '^([1-9][0-9]*|[1-9][0-9]* [1-9][0-9]*/[1-9][0-9]*|[1-9][0-9]*/[1-9][0-9]*)$'
-                  or amount ~ '^([1-9][0-9]*|[1-9][0-9]* [1-9][0-9]*/[1-9][0-9]*|[1-9][0-9]*/[1-9][0-9]*) [a-z]+( ([1-9][0-9]*|[1-9][0-9]* [1-9][0-9]*/[1-9][0-9]*|[1-9][0-9]*/[1-9][0-9]*) [a-z]+)+$'),
+  amount      text constraint loans_amount_format   -- as written: '100', '12 1/6', '2/3', several units '2 talents 4800 drachmas', more lost '1 [...]'
+              check (amount ~ '^(([1-9][0-9]*|[1-9][0-9]* [1-9][0-9]*/[1-9][0-9]*|[1-9][0-9]*/[1-9][0-9]*)|([1-9][0-9]*|[1-9][0-9]* [1-9][0-9]*/[1-9][0-9]*|[1-9][0-9]*/[1-9][0-9]*) [a-z]+( ([1-9][0-9]*|[1-9][0-9]* [1-9][0-9]*/[1-9][0-9]*|[1-9][0-9]*/[1-9][0-9]*) [a-z]+)+)( \[\.\.\.\])?$'),
   currency    text,                          -- currency or unit, e.g. 'drachma', 'artaba (wheat)'
   borrower    text,
   lender      text,
