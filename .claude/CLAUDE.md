@@ -43,7 +43,9 @@ below applies to any source as the database expands.
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
-Every loan transaction a source documents, none missed, none repeated:
+A ledger of loans actually made (Hansen, Oct 2026): every loan transaction a source documents,
+none missed, none repeated, each individual loan separately. The text need not say "loan";
+judge from the text whether a loan was actually made:
 - loan contracts, in money or in kind (incl. acknowledgements, antichretic and paramone loans,
   mortgage loans, copies and drafts, crossed-out contracts, advance loans called a loan);
 - loans mentioned in petitions or letters;
@@ -60,7 +62,7 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 - **year**: from the document's date (for papyri: HGV). Certain year `AD 57` / `100 BC`;
   uncertain = full range of possible years `AD 101-200`, `24-23 BC`, `30 BC-AD 14`
   (alternative dates -> span from earliest to latest). An earlier loan named in a document gets
-  its own year only if certain, else empty.
+  the year it was made (Hansen: always the year the loan was made; uncertain = range).
 - **place**: where the loan was made, then the region/province at the time: `Oxyrhynchus, Egypt`,
   `Tebtunis (Arsinoite nome), Egypt`, `Arsinoe, Egypt`, `Arsinoite nome, Egypt`; keep a "(?)"
   doubt; Dura = `Parthian Empire` before c. AD 165.
@@ -90,7 +92,7 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 - **source**: standard citation (papyri: Checklist form, arabic volume numbers): `P.Oxy. 3 506`,
   `BGU 1 101`, `SB 6 9109`, journal first editions `ZPE 222 (2022) 179`.
 - **source_url**: the online edition (papyri: `https://papyri.info/ddbdp/<ddb id>`).
-- **notes**: exactly two sections, nothing else:
+- **notes**: two sections, then the credit line (Hansen):
   ```
   Original Text:
   <the original text, line by line with line numbers, copied exactly from the edition in its
@@ -98,6 +100,10 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 
   English translation:
   <faithful translation of exactly that text; lost text as [...]; uncertain words marked (?)>
+
+  Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+  Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+  (github.com/papyri/idp.data), licensed CC BY 3.0.
   ```
   Whole text normally; if a sheet holds several unrelated documents, only the lines of the
   loan's document. All rows from one document share its note.
@@ -142,12 +148,11 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   (ALD-000480 to 000614, 135 rows), 432 excluded (see `reviewed.md`). Original rules kept;
   creditor-word-only rows and advances outside leases inserted at Hansen's OK.
 - Next (Hansen): Late Antique Egypt (284-641), Ptolemaic Egypt, sources outside Egypt.
-- Open questions from the full-text pass: earlier-loan years (BGU 4 1157, ZPE 205 (2018) 221,
-  P.Oxy. 14 1648 take the document's year); restored or inconsistent amounts (BGU 4 1132,
-  CPR 1 203, P.Oxy. 12 1473); place "Muziris, India" (SB 18 13167); O.Claud. rows without a
-  loan word (ALD-000271, 273, 280, 287, 298, 371).
-- Later: Late Antique Egypt (284-641), Ptolemaic Egypt, sources outside Egypt.
-- Open questions for Hansen: ALD-000001 (P.Oxy. 3 507) dating formula names Marcus Aurelius
-  (= AD 169) but HGV and the year field say AD 146; crediting idp.data (CC BY) on the site;
-  GitHub Pages source must be `main` / `/docs`.
+- Hansen decisions (Oct 2026): amounts of BGU 4 1132, CPR 1 203, P.Oxy. 12 1473 kept as is;
+  "Muziris, India" kept; ALD-000001 dated by HGV/BL (loan AD 146 under Antoninus Pius; l. 41
+  titles of Marcus Aurelius are a later addition, BL I 325) -> duration fixed to Antoninus Pius.
+- To do: (a) earlier loans get the year they were made (all rows); (b) credit line on all notes
+  (bulk UPDATE of notes times out via the connector; Hansen may run it in the SQL Editor);
+  (c) six O.Claud. rows (ALD-000271, 273, 280, 287, 298, 371) described to Hansen to check.
+- GitHub Pages source is `main` / `/docs` (Hansen confirmed).
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's own trigger, not ours). Left as is.
