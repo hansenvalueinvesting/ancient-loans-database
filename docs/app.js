@@ -60,10 +60,11 @@ function selection() {
 }
 
 // Currency kinds: coinage (money and units of account) vs commodity (loans in kind).
-// Any recorded currency not listed here is a commodity.
+// A currency is coinage if all its units are listed here (e.g. 'talent; drachma'); any other is a commodity.
 const COINAGE = ['aureus', 'denarius', 'drachma', 'gold coin', 'mina', 'obol', 'sestertius', 'solidus', 'stater', 'talent', 'tetradrachm'];
 const KINDS = { coinage: 'Coinage', commodity: 'Commodity' };
-const coinList = q(`(${COINAGE.map(pgq).join(',')})`);
+const kind = (cur) => (cur.split('; ').every((u) => COINAGE.includes(u)) ? 'coinage' : 'commodity');
+let coinList = ''; // PostgREST list of the recorded coinage currencies, set by loadCatalogue
 
 const node = (href, label, n) => `<a href="#${href}">${esc(label)}</a> (${n.toLocaleString()})`;
 
@@ -95,7 +96,7 @@ async function loadCatalogue() {
 
   // Currency: coinage, commodity, unknown.
   const currencies = [...tally(rows, (r) => r.currency)].sort(([a], [b]) => String(a).localeCompare(b));
-  const kind = (cur) => (COINAGE.includes(cur) ? 'coinage' : 'commodity');
+  coinList = q(`(${currencies.filter(([cur]) => cur != null && kind(cur) === 'coinage').map(([cur]) => pgq(cur)).join(',')})`);
   $('cat-currency').innerHTML = Object.keys(KINDS).map((k) => {
     const list = currencies.filter(([cur]) => cur != null && kind(cur) === k);
     if (!list.length) return '';
@@ -140,13 +141,14 @@ async function showSelection() {
 
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-// Amounts are text: a whole number or a fraction, e.g. '100', '12 1/6', '2/3'.
+// Amounts are text: a whole number or a fraction, e.g. '100', '12 1/6', '2/3', or a sum in several
+// units as the document writes it, e.g. '2 talents 4800 drachmas' (no numeric value; sorts last).
 function amountValue(s) {
   const m = String(s).match(/^(?:(\d+)(?: (\d+)\/(\d+))?|(\d+)\/(\d+))$/);
   if (!m) return NaN;
   return m[4] ? m[4] / m[5] : Number(m[1]) + (m[2] ? m[2] / m[3] : 0);
 }
-const fmtAmount = (s) => (s == null ? '' : String(s).replace(/^\d+/, (w) => Number(w).toLocaleString()));
+const fmtAmount = (s) => (s == null ? '' : String(s).replace(/(^| )(\d+)(?=$| [^\d])/g, (m, sp, w) => sp + Number(w).toLocaleString()));
 
 // Year filter input → sortable number: '100 BC' → -100, 'AD 57' / '57 AD' / '57' → 57.
 // Returns null for empty input, NaN for input that is not a year.
@@ -209,10 +211,11 @@ function sortRows(rows) {
   const { sortKey: k, sortDir: d } = state;
   const numeric = k === 'year_sort' || k === 'amount';
   return rows.sort((a, b) => {
-    const x = a[k], y = b[k];
-    if (x == null || x === '') return 1;
-    if (y == null || y === '') return -1;
     const num = (v) => (k === 'amount' ? amountValue(v) : Number(v));
+    const blank = (v) => v == null || v === '' || (numeric && Number.isNaN(num(v)));
+    const x = a[k], y = b[k];
+    if (blank(x)) return blank(y) ? 0 : 1;
+    if (blank(y)) return -1;
     return (numeric ? num(x) - num(y) : String(x).localeCompare(String(y))) * d;
   });
 }

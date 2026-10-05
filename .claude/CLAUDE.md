@@ -14,7 +14,7 @@ below applies to any source as the database expands.
 - Do not add tools, scripts or data files to the repo. Working files live in the session's
   scratch folder (they are lost when the session ends, so record results in the database and
   `reviewed.md`).
-- Work on `main`; commit directly as you go. Be concise and organized.
+- Work on `main`; commit and push directly to `main` (Hansen, Oct 2026). Be concise and organized.
 - Only one session should write to the database at a time.
 - Keep this file current: when Hansen decides something, record it here (and in `codebook.md` if
   it concerns a field).
@@ -68,10 +68,12 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   `Tebtunis (Arsinoite nome), Egypt`, `Arsinoe, Egypt`, `Arsinoite nome, Egypt`; keep a "(?)"
   doubt; Dura = `Parthian Empire` before c. AD 165.
 - **amount**: the principal as written; whole number or fraction in lowest terms, never decimals
-  (`100`, `12 1/6`, `2/3`; 1 1/2 1/5 = `1 7/10`). Talents are never converted to drachmas
-  (Hansen, Oct 2026); obols at 6 per drachma. Lost, or wholly restored by the editor -> empty.
+  (`100`, `12 1/6`, `2/3`; 1 1/2 1/5 = `1 7/10`). Never convert currency (Hansen, Oct 2026): keep
+  the unit(s) the document uses; a sum in several units follows the document, each number with
+  its unit: `2 talents 4800 drachmas`, `53 drachmas 2 obols` (currency `talent; drachma`,
+  `drachma; obol`). Lost, or wholly restored by the editor -> empty.
 - **currency**: singular, lowercase: `drachma`, `denarius`, `talent`, `artaba (wheat)`,
-  `keramion (wine)`.
+  `keramion (wine)`; several units `talent; drachma`.
 - **borrower / lender**: Latinized English names (Dioscorus, Sarapion, Aurelius Theon),
   `X son of Y` / `X daughter of Y`, `alias Z`; several people separated by `; `. Partly
   preserved: `[...]eles son of Acusilaus`. Wholly lost: empty. A name restored by the editor
@@ -140,8 +142,8 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
    with its ALD IDs, or excluded with the reason) and update its Coverage table; update the status below; commit.
 
 ## Status
-- DB: 614 rows (ALD-000001 to 000614); ALD-000475 (duplicate of 000454) to be deleted by Hansen
-  in the SQL Editor (Oct 2026), then 613 rows. Schema v0.3 (year ranges; amount = text fraction).
+- DB: 613 rows (ALD-000001 to 000614; ALD-000475, a duplicate of 000454, deleted by Hansen,
+  Oct 2026). Schema v0.3 (year ranges; amount = text fraction).
   View `loan_catalogue` for the site. RLS on, public SELECT only.
 - Done: Roman Egypt (30 BC - AD 284), HGV records tagged as loans: 932 documents reviewed,
   440 included, 492 excluded (see `reviewed.md`). Notes, durations, audit (96 corrections) done
@@ -167,5 +169,9 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 - `reviewed.md` cleaned up (Oct 2026): HGV column added (one row per HGV record, no ambiguous
   repeats), editions written as in the database's `source`; BGU 4 1150 I (18597a) marked included
   with ALD-000464 (the earlier loan its receipt names).
+- No-conversion fix (Oct 2026): 12 rows put back into the document's units (ALD-000078, 187, 201,
+  244, 427, 444, 465, 554, 576, 580, 592, 603); amount check widened for sums in several units
+  (SQL for Hansen to run in the SQL Editor; pending). Rows written in drachmas with a talent equivalent
+  (ALD-000012, 237, 364, 445, 448) keep drachmas.
 - GitHub Pages source is `main` / `/docs` (Hansen confirmed).
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's own trigger, not ours). Left as is.
