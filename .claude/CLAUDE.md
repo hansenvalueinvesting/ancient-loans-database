@@ -78,6 +78,9 @@ Definition (Hansen, Oct 2026): a loan is when someone BORROWS money (or goods) f
 the intention of returning it, with or without interest. Exchanges (trades) where one party pays
 for a good or a service are not loans, whatever they are called. Pawns, antichretic leases and
 debt acknowledgements are not loans in substance (Hansen).
+Hansen (Oct 2026, Ptolemaic full-text pass): "exclude all the ones where there isn't an obvious
+"loan" transaction, as in money being lent and expected to return" (bare loan words with no
+amount, unclear whether a borrowing, unnamed lenders that may be the estate or the state).
 
 ### Field formats (as used in all 479 rows)
 - **year**: from the document's date (for papyri: HGV). Certain year `AD 57` / `100 BC`;
@@ -173,7 +176,14 @@ debt acknowledgements are not loans in substance (Hansen).
    below; commit.
 
 ## Status
-- DB: 727 rows (ALD-000001 to 000837, with gaps). Substance check (Oct 2026, Hansen: "delete
+- DB: 737 rows (ALD-000001 to 000847, with gaps).
+- Done (Oct 2026): Ptolemaic full-text pass: 191 documents not tagged as loans in HGV but
+  containing loan vocabulary (δαν-, χρῆσις, ἔντοκ-, προχρ-, εὐχρηστ-; ending by 30 BC; not in the
+  old ledger); 10 included (ALD-000838 to 000847, one row each), 181 excluded (accounts, advances,
+  state seed grain, land cessions for εὐχρηστία, letters using χρῆσθαι = "use", bare loan words).
+  Notes verified by md5. Remaining for Ptolemaic Egypt: Demotic texts (no open full-text source:
+  TLA website has a bot check; its Hugging Face dataset holds isolated sentences only).
+- Before the full-text pass: 727 rows (ALD-000001 to 000837, with gaps). Substance check (Oct 2026, Hansen: "delete
   anything that isn't a loan"; on the unclear cases Hansen said "follow your instincts"): all 770
   rows checked against the loan definition; 43 removed (advance and credit sales, work pay, rent,
   dowry, pawn, old debts rewritten as loans, paramone where service pays off the money, Mons
@@ -213,8 +223,8 @@ debt acknowledgements are not loans in substance (Hansen).
   Hansen; see the old ledger). Notes (original text + translation),
   audit and md5 checks done; 53 Egyptian-calendar terms converted (wandering calendar, regnal
   epochs; checked against the loan year). Loan acknowledgements ("I have from you ... I will
-  repay") counted as loans; debt acknowledgements (ὀφείλημα) not. Next: Ptolemaic full-text
-  pass (~212 candidates), then Demotic texts (need an open source).
+  repay") counted as loans; debt acknowledgements (ὀφείλημα) not. Full-text pass done (above);
+  Demotic texts need an open source.
 - Hansen decisions (Oct 2026): amounts of BGU 4 1132, CPR 1 203, P.Oxy. 12 1473 kept as is;
   "Muziris, India" kept; ALD-000001 dated by HGV/BL (loan AD 146 under Antoninus Pius; l. 41
   titles of Marcus Aurelius are a later addition, BL I 325) -> duration fixed to Antoninus Pius.

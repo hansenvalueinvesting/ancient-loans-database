@@ -5,6 +5,7 @@ A systematic, standardized record of every documented loan in the ancient world,
 ## Change log
 
 **2026-10-05**
+- Added ALD-000838 - 000847: Ptolemaic Egypt (332 - 30 BC), full-text search of the Greek papyri for loan vocabulary (191 further documents reviewed, 10 loans). Database: 737 loans.
 - Repository cleaned up: `codebook.md` and `schema.sql` moved to `reference/`; review ledger `reviewed.md` removed.
 - Substance check of all 770 rows: removed 43 rows that are not loans (advance sales and credit sales, pay for work, rent, dowry, pawns, old debts rewritten as loans, service paying off the money, texts too fragmentary to show a borrowing): ALD-000003, 000011, 000026, 000033, 000060, 000062, 000101, 000105, 000133, 000187, 000253, 000271, 000272, 000274, 000279, 000341, 000350, 000351, 000398, 000414, 000469, 000544, 000563, 000583, 000624, 000625, 000626, 000627, 000641, 000653, 000662, 000665, 000672, 000721, 000734, 000736, 000742, 000747, 000775, 000776, 000782, 000818, 000834. Database: 727 loans.
 - Definition of a loan adopted: someone borrows money or goods with the intention of returning it, with or without interest; payments for goods or services are not loans, whatever they are called.
