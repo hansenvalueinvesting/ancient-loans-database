@@ -10,7 +10,7 @@ every new batch of documents.
 |---|---|---|---|---|---|
 | Roman Egypt, papyri (DDbDP texts, HGV metadata via papyri.info / idp.data) | HGV records dated 30 BC - AD 284 tagged "Darlehen" (loan) or titled as a loan | 932 | 440 | 492 | Done |
 | Roman Egypt, papyri | All other texts dated 30 BC - AD 284 containing loan vocabulary (full-text search: δαν-, χρῆσις, ἔντοκ-, προχρ-) | 549 | 117 | 432 | Done |
-| Ptolemaic Egypt, papyri (DDbDP texts, HGV metadata via idp.data) | HGV records dated 332-30 BC tagged "Darlehen" (loan) or titled as a loan | 361 | 189 | 168 | Done (4 pending Hansen; full-text pass and Demotic texts not started) |
+| Ptolemaic Egypt, papyri (DDbDP texts, HGV metadata via idp.data) | HGV records dated 332-30 BC tagged "Darlehen" (loan) or titled as a loan | 361 | 189 | 172 | Done (full-text pass and Demotic texts not started) |
 | Late Antique Egypt (AD 284-641), outside Egypt | - | 0 | 0 | 0 | Not started |
 
 Excluded documents fall outside the inclusion rule in `codebook.md` (e.g. repayment receipts,
@@ -120,7 +120,7 @@ ALD IDs = rows in the database.
 | SB 12 10782 | 4346 | 4346 | 247-246 BC | included | loan of olyra (acknowledgement) | ALD-000645 |
 | BGU 10 1966 | 5002 | 5002 | 246-221 BC | included | loan contract (end only; 'ἔγγυος τοῦ δανείου' preserved) | ALD-000646 |
 | P.Cair. Zen. 3 59504 | 1142 | 1142 | 246-243 BC | included | bank notice of a loan on mortgage of a vineyard at Philadelphia | ALD-000647 |
-| BGU 10 1981 | 2692 | 2692 | 245-244 BC | pending | pending Hansen: possibly the same contract as SB 12 11058 (TM 2931) |  |
+| BGU 10 1981 | 2692 | 2692 | 245-244 BC | excluded | possibly the same contract as SB 12 11058 (TM 2931); skipped (Hansen) |  |
 | P.Col. 4 83 | 1796 | 1796 | 245-244 BC | included | petition; mentions a loan of 70 silver dr. by Nicon to Simon and the 115-dr. loan contract that replaced it | ALD-000648, ALD-000649 |
 | P.Cair. Zen. 3 59355 | 998 | 998 | 244 BC | included | statement to arbitrators (court-type document) naming a loan contract not recorded elsewhere | ALD-000622 |
 | P.Ross. Georg. 2 1 + 2 | 2931 | 2931a | 244 BC | excluded | duplicate of HGV 2931b (same contract, TM 2931; this record holds only the prescript, ll. 1-3) |  |
@@ -315,7 +315,7 @@ ALD IDs = rows in the database.
 | P.Dion. 41 | 3122 | 3122 | 109 BC | excluded | too fragmentary to show a loan |  |
 | P.Grenf. 1 26 | 48348 | 48348 | 109 BC | included | release (repayment) of a loan; names earlier loan of 56 art. wheat (year 3, Thoth) | ALD-000770 |
 | P.Amh. 2 49 | 211 | 211 | 108 BC | included | loan contract (fragment; borrowers called οἱ δεδανεισμένοι) | ALD-000790 |
-| P.Dion. 11 | 3094 | 3094 | 108 BC | pending | pending Hansen: petition; unclear whether the 150-artaba loan was actually paid out |  |
+| P.Dion. 11 | 3094 | 3094 | 108 BC | excluded | petition; unclear whether the 150-artaba loan was actually paid out; skipped (Hansen) |  |
 | P.Dion. 12 | 3095 | 3095 | 108 BC | excluded | duplicate of HGV 3094 (copy of the same petition; loan entered there) |  |
 | P.Dion. 17 | 3100 | 3100 | 108 BC | included | loan of wheat | ALD-000791 |
 | P.Dion. 23 | 3107 | 3107 | 108 BC | included | loan of wheat | ALD-000792 |
@@ -332,7 +332,7 @@ ALD IDs = rows in the database.
 | P.Dion. 24 | 3108 | 3108 | 106 BC | included | loan of wheat | ALD-000800 |
 | PSI 9 1023 | 5575 | 5575 | 106 BC | included | receipt for partial repayment; names earlier loan of 4 talents | ALD-000801 |
 | P.Dion. 19 | 2847 | 2847 | 105 BC | included | loan of wheat | ALD-000802 |
-| P.Dion. 20 | 2848 | 2848 | 105 BC | pending | pending Hansen: possibly the same loan as P.Dion. 19 restated the next day |  |
+| P.Dion. 20 | 2848 | 2848 | 105 BC | excluded | possibly the same loan as P.Dion. 19 restated the next day; skipped (Hansen) |  |
 | P.Dion. 30 | 3104 | 3104 | 105 BC | excluded | receipt for the loan in HGV 3108 (P.Dion. 24) |  |
 | P.Dryton 29 | 66 | 66 | 105 BC | included | loan of salt | ALD-000803 |
 | P.Grenf. 2 24 | 68 | 68 | 105 BC | included | loan of wine | ALD-000804 |
@@ -382,7 +382,7 @@ ALD IDs = rows in the database.
 | JJP 44 (2014) 108 no. 2 | 700717 | 700717 | 71 BC | included | loan of money | ALD-000831 |
 | BGU 20 2844 | 316207 | 316207 | 68 BC | included | receipt for repayment; names earlier loan by Agathodorus to Theodorus and Heraclea | ALD-000832 |
 | SB 26 16745 | 5907 | 5907 | 66-65 BC | included | loan of wheat | ALD-000833 |
-| P.Oxy. 14 1644 | 5258 | 5258 | 63-62 BC | pending | pending Hansen: δάνειον ἔντοκον within the family, possibly a fictitious contract |  |
+| P.Oxy. 14 1644 | 5258 | 5258 | 63-62 BC | excluded | δάνειον ἔντοκον within the family, possibly a fictitious contract; skipped (Hansen) |  |
 | BGU 8 1818 | 4897 | 4897 | 60-59 BC | included | petition; mentions loan contract for 150 art. wheat | ALD-000834 |
 | BGU 8 1823 | 4902 | 4902 | 60-55 BC | included | petition; mentions loan of copper by petitioner to three persons | ALD-000835 |
 | P.Bingen 57 | 44501 | 44501 | 50-1 BC | excluded | too fragmentary to show a loan |  |

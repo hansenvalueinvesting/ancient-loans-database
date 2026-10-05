@@ -178,8 +178,9 @@ Hansen (Oct 2026, Ptolemaic pass):
   equivalent; Egyptian-calendar terms converted with the wandering calendar when the document's
   date is exact.
 - Done (Oct 2026): Ptolemaic Egypt, HGV records tagged as loans: 361 documents reviewed, 189
-  included (ALD-000615 to 000836, 222 rows), 168 excluded, 4 pending Hansen (P.Dion. 20, BGU 10
-  1981, P.Dion. 11, P.Oxy. 14 1644; see `reviewed.md`). Notes (original text + translation),
+  included (ALD-000615 to 000836, 222 rows), 172 excluded (incl. P.Dion. 20, BGU 10 1981,
+  P.Dion. 11, P.Oxy. 14 1644: possible duplicates / loan not shown to be made, skipped by
+  Hansen; see `reviewed.md`). Notes (original text + translation),
   audit and md5 checks done; 53 Egyptian-calendar terms converted (wandering calendar, regnal
   epochs; checked against the loan year). Loan acknowledgements ("I have from you ... I will
   repay") counted as loans; debt acknowledgements (ὀφείλημα) not. Next: Ptolemaic full-text
