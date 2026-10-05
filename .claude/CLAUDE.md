@@ -54,9 +54,17 @@ judge from the text whether a loan was actually made:
 - a contract lending money and goods (or two goods) = one row per part (not the "price of" goods
   sold on credit, not interest or penalties).
 Excluded: repayment receipts and cancellations (except an earlier loan they name), accounts,
-registers and abstracts of contracts, court proceedings, deposits not called a loan, sales with
-deferred delivery not called a loan, state seed-grain grants, requests for a loan not shown to be
-made, texts too fragmentary to show a loan. A loan already in the database is never entered again.
+court proceedings, deposits not called a loan, sales with deferred delivery not called a loan,
+state seed-grain grants, requests for a loan not shown to be made, texts too fragmentary to show
+a loan. A loan already in the database is never entered again.
+Hansen (Oct 2026, Ptolemaic pass):
+- registers and abstracts of contracts: their individual loans ARE included ("keep these");
+- court papers (summonses, witness statements, proceedings): excluded unless the text plainly
+  shows a specific loan not already recorded;
+- state loans of grain to cultivators (δάνειον εἰς κάτεργον etc.): excluded, like seed grain;
+- not called a loan -> skipped: pawns, loans of animals or tools for use, advances for work or
+  freight, debt acknowledgements, antichretic leases ("basically rent").
+(Roman Egypt registers excluded earlier are not re-reviewed unless Hansen asks.)
 
 ### Field formats (as used in all 479 rows)
 - **year**: from the document's date (for papyri: HGV). Certain year `AD 57` / `100 BC`;
@@ -73,7 +81,9 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   its unit: `2 talents 4800 drachmas`, `53 drachmas 2 obols` (currency `talent; drachma`,
   `drachma; obol`). Lost, or wholly restored by the editor -> empty. Preserved part with more
   lost -> preserved part + ` [...]`: `1 [...]` (Hansen, Oct 2026: "keep 1 talent, but indicate
-  that there is more missing").
+  that there is more missing"); generally `[...]` where the loss is: `[...] 45`,
+  `2 talents 2000 [...] drachmas` (Hansen). Sum written only with the interest included
+  ("with the half") -> the sum as written (Hansen: "follow what the original text says").
 - **currency**: singular, lowercase: `drachma`, `denarius`, `talent`, `artaba (wheat)`,
   `keramion (wine)`; several units `talent; drachma`. Record whatever the source says (Hansen,
   Oct 2026): a metal the source names goes in brackets, `drachma (copper)`, `talent (copper)`,
