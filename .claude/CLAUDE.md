@@ -68,8 +68,8 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   `Tebtunis (Arsinoite nome), Egypt`, `Arsinoe, Egypt`, `Arsinoite nome, Egypt`; keep a "(?)"
   doubt; Dura = `Parthian Empire` before c. AD 165.
 - **amount**: the principal as written; whole number or fraction in lowest terms, never decimals
-  (`100`, `12 1/6`, `2/3`; 1 1/2 1/5 = `1 7/10`). Talents -> drachmas at 6,000; obols at 6 per
-  drachma. Lost, or wholly restored by the editor -> empty.
+  (`100`, `12 1/6`, `2/3`; 1 1/2 1/5 = `1 7/10`). Talents are never converted to drachmas
+  (Hansen, Oct 2026); obols at 6 per drachma. Lost, or wholly restored by the editor -> empty.
 - **currency**: singular, lowercase: `drachma`, `denarius`, `talent`, `artaba (wheat)`,
   `keramion (wine)`.
 - **borrower / lender**: Latinized English names (Dioscorus, Sarapion, Aurelius Theon),
@@ -136,14 +136,15 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 8. **Verify.** After every write: row counts, and md5 of each note against the expected text
    (text copied through agents can lose or alter characters; private-use characters from the
    edition are dropped in transfer). Fix mismatches.
-9. **Record.** Add every reviewed document to `reviewed.md` (included with its ALD IDs, or
-   excluded with the reason) and update its Coverage table; update the status below; commit.
+9. **Record.** Add every reviewed document to `reviewed.md`, one row per HGV record (included
+   with its ALD IDs, or excluded with the reason) and update its Coverage table; update the status below; commit.
 
 ## Status
-- DB: 614 rows (ALD-000001 to 000614). Schema v0.3 (year ranges; amount = text fraction).
+- DB: 614 rows (ALD-000001 to 000614); ALD-000475 (duplicate of 000454) to be deleted by Hansen
+  in the SQL Editor (Oct 2026), then 613 rows. Schema v0.3 (year ranges; amount = text fraction).
   View `loan_catalogue` for the site. RLS on, public SELECT only.
 - Done: Roman Egypt (30 BC - AD 284), HGV records tagged as loans: 932 documents reviewed,
-  439 included, 493 excluded (see `reviewed.md`). Notes, durations, audit (96 corrections) done
+  440 included, 492 excluded (see `reviewed.md`). Notes, durations, audit (96 corrections) done
   for all rows.
 - Done (Oct 2026): Roman Egypt full-text pass: 549 further documents reviewed, 117 included
   (ALD-000480 to 000614, 135 rows), 432 excluded (see `reviewed.md`). Original rules kept;
@@ -163,5 +164,8 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 - Fixed: ALD-000464's note now holds lines 1-13 of BGU 4 1150 (its own 1,000-dr. loan; run by
   Hansen in the SQL Editor, verified). Note updates via the connector time out (approval
   prompt); give Hansen SQL for those.
+- `reviewed.md` cleaned up (Oct 2026): HGV column added (one row per HGV record, no ambiguous
+  repeats), editions written as in the database's `source`; BGU 4 1150 I (18597a) marked included
+  with ALD-000464 (the earlier loan its receipt names).
 - GitHub Pages source is `main` / `/docs` (Hansen confirmed).
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's own trigger, not ours). Left as is.
