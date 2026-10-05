@@ -76,7 +76,12 @@ incomplete TLS chain; quod.lib.umich.edu blocked by Cloudflare.
   and later periods. Also open: crediting idp.data (CC BY) on the site.
 
 ## Next (handoff)
-- Hansen: finish Roman Egypt, exactly as the first pass was done: find DDbDP texts dated
+- Second pass DONE (Oct 2026): full-text search found 549 further documents (not in
+  `reviewed.md`): 117 included -> ALD-000480-000614 (135 rows, notes + audit as first pass),
+  432 excluded; all in `reviewed.md`. DB now 614 rows. Hansen kept the original rules (incl.
+  creditor-word-only rows and advances outside leases, both inserted at Hansen's OK).
+  Hansen: merge PRs into `main` automatically.
+- (Done) Hansen: finish Roman Egypt, exactly as the first pass was done: find DDbDP texts dated
   30 BC - AD 284 containing loan vocabulary (δαν-, χρῆσις/χρήσ-, ἔντοκ-, προχρ-) that are not in
   `reviewed.md`, then run them through the same steps (`pipeline/README.md`, `pipeline/EXTRACT.md`).
   Working scripts stay in the scratch folder; do not add new tools to the repo.
