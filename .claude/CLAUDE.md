@@ -171,7 +171,7 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   with ALD-000464 (the earlier loan its receipt names).
 - No-conversion fix (Oct 2026): 12 rows put back into the document's units (ALD-000078, 187, 201,
   244, 427, 444, 465, 554, 576, 580, 592, 603); amount check widened for sums in several units
-  (SQL for Hansen to run in the SQL Editor; pending). Rows written in drachmas with a talent equivalent
+  (run by Hansen in the SQL Editor, verified). Rows written in drachmas with a talent equivalent
   (ALD-000012, 237, 364, 445, 448) keep drachmas.
 - GitHub Pages source is `main` / `/docs` (Hansen confirmed).
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's own trigger, not ours). Left as is.
