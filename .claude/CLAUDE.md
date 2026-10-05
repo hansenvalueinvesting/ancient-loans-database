@@ -151,7 +151,11 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 - Hansen decisions (Oct 2026): amounts of BGU 4 1132, CPR 1 203, P.Oxy. 12 1473 kept as is;
   "Muziris, India" kept; ALD-000001 dated by HGV/BL (loan AD 146 under Antoninus Pius; l. 41
   titles of Marcus Aurelius are a later addition, BL I 325) -> duration fixed to Antoninus Pius.
-- To do: (a) earlier loans get the year they were made (all rows); (b) credit line on all notes
+- Done: loan-year check of all 614 rows: 24 rows set to the year the loan was made (ALD-000078,
+  120-124, 209, 220, 225, 232, 332, 354, 358, 386, 467, 491, 499, 523, 550, 555, 568, 577, 592,
+  603); ALD-000260 kept HGV's AD 138-177. About 72 earlier loans have no date in the text and
+  still carry the document's year (question for Hansen).
+- To do: (b) credit line on all notes
   (bulk UPDATE of notes times out via the connector; Hansen may run it in the SQL Editor);
   (c) six O.Claud. rows (ALD-000271, 273, 280, 287, 298, 371) described to Hansen to check.
 - GitHub Pages source is `main` / `/docs` (Hansen confirmed).
