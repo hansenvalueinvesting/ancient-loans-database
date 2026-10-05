@@ -62,7 +62,8 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 - **year**: from the document's date (for papyri: HGV). Certain year `AD 57` / `100 BC`;
   uncertain = full range of possible years `AD 101-200`, `24-23 BC`, `30 BC-AD 14`
   (alternative dates -> span from earliest to latest). An earlier loan named in a document gets
-  the year it was made (Hansen: always the year the loan was made; uncertain = range).
+  the year it was made (Hansen: always the year the loan was made; uncertain = range). If the
+  text gives no date for the loan at all, keep the document's year (the year it is recorded).
 - **place**: where the loan was made, then the region/province at the time: `Oxyrhynchus, Egypt`,
   `Tebtunis (Arsinoite nome), Egypt`, `Arsinoe, Egypt`, `Arsinoite nome, Egypt`; keep a "(?)"
   doubt; Dura = `Parthian Empire` before c. AD 165.
@@ -153,10 +154,14 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
   titles of Marcus Aurelius are a later addition, BL I 325) -> duration fixed to Antoninus Pius.
 - Done: loan-year check of all 614 rows: 24 rows set to the year the loan was made (ALD-000078,
   120-124, 209, 220, 225, 232, 332, 354, 358, 386, 467, 491, 499, 523, 550, 555, 568, 577, 592,
-  603); ALD-000260 kept HGV's AD 138-177. About 72 earlier loans have no date in the text and
-  still carry the document's year (question for Hansen).
-- To do: (b) credit line on all notes
-  (bulk UPDATE of notes times out via the connector; Hansen may run it in the SQL Editor);
-  (c) six O.Claud. rows (ALD-000271, 273, 280, 287, 298, 371) described to Hansen to check.
+  603), plus ranges from textual evidence for 9 undated earlier loans (ALD-000229, 347, 355,
+  442, 482, 552, 584, 595, 602) and ALD-000582 (AD 183-184); ALD-000260 kept HGV's AD 138-177.
+  The other 63 undated earlier loans keep the document's year (Hansen).
+- Hansen (Oct 2026): date conflicts -> HGV date (ALD-000128 AD 89, term adjusted; ALD-000217
+  kept); the six O.Claud. receipts (ALD-000271, 273, 280, 287, 298, 371) kept; no re-review of
+  excluded documents under the new rule; credit line added to all notes (Hansen, SQL Editor).
+- To do: ALD-000464's note holds the wrong part of BGU 4 1150 (the 52-dr. loan of ALD-000039);
+  corrected note (lines 1-13) prepared for Hansen to run in the SQL Editor. Note updates via the
+  connector time out (approval prompt); give Hansen SQL for those.
 - GitHub Pages source is `main` / `/docs` (Hansen confirmed).
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's own trigger, not ours). Left as is.

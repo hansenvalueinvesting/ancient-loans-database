@@ -15,7 +15,7 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 | Field | Definition | Example |
 |---|---|---|
 | `id` | Assigned automatically | `ALD-000001` |
-| `year` | Year the loan was made (an earlier loan named in a later document gets its own year, not the document's), written `AD n` or `n BC` (AD before the number, BC after). There is no year 0: 1 BC is followed by AD 1. If the year is not certain, give the range of possible years: `AD 101-200`, `24-23 BC`, `30 BC-AD 14` | `AD 57`, `100 BC`, `AD 101-200` |
+| `year` | Year the loan was made (an earlier loan named in a later document gets its own year, not the document's; if the source does not date the loan at all, the document's year is kept, as the year the loan is recorded), written `AD n` or `n BC` (AD before the number, BC after). There is no year 0: 1 BC is followed by AD 1. If the year is not certain, give the range of possible years: `AD 101-200`, `24-23 BC`, `30 BC-AD 14` | `AD 57`, `100 BC`, `AD 101-200` |
 | `place` | Where the loan was made, followed by the region or province it belonged to at the time (in its standard English name), so every place can be located and grouped. A village may also name its district in brackets | `Oxyrhynchus, Egypt`, `Sinary (Oxyrhynchite nome), Egypt` |
 | `amount` | Amount lent (the principal), as written in the source: a whole number, or a fraction in lowest terms (`whole num/den`). Never decimals | `100`, `12 1/6`, `2/3` |
 | `currency` | Currency or unit of `amount`, singular. For loans in kind, add the commodity in brackets | `drachma`, `artaba (wheat)` |
