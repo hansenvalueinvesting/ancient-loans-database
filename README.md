@@ -5,6 +5,7 @@ A systematic, standardized record of every documented loan in the ancient world,
 ## Change log
 
 **2026-10-05**
+- Added ALD-000848 - 000977 (130 loans): the Roman world in Latin and Greek documents and inscriptions - wax tablets of the Sulpicii (Puteoli) and of Herculaneum, the alimentary tables of Veleia and the Ligures Baebiani (Trajan's loans to landowners), loans to the city of Gytheum, a Vindonissa tablet, and Latin papyri from Egypt. Sources: Latin papyri in the DDbDP, Epigraphic Database Heidelberg (EDH) and Epigraphic Database Roma (EDR). Database: 867 loans.
 - Added ALD-000838 - 000847: Ptolemaic Egypt (332 - 30 BC), full-text search of the Greek papyri for loan vocabulary (191 further documents reviewed, 10 loans). Database: 737 loans.
 - Repository cleaned up: `codebook.md` and `schema.sql` moved to `reference/`; review ledger `reviewed.md` removed.
 - Substance check of all 770 rows: removed 43 rows that are not loans (advance sales and credit sales, pay for work, rent, dowry, pawns, old debts rewritten as loans, service paying off the money, texts too fragmentary to show a borrowing): ALD-000003, 000011, 000026, 000033, 000060, 000062, 000101, 000105, 000133, 000187, 000253, 000271, 000272, 000274, 000279, 000341, 000350, 000351, 000398, 000414, 000469, 000544, 000563, 000583, 000624, 000625, 000626, 000627, 000641, 000653, 000662, 000665, 000672, 000721, 000734, 000736, 000742, 000747, 000775, 000776, 000782, 000818, 000834. Database: 727 loans.

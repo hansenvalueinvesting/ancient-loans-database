@@ -82,6 +82,21 @@ Hansen (Oct 2026, Ptolemaic full-text pass): "exclude all the ones where there i
 "loan" transaction, as in money being lent and expected to return" (bare loan words with no
 amount, unclear whether a borrowing, unnamed lenders that may be the estate or the state).
 
+Hansen (Oct 2026, Roman world): "just go through everything, make your own decisions. the goal is
+to have a record of every loan transaction where money is being lent in antiquity." Decisions taken
+by Claude under that grant (Roman-world pass):
+- documents and inscriptions only (no literary sources yet); Late Antique (after AD 284) left for
+  its own step;
+- cash paid out at the borrower's request and owed back (expensilatio, "numeratos accepit", wax
+  tablets) = loan; balances of old accounts restated (TPSulp. 68), pawns (CIL 4 8203/8204),
+  foundations whose capital is to be lent in future, debt-only texts: excluded;
+- alimentary tables: one row per landowner's obligation (lender `Trajan`; Veleia interest
+  `quincunx (5% per year)`; Ligures Baebiani interest as the sum written with "2½% of the principal;
+  period not preserved"); entries with neither amount nor borrower left out;
+- notes from inscriptions carry their source's licence in the credit line: EDH (CC BY-SA 4.0),
+  EDR (CC BY-NC-SA 4.0); source_url = the EDH/EDR record; Sulpicii tablets cited `TPSulp. N`,
+  Herculaneum `TH2 N`.
+
 ### Field formats (as used in all 479 rows)
 - **year**: from the document's date (for papyri: HGV). Certain year `AD 57` / `100 BC`;
   uncertain = full range of possible years `AD 101-200`, `24-23 BC`, `30 BC-AD 14`
@@ -176,7 +191,19 @@ amount, unclear whether a borrowing, unnamed lenders that may be the estate or t
    below; commit.
 
 ## Status
-- DB: 737 rows (ALD-000001 to 000847, with gaps).
+- DB: 867 rows (ALD-000001 to 000977, with gaps).
+- Done (Oct 2026): Roman world (to AD 284), Latin/Greek documents and inscriptions: Latin papyri in
+  the DDbDP (75 candidates; Greek papyri outside Egypt were already covered by the date-based
+  passes), EDH (155 inscriptions + 43 wooden/wax tablets), EDR (528 Italian records: Sulpicii and
+  Herculaneum tablets, alimentary tables, loan vocabulary). 26 documents included, 130 rows
+  (ALD-000848 to 000977). Notes verified by md5. Gaps: Dacian wax tablets (no open text found),
+  Greek inscriptions (PHI blocks access), literary sources (not started).
+- Writing long or non-ASCII notes (Oct 2026): text sent through the connector is NFC-normalized and
+  large statements time out. Write every string as an ASCII `U&'...'` literal (all non-ASCII as
+  `\XXXX`), keep statements under ~5 KB, stage long notes in chunks in a helper table and set them
+  with one small `update ... set notes = (select string_agg(...))`, then check md5. The helper
+  table `note_stage` is still in the database (drop needs Hansen: `drop table public.note_stage;`).
+- Before the Roman-world pass: 737 rows (ALD-000001 to 000847, with gaps).
 - Done (Oct 2026): Ptolemaic full-text pass: 191 documents not tagged as loans in HGV but
   containing loan vocabulary (δαν-, χρῆσις, ἔντοκ-, προχρ-, εὐχρηστ-; ending by 30 BC; not in the
   old ledger); 10 included (ALD-000838 to 000847, one row each), 181 excluded (accounts, advances,
@@ -208,7 +235,7 @@ amount, unclear whether a borrowing, unnamed lenders that may be the estate or t
 - Done (Oct 2026): Roman Egypt full-text pass: 549 further documents reviewed, 117 included
   (ALD-000480 to 000614, 135 rows), 432 excluded (old ledger, see Architecture). Original rules kept;
   creditor-word-only rows and advances outside leases inserted at Hansen's OK.
-- Next (Hansen, Oct 2026): Ptolemaic Egypt first (332-30 BC; same method: 355 HGV records tagged
+- Plan (Hansen, Oct 2026): Ptolemaic Egypt first (332-30 BC; same method: 355 HGV records tagged
   as loans, then a full-text pass, ~212 candidates), then the Roman world outside Egypt, then
   Late Antique Egypt. Language does not matter (Hansen): Demotic and other texts are included,
   with original text and English translation, from the primary source or its documentation.
