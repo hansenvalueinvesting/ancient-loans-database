@@ -160,8 +160,8 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
 - Hansen (Oct 2026): date conflicts -> HGV date (ALD-000128 AD 89, term adjusted; ALD-000217
   kept); the six O.Claud. receipts (ALD-000271, 273, 280, 287, 298, 371) kept; no re-review of
   excluded documents under the new rule; credit line added to all notes (Hansen, SQL Editor).
-- To do: ALD-000464's note holds the wrong part of BGU 4 1150 (the 52-dr. loan of ALD-000039);
-  corrected note (lines 1-13) prepared for Hansen to run in the SQL Editor. Note updates via the
-  connector time out (approval prompt); give Hansen SQL for those.
+- Fixed: ALD-000464's note now holds lines 1-13 of BGU 4 1150 (its own 1,000-dr. loan; run by
+  Hansen in the SQL Editor, verified). Note updates via the connector time out (approval
+  prompt); give Hansen SQL for those.
 - GitHub Pages source is `main` / `/docs` (Hansen confirmed).
 - Advisor: 2 WARN on `public.rls_auto_enable()` (Supabase's own trigger, not ours). Left as is.
