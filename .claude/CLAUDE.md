@@ -133,13 +133,20 @@ made, texts too fragmentary to show a loan. A loan already in the database is ne
    excluded with the reason) and update its Coverage table; update the status below; commit.
 
 ## Status
-- DB: 479 rows (ALD-000001 to 000479). Schema v0.3 (year ranges; amount = text fraction).
+- DB: 614 rows (ALD-000001 to 000614). Schema v0.3 (year ranges; amount = text fraction).
   View `loan_catalogue` for the site. RLS on, public SELECT only.
 - Done: Roman Egypt (30 BC - AD 284), HGV records tagged as loans: 932 documents reviewed,
   439 included, 493 excluded (see `reviewed.md`). Notes, durations, audit (96 corrections) done
   for all rows.
-- Next (Hansen): finish Roman Egypt: full-text candidates (step 2) not yet in `reviewed.md`,
-  then steps 3-9. Later: Late Antique Egypt (284-641), Ptolemaic Egypt, sources outside Egypt.
+- Done (Oct 2026): Roman Egypt full-text pass: 549 further documents reviewed, 117 included
+  (ALD-000480 to 000614, 135 rows), 432 excluded (see `reviewed.md`). Original rules kept;
+  creditor-word-only rows and advances outside leases inserted at Hansen's OK.
+- Next (Hansen): Late Antique Egypt (284-641), Ptolemaic Egypt, sources outside Egypt.
+- Open questions from the full-text pass: earlier-loan years (BGU 4 1157, ZPE 205 (2018) 221,
+  P.Oxy. 14 1648 take the document's year); restored or inconsistent amounts (BGU 4 1132,
+  CPR 1 203, P.Oxy. 12 1473); place "Muziris, India" (SB 18 13167); O.Claud. rows without a
+  loan word (ALD-000271, 273, 280, 287, 298, 371).
+- Later: Late Antique Egypt (284-641), Ptolemaic Egypt, sources outside Egypt.
 - Open questions for Hansen: ALD-000001 (P.Oxy. 3 507) dating formula names Marcus Aurelius
   (= AD 169) but HGV and the year field say AD 146; crediting idp.data (CC BY) on the site;
   GitHub Pages source must be `main` / `/docs`.
