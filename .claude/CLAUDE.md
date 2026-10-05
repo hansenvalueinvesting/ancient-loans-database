@@ -72,6 +72,10 @@ superseding the earlier OKs for advances outside leases and the O.Claud. receipt
 Hansen (Oct 2026): the WORD does not decide. "Whether or not we count it as a loan depends on
 whether the transaction itself is a loan", whether or not the text uses the word for loan
 (e.g. work payments called δάνειον are payments for a service, not loans).
+Definition (Hansen, Oct 2026): a loan is when someone BORROWS money (or goods) from a lender with
+the intention of returning it, with or without interest. Exchanges (trades) where one party pays
+for a good or a service are not loans, whatever they are called. Pawns, antichretic leases and
+debt acknowledgements are not loans in substance (Hansen).
 
 ### Field formats (as used in all 479 rows)
 - **year**: from the document's date (for papyri: HGV). Certain year `AD 57` / `100 BC`;
