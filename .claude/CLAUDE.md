@@ -17,7 +17,7 @@ below applies to any source as the database expands.
 - Work on `main`; commit and push directly to `main` (Hansen, Oct 2026). Be concise and organized.
 - Only one session should write to the database at a time.
 - Keep this file current: when Hansen decides something, record it here (and in `reference/codebook.md`
-  if it concerns a field). Log every data change in the README change log (Hansen, Oct 2026).
+  if it concerns a field). Log every data change in the README change log, most recent first (Hansen, Oct 2026).
 
 ## Architecture
 - **Supabase (Postgres)**: the only home of the data. Project ref `zzlrdlkdngxkkcrtolpx`.
