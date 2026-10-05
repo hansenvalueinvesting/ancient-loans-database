@@ -12,7 +12,7 @@ A systematic, standardized record of every documented loan in the ancient world,
 - Loan audit of all 835 rows against the original text: 87 field fixes; removed 66 rows (64 not shown to be a loan by the preserved text, 2 duplicates): ALD-000043, 000056, 000100, 000118, 000124, 000126, 000140, 000149, 000161, 000163, 000167, 000174, 000181, 000183, 000194, 000195, 000198, 000212, 000220, 000225, 000231, 000232, 000277, 000286, 000320, 000335, 000336, 000355, 000371, 000394, 000407, 000408, 000410, 000411, 000425, 000439, 000442, 000482, 000498, 000511, 000517, 000521, 000529, 000530, 000532, 000533, 000546, 000554, 000562, 000571, 000573, 000584, 000585, 000598, 000599, 000600, 000601, 000602, 000609, 000612, 000614, 000649, 000651, 000689, 000704, 000741.
 - Added ALD-000615 - 000836: Ptolemaic Egypt (332 - 30 BC), papyri tagged as loans in HGV (361 documents reviewed).
 - No currency conversion: 12 rows put back into the document's own units.
-- Removed ALD-000475 as a duplicate of ALD-000454 (re-added below as ALD-000837).
+- Removed ALD-000475 as a duplicate of ALD-000454 (re-added later as ALD-000837).
 - Loan-year check: 24 rows set to the year the loan was made; 10 undated earlier loans given ranges from the text.
 - Added ALD-000480 - 000614: Roman Egypt, full-text search of the papyri for loan vocabulary (549 further documents reviewed).
 
