@@ -169,7 +169,10 @@ superseding the earlier OKs for advances outside leases and the O.Claud. receipt
   fragmentary; 2 duplicates: ALD-000649, 651); 87 field fixes (amounts with `[...]`, restored
   rates/units/names emptied, missing years); ALD-000475 had been wrongly deleted (ZPE 199 (2016)
   150 names two 120-dr. loans) and was re-added as ALD-000837. SQL run by Hansen, verified.
-  67 rows kept with only the loan word preserved (audit category B). Schema v0.3 (year ranges; amount = text fraction).
+  67 rows kept with only the loan word preserved (audit category B).
+  Hansen kept the B rows for now and skipped all 5 extra-loan candidates found by the fix pass
+  (P.Cair. Zen. 4 59549 and P.Col. 3 24 "burning" sums: "more like payments for a service";
+  P.Michael. 9 200 dr.; SPP 22 83 second entry; P.Flor. 3 316 15 artabas). Schema v0.3 (year ranges; amount = text fraction).
   View `loan_catalogue` for the site. RLS on, public SELECT only.
 - Done: Roman Egypt (30 BC - AD 284), HGV records tagged as loans: 932 documents reviewed,
   440 included, 492 excluded (see `reviewed.md`). Notes, durations, audit (96 corrections) done
