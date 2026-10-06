@@ -57,10 +57,17 @@ below applies to any source as the database expands.
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
-STANDING RULE (Hansen, Oct 2026): "for a loan to be registered, it has to be precisely an individual
-loan contract" -> a row needs one individual loan with borrower, lender and principal identified
-(applied to the Greek/literary/Dacian rows ALD-001258 - 001658: 215 weak rows to be removed; whether
-to apply it to the earlier rows, 340 of which lack a party or the principal, is Hansen's call).
+STANDING RULE (Hansen, Oct 2026; supersedes everything below where they differ): "for a loan to be
+registered, it has to be precisely an individual loan contract"; "a loan has to be a loan, not a trade,
+lease, or anything else. it has to formally be a loan"; applied to the entire database ("do it for the
+entire database"). A row needs: (1) the text formally records a loan (loan contract or acknowledgement,
+loan register entry, or a text stating this loan was lent/borrowed); (2) not a sale, lease (incl.
+habitation/antichretic lease), advance (προχρεία, πρόχρησις) not called a loan, deposit, pledge, debt or
+debt acknowledgement not called a loan, treasury payment, transfer between public funds, gift,
+contribution, old debt restated; (3) one individual loan (no totals, no fund portions of one contract);
+(4) borrower, lender and principal given (partly preserved acceptable). Antichretic/paramone LOANS that
+are formally loans with the principal repaid stay. Audit (Oct 2026): 643 rows to remove (555 lacking a
+party or principal, 88 not formally individual loans), SQL for Hansen's SQL Editor; 801 rows remain.
 STANDING RULE (Hansen, Oct 2026, supersedes the detailed rules below where they differ): "the only
 standing rule is to record transactions that are strictly loans. loans are financial arrangements
 where an entity provides money to another with the expectation of repayment over time, often
