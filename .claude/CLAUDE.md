@@ -105,6 +105,11 @@ by Claude under that grant (Roman-world pass):
 - **place**: where the loan was made, then the region/province at the time: `Oxyrhynchus, Egypt`,
   `Tebtunis (Arsinoite nome), Egypt`, `Arsinoe, Egypt`, `Arsinoite nome, Egypt`; keep a "(?)"
   doubt; Dura = `Parthian Empire` before c. AD 165.
+  Always the ancient name (Hansen, Oct 2026: "lets stick with the ancient names ... follow this
+  moving forward"), Latinized like personal names (`Heracleopolis`, `Heraclea`, `Acoris`,
+  `Ancyron`, `Crocodilo`, `Engaddi`); Greek-phrase village names keep their standard form
+  (`Soknopaiou Nesos`, `Berenikis Aigialou`); only a modern site name known -> smallest ancient
+  unit (`Arsinoite nome, Egypt`; `Egypt`). Never modern names. Regions keep their English names.
 - **amount**: the principal as written; whole number or fraction in lowest terms, never decimals
   (`100`, `12 1/6`, `2/3`; 1 1/2 1/5 = `1 7/10`). Never convert currency (Hansen, Oct 2026): keep
   the unit(s) the document uses; a sum in several units follows the document, each number with
@@ -190,7 +195,7 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 763 rows (ALD-000001 to 000977, with gaps). Alimentary tables removed (104 rows, Hansen,
+- DB: 763 rows (ALD-000001 to 000977, with gaps). Place names set to ancient names (66 rows, Oct 2026). Alimentary tables removed (104 rows, Hansen,
   run by Hansen in the SQL Editor, verified); `note_stage` dropped.
 - Done (Oct 2026): Roman world (to AD 284), Latin/Greek documents and inscriptions: Latin papyri in
   the DDbDP (75 candidates; Greek papyri outside Egypt were already covered by the date-based

@@ -5,6 +5,7 @@ A systematic, standardized record of every documented loan in the ancient world,
 ## Change log
 
 **2026-10-06**
+- Place names: always the ancient name, Latinized (66 rows changed: Herakleopolis/Herakleopolite -> Heracleopolis/Heracleopolite, Herakleia -> Heraclea, Akoris -> Acoris, Ankyron -> Ancyron, Krokodilo -> Crocodilo, En-gedi -> Engaddi; modern site names Ghoran and Raima replaced by the ancient district / region).
 - Removed 104 rows from the alimentary tables of Veleia (CIL 11 1147; ALD-000849, 000876 - 000927) and the Ligures Baebiani (CIL 9 1455; ALD-000864, 000928 - 000977): Trajan's alimentary obligations are not loans (no repayment of the capital). Database: 763 loans.
 
 **2026-10-05**
