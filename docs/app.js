@@ -67,8 +67,8 @@ const node = (href, label, n) => `<a href="#${href}">${esc(label)}</a> (${n.toLo
 // 'Early Roman Egypt' → ['Roman', 'Egypt', 'Early Roman Egypt']; 'Ptolemaic Egypt' → ['Ptolemaic', 'Egypt', ...];
 // a period without a region ('Parthian Empire', 'India') is a layer of its own.
 function eraPath(p) {
-  const m = p.match(/^(?:(Early|Late) )?(Ptolemaic|Seleucid|Roman|Nabataean) (.+)$/);
-  return m ? [m[2], m[3], p] : [p];
+  const m = p.match(/^(?:(Early|Late) )?(Ptolemaic|Seleucid|Roman|Nabataean|Sasanian|Islamic) (.+)$/);
+  return m ? [m[2] === 'Islamic' ? 'Early Islamic' : m[2], m[3], p] : [p];
 }
 let eraPaths = new Map(); // catalogue path ('Roman/Egypt') → the periods under it, set by loadCatalogue
 

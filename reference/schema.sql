@@ -12,7 +12,7 @@ create or replace function loan_period(year text, place text) returns text
 language plpgsql immutable as $$
 declare
   region text := coalesce(substring(place from ', ([^,]+)$'), place);
-  lo int; hi int; best text; bestn int := -1; n int; p record;
+  lo int; hi int; n int; p record; tot jsonb := '{}'; best text; bestn int := 0;
 begin
   if year is null or region is null then return null; end if;
   if year ~ '^AD ' then
@@ -25,13 +25,19 @@ begin
     lo := -substring(year from '^([0-9]+)')::int;
     hi := -coalesce(substring(year from '^[0-9]+-([0-9]+) BC$')::int, -lo);
   end if;
-  -- periods per region: (label, first year, last year); BC negative
+  -- periods per region (label, first year, last year; BC negative); a label may have several spans
   for p in select * from (values
       ('Egypt', 'Ptolemaic Egypt', -332, -31),
       ('Egypt', 'Early Roman Egypt', -30, 284),
-      ('Egypt', 'Late Roman Egypt', 285, 641),
+      ('Egypt', 'Late Roman Egypt', 285, 618),
+      ('Egypt', 'Sasanian Egypt', 619, 628),
+      ('Egypt', 'Late Roman Egypt', 629, 641),
+      ('Egypt', 'Early Islamic Egypt', 642, 868),
       ('Arabia', 'Nabataean Arabia', -400, 105),
-      ('Arabia', 'Roman Arabia', 106, 641),
+      ('Arabia', 'Roman Arabia', 106, 636),
+      ('Palaestina', 'Late Roman Palaestina', 285, 636),
+      ('Palaestina', 'Early Islamic Palaestina', 637, 750),
+      ('Thracia', 'Late Roman Thracia', 285, 641),
       ('Parthian Empire', 'Parthian Empire', -247, 224),
       ('India', 'India', -1000, 1000),
       ('Italy', 'Roman Italy', -509, 476),
@@ -42,9 +48,11 @@ begin
     ) as t(reg, label, a, b) where reg = region order by a
   loop
     n := least(hi, p.b) - greatest(lo, p.a) + 1;
-    if n > bestn then bestn := n; best := p.label; end if;
+    if n > 0 then
+      tot := jsonb_set(tot, array[p.label], to_jsonb(coalesce((tot->>p.label)::int, 0) + n));
+      if (tot->>p.label)::int > bestn then bestn := (tot->>p.label)::int; best := p.label; end if;
+    end if;
   end loop;
-  if bestn <= 0 then return null; end if;
   return best;
 end $$;
 

@@ -39,7 +39,9 @@ below applies to any source as the database expands.
   insert). Helper SQL function `loan_period(year, region)` gives it (e.g. `loan_period('AD 57',
   'Egypt')`): periods per region with date limits, a range gets the period covering most of it.
   Egypt: Ptolemaic Egypt (332-31 BC), Early Roman Egypt (30 BC-AD 284), Late Roman Egypt
-  (285-641); Roman <region>, Nabataean/Roman Arabia (106), Parthian Empire, India. A new region
+  (285-618, 629-641), Sasanian Egypt (619-628, Persian occupation), Early Islamic Egypt (642-868);
+  Roman <region>, Nabataean/Roman Arabia (106), Late Roman / Early Islamic Palaestina (637),
+  Late Roman Thracia, Parthian Empire, India. A new region
   needs a line in `loan_period` (apply_migration works for additive DDL). Table: ID, Period, ...; Period filter.
 - Releases: pushing tag `vX.Y` runs `.github/workflows/release.yml` (CSV export, secret
   `SUPABASE_DB_URL`, untested until first tag).
@@ -57,7 +59,9 @@ STANDING RULE (Hansen, Oct 2026, supersedes the detailed rules below where they 
 standing rule is to record transactions that are strictly loans. loans are financial arrangements
 where an entity provides money to another with the expectation of repayment over time, often
 including interest as a cost of borrowing." -> cash advances repaid in money (προχρεία) count.
-(Whether loans in kind and rows whose currency is lost still count: asked, pending.)
+Loans in kind and rows whose currency is lost: "keep all these loans for now" (Hansen, Oct 2026).
+STANDING RULE (Hansen, Oct 2026): follow the formal ways of academia; historical periods "however
+[they] are academically defined".
 A ledger of loans actually made (Hansen, Oct 2026): every loan transaction a source documents,
 none missed, none repeated, each individual loan separately. The text need not say "loan";
 judge from the text whether a loan was actually made:
