@@ -53,6 +53,11 @@ below applies to any source as the database expands.
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
+STANDING RULE (Hansen, Oct 2026, supersedes the detailed rules below where they differ): "the only
+standing rule is to record transactions that are strictly loans. loans are financial arrangements
+where an entity provides money to another with the expectation of repayment over time, often
+including interest as a cost of borrowing." -> cash advances repaid in money (προχρεία) count.
+(Whether loans in kind and rows whose currency is lost still count: asked, pending.)
 A ledger of loans actually made (Hansen, Oct 2026): every loan transaction a source documents,
 none missed, none repeated, each individual loan separately. The text need not say "loan";
 judge from the text whether a loan was actually made:
