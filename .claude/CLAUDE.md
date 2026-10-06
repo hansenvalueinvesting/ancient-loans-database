@@ -212,7 +212,14 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 763 rows (ALD-000001 to 000977, with gaps). Column `period` added; places without region (Oct 2026). Place names set to ancient names (66 rows, Oct 2026). Alimentary tables removed (104 rows, Hansen,
+- DB: 1,043 rows (ALD-000001 to 001257, with gaps).
+- Done (Oct 2026): Late Antique Egypt (AD 284-641), HGV records tagged as loans (Darlehen / loan in
+  title, not in the old ledger): 652 texts reviewed (extraction + second check), 265 included
+  (ALD-000978 to 001257, 280 rows; rows with no amount and no parties dropped; cash advances
+  repaid in money included per the standing rule). Notes verified by md5. Places normalized to
+  existing forms (Karanis (Arsinoite nome) etc.). Helper table `note_stage` still in the database
+  (drop needs Hansen: `drop table public.note_stage;`). Next: Late Antique full-text pass.
+- Before the Late Antique pass: 763 rows (ALD-000001 to 000977, with gaps). Column `period` added; places without region (Oct 2026). Place names set to ancient names (66 rows, Oct 2026). Alimentary tables removed (104 rows, Hansen,
   run by Hansen in the SQL Editor, verified); `note_stage` dropped.
 - Done (Oct 2026): Roman world (to AD 284), Latin/Greek documents and inscriptions: Latin papyri in
   the DDbDP (75 candidates; Greek papyri outside Egypt were already covered by the date-based

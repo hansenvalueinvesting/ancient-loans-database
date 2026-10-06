@@ -4,6 +4,9 @@ A systematic, standardized record of every documented loan in the ancient world,
 
 ## Change log
 
+**2026-10-07**
+- Added ALD-000978 - 001257 (280 loans): Late Antique Egypt (AD 284-641), papyri tagged as loans in HGV (652 documents reviewed, 265 with loans), plus loans from Nessana (Palaestina) and Constantinople; periods Late Roman, Sasanian and Early Islamic Egypt. Database: 1,043 loans.
+
 **2026-10-06**
 - Period: one period per loan (a year range gets the period covering most of it); Roman Egypt split into Early Roman Egypt (30 BC-AD 284) and Late Roman Egypt. Place: region removed (e.g. `Oxyrhynchus, Egypt` -> `Oxyrhynchus`), since the period gives it; the one place known only as `Egypt` is now empty.
 - New column `period` (historical period: who ruled the place at the time, e.g. Ptolemaic Egypt, Roman Egypt), computed automatically from year and place; first column of the catalogue and the loan tables, with a Period filter.
