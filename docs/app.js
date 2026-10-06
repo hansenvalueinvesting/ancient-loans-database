@@ -38,47 +38,30 @@ const q = encodeURIComponent;
 const pgq = (v) => `"${String(v).replace(/"/g, '\\"')}"`; // value quoted for PostgREST or=()
 
 // Selection (from the URL hash) → title and PostgREST filter.
+// '#all'; '#era=Roman/Egypt' (a catalogue node; empty = period unknown); '&c=1' adds a century
+// (1 = AD 1-100, -1 = 100-1 BC; empty = year unknown).
 function selection() {
   const h = location.hash.slice(1);
   if (!h) return null;
   if (h === 'all') return { title: 'All loans', where: '' };
-  const [key, raw = ''] = h.split('=');
-  const v = decodeURIComponent(raw);
-  if (key === 'era') {
-    if (!v) return { title: 'Period unknown', where: '&period=is.null' };
-    const list = eraPaths.get(v) || [v];
-    return { title: list.length === 1 ? list[0] : v.split('/').join(' '), where: `&period=in.${q(`(${list.map(pgq).join(',')})`)}` };
+  const prm = new URLSearchParams(h);
+  if (!prm.has('era')) return null;
+  const v = prm.get('era');
+  const list = eraPaths.get(v) || [v];
+  let title = v ? (list.length === 1 ? list[0] : v.split('/').join(' ')) : 'Period unknown';
+  let where = v ? `&period=in.${q(`(${list.map(pgq).join(',')})`)}` : '&period=is.null';
+  if (prm.has('c')) {
+    const c = prm.get('c');
+    if (!c) { title += ', year unknown'; where += '&year_sort=is.null'; } else {
+      const n = Number(c);
+      const [lo, hi] = n > 0 ? [(n - 1) * 100 + 1, n * 100] : [n * 100, (n + 1) * 100 - 1];
+      title += `, ${centuryLabel(n)}`; where += `&year_sort=gte.${lo}&year_sort=lte.${hi}`;
+    }
   }
-  if (key === 'period') {
-    if (!v) return { title: 'Year unknown', where: '&year_sort=is.null' };
-    const c = Number(v);
-    const [lo, hi] = c > 0 ? [(c - 1) * 100 + 1, c * 100] : [c * 100, (c + 1) * 100 - 1];
-    return { title: centuryLabel(c), where: `&year_sort=gte.${lo}&year_sort=lte.${hi}` };
-  }
-  if (key === 'place') return v ? { title: v, where: `&place=eq.${q(v)}` } : { title: 'Place unknown', where: '&place=is.null' };
-  if (key === 'kind' && KINDS[v]) {
-    return { title: KINDS[v], where: v === 'coinage' ? `&currency=in.${coinList}` : `&currency=not.in.${coinList}` };
-  }
-  if (key === 'currency') return v ? { title: v, where: `&currency=eq.${q(v)}` } : { title: 'Currency unknown', where: '&currency=is.null' };
-  return null;
+  return { title, where };
 }
-
-// Currency kinds: coinage (money and units of account) vs commodity (loans in kind).
-// A currency is coinage if all its units are listed here (e.g. 'talent; drachma'), with or without
-// the metal the source names ('drachma (copper)'); any other is a commodity.
-const COINAGE = ['aureus', 'denarius', 'drachma', 'gold coin', 'mina', 'obol', 'sestertius', 'solidus', 'stater', 'talent', 'tetradrachm'];
-const KINDS = { coinage: 'Coinage', commodity: 'Commodity' };
-const kind = (cur) => (cur.split('; ').every((u) => COINAGE.includes(u.replace(/ \((copper|silver|gold|bronze)\)$/, ''))) ? 'coinage' : 'commodity');
-let coinList = ''; // PostgREST list of the recorded coinage currencies, set by loadCatalogue
 
 const node = (href, label, n) => `<a href="#${href}">${esc(label)}</a> (${n.toLocaleString()})`;
-
-// Sum counts of catalogue rows by key(row).
-function tally(rows, key) {
-  const m = new Map();
-  rows.forEach((r) => { const k = key(r); m.set(k, (m.get(k) || 0) + r.loans); });
-  return m;
-}
 
 // Historical period → its layers: ruling power, region, period.
 // 'Early Roman Egypt' → ['Roman', 'Egypt', 'Early Roman Egypt']; 'Ptolemaic Egypt' → ['Ptolemaic', 'Egypt', ...];
@@ -89,49 +72,48 @@ function eraPath(p) {
 }
 let eraPaths = new Map(); // catalogue path ('Roman/Egypt') → the periods under it, set by loadCatalogue
 
+// Catalogue: one tree, earliest first at each level:
+// ruling power > region > period (only where a region has several) > century.
 async function loadCatalogue() {
   const rows = await get('loan_catalogue?select=*');
   $('cat-total').textContent = `(${rows.reduce((t, r) => t + r.loans, 0).toLocaleString()})`;
 
-  // Historical period, in layers: ruling power > region > period (e.g. Roman > Egypt >
-  // Early Roman Egypt); a region with one period is the leaf itself. Earliest first at each level.
-  const tree = { children: new Map() };
-  eraPaths = new Map();
+  const perRegion = new Map();
   rows.forEach((r) => {
     if (r.period == null) return;
-    const path = eraPath(r.period);
-    let nd = tree;
-    path.forEach((seg, i) => {
-      const key = path.slice(0, i + 1).join('/');
-      if (!nd.children.has(seg)) nd.children.set(seg, { key, label: seg, n: 0, first: Infinity, children: new Map() });
-      nd = nd.children.get(seg);
-      nd.n += r.loans;
-      if (r.first_year != null) nd.first = Math.min(nd.first, r.first_year);
-      eraPaths.set(key, [...new Set([...(eraPaths.get(key) || []), r.period])]);
-    });
+    const s = eraPath(r.period);
+    if (s.length === 3) perRegion.set(s[0] + '/' + s[1], new Set([...(perRegion.get(s[0] + '/' + s[1]) || []), r.period]));
   });
-  const branch = (nd) => [...nd.children.values()].sort((a, b) => a.first - b.first).map((c) => {
-    const leaf = !c.children.size || (c.key.split('/').length === 2 && c.children.size === 1);
-    return `<li>${leaf ? node(`era=${q(c.key)}`, c.label, c.n)
-      : `<details><summary>${node(`era=${q(c.key)}`, c.label, c.n)}</summary><ul>${branch(c)}</ul></details>`}</li>`;
-  }).join('');
-  const unknown = rows.filter((r) => r.period == null).reduce((t, r) => t + r.loans, 0);
-  $('cat-era').innerHTML = branch(tree) + (unknown ? `<li>${node('era=', 'Period unknown', unknown)}</li>` : '');
+  const pathOf = (p) => {
+    if (p == null) return ['Period unknown'];
+    const s = eraPath(p);
+    return s.length === 3 && perRegion.get(s[0] + '/' + s[1]).size === 1 ? s.slice(0, 2) : s;
+  };
 
-  // Time period: centuries BC (earliest first), then AD, then unknown.
-  const periods = [...tally(rows, (r) => r.century)].sort(([a], [b]) => (a ?? Infinity) - (b ?? Infinity));
-  $('cat-period').innerHTML = periods.map(([c, n]) => `<li>${c == null
-    ? node('period=', 'Year unknown', n) : node(`period=${c}`, centuryLabel(c), n)}</li>`).join('');
-
-  // Currency: coinage, commodity, unknown.
-  const currencies = [...tally(rows, (r) => r.currency)].sort(([a], [b]) => String(a).localeCompare(b));
-  coinList = q(`(${currencies.filter(([cur]) => cur != null && kind(cur) === 'coinage').map(([cur]) => pgq(cur)).join(',')})`);
-  $('cat-currency').innerHTML = Object.keys(KINDS).map((k) => {
-    const list = currencies.filter(([cur]) => cur != null && kind(cur) === k);
-    if (!list.length) return '';
-    return `<li><details><summary>${node(`kind=${k}`, KINDS[k], list.reduce((t, [, n]) => t + n, 0))}</summary><ul>${
-      list.map(([cur, n]) => `<li>${node(`currency=${q(cur)}`, cur, n)}</li>`).join('')}</ul></details></li>`;
-  }).join('') + currencies.filter(([cur]) => cur == null).map(([, n]) => `<li>${node('currency=', 'Currency unknown', n)}</li>`).join('');
+  const tree = { children: new Map() };
+  eraPaths = new Map();
+  const add = (parent, seg, key, href, label, r, first) => {
+    if (!parent.children.has(seg)) parent.children.set(seg, { href, label, n: 0, first: Infinity, children: new Map() });
+    const nd = parent.children.get(seg);
+    nd.n += r.loans;
+    nd.first = Math.min(nd.first, first);
+    return nd;
+  };
+  rows.forEach((r) => {
+    const segs = pathOf(r.period);
+    let nd = tree, key = '';
+    segs.forEach((seg, i) => {
+      key = r.period == null ? '' : segs.slice(0, i + 1).join('/');
+      if (r.period != null) eraPaths.set(key, [...new Set([...(eraPaths.get(key) || []), r.period])]);
+      nd = add(nd, seg, key, `era=${q(key)}`, seg, r, r.period == null ? Infinity : r.first_year ?? Infinity);
+    });
+    const c = r.century;
+    add(nd, `c${c}`, key, `era=${q(key)}&c=${c ?? ''}`, c == null ? 'Year unknown' : centuryLabel(c), r, c ?? Infinity);
+  });
+  const branch = (nd) => [...nd.children.values()].sort((a, b) => a.first - b.first).map((c) => `<li>${c.children.size
+    ? `<details><summary>${node(c.href, c.label, c.n)}</summary><ul>${branch(c)}</ul></details>`
+    : node(c.href, c.label, c.n)}</li>`).join('');
+  $('cat-tree').innerHTML = branch(tree);
 }
 
 async function load() {

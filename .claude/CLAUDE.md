@@ -29,20 +29,18 @@ below applies to any source as the database expands.
   Pages site), `reference/` (`schema.sql`, `codebook.md`). No data. The review ledger
   `reviewed.md` was removed (Hansen, Oct 2026); its last version is in git history
   (`git show 4d2672d:reviewed.md`).
-- Site: plain HTML + `docs/app.js`, no CSS (Hansen's preference). Main page = catalogue tree under
-  "All loans": Historical period | Time period (centuries) | Currency (Coinage / Commodity,
-  list `COINAGE` in app.js), side by side; counts from view `loan_catalogue`; a node (URL hash,
-  e.g. `#period=2`) loads only its loans, without notes. `loan.html` shows one loan incl. notes.
+- Site: plain HTML + `docs/app.js`, no CSS (Hansen's preference). Main page = one catalogue tree
+  under "All loans" (Hansen, Oct 2026): ruling power > region > period (only where a region has
+  several) > century, earliest first, "Period unknown" last; counts from view `loan_catalogue`; a
+  node (URL hash `#era=Roman/Egypt&c=2`) loads only its loans, without notes; Place / Currency /
+  Period / year filters and search on the loan list. `loan.html` shows one loan incl. notes.
   Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
   "always classify into one thing"; Early/Late Roman Egypt): column `period` (plain text, set at
   insert). Helper SQL function `loan_period(year, region)` gives it (e.g. `loan_period('AD 57',
   'Egypt')`): periods per region with date limits, a range gets the period covering most of it.
   Egypt: Ptolemaic Egypt (332-31 BC), Early Roman Egypt (30 BC-AD 284), Late Roman Egypt
   (285-641); Roman <region>, Nabataean/Roman Arabia (106), Parthian Empire, India. A new region
-  needs a line in `loan_period` (apply_migration works for additive DDL). Catalogue: Historical
-  period first, in layers ruling power > region > period (`#era=Roman/Egypt`; earliest first; a
-  region with one period is a leaf), Time period,
-  Currency (Location removed, Hansen, Oct 2026); table: ID, Period, ...; Period filter.
+  needs a line in `loan_period` (apply_migration works for additive DDL). Table: ID, Period, ...; Period filter.
 - Releases: pushing tag `vX.Y` runs `.github/workflows/release.yml` (CSV export, secret
   `SUPABASE_DB_URL`, untested until first tag).
 - Schema: `reference/schema.sql` (v0.3) is a one-time setup script; never re-run it. Schema changes =
