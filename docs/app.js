@@ -92,11 +92,6 @@ async function loadCatalogue() {
   $('cat-period').innerHTML = periods.map(([c, n]) => `<li>${c == null
     ? node('period=', 'Year unknown', n) : node(`period=${c}`, centuryLabel(c), n)}</li>`).join('');
 
-  // Location: places, alphabetical, then unknown.
-  const places = [...tally(rows, (r) => r.place)].sort(([a], [b]) => (a == null) - (b == null) || String(a).localeCompare(b));
-  $('cat-location').innerHTML = places.map(([pl, n]) => `<li>${pl == null
-    ? node('place=', 'Place unknown', n) : node(`place=${q(pl)}`, pl, n)}</li>`).join('');
-
   // Currency: coinage, commodity, unknown.
   const currencies = [...tally(rows, (r) => r.currency)].sort(([a], [b]) => String(a).localeCompare(b));
   coinList = q(`(${currencies.filter(([cur]) => cur != null && kind(cur) === 'coinage').map(([cur]) => pgq(cur)).join(',')})`);
