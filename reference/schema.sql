@@ -27,6 +27,7 @@ begin
   end if;
   -- periods per region (label, first year, last year; BC negative); a label may have several spans
   for p in select * from (values
+      ('Egypt', 'Late Period Egypt', -664, -333),
       ('Egypt', 'Ptolemaic Egypt', -332, -31),
       ('Egypt', 'Early Roman Egypt', -30, 284),
       ('Egypt', 'Late Roman Egypt', 285, 618),
@@ -44,7 +45,25 @@ begin
       ('Judaea', 'Roman Judaea', 6, 135),
       ('Syria Coele', 'Roman Syria Coele', -64, 636),
       ('Achaea', 'Roman Achaea', -146, 641),
-      ('Germania Superior', 'Roman Germania Superior', -12, 476)
+      ('Germania Superior', 'Roman Germania Superior', -12, 476),
+      ('Greece', 'Archaic Greece', -800, -480),
+      ('Greece', 'Classical Greece', -479, -323),
+      ('Greece', 'Hellenistic Greece', -322, -147),
+      ('Greece', 'Roman Achaea', -146, 641),
+      ('Macedonia', 'Classical Greece', -479, -323),
+      ('Macedonia', 'Hellenistic Greece', -322, -147),
+      ('Macedonia', 'Roman Macedonia', -146, 284),
+      ('Asia Minor', 'Achaemenid Asia Minor', -546, -334),
+      ('Asia Minor', 'Hellenistic Asia Minor', -333, -134),
+      ('Asia Minor', 'Roman Asia', -133, 284),
+      ('Black Sea', 'Classical Black Sea', -479, -323),
+      ('Black Sea', 'Hellenistic Black Sea', -322, -30),
+      ('Sicily', 'Classical Sicily', -479, -323),
+      ('Sicily', 'Hellenistic Sicily', -322, -242),
+      ('Sicily', 'Roman Sicily', -241, 476),
+      ('Bithynia', 'Roman Bithynia', -74, 284),
+      ('Africa', 'Roman Africa', -146, 439),
+      ('Dacia', 'Roman Dacia', 106, 271)
     ) as t(reg, label, a, b) where reg = region order by a
   loop
     n := least(hi, p.b) - greatest(lo, p.a) + 1;
