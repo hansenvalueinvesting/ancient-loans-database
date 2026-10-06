@@ -235,8 +235,8 @@ function render() {
   state.shown = sortRows(filtered());
   $('loans').querySelector('tbody').innerHTML = state.shown.map((l) => `
     <tr>
-      <td>${esc(l.period)}</td>
       <td><a href="loan.html?id=${encodeURIComponent(l.id)}">${esc(l.id)}</a></td>
+      <td>${esc(l.period)}</td>
       <td>${esc(l.year)}</td>
       <td>${esc(l.place)}</td>
       <td>${fmtAmount(l.amount)}</td>
