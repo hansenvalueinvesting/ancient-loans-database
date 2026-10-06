@@ -51,7 +51,6 @@ function selection() {
     const [lo, hi] = c > 0 ? [(c - 1) * 100 + 1, c * 100] : [c * 100, (c + 1) * 100 - 1];
     return { title: centuryLabel(c), where: `&year_sort=gte.${lo}&year_sort=lte.${hi}` };
   }
-  if (key === 'region') return { title: v, where: `&or=(place.eq.${q(pgq(v))},place.like.${q(pgq(`*, ${v}`))})` };
   if (key === 'place') return v ? { title: v, where: `&place=eq.${q(v)}` } : { title: 'Place unknown', where: '&place=is.null' };
   if (key === 'kind' && KINDS[v]) {
     return { title: KINDS[v], where: v === 'coinage' ? `&currency=in.${coinList}` : `&currency=not.in.${coinList}` };
@@ -93,15 +92,10 @@ async function loadCatalogue() {
   $('cat-period').innerHTML = periods.map(([c, n]) => `<li>${c == null
     ? node('period=', 'Year unknown', n) : node(`period=${c}`, centuryLabel(c), n)}</li>`).join('');
 
-  // Location: region, then its places.
-  const regions = [...tally(rows, (r) => r.region)].sort(([a], [b]) => (a == null) - (b == null) || String(a).localeCompare(b));
-  $('cat-location').innerHTML = regions.map(([reg, n]) => {
-    if (reg == null) return `<li>${node('place=', 'Place unknown', n)}</li>`;
-    const places = [...tally(rows.filter((r) => r.region === reg), (r) => r.place)].sort(([a], [b]) => a.localeCompare(b));
-    const short = (pl) => (pl === reg ? pl : pl.slice(0, -(reg.length + 2)));
-    return `<li><details><summary>${node(`region=${q(reg)}`, reg, n)}</summary><ul>${
-      places.map(([pl, m]) => `<li>${node(`place=${q(pl)}`, short(pl), m)}</li>`).join('')}</ul></details></li>`;
-  }).join('');
+  // Location: places, alphabetical, then unknown.
+  const places = [...tally(rows, (r) => r.place)].sort(([a], [b]) => (a == null) - (b == null) || String(a).localeCompare(b));
+  $('cat-location').innerHTML = places.map(([pl, n]) => `<li>${pl == null
+    ? node('place=', 'Place unknown', n) : node(`place=${q(pl)}`, pl, n)}</li>`).join('');
 
   // Currency: coinage, commodity, unknown.
   const currencies = [...tally(rows, (r) => r.currency)].sort(([a], [b]) => String(a).localeCompare(b));

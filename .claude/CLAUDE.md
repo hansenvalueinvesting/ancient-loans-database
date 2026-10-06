@@ -33,12 +33,14 @@ below applies to any source as the database expands.
   "All loans": Time period (centuries) | Location (region > place) | Currency (Coinage / Commodity,
   list `COINAGE` in app.js), side by side; counts from view `loan_catalogue`; a node (URL hash,
   e.g. `#period=2`) loads only its loans, without notes. `loan.html` shows one loan incl. notes.
-  Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable"):
-  generated column `period` = `loan_period(year, place)` (SQL function: region + year range ->
-  who ruled: Ptolemaic Egypt 332-30 BC, Roman Egypt 30 BC-AD 284, Late Roman Egypt, Roman <region>,
-  Nabataean/Roman Arabia (AD 106), Parthian Empire, India; ranges across a boundary -> "X or Y";
-  no place -> null). First catalogue column (`#era=`), first table column, Period filter. A new
-  region needs a case in `loan_period` (ALTER via apply_migration works for additive DDL).
+  Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
+  "always classify into one thing"; Early/Late Roman Egypt): column `period` (plain text, set at
+  insert). Helper SQL function `loan_period(year, region)` gives it (e.g. `loan_period('AD 57',
+  'Egypt')`): periods per region with date limits, a range gets the period covering most of it.
+  Egypt: Ptolemaic Egypt (332-31 BC), Early Roman Egypt (30 BC-AD 284), Late Roman Egypt
+  (285-641); Roman <region>, Nabataean/Roman Arabia (106), Parthian Empire, India. A new region
+  needs a line in `loan_period` (apply_migration works for additive DDL). Catalogue: Historical
+  period first (`#era=`), Location = flat list of places; table: ID, Period, ...; Period filter.
 - Releases: pushing tag `vX.Y` runs `.github/workflows/release.yml` (CSV export, secret
   `SUPABASE_DB_URL`, untested until first tag).
 - Schema: `reference/schema.sql` (v0.3) is a one-time setup script; never re-run it. Schema changes =
@@ -47,7 +49,7 @@ below applies to any source as the database expands.
 ## Data standards
 - Follow `reference/codebook.md` exactly. One table `loans`, one row per loan. Fields: id, year, place,
   amount, currency, borrower, lender, interest, duration, source, source_url, notes (+ generated
-  year_sort). Nothing else is collected (Hansen).
+  year_sort, period). Nothing else is collected (Hansen).
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
@@ -108,14 +110,14 @@ by Claude under that grant (Roman-world pass):
   (alternative dates -> span from earliest to latest). An earlier loan named in a document gets
   the year it was made (Hansen: always the year the loan was made; uncertain = range). If the
   text gives no date for the loan at all, keep the document's year (the year it is recorded).
-- **place**: where the loan was made, then the region/province at the time: `Oxyrhynchus, Egypt`,
-  `Tebtunis (Arsinoite nome), Egypt`, `Arsinoe, Egypt`, `Arsinoite nome, Egypt`; keep a "(?)"
-  doubt; Dura = `Parthian Empire` before c. AD 165.
-  Always the ancient name (Hansen, Oct 2026: "lets stick with the ancient names ... follow this
-  moving forward"), Latinized like personal names (`Heracleopolis`, `Heraclea`, `Acoris`,
-  `Ancyron`, `Crocodilo`, `Engaddi`); Greek-phrase village names keep their standard form
-  (`Soknopaiou Nesos`, `Berenikis Aigialou`); only a modern site name known -> smallest ancient
-  unit (`Arsinoite nome, Egypt`; `Egypt`). Never modern names. Regions keep their English names.
+- **place**: where the loan was made, ancient name only, no region (Hansen, Oct 2026: "just
+  "Oxyrhynchus" would be sufficient, since we also have the historical period"): `Oxyrhynchus`,
+  `Tebtunis (Arsinoite nome)`, `Arsinoite nome`; keep a "(?)" doubt. Always the ancient name
+  (Hansen: "lets stick with the ancient names ... follow this moving forward"), Latinized like
+  personal names (`Heracleopolis`, `Heraclea`, `Acoris`, `Ancyron`, `Crocodilo`, `Engaddi`);
+  Greek-phrase village names keep their standard form (`Soknopaiou Nesos`); only a modern site
+  name known -> the ancient district or empty. Never modern names.
+- **period**: who ruled the place at the time (see Architecture); one value per loan.
 - **amount**: the principal as written; whole number or fraction in lowest terms, never decimals
   (`100`, `12 1/6`, `2/3`; 1 1/2 1/5 = `1 7/10`). Never convert currency (Hansen, Oct 2026): keep
   the unit(s) the document uses; a sum in several units follows the document, each number with
@@ -201,7 +203,7 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 763 rows (ALD-000001 to 000977, with gaps). Column `period` added (Oct 2026). Place names set to ancient names (66 rows, Oct 2026). Alimentary tables removed (104 rows, Hansen,
+- DB: 763 rows (ALD-000001 to 000977, with gaps). Column `period` added; places without region (Oct 2026). Place names set to ancient names (66 rows, Oct 2026). Alimentary tables removed (104 rows, Hansen,
   run by Hansen in the SQL Editor, verified); `note_stage` dropped.
 - Done (Oct 2026): Roman world (to AD 284), Latin/Greek documents and inscriptions: Latin papyri in
   the DDbDP (75 candidates; Greek papyri outside Egypt were already covered by the date-based

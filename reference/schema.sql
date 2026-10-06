@@ -6,11 +6,13 @@
 
 create sequence loan_seq;
 
+-- Helper for the period field: loan_period(year, region) -> historical period, e.g.
+-- loan_period('AD 57', 'Egypt') = 'Early Roman Egypt'. A year range gets the period covering most of it.
 create or replace function loan_period(year text, place text) returns text
 language plpgsql immutable as $$
 declare
   region text := coalesce(substring(place from ', ([^,]+)$'), place);
-  lo int; hi int;
+  lo int; hi int; best text; bestn int := -1; n int; p record;
 begin
   if year is null or region is null then return null; end if;
   if year ~ '^AD ' then
@@ -23,23 +25,27 @@ begin
     lo := -substring(year from '^([0-9]+)')::int;
     hi := -coalesce(substring(year from '^[0-9]+-([0-9]+) BC$')::int, -lo);
   end if;
-  if region = 'Egypt' then
-    if hi <= 284 and lo > -30 or (lo = -30 and hi > -30) then return 'Roman Egypt';
-    elsif hi < -30 and lo >= -332 then return 'Ptolemaic Egypt';
-    elsif lo >= -332 and hi <= 284 then return 'Ptolemaic or Roman Egypt';
-    elsif lo > 284 then return 'Late Roman Egypt';
-    elsif lo > -30 and lo <= 284 and hi > 284 then return 'Roman or Late Roman Egypt';
-    end if;
-    return null;
-  elsif region = 'Arabia' then
-    if lo >= 106 then return 'Roman Arabia';
-    elsif hi < 106 then return 'Nabataean Arabia';
-    else return 'Nabataean or Roman Arabia'; end if;
-  elsif region = 'Parthian Empire' then return 'Parthian Empire';
-  elsif region = 'India' then return 'India';
-  elsif region in ('Italy','Judaea','Syria Coele','Achaea','Germania Superior') then return 'Roman ' || region;
-  end if;
-  return null;
+  -- periods per region: (label, first year, last year); BC negative
+  for p in select * from (values
+      ('Egypt', 'Ptolemaic Egypt', -332, -31),
+      ('Egypt', 'Early Roman Egypt', -30, 284),
+      ('Egypt', 'Late Roman Egypt', 285, 641),
+      ('Arabia', 'Nabataean Arabia', -400, 105),
+      ('Arabia', 'Roman Arabia', 106, 641),
+      ('Parthian Empire', 'Parthian Empire', -247, 224),
+      ('India', 'India', -1000, 1000),
+      ('Italy', 'Roman Italy', -509, 476),
+      ('Judaea', 'Roman Judaea', 6, 135),
+      ('Syria Coele', 'Roman Syria Coele', -64, 636),
+      ('Achaea', 'Roman Achaea', -146, 641),
+      ('Germania Superior', 'Roman Germania Superior', -12, 476)
+    ) as t(reg, label, a, b) where reg = region order by a
+  loop
+    n := least(hi, p.b) - greatest(lo, p.a) + 1;
+    if n > bestn then bestn := n; best := p.label; end if;
+  end loop;
+  if bestn <= 0 then return null; end if;
+  return best;
 end $$;
 
 create table loans (
@@ -48,7 +54,7 @@ create table loans (
   year        text constraint loans_year_format
               check (year ~ '^(AD [1-9][0-9]*(-[1-9][0-9]*)?|[1-9][0-9]*(-[1-9][0-9]*)? BC|[1-9][0-9]* BC-AD [1-9][0-9]*)$'),
                                              -- e.g. 'AD 57', '100 BC', 'AD 101-200', '30 BC-AD 14'
-  place       text,                          -- where the loan was made
+  place       text,                          -- where the loan was made (ancient name, e.g. 'Oxyrhynchus')
   amount      text constraint loans_amount_format   -- as written: '100', '12 1/6', several units '2 talents 4800 drachmas', lost parts '[...] 45'
               check (amount ~ '^(([1-9][0-9]*|[1-9][0-9]* [1-9][0-9]*/[1-9][0-9]*|[1-9][0-9]*/[1-9][0-9]*)|\[\.\.\.\])( (([1-9][0-9]*|[1-9][0-9]* [1-9][0-9]*/[1-9][0-9]*|[1-9][0-9]*/[1-9][0-9]*)|\[\.\.\.\]|[a-z]+))*$' and amount ~ '[0-9]'),
   currency    text,                          -- currency or unit, e.g. 'drachma', 'artaba (wheat)'
@@ -62,7 +68,7 @@ create table loans (
   year_sort   int generated always as (      -- automatic, for sorting: '100 BC' = -100, 'AD 57' = 57 (range: first year)
                 case when year ~ '^AD ' then substring(year from '^AD ([0-9]+)')::int
                      when year ~ '^[0-9]' then -substring(year from '^([0-9]+)')::int end) stored,
-  period      text generated always as (loan_period(year, place)) stored  -- automatic: historical period (who ruled the place at the time)
+  period      text                            -- historical period: who ruled the place at the time, e.g. 'Ptolemaic Egypt'
 );
 
 -- Catalogue counts for the site's catalogue tree (period, century, region, place, currency).
