@@ -5,6 +5,7 @@ A systematic, standardized record of every documented loan in the ancient world,
 ## Change log
 
 **2026-10-06**
+- New column `period` (historical period: who ruled the place at the time, e.g. Ptolemaic Egypt, Roman Egypt), computed automatically from year and place; first column of the catalogue and the loan tables, with a Period filter.
 - Place names: always the ancient name, Latinized (66 rows changed: Herakleopolis/Herakleopolite -> Heracleopolis/Heracleopolite, Herakleia -> Heraclea, Akoris -> Acoris, Ankyron -> Ancyron, Krokodilo -> Crocodilo, En-gedi -> Engaddi; modern site names Ghoran and Raima replaced by the ancient district / region).
 - Removed 104 rows from the alimentary tables of Veleia (CIL 11 1147; ALD-000849, 000876 - 000927) and the Ligures Baebiani (CIL 9 1455; ALD-000864, 000928 - 000977): Trajan's alimentary obligations are not loans (no repayment of the capital). Database: 763 loans.
 

@@ -10,7 +10,7 @@ const state = { loans: [], sortKey: 'id', sortDir: 1, shown: [] };
 // ---------- data ----------
 
 // Table columns; notes (the long original text) is loaded only on a loan's own page and for CSV.
-const LIST_COLS = 'id,year,year_sort,place,amount,currency,borrower,lender,interest,duration,source,source_url';
+const LIST_COLS = 'id,period,year,year_sort,place,amount,currency,borrower,lender,interest,duration,source,source_url';
 
 async function get(path) {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, { headers: { apikey: SUPABASE_KEY } });
@@ -44,6 +44,7 @@ function selection() {
   if (h === 'all') return { title: 'All loans', where: '' };
   const [key, raw = ''] = h.split('=');
   const v = decodeURIComponent(raw);
+  if (key === 'era') return v ? { title: v, where: `&period=eq.${q(v)}` } : { title: 'Period unknown', where: '&period=is.null' };
   if (key === 'period') {
     if (!v) return { title: 'Year unknown', where: '&year_sort=is.null' };
     const c = Number(v);
@@ -79,6 +80,13 @@ function tally(rows, key) {
 async function loadCatalogue() {
   const rows = await get('loan_catalogue?select=*');
   $('cat-total').textContent = `(${rows.reduce((t, r) => t + r.loans, 0).toLocaleString()})`;
+
+  // Historical period (who ruled the place at the time), earliest first, then unknown.
+  const first = new Map();
+  rows.forEach((r) => { if (r.first_year != null && !(first.get(r.period) <= r.first_year)) first.set(r.period, r.first_year); });
+  const eras = [...tally(rows, (r) => r.period)].sort(([a], [b]) => (a == null) - (b == null) || (first.get(a) ?? 0) - (first.get(b) ?? 0));
+  $('cat-era').innerHTML = eras.map(([e, n]) => `<li>${e == null
+    ? node('era=', 'Period unknown', n) : node(`era=${q(e)}`, e, n)}</li>`).join('');
 
   // Time period: centuries BC (earliest first), then AD, then unknown.
   const periods = [...tally(rows, (r) => r.century)].sort(([a], [b]) => (a ?? Infinity) - (b ?? Infinity));
@@ -130,8 +138,9 @@ async function showSelection() {
   } catch (err) {
     return setStatus(`Could not load data. ${err.message}`);
   }
-  ['f-place', 'f-currency'].forEach((id) => { $(id).length = 1; });
+  ['f-period', 'f-place', 'f-currency'].forEach((id) => { $(id).length = 1; });
   ['f-search', 'f-from', 'f-to'].forEach((id) => { $(id).value = ''; });
+  fillSelect('f-period', state.loans.map((l) => l.period));
   fillSelect('f-place', state.loans.map((l) => l.place));
   fillSelect('f-currency', state.loans.map((l) => l.currency));
   setYearPlaceholders();
@@ -191,16 +200,17 @@ function fillSelect(id, values) {
 
 function filtered() {
   const q = $('f-search').value.trim().toLowerCase();
-  const place = $('f-place').value, currency = $('f-currency').value;
+  const period = $('f-period').value, place = $('f-place').value, currency = $('f-currency').value;
   const from = parseYear($('f-from').value), to = parseYear($('f-to').value);
 
   return state.loans.filter((l) => {
+    if (period && l.period !== period) return false;
     if (place && l.place !== place) return false;
     if (currency && l.currency !== currency) return false;
     if (from != null && (l.year_sort == null || l.year_sort < from)) return false;
     if (to != null && (l.year_sort == null || l.year_sort > to)) return false;
     if (q) {
-      const hay = [l.id, l.year, l.place, l.currency, l.borrower, l.lender, l.interest, l.duration, l.source]
+      const hay = [l.id, l.period, l.year, l.place, l.currency, l.borrower, l.lender, l.interest, l.duration, l.source]
         .join(' ').toLowerCase();
       if (!hay.includes(q)) return false;
     }
@@ -225,6 +235,7 @@ function render() {
   state.shown = sortRows(filtered());
   $('loans').querySelector('tbody').innerHTML = state.shown.map((l) => `
     <tr>
+      <td>${esc(l.period)}</td>
       <td><a href="loan.html?id=${encodeURIComponent(l.id)}">${esc(l.id)}</a></td>
       <td>${esc(l.year)}</td>
       <td>${esc(l.place)}</td>
@@ -254,7 +265,7 @@ async function downloadCsv() {
   const notes = new Map((await fetchAll('loans', 'id,notes', selection().where)).map((r) => [r.id, r.notes]));
   const rows = state.shown.map((l) => ({ ...l, notes: notes.get(l.id) }));
   render();
-  const cols = ['id', 'year', 'year_sort', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url', 'notes'];
+  const cols = ['id', 'period', 'year', 'year_sort', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url', 'notes'];
   const cell = (v) => (v == null ? '' : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
   const csv = [cols.join(','), ...rows.map((l) => cols.map((c) => cell(l[c])).join(','))].join('\n');
   const a = Object.assign(document.createElement('a'), {
@@ -279,6 +290,7 @@ async function loadLoan() {
     document.title = `${l.id} | Ancient Loans Database`;
     $('loan-id').textContent = l.id;
     const fields = [
+      ['Period', esc(l.period)],
       ['Year', esc(l.year)],
       ['Place', esc(l.place)],
       ['Amount', fmtAmount(l.amount)],
@@ -302,7 +314,7 @@ async function loadLoan() {
 if ($('loan')) {
   loadLoan();
 } else {
-  const FILTERS = ['f-search', 'f-place', 'f-currency', 'f-from', 'f-to'];
+  const FILTERS = ['f-search', 'f-period', 'f-place', 'f-currency', 'f-from', 'f-to'];
   FILTERS.forEach((id) => $(id).addEventListener('input', render));
   $('btn-reset').addEventListener('click', () => {
     FILTERS.forEach((id) => { $(id).value = ''; });

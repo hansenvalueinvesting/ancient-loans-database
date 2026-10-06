@@ -33,6 +33,12 @@ below applies to any source as the database expands.
   "All loans": Time period (centuries) | Location (region > place) | Currency (Coinage / Commodity,
   list `COINAGE` in app.js), side by side; counts from view `loan_catalogue`; a node (URL hash,
   e.g. `#period=2`) loads only its loans, without notes. `loan.html` shows one loan incl. notes.
+  Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable"):
+  generated column `period` = `loan_period(year, place)` (SQL function: region + year range ->
+  who ruled: Ptolemaic Egypt 332-30 BC, Roman Egypt 30 BC-AD 284, Late Roman Egypt, Roman <region>,
+  Nabataean/Roman Arabia (AD 106), Parthian Empire, India; ranges across a boundary -> "X or Y";
+  no place -> null). First catalogue column (`#era=`), first table column, Period filter. A new
+  region needs a case in `loan_period` (ALTER via apply_migration works for additive DDL).
 - Releases: pushing tag `vX.Y` runs `.github/workflows/release.yml` (CSV export, secret
   `SUPABASE_DB_URL`, untested until first tag).
 - Schema: `reference/schema.sql` (v0.3) is a one-time setup script; never re-run it. Schema changes =
@@ -195,7 +201,7 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 763 rows (ALD-000001 to 000977, with gaps). Place names set to ancient names (66 rows, Oct 2026). Alimentary tables removed (104 rows, Hansen,
+- DB: 763 rows (ALD-000001 to 000977, with gaps). Column `period` added (Oct 2026). Place names set to ancient names (66 rows, Oct 2026). Alimentary tables removed (104 rows, Hansen,
   run by Hansen in the SQL Editor, verified); `note_stage` dropped.
 - Done (Oct 2026): Roman world (to AD 284), Latin/Greek documents and inscriptions: Latin papyri in
   the DDbDP (75 candidates; Greek papyri outside Egypt were already covered by the date-based

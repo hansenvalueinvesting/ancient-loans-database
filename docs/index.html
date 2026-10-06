@@ -18,6 +18,7 @@
     <li><a href="#all">All loans</a> <span id="cat-total"></span>
       <table cellpadding="8">
         <tr valign="top">
+          <td><b>Historical period</b><ul id="cat-era"></ul></td>
           <td><b>Time period</b><ul id="cat-period"></ul></td>
           <td><b>Location</b><ul id="cat-location"></ul></td>
           <td><b>Currency</b><ul id="cat-currency"></ul></td>
@@ -28,7 +29,8 @@
 
   <h2 id="sel-title" hidden></h2>
   <p id="controls" hidden>
-    <label>Search <input id="f-search" type="search" placeholder="ID, year, place, person, source"></label>
+    <label>Search <input id="f-search" type="search" placeholder="ID, period, year, place, person, source"></label>
+    <label>Period <select id="f-period"><option value="">All</option></select></label>
     <label>Place <select id="f-place"><option value="">All</option></select></label>
     <label>Currency <select id="f-currency"><option value="">All</option></select></label>
     <label>From year <input id="f-from" type="text" size="8"></label>
@@ -42,6 +44,7 @@
   <table id="loans" hidden border="1" cellpadding="4" cellspacing="0">
     <thead>
       <tr>
+        <th data-sort="period">Period</th>
         <th data-sort="id">ID</th>
         <th data-sort="year_sort">Year</th>
         <th data-sort="place">Place</th>
