@@ -4,6 +4,9 @@ A systematic, standardized record of every documented loan in the ancient world,
 
 ## Change log
 
+**2026-10-06**
+- Removed 104 rows from the alimentary tables of Veleia (CIL 11 1147; ALD-000849, 000876 - 000927) and the Ligures Baebiani (CIL 9 1455; ALD-000864, 000928 - 000977): Trajan's alimentary obligations are not loans (no repayment of the capital). Database: 763 loans.
+
 **2026-10-05**
 - Added ALD-000848 - 000977 (130 loans): the Roman world in Latin and Greek documents and inscriptions - wax tablets of the Sulpicii (Puteoli) and of Herculaneum, the alimentary tables of Veleia and the Ligures Baebiani (Trajan's loans to landowners), loans to the city of Gytheum, a Vindonissa tablet, and Latin papyri from Egypt. Sources: Latin papyri in the DDbDP, Epigraphic Database Heidelberg (EDH) and Epigraphic Database Roma (EDR). Database: 867 loans.
 - Added ALD-000838 - 000847: Ptolemaic Egypt (332 - 30 BC), full-text search of the Greek papyri for loan vocabulary (191 further documents reviewed, 10 loans). Database: 737 loans.

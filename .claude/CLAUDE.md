@@ -90,9 +90,8 @@ by Claude under that grant (Roman-world pass):
 - cash paid out at the borrower's request and owed back (expensilatio, "numeratos accepit", wax
   tablets) = loan; balances of old accounts restated (TPSulp. 68), pawns (CIL 4 8203/8204),
   foundations whose capital is to be lent in future, debt-only texts: excluded;
-- alimentary tables: one row per landowner's obligation (lender `Trajan`; Veleia interest
-  `quincunx (5% per year)`; Ligures Baebiani interest as the sum written with "2½% of the principal;
-  period not preserved"); entries with neither amount nor borrower left out;
+- alimentary tables (Veleia, Ligures Baebiani): first entered, then removed: Hansen (Oct 2026):
+  "these are not loans" (perpetual obligations, capital not repaid);
 - notes from inscriptions carry their source's licence in the credit line: EDH (CC BY-SA 4.0),
   EDR (CC BY-NC-SA 4.0); source_url = the EDH/EDR record; Sulpicii tablets cited `TPSulp. N`,
   Herculaneum `TH2 N`.
@@ -191,18 +190,18 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 867 rows (ALD-000001 to 000977, with gaps).
+- DB: 763 rows (ALD-000001 to 000977, with gaps). Alimentary tables removed (104 rows, Hansen,
+  run by Hansen in the SQL Editor, verified); `note_stage` dropped.
 - Done (Oct 2026): Roman world (to AD 284), Latin/Greek documents and inscriptions: Latin papyri in
   the DDbDP (75 candidates; Greek papyri outside Egypt were already covered by the date-based
   passes), EDH (155 inscriptions + 43 wooden/wax tablets), EDR (528 Italian records: Sulpicii and
-  Herculaneum tablets, alimentary tables, loan vocabulary). 26 documents included, 130 rows
-  (ALD-000848 to 000977). Notes verified by md5. Gaps: Dacian wax tablets (no open text found),
+  Herculaneum tablets, alimentary tables, loan vocabulary). 24 documents included, 26 rows
+  kept (ALD-000848 to 000875; the alimentary tables' 104 rows were removed). Notes verified by md5. Gaps: Dacian wax tablets (no open text found),
   Greek inscriptions (PHI blocks access), literary sources (not started).
 - Writing long or non-ASCII notes (Oct 2026): text sent through the connector is NFC-normalized and
   large statements time out. Write every string as an ASCII `U&'...'` literal (all non-ASCII as
   `\XXXX`), keep statements under ~5 KB, stage long notes in chunks in a helper table and set them
-  with one small `update ... set notes = (select string_agg(...))`, then check md5. The helper
-  table `note_stage` is still in the database (drop needs Hansen: `drop table public.note_stage;`).
+  with one small `update ... set notes = (select string_agg(...))`, then check md5.
 - Before the Roman-world pass: 737 rows (ALD-000001 to 000847, with gaps).
 - Done (Oct 2026): Ptolemaic full-text pass: 191 documents not tagged as loans in HGV but
   containing loan vocabulary (δαν-, χρῆσις, ἔντοκ-, προχρ-, εὐχρηστ-; ending by 30 BC; not in the
