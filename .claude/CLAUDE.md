@@ -41,7 +41,9 @@ below applies to any source as the database expands.
   Egypt: Ptolemaic Egypt (332-31 BC), Early Roman Egypt (30 BC-AD 284), Late Roman Egypt
   (285-618, 629-641), Sasanian Egypt (619-628, Persian occupation), Early Islamic Egypt (642-868);
   Roman <region>, Nabataean/Roman Arabia (106), Late Roman / Early Islamic Palaestina (637),
-  Late Roman Thracia, Parthian Empire, India. A new region
+  Late Roman Thracia, Parthian Empire, India; Greek world: Archaic/Classical/Hellenistic Greece then Roman Achaea
+  (146 BC), Roman Macedonia, Achaemenid/Hellenistic Asia Minor, Roman Asia (133 BC), Classical/Hellenistic Black Sea
+  and Sicily, Roman Sicily (241 BC), Roman Bithynia, Roman Africa, Roman Dacia, Late Period Egypt. A new region
   needs a line in `loan_period` (apply_migration works for additive DDL). Table: ID, Period, ...; Period filter.
 - Releases: pushing tag `vX.Y` runs `.github/workflows/release.yml` (CSV export, secret
   `SUPABASE_DB_URL`, untested until first tag).
@@ -102,7 +104,7 @@ amount, unclear whether a borrowing, unnamed lenders that may be the estate or t
 Hansen (Oct 2026, Roman world): "just go through everything, make your own decisions. the goal is
 to have a record of every loan transaction where money is being lent in antiquity." Decisions taken
 by Claude under that grant (Roman-world pass):
-- documents and inscriptions only (no literary sources yet); Late Antique (after AD 284) left for
+- documents and inscriptions only at that stage (literary sources added later, see Status); Late Antique (after AD 284) left for
   its own step;
 - cash paid out at the borrower's request and owed back (expensilatio, "numeratos accepit", wax
   tablets) = loan; balances of old accounts restated (TPSulp. 68), pawns (CIL 4 8203/8204),
@@ -212,7 +214,33 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 1,043 rows (ALD-000001 to 001257, with gaps).
+- DB: 1,444 rows (ALD-000001 to 001658, with gaps). Helper table `note_stage` re-created for the notes
+  (drop needs Hansen: `drop table public.note_stage;`).
+- Done (Oct 2026, Hansen: "yeah, do it all. just put down every individual loan transaction you find"):
+  Greek inscriptions, literary sources, Dacian tablets. Decisions taken under that grant:
+  - Greek inscriptions: PHI texts via the Stoicheia dataset (huggingface.co/datasets/Ericu950/Inscriptions_2;
+    PHI site itself blocked; no line divisions; no open licence asserted, credited to PHI) and I.PHI metadata
+    for citations (`PHI <n>` where none); source_url = inscriptions.packhum.org/text/<n>. 959 candidates
+    (δαν-, τόκ-, χρε-, ἐπὶ λύσει, ὑποκειμ-, ἐρανιστ-), extraction + independent review: 98 documents,
+    299 rows (ALD-001258 to 001556). Horoi count only if they name a loan or eranos (security-only horoi
+    excluded, 183); promises/future loans, advances (προχρ-, προεισ-), remissions, aggregates of unnamed
+    loans, loan words wholly restored, interest-only entries excluded; one row per loan in Delian and other
+    loan registers; duplicate PHI editions kept once; interest only as written (no computed rates);
+    long accounts: note holds only the loan passages. 𐅂 = one-drachma sign (value 1).
+  - Literary: Perseus canonical-greekLit/latinLit (CC BY-SA 4.0), 2,559 passages with loan vocabulary
+    (excerpts around hits; coverage limited to Perseus texts and these words). Kept: specific loans actually
+    made, at least one identified party, reported as fact (speeches, letters, histories); dropped: fiction,
+    myth, examples, general practice, aggregates, forced levies/seizures, bribes, promises. One row per loan
+    across all passages; source = main passage (`Dem. 35.10`), source_url = scaife.perseus.org reader URL;
+    note = the passages + translation. 100 rows (ALD-001557 to 001658 with the 2 Dacian rows).
+  - Dacian tablets: The Roman Law Library (droitromain.univ-grenoble-alpes.fr) gives CIL III tablet texts;
+    2 loans (TC III Deusara, TC V Alburnus Maior, AD 162: ALD-001625, 001626); TC XII (deposit) and TC XIII
+    (partnership) excluded.
+  - Periods added to `loan_period` (regions Greece, Macedonia, Asia Minor, Black Sea, Sicily, Bithynia,
+    Africa, Dacia; Late Period Egypt). Rows without year or place have no period (122 of the new rows).
+  - Open for Hansen: security-only horoi (prasis epi lysei) and the Delian loans whose heading is restored
+    were excluded; repayment-only entries naming earlier loans (secondary lists) not entered.
+  Gaps: Greek inscriptions not in PHI, literary texts outside Perseus, Demotic.
 - Done (Oct 2026): Late Antique Egypt (AD 284-641), HGV records tagged as loans (Darlehen / loan in
   title, not in the old ledger): 652 texts reviewed (extraction + second check), 265 included
   (ALD-000978 to 001257, 280 rows; rows with no amount and no parties dropped; cash advances

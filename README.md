@@ -4,6 +4,11 @@ A systematic, standardized record of every documented loan in the ancient world,
 
 ## Change log
 
+**2026-10-07 (Greek and Roman world)**
+- Added ALD-001258 - 001556 (299 loans): Greek inscriptions, all regions and periods (PHI Searchable Greek Inscriptions; 959 texts with loan vocabulary reviewed, 98 with loans): Delian temple loans, Athenian loans from the treasuries of Athena, eranos loans on Attic mortgage stones (horoi), city loans (Arcesine, Carthaea, Coresia, Miletus, Orchomenus-Nicarete, Simena and others), loans named in honorific decrees.
+- Added ALD-001557 - 001658 (102 loans): literary sources (Perseus Digital Library; 2,559 passages with loan vocabulary reviewed, 100 loans), chiefly Demosthenes' private speeches, Isocrates, Aeschines, Xenophon, Plutarch, Josephus and Cicero; and two Dacian wax-tablet loans of AD 162 (CIL 3 p. 930 no. 3 and p. 934 no. 5: ALD-001625, 001626).
+- New periods (standard periodization): Archaic, Classical and Hellenistic Greece, Achaemenid and Hellenistic Asia Minor, Roman Asia, Classical and Hellenistic Black Sea and Sicily, Roman Sicily, Roman Macedonia, Roman Bithynia, Roman Africa, Roman Dacia, Late Period Egypt. Database: 1,444 loans.
+
 **2026-10-07**
 - Added ALD-000978 - 001257 (280 loans): Late Antique Egypt (AD 284-641), papyri tagged as loans in HGV (652 documents reviewed, 265 with loans), plus loans from Nessana (Palaestina) and Constantinople; periods Late Roman, Sasanian and Early Islamic Egypt. Database: 1,043 loans.
 
