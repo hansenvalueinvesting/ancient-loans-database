@@ -80,10 +80,13 @@ async function loadCatalogue() {
   const rows = await get('loan_catalogue?select=*');
   $('cat-total').textContent = `(${rows.reduce((t, r) => t + r.loans, 0).toLocaleString()})`;
 
-  // Historical period (who ruled the place at the time), earliest first, then unknown.
+  // Historical period (who ruled the place at the time): grouped by region (A-Z), each region's
+  // periods in time order (e.g. Ptolemaic, Early Roman, Late Roman Egypt), then unknown.
   const first = new Map();
   rows.forEach((r) => { if (r.first_year != null && !(first.get(r.period) <= r.first_year)) first.set(r.period, r.first_year); });
-  const eras = [...tally(rows, (r) => r.period)].sort(([a], [b]) => (a == null) - (b == null) || (first.get(a) ?? 0) - (first.get(b) ?? 0));
+  const regionOf = (e) => e.replace(/^(Ptolemaic|Early Roman|Late Roman|Roman|Nabataean) /, '');
+  const eras = [...tally(rows, (r) => r.period)].sort(([a], [b]) => (a == null) - (b == null)
+    || (a != null && regionOf(a).localeCompare(regionOf(b))) || (first.get(a) ?? 0) - (first.get(b) ?? 0));
   $('cat-era').innerHTML = eras.map(([e, n]) => `<li>${e == null
     ? node('era=', 'Period unknown', n) : node(`era=${q(e)}`, e, n)}</li>`).join('');
 
