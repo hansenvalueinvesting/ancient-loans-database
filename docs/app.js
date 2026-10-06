@@ -44,7 +44,11 @@ function selection() {
   if (h === 'all') return { title: 'All loans', where: '' };
   const [key, raw = ''] = h.split('=');
   const v = decodeURIComponent(raw);
-  if (key === 'era') return v ? { title: v, where: `&period=eq.${q(v)}` } : { title: 'Period unknown', where: '&period=is.null' };
+  if (key === 'era') {
+    if (!v) return { title: 'Period unknown', where: '&period=is.null' };
+    const list = eraPaths.get(v) || [v];
+    return { title: list.length === 1 ? list[0] : v.split('/').join(' '), where: `&period=in.${q(`(${list.map(pgq).join(',')})`)}` };
+  }
   if (key === 'period') {
     if (!v) return { title: 'Year unknown', where: '&year_sort=is.null' };
     const c = Number(v);
@@ -76,19 +80,43 @@ function tally(rows, key) {
   return m;
 }
 
+// Historical period → its layers: ruling power, region, period.
+// 'Early Roman Egypt' → ['Roman', 'Egypt', 'Early Roman Egypt']; 'Ptolemaic Egypt' → ['Ptolemaic', 'Egypt', ...];
+// a period without a region ('Parthian Empire', 'India') is a layer of its own.
+function eraPath(p) {
+  const m = p.match(/^(?:(Early|Late) )?(Ptolemaic|Seleucid|Roman|Nabataean) (.+)$/);
+  return m ? [m[2], m[3], p] : [p];
+}
+let eraPaths = new Map(); // catalogue path ('Roman/Egypt') → the periods under it, set by loadCatalogue
+
 async function loadCatalogue() {
   const rows = await get('loan_catalogue?select=*');
   $('cat-total').textContent = `(${rows.reduce((t, r) => t + r.loans, 0).toLocaleString()})`;
 
-  // Historical period (who ruled the place at the time): grouped by region (A-Z), each region's
-  // periods in time order (e.g. Ptolemaic, Early Roman, Late Roman Egypt), then unknown.
-  const first = new Map();
-  rows.forEach((r) => { if (r.first_year != null && !(first.get(r.period) <= r.first_year)) first.set(r.period, r.first_year); });
-  const regionOf = (e) => e.replace(/^(Ptolemaic|Early Roman|Late Roman|Roman|Nabataean) /, '');
-  const eras = [...tally(rows, (r) => r.period)].sort(([a], [b]) => (a == null) - (b == null)
-    || (a != null && regionOf(a).localeCompare(regionOf(b))) || (first.get(a) ?? 0) - (first.get(b) ?? 0));
-  $('cat-era').innerHTML = eras.map(([e, n]) => `<li>${e == null
-    ? node('era=', 'Period unknown', n) : node(`era=${q(e)}`, e, n)}</li>`).join('');
+  // Historical period, in layers: ruling power > region > period (e.g. Roman > Egypt >
+  // Early Roman Egypt); a region with one period is the leaf itself. Earliest first at each level.
+  const tree = { children: new Map() };
+  eraPaths = new Map();
+  rows.forEach((r) => {
+    if (r.period == null) return;
+    const path = eraPath(r.period);
+    let nd = tree;
+    path.forEach((seg, i) => {
+      const key = path.slice(0, i + 1).join('/');
+      if (!nd.children.has(seg)) nd.children.set(seg, { key, label: seg, n: 0, first: Infinity, children: new Map() });
+      nd = nd.children.get(seg);
+      nd.n += r.loans;
+      if (r.first_year != null) nd.first = Math.min(nd.first, r.first_year);
+      eraPaths.set(key, [...new Set([...(eraPaths.get(key) || []), r.period])]);
+    });
+  });
+  const branch = (nd) => [...nd.children.values()].sort((a, b) => a.first - b.first).map((c) => {
+    const leaf = !c.children.size || (c.key.split('/').length === 2 && c.children.size === 1);
+    return `<li>${leaf ? node(`era=${q(c.key)}`, c.label, c.n)
+      : `<details><summary>${node(`era=${q(c.key)}`, c.label, c.n)}</summary><ul>${branch(c)}</ul></details>`}</li>`;
+  }).join('');
+  const unknown = rows.filter((r) => r.period == null).reduce((t, r) => t + r.loans, 0);
+  $('cat-era').innerHTML = branch(tree) + (unknown ? `<li>${node('era=', 'Period unknown', unknown)}</li>` : '');
 
   // Time period: centuries BC (earliest first), then AD, then unknown.
   const periods = [...tally(rows, (r) => r.century)].sort(([a], [b]) => (a ?? Infinity) - (b ?? Infinity));

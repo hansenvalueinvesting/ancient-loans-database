@@ -40,7 +40,8 @@ below applies to any source as the database expands.
   Egypt: Ptolemaic Egypt (332-31 BC), Early Roman Egypt (30 BC-AD 284), Late Roman Egypt
   (285-641); Roman <region>, Nabataean/Roman Arabia (106), Parthian Empire, India. A new region
   needs a line in `loan_period` (apply_migration works for additive DDL). Catalogue: Historical
-  period first (`#era=`; grouped by region A-Z, periods in time order within a region), Time period,
+  period first, in layers ruling power > region > period (`#era=Roman/Egypt`; earliest first; a
+  region with one period is a leaf), Time period,
   Currency (Location removed, Hansen, Oct 2026); table: ID, Period, ...; Period filter.
 - Releases: pushing tag `vX.Y` runs `.github/workflows/release.yml` (CSV export, secret
   `SUPABASE_DB_URL`, untested until first tag).
