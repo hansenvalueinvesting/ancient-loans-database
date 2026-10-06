@@ -57,6 +57,10 @@ below applies to any source as the database expands.
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
+STANDING RULE (Hansen, Oct 2026): "for a loan to be registered, it has to be precisely an individual
+loan contract" -> a row needs one individual loan with borrower, lender and principal identified
+(applied to the Greek/literary/Dacian rows ALD-001258 - 001658: 215 weak rows to be removed; whether
+to apply it to the earlier rows, 340 of which lack a party or the principal, is Hansen's call).
 STANDING RULE (Hansen, Oct 2026, supersedes the detailed rules below where they differ): "the only
 standing rule is to record transactions that are strictly loans. loans are financial arrangements
 where an entity provides money to another with the expectation of repayment over time, often
