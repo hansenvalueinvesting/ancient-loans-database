@@ -226,8 +226,7 @@ by Claude under that grant (Roman-world pass):
 
 ## Status
 - DB: 801 rows (ALD-000001 to 001657, with gaps), after the formal-loan audit (Oct 2026; IDs in the README
-  change log). `note_stage` dropped. Open: ALD-000039's note holds lines 1-13 of BGU 4 1150 (another loan's
-  lines), needs its own lines. Counts in the passes below are before this audit.
+  change log). `note_stage` dropped. Counts in the passes below are before this audit.
 - Done (Oct 2026, Hansen: "yeah, do it all. just put down every individual loan transaction you find"):
   Greek inscriptions, literary sources, Dacian tablets. Decisions taken under that grant:
   - Greek inscriptions: PHI texts via the Stoicheia dataset (huggingface.co/datasets/Ericu950/Inscriptions_2;
