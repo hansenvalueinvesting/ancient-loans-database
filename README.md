@@ -4,6 +4,9 @@ A systematic, standardized record of every documented loan in the ancient world,
 
 ## Change log
 
+**2026-10-07 (Coptic loans, Crum 1909)**
+- Added ALD-001670 - 001680 (11 loans): P.Ryl.Copt. 191-207, Coptic loan and debt acknowledgements from the Hermopolite nome (Early Islamic Egypt). Original text unavailable; English from W. E. Crum, Catalogue of the Coptic Manuscripts in the John Rylands Library (1909). Database: 822 loans.
+
 **2026-10-07 (Early Islamic Egypt pass)**
 - Added ALD-001666 - 001669 (4 loans): Greek and Coptic papyri from Egypt dated AD 642-800 (DDbDP; Early Islamic Egypt). Database: 811 loans.
 

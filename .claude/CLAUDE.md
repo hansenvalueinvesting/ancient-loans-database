@@ -234,8 +234,14 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 811 rows (ALD-000001 to 001669, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
+- DB: 822 rows (ALD-000001 to 001680, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
   change log), the Late Antique full-text pass and the Early Islamic Egypt pass.
+- Done (Oct 2026, Hansen: "just say 'original text unavailable' and then use crums translation"): P.Ryl.Copt. 156,
+  191-213 from Crum 1909 (archive.org cu31924099175329; source_url = that scan): 10 documents, 11 rows (ALD-001670 to
+  001680; debt acknowledgements counted as loans under the current rule; rows may lack parties or sum). Excluded:
+  156 (repayment), 196/198/199/202-204 (debts from grain/donkey prices, payments), 200 (object lent, lost), 208-212
+  (delivery contracts), 213 (loan or price of shirts, left open by Crum). Kept with doubt: 206 and 207 (wine and
+  wine-jars "to repay"; could be delivery contracts).
 - Hansen (Oct 2026), on all borderline cases set aside under the formal-loan rule: "skip what you skipped. that is okay."
 - Done (Oct 2026, Hansen: "sure, go for all of these too"): three passes, no qualifying loan, no data change:
   - EDCS (Latin inscriptions) via the LIST dataset (Zenodo 10473706, CC BY 4.0; EDCS + EDH): 542 texts with Latin
