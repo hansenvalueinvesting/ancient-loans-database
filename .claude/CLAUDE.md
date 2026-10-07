@@ -225,8 +225,16 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 801 rows (ALD-000001 to 001657, with gaps), after the formal-loan audit (Oct 2026; IDs in the README
-  change log). `note_stage` dropped. Counts in the passes below are before this audit.
+- DB: 808 rows (ALD-000001 to 001665, with gaps), after the formal-loan audit (Oct 2026; IDs in the README
+  change log) and the Late Antique full-text pass.
+- Done (Oct 2026, Hansen: "let's put a focus on greco roman period ones"): Late Antique Egypt full-text pass:
+  383 papyri dated AD 285-641 with loan vocabulary, not tagged as loans, not reviewed before; formal-loan rule;
+  6 documents, 7 rows (ALD-001659 to 001665). Excluded by the rule (Hansen may revisit): P.Mert. 2 91 (sums
+  "in writing and without writing", possibly several loans), P.Ross.Georg. 5 31 (delivery contract with
+  advance), P.Charite 33 / P.Bad. 6 173 / P.Heid. 7 401 / P.Köln 13 545 (party unclear), advances (προχρεία)
+  repaid in money (P.Würzb. 2 44, P.Prag. 1 34, P.Köln 2 102), loan entries in accounts. Notes verified by md5.
+  Long notes: write U& chunks of ~300 characters with every character escaped (a safety filter interrupts
+  long escaped strings copied by agents). `note_stage` dropped. Counts in the passes below are before this audit.
 - Done (Oct 2026, Hansen: "yeah, do it all. just put down every individual loan transaction you find"):
   Greek inscriptions, literary sources, Dacian tablets. Decisions taken under that grant:
   - Greek inscriptions: PHI texts via the Stoicheia dataset (huggingface.co/datasets/Ericu950/Inscriptions_2;
