@@ -4,6 +4,9 @@ A systematic, standardized record of every documented loan in the ancient world,
 
 ## Change log
 
+**2026-10-07 (Early Islamic Egypt pass)**
+- Added ALD-001666 - 001669 (4 loans): Greek and Coptic papyri from Egypt dated AD 642-800 (DDbDP; Early Islamic Egypt). Database: 811 loans.
+
 **2026-10-07 (removal)**
 - Removed ALD-001607 (Plin. HN 9.171, Hirrius's moray eels for Caesar): not a loan (Hansen). Database: 807 loans.
 

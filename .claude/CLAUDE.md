@@ -225,8 +225,15 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 807 rows (ALD-000001 to 001665, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
-  change log) and the Late Antique full-text pass.
+- DB: 811 rows (ALD-000001 to 001669, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
+  change log), the Late Antique full-text pass and the Early Islamic Egypt pass.
+- Done (Oct 2026, Hansen: "go for what you recommend": Egypt after 641, then cuneiform): Early Islamic Egypt pass:
+  106 DDbDP papyri dated (partly) AD 642-900, not reviewed before (85 HGV loan-tagged, 21 by loan vocabulary);
+  formal-loan rule; 4 rows (ALD-001666 to 001669; Coptic acknowledgements "you gave me ... I will repay" counted
+  as loans). 44 loan-tagged HGV records have no DDbDP text (mostly Coptic; not covered). Excluded by the rule (Hansen
+  may revisit): P.Ness. 3 55 (taxes paid by Georgius for Sergius, acknowledged and to be repaid; not called a loan),
+  P.Michael. 35 ("loan or advance sale of crop", repaid in wheat), P.Gen. 4 196 (53 solidi, lender lost), SPP 3.2
+  Elias wheat notes (HGV "Schuldschein"; no lending or repayment). Next: cuneiform (CDLI).
 - Done (Oct 2026): Roman writing tablets from Britain, RIB Online (romaninscriptionsofbritain.org, CC BY 4.0):
   Tab.Lond.Bloomberg and Tab.Vindol. (876 pages), 186 with loan/debt vocabulary read under the formal-loan rule:
   no qualifying loan. Closest (Hansen may revisit): Tab.Lond.Bloomberg 55 (cancelled loan note, Narcissus slave
