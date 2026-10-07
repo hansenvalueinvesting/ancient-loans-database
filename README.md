@@ -4,6 +4,9 @@ A systematic, standardized record of every documented loan in the ancient world,
 
 ## Change log
 
+**2026-10-07 (re-check of excluded debts under the current rule)**
+- Added ALD-001681 - 001802 (122 loans, 113 documents): papyri previously excluded as debt acknowledgements, advances repaid in money, or earlier loans named in receipts, re-read under Hansen's current rule (every unique debt transaction where money or goods were received to be returned). Ptolemaic, Roman, Late Roman and Early Islamic Egypt, plus one each from Nessana, Constantinople and the Euphrates. Database: 944 loans.
+
 **2026-10-07 (Coptic loans, Crum 1909)**
 - Added ALD-001670 - 001680 (11 loans): P.Ryl.Copt. 191-207, Coptic loan and debt acknowledgements from the Hermopolite nome (Early Islamic Egypt). Original text unavailable; English from W. E. Crum, Catalogue of the Coptic Manuscripts in the John Rylands Library (1909). Database: 822 loans.
 

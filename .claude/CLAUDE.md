@@ -236,8 +236,19 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 822 rows (ALD-000001 to 001680, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
+- DB: 944 rows (ALD-000001 to 001802, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
   change log), the Late Antique full-text pass and the Early Islamic Egypt pass.
+- Done (Oct 2026, Hansen: "yes" / "do it"): re-check of excluded debts/advances under the current rule: 301 papyri
+  previously excluded (debt acknowledgements, advances, debts named in receipts; from the old ledger, Late Antique,
+  full-text and post-641 passes; allowance advances, work pay, rent, seed grain, sales left out); extraction + second
+  check + translation; 113 documents, 122 rows (ALD-001681 to 001802; notes md5-verified). Kept out: pawns (Hansen:
+  "pawns ... not loans in substance"; P.Cair.Zen. 1 59120, P.Lond. 7 2006, SB 22 15237, P.Strasb. 1 56,
+  P.Cair.Masp. 2 67151 silver plate, PSI 10 1122 oxen), loan wording wholly restored (P.Oxy. 14 1712, PSI 7 828,
+  P.Heid.Kopt. 16), P.Alex. 8 (paramone advance), SPP 3 2.2 169. Currency `drachma (silver)` where the text names
+  silver (codebook), so some Roman rows differ from older plain `drachma` rows.
+- Pending (Hansen said yes, Oct 2026): restore the 555 rows removed by the formal-loan audit only for a missing
+  party/principal (backup in session scratch `fa/backup_all.json`, IDs in `fa/removals.json` "incomplete"). Blocked:
+  the session's auto-mode safety check refuses the bulk restore; needs a Bash allow rule or approval.
 - Done (Oct 2026, Hansen: "just say 'original text unavailable' and then use crums translation"): P.Ryl.Copt. 156,
   191-213 from Crum 1909 (archive.org cu31924099175329; source_url = that scan): 10 documents, 11 rows (ALD-001670 to
   001680; debt acknowledgements counted as loans under the current rule; rows may lack parties or sum). Excluded:
