@@ -227,6 +227,11 @@ by Claude under that grant (Roman-world pass):
 ## Status
 - DB: 808 rows (ALD-000001 to 001665, with gaps), after the formal-loan audit (Oct 2026; IDs in the README
   change log) and the Late Antique full-text pass.
+- Done (Oct 2026): Roman writing tablets from Britain, RIB Online (romaninscriptionsofbritain.org, CC BY 4.0):
+  Tab.Lond.Bloomberg and Tab.Vindol. (876 pages), 186 with loan/debt vocabulary read under the formal-loan rule:
+  no qualifying loan. Closest (Hansen may revisit): Tab.Lond.Bloomberg 55 (cancelled loan note, Narcissus slave
+  of Rogatus to Atticus, sum lost), 44 (105 denarii owed for goods sold = credit sale), 61/56 (loan-note
+  formulae, parties and sum lost), Tab.Vindol. 190 / 193 (account entries "mutuo"). No data change.
 - Done (Oct 2026): Greek literary texts outside Perseus: First1KGreek (OpenGreekAndLatin, CC BY-SA), works
   not in Perseus, 1,200 passages with loan vocabulary; scholia, medical, astrological, lexical, commentary and
   fiction authors set aside; 409 read under the formal-loan rule: no qualifying loan (closest: Theodoret, Hist.
