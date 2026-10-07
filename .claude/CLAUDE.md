@@ -66,8 +66,8 @@ habitation/antichretic lease), advance (προχρεία, πρόχρησις) no
 debt acknowledgement not called a loan, treasury payment, transfer between public funds, gift,
 contribution, old debt restated; (3) one individual loan (no totals, no fund portions of one contract);
 (4) borrower, lender and principal given (partly preserved acceptable). Antichretic/paramone LOANS that
-are formally loans with the principal repaid stay. Audit (Oct 2026): 643 rows to remove (555 lacking a
-party or principal, 88 not formally individual loans), SQL for Hansen's SQL Editor; 801 rows remain.
+are formally loans with the principal repaid stay. Audit (Oct 2026): 643 rows removed (555 lacking a
+party or principal, 88 not formally individual loans; run by Hansen, verified); 801 rows remain.
 STANDING RULE (Hansen, Oct 2026, supersedes the detailed rules below where they differ): "the only
 standing rule is to record transactions that are strictly loans. loans are financial arrangements
 where an entity provides money to another with the expectation of repayment over time, often
@@ -225,8 +225,9 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 1,444 rows (ALD-000001 to 001658, with gaps). Helper table `note_stage` re-created for the notes
-  (drop needs Hansen: `drop table public.note_stage;`).
+- DB: 801 rows (ALD-000001 to 001657, with gaps), after the formal-loan audit (Oct 2026; IDs in the README
+  change log). `note_stage` dropped. Open: ALD-000039's note holds lines 1-13 of BGU 4 1150 (another loan's
+  lines), needs its own lines. Counts in the passes below are before this audit.
 - Done (Oct 2026, Hansen: "yeah, do it all. just put down every individual loan transaction you find"):
   Greek inscriptions, literary sources, Dacian tablets. Decisions taken under that grant:
   - Greek inscriptions: PHI texts via the Stoicheia dataset (huggingface.co/datasets/Ericu950/Inscriptions_2;
