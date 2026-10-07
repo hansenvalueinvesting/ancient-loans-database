@@ -227,6 +227,11 @@ by Claude under that grant (Roman-world pass):
 ## Status
 - DB: 808 rows (ALD-000001 to 001665, with gaps), after the formal-loan audit (Oct 2026; IDs in the README
   change log) and the Late Antique full-text pass.
+- Done (Oct 2026): Greek literary texts outside Perseus: First1KGreek (OpenGreekAndLatin, CC BY-SA), works
+  not in Perseus, 1,200 passages with loan vocabulary; scholia, medical, astrological, lexical, commentary and
+  fiction authors set aside; 409 read under the formal-loan rule: no qualifying loan (closest: Theodoret, Hist.
+  rel. 17, Abraames borrows 100 solidi at Emesa from unnamed acquaintances; Polyaenus 8.23, Caesar borrows
+  from the Milesians, no sum). No data change.
 - Done (Oct 2026, Hansen: "let's put a focus on greco roman period ones"): Late Antique Egypt full-text pass:
   383 papyri dated AD 285-641 with loan vocabulary, not tagged as loans, not reviewed before; formal-loan rule;
   6 documents, 7 rows (ALD-001659 to 001665). Excluded by the rule (Hansen may revisit): P.Mert. 2 91 (sums
