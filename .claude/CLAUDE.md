@@ -59,6 +59,8 @@ below applies to any source as the database expands.
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
+PRINCIPLE (Hansen, Oct 2026): "the idea for the database is just that every loan should be an unique, seperate debt
+transaction being recorded" (one row = one distinct debt transaction; no totals, no duplicates).
 CURRENT RULE (Hansen, Oct 2026, supersedes the formal-loan rule below): "lets remove my rule for that. the only
 standing rule is that it has to be a loan, which i've defined for you" (said of debt acknowledgements, "I owe you
 ... I will repay"). Definition: a loan is when someone borrows money (or goods) from a lender with the intention of
