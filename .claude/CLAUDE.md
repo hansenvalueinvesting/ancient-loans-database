@@ -8,6 +8,8 @@ below applies to any source as the database expands.
 
 ## Working rules (read first)
 - Hansen decides. Do only what Hansen asks in the conversation. Start simple; build step by step.
+- Scope (Hansen, Oct 2026): "this is a classics focused project, meaning greco roman". No cuneiform or
+  other Near Eastern corpora.
 - Never change inclusion rules, `reference/codebook.md`, field formats or the schema on your own. If a
   source raises a question the rules do not answer, ask Hansen; do not decide it and do not label
   your own choices as Hansen's.
@@ -233,7 +235,7 @@ by Claude under that grant (Roman-world pass):
   as loans). 44 loan-tagged HGV records have no DDbDP text (mostly Coptic; not covered). Excluded by the rule (Hansen
   may revisit): P.Ness. 3 55 (taxes paid by Georgius for Sergius, acknowledged and to be repaid; not called a loan),
   P.Michael. 35 ("loan or advance sale of crop", repaid in wheat), P.Gen. 4 196 (53 solidi, lender lost), SPP 3.2
-  Elias wheat notes (HGV "Schuldschein"; no lending or repayment). Next: cuneiform (CDLI).
+  Elias wheat notes (HGV "Schuldschein"; no lending or repayment).
 - Done (Oct 2026): Roman writing tablets from Britain, RIB Online (romaninscriptionsofbritain.org, CC BY 4.0):
   Tab.Lond.Bloomberg and Tab.Vindol. (876 pages), 186 with loan/debt vocabulary read under the formal-loan rule:
   no qualifying loan. Closest (Hansen may revisit): Tab.Lond.Bloomberg 55 (cancelled loan note, Narcissus slave
