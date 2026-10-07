@@ -229,7 +229,22 @@ by Claude under that grant (Roman-world pass):
 ## Status
 - DB: 811 rows (ALD-000001 to 001669, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
   change log), the Late Antique full-text pass and the Early Islamic Egypt pass.
-- Done (Oct 2026, Hansen: "go for what you recommend": Egypt after 641, then cuneiform): Early Islamic Egypt pass:
+- Done (Oct 2026, Hansen: "sure, go for all of these too"): three passes, no qualifying loan, no data change:
+  - EDCS (Latin inscriptions) via the LIST dataset (Zenodo 10473706, CC BY 4.0; EDCS + EDH): 542 texts with Latin
+    loan words not reviewed in the EDH/EDR passes; all excluded (epitaphs with figurative debitum/pignus/credidit,
+    foundations living on interest, laws, alimentary tables, Sulpicii/Herculaneum/Iucundus/Dacian/Britain tablets
+    already reviewed). Closest (Hansen may revisit): EDCS-05200035 (Pompeii, tabellae of L. Cominius Primus,
+    expensilatio to Pompeia Anthis, sum lost), EDCS-31500014 (Pompeii AD 61, fiducia of Dicidia Margaris, sum
+    restored), EDCS-14000148/149 (Trebula Suffenas, debts of C. Caesius Bassus paid by A. Furius Rufus, HS 12,000
+    and 58,000, not called loans), EDCS-80200137 (Herculaneum, "debere", sum restored).
+  - Greek EpiDoc corpora outside PHI: I.Sicily, IOSPE (Black Sea), IIP (Israel/Palestine) (GitHub clones): 13
+    texts with loan vocabulary, none a loan (ISic030061, land mortgaged epi lysei = security only). IG online
+    (ig.bbaw.de) and IAph reachable but largely duplicate PHI; not scanned.
+  - Egypt after 641, the 44 HGV loan-tagged records without DDbDP text: no open text. P.Ryl.Copt. 191-213 are in
+    Crum's 1909 Rylands catalogue (archive.org cu31924099175329) with English summaries/translations, but the
+    Coptic OCR is unreadable, so no faithful original text; P.Bal. 2 102-118 are repayments; SB 1 5586-5588,
+    SPP 3 354 have metadata only. Open for Hansen: whether rows may use Crum's English with no original text.
+- Done (Oct 2026, Hansen: "go for what you recommend": Egypt after 641): Early Islamic Egypt pass:
   106 DDbDP papyri dated (partly) AD 642-900, not reviewed before (85 HGV loan-tagged, 21 by loan vocabulary);
   formal-loan rule; 4 rows (ALD-001666 to 001669; Coptic acknowledgements "you gave me ... I will repay" counted
   as loans). 44 loan-tagged HGV records have no DDbDP text (mostly Coptic; not covered). Excluded by the rule (Hansen
