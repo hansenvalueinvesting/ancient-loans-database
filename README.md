@@ -4,6 +4,9 @@ A systematic, standardized record of every documented loan in the ancient world,
 
 ## Change log
 
+**2026-10-07 (removal)**
+- Removed ALD-001607 (Plin. HN 9.171, Hirrius's moray eels for Caesar): not a loan (Hansen). Database: 807 loans.
+
 **2026-10-07 (Late Antique full-text pass)**
 - Added ALD-001659 - 001665 (7 loans): Late Antique Egypt (AD 284-641), full-text search of the papyri not tagged as loans in HGV (383 documents with loan vocabulary reviewed under the formal-loan rule, 6 with loans): Hermopolis, Arsinoite nome, Oxyrhynchus, and two loans made at Constantinople (P.Oxy. 63 4397). Database: 808 loans.
 

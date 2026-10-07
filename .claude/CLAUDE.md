@@ -225,7 +225,7 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
-- DB: 808 rows (ALD-000001 to 001665, with gaps), after the formal-loan audit (Oct 2026; IDs in the README
+- DB: 807 rows (ALD-000001 to 001665, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
   change log) and the Late Antique full-text pass.
 - Done (Oct 2026): Roman writing tablets from Britain, RIB Online (romaninscriptionsofbritain.org, CC BY 4.0):
   Tab.Lond.Bloomberg and Tab.Vindol. (876 pages), 186 with loan/debt vocabulary read under the formal-loan rule:
