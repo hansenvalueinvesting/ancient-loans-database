@@ -59,7 +59,14 @@ below applies to any source as the database expands.
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
-STANDING RULE (Hansen, Oct 2026; supersedes everything below where they differ): "for a loan to be
+CURRENT RULE (Hansen, Oct 2026, supersedes the formal-loan rule below): "lets remove my rule for that. the only
+standing rule is that it has to be a loan, which i've defined for you" (said of debt acknowledgements, "I owe you
+... I will repay"). Definition: a loan is when someone borrows money (or goods) from a lender with the intention of
+returning it, with or without interest; trades/payments for goods or services are not loans. Applies going forward;
+earlier removals and skipped cases stay as they are unless Hansen says otherwise ("skip what you skipped").
+Sources without an open original text (Hansen, Oct 2026): note reads "Original Text:\noriginal text unavailable" and
+the English translation is the editor's published translation (e.g. Crum 1909 for P.Ryl.Copt.).
+FORMER RULE (Hansen, Oct 2026): "for a loan to be
 registered, it has to be precisely an individual loan contract"; "a loan has to be a loan, not a trade,
 lease, or anything else. it has to formally be a loan"; applied to the entire database ("do it for the
 entire database"). A row needs: (1) the text formally records a loan (loan contract or acknowledgement,
