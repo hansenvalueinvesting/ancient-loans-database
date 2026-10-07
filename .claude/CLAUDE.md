@@ -229,6 +229,7 @@ by Claude under that grant (Roman-world pass):
 ## Status
 - DB: 811 rows (ALD-000001 to 001669, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
   change log), the Late Antique full-text pass and the Early Islamic Egypt pass.
+- Hansen (Oct 2026), on all borderline cases set aside under the formal-loan rule: "skip what you skipped. that is okay."
 - Done (Oct 2026, Hansen: "sure, go for all of these too"): three passes, no qualifying loan, no data change:
   - EDCS (Latin inscriptions) via the LIST dataset (Zenodo 10473706, CC BY 4.0; EDCS + EDH): 542 texts with Latin
     loan words not reviewed in the EDH/EDR passes; all excluded (epitaphs with figurative debitum/pignus/credidit,
