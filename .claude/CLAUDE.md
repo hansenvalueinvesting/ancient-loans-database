@@ -38,6 +38,9 @@ below applies to any source as the database expands.
   "(period unknown)" etc.), free-text search; filters kept in the URL hash
   (`#from=100 BC&to=AD 100&period=Early Roman Egypt&place=Oxyrhynchus|Karanis`). Table sortable by every
   column (notes not in the table); CSV download of the filtered rows. `loan.html` shows one loan incl. notes.
+  Script tags carry a version (`app.js?v=2026-10-18`): change it in `index.html` and `loan.html` whenever
+  `app.js` or `config.js` changes (GitHub Pages lets browsers cache files 10 minutes; an old cached script
+  with a new page breaks the site).
   Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
   "always classify into one thing"; Early/Late Roman Egypt): column `period`, entered with each row
   from the table of periods in `reference/codebook.md` (periods per region with date limits; a range
