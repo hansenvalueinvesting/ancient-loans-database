@@ -31,12 +31,13 @@ below applies to any source as the database expands.
   `reference/codebook.md`. The review ledger `reviewed.md` was removed (Hansen, Oct 2026); its last
   version is in git history (`git show 4d2672d:reviewed.md`).
 - Site: plain HTML + `docs/app.js`, no CSS (Hansen's preference). Reads `ald.csv` from the main
-  branch (`CSV_URL` in `docs/config.js`). Main page = one catalogue tree
-  under "All loans" (Hansen, Oct 2026): ruling power > region > period (only where a region has
-  several) > century, earliest first, "Period unknown" last; counts computed in the browser; a
-  node (URL hash `#era=Roman/Egypt&c=2`) shows only its loans; Place / Currency /
-  Period / year filters and search on the loan list; CSV download of the shown rows. `loan.html`
-  shows one loan incl. notes.
+  branch (`CSV_URL` in `docs/config.js`). Main page = filters like the taxation database (Hansen,
+  Oct 2026: "build the loans database filters to be like the taxation database"; catalogue tree
+  removed): year range (from/to; a loan matches if its year range overlaps), Period, Place and
+  Currency (type to search, Enter or pick from the list; several values each, "any of"; blanks as
+  "(period unknown)" etc.), free-text search; filters kept in the URL hash
+  (`#from=100 BC&to=AD 100&period=Early Roman Egypt&place=Oxyrhynchus|Karanis`). Table sortable by every
+  column (notes not in the table); CSV download of the filtered rows. `loan.html` shows one loan incl. notes.
   Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
   "always classify into one thing"; Early/Late Roman Egypt): column `period`, entered with each row
   from the table of periods in `reference/codebook.md` (periods per region with date limits; a range

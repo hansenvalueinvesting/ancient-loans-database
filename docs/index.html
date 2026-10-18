@@ -13,33 +13,40 @@
   <p><small>This is a work in progress and may contain mistakes. Spotted a mistake or have data to share? I’d love to hear from you: <a href="mailto:hansen.zheng@outlook.com">hansen.zheng@outlook.com</a><br>
   IDs are assigned in sequential order as loans are added to the database.</small></p>
 
-  <h2>Catalogue</h2>
-  <ul>
-    <li><a href="#all">All loans</a> <span id="cat-total"></span>
-      <ul id="cat-tree"></ul>
-    </li>
-  </ul>
-
-  <h2 id="sel-title" hidden></h2>
-  <p id="controls" hidden>
-    <label>Search <input id="f-search" type="search" placeholder="ID, period, year, place, person, source"></label>
-    <label>Period <select id="f-period"><option value="">All</option></select></label>
-    <label>Place <select id="f-place"><option value="">All</option></select></label>
-    <label>Currency <select id="f-currency"><option value="">All</option></select></label>
+  <h2>Filters</h2>
+  <p>
     <label>From year <input id="f-from" type="text" size="8"></label>
     <label>To year <input id="f-to" type="text" size="8"></label>
+  </p>
+  <p>
+    <label>Period <input id="f-period" list="dl-period" placeholder="Type to search, Enter to add"></label>
+    <span id="picked-period"></span>
+    <datalist id="dl-period"></datalist>
+  </p>
+  <p>
+    <label>Place <input id="f-place" list="dl-place" placeholder="Type to search, Enter to add"></label>
+    <span id="picked-place"></span>
+    <datalist id="dl-place"></datalist>
+  </p>
+  <p>
+    <label>Currency <input id="f-currency" list="dl-currency" placeholder="Type to search, Enter to add"></label>
+    <span id="picked-currency"></span>
+    <datalist id="dl-currency"></datalist>
+  </p>
+  <p>
+    <label>Search <input id="f-search" type="search" placeholder="ID, period, year, place, person, source"></label>
     <button id="btn-reset" type="button">Reset</button>
     <button id="btn-csv" type="button">Download CSV</button>
   </p>
 
-  <p id="status" role="status">Loading catalogue…</p>
+  <p id="status" role="status">Loading…</p>
 
-  <table id="loans" hidden border="1" cellpadding="4" cellspacing="0">
+  <table id="loans" border="1" cellpadding="4" cellspacing="0">
     <thead>
       <tr>
         <th data-sort="id">ID</th>
         <th data-sort="period">Period</th>
-        <th data-sort="year_sort">Year</th>
+        <th data-sort="year">Year</th>
         <th data-sort="place">Place</th>
         <th data-sort="amount">Amount</th>
         <th data-sort="currency">Currency</th>
