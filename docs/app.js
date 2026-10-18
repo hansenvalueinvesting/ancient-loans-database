@@ -1,64 +1,80 @@
 // The Ancient Loans Database — frontend for index.html (catalogue and loan lists) and loan.html (one loan).
-// Reads the loans table from Supabase's REST API.
+// Reads ald.csv from the repository (CSV_URL in config.js).
 
-const { SUPABASE_URL, SUPABASE_KEY } = window.ALD_CONFIG;
-const PAGE = 1000; // Supabase returns at most 1000 rows per request
+const { CSV_URL } = window.ALD_CONFIG;
 
 const $ = (id) => document.getElementById(id);
-const state = { loans: [], sortKey: 'id', sortDir: 1, shown: [] };
+const state = { all: [], loans: [], sortKey: 'id', sortDir: 1, shown: [] };
 
 // ---------- data ----------
 
-// Table columns; notes (the long original text) is loaded only on a loan's own page and for CSV.
-const LIST_COLS = 'id,period,year,year_sort,place,amount,currency,borrower,lender,interest,duration,source,source_url';
-
-async function get(path) {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, { headers: { apikey: SUPABASE_KEY } });
-  if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
-  return res.json();
-}
-
-// All rows of `table` matching the PostgREST filter string `where`, in pages.
-async function fetchAll(table, cols, where) {
+// CSV text → array of rows (arrays of strings); handles quoted fields, "" escapes, CRLF.
+function parseCsv(text) {
   const rows = [];
-  for (let offset = 0; ; offset += PAGE) {
-    const page = await get(`${table}?select=${cols}${where}&order=id&limit=${PAGE}&offset=${offset}`);
-    rows.push(...page);
-    if (page.length < PAGE) return rows;
+  let row = [], cell = '', quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (quoted) {
+      if (c === '"' && text[i + 1] === '"') { cell += '"'; i++; } else if (c === '"') quoted = false; else cell += c;
+    } else if (c === '"') quoted = true;
+    else if (c === ',') { row.push(cell); cell = ''; } else if (c === '\n' || c === '\r') {
+      if (c === '\r' && text[i + 1] === '\n') i++;
+      row.push(cell); rows.push(row); row = []; cell = '';
+    } else cell += c;
   }
+  if (cell !== '' || row.length) { row.push(cell); rows.push(row); }
+  return rows.filter((r) => r.some((v) => v !== ''));
 }
 
-const fetchLoan = async (id) => (await get(`loans?select=*&id=eq.${encodeURIComponent(id)}`))[0];
+// Year field → sortable year (a range sorts by its start): '100 BC' → -100, 'AD 57' / 'AD 101-200' → 101.
+function yearSort(y) {
+  let m = y && y.match(/^AD (\d+)/);
+  if (m) return Number(m[1]);
+  m = y && y.match(/^(\d+)/);
+  return m ? -Number(m[1]) : null;
+}
+
+// All loans; blank fields are null.
+async function fetchLoans() {
+  const res = await fetch(CSV_URL, { cache: 'no-cache' });
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  const [head, ...body] = parseCsv(await res.text());
+  return body.map((r) => {
+    const l = Object.fromEntries(head.map((h, i) => [h, r[i] ? r[i] : null]));
+    l.year_sort = yearSort(l.year);
+    return l;
+  });
+}
 
 // ---------- catalogue ----------
 
 const ordinal = (n) => n + (n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
 const centuryLabel = (c) => (c < 0 ? `${ordinal(-c)} century BC` : `${ordinal(c)} century AD`);
 const q = encodeURIComponent;
-const pgq = (v) => `"${String(v).replace(/"/g, '\\"')}"`; // value quoted for PostgREST or=()
+// year_sort → century: 1 = AD 1-100, -1 = 100-1 BC; null = year unknown.
+const century = (y) => (y == null ? null : y > 0 ? Math.ceil(y / 100) : -Math.ceil(-y / 100));
 
-// Selection (from the URL hash) → title and PostgREST filter.
+// Selection (from the URL hash) → title and row filter.
 // '#all'; '#era=Roman/Egypt' (a catalogue node; empty = period unknown); '&c=1' adds a century
 // (1 = AD 1-100, -1 = 100-1 BC; empty = year unknown).
 function selection() {
   const h = location.hash.slice(1);
   if (!h) return null;
-  if (h === 'all') return { title: 'All loans', where: '' };
+  if (h === 'all') return { title: 'All loans', test: () => true };
   const prm = new URLSearchParams(h);
   if (!prm.has('era')) return null;
   const v = prm.get('era');
   const list = eraPaths.get(v) || [v];
   let title = v ? (list.length === 1 ? list[0] : v.split('/').join(' ')) : 'Period unknown';
-  let where = v ? `&period=in.${q(`(${list.map(pgq).join(',')})`)}` : '&period=is.null';
+  const tests = [v ? (l) => list.includes(l.period) : (l) => l.period == null];
   if (prm.has('c')) {
     const c = prm.get('c');
-    if (!c) { title += ', year unknown'; where += '&year_sort=is.null'; } else {
+    if (!c) { title += ', year unknown'; tests.push((l) => l.year_sort == null); } else {
       const n = Number(c);
-      const [lo, hi] = n > 0 ? [(n - 1) * 100 + 1, n * 100] : [n * 100, (n + 1) * 100 - 1];
-      title += `, ${centuryLabel(n)}`; where += `&year_sort=gte.${lo}&year_sort=lte.${hi}`;
+      title += `, ${centuryLabel(n)}`; tests.push((l) => century(l.year_sort) === n);
     }
   }
-  return { title, where };
+  return { title, test: (l) => tests.every((t) => t(l)) };
 }
 
 const node = (href, label, n) => `<a href="#${href}">${esc(label)}</a> (${n.toLocaleString()})`;
@@ -74,8 +90,17 @@ let eraPaths = new Map(); // catalogue path ('Roman/Egypt') → the periods unde
 
 // Catalogue: one tree, earliest first at each level:
 // ruling power > region > period (only where a region has several) > century.
-async function loadCatalogue() {
-  const rows = await get('loan_catalogue?select=*');
+function loadCatalogue() {
+  // counts per period and century, with the earliest year
+  const groups = new Map();
+  state.all.forEach((l) => {
+    const c = century(l.year_sort), k = `${l.period}|${c}`;
+    if (!groups.has(k)) groups.set(k, { period: l.period, century: c, loans: 0, first_year: null });
+    const g = groups.get(k);
+    g.loans++;
+    if (l.year_sort != null && (g.first_year == null || l.year_sort < g.first_year)) g.first_year = l.year_sort;
+  });
+  const rows = [...groups.values()];
   $('cat-total').textContent = `(${rows.reduce((t, r) => t + r.loans, 0).toLocaleString()})`;
 
   const perRegion = new Map();
@@ -117,29 +142,22 @@ async function loadCatalogue() {
 }
 
 async function load() {
-  if (!SUPABASE_URL || !SUPABASE_KEY) {
-    return setStatus('Database not configured: set SUPABASE_URL and SUPABASE_KEY in docs/config.js.');
-  }
   try {
-    await loadCatalogue();
-    await showSelection();
+    state.all = await fetchLoans();
+    loadCatalogue();
+    showSelection();
   } catch (err) {
     setStatus(`Could not load data. ${err.message}`);
   }
 }
 
 // Load and show the loans of the selected catalogue node.
-async function showSelection() {
+function showSelection() {
   const sel = selection();
   ['sel-title', 'controls', 'loans'].forEach((id) => { $(id).hidden = !sel; });
   if (!sel) { state.loans = []; return setStatus('Choose a category above.'); }
   $('sel-title').textContent = sel.title;
-  setStatus('Loading…');
-  try {
-    state.loans = await fetchAll('loans', LIST_COLS, sel.where);
-  } catch (err) {
-    return setStatus(`Could not load data. ${err.message}`);
-  }
+  state.loans = state.all.filter(sel.test);
   ['f-period', 'f-place', 'f-currency'].forEach((id) => { $(id).length = 1; });
   ['f-search', 'f-from', 'f-to'].forEach((id) => { $(id).value = ''; });
   fillSelect('f-period', state.loans.map((l) => l.period));
@@ -262,14 +280,11 @@ function render() {
 
 // ---------- CSV export ----------
 
-async function downloadCsv() {
-  setStatus('Preparing CSV…');
-  const notes = new Map((await fetchAll('loans', 'id,notes', selection().where)).map((r) => [r.id, r.notes]));
-  const rows = state.shown.map((l) => ({ ...l, notes: notes.get(l.id) }));
-  render();
-  const cols = ['id', 'period', 'year', 'year_sort', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url', 'notes'];
+function downloadCsv() {
+  const rows = state.shown;
+  const cols = ['id', 'period', 'year', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url', 'notes'];
   const cell = (v) => (v == null ? '' : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
-  const csv = [cols.join(','), ...rows.map((l) => cols.map((c) => cell(l[c])).join(','))].join('\n');
+  const csv = [cols.join(','), ...rows.map((l) => cols.map((c) => cell(l[c])).join(','))].join('\n') + '\n';
   const a = Object.assign(document.createElement('a'), {
     href: URL.createObjectURL(new Blob([csv], { type: 'text/csv' })),
     download: 'ald-loans.csv',
@@ -283,11 +298,8 @@ async function downloadCsv() {
 async function loadLoan() {
   const id = new URLSearchParams(location.search).get('id');
   if (!id) return setStatus('No loan ID given.');
-  if (!SUPABASE_URL || !SUPABASE_KEY) {
-    return setStatus('Database not configured: set SUPABASE_URL and SUPABASE_KEY in docs/config.js.');
-  }
   try {
-    const l = await fetchLoan(id);
+    const l = (await fetchLoans()).find((r) => r.id === id);
     if (!l) return setStatus(`Loan ${id} not found.`);
     document.title = `${l.id} | Ancient Loans Database`;
     $('loan-id').textContent = l.id;
@@ -322,7 +334,7 @@ if ($('loan')) {
     FILTERS.forEach((id) => { $(id).value = ''; });
     render();
   });
-  $('btn-csv').addEventListener('click', () => downloadCsv().catch((err) => setStatus(`Could not prepare CSV. ${err.message}`)));
+  $('btn-csv').addEventListener('click', downloadCsv);
   window.addEventListener('hashchange', showSelection);
   document.querySelectorAll('th[data-sort]').forEach((th) => th.addEventListener('click', () => {
     state.sortDir = state.sortKey === th.dataset.sort ? -state.sortDir : 1;

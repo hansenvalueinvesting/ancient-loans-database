@@ -1,6 +1,6 @@
 # ALD Codebook
 
-Field definitions for the Ancient Loans Database. The structure is defined in `schema.sql` (this folder).
+Field definitions for the Ancient Loans Database. The data is `ald.csv` (repository root), one row per loan, columns in the order below.
 
 ## General rules
 
@@ -16,9 +16,9 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 
 | Field | Definition | Example |
 |---|---|---|
-| `id` | Assigned automatically | `ALD-000001` |
+| `id` | `ALD-` + 6 digits, the next number after the highest ever used; never reused | `ALD-000001` |
 | `year` | Year the loan was made (an earlier loan named in a later document gets its own year, not the document's; if the source does not date the loan at all, the document's year is kept, as the year the loan is recorded), written `AD n` or `n BC` (AD before the number, BC after). There is no year 0: 1 BC is followed by AD 1. If the year is not certain, give the range of possible years: `AD 101-200`, `24-23 BC`, `30 BC-AD 14` | `AD 57`, `100 BC`, `AD 101-200` |
-| `period` | The historical period: who ruled the place at the time the loan was made. One period per loan; a year range gets the period covering most of it. Egypt: `Ptolemaic Egypt` (332-31 BC), `Early Roman Egypt` (30 BC-AD 284), `Late Roman Egypt` (AD 285-641, except `Sasanian Egypt` 619-628), `Early Islamic Egypt` (from 642); Greek world (standard periodization): `Archaic Greece` (to 480 BC), `Classical Greece` (479-323 BC), `Hellenistic Greece` (322-147 BC), then `Roman Achaea` / `Roman Macedonia` (from 146 BC); Asia Minor: `Achaemenid Asia Minor`, `Hellenistic Asia Minor` (333-134 BC), `Roman Asia` (from 133 BC); `Classical` / `Hellenistic Black Sea`; Sicily: `Classical` / `Hellenistic Sicily`, `Roman Sicily` (from 241 BC); Egypt before 332 BC: `Late Period Egypt`; elsewhere e.g. `Roman Italy`, `Roman Judaea`, `Roman Dacia`, `Roman Africa`, `Roman Bithynia`, `Nabataean Arabia` / `Roman Arabia` (from AD 106), `Parthian Empire`. Empty if the place or year is unknown | `Ptolemaic Egypt` |
+| `period` | The historical period: who ruled the place at the time the loan was made. One period per loan; a year range gets the period covering most of it. Egypt: `Ptolemaic Egypt` (332-31 BC), `Early Roman Egypt` (30 BC-AD 284), `Late Roman Egypt` (AD 285-641, except `Sasanian Egypt` 619-628), `Early Islamic Egypt` (from 642); Greek world (standard periodization): `Archaic Greece` (to 480 BC), `Classical Greece` (479-323 BC), `Hellenistic Greece` (322-147 BC), then `Roman Achaea` / `Roman Macedonia` (from 146 BC); Asia Minor: `Achaemenid Asia Minor`, `Hellenistic Asia Minor` (333-134 BC), `Roman Asia` (from 133 BC); `Classical` / `Hellenistic Black Sea`; Sicily: `Classical` / `Hellenistic Sicily`, `Roman Sicily` (from 241 BC); Egypt before 332 BC: `Late Period Egypt`; elsewhere e.g. `Roman Italy`, `Roman Judaea`, `Roman Dacia`, `Roman Africa`, `Roman Bithynia`, `Nabataean Arabia` / `Roman Arabia` (from AD 106), `Parthian Empire`. Entered with the row, from the table of periods below. Empty if the place or year is unknown | `Ptolemaic Egypt` |
 | `place` | Where the loan was made, by its ancient name, in the Latinized spelling used for personal names (`Heracleopolis`, not Herakleopolis or a modern name); a village may name its district in brackets; a village whose name is a Greek phrase keeps its standard form (`Soknopaiou Nesos`). The region is not repeated here (it is in `period`). If only a modern site name is known, the ancient district (`Arsinoite nome`) or nothing | `Oxyrhynchus`, `Sinary (Oxyrhynchite nome)` |
 | `amount` | Amount lent (the principal), as written in the source, in the unit(s) the source uses: a whole number, or a fraction in lowest terms (`whole num/den`). Never decimals, never converted into another unit. If the source states the sum in several units, each number is followed by its unit, in the source's order. Where part of the sum is lost, `[...]` stands where the loss is. If the source states the sum only together with the interest (e.g. "with the half"), the sum as written | `100`, `12 1/6`, `2/3`, `2 talents 4800 drachmas`, `53 drachmas 2 obols`, `1 [...]`, `[...] 45` |
 | `currency` | Currency or unit of `amount` as the source gives it, singular; several units separated by `; `. For loans in kind, add the commodity in brackets; if the source names the metal of the money, add it in brackets | `drachma`, `talent`, `talent; drachma`, `drachma (copper)`, `artaba (wheat)` |
@@ -29,4 +29,29 @@ Field definitions for the Ancient Loans Database. The structure is defined in `s
 | `source` | Citation of the primary source, in standard form (papyri: *Checklist of Editions of Greek, Latin, Demotic and Coptic Papyri, Ostraca and Tablets*, arabic volume numbers; journal first editions as journal, volume, (year), page; inscriptions: the corpus citation given by PHI, else `PHI <number>`; literary texts: standard abbreviation of author, work and passage, the passage that states the loan most fully). Required | `P.Oxy. 3 506`, `ZPE 222 (2022) 179`, `IG I³ 369`, `PHI 62661`, `Dem. 35.10`, `Cic. Att. 5.21.12` |
 | `source_url` | Link to the source online, if available | `https://papyri.info/...` |
 | `notes` | The original text of the document (Greek or Latin, in Leiden notation as in the edition cited) and an English translation, in two sections headed `Original Text:` and `English translation:`, followed by a credit line for the text's source and licence. Long inscriptions (accounts): only the passages recording the loans, omissions marked `[...]`; literary loans: the passages that record the loan, each headed by its reference. Shown only on the loan's own page, not in the main table | |
-| `year_sort` | Filled automatically from `year`, for sorting (`100 BC` = `-100`, `AD 57` = `57`; a range sorts by its first year). Never entered by hand | `-100` |
+
+## Periods
+
+Periods per region, with their first and last years. A loan gets the period of its region that covers its year; a year range gets the period covering most of the range. A new region needs a line here.
+
+| Region | Periods |
+|---|---|
+| Egypt | Late Period Egypt (664-333 BC); Ptolemaic Egypt (332-31 BC); Early Roman Egypt (30 BC-AD 284); Late Roman Egypt (AD 285-618, 629-641); Sasanian Egypt (AD 619-628); Early Islamic Egypt (AD 642-868) |
+| Arabia | Nabataean Arabia (400 BC-AD 105); Roman Arabia (AD 106-636) |
+| Palaestina | Late Roman Palaestina (AD 285-636); Early Islamic Palaestina (AD 637-750) |
+| Thracia | Late Roman Thracia (AD 285-641) |
+| Parthian Empire | Parthian Empire (247 BC-AD 224) |
+| India | India (1000 BC-AD 1000) |
+| Italy | Roman Italy (509 BC-AD 476) |
+| Judaea | Roman Judaea (AD 6-135) |
+| Syria Coele | Roman Syria Coele (64 BC-AD 636) |
+| Achaea | Roman Achaea (146 BC-AD 641) |
+| Germania Superior | Roman Germania Superior (12 BC-AD 476) |
+| Greece | Archaic Greece (800-480 BC); Classical Greece (479-323 BC); Hellenistic Greece (322-147 BC); Roman Achaea (146 BC-AD 641) |
+| Macedonia | Classical Greece (479-323 BC); Hellenistic Greece (322-147 BC); Roman Macedonia (146 BC-AD 284) |
+| Asia Minor | Achaemenid Asia Minor (546-334 BC); Hellenistic Asia Minor (333-134 BC); Roman Asia (133 BC-AD 284) |
+| Black Sea | Classical Black Sea (479-323 BC); Hellenistic Black Sea (322-30 BC) |
+| Sicily | Classical Sicily (479-323 BC); Hellenistic Sicily (322-242 BC); Roman Sicily (241 BC-AD 476) |
+| Bithynia | Roman Bithynia (74 BC-AD 284) |
+| Africa | Roman Africa (146 BC-AD 439) |
+| Dacia | Roman Dacia (AD 106-271) |

@@ -13,49 +13,43 @@ below applies to any source as the database expands.
 - Never change inclusion rules, `reference/codebook.md`, field formats or the schema on your own. If a
   source raises a question the rules do not answer, ask Hansen; do not decide it and do not label
   your own choices as Hansen's.
-- Do not add tools, scripts or data files to the repo. Working files live in the session's
-  scratch folder (they are lost when the session ends, so record results in the database and
+- Do not add tools, scripts or data files to the repo other than `ald.csv`. Working files live in the
+  session's scratch folder (they are lost when the session ends, so record results in `ald.csv` and
   the README change log).
 - Work on `main`; commit and push directly to `main` (Hansen, Oct 2026). Be concise and organized.
-- Only one session should write to the database at a time.
+- Only one session should write to `ald.csv` at a time.
 - Keep this file current: when Hansen decides something, record it here (and in `reference/codebook.md`
   if it concerns a field). Log every data change in the README change log, most recent first (Hansen, Oct 2026).
 
 ## Architecture
-- **Supabase (Postgres)**: the only home of the data. Project ref `zzlrdlkdngxkkcrtolpx`.
-  Use the Supabase connector (MCP `execute_sql`) for inserts/updates; `.claude/settings.json`
-  allows it without prompts. Reads can also use the public REST API (curl with the publishable key
-  in `docs/config.js`). Destructive SQL (drop, alter type) cannot be approved in cloud sessions:
-  give Hansen a short SQL file to run in the Supabase SQL Editor.
-- **Repo** = publication only: `README.md` (brief description + change log), `docs/` (GitHub
-  Pages site), `reference/` (`schema.sql`, `codebook.md`). No data. The review ledger
-  `reviewed.md` was removed (Hansen, Oct 2026); its last version is in git history
-  (`git show 4d2672d:reviewed.md`).
-- Site: plain HTML + `docs/app.js`, no CSS (Hansen's preference). Main page = one catalogue tree
+- **Data: `ald.csv`** in the repo root, the only home of the data (Hansen, Oct 2026: moved from
+  Supabase, like the taxation database). Columns in this order: id, period, year, place, amount,
+  currency, borrower, lender, interest, duration, source, source_url, notes. UTF-8, RFC 4180 quoting,
+  rows sorted by id. Edit it with a script in the scratch folder; commit with the README change-log entry.
+  The old Supabase project (`zzlrdlkdngxkkcrtolpx`) is no longer used; kept until Hansen says to delete it.
+- **Repo**: `README.md` (brief description + change log), `ald.csv`, `docs/` (GitHub Pages site),
+  `reference/codebook.md`. The review ledger `reviewed.md` was removed (Hansen, Oct 2026); its last
+  version is in git history (`git show 4d2672d:reviewed.md`).
+- Site: plain HTML + `docs/app.js`, no CSS (Hansen's preference). Reads `ald.csv` from the main
+  branch (`CSV_URL` in `docs/config.js`). Main page = one catalogue tree
   under "All loans" (Hansen, Oct 2026): ruling power > region > period (only where a region has
-  several) > century, earliest first, "Period unknown" last; counts from view `loan_catalogue`; a
-  node (URL hash `#era=Roman/Egypt&c=2`) loads only its loans, without notes; Place / Currency /
-  Period / year filters and search on the loan list. `loan.html` shows one loan incl. notes.
+  several) > century, earliest first, "Period unknown" last; counts computed in the browser; a
+  node (URL hash `#era=Roman/Egypt&c=2`) shows only its loans; Place / Currency /
+  Period / year filters and search on the loan list; CSV download of the shown rows. `loan.html`
+  shows one loan incl. notes.
   Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
-  "always classify into one thing"; Early/Late Roman Egypt): column `period` (plain text, set at
-  insert). Helper SQL function `loan_period(year, region)` gives it (e.g. `loan_period('AD 57',
-  'Egypt')`): periods per region with date limits, a range gets the period covering most of it.
-  Egypt: Ptolemaic Egypt (332-31 BC), Early Roman Egypt (30 BC-AD 284), Late Roman Egypt
-  (285-618, 629-641), Sasanian Egypt (619-628, Persian occupation), Early Islamic Egypt (642-868);
-  Roman <region>, Nabataean/Roman Arabia (106), Late Roman / Early Islamic Palaestina (637),
-  Late Roman Thracia, Parthian Empire, India; Greek world: Archaic/Classical/Hellenistic Greece then Roman Achaea
-  (146 BC), Roman Macedonia, Achaemenid/Hellenistic Asia Minor, Roman Asia (133 BC), Classical/Hellenistic Black Sea
-  and Sicily, Roman Sicily (241 BC), Roman Bithynia, Roman Africa, Roman Dacia, Late Period Egypt. A new region
-  needs a line in `loan_period` (apply_migration works for additive DDL). Table: ID, Period, ...; Period filter.
-- Releases: pushing tag `vX.Y` runs `.github/workflows/release.yml` (CSV export, secret
-  `SUPABASE_DB_URL`, untested until first tag).
-- Schema: `reference/schema.sql` (v0.3) is a one-time setup script; never re-run it. Schema changes =
-  `ALTER` statements (run by Hansen) + update `reference/schema.sql`, `reference/codebook.md`, `docs/app.js`.
+  "always classify into one thing"; Early/Late Roman Egypt): column `period`, entered with each row
+  from the table of periods in `reference/codebook.md` (periods per region with date limits; a range
+  gets the period covering most of it). A new region needs a line there.
 
 ## Data standards
-- Follow `reference/codebook.md` exactly. One table `loans`, one row per loan. Fields: id, year, place,
-  amount, currency, borrower, lender, interest, duration, source, source_url, notes (+ generated
-  year_sort, period). Nothing else is collected (Hansen).
+- Follow `reference/codebook.md` exactly. One row per loan in `ald.csv`. Fields: id, period, year, place,
+  amount, currency, borrower, lender, interest, duration, source, source_url, notes. Nothing else is
+  collected (Hansen).
+- id: `ALD-` + 6 digits, next after the highest ever used (ALD-001802 at the move); never reused.
+- Formats the old database enforced (keep them): year matches `AD n`, `n BC`, `AD n-m`, `n-m BC`,
+  `n BC-AD m`; amount = numbers / fractions / `[...]` / unit words separated by spaces, with at least
+  one digit; source required.
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
@@ -225,18 +219,19 @@ by Claude under that grant (Roman-world pass):
 6. **Audit.** Subagents check every field of every row against the original text and correct
    real mismatches (names, patronymics, amounts, interest, duration, place). Reject guesses
    (wholly restored amounts, inferred names or roles). Unclear cases go to Hansen.
-7. **Insert.** Plain SQL `INSERT` via the connector, in large batches. IDs are assigned by the
-   database. Insertion order is not batch order (rows were inserted by date), so key later
-   updates by id or by source_url + a check value, never by assumed order.
-8. **Verify.** After every write: row counts, and md5 of each note against the expected text
-   (text copied through agents can lose or alter characters; private-use characters from the
-   edition are dropped in transfer). Fix mismatches.
+7. **Insert.** Append the rows to `ald.csv` by script (Python `csv` module), with the next free IDs
+   and the period from the codebook table; keep rows sorted by id. Key later updates by id.
+8. **Verify.** After every write: row count, the formats above, and md5 of each note against the
+   expected text (text copied through agents can lose or alter characters). Fix mismatches.
 9. **Record.** Add a README change-log entry (ranges, not one line per loan: "Added
    ALD-XXXXXX - XXXXXX: <corpus, place, period>"; removals with their IDs); update the status
    below; commit.
 
 ## Status
-- DB: 944 rows (ALD-000001 to 001802, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
+- Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
+  data moved from Supabase to `ald.csv`; site reads the CSV; `reference/schema.sql`, the release workflow
+  and the Supabase permission removed. Notes below about SQL, the connector and `U&` literals are history.
+- Data: 1,349 rows at the move to `ald.csv` (Oct 2026; 944 + 405 restored, see below). Before: 944 rows (ALD-000001 to 001802, with gaps; ALD-001607 Hirrius' eels removed, Hansen: not a loan), after the formal-loan audit (Oct 2026; IDs in the README
   change log), the Late Antique full-text pass and the Early Islamic Egypt pass.
 - Done (Oct 2026, Hansen: "yes" / "do it"): re-check of excluded debts/advances under the current rule: 301 papyri
   previously excluded (debt acknowledgements, advances, debts named in receipts; from the old ledger, Late Antique,
@@ -246,9 +241,10 @@ by Claude under that grant (Roman-world pass):
   P.Cair.Masp. 2 67151 silver plate, PSI 10 1122 oxen), loan wording wholly restored (P.Oxy. 14 1712, PSI 7 828,
   P.Heid.Kopt. 16), P.Alex. 8 (paramone advance), SPP 3 2.2 169. Currency `drachma (silver)` where the text names
   silver (codebook), so some Roman rows differ from older plain `drachma` rows.
-- Pending (Hansen said yes, Oct 2026): restore the 555 rows removed by the formal-loan audit only for a missing
-  party/principal (backup in session scratch `fa/backup_all.json`, IDs in `fa/removals.json` "incomplete"). Blocked:
-  the session's auto-mode safety check refuses the bulk restore; needs a Bash allow rule or approval.
+- Restore of the 555 rows removed only for a missing party/principal (Hansen said yes, Oct 2026): found partly
+  done at the move to `ald.csv` (Oct 2026): 405 back in the data, 150 not (IDs in the README change log, 2026-10-18).
+  The backup (`fa/backup_all.json`) was in a lost session scratch folder; the 150 can be re-extracted only from the
+  sources. Ask Hansen before doing so.
 - Done (Oct 2026, Hansen: "just say 'original text unavailable' and then use crums translation"): P.Ryl.Copt. 156,
   191-213 from Crum 1909 (archive.org cu31924099175329; source_url = that scan): 10 documents, 11 rows (ALD-001670 to
   001680; debt acknowledgements counted as loans under the current rule; rows may lack parties or sum). Excluded:
