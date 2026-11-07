@@ -7,7 +7,7 @@ const $ = (id) => document.getElementById(id);
 const state = { all: [], picked: {}, sortKey: 'id', sortDir: 1, shown: [] };
 
 // CSV columns (in order) and the columns shown in the table.
-const COLS = ['id', 'borrower', 'lender', 'amount', 'interest', 'date', 'duration', 'place', 'source'];
+const COLS = ['id', 'borrower', 'lender', 'amount', 'currency', 'interest', 'date', 'duration', 'place', 'source'];
 const LIST_COLS = COLS;
 
 // ---------- data ----------
@@ -135,10 +135,10 @@ function readHash() {
 
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-// Amounts are numbers with their unit, e.g. '100 drachma', '12 1/6 artaba (wheat)'. Sorts by the
-// leading number (whole number and/or fraction); a sum starting with a lost part sorts last.
+// Amounts are numbers, e.g. '100', '12 1/6', '2/3', or one number per unit '2; 4800' (units in currency).
+// Sorts by the leading number; a sum starting with a lost part sorts last.
 function amountValue(s) {
-  const m = String(s).match(/^(?:(\d+)(?: (\d+)\/(\d+))?|(\d+)\/(\d+))(?= |$)/);
+  const m = String(s).match(/^(?:(\d+)(?: (\d+)\/(\d+))?|(\d+)\/(\d+))(?=[ ;]|$)/);
   if (!m) return NaN;
   return m[4] ? m[4] / m[5] : Number(m[1]) + (m[2] ? m[2] / m[3] : 0);
 }

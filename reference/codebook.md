@@ -13,14 +13,15 @@ Field definitions for the Ancient Loans Database. The data is `ald.csv` (reposit
 
 ## loans
 
-Structure set by Hansen (Nov 2026), standardized for analysis (charts, maps). Nine fields, in this order.
+Structure set by Hansen (Nov 2026), standardized for analysis (charts, maps). Ten fields, in this order (Hansen: amount and currency in separate columns so downloaded data is usable).
 
 | Field | Definition | Example |
 |---|---|---|
-| `id` | ID system being decided with Hansen | |
+| `id` | `ALD-` + the source citation + `-` + the loan's number within that source (1, 2, 3, ... in the order the loans appear in the source). In the citation, spaces become dots and superscript digits plain digits. Fixed at entry: never changed (even if the source is later re-edited or renumbered) and never reused (Hansen, Nov 2026) | `ALD-P.Oxy.3.506-1`, `ALD-P.Oxy.3.506-2`, `ALD-IG.I3.369-14`, `ALD-Dem.35.10-1` |
 | `borrower` | Name(s) of the borrower(s), in Latinized English form, `X son of Y` / `X daughter of Y`, `alias Z`; separate several with `; ` | `Tryphon`, `Dioscorus son of Sarapion` |
 | `lender` | Name(s) of the lender(s), in the same form as `borrower` | `Thaisous` |
-| `amount` | Principal lent, with its currency or unit: each number (whole number or fraction in lowest terms, never decimals) followed by its unit, singular, lowercase, as the source gives it, never converted; commodity of a loan in kind, or the metal the source names, in brackets after the unit; several units in the source's order. Lost part: `[...]` where the loss is | `100 drachma`, `12 1/6 artaba (wheat)`, `2 talent 4800 drachma`, `53 drachma 2 obol`, `1 [...] talent`, `200 drachma (silver)` |
+| `amount` | Principal lent, number only: whole number or fraction in lowest terms, never decimals, never converted. A sum in several units: one number per unit, separated by `; `, in the source's order, matching `currency` position by position. Lost part: `[...]` where the loss is | `100`, `12 1/6`, `2/3`, `2; 4800`, `53; 2`, `1 [...]` |
+| `currency` | Currency or unit of `amount`, singular, lowercase, as the source gives it; commodity of a loan in kind, or the metal the source names, in brackets; several units separated by `; `, matching `amount` | `drachma`, `artaba (wheat)`, `talent; drachma`, `drachma; obol`, `drachma (silver)` |
 | `interest` | Interest as stated: the formula, then the rate as a percentage in brackets. `interest-bearing (rate not stated)` if the source calls the loan interest-bearing without a rate; `interest-bearing (rate lost)` if the rate is in a lost part of the text. Empty if no interest is stated | `1 drachma per mina per month (1% per month)` |
 | `date` | Year the loan was made, `AD n` or `n BC` (no year 0); uncertain: the range of possible years `AD 101-200`, `24-23 BC`, `30 BC-AD 14`. An earlier loan named in a later document gets its own year; if the source does not date the loan, the document's year | `AD 57`, `100 BC`, `AD 101-200` |
 | `duration` | Term of the loan as stated; a date as the document writes it, followed by its BC/AD equivalent in brackets | `6 months`, `until Phamenoth 30, year 20 of Antoninus Pius (= 26 March AD 157)` |

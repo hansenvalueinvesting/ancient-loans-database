@@ -7,7 +7,7 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 ## Change log
 
 **2026-11-07 (restart)**
-- New structure: 9 fields (id, borrower, lender, amount, interest, date, duration, place, source); amount carries its unit; period, currency, source_url and notes dropped; year renamed date. Codebook and website updated.
+- New structure: 10 fields (id, borrower, lender, amount, currency, interest, date, duration, place, source); period, source_url and notes dropped; year renamed date. New IDs: `ALD-` + source citation + loan number, e.g. `ALD-P.Oxy.3.506-1`. Codebook and website updated.
 - Database restarted. `ald.csv` emptied (header only); all 1,349 previous loans (ALD-000001 - 001802) moved unchanged to `ald1.csv` as an archive. Database: 0 loans.
 
 **2026-10-18 (data moved from Supabase to `ald.csv`)**
