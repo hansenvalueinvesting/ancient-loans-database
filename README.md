@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (interest)**
+- Columns renamed `interest (%)` and `duration (years)`. Interest is now the rate in percent per year (simple, monthly rate x 12): 6 loans with a rate (12, 6 or 8); the rate as written and loans called interest-bearing without a rate are in the notes (`Interest: ...`). Database: 36 loans.
+
 **2026-11-07 (duration)**
 - `duration` is now the term in years as a number (e.g. `0.28`, `1.92-2.00` when a date is known only to the month); the term as written moved to the notes (`Term: ...`). 14 loans have a computed duration; 2 terms are not computable (dates lost). Database: 36 loans.
 

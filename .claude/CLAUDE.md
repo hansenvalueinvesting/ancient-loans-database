@@ -24,7 +24,7 @@ below applies to any source as the database expands.
 ## Architecture
 - **Data: `ald.csv`** in the repo root, the only home of the data (Hansen, Oct 2026: moved from
   Supabase, like the taxation database). Columns in this order (Hansen, Nov 2026, standardized for analysis:
-  charts, maps): id, borrower, lender, volume, currency, interest, date, duration, place, notes (volume = the principal;
+  charts, maps): id, borrower, lender, volume, currency, interest (%), date, duration (years), place, notes (volume = the principal;
   volume and currency separate so downloaded data is usable; a sum in several units: `2; 4800` / `talent; drachma`;
   source column removed: notes = hyperlinked source, original text, English translation, notes, credit line). ID = `ALD-<citation>-<n>`, e.g. `ALD-P.Oxy.3.506-1` (Hansen, Nov 2026). Formats: `reference/codebook.md`. UTF-8, RFC 4180 quoting,
   rows sorted by id in natural order (numbers compared as numbers: P.Oxy. 1 68 before 1 130). Edit it with a script in the scratch folder; commit with the README change-log entry.
@@ -260,7 +260,8 @@ by Claude under that grant (Roman-world pass):
   notes, marked as an excerpt (P.Oxy. 2 237).
   Columns are standardized for a spreadsheet; the notes hold everything else (Hansen, Nov 2026). duration = years
   as a number (two decimals; range if a date is uncertain; empty if not computable); the written term goes in the
-  notes as `Term: ...`.
+  notes as `Term: ...`. Column names `duration (years)` and `interest (%)` (Hansen); interest = % per year (simple, monthly
+  rate x 12), the written rate in the notes as `Interest: ...`.
   Done: P.Oxy. 1 (211 numbers; 177 with text; 30 candidates read): 6 rows (68-1, 68-2, 70-1, 98-1, 130-1, 133-1);
   4 in need_review.md. P.Oxy. 2-5 (599 numbers; 401 with text; 81 candidates read): 30 rows from 26 documents;
   16 in need_review.md. Next: P.Oxy. 6. Everything else in

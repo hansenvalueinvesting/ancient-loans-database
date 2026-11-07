@@ -1,4 +1,4 @@
-id,borrower,lender,volume,currency,interest,date,duration,place,notes
+id,borrower,lender,volume,currency,interest (%),date,duration (years),place,notes
 ALD-P.Dubl.6-1,Harthoonis son of Harthoonis,Heraclas,,,,AD 99,,Oxyrhynchus,"Source: P.Dubl. 6 (= P.Oxy. 2 343 descr.) (https://papyri.info/ddbdp/p.dubl;;6)
 
 Original Text:
@@ -227,7 +227,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.1.70-1,Agathus Daimon alias Enthesmus,Ptolemaeus alias Heraclides,3000,drachma (silver),4 obols (per mina per month) (2/3% per month),AD 207,,Oxyrhynchus,"Source: P.Oxy. 1 70 (https://papyri.info/ddbdp/p.oxy;1;70)
+ALD-P.Oxy.1.70-1,Agathus Daimon alias Enthesmus,Ptolemaeus alias Heraclides,3000,drachma (silver),8,AD 207,,Oxyrhynchus,"Source: P.Oxy. 1 70 (https://papyri.info/ddbdp/p.oxy;1;70)
 
 Original Text:
 1 Αὐρη[λίῳ] Ἡραπίωνι τῷ κρατίστῳ ἐπιστρ(ατήγῳ)
@@ -282,6 +282,7 @@ English translation:
 24 [...]
 
 Loan in ll. 5-10; the text says the sum is owed, not lent.
+Interest: four obols (τόκ[ο]υ τετρωβωλιου, l. 9), taken as 4 obols per mina per month.
 Date: Pharmouthi, year 15 of Septimius Severus and Caracalla.
 Place: not stated; the place of the document.
 
@@ -592,7 +593,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.243-1,Dionysius alias Amois son of Phanias alias Amois,Didymus son of Sarapion,1300,drachma (silver),1 drachma per mina per month (1% per month),AD 79,1.00,Oxyrhynchus,"Source: P.Oxy. 2 243 (https://papyri.info/ddbdp/p.oxy;2;243)
+ALD-P.Oxy.2.243-1,Dionysius alias Amois son of Phanias alias Amois,Didymus son of Sarapion,1300,drachma (silver),12,AD 79,1.00,Oxyrhynchus,"Source: P.Oxy. 2 243 (https://papyri.info/ddbdp/p.oxy;2;243)
 
 Original Text:
 (recto)
@@ -699,6 +700,7 @@ English translation:
 49 silver 1 talent 5700.
 
 Loan in ll. 37-41; registration of the mortgage securing it (Phamenoth, year 11 of Vespasian).
+Interest: 1 drachma per mina per month.
 Term: 12 months from Pharmouthi, year 11 of Vespasian (= March/April AD 79).
 Place: not stated; the place of the document.
 
@@ -792,7 +794,7 @@ Term: until Kaisareios 30, year 3 of Nero (= 23 August AD 57).
 Date: Germanikeios 18, year 3 of Nero (= 13 May AD 57).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.270-1,Lucia alias Thaisas daughter of Lucius,Heraclides son of Apollonius,3500,drachma (silver),1 drachma per mina per month (1% per month),AD 94,1.92-2.00,Oxyrhynchus,"Source: P.Oxy. 2 270 (https://papyri.info/ddbdp/p.oxy;2;270)
+ALD-P.Oxy.2.270-1,Lucia alias Thaisas daughter of Lucius,Heraclides son of Apollonius,3500,drachma (silver),12,AD 94,1.92-2.00,Oxyrhynchus,"Source: P.Oxy. 2 270 (https://papyri.info/ddbdp/p.oxy;2;270)
 
 Original Text:
 1 ἔτους τρισκαιδεκάτου Αὐτοκράτορος Καίσαρος Δομιτιανοῦ Σεβαστοῦ
@@ -907,11 +909,12 @@ English translation:
 50
 
 Loan in ll. 12-26; the document indemnifies its surety, Sarapion alias Clarus.
+Interest: 1 drachma per mina per month.
 Term: until Tybi 30, year 15 of Domitian (= 26 January AD 96).
 Date: Mecheir, year 13 of Domitian (= January/February AD 94).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.271-1,Pnepheros son of Papontos,,200,drachma (silver),interest-bearing (rate not stated),AD 55,,Oxyrhynchus,"Source: P.Oxy. 2 271 (https://papyri.info/ddbdp/p.oxy;2;271)
+ALD-P.Oxy.2.271-1,Pnepheros son of Papontos,,200,drachma (silver),,AD 55,,Oxyrhynchus,"Source: P.Oxy. 2 271 (https://papyri.info/ddbdp/p.oxy;2;271)
 
 Original Text:
 1 ἀντίγρα(φον). ἔτους δευτέρου Νέρωνος Κλα[υδίου Κ]αίσαρος Σεβαστοῦ Γερμ[ανικ]οῦ Αὐτοκράτορος,
@@ -972,6 +975,7 @@ English translation:
 27 to the treasury the same, and the contract is valid nonetheless.
 
 Loan in ll. 10-13; the lender's name is left blank in the text; the document cedes the claim to Papontos son of Aphynchis.
+Interest: interest-bearing, rate not stated.
 Date: epagomenal days of Kaisareios, year 1 of Nero (= 24-28 August AD 55).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
@@ -1353,7 +1357,7 @@ Loan in ll. 8-17, the third of three loan contracts securing a mortgage on a hou
 Date: Mecheir, year 8 of Domitian (= January/February AD 89).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.286-1,[...]; Thaesis,Philumene daughter of Heron,2000,drachma (silver),interest-bearing (rate not stated),AD 77,,Oxyrhynchus,"Source: P.Oxy. 2 286 (https://papyri.info/ddbdp/p.oxy;2;286)
+ALD-P.Oxy.2.286-1,[...]; Thaesis,Philumene daughter of Heron,2000,drachma (silver),,AD 77,,Oxyrhynchus,"Source: P.Oxy. 2 286 (https://papyri.info/ddbdp/p.oxy;2;286)
 
 Original Text:
 (recto)
@@ -1428,6 +1432,7 @@ English translation:
 1 [...] of the Oxyrhynchite [...]
 
 Loan in ll. 3-9; the borrowers are the petitioner (name lost) and her mother Thaesis.
+Interest: interest-bearing, rate not stated.
 Date: Pharmouthi, year 9 of Vespasian (= March/April AD 77).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
@@ -1454,7 +1459,7 @@ Date: not stated; the date of the document (HGV).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.485-1,Sarapias daughter of Podon,Serenus,900,drachma (silver),1 drachma per mina per month (1% per month),AD 177,0.96,Oxyrhynchus,"Source: P.Oxy. 3 485 (https://papyri.info/ddbdp/p.oxy;3;485)
+ALD-P.Oxy.3.485-1,Sarapias daughter of Podon,Serenus,900,drachma (silver),12,AD 177,0.96,Oxyrhynchus,"Source: P.Oxy. 3 485 (https://papyri.info/ddbdp/p.oxy;3;485)
 
 Original Text:
 (ctr)
@@ -1579,11 +1584,12 @@ English translation:
 57 rhynchus.
 
 Loan in ll. 12-26; petition for its recovery (AD 178). The lender is called freedman of Apollonianus (l. 2) and of Apollonas (l. 11), son of Sarapion.
+Interest: 1 drachma per mina per month.
 Term: until Kaisareios 30, year 18 of Marcus Aurelius and Commodus (= 23 August AD 178).
 Date: Sebastos 11, year 18 of Marcus Aurelius and Commodus (= 8 September AD 177).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.506-1,Thatres daughter of Apollonius; Teteorion daughter of Apollonius; Demas daughter of Apollonius,Sarapion son of Herodes,1000,drachma (silver),3 obols per mina per month (1/2% per month),AD 143,2.66-2.74,Oxyrhynchus,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
+ALD-P.Oxy.3.506-1,Thatres daughter of Apollonius; Teteorion daughter of Apollonius; Demas daughter of Apollonius,Sarapion son of Herodes,1000,drachma (silver),6,AD 143,2.66-2.74,Oxyrhynchus,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
 
 Original Text:
 (r,FrA)
@@ -1720,11 +1726,12 @@ English translation:
 1 (1 lines illegible)
 
 Loan in ll. 3-19.
+Interest: 3 obols per mina per month.
 Term: interest at the end of each 12 months; capital until Kaisareios 30, year 9 of Antoninus Pius (= 23 August AD 146).
 Date: Hadrianos, year 7 of Antoninus Pius (= November/December AD 143).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.506-2,Thatres daughter of Apollonius; Teteorion daughter of Apollonius,Sarapion son of Herodes,1; 600,talent (silver); drachma (silver),interest-bearing (rate not stated),AD 143,,Oxyrhynchus,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
+ALD-P.Oxy.3.506-2,Thatres daughter of Apollonius; Teteorion daughter of Apollonius,Sarapion son of Herodes,1; 600,talent (silver); drachma (silver),,AD 143,,Oxyrhynchus,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
 
 Original Text:
 (r,FrA)
@@ -1861,10 +1868,11 @@ English translation:
 1 (1 lines illegible)
 
 Loan in ll. 51-56, another loan in the same month on the mortgage of 14 1/2 arouras.
+Interest: interest-bearing, rate not stated.
 Date: Hadrianos, year 7 of Antoninus Pius (= November/December AD 143).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.507-1,Harmiusis,Diogenes son of Sarapion,260,drachma (silver),1 drachma per mina per month (1% per month),AD 146,0.92-1.00,Oxyrhynchus,"Source: P.Oxy. 3 507 (https://papyri.info/ddbdp/p.oxy;3;507)
+ALD-P.Oxy.3.507-1,Harmiusis,Diogenes son of Sarapion,260,drachma (silver),12,AD 146,0.92-1.00,Oxyrhynchus,"Source: P.Oxy. 3 507 (https://papyri.info/ddbdp/p.oxy;3;507)
 
 Original Text:
 1 Ἁρμιῦσ[ις ][...]
@@ -1954,12 +1962,13 @@ English translation:
 41 Armeniacus Medicus Parthicus Maximus,
 42 [Pharmouthi] [...]
 
+Interest: 1 drachma per mina per month.
 Term: until Phamenoth 30, year 10 of Antoninus Pius (= 26 March AD 147).
 Date: Pharmouthi, year 9 of Antoninus Pius (= March/April AD 146; HGV, BL I 325); the imperial names in ll. 15 and 39-41 are those of Marcus Aurelius in the edition.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.508-1,Rufus son of Diocles,Heraclas son of Heraclas,450,drachma (silver),interest-bearing (rate not stated),AD 99,,Oxyrhynchus,"Source: P.Oxy. 3 508 (https://papyri.info/ddbdp/p.oxy;3;508)
+ALD-P.Oxy.3.508-1,Rufus son of Diocles,Heraclas son of Heraclas,450,drachma (silver),,AD 99,,Oxyrhynchus,"Source: P.Oxy. 3 508 (https://papyri.info/ddbdp/p.oxy;3;508)
 
 Original Text:
 1 ἔτους πέμπτου Αὐτοκράτορος Καίσαρος
@@ -2022,6 +2031,7 @@ English translation:
 28 [...]
 
 Loan in ll. 10-20, made in the name of Stephanus alias Amois with Heraclas' money.
+Interest: interest-bearing, rate not stated.
 Date: Mecheir, year 2 of Trajan (= January/February AD 99).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
@@ -2091,7 +2101,7 @@ Loan in ll. 20-26, made in the name of Stephanus alias Amois with Heraclas' mone
 Date: Tybi, year 3 of Trajan (= December AD 99/January AD 100).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.510-1,[...]; Dionysius,Artemidorus,472,drachma (silver),interest-bearing (rate not stated),AD 100,1.01-1.09,Oxyrhynchus,"Source: P.Oxy. 3 510 (https://papyri.info/ddbdp/p.oxy;3;510)
+ALD-P.Oxy.3.510-1,[...]; Dionysius,Artemidorus,472,drachma (silver),,AD 100,1.01-1.09,Oxyrhynchus,"Source: P.Oxy. 3 510 (https://papyri.info/ddbdp/p.oxy;3;510)
 
 Original Text:
 1 [...]
@@ -2154,6 +2164,7 @@ English translation:
 27 [...]
 
 Loan in ll. 4-17; the document is the receipt for its repayment; the first borrower's name is lost.
+Interest: interest-bearing, rate not stated.
 Term: until epagomenal day 5, year 4 of Trajan (= 28 August AD 101).
 Date: Kaisareios, year 3 of Trajan (= July/August AD 100).
 

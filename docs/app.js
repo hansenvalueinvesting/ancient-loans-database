@@ -7,7 +7,7 @@ const $ = (id) => document.getElementById(id);
 const state = { all: [], picked: {}, sortKey: 'id', sortDir: 1, shown: [] };
 
 // CSV columns (in order) and the columns shown in the table.
-const COLS = ['id', 'borrower', 'lender', 'volume', 'currency', 'interest', 'date', 'duration', 'place', 'notes'];
+const COLS = ['id', 'borrower', 'lender', 'volume', 'currency', 'interest (%)', 'date', 'duration (years)', 'place', 'notes'];
 const LIST_COLS = COLS.slice(0, -1);
 
 // ---------- data ----------
@@ -250,7 +250,7 @@ async function loadLoan() {
     if (!l) return setStatus(`Loan ${id} not found.`);
     document.title = `${l.id} | Ancient Loans Database`;
     $('loan-id').textContent = l.id;
-    const label = (c) => c[0].toUpperCase() + c.slice(1);
+    const label = (c) => c[0].toUpperCase() + c.slice(1);  // 'interest (%)' -> 'Interest (%)'
     $('loan').innerHTML = COLS.slice(1).map((c) =>
       `<tr><th align="left">${label(c)}</th><td>${cellHtml(l, c)}</td></tr>`).join('');
     setStatus('');
