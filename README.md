@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (decisions)**
+- P.Oxy. 36 2773 (loom used in place of interest) removed from `need_review.md`: excluded entirely (Hansen). ALD-SB.14.11847-1 stays in the data. Database: 75 loans.
+
 **2026-11-07 (P.Oxy. 32-41)**
 - Added 7 loans from P.Oxy. 32-41 (all 379 numbers reviewed; 249 with a text on papyri.info): ALD-P.Oxy.34.2722-1, ALD-P.Oxy.36.2774-1, ALD-P.Oxy.36.2775-1 - 2 (estate seed loans), ALD-P.Oxy.38.2834-1, ALD-P.Oxy.38.2848.Vo-1, ALD-P.Oxy.41.2956-1 (state seed loan). 1 text added to `need_review.md`. Database: 75 loans.
 

@@ -256,7 +256,8 @@ by Claude under that grant (Roman-world pass):
   (Hansen: "change the entire IDs and everything to those correct places"), the first publication in brackets
   (`SB 10 10246 (= P.Oxy. 2 304 descr.)`); the P.Oxy. order is only the order of work; loans whose interest is paid by living in a house (ἐνοίκησις / ἐνοικισμός ἀντὶ τῶν
   τόκων) are not loans ("that isn't a loan, that's rent"; P.Oxy. 2 339 = P.Oxy. 8 1105, SB 20 14097, SB 8 9765 left
-  out); advances inside leases, even when repaid -> need_review.md. A long document: only the loan passage in the
+  out; the same for use of other property in place of interest, e.g. a loom, P.Oxy. 36 2773: excluded entirely,
+  Hansen: "exclude"); advances inside leases, even when repaid -> need_review.md. A long document: only the loan passage in the
   notes, marked as an excerpt (P.Oxy. 2 237).
   Crossed-out contracts stay in the data for now, flagged in the notes (Hansen, Nov 2026: "this is okay for now";
   SB 14 11491).
@@ -280,8 +281,9 @@ by Claude under that grant (Roman-world pass):
   can be standardized"): `state (public granary)`, `Oxyrhynchus (city council)`, `Apion (heirs)`, `friends (unnamed)`.
   P.Oxy. 22-31 (293 numbers; 105 with text; 14 candidates read; vols. 23, 25, 26, 28-30 literary): 2 rows
   (22 2350, 27 2471); 3 in need_review.md. P.Oxy. 32-41 (379 numbers; 249 with text; 18 candidates read; vols. 32, 35,
-  37, 39 literary): 7 rows (34 2722, 36 2774, 36 2775 x2, 38 2834, 38 2848 Vo, 41 2956); 1 in need_review.md (36 2773,
-  loom used in place of interest; open for Hansen). Next: P.Oxy. 42. Everything else in
+  37, 39 literary): 7 rows (34 2722, 36 2774, 36 2775 x2, 38 2834, 38 2848 Vo, 41 2956); 36 2773 (use of a loom in place of interest)
+  excluded entirely (Hansen, Nov 2026: "exclude"; like rent paid by habitation). ALD-SB.14.11847-1 stays in the
+  data (Hansen: not moved to need_review.md). Next: P.Oxy. 42. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
