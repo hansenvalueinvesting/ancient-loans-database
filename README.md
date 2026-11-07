@@ -6,8 +6,11 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (IDs)**
+- The 11 re-edited texts from P.Oxy. 2-4 now carry their P.Oxy. number (Hansen): ALD-P.Dubl.6-1 -> ALD-P.Oxy.2.343-1, ALD-SB.10.10246-1 -> ALD-P.Oxy.2.304-1, ALD-SB.10.10222-1 -> 2.305-1, ALD-SB.10.10238-1 -> 2.319-1, ALD-SB.14.11491-1 -> 2.320-1, ALD-SB.10.10234-1 -> 2.323-1, ALD-SB.20.14096-1 -> 2.362-1, ALD-ZPE.222.179-1 -> 2.373-1, ALD-SB.12.10781r-1 -> 3.592-1, ALD-Stud.Pal.4.p.114-1 -> 3.636-1, ALD-SB.26.16745-1 -> 4.836-1 (all ALD-P.Oxy.). Source lines now read e.g. "P.Oxy. 2 304 (= SB 10 10246)". Database: 36 loans.
+
 **2026-11-07 (P.Oxy. 2-5)**
-- Added 30 loans from P.Oxy. 2-5 (all 599 numbers reviewed; 401 with a text on papyri.info): ALD-P.Oxy.2.237-1 - ALD-P.Oxy.4.808-1, ALD-P.Dubl.6-1, ALD-SB.10.10222-1 - ALD-SB.26.16745-1, ALD-Stud.Pal.4.p.114-1, ALD-ZPE.222.179-1 (re-edited texts under their current edition). 16 loan-like texts added to `need_review.md`. Note of ALD-P.Oxy.1.133-1 re-rendered (spacing of illegible letters in l. 28). Database: 36 loans.
+- Added 30 loans from P.Oxy. 2-5 (all 599 numbers reviewed; 401 with a text on papyri.info): ALD-P.Oxy.2.237-1 - ALD-P.Oxy.4.836-1 (IDs as corrected below). 16 loan-like texts added to `need_review.md`. Note of ALD-P.Oxy.1.133-1 re-rendered (spacing of illegible letters in l. 28). Database: 36 loans.
 
 **2026-11-07 (notes)**
 - Notes of the 6 P.Oxy. 1 loans: remarks shortened, no "Notes:" heading, nothing repeated from the fields.
