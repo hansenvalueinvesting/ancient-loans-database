@@ -258,6 +258,8 @@ by Claude under that grant (Roman-world pass):
   τόκων) are not loans ("that isn't a loan, that's rent"; P.Oxy. 2 339 = P.Oxy. 8 1105, SB 20 14097, SB 8 9765 left
   out); advances inside leases, even when repaid -> need_review.md. A long document: only the loan passage in the
   notes, marked as an excerpt (P.Oxy. 2 237).
+  Crossed-out contracts stay in the data for now, flagged in the notes (Hansen, Nov 2026: "this is okay for now";
+  SB 14 11491).
   Columns are standardized for a spreadsheet; the notes hold everything else (Hansen, Nov 2026). duration = years
   as a number (two decimals; range if a date is uncertain; empty if not computable); the written term goes in the
   notes as `Term: ...`. Column names `duration (years)` and `interest (%)` (Hansen); interest = % per year (simple, monthly
