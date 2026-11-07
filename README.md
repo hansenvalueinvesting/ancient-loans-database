@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (notes)**
+- Notes of the 6 P.Oxy. 1 loans: remarks shortened, no "Notes:" heading, nothing repeated from the fields.
+
 **2026-11-07 (rename)**
 - `semi_loans.md` renamed `need_review.md`.
 
