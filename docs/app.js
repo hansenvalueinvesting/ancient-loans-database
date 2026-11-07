@@ -7,7 +7,7 @@ const $ = (id) => document.getElementById(id);
 const state = { all: [], picked: {}, sortKey: 'id', sortDir: 1, shown: [] };
 
 // CSV columns (in order) and the columns shown in the table.
-const COLS = ['id', 'borrower', 'lender', 'amount', 'currency', 'interest', 'date', 'duration', 'place', 'notes'];
+const COLS = ['id', 'borrower', 'lender', 'volume', 'currency', 'interest', 'date', 'duration', 'place', 'notes'];
 const LIST_COLS = COLS.slice(0, -1);
 
 // ---------- data ----------
@@ -135,9 +135,9 @@ function readHash() {
 
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-// Amounts are numbers, e.g. '100', '12 1/6', '2/3', or one number per unit '2; 4800' (units in currency).
+// Volumes are numbers, e.g. '100', '12 1/6', '2/3', or one number per unit '2; 4800' (units in currency).
 // Sorts by the leading number; a sum starting with a lost part sorts last.
-function amountValue(s) {
+function volumeValue(s) {
   const m = String(s).match(/^(?:(\d+)(?: (\d+)\/(\d+))?|(\d+)\/(\d+))(?=[ ;]|$)/);
   if (!m) return NaN;
   return m[4] ? m[4] / m[5] : Number(m[1]) + (m[2] ? m[2] / m[3] : 0);
@@ -147,11 +147,11 @@ function fmtNotes(s) {
   return esc(s).replace(/^Source: (.+?) \((https?:\/\/[^\s)]+)\)$/m,
     (m, cite, url) => `Source: <a href="${url}" target="_blank" rel="noopener">${cite}</a>`).replace(/\n/g, '<br>');
 }
-const fmtAmount = (s) => String(s).replace(/(^| )(\d+)(?=$| [^\d])/g, (m, sp, w) => sp + Number(w).toLocaleString());
+const fmtVolume = (s) => String(s).replace(/(^| )(\d+)(?=$| [^\d])/g, (m, sp, w) => sp + Number(w).toLocaleString());
 
 // One field of a loan as HTML.
 function cellHtml(l, c) {
-  if (c === 'amount') return fmtAmount(l.amount);
+  if (c === 'volume') return fmtVolume(l.volume);
   if (c === 'notes') return fmtNotes(l.notes);
   return esc(l[c]);
 }
@@ -178,8 +178,8 @@ function filtered() {
 
 function sortRows(rows) {
   const { sortKey: k, sortDir: d } = state;
-  const numeric = k === 'date' || k === 'amount';
-  const num = (l) => (k === 'date' ? (l.yearStart ?? NaN) : amountValue(l.amount));
+  const numeric = k === 'date' || k === 'volume';
+  const num = (l) => (k === 'date' ? (l.yearStart ?? NaN) : volumeValue(l.volume));
   return rows.sort((a, b) => {
     const x = numeric ? num(a) : a[k], y = numeric ? num(b) : b[k];
     const blank = (v) => v === '' || Number.isNaN(v);

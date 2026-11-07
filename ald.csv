@@ -1,1 +1,1 @@
-id,borrower,lender,amount,currency,interest,date,duration,place,notes
+id,borrower,lender,volume,currency,interest,date,duration,place,notes

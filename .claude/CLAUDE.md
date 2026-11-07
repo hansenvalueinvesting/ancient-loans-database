@@ -24,8 +24,8 @@ below applies to any source as the database expands.
 ## Architecture
 - **Data: `ald.csv`** in the repo root, the only home of the data (Hansen, Oct 2026: moved from
   Supabase, like the taxation database). Columns in this order (Hansen, Nov 2026, standardized for analysis:
-  charts, maps): id, borrower, lender, amount, currency, interest, date, duration, place, notes (amount and currency
-  separate so downloaded data is usable; source column removed: notes = hyperlinked source, original text,
+  charts, maps): id, borrower, lender, volume, currency, interest, date, duration, place, notes (volume = the principal;
+  volume and currency separate; a sum in several units: `2; 4800` / `talent; drachma`, Hansen confirmed so downloaded data is usable; source column removed: notes = hyperlinked source, original text,
   English translation). ID = `ALD-<citation>-<n>`, e.g. `ALD-P.Oxy.3.506-1` (Hansen, Nov 2026). Formats: `reference/codebook.md`. UTF-8, RFC 4180 quoting,
   rows sorted by id. Edit it with a script in the scratch folder; commit with the README change-log entry.
   The old Supabase project (`zzlrdlkdngxkkcrtolpx`, paused): Hansen asked to delete it (Nov 2026); the connector has no
