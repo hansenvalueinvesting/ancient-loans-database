@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (lenders)**
+- Lenders that are not named persons now in a standard form (Hansen): `state (public granary)` (ALD-P.Oxy.7.1024-1, 10.1262.Ro-1, 18.2185-1), `Oxyrhynchus (city council)` (12.1501-1), `Apion (heirs)` (16.1976-1), `friends (unnamed)` (14.1665-1). Translation of ALD-SB.14.11847-1 corrected ("lent" in l. 4). Database: 68 loans.
+
 **2026-11-07 (P.Oxy. 22-31)**
 - Added 2 loans from P.Oxy. 22-31 (all 293 numbers reviewed; 105 with a text on papyri.info): ALD-P.Oxy.22.2350-1, ALD-P.Oxy.27.2471-1. 3 texts added to `need_review.md`. Database: 68 loans.
 

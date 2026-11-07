@@ -273,9 +273,11 @@ by Claude under that grant (Roman-world pass):
   the description"): P.Oxy. 7 1024 entered; 7 1031 (application only) in need_review.md. P.Oxy. 9-11 (229 numbers; 140 with text; 20 candidates read; vol. 11
   almost all literary): 3 rows (10 1262 Ro, 10 1282, SB 14 11847); 3 in need_review.md. P.Oxy. 12-14 (377 numbers; 345 with text; 49 candidates read; vol. 13 literary): 13 rows
   (12 1471, 1473, 1474, 1501, SB 30 17614, 14 1640, 1648, 1665, 1711, 1715, 1716, 1724 x2); 10 in need_review.md;
-  interest-free loans = 0 in interest (%). P.Oxy. 15-18 (409 numbers; 307 with text; 53 candidates read;
+  interest-free loans = 0 in interest (%) (Hansen: "show 0 if interest free explicitly"). P.Oxy. 15-18 (409 numbers; 307 with text; 53 candidates read;
   vol. 15 literary): 8 rows (16 1891, 1892, 1969, 1970, 1971, 1976, 17 2134 Ro, 18 2185); 4 in need_review.md. P.Oxy. 19-21 (101 numbers; 42 with text; 5 candidates read;
-  vol. 21 literary): 1 row (19 2237; "6 solidi less 6 carats" entered as 5 3/4, to confirm with Hansen).
+  vol. 21 literary): 1 row (19 2237; "6 solidi less 6 carats" entered as 5 3/4, Hansen: "sure"). Lenders that are not named
+  persons: standard form with a qualifier in brackets (Hansen: "add parentheses after the name as needed as long as it
+  can be standardized"): `state (public granary)`, `Oxyrhynchus (city council)`, `Apion (heirs)`, `friends (unnamed)`.
   P.Oxy. 22-31 (293 numbers; 105 with text; 14 candidates read; vols. 23, 25, 26, 28-30 literary): 2 rows
   (22 2350, 27 2471); 3 in need_review.md. Next: P.Oxy. 32. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
