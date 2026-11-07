@@ -1,1 +1,435 @@
 id,borrower,lender,volume,currency,interest,date,duration,place,notes
+ALD-P.Oxy.1.68-1,Sarapion; Dionysius,Theon son of Pausiris,,,,AD 112-113,,Oxyrhynchus,"Source: P.Oxy. 1 68 (https://papyri.info/ddbdp/p.oxy;1;68)
+
+Original Text:
+1 [...]
+1 [...].[...]... [ἀπʼ][ Ὀ]ξ[υ]ρύγχ[ων πόλεως ἐπεὶ(?)]
+2 [μετέδ]ωκέ μοι Θέων Παυσείρι[ος τῶν ἀπὸ]
+3 [τῆς α]ὐτῆς ⟦π⟧ Ὀξυρύγχων πόλεως διὰ [τοῦ τοῦ]
+4 νομ[οῦ] στρατηγοῦ ἀντίγραφον οὗ ο̣ὐ [δεόν]
+5 τως ἐτελείωσεν τῷ καταλογείῳ ὑπο[μνή]
+6 ματος, δ[ιʼ ο]ὗ ἀπαίτησιν ἐποιεῖτο ὧν ἔφασ[κεν]
+7 ὀφείλεσθαι αὐτῷ ὑπό τε τοῦ τ[οῦ ἀ]φήλικός μου υἱ[οῦ]
+8 Σαραπίωνος κατὰ μητέρα πάππου Σαραπίωνος
+9 καὶ ἀδελφοῦ αὐ[το]ῦ Διονυσίου ἔτι ἀπὸ τῶν ἔνπροσ
+10 θεν χρόνων ἀργυρικο͂ν κεφαλαίον, ποιοῦμα[ι τὴν]
+11 δαίουσαν ἀντίρησιν δηλῶ\ν/ ὑπονοεῖν περιλελύ
+12 σθαι ἣν θέλει γεγονέναι τοῦ δανείου ἀσφάλ[ε]ιαν
+13 ἔκ τε τοῦ πολυχρόνιον εἶναι καὶ ἐκ τοῦ ἐπεζηκέναι
+14 τὸν Σαραπίωνα ἔτεσιν δυσεὶν καὶ μετὰ τε[λ]ευτὴν
+15 αὐτοῦ μὲν θυγατέρα ἐμοῦ δὲ γενομένην γυ
+16 ναῖκα καὶ τοῦ ἀφήλικος Σαραπίωνος μητέρα Εὐβου
+17 λίαν ὁμοίως ἐπεζηκέναι ἔτεσειν ἕνδεκα κ[αὶ]
+18 μετὰ τὴν κἀκεἰνης τελευτὴν διαγεγον[έ]
+19 ναι ἄλλα ἔτη πέντε καὶ μὴ τεθαρρηκαίναι τ[ὸν]
+20 Θέωνα προελθεῖν, ἔτι δὲ καὶ τὴν Εὐβουλίαν
+21 ἡνίκα περιη πεπρακείναι τῷ προγεγραμμέ
+22 νῳ τοῦ Σαραπίωνος ἀδελφῷ Διονυσίῳ ὑπάρ
+23 χοντα τοῦ Σαραπίωνος ἀργυρίου ταλάντων
+24 ἓξ καὶ πρὸς ἐπὶ τῷ αὐτὸν ἀποδο͂ναι τοῖς τοῦ
+25 Σαραπίωνος δανισταῖς τὰ ὑπὸ αὐτοῦ ὀφειλόμε
+26 να, ὄντα δὲ τὸν Θέωνα τοῦ Σαραπίωνος ἑτέρων
+27 κεφαλαίων δανιστὴν ἐκῖνα μὲν κεκομίσθαι
+28 παρὰ \τοῦ/ Διονυσίου, τούτου δὲ μήθʼ ὅλως μεμνῆ
+29 σθαι. ὅθεν ἀξιῶ συντάξαι γράψαι τῷ τοῦ Ὀξυρυγ
+30 χείτου στρατηγῷ μεταδοῦναι τῷ Θέωνι τοῦ
+31 δε τοῦ ὑπομνήματος ἀντίγραφον ἵνʼ ἰδῇ
+32 ἄκυρον καθεστὸς ὃ οὐ δεόντως μετέδοκέ
+33 μοι διαστολικόν, σὺν οἷς ἐὰν βιβλιομαχή[σ]ῃ
+34 προσμεταδοι, μένουσαν δʼ ἐμοὶ τὴν πρὸς αὐ
+35 τὸν κρίσιν ἐφʼ ὧν δέον ἐστίν, ἀρκουμένου
+36 μου τῇδε τῇ διαστολῇ ὡς καθήκει. (ἔτους) ιε
+37 Αὐτοκράτορος Καίσαρος Τραιανοῦ Ἁδριανοῦ
+38 Σεβαστοῦ, Ἐπεὶφ α. σεσημ(είωμαι) Ἐπεὶφ α.
+
+English translation:
+1 [...]
+1 [...] from the city of Oxyrhynchus. Since
+2 Theon son of Pausiris, of
+3 the same city of Oxyrhynchus, has served on me through the
+4 strategus of the nome a copy of a memorandum, which he im-
+5 properly had executed at the record office,
+6 by which he made a demand for what he alleged
+7 to be owed to him both by the maternal grandfather of my minor son
+8 Sarapion, Sarapion,
+9 and his brother Dionysius, from former
+10 times, as capital sums of silver, I make the
+11 proper counter-statement, declaring that I suspect that the security
+12 of the loan which he claims to have existed has been discharged,
+13 both because it is of long standing and because
+14 Sarapion survived two years, and after his death
+15 his daughter, who became my wife
+16 and mother of the minor Sarapion, Eubu-
+17 lia, likewise survived eleven years, and
+18 after her death too another five years
+19 passed, and Theon did not venture
+20 to come forward; and further that Eubulia,
+21 while she was alive, sold to the aforesaid
+22 brother of Sarapion, Dionysius, property
+23 of Sarapion for six talents of silver
+24 and more, on condition that he should pay
+25 Sarapion's creditors the debts owed by him,
+26 and that Theon, being creditor of Sarapion for other
+27 capital sums, recovered those
+28 from Dionysius, but made no mention at all
+29 of this one. Therefore I ask you to give orders to write to the strategus of the Oxyrhyn-
+30 chite nome to serve on Theon a copy
+31 of this memorandum, so that he may know
+32 that the notice which he improperly served on me
+33 is void, and to serve also whatever he may write in reply,
+34 while my right to legal action against
+35 him remains in matters where it is needed, I contenting
+36 myself with this declaration, as is proper. Year 15
+37 of Imperator Caesar Trajanus Hadrianus
+38 Augustus, Epeiph 1. Signed, Epeiph 1.
+
+Notes:
+- Loan: the loan Theon claims from Sarapion and his brother Dionysius (ll. 6-12).
+- Date: reckoned from the petition (Epeiph 1, year 15 of Hadrian = 25 June AD 131): Sarapion survived the loan by two years, Eubulia by eleven more, and five more years passed (ll. 13-19), about 18 years before AD 131.
+- Place: the text does not say where the loan was made; the place of the document (HGV) is recorded.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.1.68-2,Sarapion,Theon son of Pausiris,,,,AD 131,,Oxyrhynchus,"Source: P.Oxy. 1 68 (https://papyri.info/ddbdp/p.oxy;1;68)
+
+Original Text:
+1 [...]
+1 [...].[...]... [ἀπʼ][ Ὀ]ξ[υ]ρύγχ[ων πόλεως ἐπεὶ(?)]
+2 [μετέδ]ωκέ μοι Θέων Παυσείρι[ος τῶν ἀπὸ]
+3 [τῆς α]ὐτῆς ⟦π⟧ Ὀξυρύγχων πόλεως διὰ [τοῦ τοῦ]
+4 νομ[οῦ] στρατηγοῦ ἀντίγραφον οὗ ο̣ὐ [δεόν]
+5 τως ἐτελείωσεν τῷ καταλογείῳ ὑπο[μνή]
+6 ματος, δ[ιʼ ο]ὗ ἀπαίτησιν ἐποιεῖτο ὧν ἔφασ[κεν]
+7 ὀφείλεσθαι αὐτῷ ὑπό τε τοῦ τ[οῦ ἀ]φήλικός μου υἱ[οῦ]
+8 Σαραπίωνος κατὰ μητέρα πάππου Σαραπίωνος
+9 καὶ ἀδελφοῦ αὐ[το]ῦ Διονυσίου ἔτι ἀπὸ τῶν ἔνπροσ
+10 θεν χρόνων ἀργυρικο͂ν κεφαλαίον, ποιοῦμα[ι τὴν]
+11 δαίουσαν ἀντίρησιν δηλῶ\ν/ ὑπονοεῖν περιλελύ
+12 σθαι ἣν θέλει γεγονέναι τοῦ δανείου ἀσφάλ[ε]ιαν
+13 ἔκ τε τοῦ πολυχρόνιον εἶναι καὶ ἐκ τοῦ ἐπεζηκέναι
+14 τὸν Σαραπίωνα ἔτεσιν δυσεὶν καὶ μετὰ τε[λ]ευτὴν
+15 αὐτοῦ μὲν θυγατέρα ἐμοῦ δὲ γενομένην γυ
+16 ναῖκα καὶ τοῦ ἀφήλικος Σαραπίωνος μητέρα Εὐβου
+17 λίαν ὁμοίως ἐπεζηκέναι ἔτεσειν ἕνδεκα κ[αὶ]
+18 μετὰ τὴν κἀκεἰνης τελευτὴν διαγεγον[έ]
+19 ναι ἄλλα ἔτη πέντε καὶ μὴ τεθαρρηκαίναι τ[ὸν]
+20 Θέωνα προελθεῖν, ἔτι δὲ καὶ τὴν Εὐβουλίαν
+21 ἡνίκα περιη πεπρακείναι τῷ προγεγραμμέ
+22 νῳ τοῦ Σαραπίωνος ἀδελφῷ Διονυσίῳ ὑπάρ
+23 χοντα τοῦ Σαραπίωνος ἀργυρίου ταλάντων
+24 ἓξ καὶ πρὸς ἐπὶ τῷ αὐτὸν ἀποδο͂ναι τοῖς τοῦ
+25 Σαραπίωνος δανισταῖς τὰ ὑπὸ αὐτοῦ ὀφειλόμε
+26 να, ὄντα δὲ τὸν Θέωνα τοῦ Σαραπίωνος ἑτέρων
+27 κεφαλαίων δανιστὴν ἐκῖνα μὲν κεκομίσθαι
+28 παρὰ \τοῦ/ Διονυσίου, τούτου δὲ μήθʼ ὅλως μεμνῆ
+29 σθαι. ὅθεν ἀξιῶ συντάξαι γράψαι τῷ τοῦ Ὀξυρυγ
+30 χείτου στρατηγῷ μεταδοῦναι τῷ Θέωνι τοῦ
+31 δε τοῦ ὑπομνήματος ἀντίγραφον ἵνʼ ἰδῇ
+32 ἄκυρον καθεστὸς ὃ οὐ δεόντως μετέδοκέ
+33 μοι διαστολικόν, σὺν οἷς ἐὰν βιβλιομαχή[σ]ῃ
+34 προσμεταδοι, μένουσαν δʼ ἐμοὶ τὴν πρὸς αὐ
+35 τὸν κρίσιν ἐφʼ ὧν δέον ἐστίν, ἀρκουμένου
+36 μου τῇδε τῇ διαστολῇ ὡς καθήκει. (ἔτους) ιε
+37 Αὐτοκράτορος Καίσαρος Τραιανοῦ Ἁδριανοῦ
+38 Σεβαστοῦ, Ἐπεὶφ α. σεσημ(είωμαι) Ἐπεὶφ α.
+
+English translation:
+1 [...]
+1 [...] from the city of Oxyrhynchus. Since
+2 Theon son of Pausiris, of
+3 the same city of Oxyrhynchus, has served on me through the
+4 strategus of the nome a copy of a memorandum, which he im-
+5 properly had executed at the record office,
+6 by which he made a demand for what he alleged
+7 to be owed to him both by the maternal grandfather of my minor son
+8 Sarapion, Sarapion,
+9 and his brother Dionysius, from former
+10 times, as capital sums of silver, I make the
+11 proper counter-statement, declaring that I suspect that the security
+12 of the loan which he claims to have existed has been discharged,
+13 both because it is of long standing and because
+14 Sarapion survived two years, and after his death
+15 his daughter, who became my wife
+16 and mother of the minor Sarapion, Eubu-
+17 lia, likewise survived eleven years, and
+18 after her death too another five years
+19 passed, and Theon did not venture
+20 to come forward; and further that Eubulia,
+21 while she was alive, sold to the aforesaid
+22 brother of Sarapion, Dionysius, property
+23 of Sarapion for six talents of silver
+24 and more, on condition that he should pay
+25 Sarapion's creditors the debts owed by him,
+26 and that Theon, being creditor of Sarapion for other
+27 capital sums, recovered those
+28 from Dionysius, but made no mention at all
+29 of this one. Therefore I ask you to give orders to write to the strategus of the Oxyrhyn-
+30 chite nome to serve on Theon a copy
+31 of this memorandum, so that he may know
+32 that the notice which he improperly served on me
+33 is void, and to serve also whatever he may write in reply,
+34 while my right to legal action against
+35 him remains in matters where it is needed, I contenting
+36 myself with this declaration, as is proper. Year 15
+37 of Imperator Caesar Trajanus Hadrianus
+38 Augustus, Epeiph 1. Signed, Epeiph 1.
+
+Notes:
+- Loan: the other capital sums Theon lent Sarapion and recovered from Dionysius (ll. 26-28).
+- Date: the text gives no date for this loan; the year of the document (AD 131) is recorded.
+- Place: the text does not say where the loan was made; the place of the document (HGV) is recorded.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.1.70-1,Agathus Daimon alias Enthesmus,Ptolemaeus alias Heraclides,3000,drachma (silver),4 obols (per mina per month) (2/3% per month),AD 207,,Oxyrhynchus,"Source: P.Oxy. 1 70 (https://papyri.info/ddbdp/p.oxy;1;70)
+
+Original Text:
+1 Αὐρη[λίῳ] Ἡραπίωνι τῷ κρατίστῳ ἐπιστρ(ατήγῳ)
+2 παρὰ Π[το]λεμαίου τοῦ καὶ Ἡρακλείδου ἀγορανο
+3 μήσαν[το]ς βουλευτοῦ τῆς Ὀξυρυγχειτῶν πόλ(εως).
+4 πᾶσα κυ̣[ρί]α ἔνγραφος συναλλαγὴ πίστιν καὶ
+5 ἀλήθ[ειαν ἔ]χει. [ὀ]φιλομένων μοι τοίνυν ὑ̈πὸ
+6 Ἀγαθ[οῦ Δαίμονος] τοῦ καὶ Ἐν̣θέσμου καθʼ ἰδιόγρα
+7 φον χ[ειρόγραφον αὐ]τοῦ γεγονὸς τῷ ιε (ἔτει) Φαρμοῦ
+8 θι [...] καὶ δ[ημοσ]ι̣[ω]θὲν ἀργυρίου δραχμῶν
+9 τρισχιλίων τόκ[ο]υ τετρωβωλιου ἐφʼ οἷς ἄλλοις τὸ
+10 χιρόγραφον περιέχει ὅπερ ἔστιν κύριον, συν
+11 έβη δὲ αποκατάστασίν με ποιήσασθαι πρὸς αὐ
+12 τὸν τῷ διελʼθόντι κ (ἔτει), Μεσορὴ ε, ἐπὶ Κο
+13 λωνιανοῦ τοῦ ἐπιστρατηγήσαντος περί
+14 τε ἑτέρου πράγματος καὶ περὶ τοῦ προκιμένου
+15 χιρογράφου, [...]. ἐμαυτῷ τετηρηκέναι
+16 περὶ τῆς ἀ̣[ποδόσ]ε̣ως [τῶν προκει]μ̣έ̣[ν]ων
+17 δραχμῶν [...]ων τό
+18 κων καταδ[...]α̣ρο̣νο
+19 μεν.. ὑπο[...]
+20 δραχμῶν χ[ιλίων ][...]
+21 ματος περιβ̣[...]
+22 κεφαλαίου ε[...]
+23 δεν̣ καταβ[...]
+24 [...]
+
+English translation:
+1 To Aurelius Herapion, the most excellent epistrategus,
+2 from Ptolemaeus alias Heraclides, former agorano-
+3 mus, councillor of the city of the Oxyrhynchites.
+4 Every valid written contract has credit and
+5 truth. Whereas there are owed to me, then, by
+6 Agathus Daimon alias Enthesmus under his own hand-
+7 written contract made in the 15th year, Pharmou-
+8 thi [...], and made public, three thousand drachmas
+9 of silver, at interest of four obols, besides the other terms the
+10 contract contains, which is valid, it hap-
+11 pened that I made a settlement with
+12 him in the past 20th year, Mesore 5, before Co-
+13 lonianus, the former epistrategus, concerning
+14 another matter and concerning the aforesaid
+15 contract, [...] having reserved for myself
+16 (the right) concerning the repayment of the aforesaid
+17 drachmas [...] of the inter-
+18 est [...]
+19 [...]
+20 one thousand drachmas [...]
+21 [...]
+22 of the capital [...]
+23 [...]
+24 [...]
+
+Notes:
+- Loan: 3000 drachmas owed at interest under a handwritten contract (ll. 5-10); the text says owed, not lent (debt acknowledgement, counted as a loan).
+- Date: Pharmouthi, year 15 of Septimius Severus and Caracalla (= March/April AD 207); the petition (AD 212/3) names year 20 under the epistrategus Colonianus.
+- Place: the text does not say where the loan was made; the place of the document (HGV) is recorded.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.1.98-1,Archias freedman of Amoitas son of Zoilus,Chaeremon son of Theon,700,drachma (silver),,AD 137,"50 monthly instalments of 15 drachmas from Hadrianos, year 22 of Hadrian (= Nov/Dec AD 137)",Oxyrhynchus,"Source: P.Oxy. 1 98 (https://papyri.info/ddbdp/p.oxy;1;98)
+
+Original Text:
+1 αλ̣ δ.
+2 Χαιρήμων Θέωνος τοῦ Θέωνος μητρὸς Τοτοεῦτος
+3 ἀπʼ Ὀξυρύγχων πόλεως Ἀρχίᾳ ἀπελευ
+4 θέρῳ Ἀμοιτᾶτος Ζωίλου ἀπὸ
+5 τῆς αὐτῆς πόλεως χαίρειν. ὁμολογῶ
+6 ἀπέχειν παρὰ σοῦ διὰ τῆς ἐπὶ τοῦ πρὸς
+7 Ὀξυρύγχων πόλει Σαραπείου Ἡρακλεί
+8 δου καὶ μετόχων τραπέζης ἀργ[υ]ρίου
+9 δραχμὰς ἑκατὸν ἑξήκοντα ὀκτὼ,
+10 λοιπὰς ὀφειλομένας μοι ὑπὸ σοῦ ἀφʼ ὧ[ν]
+11 ἐδάνισά σοι κατὰ χειρόγραφον διὰ τῆς
+12 αὐτῆς τραπέζης τῷ Ἀθὺρ μηνὶ [τοῦ]
+13 δευτέρου καὶ ἰκοστοῦ ἔτους θεοῦ Ἁδρια[νοῦ],
+14 ὃ ἔσ[τ]ι πρῶτον ἔτος Ἀντωνίνου Κ[αίσαρος]
+15 τοῦ κυρίου, ἀργυρίου δραχμῶν ἑπτακοσίω[ν]
+16 κεφαλαίου ἐν̣ καταβολῇ μηνῶ(ν) πεν
+17 τήκοντα ἀπὸ μηνὸς Ἁδριανοῦ τοῦ αὐ[τοῦ]
+18 ἔτους, ὡς τοῦ μηνὸς δραχμῶν δέκα πέ[ν]τε,
+19 μεθʼ ἃς ἀπὸ τῶν αὐτῶν δραχμῶν ἑπ[τα]
+20 κοσίων παρέσχον παρὰ σοῦ, καθʼ ἣν ἐξ[εδό]
+21 μην σοι διὰ τῆς αὐτῆς τραπέζης \ἀποχὴ[ν]/ τῷ Ἀ̣[θὺρ]
+22 μηνὶ τοῦ διελθόντος τετάρτου ἔτους, δρα[χμὰς]
+23 πεντακοσίας τριάκοντα δύο κ..[...]
+24 [...]α̣ν.[...]
+25 [...]
+
+English translation:
+1 (abbreviations, not resolved)
+2 Chaeremon son of Theon, grandson of Theon, his mother being Totoes,
+3 from the city of Oxyrhynchus, to Archias, freed-
+4 man of Amoitas son of Zoilus, from
+5 the same city, greeting. I acknowledge
+6 that I have received from you through the
+7 bank at the Sarapeum at the city of Oxyrhynchus, of Heracli-
+8 des and partners, of silver
+9 one hundred and sixty-eight drachmas,
+10 the remainder owed to me by you of the
+11 loan I made to you by a handwritten contract through the
+12 same bank in the month of Hathyr of the
+13 twenty-second year of the deified Hadrian,
+14 which is the first year of Antoninus Caesar
+15 the lord, of seven hundred drachmas of silver
+16 of capital, in repayment over fifty
+17 months from the month Hadrianos of the same
+18 year, at fifteen drachmas a month,
+19 after the five hundred and thirty-two drachmas of the same seven
+20 hundred which I had from you, for which I issued
+21 to you through the same bank a receipt in Hathyr
+22 of the past fourth year, drach[mas]
+23 five hundred and thirty-two [...]
+24 [...]
+25 [...]
+
+Notes:
+- Loan: 700 drachmas lent through the bank at the Sarapeum, Oxyrhynchus (ll. 10-18); the document (AD 141/2) is the receipt for the last 168 drachmas.
+- Date: Hathyr, year 22 of Hadrian = year 1 of Antoninus Pius (= Oct/Nov AD 137).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.1.130-1,Anoup,,15,solidus (gold),,AD 546-549,,Oxyrhynchus,"Source: P.Oxy. 1 130 (https://papyri.info/ddbdp/p.oxy;1;130)
+
+Original Text:
+1 ⳨ τῷ ἐμῷ ἀγαθῷ δεσπότῃ φιλοχρίστῳ φιλοπτόχῳ παν
+2 ευφήμῳ ὑ̈περφυεστάτῳ πατρικίῳ καὶ δουκὶ τῆς Θηβαίων
+3 χώρας Ἀπίωνι π(αρὰ) Ἀνοὺπ ἐλεεινοῦ ὑ̈μετέρου δούλου ἀπὸ τοῦ διαφέροντος
+4 αὐτῇ κτήματος καλουμένου Φάκρα.
+5 οὐδὲν ἄδικον ἢ ἀσεβὲς κέκτηται ὁ ἔνδοξος οἶκος τοῦ ἐμοῦ ἀγαθοῦ
+6 δεσπότου, ἀλλʼ ἀεὶ μεστός ἐστι ἐλεημοσύνης ἐπιρέον τοῖς ἐδέεσιν
+7 τὰ χριώδη. ὅθεν κἀγὼ ὁ ἐλεεινὸς δοῦλος τοῦ ἐμοῦ ἀγαθοῦ δεσπότου
+8 διὰ ταύτης \μοῦ/ τῆ[ς] παρούσης δεησεήσεως ἐλεηθῆναί μοι βούλομαι
+9 γνῶναι τὴν ὑ̈μετέραν δεσποτίαν ὡς ἐκ πατέρων καὶ ἐκ προγόνων δουλεύειν
+10 τῷ ἐμῷ ἀγαθῷ δεσπότῃ πληρῶσαι ἐτησίως τὰ δημόσια· καὶ θεοῦ
+11 βουλήσει ἐπὶ τῆς παρελθούσης ἑνδεκάτης ἰ̈νδ(ικτίονος) καὶ τῆς παρελθούσης
+12 δεκάτης θ̣εθνάναι τὰ ἐμὰ κτηναι, καὶ χρυσίον οὐκ ὀλίγον ἐδανισάμην
+13 \νο(μίσματα) ιε̣/ ἕως ὅτε δυνηθῶ ἀγοράσαι τὰ αὐτὰ κτήνη. {καὶ} ἀλλʼ ὅτε προσῆλθον
+14 τῷ ἐμῷ ἀγαθῷ δεσπότῃ καὶ ἐλεῆσαί με ἐλθον ἐνταῦθα, οἱ διαφέροντες
+15 τοῦ ἐμοῦ δεσπότου οὐκ ἠνεσχετο ποιῆσαι κατὰ τὴν κέλευσιν τοῦ ἐμοῦ ἀγαθοῦ
+16 δεσπότου. ἐὰν γάρ, δέσποτα, μὴ καταλάβεͅ με ὁ ἔλεός σου, οὐ δύνομαι σταθῆναι
+17 ἐν τῷ ἐμῷ κτήματι καὶ χρησιμεῦσαι τοῖς γεουχικοῖς πράγμασιν. καὶ
+18 παρακαλῶ καὶ κατικελεύω τὴν ὑ̈μετέραν δεσποτίαν προστάξαι ἐλεηθῆναί
+19 με, ἐπε[ι]δὴ εἰς μεγάλην ἀνατροπὴν ἦλθον. οὐκ ἔχω γὰρ ἄλλην κατα
+20 φυγὴν εἰ μὴ τὴν τοῦ δεσπότου Χριστοῦ καὶ τῆς ὑ̈μετέρας ὑ̈περοχῆς.
+21 καὶ ὕ̈μνους ἀθανάτους ἀναπέμψω τῷ δεσπότῃ Χριστῷ ὑ̈πὲρ τῆς
+22 ζωῆς τῆς ὑ̈μετέρας δεσποτίας καὶ τοῦ ὑ̈περφυεστάτου αὐτῆς υἱ̈οῦ
+23 Στρατηγίου δεσπότου. ⳨
+
+English translation:
+1 ⳨ To my good master, lover of Christ, lover of the poor, all-
+2 renowned, most magnificent patrician and dux of the Thebaid
+3 region, Apion, from Anoup, your wretched slave, from the
+4 estate belonging to it called Phakra.
+5 The glorious house of my good master possesses nothing unjust or impious,
+6 but is always full of mercy, pouring out to the needy
+7 what they need. Therefore I too, the wretched slave of my good master,
+8 through this present petition wish to be shown mercy,
+9 (and) to make known to your lordship that from my fathers and forefathers I have served
+10 my good master, paying the public taxes every year; and by God's
+11 will, in the past eleventh indiction and the past
+12 tenth my animals died, and I borrowed no little gold,
+13 (15 solidi), until I could buy the same animals. But when I approached
+14 my good master and (asked him) to have mercy on me, (and) came here, the agents
+15 of my master would not consent to act according to the order of my good
+16 master. For if, master, your mercy does not reach me, I cannot stand
+17 on my holding and be useful to the landowner's affairs. And
+18 I beseech and implore your lordship to order that mercy be shown
+19 to me, since I have come to great ruin. For I have no other
+20 refuge but that of the Lord Christ and of your eminence.
+21 And I will send up undying hymns to the Lord Christ for the
+22 life of your lordship and of its most magnificent son
+23 Strategius, master. ⳨
+
+Notes:
+- Loan: 15 solidi borrowed after the borrower's animals died (ll. 11-13); the lender is not named.
+- Date: the animals died in the past 10th and 11th indictions (AD 546/7, 547/8) and the loan followed; the petition is dated AD 548/9 (?) by HGV.
+- Place: the text does not say where the loan was made (the borrower is from the estate Phakra); the place of the document (HGV) is recorded.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.1.133-1,Phoebammon son of Pekysius; Anoup son of Aritsi; Menas; Koulaetb son of Iohannes; Anoup son of Priscus; Heraclides son of Palmas; Phib son of Iulius,Flavius Apion,200,artaba (wheat),,AD 550,"until Payni of the current year 227 and 196 (Oxyrhynchite era), indiction 14 (= May/June AD 551)",Oxyrhynchus,"Source: P.Oxy. 1 133 (https://papyri.info/ddbdp/p.oxy;1;133)
+
+Original Text:
+(recto)
+1 ⳨ β[ασι]λεί[ας] τοῦ θειοτά[το]υ καὶ εὐσεβ(εστάτου) ἡμῶν δεσπότου Φλ(αουίου) Ἰουστινιανοῦ τοῦ αἰωνίου Αὐγού[σ]του
+2 καὶ Αὐτοκρ(άτορος) ἔτους κ[δ], τοῖς τὸ η μετὰ τὴν ὑ̈πατίαν Φλ(αουίου) Βασιλίου τοῦ λαμπροτάτου,
+3 Φα[ῶ]φι κβ, ἰ̈νδ(ικτίονος) ιδ, ἐν Ὀξυρύγχ(ων) πόλ(ει). ⳨
+4 Φλαουίῳ Ἀπίωνι τ[ῷ] πανευφήμῳ καὶ ὑ̈περφυεστάτῳ ἀπὸ ὑπάτων ὀρδιναρίων
+5 γεουχοῦντι καὶ ἐνταῦθ[α τ]ῇ λαμπρᾷ Ὀξυρυγχιτῶν πόλει, διὰ Μηνᾶ οἰκέτου τοῦ ἐπερωτῶντος
+6 καὶ προσπορίζοντος τῷ ἰδίῳ δεσπότῃ τῷ αὐτῷ πανευφήμῳ ἀνδρὶ τὴν ἀγωγὴν καὶ
+7 ἐνοχήν, τὸ κοινὸν τῶν πρωτοκωμητῶν τῆς κώμης Τάκονα τοῦ Ὀξυρυγχίτου
+8 νομοῦ, παγαρχουμένη[ς ὑ]πὸ τοῦ οἴκου τῆς ὑ̈μῶν ἐνδοξότητος, διʼ ἡμῶν Αὐρηλίων
+9 Φοιβάμμωνος μείζον[ος], υἱ̈οῦ Πεκυσίου, καὶ Ἀνοὺπ υἱ̈οῦ Ἀριτσί, καὶ Μηνᾶ ἀδελφοῦ αὐτοῦ,
+10 καὶ Κουλαὴτ̣β υἱ̈οῦ Ἰωάννου, καὶ Ἀνοὺπ υἱ̈οῦ Πρίσκου, καὶ Ἡρακλείδου υἱ̈οῦ Παλμᾶ̣, καὶ Φὶβ υἱ̈οῦ
+11 Ἰουλίου, καὶ λοιπῶν κωμαρχῶν ταύτης, χαίρειν. ὁμολογοῦμεν ἐσχηκέναι παρὰ τῆς
+12 ὑ̈μῶν ἐνδοξότητος ἐν χρήσει καὶ παραμεμετρῆσθαι ἀπὸ γενήματος τῆς παρούσης
+13 τεσσαρεσκαιδεκάτης ἰ̈νδ(ικτίονος) εἰς σπερμοβολίαν τῶν ἡμῶν ἀρουρῶν καρπῶν τῆς
+14 σὺν θεῷ πεντεκαιδεκάτης ἐπινεμήσεως σίτου ῥυπαροῦ ἐκτὸς διαπίσματος
+15 καγκέλλῳ ἀρτάβας διακοσίας τὰς καὶ δοθείσας ἡμῖν διὰ τῶν κληρονόμων τοῦ
+16 μακαρίου Μηνᾶ υἱ̈οῦ Ἀ̣σκλᾶτος ναυκλήρου τοῦ αὐτοῦ ἐνδόξ(ου) ὑμῶν οἴκου, γί(νονται) σί(του) (ἀρτάβαι) σ καγκέλλ(ῳ)·
+17 ὅνπερ σῖτον νέον κεκοσκινευμένον καγκέλλῳ ᾧ παρειλήφαμεν ἐπάναγκες
+18 ἀποδώσομεν τῇ ὑμῶν ἐνδοξ(ότητι) μετὰ καὶ τοῦ φορικοῦ ἡμῶν φόρου ἐν τῷ Παῦνι μηνὶ
+19 τοῦ ἐνεστῶτος ἔτους σκζ ρϙϛ τῆς αὐτῆς παρούσης τεσσαρεσκαιδεκάτης ἰ̈νδ(ικτίονος)
+20 ἐκ νέων καρπῶν τῆς σὺν θεῷ πεντεκαιδεκάτης ἐπινεμ(ήσεως), ἀνϋπερθέτως κινδύνῳ τῶν
+21 ἡμῖν ὑπαρχόντων ὑποκειμ(ένων) εἰς τοῦτο. κύρ(ιον) τὸ γραμμ(άτιον) ἁπλ(οῦν) γραφ(έν), καὶ ἐπερ(ωτηθέντες) ὡμολ(ογήσαμεν). ⳨
+22 τὼν κοινὼν τῶν προτοκομητο͂ν τῆς κώμης Τάκονα τοῦ Ὀξυρυγχίτου νομοῦ διὰ τῶν προγεγραμ(μένων)
+23 ἐν αὐτῇ ὀνομ(άτων) τοῦτο τὸ γραμμάτιον πρὸς των ἡμῶν ἐνδοξ(ότητα) τόν τε σῖτον ἀρταβῶν διακοσίον
+24 ῥυπαροῦ ἐκτὸς διαπίσματος καγέλ[λ]ῳ, γί(νονται) σίτ(ου) ῥ(υπαροῦ) (ἀρτάβαι) σ, καὶ ἀποδώσωμεν ἐν τῇ εἰρημένον προθ(εσμίᾳ)
+25 καὶ συμφωνῖ ἡμῖν πάντα τὰ ἐγεγραμμέ(να) ὡς πρόκιται, ⳨ καὶ ἐπερωτηθέντες ὡμολογήσαμεν
+26 καὶ ἀπελήσαμεν. Αὐρήλιος Ἡρακλίδη[ς] γραμ(ματεὺς) κώμης Τάκονα ἀξιωθεὶς ἔγραψα ὑ̈πὲρ αὐτοὺς
+27 ἀγραμάτον ὄντων. ⳨
+28 ☧ di emu F̣ịḷoxenu etelioth(e). Φ(αῶφι) κγ (ἰνδι)κ(τίονος) ιδ.... ⳨
+(verso)
+29 ⳨ γρ(αμμάτιον) γενόμ(ενον) π(αρὰ) τῶν πρωτ[ο]κωμητ(ῶν) τῆς κώμ(ης) Τάκονα
+30 λόγ(ῳ) σπερμ(οβολίας) καρπῶν ιε ἐπινεμήσεως, σί(του) κ(αγκέλλῳ) (ἀρταβῶν) σ.
+
+English translation:
+(recto)
+1 ⳨ In the reign of our most divine and most pious master Flavius Justinian, eternal Augustus
+2 and Imperator, year 24, in the 8th (year) after the consulship of Flavius Basilius, vir clarissimus,
+3 Phaophi 22, indiction 14, in the city of Oxyrhynchus. ⳨
+4 To Flavius Apion, the all-renowned and most magnificent former consul ordinarius,
+5 landowner also here in the splendid city of the Oxyrhynchites, through Menas, servant, who makes the stipulation
+6 and acquires for his own master, the same all-renowned man, the right of action and
+7 obligation, the community of the protokometai of the village of Takona of the Oxyrhynchite
+8 nome, whose pagarchy is held by the house of your glory, through us, the Aurelii
+9 Phoebammon, meizon, son of Pekysius, and Anoup son of Aritsi, and Menas his brother,
+10 and Koulaetb son of Iohannes, and Anoup son of Priscus, and Heraclides son of Palmas, and Phib son of
+11 Iulius, and the other komarchs of this (village), greeting. We acknowledge that we have received from
+12 your glory as a loan, and have had measured out to us from the produce of the present
+13 fourteenth indiction, for the sowing of our arouras for the crops of the
+14 fifteenth indiction, with God's help, of uncleaned wheat, without the sifting allowance,
+15 by the cancellus measure, two hundred artabas, which were also given to us through the heirs of the
+16 late Menas son of Asclas, shipmaster of your same glorious house, total 200 artabas of wheat by the cancellus measure;
+17 which wheat, new and sifted, by the cancellus measure by which we received it, we will of necessity
+18 return to your glory, together with our rent, in the month of Payni
+19 of the present year 227 (and) 196, of the same present fourteenth indiction,
+20 from the new crops of the fifteenth indiction, with God's help, without delay, at the risk of
+21 our property, which is pledged for this. The document, written in a single copy, is valid, and in answer to the formal question we have acknowledged it. ⳨
+22 We, the community of the protokometai of the village of Takona of the Oxyrhynchite nome, through the aforesaid
+23 persons named in it, (have made) this document to your glory, and (have received) the wheat, two hundred artabas,
+24 uncleaned, without the sifting allowance, by the cancellus measure, total 200 artabas of uncleaned wheat, and we will return it at the stated term,
+25 and all that is written is agreeable to us as aforesaid, ⳨ and in answer to the formal question we have acknowledged
+26 and ἀπελήσαμεν (meaning unclear). I, Aurelius Heraclides, scribe of the village of Takona, having been asked, wrote for them,
+27 as they are illiterate. ⳨
+28 ☧ Executed through me, Philoxenus. Phaophi 23, indiction 14 [...] ⳨
+(verso)
+29 ⳨ Document made by the protokometai of the village of Takona
+30 for the sowing of the crops of the 15th indiction, 200 artabas of wheat by the cancellus measure.
+
+Notes:
+- Loan: 200 artabas of seed wheat lent by the estate of Flavius Apion to the village headmen of Takona (ll. 11-21); Menas is the brother of Anoup son of Aritsi.
+- Date: Phaophi 22, indiction 14, year 24 of Justinian (= 19 October AD 550).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
