@@ -4,6 +4,7 @@ Loan-like transactions found while reviewing sources but not entered in `ald.csv
 
 | Source | Date | Place | What | Why not entered |
 |---|---|---|---|---|
+| [P.Oxy. 7 1031](https://papyri.info/ddbdp/p.oxy;7;1031) | AD 228 | Oxyrhynchus | Aurelius Biaius son of Biaius applies for a state seed loan of 30 artabas of wheat for 30 arouras near Sko | Application only; the loan is not shown to be made |
 | [P.Oxy. 8 1130](https://papyri.info/ddbdp/p.oxy;8;1130) | AD 484 | Oxyrhynchite nome | Aurelius Abraam son of Ision receives from Aurelius Isak son of Nilus, merchant of Alexandria, 10 solidi "as a loan", with 20 bundles of flax "as interest", repayable in Phaophi; an earlier contract between them stays valid (sum not given) | Called a loan, but the docket reads "10 solidi for 20 bundles of flax": possibly an advance purchase of flax (Hansen: need review) |
 | [P.Oxy. 8 1158](https://papyri.info/ddbdp/p.oxy;8;1158) | III cent. AD | Alexandria | Letter: the baker Aretion is to pay over 4 talents "which he took from us" in Alexandria | Loan or payment unclear |
 | [P.Oxy. 8 1125](https://papyri.info/ddbdp/p.oxy;8;1125) | II cent. AD | Oxyrhynchus | Lease of land: the lessor Dionysius advances the lessee 200 drachmas (πρόχρησις) at 1 drachma per mina per month, repayable in Payni | Advance inside a lease (Hansen: need review) |
