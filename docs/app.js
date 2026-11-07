@@ -7,8 +7,8 @@ const $ = (id) => document.getElementById(id);
 const state = { all: [], picked: {}, sortKey: 'id', sortDir: 1, shown: [] };
 
 // CSV columns (in order) and the columns shown in the table.
-const COLS = ['id', 'borrower', 'lender', 'amount', 'currency', 'interest', 'date', 'duration', 'place', 'source'];
-const LIST_COLS = COLS;
+const COLS = ['id', 'borrower', 'lender', 'amount', 'currency', 'interest', 'date', 'duration', 'place', 'notes'];
+const LIST_COLS = COLS.slice(0, -1);
 
 // ---------- data ----------
 
@@ -142,11 +142,17 @@ function amountValue(s) {
   if (!m) return NaN;
   return m[4] ? m[4] / m[5] : Number(m[1]) + (m[2] ? m[2] / m[3] : 0);
 }
+// Notes: line breaks kept; the first line 'Source: <citation> (<link>)' shows the citation as a link.
+function fmtNotes(s) {
+  return esc(s).replace(/^Source: (.+?) \((https?:\/\/[^\s)]+)\)$/m,
+    (m, cite, url) => `Source: <a href="${url}" target="_blank" rel="noopener">${cite}</a>`).replace(/\n/g, '<br>');
+}
 const fmtAmount = (s) => String(s).replace(/(^| )(\d+)(?=$| [^\d])/g, (m, sp, w) => sp + Number(w).toLocaleString());
 
 // One field of a loan as HTML.
 function cellHtml(l, c) {
   if (c === 'amount') return fmtAmount(l.amount);
+  if (c === 'notes') return fmtNotes(l.notes);
   return esc(l[c]);
 }
 

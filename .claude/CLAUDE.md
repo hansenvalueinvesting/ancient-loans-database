@@ -24,8 +24,9 @@ below applies to any source as the database expands.
 ## Architecture
 - **Data: `ald.csv`** in the repo root, the only home of the data (Hansen, Oct 2026: moved from
   Supabase, like the taxation database). Columns in this order (Hansen, Nov 2026, standardized for analysis:
-  charts, maps): id, borrower, lender, amount, currency, interest, date, duration, place, source (amount and currency
-  separate so downloaded data is usable). ID = `ALD-<citation>-<n>`, e.g. `ALD-P.Oxy.3.506-1` (Hansen, Nov 2026). Formats: `reference/codebook.md`. UTF-8, RFC 4180 quoting,
+  charts, maps): id, borrower, lender, amount, currency, interest, date, duration, place, notes (amount and currency
+  separate so downloaded data is usable; source column removed: notes = hyperlinked source, original text,
+  English translation). ID = `ALD-<citation>-<n>`, e.g. `ALD-P.Oxy.3.506-1` (Hansen, Nov 2026). Formats: `reference/codebook.md`. UTF-8, RFC 4180 quoting,
   rows sorted by id. Edit it with a script in the scratch folder; commit with the README change-log entry.
   The old Supabase project (`zzlrdlkdngxkkcrtolpx`, paused): Hansen asked to delete it (Nov 2026); the connector has no
   delete tool, so Hansen deletes it in the Supabase dashboard.
@@ -239,8 +240,8 @@ by Claude under that grant (Roman-world pass):
 ## Status
 - Nov 2026 RESTART (Hansen): "clear all the data ... and restart building it in a more organized way". `ald.csv`
   emptied (header only); all previous data in `ald1.csv`. New structure (Hansen): 10 fields, see Architecture and
-  the codebook (period, source_url, notes dropped; year renamed date). Site updated to the 10 fields (place
-  filter only). New ID system decided (see Architecture). Everything else in
+  the codebook (period, source, source_url dropped; source now in notes; year renamed date). Site updated (place
+  filter only; notes on the loan page, source line linked). New ID system decided (see Architecture). Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

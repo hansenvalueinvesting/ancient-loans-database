@@ -13,7 +13,7 @@ Field definitions for the Ancient Loans Database. The data is `ald.csv` (reposit
 
 ## loans
 
-Structure set by Hansen (Nov 2026), standardized for analysis (charts, maps). Ten fields, in this order (Hansen: amount and currency in separate columns so downloaded data is usable).
+Structure set by Hansen (Nov 2026), standardized for analysis (charts, maps). Ten fields, in this order (Hansen: amount and currency in separate columns so downloaded data is usable; the source is the first part of `notes`).
 
 | Field | Definition | Example |
 |---|---|---|
@@ -26,4 +26,4 @@ Structure set by Hansen (Nov 2026), standardized for analysis (charts, maps). Te
 | `date` | Year the loan was made, `AD n` or `n BC` (no year 0); uncertain: the range of possible years `AD 101-200`, `24-23 BC`, `30 BC-AD 14`. An earlier loan named in a later document gets its own year; if the source does not date the loan, the document's year | `AD 57`, `100 BC`, `AD 101-200` |
 | `duration` | Term of the loan as stated; a date as the document writes it, followed by its BC/AD equivalent in brackets | `6 months`, `until Phamenoth 30, year 20 of Antoninus Pius (= 26 March AD 157)` |
 | `place` | Where the loan was made, by its ancient name, Latinized (`Heracleopolis`); a village may name its district in brackets | `Oxyrhynchus`, `Sinary (Oxyrhynchite nome)` |
-| `source` | Citation of the primary source in standard form (papyri: Checklist, arabic volume numbers; inscriptions: corpus citation; literary texts: author, work, passage). Required | `P.Oxy. 3 506`, `IG I³ 369`, `Dem. 35.10` |
+| `notes` | Three sections, in this order, separated by a blank line (Hansen, Nov 2026): (1) `Source: <citation> (<link>)`: the citation of the primary source in standard form (papyri: Checklist, arabic volume numbers; inscriptions: corpus citation; literary texts: author, work, passage), required, followed by the link to its online edition in brackets if there is one; shown on the loan's page as a link; (2) `Original Text:` and the original text, line by line, as in the edition; (3) `English translation:` and a faithful translation. Shown only on the loan's own page | `Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)`<br><br>`Original Text:`<br>`...`<br><br>`English translation:`<br>`...` |
