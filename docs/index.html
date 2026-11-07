@@ -15,18 +15,14 @@
 
   <h2>Filters</h2>
   <p>
-    <label>From year <input id="f-from" type="text" size="8"></label>
-    <label>To year <input id="f-to" type="text" size="8"></label>
-  </p>
-  <p>
-    <label>Place <input id="f-place" list="dl-place" placeholder="Type to search, Enter to add"></label>
-    <span id="picked-place"></span>
+    <nobr><label>From&nbsp;year&nbsp;<input id="f-from" type="text" size="8"></label></nobr>&emsp;
+    <nobr><label>To&nbsp;year&nbsp;<input id="f-to" type="text" size="8"></label></nobr>&emsp;
+    <nobr><label>Place&nbsp;<input id="f-place" list="dl-place" size="24" placeholder="Type to search, Enter to add"></label></nobr>
+    <span id="picked-place"></span>&emsp;
     <datalist id="dl-place"></datalist>
-  </p>
-  <p>
-    <label>Search <input id="f-search" type="search" placeholder="ID, person, volume, currency, date, place"></label>
-    <button id="btn-reset" type="button">Reset</button>
-    <button id="btn-csv" type="button">Download CSV</button>
+    <nobr><label>Search&nbsp;<input id="f-search" type="search" size="36" placeholder="ID, person, volume, currency, date, place"></label></nobr>&emsp;
+    <nobr><button id="btn-reset" type="button">Reset</button>
+    <button id="btn-csv" type="button">Download CSV</button></nobr>
   </p>
 
   <p id="status" role="status">Loading…</p>
