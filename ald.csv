@@ -1,4 +1,54 @@
 id,borrower,lender,volume,currency,interest,date,duration,place,notes
+ALD-P.Dubl.6-1,Harthoonis son of Harthoonis,Heraclas,,,,AD 99,,Oxyrhynchus,"Source: P.Dubl. 6 (= P.Oxy. 2 343) (https://papyri.info/ddbdp/p.dubl;;6)
+
+Original Text:
+1 [...]
+1 .[...]....τ̣ο̣ς̣ δ̣..ο̣υ..
+2 τετ̣α̣γ̣μέν̣ου ......χ̣ι
+3 ὧν ὑπέθετο Ἁρθοῶνις
+4 Ἁ̣ρθοώνιος τῷ Ἡ̣ρ̣α̣
+5 η̣ρ̣α̣κλα κατὰ δανείου
+6 συνγραφὴν γεγονυῖαν
+7 διὰ τοῦ ἐν τῇ αὐτῇ πόλει
+8 μνημονε̣ί̣ο̣υ̣ τ̣ῷ ἐνεστ(ῶτι)
+9 μηνὶ Σεβαστῷ̣ περὶ
+10 Ψῶβθιν ἄνω τοπ(αρχίας)
+11 ἐκ τοῦ Θεοδότου κλ(ήρου)
+12 κατοικικῆς γῆς (ἀρουρῶν)
+13 δύο τετάρτου, διὸ γρά
+14 φομεν ὑμεῖν ἵνʼ εἰδῆτ(ε).
+15 ἔρρω(σθε). (ἔτους) γ
+16 Αὐτοκράτορος Καίσαρος
+17 Νέρουα Τραια̣νοῦ Σεβαστ(οῦ)
+18 [Γερ]μ̣ανικοῦ, [μη]ν(ὸς) Σεβαστοῦ ..
+19
+
+English translation:
+1 [...]
+1 [...]
+2 paid [...]
+3 which Harthoonis
+4 son of Harthoonis mortgaged to Hera-
+5 clas by a loan
+6 contract made
+7 through the record office in the same city
+8 in the present
+9 month Sebastos, near
+10 Psobthis in the upper toparchy,
+11 in the kleros of Theodotus,
+12 two and a quarter arouras of catoecic land; therefore we
+13 write to you
+14 so that you may know.
+15 Farewell. Year 3
+16 of Imperator Caesar
+17 Nerva Trajan Augustus
+18 Germanicus, month Sebastos [...]
+19
+
+Loan in ll. 3-12; notice of the mortgage securing it.
+Date: Sebastos, year 3 of Trajan (= August/September AD 99).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
 ALD-P.Oxy.1.68-1,Sarapion; Dionysius,Theon son of Pausiris,,,,AD 112-113,,Oxyrhynchus,"Source: P.Oxy. 1 68 (https://papyri.info/ddbdp/p.oxy;1;68)
 
 Original Text:
@@ -384,7 +434,7 @@ Original Text:
 25 καὶ συμφωνῖ ἡμῖν πάντα τὰ ἐγεγραμμέ(να) ὡς πρόκιται, ⳨ καὶ ἐπερωτηθέντες ὡμολογήσαμεν
 26 καὶ ἀπελήσαμεν. Αὐρήλιος Ἡρακλίδη[ς] γραμ(ματεὺς) κώμης Τάκονα ἀξιωθεὶς ἔγραψα ὑ̈πὲρ αὐτοὺς
 27 ἀγραμάτον ὄντων. ⳨
-28 ☧ di emu F̣ịḷoxenu etelioth(e). Φ(αῶφι) κγ (ἰνδι)κ(τίονος) ιδ.... ⳨
+28 ☧ di emu F̣ịḷoxenu etelioth(e). Φ(αῶφι) κγ (ἰνδι)κ(τίονος) ιδ .... ⳨
 (verso)
 29 ⳨ γρ(αμμάτιον) γενόμ(ενον) π(αρὰ) τῶν πρωτ[ο]κωμητ(ῶν) τῆς κώμ(ης) Τάκονα
 30 λόγ(ῳ) σπερμ(οβολίας) καρπῶν ιε ἐπινεμήσεως, σί(του) κ(αγκέλλῳ) (ἀρταβῶν) σ.
@@ -425,5 +475,2323 @@ English translation:
 
 Loan in ll. 11-21; Menas is the brother of Anoup son of Aritsi.
 Date: Phaophi 22, indiction 14, year 24 of Justinian (= 19 October AD 550).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.237-1,Chaeremon son of Phanias,Dionysia daughter of Chaeremon,,talent,,AD 183-184,,Oxyrhynchus,"Source: P.Oxy. 2 237 (https://papyri.info/ddbdp/p.oxy;2;237)
+
+Original Text:
+21 γον γεγενῆσθαι τοῦ γὰρ Ἀσκλη[πιάδ]ου τῷ κδ (ἔτει) [ἀ]παιτοῦ[ν]τος καὶ μὴ ἀπολαμβάνοντος τὸ ὤφλημα ἀν̣α̣γκάσθαι
+22 με̣ π̣α̣ρ̣ὰ τ[οῦ] πατρὸς τὸ̣ προ...σ̣ο̣μ̣.[...]....α̣π̣ου.. ἐπισταμένου ὅτι οὐ περιόψομαι ἀποσπώμενα τὰ κατεχόμε
+23 νά μοι ἐ̣ν̣τ̣ί̣θεσθαι ε̣.σ̣τ̣ι̣α̣ο̣π..... α̣ὐ̣τὰ ταῦτα τὰ ὑπολειπόμενα μόνα ἐμοῦ μὲν τῷ δικαίῳ χρ....α τῷ δὲ
+24 πατρὶ ε̣...ο̣[...]π̣αν̣κα[...]α α̣....... πά̣ν̣τα ὀφειλόμενα λοιπὰ τιμῆς αὐτῶν μό̣ν̣α̣ κα̣ὶ̣ ...κ̣η̣...ο̣υ̣...αλα πρ̣ο̣ς̣...
+25 ὅλ̣α (τάλαντα) ὀ[κ]τ̣ὼ̣ μετὰ τῶν τ̣ό̣κ̣[ων ][...]......ν̣ω̣ν̣ ὑ̣π̣ὲ̣ρ̣ τῆς οὐσίας ἀπόδοσιν τὰ ἄλλα αὐτὸς ἔχῃ εἰς ὃ βούλεται. καὶ πάλιν
+26 τετε̣λ̣ο̣.[...].... [ὁ]μολογήμα̣τ̣α̣ γεγ̣ενῆσθαί μ[οι] πρὸς αὐτὸν τῷ κδ (ἔτει) διὰ δημοσίου σ̣υ̣ν̣χρηματισμοῦ αὐτῷ δανείσας
+27 ..τα (τάλαντα) .[...].. ἐξ α[ὐ]τῶν ἀποδοῦναι μὲν τῷ Ἀσκληπιάδῃ τὰ ὀφειλόμενα καὶ τοὺς τόκους ἔχειν δὲ τὰ λοιπὰ εἰς̣
+28 ὅ τι ἐὰν τ[...]................ρ̣ ἐμοῦ τῇ προσόδῳ τῶν ὑπαρχόντων παρ̣α̣....α̣ι̣ δημόσια καὶ δαπάνας
+29 ἕ̣ω̣ς̣ ε̣μ̣μ̣ε̣.[...]ου κα̣ι̣.........[...]. δανειστ[ῶ]ν τόκοι, ἀπὸ δὲ τῶν ἀπὸ τοῦ κε̣ (ἔτους) ἐτήσια ε..ε̣ι̣ω̣ν καὶ κεφάλαιον (τάλαντα) ζ
+
+English translation:
+21 [...] to have happened; for when Asclepiades in the 24th year demanded and did not receive the debt, I was forced
+22 by my father [...], since he knew that I would not allow the property held
+23 by me to be torn away, to deposit (?) [...] these very remaining things alone, by my right [...], and to my
+24 father [...] all the remainder of their price owed only and [...]
+25 in all eight talents with the interest [...] for the property, the repayment; the rest he was to have for whatever he wished. And again
+26 [...] that agreements were made by me with him in the 24th year through public registration, having lent him
+27 [...] talents [...], out of which he was to pay Asclepiades the debts and the interest and to have the rest for
+28 whatever [...] me, from the revenue of the property [...] public dues and expenses
+29 until [...] interest of the creditors, and from the (revenue) from the 25th year yearly [...] and capital 7 talents
+
+Excerpt: column 4, ll. 21-29 of a long petition (AD 186); loan in ll. 26-27.
+Dionysia and her father Chaeremon son of Phanias are named in column 6, l. 12.
+Date: year 24 of Commodus.
+Place: not stated; the place of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.241-1,Thomphyas,Thonis son of Harpaesis,400 [...],drachma,,AD 98-99,,Oxyrhynchus,"Source: P.Oxy. 2 241 (https://papyri.info/ddbdp/p.oxy;2;241)
+
+Original Text:
+1 Καικιλλις Κλήμης
+2 τῷ ἀγρανόμῳ χ(αί)ρειν.
+3 ἀνάγραψον δανίου
+4 συνγραφὴν Θώνιος
+5 τοῦ Ἁρπαήσιος τοῦ
+6 Πετσερω̣θώνιος
+7 μητρὸς Πετοσίριος
+8 τῆς Ἁρπαήσιος
+9 τῶν ἀπʼ Ὀξυρύγχ(ων)
+10 πόλ(εως), ἀρχειπαστω
+11 φώρου Θοήριδ̣ος
+12 καὶ Ἤσιδος καὶ Σ[α]
+13 ράπιδος καὶ Ὠσί[ριος]
+14 καὶ τῶν συννά
+15 ων θεῶν μεγίσ
+16 των, ὑποθήκης
+17 τρίτου μέρους
+18 οἰκίας, ἐν ᾗ αἴθριον,
+19 καὶ αὐλῆς καὶ εἰ
+20 σώδων καὶ ἐξόδων
+21 καὶ τῶν συνκυρόν
+22 των τῶν ὄντων
+23 ἐπʼ ἀμφόδ(ου) δρώμου
+24 Γυμνασίου πρὸς
+25 τῷ Ὠσιρίῳ καὶ τῷ
+26 Ταμῳ, οὗ ὑπεθε
+27 τω αὐτῷ ὁ ὁμογνή
+28 σιος αὐτοῦ ἀδελ(φὸς)
+29 Θομφύας πρός ται
+30 ἃς εὐχρήστη̣σαν
+31 αὐτῷ κατὰ χιρόγρα
+32 φον καὶ δι̣αιαγραφὴν
+33 τραπέζης δραχμὰς
+34 τετρακοσί[ας ][...]
+35 καὶ α[...]
+36 [...]
+
+English translation:
+1 Caecilius Clemens
+2 to the agoranomus, greeting.
+3 Register a loan
+4 contract of Thonis
+5 son of Harpaesis, grandson of
+6 Petserothonis,
+7 his mother being Petosiris
+8 daughter of Harpaesis,
+9 of the city of Oxyrhynchus,
+10 chief pastophorus
+11 of Thoeris
+12 and Isis and Sa-
+13 rapis and Osiris
+14 and the associated
+15 most great gods,
+16 for the mortgage
+17 of a third part
+18 of a house, with a hall,
+19 and of a court and en-
+20 trances and exits
+21 and appurtenances,
+22 situated
+23 in the quarter of the Gymnasium street, next
+24 to the Osireion and the
+25 Tamo(?), which was mortgaged
+26 to him by his full
+27 brother
+28 Thomphyas
+29 for the
+30 drachmas they lent
+31 him by a note of
+32 hand and bank pay-
+33 ment,
+34 four hundred [...]
+35 and [...]
+36 [...]
+
+Loan in ll. 26-34; registration of the mortgage securing it.
+Date: not stated; the year of the document.
+Place: not stated; the place of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.243-1,Dionysius alias Amois son of Phanias alias Amois,Didymus son of Sarapion,1300,drachma (silver),1 drachma per mina per month (1% per month),AD 79,"12 months from Pharmouthi, year 11 of Vespasian (= March/April AD 79)",Oxyrhynchus,"Source: P.Oxy. 2 243 (https://papyri.info/ddbdp/p.oxy;2;243)
+
+Original Text:
+(recto)
+1 Χαιρήμων Χαιρήμωνος Μαρωνεὺς ὁ συνεσ
+2 ταμένος ὑπὸ Κ[λα]υδίου Ἀντονίνου τῷ ἀγρανο
+3 μῳ χαίρειν. ἀ̣ν̣[άγ]ραψαι συνγραφης ὑποθήκης
+4 Διδύμου τοῦ Σαραπίωνος τοῦ Διδύμου μητρὸς
+5 Χαριτ̣[οῦ]τ̣ο̣ς τῆς Πε̣τοσ̣ίου τῶν ἀπʼ Ὀξυρύγχων
+6 πόλεως, [τ]ῶν ὑπαρχόντων τῷ ὑποτιθεμένῳ Διονυ
+7 σίῳ τῷ κα[ὶ] Ἀμοι Φανίου τοῦ καὶ Ἀμοι τοῦ Φανίου
+8 μητρ[ὸ]ς Ζ̣η̣ναρ[ί]ου τῆς Διονυσίου τῶν ἀπὸ τῆς
+9 αὐτ[ῆς πό]λεως, καὶ μεμερισμένων αὐτῷ ὑπὸ τῆς
+10 μη[τ]ρὸς Ζ̣[ην]αρί[ο]υ, ὁπότε περιῆν, διʼ ἧς ἐθετω περὶ
+11 κα[τ]αθ̣έσ[εω]ς̣ διὰ τοῦ ἐν τῇ αὐτῇ πόλει μνημονίου
+12 τῷ Μεχεὶρ μηνὶ τοῦ δεκάτου ἔτους Νέρωνος
+13 [ὁ]μ[ολ]ογίας, ἀπὸ τῆς ὑπαρχούσης αὐτῇ ἐπὶ τοῦ πρὸς
+14 Ὀξυρύγχων πόλει Σαραπίου ἐπʼ ἀμφόδου Ἑρμαίου [οἰ]
+15 κ̣ί̣ας ἐν [ᾗ] πύργος δίστεγος καὶ προπυλὼν
+16 καὶ ἐξέδρ[α][ κ]αὶ ἔθριον καὶ καμ̣ά̣[ρα κ]αὶ τῆς προσ
+17 ο̣ύ̣σ̣η̣ς τῷ πύργῳ ἐκ τοῦ ἀπὸ βορᾶ μέρους αὐλῆς
+18 ἐν ᾗ φρέαρ λίθινον καὶ ψιλῶν τόπων, πρότερον
+19 Ἡρακλείδου τοῦ Φιλοξένου καὶ Πτολέμας τῆς Ἀσ̣ί̣
+20 νιος, ἐκ [το]ῦ ἀπὸ βορρᾶ μέρους ἀρξαμένου ἀπὸ τῆς
+21 βορινῆ[ς][ γω]νίας τοῦ προπυλῶνος ἐπὶ νότον, βορρᾶ
+22 ἐπὶ νότον [ἐξ] ἀμφοτέρων τῶν {των} μερῶν πηχῶν
+23 [δέ]κ̣[α ἕ]ξ̣, λιβὸς ἐπʼ ἀπηλιότην ὁμοίως ἐξ ἀμφο
+24 τέρ[ων] τῶν μερῶν πηχῶν τριάκοντα δύο, ὥστʼ εἶ
+25 να[ι] ἐπὶ τὸ αὐτω ἐμβ[άτ]ου πήχε[ι]ς φεντακοσίους
+26 [δέ]κα δύο, σὺν τ[ο]ῖς ἐμπεσουμένοις εἰς τουτοις
+27 [φ]ο̣ρ̣τίοις πᾶσι, καὶ ὅλης τῆς ἐκ τοῦ ἀπὸ βορᾶ μέρους
+28 τ[ο]ῦ πύργου αὐλῆς ἐν ᾗ τὸ φρέαρ, μέτρα καὶ ταύτης
+29 βορρᾶ ἐπὶ νότον ἐξ [ἀμ]φοτέρων τῶν μερῶν πήχεις
+30 εἴκοσι τέσσαρος, λιβὸς ἐ[π]ʼ ἀπηλιότην ὁμοίως ἐξ ἀμφο
+31 τέρων τῶν μερῶν πήχεις ἕνδεκα, ὥστʼ εἶναι
+32 καὶ τῆς αὐλῆς ἐμβάτου πήχεις διακοσίους ἑξή
+33 κ[ο]ντα τέσσαρος, σὺν τοῖς καὶ εἰς τούτους συνεμ
+34 πεσουμένοις φορτίοις πᾶσι, ὥστʼ εἶναι ἐπὶ τὸ αὐτω
+35 ἐμβάτου πήχεις ἑπακοσίους ἑβδομήκοντα ἕξ,
+36 π[ά]ντα δὲ ἀκολούθως τῇ δηλουμένῃ ὁμολο
+37 γείᾳ· ὧ̣ν ὑπεθετω αὐτῷ ὁ προγεγραμμένος Διονύσι
+38 ος ὁ καὶ Ἀμόις πρὸς ἀργυρίου καιφαλέου δραχμὰς
+39 χιλίας τριακοσίας τόκου δραχμιαίου ἑκάστης
+40 μνᾶς τοῦ μηνὸς ἑκάστου ἐπὶ χρόνον μῆνας δέκα
+41 δύο ἀπὸ τοῦ εἰσιόντος μηνὸς Φαρμοῦθι, ὧν τιμὴ
+42 ὡς τῶν δ (δραχμῶν) Αω χα(λκοῦ) (τάλαντα) ϙζ Γ. ἔρρω(σο). (ἔτους) ια Αὐτοκράτορος
+43 Καίσαρος Οὐεσ[πα]σιανοῦ Σεβαστοῦ, Φαμενώθ.
+44 Χαιρή(μων), χρη(μάτισον).
+45 Θέων καὶ οἱ μέτοχ(οι) τρα(πεζῖται) τῷ ἀγο(ρανόμῳ) χαί(ρειν).
+46 τέτακ(ται) τῇ κη τοῦ Φαμε(νὼθ) ἐν̣κ̣(υκλίου) Δίδυμος
+47 Σαραπ(ίωνος) καθʼ ἣ(ν) ἔχει διαγρα(φὴν) χαλ(κοῦ) πρὸς ἀργ(ύριον)
+48 (τάλαντον) α Εψ. Θέων σεση(μείωμαι) χ[α]λ̣κ̣(οῦ) πρὸς
+49 ἀ̣ρ̣[γ(ύριον)] (τάλαντον) [α] Ε̣ψ.
+
+English translation:
+(recto)
+1 Chaeremon son of Chaeremon, of the deme Maroneus, appoin-
+2 ted by Claudius Antoninus, to the agorano-
+3 mus, greeting. Register a contract of mortgage
+4 of Didymus son of Sarapion, grandson of Didymus, his mother being
+5 Charitous daughter of Petosis, of the city of Oxyrhynchus,
+6 on the property belonging to the mortgagor Diony-
+7 sius alias Amois son of Phanias alias Amois, grandson of Phanias,
+8 his mother being Zenarion daughter of Dionysius, of the same
+9 city, and assigned to him by his
+10 mother Zenarion while she was alive, by the agreement of deposit
+11 which she made through the record office in the same city
+12 in the month of Mecheir of the tenth year of Nero,
+13 out of the house belonging to her at the
+14 Sarapeum at the city of Oxyrhynchus in the quarter of the Hermaeum,
+15 in which there are a two-storeyed tower, a gateway,
+16 an exedra, a hall, a vaulted room and the
+17 court adjoining the tower on the north side,
+18 in which there is a stone well, and vacant ground, formerly
+19 belonging to Heraclides son of Philoxenus and Ptolema daughter of Asi-
+20 nis, on the north side, starting from the
+21 northern corner of the gateway towards the south, north
+22 to south on both sides
+23 sixteen cubits, west to east likewise on both
+24 sides thirty-two cubits, so that there are
+25 together five hundred and twelve square cubits,
+26 with all the
+27 burdens falling on them, and the whole court on the north side
+28 of the tower, in which is the well, the measurements of this also being
+29 north to south on both sides
+30 twenty-four cubits, west to east likewise on both
+31 sides eleven cubits, so that there are
+32 for the court also two hundred and sixty-
+33 four square cubits, with all the burdens falling on them too,
+34 so that there are together
+35 seven hundred and seventy-six square cubits,
+36 all in accordance with the stated agree-
+37 ment; which the aforesaid Dionysius alias Amois mortgaged to him
+38 for one thousand three hundred drachmas of silver of capital
+39 at interest of one drachma per
+40 mina per month, for a period of twelve
+41 months from the coming month of Pharmouthi, the value of which,
+42 at 1800 (copper drachmas) to the 4 drachmas, is 97 talents 3000 of copper. Farewell. Year 11 of Imperator
+43 Caesar Vespasian Augustus, Phamenoth.
+44 Chaeremon: register it.
+45 Theon and partners, bankers, to the agoranomus, greeting.
+46 On the 28th of Phamenoth Didymus son of Sarapion paid the circulation tax
+47 according to the payment order he holds, in copper reckoned in silver,
+48 1 talent 5700. I, Theon, have signed: in copper reckoned in
+49 silver 1 talent 5700.
+
+Loan in ll. 37-41; registration of the mortgage securing it (Phamenoth, year 11 of Vespasian).
+Place: not stated; the place of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.269-1,Dioscorus son of Zenodorus,Tryphon son of Dionysius,52,drachma (silver),,AD 57,"until Kaisareios 30, year 3 of Nero (= 23 August AD 57)",Oxyrhynchus,"Source: P.Oxy. 2 269 (https://papyri.info/ddbdp/p.oxy;2;269)
+
+Original Text:
+(1)
+1 ἀντίγρα(φον). Διό[σκο]ρος Ζηνοδ[ώρου Πέρ]σαι τῆς ἐπιγονῆς Τρύφων[ι]
+2 Διονυσίο[υ χα]ίρειν. ὁ[μ]ολογ[ῶ ἔχει]ν παρὰ σοῦ ἐπὶ τοῦ πρὸς Ὀξυρύγχων
+3 πόλει [Σαραπ]είου διὰ τῆς Ἀ[ρχιβίου] τοῦ Ἀρχιβίου τραπέζης ἀργ[υ]ρίου
+4 Σεβαστ[οῦ νο]μίσματος δρ[αχ]μὰς πεντήκοντα δύο κεφαλαίου
+5 αἷς οὐδ[ὲν τ]ῶι καθόλου π[ροσ]ῆκτ[α]ι, ἃς καὶ ἀποδώσω σοι τῇ τριακάδι
+6 τοῦ Κα[ισαρεί]ου μηνὸς τοῦ [ἐ]νεστῶτος γ (ἔτους) Νέρωνος Κλαυδ[ί]ου
+7 Καίσαρ[ος Σεβ]αστοῦ Γερμ[ανι]κοῦ Αὐτοκράτορος χωρὶς πάσης
+8 ὑπερ[θέσ]εως. ἐὰν δὲ μ[ὴ ἀπ]οδ[ῶ]ι καθὰ γέγραπται ἐκτείσω σοι
+9 τ[ὸ π]ρο[κ]είμενον κεφ[άλ]αιον μεθʼ ἡμιολίας καὶ τοῦ ὑπερπεσόν
+10 τος χρ[ό]νου τοὺς καθήκοντας τόκους, τῆς πράξεώς σου
+11 οὔσης ἔ[κ τ]ε ἐμοῦ καὶ ἐ[κ] τῶν ὑπαρχόντων αυτωι πάντων
+12 καθάπερ ἐγ δίκης. κυρί[α] ἡ χε[ὶ]ρ πανταχῇ ἐπιφερομέν[η]
+13 καὶ παντὶ τῶι ἐπιφέροντι. (ἔτους) γ Νέρω[ν]ος Κλαυδίου Καίσαρος
+14 Σεβαστοῦ Γερμανικοῦ [Α]ὐτοκράτορ[ος, μ]ηνὸς Γερμανικείου ιη Σεβα(στῇ).
+15 ὑπογρα(φῆς) ἀντίγρα(φον). Διόσκορος Ζηνοδώρου [ἔ]χωι τὰς τοῦ ἀργυρίου
+16 δραχμὰς πεντήκ[ο]ντα δύο κεφαλαίου καὶ ἀποδώσωι
+17 καθότι πρόκειται. Ζωίλος Ὥρου ἔγραψα ὑπὲρ αὐτοῦ μὴ ε[ἰ]δότος
+18 γράμματα. (ἔτους) γ Νέρωνος Κλαυδίου Καίσαρος Σεβαστοῦ Γερμανικοῦ
+19 Αὐτοκράτορος, μηνὸς Γερμανικείου ιη Σεβαστῇ.
+20 σημεωσεω ἀντίγρα(φον). ἔτους γ Νέρωνος Κλαυδίου Καίσαρος Σεβαστοῦ
+21 Γερμα[νι]κοῦ Αὐτοκρά[τ]ορος, μηνὸς Γερμανικείου ιη Σεβασῇ.
+22 διὰ Θέωνος τοῦ Σύρου τοῦ συνεσταμένου ὑπὸ Ἀρχιβίου τραπεζείτο(υ) γέγο(νεν) ἡ̣ διαγρα(φή).
+(2)
+1 Τρύφων Ἀμμωνᾶτι
+2 τῷ [μ]ακρῷ τῷ φιλτά
+3 τῳ χαίρειν. ἐὰν δύ
+4 νῃ ἐρωτηθεὶς ὄχλη
+5 σον Διόσκορον καὶ ἔκ
+6 πραξον αὐτὸν τὸ
+7 χειρόγραφον καὶ
+8 ἐάν σοι δυ τὸ ἀργύριον
+9 δῦς αὐτῷ ἀποχήν,
+10 καὶ ἐὰν εὕ[ρ]ῃς ἀσφα
+11 λὴν δὺς αὐτῷ τὸ ἀρ
+12 γύριον ἐνένκαι μοι.
+13 ἄσπασαι τοὺς οὺς
+14 πάντας. ἔρρωσ[ο].
+15
+
+English translation:
+(1)
+1 Copy. Dioscorus son of Zenodorus, Persian of the epigone, to Tryphon
+2 son of Dionysius, greeting. I acknowledge that I have from you at the Sarapeum at the city of Oxyrhynchus
+3 through the bank of Archibius son of Archibius, of silver
+4 of imperial coinage, fifty-two drachmas of capital,
+5 to which nothing at all has been added, which I will also repay to you on the thirtieth
+6 of the month Kaisareios of the present 3rd year of Nero Claudius
+7 Caesar Augustus Germanicus Imperator without any
+8 delay. If I do not repay as written, I will pay you
+9 the aforesaid capital with one-half more and, for the overdue
+10 time, the customary interest, the right of execution being yours
+11 upon me and upon all my property,
+12 as if by a court judgment. The note of hand is valid wherever it is produced
+13 and for everyone who produces it. Year 3 of Nero Claudius Caesar
+14 Augustus Germanicus Imperator, month Germanikeios 18, Sebaste.
+15 Copy of the signature. I, Dioscorus son of Zenodorus, have the fifty-two drachmas of silver
+16 of capital and I will repay
+17 as aforesaid. I, Zoilus son of Horus, wrote for him as he does not know
+18 letters. Year 3 of Nero Claudius Caesar Augustus Germanicus
+19 Imperator, month Germanikeios 18, Sebaste.
+20 Copy of the registration. Year 3 of Nero Claudius Caesar Augustus
+21 Germanicus Imperator, month Germanikeios 18, Sebaste.
+22 The payment was made through Theon son of Syrus, appointed by Archibius the banker.
+(2)
+1 Tryphon to Ammonas
+2 the tall, his dearest,
+3 greeting. If you
+4 can, when asked, trouble
+5 Dioscorus and ex-
+6 act from him the
+7 note of hand, and
+8 if he gives you the money,
+9 give him a receipt,
+10 and if you find a safe person,
+11 give him the mo-
+12 ney to bring to me.
+13 Greet all your
+14 people. Farewell.
+15
+
+Copy of the loan (column 1) and Tryphon's letter asking for its collection (column 2).
+Date: Germanikeios 18, year 3 of Nero (= 13 May AD 57).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.270-1,Lucia alias Thaisas daughter of Lucius,Heraclides son of Apollonius,3500,drachma (silver),1 drachma per mina per month (1% per month),AD 94,"until Tybi 30, year 15 of Domitian (= 26 January AD 96)",Oxyrhynchus,"Source: P.Oxy. 2 270 (https://papyri.info/ddbdp/p.oxy;2;270)
+
+Original Text:
+1 ἔτους τρισκαιδεκάτου Αὐτοκράτορος Καίσαρος Δομιτιανοῦ Σεβαστοῦ
+2 Γερμανικοῦ, Μεχεὶρ vac., ἐν Ὀξυρύγχων πόλει τῆς Θηβαίδος.
+3 ὁμολογεῖ Λουκία ἡ καὶ Θαισᾶς Λουκίου μητρὸς Σινθώνιος τῆς Θέωνος Περ
+4 σείνη μετὰ κυρίου τοῦ ἐξανεψίου Ἡρᾶτος τοῦ Ἡρακλείδου τοῦ Ἡρακλείδου
+5 μητρὸς Πλουτάρχης Σαραπίωνος Σαραπίωνι τῷ καὶ Κλάρῳ {Σαραπίωνι}
+6 {τῷ καὶ Κλάρῳ} Σαραπίωνος τοῦ Ἡρακλείδου μητρὸς Κλάρας τῆς
+7 Ναρκίσσου, πάντες τῶν ἀπὸ Ὀξυρύγχων πόλεως, ἐν ἀγυιᾷ, ἀπαρε
+8 νόχλητον καὶ ἀνείσπρακτον παρέξασθαι τὸν Σαραπίωνα τὸν καὶ
+9 Κλάρον καὶ τοὺς παρʼ αὐτοῦ κατὰ πάντα τρόπον ὑπὲρ ἧς πεποίηται
+10 ὁ αὐτὸς Σαραπίων ὁ καὶ Κλάρος ἐγγύης Ἡρακλείδῃ Ἀπολλωνίου
+11 τοῦ Χαιρήμονος μητρὸς Ἡραίδος Διδύμου ἀπὸ τῆς αὐτῆς πόλεως
+12 καθʼ ὁμολογίαν διὰ τοῦ αὐτοῦ μνημονείου τῷ ἐνεστῶτι μηνὶ Με
+13 χείρ, ὧν ἡ ὁμολογοῦσα δεδάνεισται παρʼ αὐτοῦ κατὰ δανείου συν
+14 γραφὴν διὰ τοῦ αὐτοῦ μνημονείου τῷ αὐτῷ μηνὶ Μεχεὶρ ἀργυρίου
+15 δραχμῶν τρισχιλίων πεντακοσίων κεφαλαίου τόκου δραχμιαίου
+16 ἑκάστης μνᾶς κατὰ μῆνα ἀπὸ τοῦ αὐτοῦ μηνὸς ἐπὶ ὑποθήκῃ ταῖς
+17 σημανθείσαις αὐτῆς περὶ Σερῦφιν ἐκ τοῦ Δημητρίου Μιλησίου κλή
+18 ρου κατοικικῆς καὶ ὠνημένης ἀρούραις τρισὶ ἡμίσει, καὶ ἐκ τοῦ αὐτοῦ
+19 κλήρου ἀπὸ κατοικικῆς καὶ ὠνημένης ἀρουρῶν δέκα δύο μεθʼ ἃς
+20 ὑπέθετο Τααφύγχει Θωνίωνος ἀρούρας ἑπτὰ ταῖς λοιπαῖς ἀρούραις
+21 πέντε, καὶ ἐκ τοῦ Καλλίου τρίτῳ μέρει κατοικικῆς καὶ ὠνημένης
+22 ἀρουρῶν ὀκτώ, ὃ ἔστιν ἄρουραι δύο δίμοιρον, καὶ περὶ Σύρων
+23 κώμην ἐκ τοῦ Ἡρακλείδου σὺν τῷ Ἀλεξάνδρου κατοικικῆς ἀρού
+24 ραις ἓξ ἡμίσει τετάρτῳ, καὶ ἐκ τοῦ Ἀλεξάνδρου καὶ ἄλλων κα
+25 τοικικῆς καὶ ὠνημένης
+25a ἀρούραις ἓξ ἡμισει ταῖς ἐπὶ τὸ αὐτὸ κατοι
+25b κικῆς καὶ ὠνημένης
+25 εἰς κατοικίαν ἀρούραις εἴκοσι τέσσαρσι τρί
+26 τῳ δωδεκάτῳ, εἰς προθεσμίαν τριακάδα Τῦβι τοῦ πεντεκαι
+27 δεκάτου ἔτους Αὐτοκράτορος Καίσαρος Δομιτιανοῦ Σεβαστοῦ
+28 Γερμανικοῦ. ἐὰν δὲ τῆς προθεσμίας ἐνστάσης μὴ ἀποδῷ ἡ ὁ
+29 μολογοῦσα τῷ Ἡρακλείδῃ τὸ κεφά[λ]αιον καὶ τοὺς τόκους, ἀπαι
+30 τηθῇ δὲ ὑπὲρ αὐτῆ[ς ὁ Σαρ]απίων ὁ καὶ Κλάρος, κυριε[ύ]ειν αὐ
+31 τὸν Σαραπίων[α] τὸν [καὶ Κ]λάρον τῶν προκειμένω[ν] ἀρουρῶν
+32 εἴκοσι τεσ\σ/άρω[ν τρίτου δ]ωδεκάτου εἰς τὸν ἅπαντα χ[ρ]όν[ον ὡ]
+33 ς ἂν πράσεως [αὐτῷ γενο]μένης καὶ [ἀ]ποφέρεσθαι τὰ ἐξ αὐτῶν
+34 καὶ ἑτέροις αὐ[τὰς πωλ]εῖν καὶ χρᾶσ[θαι ὡς] ἐὰν αἱρῆται, μηδε
+35 μιᾶς τῇ ὁμολογούσῃ ἢ ταῖς [παρʼ αὐτῆς ἐ]φ[όδ]ου κ[α]ταλειπο
+36 μένης ἐπὶ τὸν Σαραπίωνα τὸν καὶ Κλάρον μηδὲ ἐ[πὶ] τοὺς πα
+37 ρʼ αὐτοῦ μηδὲ ἐπὶ τὰς προκειμένας ἀρούρας μηδὲ ἐπὶ μέρος
+38 μηδὲ ἐπὶ τὰ ἐξ αὐτῶν κατὰ μηδένα τρόπον, ἐπάν[α]νκον
+39 δʼ αὐτὴν παρέξασθαι αὐτῷ καὶ τοῖς παρʼ αὐτοῦ ταύτας διὰ παν
+40 τὸς μὲν βεβαίας ἀπὸ πάντων πάσῃ βεβαιώσει καὶ καθαρὰς
+41 ἀπὸ δημοσίων καὶ τελεσμάτων πάντων τῶν ἕως τῆς προθεσ
+42 μίας καὶ αὐτῆς τῆς προθεσμίας. ἐὰν δέ τι τούτων ἡ ὁμολογοῦσα
+43 παρασυνγραφῇ, ἄκυρον [ἔ]στω καὶ προσαποτισάτω τῷ [Σ]αραπίω
+44 νι τῷ καὶ Κλάρῳ ἢ τοῖς παρʼ αὐτοῦ καθʼ ὃ ἐὰν παρα[σ]υνγραφῇ εἶδος
+45 τό τε βλάβος καὶ ἐπίτιμον ἀργυρίου δραχμὰς χιλίας καὶ εἰς τὸ δημό
+46 σιον τὰς ἴσας, καὶ μηδὲν ἧσσον τὰ διωμολογημένα κύρια ἔστω,
+47 τῆς πράξεως γινομένης τῷ Σαραπίωνι τῷ καὶ Κλάρῳ ἔκ τε τῆς
+48 ὁμολογούσης καὶ ἐκ τῶν προκιμένων ἀρουρῶν καὶ ἐκ
+48/49 \ τῶν ἄλλων ὑπαρχ(όν)/
+49 των αὐτῇ πάντων. κυρία ἡ ὁμολογία.
+50
+
+English translation:
+1 Year thirteen of Imperator Caesar Domitian Augustus
+2 Germanicus, Mecheir (day blank), in the city of Oxyrhynchus in the Thebaid.
+3 Lucia alias Thaisas, daughter of Lucius, her mother being Sinthonis daughter of Theon, Per-
+4 sian, with her guardian, her second cousin Heras son of Heraclides, grandson of Heraclides,
+5 his mother being Plutarche daughter of Sarapion, acknowledges to Sarapion alias Clarus {Sarapion
+6 alias Clarus} son of Sarapion, grandson of Heraclides, his mother being Clara daughter of
+7 Narcissus, all from the city of Oxyrhynchus, in the street, that she will keep
+8 Sarapion alias Clarus and his successors free from trouble
+9 and from exaction in every way in respect of the surety which
+10 the same Sarapion alias Clarus has given to Heraclides son of Apollonius,
+11 grandson of Chaeremon, his mother being Herais daughter of Didymus, of the same city,
+12 by an agreement through the same record office in the present month of Me-
+13 cheir, for the sums which the acknowledging party has borrowed from him by a loan con-
+14 tract through the same record office in the same month of Mecheir: of silver
+15 three thousand five hundred drachmas of capital, at interest of one drachma
+16 per mina per month from the same month, on the mortgage of
+17 her designated three and a half arouras of catoecic and purchased land near Seryphis in the kleros of Demetrius of Miletus,
+18 and, in the same
+19 kleros, of the twelve arouras of catoecic and purchased land, after the
+20 seven arouras which she mortgaged to Taaphynchis daughter of Thonion, the remaining
+21 five arouras, and in the kleros of Callias a third part of eight arouras of catoecic and purchased land,
+22 that is two and two-thirds arouras, and near the village of Syron
+23 in the kleros of Heraclides with that of Alexander six and a half and a quarter arouras of catoecic
+24 land, and in the kleros of Alexander and others six and a half arouras
+25 of catoecic and purchased
+25a land, together twenty-four and a third and a twelfth arouras of catoecic
+25b and purchased land
+25 settled as catoecic,
+26 for the term of the thirtieth of Tybi of the fif-
+27 teenth year of Imperator Caesar Domitian Augustus
+28 Germanicus. If, when the term has come, the acknowledging party does not repay
+29 to Heraclides the capital and the interest, and demand is
+30 made of Sarapion alias Clarus on her behalf, Sarapion alias Clarus is to
+31 be owner of the aforesaid twenty-four and a third and a twelfth
+32 arouras for all time,
+33 as if a sale had been made to him, and to carry off their produce,
+34 sell them to others and use them as he chooses, no
+35 claim being left to the acknowledging party or her successors
+36 against Sarapion alias Clarus or his
+37 successors or against the aforesaid arouras or any part of them
+38 or their produce in any way; and she is obliged
+39 to guarantee them to him and his successors at all
+40 times secure against everyone with every guarantee and free
+41 from all public dues and charges up to the term
+42 and of the term itself. If the acknowledging party
+43 contravenes any of this, it is to be invalid and she is to pay in addition to Sarapion
+44 alias Clarus or his successors, for each kind of contravention,
+45 the damages and a fine of one thousand drachmas of silver and to the treasury
+46 the same, and the agreed terms are to be valid nonetheless,
+47 the right of execution belonging to Sarapion alias Clarus upon
+48 the acknowledging party, upon the aforesaid arouras and upon
+48/49 \ all her other property/
+49 . The agreement is valid.
+50
+
+Loan in ll. 12-26; the document indemnifies its surety, Sarapion alias Clarus.
+Date: Mecheir, year 13 of Domitian (= January/February AD 94).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.271-1,Pnepheros son of Papontos,,200,drachma (silver),interest-bearing (rate not stated),AD 55,,Oxyrhynchus,"Source: P.Oxy. 2 271 (https://papyri.info/ddbdp/p.oxy;2;271)
+
+Original Text:
+1 ἀντίγρα(φον). ἔτους δευτέρου Νέρωνος Κλα[υδίου Κ]αίσαρος Σεβαστοῦ Γερμ[ανικ]οῦ Αὐτοκράτορος,
+2 μηνὸς Καισαρείου ἐπαγο(μένων) γ, ἐν Ὀξυρύγχ(ων) π[όλει] τῆς Θηβαίδος. ὁ[μολο]γεῖ
+3 Ἡράκλεια Ἡρακλείδου ἀστὴ μετὰ [κυρίο]υ Νικίππου τοῦ Ν[ι]κίππου
+4 Ἀλθαιέως Παποντῶτι Ἀφύγχιος τοῦ κ[αὶ] Ζωίλου τῶν ἀπʼ Ὀξυρύγχων πόλεως
+5 ἐν ἀγυιᾷ παρακεχωρηκέναι αὐτῷ πρ[ᾶ]ξιν καὶ κομιδὴν ἀργυρίου Σεβαστοῦ
+6 καὶ Π[τολε]μαικοῦ νομίσμα[τ]ος δραχμῶν [δι]ακοσίων, ὧν καὶ αὐτὴ Ἡράκλεια
+7 τυγχ[άνε]ι παρακεχωρημένη κατὰ [συν]χώρησιν τὴν τελειωθεῖσαν
+8 διὰ τῆς [ἐ]φημερίδος τοῦ καταλογείου τ[ῷ Κα]ισαρείῳ μηνὶ τοῦ ἐνεστῶτος ⟦δευ⟧
+9 δ[ε]υ[τ]έρο[υ] ἔτους Νέρωνος Κλαυδίου Καίσαρ[ος Σεβασ]τοῦ Γερμανικοῦ Αὐ[το]κράτορος,
+10 δανε[ι]σθεισῶν δὲ ὑπὸ vac. Πνεφερ[ῶτι] Παποντῶτος χρ[η]ματίσαντι
+11 Πέρ[σῃ τῆς] ἐπιγονῆς καθʼ ἑτέραν σ[υνχ]ώρησιν τὴν τελειωθεῖσαν
+12 διὰ το[ῦ] αὐτοῦ καταλογείου ταῖς ἐπ[αγομέ]ναις τοῦ Καισαρείου μηνὸς τοῦ
+13 πρώτου ἔτους Νέρωνος Κλαυδίου Καί[σαρ]ος Σεβαστοῦ Γερμανικοῦ Αὐτοκράτορος·
+14 π[ρο]σπ[αρ]ακεχωρηκέναι δʼ αὐτῷ ὁ̣μ̣[ο]ίως ἣν καὶ αὐτὴ παρεκεχώ
+15 ρη[τ]α̣ι πρᾶξιν διὰ τῆς εἰς αὐτὴν ὡς πρόκειται γεγονυ[ία]ς συν[χω]
+16 ρήσεως τῶν τοῦ ἀργ(υρίου) (δραχμῶν) διακοσίω[ν, ][...] ...κ̣[...]ν̣ Π̣α̣[πο]ν̣[τω][...].[...]
+17 συν[κεχ]ωρηκέναι αὐτὴν ἑαυτῷ τὴν π[ρᾶξιν] καὶ κομιδὴν .[...]
+18 εισ..υ̣τ̣ων τοῦ ἀργ(υρίου) (δραχμῶν) σ καὶ τῶν τόκ[ω]ν, καὶ τὰ ἄ[λ]λα ἐπ[ι]τελ[εῖ]ν καθὰ
+19 καὶ αὐτῇ καὶ τῷ Εἰρηναίῳ ἐξῆν, καὶ αὐτόθεν ἀναδέδωκεν τῷ
+20 Παποντῶτι τὰς εἰς αὐτὴν καὶ τὸν Εἰρην[αῖ]ον ὡς πρόκειται
+21 συνχωρήσεις δύο ἃς καὶ παρέξεται ἐνθέσμους καὶ ἀπεριλύτους
+22 διὰ τὸ ἐξευλυτῆσθ[α]ι αὐτὴν ὑπ[ὸ] τοῦ Παπ[ο]ντῶτος ταῖς τοῦ
+23 ἀργ(υρίου) (δραχμαῖς) διακοσίαις [κ]αὶ τοῖς τόκοις. τὴν δ[ὲ π]αρὰ ταῦτα ἐσομένην
+24 ἔφοδ[ο]ν ἄκυρον ε[ἶ]ναι, ἔτι καὶ [ἐ]κτίνειν [Ἡρ]άκλειαν ἢ τὸν [π]αρʼ
+25 αὐ[τῆ]ς ἐπελευσόμενον τ[ῷ Π]αποντῶτ[ι] ἢ τοῖς [π]αρʼ αὐτοῦ καθʼ ἑ
+26 κά[στ]ην ἔφοδον τό τε βλάβο[ς κ]αὶ ἐπίτιμον ἀρ[γ(υρίου)][ (δραχμὰς) ἑ]κατὸν καὶ
+27 εἰ[ς τὸ δ]ημόσιον τὰς ἴσας, καὶ μ[ηδ]ὲν ἧσσον κυρία [ἡ] συνγραφηι.
+
+English translation:
+1 Copy. Year two of Nero Claudius Caesar Augustus Germanicus Imperator,
+2 month Kaisareios, epagomenal day 3, in the city of Oxyrhynchus in the Thebaid.
+3 Heracleia daughter of Heraclides, citizen, with her guardian Nicippus son of Nicippus,
+4 of the deme Althaieus, acknowledges to Papontos son of Aphynchis alias Zoilus, (all) from the city of Oxyrhynchus,
+5 in the street, that she has ceded to him the right to exact and recover two hundred drachmas of silver of imperial
+6 and Ptolemaic coinage, which Heracleia herself
+7 happens to have had ceded to her by a cession executed
+8 through the daily register of the record office in Kaisareios of the present
+9 second year of Nero Claudius Caesar Augustus Germanicus Imperator,
+10 and which were lent by (blank) to Pnepheros son of Papontos, registered as
+11 Persian of the epigone, by another cession executed
+12 through the same record office on the epagomenal days of Kaisareios of the
+13 first year of Nero Claudius Caesar Augustus Germanicus Imperator;
+14 and that she has likewise also ceded to him the right of execution which she herself
+15 was ceded through the cession made to her as aforesaid
+16 of the two hundred drachmas of silver, [...]
+17 [...] that she has ceded to him the right to exact and recover [...]
+18 [...] of the 200 drachmas of silver and the interest, and to do everything else as
+19 she herself and Irenaeus were entitled to do; and she has forthwith handed over to
+20 Papontos the two cessions made to her and to Irenaeus as aforesaid,
+21 which she will guarantee to be lawful and undischarged,
+22 because she has been paid in full by Papontos the
+23 200 drachmas of silver and the interest. Any claim made beyond this
+24 is to be invalid, and further Heracleia or anyone
+25 proceeding on her behalf is to pay to Papontos or his successors for each
+26 claim the damages and a fine of one hundred drachmas of silver and
+27 to the treasury the same, and the contract is valid nonetheless.
+
+Loan in ll. 10-13; the lender's name is left blank in the text; the document cedes the claim to Papontos son of Aphynchis.
+Date: epagomenal days of Kaisareios, year 1 of Nero (= 24-28 August AD 55).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.274-1,Dius son of Ptollion; Dionysia,Sarapion alias Diogenes,,,,AD 88,,Oxyrhynchus,"Source: P.Oxy. 2 274 (https://papyri.info/ddbdp/p.oxy;2;274)
+
+Original Text:
+(ctr)
+1 μετηνέχθη.
+2 καὶ ἐπὶ τοῦ α(ὐτοῦ) ἀμφόδου ἑτέραν οἰκίαν καὶ αὐλὴ(ν)
+3 ἃ ἦν τὸ πρὶν ψιλὸς τόπος, ἀφʼ οὗ πατρικὸν μὲν
+4 τὸ ἥμισυ, πρὸς ὧι κεκλήρωται ἐκ τῆς πρὸς τὴν
+5 πρὸς πατρὸς α(ὐτοῦ) θείαν Δημητροῦν Σαραπίωνος
+6 διαιρέσεως πλείω πήχεις ἐννέα τέταρτον
+7 ὄγδοον, ὧν καὶ τὸ τέλος ἔταξαν.
+8 καὶ [...] ἔχει ἐπὶ τοῦ α(ὐτοῦ) ἀμφόδο[υ] ἐν ὑποθήκη[ι]
+9 Δίου τοῦ Πτολλίωνος ..[...]ο̣υ μη(τρὸς) Θερμοῦτο(ς) τῆς
+10 Σαραπίωνος οἰκίαν ἐν ἧι π.....λ̣ον̣ καὶ αἴθριον
+11 καὶ αὐλή, ἀκολούθως αἷς ἔγραψε [τ]ῷ αὐτῶι Σαραπίωνι
+12 [αὐτός τε] καὶ ἡ γυνὴ αὐτοῦ Διονυσία [...]. τοῦ
+13 .[...]α̣[...]ω̣νος μη(τρὸς) \Σαρα/εῦτος τῆς Ἡρα̣κ̣λ̣[είδου]
+14 δανείου συνγραφαῖς τρισὶ διὰ τοῦ ἐν τῆι α(ὐτῇ) π[ό]λει
+15 μνημο(νείου), μιᾶι μὲν τῶι ζ (ἔτει) Δομιτιανοῦ τοῦ κυρίου
+16 μη(νὶ) Καισαρείωι, την δὲ \δε̣υ̣/τέρᾳ τῶι διελθ(όντι) η (ἔτει) το.... μ̣η̣(νὶ)
+17 Φαῶφι, τη[ν] δὲ τριτ[η]ν τῶ[ι] α(ὐτῷ) διελθ(όντι) (ἔτει) μ̣[η(νὶ)][ Μεχ]είρ,
+18 τὰ δὲ προκείμενα αὐτοῦ πατρικ[ὰ δ]ηλωθέν̣[τα]
+19 ὑπάρχοντα κατήντ(ησεν) εἰς α(ὐτὸν) μετὰ τὴν τ[ο]ῦ πατ(ρὸς) τελευ[τὴν].
+20 ιβ (ἔτους), ἐπαγο(μένων) ε, διʼ ἐνκυκλ(ίου) ὁ α(ὐτὸς) γε.. Σαραπίων τέτακται τ̣έ̣[λος] ἀνανεώ[σ]εως̣
+21 τῆς προκειμένης ὑποθήκης.
+22 ιγ (ἔτους), ἐπαγο(μένων) ε, διʼ ἐνκυκλ(ίου) κο(λλήματος) γ ὁ Σαραπίων τέτακτ(αι) τ[έ]λος ἐπικαταβολ(ῆς) τῆς
+23 ὑποθήκης.
+24 α (ἔτους) Νέρουα τοῦ κυρίου, Τῦβι ιε, ὁ Σαραπίων ὁ καὶ Διογένης ἐπήνεγκ(ε) [...]
+25 ..ω̣ς ἄδειαν κατὰ τῆς προκ(ειμένης) ὑποθή[κ]ης.
+26 ὑπάρχει δὲ αὐτῶι ἐπὶ τοῦ ἀπὸ λιβὸς μ̣[έρους τοῦ]
+27 ὄρους ἥμισυ μέρος τάφου κ[ο]ινωνι[κοῦ πρὸς τὴν]
+28 αὐτὴν πρὸς πατρὸς α(ὐτοῦ) θείαν Δη[μ]ητρ[οῦν].
+29 α (ἔτους) Νέρουα τοῦ κυρίου, Χοίακ κ, διʼ ἐνκ(υκλίου) ὁ α(ὐτὸς) Σαρα[πίων τέτακτ(αι) τέλος]
+30 τάφου̣ [καὶ] ψιλῶν τόπων ὄντων ἐν τῷ κ̣ονικ̣ ἐποι[κίῳ ][...]
+(ms)
+31 [...]....... Δί[ο]υ
+32 [τοῦ Π]τολλίωνος ὄντος
+33 [ἐν τ]ῷ δη(μοσίῳ) διὰ Ἡ̣ρ̣[α]ί̣δο̣ς
+34 [τῆς] Παυσίριος ὁμογνη(σίας)
+35 [ἀδελ]φῆς γυναικὸς αὐτοῦ
+36 [Διον]υσίας ἀναγρα(φομένης) ἐπʼ ἀμφόδ(ου)
+37 [...].ε̣ πα ο̣δ οἰκίαν καὶ
+38 [αὐλὴ]ν καὶ αἴθριον.
+39 α (ἔτους) Νέρουα τοῦ κ(υρίου),
+40 μη(νὸς) Καισ(αρείου) ἐπαγο(μένων) ε,
+41 διὰ ἀγο(ρανόμων) μητ(ροπόλεως)
+42 ὁ Σαραπίω(ν) ὁ καὶ Διογ(ένης)
+43 ἐν̣τ̣έ̣τ̣α(κται) πωλή̣σ(ας)
+44 [...]τ̣η.......α
+45 .....( ) ....λη
+46 ..........
+47 ἀπελευθέρῳ
+48 Ἡρακλείδ(ου) το(ῦ) Διογ(ένους)
+49 τ̣[ο(ῦ)] καὶ Ἡρακλείδ(ου)
+50 μητ(ρὸς) Ταυσίριος
+51 τῆ(ς) κ(αὶ) Θαλλοῦ(τος) εἰς
+52 ἀ̣λ̣λ̣ο̣ ἀπο.. ὁ̣μ̣(οίως) ἐξ ἴσου.
+53 vac.
+53 παρετέθ(η)
+54 τοῖς π̣ράκ̣τ(ορσι)
+55 ...μ ἀπο̣γρ(αφ ).
+
+English translation:
+(ctr)
+1 was transferred.
+2 And in the same quarter another house and court,
+3 which was formerly a vacant plot, of which half is inherited from his father,
+4 to which there fell to him by lot, from the division with his
+5 paternal aunt Demetrous daughter of Sarapion,
+6 nine and a quarter and an eighth cubits more,
+7 for which they also paid the tax.
+8 And [...] he holds in the same quarter in mortgage
+9 from Dius son of Ptollion [...], his mother being Thermouthis daughter of
+10 Sarapion, a house in which [...] and a hall
+11 and a court, in accordance with what was written to the same Sarapion
+12 by him and his wife Dionysia [...] daughter of
+13 [...]on, her mother being Saraeus daughter of Heraclides,
+14 in three loan contracts through the record office in the same city,
+15 one in the 7th year of Domitian the lord,
+16 in the month Kaisareios, the second in the past 8th year [...] in the month
+17 Phaophi, the third in the same past year in the month Mecheir;
+18 and the aforesaid property of his inheritance declared
+19 came to him after his father's death.
+20 Year 12, epagomenal day 5: through the circulation tax office the same Sarapion paid the tax for renewal
+21 of the aforesaid mortgage.
+22 Year 13, epagomenal day 5: through the circulation tax office, sheet 3, Sarapion paid the tax for the foreclosure on the
+23 mortgage.
+24 Year 1 of Nerva the lord, Tybi 15: Sarapion alias Diogenes produced [...]
+25 [...] permission against the aforesaid mortgage.
+26 He also owns, on the western side of the
+27 desert, half of a tomb held in common with
+28 the same paternal aunt of his, Demetrous.
+29 Year 1 of Nerva the lord, Choiak 20: through the circulation tax office the same Sarapion paid the tax
+30 on the tomb and the vacant plots in the [...] hamlet [...]
+(ms)
+31 [...] of Dius
+32 son of Ptollion, who is
+33 in the public prison, through Herais
+34 daughter of Pausiris, full
+35 sister of his wife
+36 Dionysia, registered in the quarter
+37 [...] house and
+38 court and hall.
+39 Year 1 of Nerva the lord,
+40 month Kaisareios, epagomenal day 5,
+41 through the agoranomi of the metropolis
+42 Sarapion alias Diogenes
+43 is entered as having sold
+44 [...]
+45 [...]
+46 [...]
+47 to the freedman
+48 of Heraclides son of Diogenes
+49 alias Heraclides,
+50 his mother being Tausiris
+51 alias Thallous, to
+52 [...] likewise equally.
+53 vac.
+53 It was submitted
+54 to the collectors
+55 [...] registration.
+
+Loan in ll. 8-17, the first of three loan contracts securing a mortgage on a house (property register).
+Date: Kaisareios, year 7 of Domitian (= July/August AD 88).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.274-2,Dius son of Ptollion; Dionysia,Sarapion alias Diogenes,,,,AD 88,,Oxyrhynchus,"Source: P.Oxy. 2 274 (https://papyri.info/ddbdp/p.oxy;2;274)
+
+Original Text:
+(ctr)
+1 μετηνέχθη.
+2 καὶ ἐπὶ τοῦ α(ὐτοῦ) ἀμφόδου ἑτέραν οἰκίαν καὶ αὐλὴ(ν)
+3 ἃ ἦν τὸ πρὶν ψιλὸς τόπος, ἀφʼ οὗ πατρικὸν μὲν
+4 τὸ ἥμισυ, πρὸς ὧι κεκλήρωται ἐκ τῆς πρὸς τὴν
+5 πρὸς πατρὸς α(ὐτοῦ) θείαν Δημητροῦν Σαραπίωνος
+6 διαιρέσεως πλείω πήχεις ἐννέα τέταρτον
+7 ὄγδοον, ὧν καὶ τὸ τέλος ἔταξαν.
+8 καὶ [...] ἔχει ἐπὶ τοῦ α(ὐτοῦ) ἀμφόδο[υ] ἐν ὑποθήκη[ι]
+9 Δίου τοῦ Πτολλίωνος ..[...]ο̣υ μη(τρὸς) Θερμοῦτο(ς) τῆς
+10 Σαραπίωνος οἰκίαν ἐν ἧι π.....λ̣ον̣ καὶ αἴθριον
+11 καὶ αὐλή, ἀκολούθως αἷς ἔγραψε [τ]ῷ αὐτῶι Σαραπίωνι
+12 [αὐτός τε] καὶ ἡ γυνὴ αὐτοῦ Διονυσία [...]. τοῦ
+13 .[...]α̣[...]ω̣νος μη(τρὸς) \Σαρα/εῦτος τῆς Ἡρα̣κ̣λ̣[είδου]
+14 δανείου συνγραφαῖς τρισὶ διὰ τοῦ ἐν τῆι α(ὐτῇ) π[ό]λει
+15 μνημο(νείου), μιᾶι μὲν τῶι ζ (ἔτει) Δομιτιανοῦ τοῦ κυρίου
+16 μη(νὶ) Καισαρείωι, την δὲ \δε̣υ̣/τέρᾳ τῶι διελθ(όντι) η (ἔτει) το.... μ̣η̣(νὶ)
+17 Φαῶφι, τη[ν] δὲ τριτ[η]ν τῶ[ι] α(ὐτῷ) διελθ(όντι) (ἔτει) μ̣[η(νὶ)][ Μεχ]είρ,
+18 τὰ δὲ προκείμενα αὐτοῦ πατρικ[ὰ δ]ηλωθέν̣[τα]
+19 ὑπάρχοντα κατήντ(ησεν) εἰς α(ὐτὸν) μετὰ τὴν τ[ο]ῦ πατ(ρὸς) τελευ[τὴν].
+20 ιβ (ἔτους), ἐπαγο(μένων) ε, διʼ ἐνκυκλ(ίου) ὁ α(ὐτὸς) γε.. Σαραπίων τέτακται τ̣έ̣[λος] ἀνανεώ[σ]εως̣
+21 τῆς προκειμένης ὑποθήκης.
+22 ιγ (ἔτους), ἐπαγο(μένων) ε, διʼ ἐνκυκλ(ίου) κο(λλήματος) γ ὁ Σαραπίων τέτακτ(αι) τ[έ]λος ἐπικαταβολ(ῆς) τῆς
+23 ὑποθήκης.
+24 α (ἔτους) Νέρουα τοῦ κυρίου, Τῦβι ιε, ὁ Σαραπίων ὁ καὶ Διογένης ἐπήνεγκ(ε) [...]
+25 ..ω̣ς ἄδειαν κατὰ τῆς προκ(ειμένης) ὑποθή[κ]ης.
+26 ὑπάρχει δὲ αὐτῶι ἐπὶ τοῦ ἀπὸ λιβὸς μ̣[έρους τοῦ]
+27 ὄρους ἥμισυ μέρος τάφου κ[ο]ινωνι[κοῦ πρὸς τὴν]
+28 αὐτὴν πρὸς πατρὸς α(ὐτοῦ) θείαν Δη[μ]ητρ[οῦν].
+29 α (ἔτους) Νέρουα τοῦ κυρίου, Χοίακ κ, διʼ ἐνκ(υκλίου) ὁ α(ὐτὸς) Σαρα[πίων τέτακτ(αι) τέλος]
+30 τάφου̣ [καὶ] ψιλῶν τόπων ὄντων ἐν τῷ κ̣ονικ̣ ἐποι[κίῳ ][...]
+(ms)
+31 [...]....... Δί[ο]υ
+32 [τοῦ Π]τολλίωνος ὄντος
+33 [ἐν τ]ῷ δη(μοσίῳ) διὰ Ἡ̣ρ̣[α]ί̣δο̣ς
+34 [τῆς] Παυσίριος ὁμογνη(σίας)
+35 [ἀδελ]φῆς γυναικὸς αὐτοῦ
+36 [Διον]υσίας ἀναγρα(φομένης) ἐπʼ ἀμφόδ(ου)
+37 [...].ε̣ πα ο̣δ οἰκίαν καὶ
+38 [αὐλὴ]ν καὶ αἴθριον.
+39 α (ἔτους) Νέρουα τοῦ κ(υρίου),
+40 μη(νὸς) Καισ(αρείου) ἐπαγο(μένων) ε,
+41 διὰ ἀγο(ρανόμων) μητ(ροπόλεως)
+42 ὁ Σαραπίω(ν) ὁ καὶ Διογ(ένης)
+43 ἐν̣τ̣έ̣τ̣α(κται) πωλή̣σ(ας)
+44 [...]τ̣η.......α
+45 .....( ) ....λη
+46 ..........
+47 ἀπελευθέρῳ
+48 Ἡρακλείδ(ου) το(ῦ) Διογ(ένους)
+49 τ̣[ο(ῦ)] καὶ Ἡρακλείδ(ου)
+50 μητ(ρὸς) Ταυσίριος
+51 τῆ(ς) κ(αὶ) Θαλλοῦ(τος) εἰς
+52 ἀ̣λ̣λ̣ο̣ ἀπο.. ὁ̣μ̣(οίως) ἐξ ἴσου.
+53 vac.
+53 παρετέθ(η)
+54 τοῖς π̣ράκ̣τ(ορσι)
+55 ...μ ἀπο̣γρ(αφ ).
+
+English translation:
+(ctr)
+1 was transferred.
+2 And in the same quarter another house and court,
+3 which was formerly a vacant plot, of which half is inherited from his father,
+4 to which there fell to him by lot, from the division with his
+5 paternal aunt Demetrous daughter of Sarapion,
+6 nine and a quarter and an eighth cubits more,
+7 for which they also paid the tax.
+8 And [...] he holds in the same quarter in mortgage
+9 from Dius son of Ptollion [...], his mother being Thermouthis daughter of
+10 Sarapion, a house in which [...] and a hall
+11 and a court, in accordance with what was written to the same Sarapion
+12 by him and his wife Dionysia [...] daughter of
+13 [...]on, her mother being Saraeus daughter of Heraclides,
+14 in three loan contracts through the record office in the same city,
+15 one in the 7th year of Domitian the lord,
+16 in the month Kaisareios, the second in the past 8th year [...] in the month
+17 Phaophi, the third in the same past year in the month Mecheir;
+18 and the aforesaid property of his inheritance declared
+19 came to him after his father's death.
+20 Year 12, epagomenal day 5: through the circulation tax office the same Sarapion paid the tax for renewal
+21 of the aforesaid mortgage.
+22 Year 13, epagomenal day 5: through the circulation tax office, sheet 3, Sarapion paid the tax for the foreclosure on the
+23 mortgage.
+24 Year 1 of Nerva the lord, Tybi 15: Sarapion alias Diogenes produced [...]
+25 [...] permission against the aforesaid mortgage.
+26 He also owns, on the western side of the
+27 desert, half of a tomb held in common with
+28 the same paternal aunt of his, Demetrous.
+29 Year 1 of Nerva the lord, Choiak 20: through the circulation tax office the same Sarapion paid the tax
+30 on the tomb and the vacant plots in the [...] hamlet [...]
+(ms)
+31 [...] of Dius
+32 son of Ptollion, who is
+33 in the public prison, through Herais
+34 daughter of Pausiris, full
+35 sister of his wife
+36 Dionysia, registered in the quarter
+37 [...] house and
+38 court and hall.
+39 Year 1 of Nerva the lord,
+40 month Kaisareios, epagomenal day 5,
+41 through the agoranomi of the metropolis
+42 Sarapion alias Diogenes
+43 is entered as having sold
+44 [...]
+45 [...]
+46 [...]
+47 to the freedman
+48 of Heraclides son of Diogenes
+49 alias Heraclides,
+50 his mother being Tausiris
+51 alias Thallous, to
+52 [...] likewise equally.
+53 vac.
+53 It was submitted
+54 to the collectors
+55 [...] registration.
+
+Loan in ll. 8-17, the second of three loan contracts securing a mortgage on a house (property register).
+Date: Phaophi, year 8 of Domitian (= September/October AD 88).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.274-3,Dius son of Ptollion; Dionysia,Sarapion alias Diogenes,,,,AD 89,,Oxyrhynchus,"Source: P.Oxy. 2 274 (https://papyri.info/ddbdp/p.oxy;2;274)
+
+Original Text:
+(ctr)
+1 μετηνέχθη.
+2 καὶ ἐπὶ τοῦ α(ὐτοῦ) ἀμφόδου ἑτέραν οἰκίαν καὶ αὐλὴ(ν)
+3 ἃ ἦν τὸ πρὶν ψιλὸς τόπος, ἀφʼ οὗ πατρικὸν μὲν
+4 τὸ ἥμισυ, πρὸς ὧι κεκλήρωται ἐκ τῆς πρὸς τὴν
+5 πρὸς πατρὸς α(ὐτοῦ) θείαν Δημητροῦν Σαραπίωνος
+6 διαιρέσεως πλείω πήχεις ἐννέα τέταρτον
+7 ὄγδοον, ὧν καὶ τὸ τέλος ἔταξαν.
+8 καὶ [...] ἔχει ἐπὶ τοῦ α(ὐτοῦ) ἀμφόδο[υ] ἐν ὑποθήκη[ι]
+9 Δίου τοῦ Πτολλίωνος ..[...]ο̣υ μη(τρὸς) Θερμοῦτο(ς) τῆς
+10 Σαραπίωνος οἰκίαν ἐν ἧι π.....λ̣ον̣ καὶ αἴθριον
+11 καὶ αὐλή, ἀκολούθως αἷς ἔγραψε [τ]ῷ αὐτῶι Σαραπίωνι
+12 [αὐτός τε] καὶ ἡ γυνὴ αὐτοῦ Διονυσία [...]. τοῦ
+13 .[...]α̣[...]ω̣νος μη(τρὸς) \Σαρα/εῦτος τῆς Ἡρα̣κ̣λ̣[είδου]
+14 δανείου συνγραφαῖς τρισὶ διὰ τοῦ ἐν τῆι α(ὐτῇ) π[ό]λει
+15 μνημο(νείου), μιᾶι μὲν τῶι ζ (ἔτει) Δομιτιανοῦ τοῦ κυρίου
+16 μη(νὶ) Καισαρείωι, την δὲ \δε̣υ̣/τέρᾳ τῶι διελθ(όντι) η (ἔτει) το.... μ̣η̣(νὶ)
+17 Φαῶφι, τη[ν] δὲ τριτ[η]ν τῶ[ι] α(ὐτῷ) διελθ(όντι) (ἔτει) μ̣[η(νὶ)][ Μεχ]είρ,
+18 τὰ δὲ προκείμενα αὐτοῦ πατρικ[ὰ δ]ηλωθέν̣[τα]
+19 ὑπάρχοντα κατήντ(ησεν) εἰς α(ὐτὸν) μετὰ τὴν τ[ο]ῦ πατ(ρὸς) τελευ[τὴν].
+20 ιβ (ἔτους), ἐπαγο(μένων) ε, διʼ ἐνκυκλ(ίου) ὁ α(ὐτὸς) γε.. Σαραπίων τέτακται τ̣έ̣[λος] ἀνανεώ[σ]εως̣
+21 τῆς προκειμένης ὑποθήκης.
+22 ιγ (ἔτους), ἐπαγο(μένων) ε, διʼ ἐνκυκλ(ίου) κο(λλήματος) γ ὁ Σαραπίων τέτακτ(αι) τ[έ]λος ἐπικαταβολ(ῆς) τῆς
+23 ὑποθήκης.
+24 α (ἔτους) Νέρουα τοῦ κυρίου, Τῦβι ιε, ὁ Σαραπίων ὁ καὶ Διογένης ἐπήνεγκ(ε) [...]
+25 ..ω̣ς ἄδειαν κατὰ τῆς προκ(ειμένης) ὑποθή[κ]ης.
+26 ὑπάρχει δὲ αὐτῶι ἐπὶ τοῦ ἀπὸ λιβὸς μ̣[έρους τοῦ]
+27 ὄρους ἥμισυ μέρος τάφου κ[ο]ινωνι[κοῦ πρὸς τὴν]
+28 αὐτὴν πρὸς πατρὸς α(ὐτοῦ) θείαν Δη[μ]ητρ[οῦν].
+29 α (ἔτους) Νέρουα τοῦ κυρίου, Χοίακ κ, διʼ ἐνκ(υκλίου) ὁ α(ὐτὸς) Σαρα[πίων τέτακτ(αι) τέλος]
+30 τάφου̣ [καὶ] ψιλῶν τόπων ὄντων ἐν τῷ κ̣ονικ̣ ἐποι[κίῳ ][...]
+(ms)
+31 [...]....... Δί[ο]υ
+32 [τοῦ Π]τολλίωνος ὄντος
+33 [ἐν τ]ῷ δη(μοσίῳ) διὰ Ἡ̣ρ̣[α]ί̣δο̣ς
+34 [τῆς] Παυσίριος ὁμογνη(σίας)
+35 [ἀδελ]φῆς γυναικὸς αὐτοῦ
+36 [Διον]υσίας ἀναγρα(φομένης) ἐπʼ ἀμφόδ(ου)
+37 [...].ε̣ πα ο̣δ οἰκίαν καὶ
+38 [αὐλὴ]ν καὶ αἴθριον.
+39 α (ἔτους) Νέρουα τοῦ κ(υρίου),
+40 μη(νὸς) Καισ(αρείου) ἐπαγο(μένων) ε,
+41 διὰ ἀγο(ρανόμων) μητ(ροπόλεως)
+42 ὁ Σαραπίω(ν) ὁ καὶ Διογ(ένης)
+43 ἐν̣τ̣έ̣τ̣α(κται) πωλή̣σ(ας)
+44 [...]τ̣η.......α
+45 .....( ) ....λη
+46 ..........
+47 ἀπελευθέρῳ
+48 Ἡρακλείδ(ου) το(ῦ) Διογ(ένους)
+49 τ̣[ο(ῦ)] καὶ Ἡρακλείδ(ου)
+50 μητ(ρὸς) Ταυσίριος
+51 τῆ(ς) κ(αὶ) Θαλλοῦ(τος) εἰς
+52 ἀ̣λ̣λ̣ο̣ ἀπο.. ὁ̣μ̣(οίως) ἐξ ἴσου.
+53 vac.
+53 παρετέθ(η)
+54 τοῖς π̣ράκ̣τ(ορσι)
+55 ...μ ἀπο̣γρ(αφ ).
+
+English translation:
+(ctr)
+1 was transferred.
+2 And in the same quarter another house and court,
+3 which was formerly a vacant plot, of which half is inherited from his father,
+4 to which there fell to him by lot, from the division with his
+5 paternal aunt Demetrous daughter of Sarapion,
+6 nine and a quarter and an eighth cubits more,
+7 for which they also paid the tax.
+8 And [...] he holds in the same quarter in mortgage
+9 from Dius son of Ptollion [...], his mother being Thermouthis daughter of
+10 Sarapion, a house in which [...] and a hall
+11 and a court, in accordance with what was written to the same Sarapion
+12 by him and his wife Dionysia [...] daughter of
+13 [...]on, her mother being Saraeus daughter of Heraclides,
+14 in three loan contracts through the record office in the same city,
+15 one in the 7th year of Domitian the lord,
+16 in the month Kaisareios, the second in the past 8th year [...] in the month
+17 Phaophi, the third in the same past year in the month Mecheir;
+18 and the aforesaid property of his inheritance declared
+19 came to him after his father's death.
+20 Year 12, epagomenal day 5: through the circulation tax office the same Sarapion paid the tax for renewal
+21 of the aforesaid mortgage.
+22 Year 13, epagomenal day 5: through the circulation tax office, sheet 3, Sarapion paid the tax for the foreclosure on the
+23 mortgage.
+24 Year 1 of Nerva the lord, Tybi 15: Sarapion alias Diogenes produced [...]
+25 [...] permission against the aforesaid mortgage.
+26 He also owns, on the western side of the
+27 desert, half of a tomb held in common with
+28 the same paternal aunt of his, Demetrous.
+29 Year 1 of Nerva the lord, Choiak 20: through the circulation tax office the same Sarapion paid the tax
+30 on the tomb and the vacant plots in the [...] hamlet [...]
+(ms)
+31 [...] of Dius
+32 son of Ptollion, who is
+33 in the public prison, through Herais
+34 daughter of Pausiris, full
+35 sister of his wife
+36 Dionysia, registered in the quarter
+37 [...] house and
+38 court and hall.
+39 Year 1 of Nerva the lord,
+40 month Kaisareios, epagomenal day 5,
+41 through the agoranomi of the metropolis
+42 Sarapion alias Diogenes
+43 is entered as having sold
+44 [...]
+45 [...]
+46 [...]
+47 to the freedman
+48 of Heraclides son of Diogenes
+49 alias Heraclides,
+50 his mother being Tausiris
+51 alias Thallous, to
+52 [...] likewise equally.
+53 vac.
+53 It was submitted
+54 to the collectors
+55 [...] registration.
+
+Loan in ll. 8-17, the third of three loan contracts securing a mortgage on a house (property register).
+Date: Mecheir, year 8 of Domitian (= January/February AD 89).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.286-1,[...]; Thaesis,Philumene daughter of Heron,2000,drachma (silver),interest-bearing (rate not stated),AD 77,,Oxyrhynchus,"Source: P.Oxy. 2 286 (https://papyri.info/ddbdp/p.oxy;2;286)
+
+Original Text:
+(recto)
+1 [...]
+1 [...].α̣[...]υ̣[...]ησ..[...].α......
+2 δαπανησασα̣.του.ει̣ο̣υ̣ ὡμολόγηκεν τὴν Ζηνά
+3 ριον ἀποδώσειν μετʼ ἔτη πέ[ν]τ̣ε τῇ τοῦ Ἥρωνος μητρὶ
+4 [Φ]ιλουμένῃ Ἥρωνο[ς ἃς ἐδ]ά[νεισ]ε̣ν̣ ἡ Φιλουμένη ἐμοί
+5 τε καὶ τῇ μητρί μου Θ[αήσι] κ̣α̣τ̣ὰ̣ συνγρα̣φ̣[ὴν τελ]ε̣ιωθ̣[εῖ]σ̣α̣ν̣
+6 διὰ τοῦ ἐν τῇ Ὀξυρύγχω[ν πό]λει μνημονίου τῷ ἐνάτῳ ἔτει
+7 θεοῦ Οὐεσπασιανοῦ Φαρ[μ]οῦθι ἀργυρίο[υ δρα]χμὰς δισχει
+8 λίας κεφαλαίου καὶ τοὺς τούτων ἐξ ἀρχῆς μέχρι τῆς
+9 ἀποδόσεως τόκους, καὶ παρέξεσθαι ἐμέ τε καὶ τὴν μη
+10 τέρα μου Θαῆσιν ἀπαρενοχλήτους καὶ ἀνεισπράκτους
+11 κατὰ πάντα τρόπον, ἢ ἐκτείσειν ὃ ἐὰν πραχθῶμεν ἢ βλα
+12 βῶμεν τούτων χάριν σὺν ἡμιολίᾳ ἐφʼ οἷς ἄλλοις ἡ ἀσφάλεια
+13 περιέχει. τῆς δὲ Φιλουμένης παρʼ ἕκαστα διοχλούσης με
+14 προελθεῖν ἠνάγκασμαι, καὶ ἀξιῶ συντάξαι γράψαι τῷ τοῦ
+15 Ὀξυρυγχείτου ξενικῶν πράκτορι μεταδοῦναι τῇ τε
+16 Ζηναρίῳ καὶ τῷ Ἥρωνι τοῦδε τοῦ ὑπομνήματος
+17 [ἀ]ντίγραφον ὅπως παρέχωνται ἡμᾶς ἀπερισπάστους
+18 [καὶ] ἀπαρενοχλήτους ὑπὲρ τῆς προκειμένης ὀφειλῆς
+19 καὶ ἀποδῶσειν ταῦτα, ἢ εἰδῶσι ἐάν τι ἰς ταύτην πραχθῶ
+20 ἐσομένην μοι τὴν πρᾶξιν παρά τε αὐτῶν καὶ ἐξ ὧν
+21 ἐὰν εὑρίσκω αὐτῶν ἐπὶ τῶν τόπων ὑπαρχόντων καὶ
+22 σειτικῶν ἐδαφῶν καὶ ἑτέρων. τῶν μὲν γὰρ ἄλλων τῶν
+23 κατʼ ἐμαυτὴν κα[ὶ] ὧν ἑτέρων ἔχω πρὸς αὐτοὺς καὶ τῶν
+24 ὑπόντων μοι δ[ι]καίων πάντων ἀντέχομαι καὶ ἀν
+25 θέξομαι ἐν οὐδενὶ ἐλαττουμένη. πρὸς δὲ τὴν τοῦ χρη
+26 ματισμοῦ τελείωσιν διαπέσταλμαι Ἡρακλείδην Ἡρα
+27 κλείδου.
+28 ὡς̣ (ἐτῶν) λ̣.
+28 ὡς καθήκει. (ἔτους) πρώτου Αὐτοκράτορος Καίσαρος
+29 [Δομιτι]ανοῦ Σεβαστοῦ μ[ηνὸς] Γερμανικείου κβ.
+(verso)
+1 ... τοῦ Ὀξυρυγχ(ίτου) ...[...]
+
+English translation:
+(recto)
+1 [...]
+1 [...]
+2 having spent [...], acknowledged that Zena-
+3 rion would repay after five years to Heron's mother
+4 Philumene daughter of Heron the drachmas which Philumene lent to me
+5 and to my mother Thaesis by a contract executed
+6 through the record office in the city of Oxyrhynchus in the ninth year
+7 of the deified Vespasian, Pharmouthi, two thousand drachmas of silver
+8 of capital, and the interest on them from the beginning until the
+9 repayment, and that she would keep me and my
+10 mother Thaesis free from trouble and from exaction
+11 in every way, or pay whatever we might be made to pay or
+12 lose on this account with one-half more, besides the other terms the security
+13 contains. Since Philumene is constantly troubling me,
+14 I have been forced to come forward, and I ask you to give orders to write to the
+15 collector of foreign debts of the Oxyrhynchite nome to serve on
+16 Zenarion and Heron a copy of this memorandum,
+17 so that they may keep us free from distraction
+18 and trouble in respect of the aforesaid debt
+19 and repay it, or know that, if I am made to pay anything for it,
+20 I shall have the right of execution upon them and upon whatever
+21 of their property I find in the district,
+22 grain land and other things. For in all other
+23 matters of my own and the other claims I have against them, and all
+24 my rights, I hold fast and will
+25 hold fast, being in no way diminished. For the execution of the
+26 registration I have sent Heraclides son of Hera-
+27 clides.
+28 aged about 30.
+28 as is proper. Year one of Imperator Caesar
+29 Domitian Augustus, month Germanikeios 22.
+(verso)
+1 [...] of the Oxyrhynchite [...]
+
+Loan in ll. 3-9; the borrowers are the petitioner (name lost) and her mother Thaesis.
+Date: Pharmouthi, year 9 of Vespasian (= March/April AD 77).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.2.299-1,Dionysius,Horus,8,drachma,,AD 76-100,,Oxyrhynchus,"Source: P.Oxy. 2 299 (https://papyri.info/ddbdp/p.oxy;2;299)
+
+Original Text:
+1 Ὧρος Ἀπίωνι τῷ τειμειωτάτωι χαίρειν.
+2 Λάμπωνι μυοθηρευτῇ ἔδωκα αὐτῷ διὰ σοῦ ἀρα
+3 βῶνα (δραχμὰς) η ἵνα μυοθηρεύσει ἐν Τόκα. καλῶς ποιήσεις
+4 πέμψεις μοι αὐτάς. καὶ Διονυσίῳ προσ[τ]άτῃ Νεμερῶν
+5 κέκρηκα (δραχμὰς) η καὶ ταύτας οὐκ ἔπεμψε, ἵνα εἰδῇς.
+6 ἔρρωσ(ο). Παῦνι κδ.
+
+English translation:
+1 Horus to the most esteemed Apion, greeting.
+2 To Lampon the mouse-catcher I gave through you as earnest money
+3 8 drachmas, so that he might catch mice at Toka. Please
+4 send me them. And to Dionysius, headman of Nemerai,
+5 I have lent 8 drachmas, and he has not sent these either, so that you may know.
+6 Farewell. Payni 24.
+
+Loan in ll. 4-5; the 8 drachmas given to Lampon (ll. 2-3) are earnest money for work.
+Date: not stated; the date of the document (HGV).
+Place: not stated; the place of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.3.485-1,Sarapias daughter of Podon,Serenus,900,drachma (silver),1 drachma per mina per month (1% per month),AD 177,"until Kaisareios 30, year 18 of Marcus Aurelius and Commodus (= 23 August AD 178)",Oxyrhynchus,"Source: P.Oxy. 3 485 (https://papyri.info/ddbdp/p.oxy;3;485)
+
+Original Text:
+(ctr)
+1 Θέωνι στρα(τηγῷ)
+2 παρὰ Σερ̣ή̣νου ἀπελευθέρου Ἀπολλωνιανοῦ Σαραπίω
+3 νος ἀπʼ Ὀξυρύγχων πόλεως. οὗ ἐπόρισα ἐκ τοῦ καταλο̣γί̣ο̣
+4 χρημ(ατισμοῦ) ἐστιν ἀντίγρ(αφον)· Ἀντωνῖνος ὁ καὶ Πούδης ὁ ἱερεὺς
+5 καὶ ἀρχιδ(ικαστὴς) Ὀξυρυγχείτου στρ(ατηγῷ) χ(αίρειν). τοῦ δεδομένου ὑπομνήμ(ατος)
+6 (slanting-stroke) (slanting-stroke) (slanting-stroke) ἀντίγρ(αφον) μεταδοθήτω ὡς ὑπ(όκειται). ἔρρωσο. (ἔτους) ιθ Αὐρηλίων Ἀντωνί(νου)
+7 καὶ Κομμόδου τῶν κυρίων Σεβαστῶν Φαῶφι ζ. Σαραπ(ίων)
+8 [...]. ..( ) [σ]ε̣σ̣(ημείωμαι). Ἡφαιστίων ὁ κ(αὶ) Σαραπ(ίων) ἔγρα(ψα). Ἀντωνίνῳ τῷ καὶ
+9 Πούδεντι ἱερεῖ ἀρχιδικαστῇ καὶ πρὸς τῇ ἐπιμελείᾳ
+10 τῶν χρ[η]ματιστῶν καὶ τῶν ἄλλων κριτηρίων παρὰ
+11 Σερ̣[ήνου ἀπελ]ευθέρου Ἀπολλωνοῦ Σαραπίωνος ἀπʼ [Ὀ]ξυρύγ
+12 χω[ν πόλε]ως. ἐδάνεισα κατὰ δημόσιον χρηματισμὸν
+13 γεγραμένον διὰ τοῦ ἐν τῇ αὐτῇ Ὀξυρύγχων πόλει μνημο
+14 νείου τῷ διελθόντι ιη (ἔτει) μηνὶ Σεβαστῷ ια Σαραπιά
+15 δι Π̣όδωνος τοῦ Ὥρου μητρὸς Θαήσιος ἀπὸ Ψώβθεως
+16 τῆς μητροπόλεως τῆς μικρᾶ[ς] Ὀάσεως ἀργυρίου δ[ρα]
+17 χμὰς ἐνακοσίας κεφαλαίου τόκου δραχμιαίου ἑκάστης
+18 μνᾶς κατὰ μῆνα τοῦ δὲ κεφαλαίου λ μηνὸς Καισαρείου
+19 τοῦ αὐτοῦ [δ]ιελθόντος ιη (ἔτους), δηλωθέντος ἐὰν μὴ ἀπο
+20 δῷ ἐν τῇ προθεσμίᾳ μένειν περὶ ἐμὲ καὶ τοὺς παρʼ ἐ
+21 μοῦ μεταλημψομένους ἀντί τε τοῦ κεφαλαίου καὶ ὧν
+22 [ἐὰ]ν μὴ ἀπ[ο]δοι τόκων τὴν κράτησιν καὶ κυρείαν
+23 τῆς ὑπαρχούσης αὐτῇ δούλης Σαραπιάδος [τ]ό̣τ̣ε̣ οὔσης
+24 ὡς (ἐτῶν) κε ἐφʼ οἷς ἄλλοις τὸ δάνειον περιέχει καὶ αἱ ἐν αὐ
+25 τῷ ἐνγεγραμμέναι περί τε δρασμοῦ καὶ θανάτου τῆς
+26 δούλης ἐπὶ τῇ ἐμῇ ἀσφαλείᾳ διαστολαὶ περιέχουσι.
+27 τῆς δὲ προθεσμίας διελθούσης καὶ τῆς ἀποδόσεώς
+28 μοι μὴ γενομένης ἀξιῶ συντάξαι γράψαι τῷ τοῦ Ὀξυρυγ
+29 χείτου στρ(ατηγῷ) \μεταδοῦ(ναι) τούτου ἀντίγρ(αφον)/ τῇ Σ[αρα]πιάδι ἐὰν περιῇ, εἰ δὲ μή, κληρονόμοις
+30 [α]ὐ̣[τῆ]ς τελεί[ο]ι̣ς̣, ἐ̣ὰν δὲ κα[ὶ] ἀφήλικ[ες] ὦσι, νομίμοις αὐ
+31 τῶν ἐπιτρόποις ὧν τὰ ὀνόματα ἐπὶ τῶν [τ]όπων δηλω
+32 θήσεται, ἵνʼ εἰδῶσι καὶ ποιήσωνταί μοι τὴν ἀπόδοσιν
+33 ἢ εἰδῶσι χρησόμε[νόν με] τοῖς ἁρμόζουσι περ[ὶ ἐ]μβαδεί
+34 ας νομίμοις ὡς κ[αθή]κει. (ἔτους) ιθ Αὐρη[λί]ων Ἀν[τ]ωνίνου
+35 καὶ Κομμόδου τῶ[ν κυρίω]ν Σεβαστῶν Φα[ῶφι ][...]. σ̣[τρ]α̣(τηγοῦ)
+36 τ̣[ο]ύτο̣υ̣ ὄ̣ντος ἀξ[ιῶ τὴν] μετάδοσι̣ν̣ γενέσθ̣[αι τῇ]
+37 [Σα]ραπιάδι ὡς κα[θήκει. (ἔτους) ιθ Αὐτοκρατόρων]
+38 Καισάρων Μάρκο(υ) Α[ὐρηλίου Ἀντωνίνου καὶ Λουκίου]
+39 Αὐρηλ(ί)ο(υ) Κομ[μόδου] Σεβ[αστῶν Ἀρμενιακῶν]
+40 Μηδικῶν Παρθικῶν [Γερμανικῶν Σαρματικῶν]
+41 [Μεγί]σ̣τ̣ω̣ν̣ Ἁθὺρ ιθ. [ Σαραπιὰς Πόδωνος]
+42 [ἔ]σχον τούτου το[ῦ ὑπομνήμ(ατος) ἀντίγρ(αφον). (ἔτους) ιθ Αὐρηλίων]
+43 Ἀντωνίνου καὶ Κ[ομμόδου τῶν κυρίων]
+44 Αὐτοκρ[α]τόρων μη[νὸς Ἁθὺρ ][...][ Μου]
+45 σ̣α̣ῖος ὁ καὶ Παυσειρίω̣[ν τοῦ ][...][ ἐπιγέ]
+46 γ[ρ]αμμαι αὐτῆς κύριος ἀντ̣ὶ̣ [...]
+47 [δ]ι̣ὰ̣ τ̣[οῦ] στρατηγοῦ καὶ ἔγραψα ὑ[πὲρ αὐτῆς]
+48 [μ]ὴ εἰδυειης γράμμ[ατα].
+49 Σ̣υρίων̣ ὑπ(ηρέτης) μ[ετέδωκα τὸ ὑπό]
+50 μ̣ν̣η̣(μα) Σαραπιάδι ὡ̣ς̣ [καθήκει. (ἔτους) ιθ]
+51 μ[η]νὸς Ἁ[θὺρ ][...]
+(ms)
+52 μετὰ κυ(ρίου)
+53 Εὐδαίμο(νος)
+54 χρ[η(ματίζοντος)] μητ(ρὸς)
+55 Ἱ̈ερ̣ῆ̣ς̣
+56 ἀπʼ Ὀξυ̣ρ̣ύ(γχων)
+57 πόλ(εως)
+
+English translation:
+(ctr)
+1 To Theon, strategus,
+2 from Serenus, freedman of Apollonianus son of Sarapion,
+3 of the city of Oxyrhynchus. Of the document I obtained from the record office
+4 this is a copy: Antoninus alias Pudens, priest
+5 and archidicastes, to the strategus of the Oxyrhynchite, greeting. Of the memorandum submitted
+6 let a copy be served as below. Farewell. Year 19 of the Aurelii Antoninus
+7 and Commodus the lords Augusti, Phaophi 7. I, Sarapion,
+8 [...] have signed. I, Hephaestion alias Sarapion, wrote. To Antoninus alias
+9 Pudens, priest, archidicastes and in charge of
+10 the chrematistae and the other courts, from
+11 Serenus, freedman of Apollonas son of Sarapion, of the city of Oxyrhyn-
+12 chus. I lent by a public document
+13 written through the record office in the same city of Oxyrhynchus
+14 in the past 18th year, in the month Sebastos 11, to Sarapias
+15 daughter of Podon, grandson of Horus, her mother being Thaesis, from Psobthis,
+16 the metropolis of the Small Oasis, nine hundred drachmas
+17 of silver of capital at interest of one drachma per
+18 mina per month, the capital (to be repaid) on the 30th of the month Kaisareios
+19 of the same past 18th year, it being declared that if she does not re-
+20 pay within the term there shall remain with me and those who will suc-
+21 ceed me, in place of the capital and of whatever
+22 interest she does not pay, possession and ownership
+23 of her slave Sarapias, then
+24 aged about 25, besides the other terms the loan contains and the
+25 provisions written in it concerning the escape and death of the
+26 slave for my security.
+27 Since the term has passed and the repayment
+28 has not been made to me, I ask you to give orders to write to the strategus of the Oxyrhyn-
+29 chite to serve \a copy of this/ on Sarapias if she is alive, or if not, on her heirs
+30 of full age, or if they are minors, on their legal
+31 guardians, whose names will be declared in the district,
+32 so that they may know and make the repayment to me,
+33 or know that I shall avail myself of the legal rules concerning entry into posses-
+34 sion, as is proper. Year 19 of the Aurelii Antoninus
+35 and Commodus the lords Augusti, Phaophi [...]. The strategus
+36 being this (man), I ask that the service be made [on]
+37 Sarapias as is proper. [Year 19 of the Imperatores]
+38 Caesares Marcus [Aurelius Antoninus and Lucius]
+39 Aurelius Commodus Augusti [Armeniaci]
+40 Medici Parthici [Germanici Sarmatici]
+41 Maximi, Hathyr 19. [I, Sarapias daughter of Podon,]
+42 have received [a copy of this memorandum. Year 19 of the Aurelii]
+43 Antoninus and Commodus [the lords]
+44 Imperatores, month [Hathyr] [...]. I, Mou-
+45 saeus alias Pausirion son of [...], am regis-
+46 tered as her guardian in place of [...]
+47 through the strategus, and I wrote [for her]
+48 as she does not know letters.
+49 I, Syrion, assistant, [served the memo-]
+50 randum on Sarapias as [is proper. Year 19],
+51 month Hathyr [...]
+(ms)
+52 with her guardian
+53 Eudaemon,
+54 registered as son of the mother
+55 Hiere,
+56 of the city of Oxy-
+57 rhynchus.
+
+Loan in ll. 12-26; petition for its recovery (AD 178). The lender is called freedman of Apollonianus (l. 2) and of Apollonas (l. 11), son of Sarapion.
+Date: Sebastos 11, year 18 of Marcus Aurelius and Commodus (= 8 September AD 177).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.3.506-1,Thatres daughter of Apollonius; Teteorion daughter of Apollonius; Demas daughter of Apollonius,Sarapion son of Herodes,1000,drachma (silver),3 obols per mina per month (1/2% per month),AD 143,"interest at the end of each 12 months; capital until Kaisareios 30, year 9 of Antoninus Pius (= 23 August AD 146)",Oxyrhynchus,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
+
+Original Text:
+(r,FrA)
+1 ἀντίγραφ[ο]ν. ἔτου[ς] ἑβδόμου Αὐτοκράτορος Καίσα[ρ]ος Τίτου Αἰλίου Ἁδριανοῦ Ἀντωνί[νου]
+2 Σεβαστοῦ Εὐσεβοῦς μηνὸς Ἁδριανοῦ ἐν Ὀξυρύγχων πόλει τῆς Θηβαί̈δος.
+3 ἐδάνεισαν Σαραπίων Ἡρώδου τοῦ Ἐξακῶντο[ς ἀ]πʼ Ὀξυρύγχων πόλεω[ς]
+4 μητρὸς Κα[ι]κ[ι]λ̣λίας Πώλλης Θατρῆτι καὶ Τετεωρίῳ ἀμφοτέραις Ἀπολλω
+5 νίου τοῦ [...].ος καὶ τῇ τουτούτων μητρὶ Δημᾶτι Ἀπολλωνίου τοῦ Πανε
+6 χώτου μη[τ]ρὸς Φιλωτέρας, ταῖς τρισὶ ἀπὸ κώμης Πέλα Περσείναις, ἑκάστῃ
+7 μετὰ κυρί[ο]υ Θατρῆτι μὲν τοῦ ἀνδρὸς Πετεύ̈ριος Ἀμμωνᾶτος τοῦ Σαγάθου
+8 μητρὸς Πανεχώτιδος ἀπʼ Ὀξυρύγχων πόλεως, Τετεωρίῳ δὲ τοῦ πρὸς μητρὸς
+9 θείου Πανεχώτου Ἀπολλωνίου μητρὸς Φιλωτέρας ἀπὸ τῆς προκειμένης
+10 Πέλα, Δημᾶτι δὲ τοῦ πρὸς πατρὸς αὐτῆς θείου Ἁτρῆτος Πανεχώτου τοῦ Ἀπολ
+11 λωνίου ἀπὸ τῆς αὐτῆς Πέλα, ἐν ἀγυϊᾷ ἀργυρίου Σεβαστοῦ νομίσματος δραχμὰς
+12 χιλίας κεφαλαίου αἷς [ο]ὐδὲν προσῆκται τόκου τριωβολείου ἑκάστης μνᾶς
+13 τοῦ μηνὸς ἑκάστου ἀπὸ τοῦ ἐνεστῶτος μηνὸς Ἁδριανοῦ. ἀποδότωσαν δ[ὲ]
+14 αἱ δεδαν[ε]ισμέναι τῷ δεδανε[ι]κότι τὸν μὲν [τ]όκον ἐπὶ [σ]υνκλεισμῷ
+15 [ἑ]κάστης δωδεκαμήνου, τῆς πί[σ]τεως περὶ τὸ[ν] δεδα[ν]ει[κό]τα οὔσης
+16 περὶ ὧν ἐ[ὰ]ν μὴ ἐπιφέρωσι αὐτοῦ αἱ δεδανε[ι]σμένα[ι] γ[ρ]άμματα̣,
+17 τὸ δὲ κε[φά]λαιον τῇ τριακάδι μηνὸς Καισαρ[ε]ίου τοῦ ἐνάτου ἔτους
+18 Ἀντωνίνου Καίσαρος τ[οῦ κυ]ρίου ἅμα τοῖς τῶ[ν λοιπ]ῶν μηνῶν ἐ̣ν̣[νέα]
+19 τόκοις χωρὶς ὑ̈περθέσεως. εἰ δὲ μή, [σ]υνχωροῦσι ἥ τε Θατρῆς καὶ Τετεώ
+20 ρ[ιο]ν μένειν περὶ τὸν δεδανεικότα καὶ τοὺς παρʼ αὐτοῦ μεταλημ
+21 ψομένους ἀντί τε τοῦ κεφαλαίου καὶ ὧν ἐὰν μὴ ἀπολάβῃ τόκων
+22 ἀπὸ τοῦ τῆς ἀποδόσεως χρόνου τὴν κράτησιν καὶ κυρείαν εἰς τ[ὸ]ν
+23 αἰεὶ χρόνον τῶν ὑ̈παρχόντων αὐταῖς ἐξ ἴσου περὶ τὴν αὐτὴν Πέλα
+24 ἐκ τοῦ Διοκλέους καὶ Πτολεμαίου Πέρσου ἱππικοῦ κλήρου τρίτου μέ
+25 ρους τὸ πρὶν ἀμπελικοῦ κτήματος νυνεὶ δὲ χερσαμπέλ[ου] ἐκ τοῦ
+26 ἀποβορρ[ο]τά̣του μέ[ρ]ου[ς το]ῦ̣ α̣ὐτοῦ τρίτου μέρους ἀρουρα μια ἡμ[ίσους] τεταρ
+27 τον τετρακαιεξηκ[οστοῦ σὺν τ]οῖς ἐνοῦσι πᾶσι, [ὧν γείτονες] νότου [Σ]τεφάν[ου]
+28 [...]ο.τητ̣ος τοῦ .[...][ καὶ Θ]ατρῆς προκιμ̣[ένη Ἀπολλων]ίου βορρᾶ τοῦ̣ [...]
+29 [...]...α̣ρπ̣ου κα[ὶ ][...][ ἀπηλι]ώτου διῶρ[υξ ][...][ τῶ]ν̣ αὐτῶν κα[ὶ]
+30 [τοῦ Στε]φάνου λιβ[ὸς ][...]υ ἀδελφο[ῦ ][...]..του ε̣π̣ι̣.[...]
+31 [...]ι̣στο̣υ̣ α̣ὐ̣τω[...]α̣ς̣ τριτο.[...]
+32 [...]
+(r,FrB)
+32 [...]ρ̣[...].[...]
+33 [...]αυ[...]αι μ̣[...]
+34 [...]μεναις̣ [...]ν̣ι ἐπὶ τ[...]τα
+35 [...] καὶ ἐπάνα[γκον παρέξασ]θαι τῷ δε[δανεικότι ἢ] τοῖς
+36 [παρʼ αὐτοῦ ταῦτα διὰ π]αντὸς βέ[βαια ἀπὸ π]άν[τω]ν πάσῃ βε[βαιώσει κα]ὶ̣ κα
+37 [θαρὰν ἀπὸ πάσης γε]ωργ[ί]ας βα[σιλικῆς] καὶ [οὐσι]α̣κ̣ῆς γ̣ῆ̣ς̣ κ̣[αὶ παντὸς εἴ]δ̣[ο]υς
+38 [καὶ πάσης παραγραφ]ῆ̣ς ἀπὸ δὲ δ[ημοσί]ων καὶ τελεσμά[των πάντω]ν
+39 [ἀπὸ τῶν ἐπ]άνω χρόνων μέχρι τοῦ τῆς κυρείας χρόν[ου, ἕως δʼ ἂν ἀπ]οδῶ
+40 [σιν αἱ δεδαν]εισμέναι τῷ δεδανεικότι τὸ κεφ[άλ]αιον καὶ τοὺς τόκους
+41 [οὐκ ἐξεῖναι τ]ῇ Θατρῆτι καὶ Τετεωρίῳ ταῦτα πωλεῖν οὐδὲ ὑ̈ποτίθεσθαι οὐ
+42 [δʼ ἄλλως κατα]χρηματίζειν οὐδὲ ἀπογράφεσθαί τινα ἐπὶ τ\ῶν/ ἀγρῶν,
+43 [ἐξουσίας οὔσ]ης τῷ δεδανεικότι μετὰ τὸν χρόνον μὴ ἀπολαμβάνοντα
+44 [ἐμποιεῖσθαι] τούτων̣ ἀντί τε τοῦ κεφαλαίου καὶ ὧν ἐὰν μὴ ἀπολάβῃ τόκων
+45 [τριωβολείω]ν καὶ τῶν καὶ τοῦ ὑ̈περπεσόντος χρόνου ἴ̈σων τρ[ι]ωβολείων,
+46 [ἢ τὴν πρᾶξι]ν ποιεῖσθαι ἔκ τε τῶν δεδανεισμένων ἀλληλενγύων οὐ
+47 [σῶν εἰς ἔκ]τισιν καὶ ἐξ ἧ[ς] ἐὰν αὐτῶν αἱρῆται καὶ ἐκ τῶν προκειμέ
+48 [νων ἁπάν]των καὶ ἐκ τῶν ἄλλων ὑπαρχόντων αὐταῖς πάντων κα
+49 [θάπερ ἐκ δί]κης, ἐ̣ξ̣όντος τῷ δεδανεικότι ὁπόταν αἱρῆται κατοχὴν
+50 [αὐτῶν ][...]χισα[σθ]αι πρὸ τοῦ τῶν ἐνκτήσεων βιβλιοφυλακίου πρὸς τὸ αὐ
+51 [τ ][...] μ[ὴ ἐ]λ̣αττουμένου τοῦ αὐτοῦ δεδανεικότος ἐν τῇ πράξει
+52 [ὧν ἄλλων ὀ]φ̣εί[λει] αὐτῷ [ἥ] τε Θατρῆς καὶ Τετεώριον καθʼ ἕτ̣ε̣ρον̣ δά
+53 [νειον γεγον]ός διὰ τοῦ αὐ[το]ῦ μνημονείου τ[ῷ] ἐνεστῶτι μηνὶ Ἁδριανῷ
+54 [...]σ̣εως τῆς μη[τρὸ]ς ἐπὶ ὑ̈ποθήκῃ ταῖς προκειμέναις σειτικαῖς
+55 [ἀρούραις δέ]κα τέσσαρσι ἡ[μί]σει ἀργυρίου ταλάντου ἑνὸς καὶ δραχμῶν ἑξακοσίων
+56 [κεφαλαίο]υ̣ καὶ̣ τόκω̣ν̣, ἀ̣[λλὰ] εἶναι κύριον ὡς περιέχει. κυρία \ἡ/ συνγραφή.
+(r,FrC)
+57 [...].[...]
+58 [...].ατων[...]
+59 [...][ ἐὰ]ν̣ β̣ούλ̣[ηται ][...]
+(verso)
+1 (1 lines illegible)
+
+English translation:
+(r,FrA)
+1 Copy. Year seven of Imperator Caesar Titus Aelius Hadrianus Antoninus
+2 Augustus Pius, month Hadrianos, in the city of Oxyrhynchus in the Thebaid.
+3 Sarapion son of Herodes, grandson of Hexakon, of the city of Oxyrhynchus,
+4 his mother being Caecilia Polla, lent to Thatres and Teteorion, both daughters of Apollo-
+5 nius, grandson of [...], and to their mother Demas daughter of Apollonius, grandson of Pane-
+6 chotes, her mother being Philotera, all three from the village of Pela, Persians, each
+7 with her guardian, Thatres her husband Peteuris son of Ammonas, grandson of Sagathes,
+8 his mother being Panechotis, of the city of Oxyrhynchus, Teteorion her maternal
+9 uncle Panechotes son of Apollonius, his mother being Philotera, of the aforesaid
+10 Pela, Demas her paternal uncle Hatres son of Panechotes, grandson of Apol-
+11 lonius, of the same Pela, in the street, of silver of imperial coinage, one thousand
+12 drachmas of capital, to which nothing has been added, at interest of three obols per mina
+13 per month from the present month Hadrianos. The borrowers are to repay
+14 to the lender the interest at the close
+15 of each twelve months, the lender being trusted
+16 in respect of whatever the borrowers do not produce a written receipt from him for,
+17 and the capital on the thirtieth of the month Kaisareios of the ninth year
+18 of Antoninus Caesar the lord, together with the interest of the remaining nine
+19 months, without delay. Otherwise Thatres and Teteo-
+20 rion agree that there shall remain with the lender and his successors,
+21 in place of the capital and of whatever interest he does not receive,
+22 from the time of repayment, possession and ownership for all
+23 time of their property held in equal shares near the same Pela,
+24 in the cavalry kleros of Diocles and Ptolemaeus the Persian, a third part,
+25 formerly a vineyard, now dry vineyard land, from the
+26 northernmost part of the same third part, one and a half and a quarter
+27 and a sixty-fourth aroura, with everything on it, [whose neighbours are] south Stephanus
+28 [...] and the aforesaid Thatres daughter of Apollonius, north [...]
+29 [...] east a canal [...] of the same and
+30 of Stephanus, west [...] brother [...]
+31 [...]
+32 [...]
+(r,FrB)
+32 [...]
+33 [...]
+34 [...]
+35 [...] and they are obliged [to guarantee] to the lender or his
+36 [successors these] at all times secure against everyone with every guarantee and
+37 [free from all] cultivation of royal and estate land and of every kind
+38 [and every claim], and from public dues and charges of every kind
+39 [from former] times up to the time of ownership; [and until] the borrowers
+40 repay to the lender the capital and the interest,
+41 Thatres and Teteorion [may not] sell, mortgage or
+42 [otherwise] dispose of these, nor register anyone on the fields,
+43 the lender [having the right], after the term, if he does not receive (payment),
+44 [to take possession] of them in place of the capital and whatever interest
+45 of three obols he does not receive and of the equal interest of three obols for the overdue time,
+46 [or to] exact payment from the borrowers, who are sureties for each other
+47 [for] payment, and from whichever of them he chooses, and from all the aforesaid
+48 and from all their other property, as
+49 [if by a court] judgment, the lender being entitled, whenever he chooses, to have a notice of distraint
+50 [on them] registered (?) at the property record office for the [...]
+51 [...] the same lender not being prejudiced in the exaction
+52 [of the other sums] that Thatres and Teteorion owe him by another
+53 [loan made] through the same record office in the present month Hadrianos
+54 [...] of the mother, on the mortgage of the aforesaid fourteen and a half
+55 [arouras] of grain land, one talent of silver and six hundred drachmas
+56 [of capital] and interest, but (that loan) is to be valid as it stands. The contract is valid.
+(r,FrC)
+57 [...]
+58 [...]
+59 [...] if he wishes [...]
+(verso)
+1 (1 lines illegible)
+
+Loan in ll. 3-19.
+Date: Hadrianos, year 7 of Antoninus Pius (= November/December AD 143).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.3.506-2,Thatres daughter of Apollonius; Teteorion daughter of Apollonius,Sarapion son of Herodes,1; 600,talent (silver); drachma (silver),interest-bearing (rate not stated),AD 143,,Oxyrhynchus,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
+
+Original Text:
+(r,FrA)
+1 ἀντίγραφ[ο]ν. ἔτου[ς] ἑβδόμου Αὐτοκράτορος Καίσα[ρ]ος Τίτου Αἰλίου Ἁδριανοῦ Ἀντωνί[νου]
+2 Σεβαστοῦ Εὐσεβοῦς μηνὸς Ἁδριανοῦ ἐν Ὀξυρύγχων πόλει τῆς Θηβαί̈δος.
+3 ἐδάνεισαν Σαραπίων Ἡρώδου τοῦ Ἐξακῶντο[ς ἀ]πʼ Ὀξυρύγχων πόλεω[ς]
+4 μητρὸς Κα[ι]κ[ι]λ̣λίας Πώλλης Θατρῆτι καὶ Τετεωρίῳ ἀμφοτέραις Ἀπολλω
+5 νίου τοῦ [...].ος καὶ τῇ τουτούτων μητρὶ Δημᾶτι Ἀπολλωνίου τοῦ Πανε
+6 χώτου μη[τ]ρὸς Φιλωτέρας, ταῖς τρισὶ ἀπὸ κώμης Πέλα Περσείναις, ἑκάστῃ
+7 μετὰ κυρί[ο]υ Θατρῆτι μὲν τοῦ ἀνδρὸς Πετεύ̈ριος Ἀμμωνᾶτος τοῦ Σαγάθου
+8 μητρὸς Πανεχώτιδος ἀπʼ Ὀξυρύγχων πόλεως, Τετεωρίῳ δὲ τοῦ πρὸς μητρὸς
+9 θείου Πανεχώτου Ἀπολλωνίου μητρὸς Φιλωτέρας ἀπὸ τῆς προκειμένης
+10 Πέλα, Δημᾶτι δὲ τοῦ πρὸς πατρὸς αὐτῆς θείου Ἁτρῆτος Πανεχώτου τοῦ Ἀπολ
+11 λωνίου ἀπὸ τῆς αὐτῆς Πέλα, ἐν ἀγυϊᾷ ἀργυρίου Σεβαστοῦ νομίσματος δραχμὰς
+12 χιλίας κεφαλαίου αἷς [ο]ὐδὲν προσῆκται τόκου τριωβολείου ἑκάστης μνᾶς
+13 τοῦ μηνὸς ἑκάστου ἀπὸ τοῦ ἐνεστῶτος μηνὸς Ἁδριανοῦ. ἀποδότωσαν δ[ὲ]
+14 αἱ δεδαν[ε]ισμέναι τῷ δεδανε[ι]κότι τὸν μὲν [τ]όκον ἐπὶ [σ]υνκλεισμῷ
+15 [ἑ]κάστης δωδεκαμήνου, τῆς πί[σ]τεως περὶ τὸ[ν] δεδα[ν]ει[κό]τα οὔσης
+16 περὶ ὧν ἐ[ὰ]ν μὴ ἐπιφέρωσι αὐτοῦ αἱ δεδανε[ι]σμένα[ι] γ[ρ]άμματα̣,
+17 τὸ δὲ κε[φά]λαιον τῇ τριακάδι μηνὸς Καισαρ[ε]ίου τοῦ ἐνάτου ἔτους
+18 Ἀντωνίνου Καίσαρος τ[οῦ κυ]ρίου ἅμα τοῖς τῶ[ν λοιπ]ῶν μηνῶν ἐ̣ν̣[νέα]
+19 τόκοις χωρὶς ὑ̈περθέσεως. εἰ δὲ μή, [σ]υνχωροῦσι ἥ τε Θατρῆς καὶ Τετεώ
+20 ρ[ιο]ν μένειν περὶ τὸν δεδανεικότα καὶ τοὺς παρʼ αὐτοῦ μεταλημ
+21 ψομένους ἀντί τε τοῦ κεφαλαίου καὶ ὧν ἐὰν μὴ ἀπολάβῃ τόκων
+22 ἀπὸ τοῦ τῆς ἀποδόσεως χρόνου τὴν κράτησιν καὶ κυρείαν εἰς τ[ὸ]ν
+23 αἰεὶ χρόνον τῶν ὑ̈παρχόντων αὐταῖς ἐξ ἴσου περὶ τὴν αὐτὴν Πέλα
+24 ἐκ τοῦ Διοκλέους καὶ Πτολεμαίου Πέρσου ἱππικοῦ κλήρου τρίτου μέ
+25 ρους τὸ πρὶν ἀμπελικοῦ κτήματος νυνεὶ δὲ χερσαμπέλ[ου] ἐκ τοῦ
+26 ἀποβορρ[ο]τά̣του μέ[ρ]ου[ς το]ῦ̣ α̣ὐτοῦ τρίτου μέρους ἀρουρα μια ἡμ[ίσους] τεταρ
+27 τον τετρακαιεξηκ[οστοῦ σὺν τ]οῖς ἐνοῦσι πᾶσι, [ὧν γείτονες] νότου [Σ]τεφάν[ου]
+28 [...]ο.τητ̣ος τοῦ .[...][ καὶ Θ]ατρῆς προκιμ̣[ένη Ἀπολλων]ίου βορρᾶ τοῦ̣ [...]
+29 [...]...α̣ρπ̣ου κα[ὶ ][...][ ἀπηλι]ώτου διῶρ[υξ ][...][ τῶ]ν̣ αὐτῶν κα[ὶ]
+30 [τοῦ Στε]φάνου λιβ[ὸς ][...]υ ἀδελφο[ῦ ][...]..του ε̣π̣ι̣.[...]
+31 [...]ι̣στο̣υ̣ α̣ὐ̣τω[...]α̣ς̣ τριτο.[...]
+32 [...]
+(r,FrB)
+32 [...]ρ̣[...].[...]
+33 [...]αυ[...]αι μ̣[...]
+34 [...]μεναις̣ [...]ν̣ι ἐπὶ τ[...]τα
+35 [...] καὶ ἐπάνα[γκον παρέξασ]θαι τῷ δε[δανεικότι ἢ] τοῖς
+36 [παρʼ αὐτοῦ ταῦτα διὰ π]αντὸς βέ[βαια ἀπὸ π]άν[τω]ν πάσῃ βε[βαιώσει κα]ὶ̣ κα
+37 [θαρὰν ἀπὸ πάσης γε]ωργ[ί]ας βα[σιλικῆς] καὶ [οὐσι]α̣κ̣ῆς γ̣ῆ̣ς̣ κ̣[αὶ παντὸς εἴ]δ̣[ο]υς
+38 [καὶ πάσης παραγραφ]ῆ̣ς ἀπὸ δὲ δ[ημοσί]ων καὶ τελεσμά[των πάντω]ν
+39 [ἀπὸ τῶν ἐπ]άνω χρόνων μέχρι τοῦ τῆς κυρείας χρόν[ου, ἕως δʼ ἂν ἀπ]οδῶ
+40 [σιν αἱ δεδαν]εισμέναι τῷ δεδανεικότι τὸ κεφ[άλ]αιον καὶ τοὺς τόκους
+41 [οὐκ ἐξεῖναι τ]ῇ Θατρῆτι καὶ Τετεωρίῳ ταῦτα πωλεῖν οὐδὲ ὑ̈ποτίθεσθαι οὐ
+42 [δʼ ἄλλως κατα]χρηματίζειν οὐδὲ ἀπογράφεσθαί τινα ἐπὶ τ\ῶν/ ἀγρῶν,
+43 [ἐξουσίας οὔσ]ης τῷ δεδανεικότι μετὰ τὸν χρόνον μὴ ἀπολαμβάνοντα
+44 [ἐμποιεῖσθαι] τούτων̣ ἀντί τε τοῦ κεφαλαίου καὶ ὧν ἐὰν μὴ ἀπολάβῃ τόκων
+45 [τριωβολείω]ν καὶ τῶν καὶ τοῦ ὑ̈περπεσόντος χρόνου ἴ̈σων τρ[ι]ωβολείων,
+46 [ἢ τὴν πρᾶξι]ν ποιεῖσθαι ἔκ τε τῶν δεδανεισμένων ἀλληλενγύων οὐ
+47 [σῶν εἰς ἔκ]τισιν καὶ ἐξ ἧ[ς] ἐὰν αὐτῶν αἱρῆται καὶ ἐκ τῶν προκειμέ
+48 [νων ἁπάν]των καὶ ἐκ τῶν ἄλλων ὑπαρχόντων αὐταῖς πάντων κα
+49 [θάπερ ἐκ δί]κης, ἐ̣ξ̣όντος τῷ δεδανεικότι ὁπόταν αἱρῆται κατοχὴν
+50 [αὐτῶν ][...]χισα[σθ]αι πρὸ τοῦ τῶν ἐνκτήσεων βιβλιοφυλακίου πρὸς τὸ αὐ
+51 [τ ][...] μ[ὴ ἐ]λ̣αττουμένου τοῦ αὐτοῦ δεδανεικότος ἐν τῇ πράξει
+52 [ὧν ἄλλων ὀ]φ̣εί[λει] αὐτῷ [ἥ] τε Θατρῆς καὶ Τετεώριον καθʼ ἕτ̣ε̣ρον̣ δά
+53 [νειον γεγον]ός διὰ τοῦ αὐ[το]ῦ μνημονείου τ[ῷ] ἐνεστῶτι μηνὶ Ἁδριανῷ
+54 [...]σ̣εως τῆς μη[τρὸ]ς ἐπὶ ὑ̈ποθήκῃ ταῖς προκειμέναις σειτικαῖς
+55 [ἀρούραις δέ]κα τέσσαρσι ἡ[μί]σει ἀργυρίου ταλάντου ἑνὸς καὶ δραχμῶν ἑξακοσίων
+56 [κεφαλαίο]υ̣ καὶ̣ τόκω̣ν̣, ἀ̣[λλὰ] εἶναι κύριον ὡς περιέχει. κυρία \ἡ/ συνγραφή.
+(r,FrC)
+57 [...].[...]
+58 [...].ατων[...]
+59 [...][ ἐὰ]ν̣ β̣ούλ̣[ηται ][...]
+(verso)
+1 (1 lines illegible)
+
+English translation:
+(r,FrA)
+1 Copy. Year seven of Imperator Caesar Titus Aelius Hadrianus Antoninus
+2 Augustus Pius, month Hadrianos, in the city of Oxyrhynchus in the Thebaid.
+3 Sarapion son of Herodes, grandson of Hexakon, of the city of Oxyrhynchus,
+4 his mother being Caecilia Polla, lent to Thatres and Teteorion, both daughters of Apollo-
+5 nius, grandson of [...], and to their mother Demas daughter of Apollonius, grandson of Pane-
+6 chotes, her mother being Philotera, all three from the village of Pela, Persians, each
+7 with her guardian, Thatres her husband Peteuris son of Ammonas, grandson of Sagathes,
+8 his mother being Panechotis, of the city of Oxyrhynchus, Teteorion her maternal
+9 uncle Panechotes son of Apollonius, his mother being Philotera, of the aforesaid
+10 Pela, Demas her paternal uncle Hatres son of Panechotes, grandson of Apol-
+11 lonius, of the same Pela, in the street, of silver of imperial coinage, one thousand
+12 drachmas of capital, to which nothing has been added, at interest of three obols per mina
+13 per month from the present month Hadrianos. The borrowers are to repay
+14 to the lender the interest at the close
+15 of each twelve months, the lender being trusted
+16 in respect of whatever the borrowers do not produce a written receipt from him for,
+17 and the capital on the thirtieth of the month Kaisareios of the ninth year
+18 of Antoninus Caesar the lord, together with the interest of the remaining nine
+19 months, without delay. Otherwise Thatres and Teteo-
+20 rion agree that there shall remain with the lender and his successors,
+21 in place of the capital and of whatever interest he does not receive,
+22 from the time of repayment, possession and ownership for all
+23 time of their property held in equal shares near the same Pela,
+24 in the cavalry kleros of Diocles and Ptolemaeus the Persian, a third part,
+25 formerly a vineyard, now dry vineyard land, from the
+26 northernmost part of the same third part, one and a half and a quarter
+27 and a sixty-fourth aroura, with everything on it, [whose neighbours are] south Stephanus
+28 [...] and the aforesaid Thatres daughter of Apollonius, north [...]
+29 [...] east a canal [...] of the same and
+30 of Stephanus, west [...] brother [...]
+31 [...]
+32 [...]
+(r,FrB)
+32 [...]
+33 [...]
+34 [...]
+35 [...] and they are obliged [to guarantee] to the lender or his
+36 [successors these] at all times secure against everyone with every guarantee and
+37 [free from all] cultivation of royal and estate land and of every kind
+38 [and every claim], and from public dues and charges of every kind
+39 [from former] times up to the time of ownership; [and until] the borrowers
+40 repay to the lender the capital and the interest,
+41 Thatres and Teteorion [may not] sell, mortgage or
+42 [otherwise] dispose of these, nor register anyone on the fields,
+43 the lender [having the right], after the term, if he does not receive (payment),
+44 [to take possession] of them in place of the capital and whatever interest
+45 of three obols he does not receive and of the equal interest of three obols for the overdue time,
+46 [or to] exact payment from the borrowers, who are sureties for each other
+47 [for] payment, and from whichever of them he chooses, and from all the aforesaid
+48 and from all their other property, as
+49 [if by a court] judgment, the lender being entitled, whenever he chooses, to have a notice of distraint
+50 [on them] registered (?) at the property record office for the [...]
+51 [...] the same lender not being prejudiced in the exaction
+52 [of the other sums] that Thatres and Teteorion owe him by another
+53 [loan made] through the same record office in the present month Hadrianos
+54 [...] of the mother, on the mortgage of the aforesaid fourteen and a half
+55 [arouras] of grain land, one talent of silver and six hundred drachmas
+56 [of capital] and interest, but (that loan) is to be valid as it stands. The contract is valid.
+(r,FrC)
+57 [...]
+58 [...]
+59 [...] if he wishes [...]
+(verso)
+1 (1 lines illegible)
+
+Loan in ll. 51-56, another loan in the same month on the mortgage of 14 1/2 arouras.
+Date: Hadrianos, year 7 of Antoninus Pius (= November/December AD 143).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.3.507-1,Harmiusis,Diogenes son of Sarapion,260,drachma (silver),1 drachma per mina per month (1% per month),AD 146,"until Phamenoth 30, year 10 of Antoninus Pius (= 26 March AD 147)",Oxyrhynchus,"Source: P.Oxy. 3 507 (https://papyri.info/ddbdp/p.oxy;3;507)
+
+Original Text:
+1 Ἁρμιῦσ[ις ][...]
+2 ἀπὸ τοῦ Ἀ[φροδίσιου τῆς Μικρᾶς Ὀάσεως]
+3 Διογένει Σαραπ[ίωνος ][...]
+4 ἠγορανομηκό[τι ἐνάρχῳ γυμνα]
+5 σιάρχῳ τῆς Ὀξυ[ρυγχιτῶν][ πόλεως νε]
+6 ωκόρῳ Τύχη[ς χαίρειν. ὁ]
+7 μολογῶ παρειλ[ηφέναι παρὰ σοῦ ἀρ]
+8 γυρίου δραχμ[ὰς διακοσίας ἑξήκοντα]
+9 κεφαλαίου αἷς [οὐδὲν προσῆκται τόκου]
+10 δραχμιαίου ἑκάστη[ς μνᾶς τοῦ μη]
+11 νὸς ἑκάστου ἀπὸ τοῦ [ὄντος μηνὸς]
+12 Φαρμοῦθι. ἀποδώσ[ω δὲ τὸ κεφά]
+13 λαιον σὺν τοῖς τόκ[οις τῇ τριακάδι]
+14 τοῦ Φαμεν[ὼθ τοῦ εἰσ]ιόντος
+15 δεκάτου ἔτου[ς Αὐρηλί]ου Ἀντωνίνου
+16 Καίσαρος τοῦ κυ[ρίου χωρὶ]ς ὑπερθέ
+17 σεως, εἰ δὲ μὴ [ἐκτε]ίσω σοι μεθʼ ἡ
+18 μιολίας σὺν τοῖς καὶ τῆς ὑπερχρονεί
+19 ας ἴσοις δρα[χ]μιαίοις τόκοις ἑκάσ
+20 της μνᾶς κατὰ μῆνα, τῆς πράξεως
+21 σοι οὔσης ἔκ τε ἐμοῦ καὶ ἐκ τῶν ὑπαρ
+22 χόντων μοι π[ά]ντων. τὰς δὲ
+23 προκειμένας δραχμὰς διακοσίας
+24 ἑξήκοντα κατατέθειμαι εἰς συν
+25 ωνὴν χόρτου ἀποτ[ε]θ̣ησομένου
+26 ἐν ᾧ ἔχω ἐν μισθώσει καμηλ̣ῶ
+27 νι Σιμίλεως ἐν τῇ Ὀξυρύγχω[ν] πό
+28 λει, ὅνπερ χόρτον οὐκ ἐξέσται μοι
+29 βαστάξαι οὐδὲ πωλεῖν οὐδὲ ὑποτί
+30 θεσθαι ἄχρι οὗ ἀποδῶ σοι τὸ κεφά
+31 λαιον καὶ τοὺς τόκους διὰ τὸ ὑ̈πένγυ
+32 όν σοι εἶναι. ἐὰν δέ τις κίνδυνος
+33 συμβῇ τοῦ αὐτοῦ χόρτου οὐδὲν
+34 βλάβος ἐξακολουθήσι σοι διὰ τὸ
+35 εἶναι τὸ ἀργύριον σὺν τοῖς τόκοις
+36 ἀκίνδυνον παντὸς κινδύνου. κύρι
+37 ον τὸ χειρό[γ]ραφον δισσὸν γραφὲν
+38 πανταχῇ ἐ[πι]φερόμενον.
+39 (ἔτους) θ Αὐτοκράτορος Καίσαρος
+40 Μάρκου Αὐρη[λί]ου Ἀντωνίνου Σεβαστοῦ
+41 Ἀρμενιακο[ῦ][ Μ]ηδικοῦ Παρθικοῦ Μεγίστου
+42 [Φαρμοῦθι ][...]
+
+English translation:
+1 Harmiusis [...]
+2 from A[phrodisium in the Small Oasis]
+3 to Diogenes son of Sarapion [...]
+4 former agoranomus, [in office gymna-]
+5 siarch of the city of the Oxy[rhynchites, ne-]
+6 ocorus of Tyche, [greeting. I]
+7 acknowledge that I have received [from you, of sil-]
+8 ver, [two hundred and sixty] drachmas
+9 of capital, to which [nothing has been added, at interest]
+10 of one drachma per [mina per mon-]
+11 th from the [present month]
+12 Pharmouthi. I will repay [the capi-]
+13 tal with the interest [on the thirtieth]
+14 of Phamenoth of the [coming]
+15 tenth year of [Aurelius] Antoninus
+16 Caesar the lord, [without] de-
+17 lay; otherwise [I will pay] you with one-
+18 half more, together with the equal interest of one drachma
+19 per mina per month for the overdue
+20 time, the right of execution
+21 being yours upon me and upon all my
+22 property. The
+23 aforesaid two hundred and sixty drachmas
+24 I have spent on the pur-
+25 chase of hay, to be stored
+26 in the camel-stable I hold on lease
+27 of Similis in the city of Oxyrhynchus,
+28 which hay I shall not be permitted
+29 to remove or sell or mort-
+30 gage until I repay you the capi-
+31 tal and the interest, because it is pledged
+32 to you. If any risk
+33 befalls the same hay, no
+34 loss shall follow for you, because
+35 the money with the interest is
+36 free from every risk. The note of hand,
+37 written in two copies, is valid
+38 wherever it is produced.
+39 Year 9 of Imperator Caesar
+40 Marcus Aurelius Antoninus Augustus
+41 Armeniacus Medicus Parthicus Maximus,
+42 [Pharmouthi] [...]
+
+Date: Pharmouthi, year 9 of Antoninus Pius (= March/April AD 146; HGV, BL I 325); the imperial names in ll. 15 and 39-41 are those of Marcus Aurelius in the edition.
+Place: not stated; the place of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.3.508-1,Rufus son of Diocles,Heraclas son of Heraclas,450,drachma (silver),interest-bearing (rate not stated),AD 99,,Oxyrhynchus,"Source: P.Oxy. 3 508 (https://papyri.info/ddbdp/p.oxy;3;508)
+
+Original Text:
+1 ἔτους πέμπτου Αὐτοκράτορος Καίσαρος
+2 Νέρουα Τραϊανοῦ Σεβαστοῦ Γερμανικοῦ
+3 [μ]ηνὸς Καισαρείου λ, ἐν
+4 Ὀξυρύγχων πόλει τῆς Θηβαί̈δος.
+5 ὁμολογεῖ Στέφανος ὁ καὶ Ἀμόις Σωσιβίου
+6 τοῦ Ἀπολλοφάνους μητρὸς Πτολλαροῦτος
+7 Χαιρήμονος τῶν ἀπʼ Ὀξυρύγχων πόλεως
+8 Ἡρακλᾶτι Ἡρακλ(ᾶτος) τοῦ Ἁρθώνιος μητρὸς
+9 Δημητροῦτος ἀπὸ τῆς αὐτῆς πόλεως ἐν ἀ
+10 γυϊᾷ γεγονέναι ἐπʼ ὀνόματος τοῦ ὁμολο
+11 γοῦντος Στεφάνου κατὰ πίστιν δάνεια δύο
+12 ⟦.⟧ ὧν ἐκ τοῦ ἰ̈δίου ὁ Ἡρακλᾶς ἐδάνεισεν διὰ
+13 τ[ο]ῦ ἐν τῇ αὐτῇ πόλει μνημονείου, κατὰ
+14 μὲν τὸ πρῶτον τῷ Μεχεὶρ μηνὶ τοῦ β (ἔτους)
+15 [Τ]ραϊανοῦ Καίσαρ[ο]ς τοῦ κυρίου Ῥούφῳ Διο
+16 [κ]λέος τοῦ Διοκλέ[ος] μητρὸς Διδύμης Ῥου
+17 φίωνος ἀργυρίου δραχμῶν τετρακοσίων
+18 πεντήκοντα ἐντόκων ἐφʼ ὑποθήκῃ τῶν δι
+19 ὰ τοῦ αὐτοῦ δανείου δηλωθέντων τοῦ
+20 Ῥούφου ἐνγαίων, κατὰ δὲ τὸ ἕτερον τῷ Τῦ
+21 βι μηνὶ τοῦ ἐχομένου τρίτου ἔτους τῷ
+22 τοῦ Ῥούφου ὁμογνησίῳ ἀδελφῷ Διοκλεῖ
+23 ἄλλων ἀργυρίου [δρ]αχμῶν τετρακοσίων
+24 δέκα ἓξ κεφα[λαίου ἐφʼ] ὑποθήκῃ τῶν [διὰ]
+25 τοῦ αὐτοῦ δη[λωθέντω]ν ἐνγαίων, ἅπ[ερ]
+26 δάνειά ἐστ[ι παρὰ τῷ Ἡ]ρακλᾷ, ᾧ καὶ ἐ[ξεῖ]
+27 [ναι ][...]
+28 [...]
+
+English translation:
+1 Year five of Imperator Caesar
+2 Nerva Trajan Augustus Germanicus,
+3 month Kaisareios 30, in
+4 the city of Oxyrhynchus in the Thebaid.
+5 Stephanus alias Amois son of Sosibius,
+6 grandson of Apollophanes, his mother being Ptollarous
+7 daughter of Chaeremon, of the city of Oxyrhynchus,
+8 acknowledges to Heraclas son of Heraclas, grandson of Harthonis, his mother being
+9 Demetrous, of the same city, in the
+10 street, that there were made in the name of the acknow-
+11 ledging party Stephanus, in trust, two loans,
+12 which Heraclas lent out of his own (money) through
+13 the record office in the same city: by
+14 the first, in the month of Mecheir of the 2nd year
+15 of Trajan Caesar the lord, to Rufus son of Dio-
+16 cles, grandson of Diocles, his mother being Didyme daughter of Ru-
+17 fion, four hundred and fifty drachmas of silver
+18 at interest, on the mortgage of the land
+19 of Rufus declared through the same
+20 loan; and by the second, in the month of Ty-
+21 bi of the following third year, to
+22 Diocles, full brother of Rufus,
+23 another four hundred and sixteen drachmas of silver
+24 of capital, on the mortgage of the land [declared]
+25 through the same (loan); which
+26 loans belong [to Heraclas], who may also
+27 [...]
+28 [...]
+
+Loan in ll. 10-20, made in the name of Stephanus alias Amois with Heraclas' money.
+Date: Mecheir, year 2 of Trajan (= January/February AD 99).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.3.508-2,Diocles son of Diocles,Heraclas son of Heraclas,416,drachma (silver),,AD 99-100,,Oxyrhynchus,"Source: P.Oxy. 3 508 (https://papyri.info/ddbdp/p.oxy;3;508)
+
+Original Text:
+1 ἔτους πέμπτου Αὐτοκράτορος Καίσαρος
+2 Νέρουα Τραϊανοῦ Σεβαστοῦ Γερμανικοῦ
+3 [μ]ηνὸς Καισαρείου λ, ἐν
+4 Ὀξυρύγχων πόλει τῆς Θηβαί̈δος.
+5 ὁμολογεῖ Στέφανος ὁ καὶ Ἀμόις Σωσιβίου
+6 τοῦ Ἀπολλοφάνους μητρὸς Πτολλαροῦτος
+7 Χαιρήμονος τῶν ἀπʼ Ὀξυρύγχων πόλεως
+8 Ἡρακλᾶτι Ἡρακλ(ᾶτος) τοῦ Ἁρθώνιος μητρὸς
+9 Δημητροῦτος ἀπὸ τῆς αὐτῆς πόλεως ἐν ἀ
+10 γυϊᾷ γεγονέναι ἐπʼ ὀνόματος τοῦ ὁμολο
+11 γοῦντος Στεφάνου κατὰ πίστιν δάνεια δύο
+12 ⟦.⟧ ὧν ἐκ τοῦ ἰ̈δίου ὁ Ἡρακλᾶς ἐδάνεισεν διὰ
+13 τ[ο]ῦ ἐν τῇ αὐτῇ πόλει μνημονείου, κατὰ
+14 μὲν τὸ πρῶτον τῷ Μεχεὶρ μηνὶ τοῦ β (ἔτους)
+15 [Τ]ραϊανοῦ Καίσαρ[ο]ς τοῦ κυρίου Ῥούφῳ Διο
+16 [κ]λέος τοῦ Διοκλέ[ος] μητρὸς Διδύμης Ῥου
+17 φίωνος ἀργυρίου δραχμῶν τετρακοσίων
+18 πεντήκοντα ἐντόκων ἐφʼ ὑποθήκῃ τῶν δι
+19 ὰ τοῦ αὐτοῦ δανείου δηλωθέντων τοῦ
+20 Ῥούφου ἐνγαίων, κατὰ δὲ τὸ ἕτερον τῷ Τῦ
+21 βι μηνὶ τοῦ ἐχομένου τρίτου ἔτους τῷ
+22 τοῦ Ῥούφου ὁμογνησίῳ ἀδελφῷ Διοκλεῖ
+23 ἄλλων ἀργυρίου [δρ]αχμῶν τετρακοσίων
+24 δέκα ἓξ κεφα[λαίου ἐφʼ] ὑποθήκῃ τῶν [διὰ]
+25 τοῦ αὐτοῦ δη[λωθέντω]ν ἐνγαίων, ἅπ[ερ]
+26 δάνειά ἐστ[ι παρὰ τῷ Ἡ]ρακλᾷ, ᾧ καὶ ἐ[ξεῖ]
+27 [ναι ][...]
+28 [...]
+
+English translation:
+1 Year five of Imperator Caesar
+2 Nerva Trajan Augustus Germanicus,
+3 month Kaisareios 30, in
+4 the city of Oxyrhynchus in the Thebaid.
+5 Stephanus alias Amois son of Sosibius,
+6 grandson of Apollophanes, his mother being Ptollarous
+7 daughter of Chaeremon, of the city of Oxyrhynchus,
+8 acknowledges to Heraclas son of Heraclas, grandson of Harthonis, his mother being
+9 Demetrous, of the same city, in the
+10 street, that there were made in the name of the acknow-
+11 ledging party Stephanus, in trust, two loans,
+12 which Heraclas lent out of his own (money) through
+13 the record office in the same city: by
+14 the first, in the month of Mecheir of the 2nd year
+15 of Trajan Caesar the lord, to Rufus son of Dio-
+16 cles, grandson of Diocles, his mother being Didyme daughter of Ru-
+17 fion, four hundred and fifty drachmas of silver
+18 at interest, on the mortgage of the land
+19 of Rufus declared through the same
+20 loan; and by the second, in the month of Ty-
+21 bi of the following third year, to
+22 Diocles, full brother of Rufus,
+23 another four hundred and sixteen drachmas of silver
+24 of capital, on the mortgage of the land [declared]
+25 through the same (loan); which
+26 loans belong [to Heraclas], who may also
+27 [...]
+28 [...]
+
+Loan in ll. 20-26, made in the name of Stephanus alias Amois with Heraclas' money.
+Date: Tybi, year 3 of Trajan (= December AD 99/January AD 100).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.3.510-1,[...]; Dionysius,Artemidorus,472,drachma (silver),interest-bearing (rate not stated),AD 100,"until epagomenal day 5, year 4 of Trajan (= 28 August AD 101)",Oxyrhynchus,"Source: P.Oxy. 3 510 (https://papyri.info/ddbdp/p.oxy;3;510)
+
+Original Text:
+1 [...]
+1 τ̣ούτου̣ ...[...]ν̣[...]
+2 νου μητρὸς Τ̣α̣[υ]σ̣ε̣ίριος̣ τ̣ῆ̣ς̣ [...]ωπ̣.[...] ἀπὸ Ψ̣ώ̣β̣θ̣ε̣ω̣ς̣
+3 ἀπηλιώτου μετὰ κυρίου τοῦ αὐτοῦ ἀνδρὸς Διονυσίου
+4 ἐν ἀγυιᾷ ἀπέχειν παρʼ αὐτῶν ἀργυρίου Σεβαστοῦ νομίσ
+5 ματος δραχμὰς τετρακοσίας ἑβδομήκοντα δύο κε
+6 φαλαίου ἃς ἐδάνεισεν αὐτοῖς κατὰ δανείου συνγρα
+7 φὴν τὴν τελειωθεῖσαν διὰ τοῦ ἐν τῇ αὐτῇ Ὀξυρύγ
+8 χων πόλει μνημονείου τῷ τρίτῳ ἔτι Τραιανοῦ Καίσαρος
+9 τοῦ κυρίου μηνὶ Καισαρείῳ εἰς ἀπόδοσιν πέμπτην
+10 ἐπαγομένων τοῦ ἑξῆς τετάρτου ἔτους ἐπὶ ὑποθήκῃ τοῖς
+11 ὑπάρχου[σ]ι τῷ Διονυσίῳ ἐν τῇ προκειμένῃ Ψώβθει
+12 ἡμ[ί]σει μέρει ψειλῶν τόπων καὶ μέρεσι οἰκίας
+13 συμπεπτωκυίης καὶ ἡμίσει μέρει ἑτέρας οἰκίας
+14 καὶ τῶν ταύτης χρηστηρίων καὶ μέρεσι ἑτέρας οἰ
+15 κίας καὶ αὐλῆς καὶ ψειλῶν τόπων καὶ πρότερον
+16 Κλαυδίου Θέωνος ἐν τῇ αὐτῇ Ψώβθε[ι] οἰκίᾳ καὶ αἰθρίῳ
+17 καὶ ἑτέροις χρηστηρίοις. διὸ λύσιν ποιούμενος
+18 ὁ Ἀρτεμί[δω]ρο[ς] τῆς ὑποθήκης αὐτόθι ἀναδέδω
+19 κεν οἷς ὁμολογεῖ τὴν ἐπίφορον τοῦ δανείου
+20 συνγραφὴν καὶ τὰ τῶν τελῶν σύμβολα εἰς ἀκύ
+21 ρωσιν, προσαπεσχηκέναι δὲ παρʼ αὐτῶν καὶ τοὺς
+22 τοῦ αὐτοῦ κε[φ]αλαίου τόκους καὶ ἃ ἀπῄτηται τέ
+23 λη, μητὲ αὐτὸν Ἀρτεμίδωρον μηδʼ ἄλλον ὑπὲρ
+24 αὐτοῦ ἐνκαλεῖν μηδʼ ἐνκαλέσειν μηδʼ ἐπε
+25 [λεύσεσθαι οἷς ὁ]μολογεῖ μηδὲ ⟦τε⟧ τοῖς παρʼ αὐτῶν
+26 [...]...ε[...]ο̣σ̣γ̣.[...]
+27 [...]
+
+English translation:
+1 [...]
+1 [...]
+2 [...], her mother being Tauseiris daughter of [...], from Psobthis
+3 in the eastern (toparchy), with her guardian, her husband Dionysius,
+4 in the street, that he has received from them, of silver of imperial coin-
+5 age, four hundred and seventy-two drachmas of ca-
+6 pital, which he lent them by a loan con-
+7 tract executed through the record office in the same city of Oxyrhyn-
+8 chus in the third year of Trajan Caesar
+9 the lord, in the month Kaisareios, for repayment on the fifth
+10 epagomenal day of the following fourth year, on the mortgage of the
+11 property belonging to Dionysius in the aforesaid Psobthis:
+12 a half share of vacant plots and shares of a
+13 collapsed house and a half share of another house
+14 and its appurtenances and shares of another
+15 house and court and vacant plots, and (the property) formerly
+16 of Claudius Theon in the same Psobthis, a house and hall
+17 and other appurtenances. Therefore, releasing
+18 the mortgage, Artemidorus has forthwith handed back
+19 to the acknowledging parties the loan contract
+20 and the tax receipts for cancel-
+21 lation, and (acknowledges) that he has also received from them the
+22 interest on the same capital and the taxes demanded,
+23 and that neither Artemidorus nor anyone else on
+24 his behalf makes or will make any claim or will pro-
+25 ceed against the acknowledging parties or their successors
+26 [...]
+27 [...]
+
+Loan in ll. 4-17; the document is the receipt for its repayment; the first borrower's name is lost.
+Date: Kaisareios, year 3 of Trajan (= July/August AD 100).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.4.808-1,Pausiris son of Petsiris,Harpalus son of Hermon,210,drachma (silver),,AD 64,"until Neroneios 30, year 11 of Nero (= 26 December AD 64)",Palosis,"Source: P.Oxy. 4 808 (https://papyri.info/ddbdp/p.oxy;4;808)
+
+Original Text:
+(1)
+1 [...]
+1 ρμ
+2 [ἐ]ν Παλώσει· ὁμολ(ογεῖ) Ἅρπαλος Ἕρμων̣[ος τοῦ ][...]......ους ἀπʼ Ὀξυ(ρύγχων) πόλεως Παυσίρει Πετσίριος ἀπὸ τῆ(ς) αὐ(τῆς) κώμης Παλώσεως Θμο(ισεφὼ) τοπ(αρχίας) ἀπέχ(ειν) παρʼ αὐτοῦ ἀργυ(ρίου) (δραχμὰς) σι κεφαλ(αίου) ἃς ἐδά(νεισεν) αὐτῶι διὰ τοῦ ἐν τῇ αὐ(τῇ) κώμῃ γραφίου τῷ ἐνεσ(τῶτι) (ἔτει) μηνὶ Νερωνείωι Σεβαστῶι. ἠθέ(τισται) μη(νὶ) Νερωνείωι Σεβαστῶι ιδ, ἀπόδ(οσις) λ [μ]η(νὸς) Νερωνείου τοῦ ια (ἔτους), ενχ λελυ̣(μένη).
+00,m [...].π̣οχ ἐν ἀπο(γραφῇ) ι (ἔτους)
+00 ἐν Σεφώι, ἐν Κεσμούχ(ει) ἐν Τήει
+00 θεὸς Κλαύδιος
+
+English translation:
+(1)
+1 [...]
+1 140
+2 At Palosis: Harpalus son of Hermon, grandson of [...], of the city of Oxyrhynchus, acknowledges to Pausiris son of Petsiris, of the same village of Palosis in the Thmoisepho toparchy, that he has received from him 210 drachmas of silver of capital, which he lent him through the record office in the same village in the present year in the month Neroneios Sebastos. Cancelled in the month Neroneios Sebastos 14; repayment on the 30th of the month Neroneios of the 11th year; [...] discharged.
+00,m [...] in the return of the 10th year
+00 at Sepho, at Kesmouchis, at Teis
+00 the deified Claudius
+
+Abstract of the receipt for its repayment in a register of contracts.
+Date: Neroneios of the current year, year 11 of Nero (= November/December AD 64).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-SB.10.10222-1,Heraclius son of Soterichus; Thermutharion freedwoman of Sotades,Thoonis son of Patbeus,104,drachma (silver),,AD 20,"until Mecheir 30, year 6 of Tiberius (= 25 February AD 20)",Oxyrhynchus,"Source: SB 10 10222 (= P.Oxy. 2 305) (https://papyri.info/ddbdp/sb;10;10222)
+
+Original Text:
+1 Ἡράκλειος Σωτηρίχου Πέρσ[η]ς τῆς ἐπιγονῆς
+2 καὶ ἡ γυνὴ Θερμουθάριον ἀπελ[ε]υθέρα Σωτάδου
+3 μετὰ κυρίου [τ]οῦ ἀνδρὸς, Θοῶνει Πατβέως ἱερεῖ Θοήριδος
+4 κ[αὶ Ἴσι]δος καὶ Σαράπιδος καὶ τῶν συννάων θεῶν
+5 μεγίστων χαίρειν. ὁμολογοῦμεν ἔχειν παρὰ σοῦ ἐπὶ τοῦ
+6 π̣ρ̣ὸ̣ς̣ Ὀξυρύγχων π[ό]λει Σαραπιείου διὰ τῆς Ἁρποχρατίωνο(ς)
+7 τοῦ Ἀπερῶτος [ἰδιω]τικ[ῆς] τραπέζης ἀργυρίου νομίσ
+8 ματος δραχμὰς ἑκατὸν τέσσαρας, (γίνονται) ἀργ(υρίου) (δραχμαὶ) ρδ κεφαλαίου
+9 α[ἷς] οὐδὲν τῷ κα[θό]λου προσῆκται, ἃς καὶ ἀποδώσ[ο]
+10 μέν σοι τ[ῇ] τριακ[άδ]ι τοῦ Μεχεὶρ τοῦ ἐνεστῶτος ἕκτου
+11 ἔτους Τιβερίου [Καί]σ[α]ρος Σεβαστοῦ, χω[ρὶ]ς πάσης ὑπερθέ
+12 σεως. ἐὰν δ[ὲ] μὴ [ἀ]ποδῶμεν κ[αθὰ] γέγραπται, ἐκτεί
+13 σομέν σοι τὸ προκείμενον κεφ[άλαι]ον μεθʼ ἡμ[ιο]λίας
+14 καὶ τόκους τοῦ ὑπερπε[σ]όντ[ος χρό]νου [το]ὺ̣ς̣ καθή
+15 κ̣ο̣ν̣τας, ὄ̣ν̣τ̣ε̣ς̣ ἀλλήλων ἔγγυ[ο]ι [εἰς ἔ]κτεισιν, τῆς
+16 πράξεώς σοι οὔσης ἔκ τε ἡμῶν κ[αὶ ἐ]ξ οὗ ἐὰν αἱρῇ
+17 [καὶ ἐ]κ τῶν ὑ[πα]ρχόντω̣ν̣ ἡ̣μ̣[ῶν πά]ντων καθ[ά]περ
+18 ἐ[κ] δί[κ]ης, ἀ̣κ̣ύ̣ρων οὐσῶ[ν καὶ ὧν] ἐὰν ἐπενεγ
+19 [κ]ῶσιν ..[...]ν. κ[υρία ἡ χεὶρ] π[αντα]χῇ
+20 ἐπι[φε]ρομένη καὶ παντὶ τῶ[ι ἐπιφέ]ροντι.
+21 (ἔτους) ἕκτου Τιβερίου [Καίσαρος] Σ[ε]βαστοῦ, Τῦβι ιϛ.
+22 Ἡράκλ[ε]ιος Σωτηρίχου [κα]ὶ ἡ γυνὴ
+23 Θερμουθάριον ἀπελευθέρα Σωτάδου ἔχομεν
+24 διʼ ἐγγύω[ν] ἀλλήλων τὰ[ς] τοῦ ἀργυρίου δραχ(μὰς)
+25 ἑκατὸν τέσσαρες κεφαλαίου καὶ ἀποδώ
+26 σομεν καθό[τι πρό]κίται. Ἡρά̣[κλε]ιος ἐπιγέγραμμαι
+27 τῆς γυνα[ικὸς κύ]ριος. Δίος [Σ]αραπίωνος ἔγραψα ὑπὲρ
+28 α̣ὐ̣τ̣ῶ̣ν̣ μὴ̣ [ε]ἰδότ[ω]ν γράμματ[α. (ἔτους) ϛ] Τιβερίου Καίσαρος
+29 [Σε]βαστοῦ, Τῦβι ιϛ.
+30 [ἔτους] ἕκτου [Τιβ]ερίου Καίσαρος Σεβαστο[ῦ], Τῦβι ιϛ, διὰ τῆς Ἁρποκρ(ατίωνος)
+31 [τ]ρα(πέζης) γέ[γο]νεν [ἡ] διαγρα(φή). ἔτους ἕ[κτου] Τιβερίου Καίσαρος Σεβαστοῦ
+32 [...]....... (δραχμὰς) ι[δ]
+33 [...]...[...]
+
+English translation:
+1 Heraclius son of Soterichus, Persian of the epigone,
+2 and his wife Thermutharion, freedwoman of Sotades,
+3 with her guardian, her husband, to Thoonis son of Patbeus, priest of Thoeris
+4 and Isis and Sarapis and the associated most great
+5 gods, greeting. We acknowledge that we have from you at the
+6 Sarapeum at the city of Oxyrhynchus through the private bank of Harpocration
+7 son of Aperos, of silver coin-
+8 age, one hundred and four drachmas, total 104 drachmas of silver, of capital,
+9 to which nothing at all has been added, which we will also
+10 repay to you on the thirtieth of Mecheir of the present sixth
+11 year of Tiberius Caesar Augustus without any de-
+12 lay. If we do not repay as written, we will
+13 pay you the aforesaid capital with one-half more
+14 and, for the overdue time, the custo-
+15 mary interest, being sureties for each other for payment, the
+16 right of execution being yours upon us and upon whichever of us you choose
+17 and upon all our property, as
+18 if by a court judgment, and whatever they may pro-
+19 duce [...] being invalid. The note of hand is valid wherever
+20 it is produced and for everyone who produces it.
+21 Year six of Tiberius Caesar Augustus, Tybi 16.
+22 We, Heraclius son of Soterichus and his wife
+23 Thermutharion, freedwoman of Sotades, have,
+24 as sureties for each other, the one hundred and four drachmas
+25 of silver of capital and will re-
+26 pay as aforesaid. I, Heraclius, am registered as
+27 my wife's guardian. I, Dius son of Sarapion, wrote for
+28 them as they do not know letters. Year 6 of Tiberius Caesar
+29 Augustus, Tybi 16.
+30 Year six of Tiberius Caesar Augustus, Tybi 16, through the bank of Harpocration
+31 the payment was made. Year six of Tiberius Caesar Augustus
+32 [...] 14 drachmas
+33 [...]
+
+Date: Tybi 16, year 6 of Tiberius (= 12 January AD 20).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-SB.10.10234-1,[...],[...]os son of Satyrus,100,drachma (silver),,AD 35,,Oxyrhynchus,"Source: SB 10 10234 (= P.Oxy. 2 323) (https://papyri.info/ddbdp/sb;10;10234)
+
+Original Text:
+1 [...]...[...]. Πνεφερ[ῶ]τος
+2 [...]ν.[...][ ἔτους κβ Τιβερί]ου Καίσαρος Σεβα(στοῦ), μ(ηνὸς) Νέου Σεβ(αστοῦ) κα.
+3 [...][ τῆς αὐ]τοῦ οἰκίας καὶ αἰθρίου
+4 [...]ε̣ν̣τ̣ε̣λ̣[...][ τὰς τοῦ] ἀργυρίου δραχμὰ[ς] ἑκατὸν
+5 [...] κεφαλ[αίου καὶ ἀποδώσω] καθότι πρόκειτ[αι] τοῦ τῆς
+6 [...]ματι[...] ὑπὲρ αὐτοῦ ιδια..[...]σετ..
+7 [...]δι.. (δραχμὰς) ἑ[κατὸν] [...] ἐπιγέγραμμαι τῆ[ς] ἀδελφ[ῆς]
+8 [κύριος κ(αὶ)] ἔγρα[ψα ὑπὲρ αὐτῆς μὴ εἰδυ]ίας γράμμα[τα].
+9 [ἔτους κβ Τι]β̣ε̣ρ̣ί̣ο̣[υ Καίσαρος Σεβαστοῦ, μη(νὸς) Νέου Σεβ]αστοῦ κα.
+10 [(ἔτους) δευτέρου καὶ εἰκοσ]τοῦ Τιβερίου Καίσαρος [Σεβαστ]οῦ, μηνὸς Νέου Σε[βαστοῦ] κα, δ̣ι̣ὰ̣ τ̣ῆ̣ς̣
+11 [Παμφίλου τοῦ Σαρα]πίωνος τρα[πέ]ζης γέγονεν ἡ διαγραφηι.
+12 [...]ος Σατύρου [Ἀλ]θαιεὺς ἀπέχ[ω]ι τὸ πρ[ο]
+13 [κίμενον] κεφά[λ]αιον κ[αὶ] οὐδὲν ἐνκαλῶι πε
+14 [ρὶ μηδενὸς] ἁπλῶς ἐφ[...]ι εν[...]κι.σω
+15 [...]ρασ.[...]ηκον[τ]α. (ἔτους) κβ Τιβερίου
+16 [Καίσαρος] Σεβαστοῦ, Χοιὰχ κδ.
+17 [ἔτους δευ]τέρου καὶ εἰκοστοῦ Τιβ[ερίου] Καίσαρος Σεβαστοῦ, Χοιὰχ κδ.
+18 [διὰ τῆς Πα]μφίλου τοῦ Σαραπίωνος [τρ]απέζης περιλέλυται ἡ διαγραφηι.
+
+English translation:
+1 [...] son of Pnepheros
+2 [...] year 22 of Tiberius Caesar Augustus, month Neos Sebastos 21.
+3 [...] of his house and hall
+4 [...] the one hundred drachmas of silver
+5 [...] of capital, and I will repay as aforesaid, of the
+6 [...] for him [...]
+7 [...] 100 drachmas [...] I am registered as guardian of my sister
+8 and I wrote for her as she does not know letters.
+9 Year 22 of Tiberius Caesar Augustus, month Neos Sebastos 21.
+10 Year twenty-two of Tiberius Caesar Augustus, month Neos Sebastos 21, through the
+11 bank of Pamphilus son of Sarapion the payment was made.
+12 I, [...]os son of Satyrus, of the deme Althaieus, have received the afore-
+13 said capital and make no claim
+14 about anything at all [...]
+15 [...] Year 22 of Tiberius
+16 Caesar Augustus, Choiak 24.
+17 Year twenty-two of Tiberius Caesar Augustus, Choiak 24.
+18 Through the bank of Pamphilus son of Sarapion the payment has been cancelled.
+
+The borrower (a woman, l. 7) is named in the lost part; repaid on Choiak 24 (ll. 12-18).
+Date: Neos Sebastos 21, year 22 of Tiberius (= 18 November AD 35).
+Place: not stated; the place of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-SB.10.10238-1,Thamounis daughter of Onnophris,Tryphon son of Dionysius,16,drachma (silver),,AD 37,"until the 30th of [...], year 3 of Gaius (= AD 38/39)",Oxyrhynchus,"Source: SB 10 10238 (= P.Oxy. 2 319) (https://papyri.info/ddbdp/sb;10;10238)
+
+Original Text:
+1 [Θαμοῦνις τῆς Ὀν]ν̣ώφριο[ς] [Περ]σείνη μετ[ὰ κ]υρίου
+2 [τοῦ ][...]ερῶτος τῷ ἐμ̣α̣υτῆς υἱῷ
+3 [Τρύφωνι Διονυσίου χαίρειν. ὁ]μολογῶ ἔχειν παρὰ [σ]οῦ ἐπὶ τοῦ
+4 [πρὸς Ὀξυρύγχ]ων πόλει Σ[α]ραπείου διὰ τῆς Πλο[υ]
+5 [τάρχου Σαραπί]ω̣νος τραπέζης ἀργυρίου Σεβαστοῦ
+6 [καὶ Πτολεμαικοῦ] νομίσματος δραχμὰς δέκα ἕξ,
+7 [(γίνονται) δραχμαὶ] [δ]έκα ἓξ κεφαλαίου αἷς οὐδὲν τῷ
+8 [καθόλου προσῆκτα]ι, ἃς καὶ ἀποδώσω σοι τῇ τριακάδ[ι]
+9 [τοῦ ][...][ τοῦ εἰσιό]ντος τρίτο[υ ἔ]τους Γαίου Καίσαρος
+10 [Σεβαστοῦ Γερμα]νικοῦ, κω[ρὶς] πάσης ὑπερθέσεως.
+11 [...]ε̣ιμ̣αι̣ ει[...]ερθωσιν δημο
+12 [...][ ἐ]μοῦ μὲν υ[ἱοῦ] Θοώνιος τοῦ Διον(υσίου).
+13 [ἐὰν δὲ] μὴ ἀποδῶ [σοι κ]αθὰ γέγραπται, ἐκτεί
+14 [σω σοι τὸ προ]κείμεν[ον] κεφάλαιον μεθʼ ἡ
+15 [μιολίας καὶ] τοῦ ὑπερπ[ε]σόντος χρόνου τὸν κα
+16 [θήκοντα, τῆς π]ράξεώς σου [ο]ὔσης ἔκ τε ἐμοῦ
+17 [καὶ ἐκ τῶν ὑπαρχόντων μοι] πάντων καθάπερ
+18 [ἐγ] [δίκης. κυρία ἡ χεὶρ παντα]χῇ ἐπιφερομένη
+19 [καὶ παντὶ τῷ ἐπιφέροντι. (ἔτους) β] Γαίου Καίσαρος
+20 [Σεβαστοῦ Γερμανικοῦ] Χοιὰχ κδ.
+21 [Θαμοῦνις ἔχω τὰς τοῦ ἀργ]υρίου δραχμὰς δέ̣κ̣α ἓξ κεφαλαίου
+22 [...]ερῶτος ἐπιγέγραμμαι
+23 [καὶ γέγρ]αφα ὑπὲρ αὐ[τῆς μ]ὴ εἰδυίης γράμματα.
+24 [(ἔτους) β Γαίου Καίσαρ]ος Σεβαστοῦ Γερ[μ]ανικοῦ Χοιὰχ [κ]δ.
+25 [(ἔτους) β Γαί]ου Καίσαρος [Σεβαστ]οῦ Γερμανικοῦ Χοιὰχ
+26 [κδ. διὰ τῆς Πλουτάρχου ][Σαραπί]ω(νος) τρ(απέζης) γέγ(ονεν) ἡ διαγραφή.
+
+English translation:
+1 Thamounis daughter of Onnophris, Persian, with her guardian
+2 [...]eros, to her own son
+3 Tryphon son of Dionysius, greeting. I acknowledge that I have from you at the
+4 Sarapeum at the city of Oxyrhynchus through the bank of Plu-
+5 tarchus son of Sarapion, of silver of imperial
+6 and Ptolemaic coinage, sixteen drachmas,
+7 total sixteen drachmas, of capital, to which nothing at
+8 all has been added, which I will also repay to you on the thirtieth
+9 of [...] of the coming third year of Gaius Caesar
+10 Augustus Germanicus, without any delay.
+11 [...]
+12 [...] of my son Thoonis son of Dionysius.
+13 If I do not repay you as written, I will pay
+14 you the aforesaid capital with one-
+15 half more and, for the overdue time, the custo-
+16 mary (interest), the right of execution being yours upon me
+17 and upon all my property, as
+18 if by a court judgment. The note of hand is valid wherever it is produced
+19 and for everyone who produces it. Year 2 of Gaius Caesar
+20 Augustus Germanicus, Choiak 24.
+21 I, Thamounis, have the sixteen drachmas of silver of capital.
+22 I, [...]eros, am registered as her guardian
+23 and wrote for her as she does not know letters.
+24 Year 2 of Gaius Caesar Augustus Germanicus, Choiak 24.
+25 Year 2 of Gaius Caesar Augustus Germanicus, Choiak
+26 24. The payment was made through the bank of Plutarchus son of Sarapion.
+
+The lender is the borrower's son.
+Date: Choiak 24, year 2 of Gaius (= 20 December AD 37).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-SB.10.10246-1,Tryphon son of Dionysius,Thoonis son of Thoonis,104,drachma (silver),,AD 55,"until Tybi 30, year 2 of Nero (= 26 January AD 56)",Oxyrhynchus,"Source: SB 10 10246 (= P.Oxy. 2 304) (https://papyri.info/ddbdp/sb;10;10246)
+
+Original Text:
+1 Τρύφων Διονυσίου Πέρ[σης τῆς ἐ]π̣ι̣γ̣ο̣ν̣ῆ̣ς̣ Θοώνει
+2 Θοώνιος χαίρειν. ὁμολο[γῶ ἔ]χειν παρὰ σ[ο]ῦ ἐπὶ
+3 τοῦ πρὸς Ὀξυρύγχων πό[λει Σα]ραπείου διὰ τῆς
+4 Ἀμμωνίου καὶ Ἐπιμάχου τραπέζης ἀργυρίου
+5 Σεβαστοῦ καὶ Πτ[ο]λεμαικοῦ νομίσματος δρ[α]χμὰς
+6 ἑκατὸν τέσσαρας, (γίνονται) νο(μίσματος) Πτ(ολεμαικοῦ) ἀργυ(ρίου) (δραχμαὶ) ρδ κεφαλαίου
+7 αἷς οὐδὲν τῶι καθόλου προσῆ̣[κ]ται ἃς καὶ ἀποδώσω
+8 σοι τῇ τριακάδι τοῦ Τῦβι [τ]οῦ ἐνεστῶτος
+9 δευτέρου ἔτους Νέρωνος Κλαυδίου Καίσαρος
+10 Σε[β]αστοῦ Γερμανικοῦ Αὐτοκράτορος χωρὶς
+11 πά[σ]ης ὑπερθέσεως. ἐὰ[ν] δ[ὲ] μὴ ἀποδῶ καθὰ
+12 γέγραπται, ἐκτείσω σοι τὸ μὲν π̣ᾶ̣ν̣ προκείμενον
+13 κεφάλαιον μεθʼ ἡμιολί[α]ς κ(αὶ) τόκους τοῦ ὑπερ
+14 πεσόντος χρόν[ο]υ τὸν καθή[κ]οντα, [τῆς] πράξε
+15 ώς σοι οὔσης ἔκ τε ἐμοῦ [καὶ] ἐκ τῶν ὑπαρ
+16 χόντων μοι πάντων. κυρία ἡ χε[ὶ]ρ παντα
+17 χῇ ἐπιφε[ρο]μένη καὶ παν[τὶ] τῶι ἐπιφέροντι.
+18 (ἔτους) δ[ευ]τ̣έ̣ρ̣[ου] Νέρωνος Κλαυ[δίου] Καίσαρος Σεβαστοῦ
+19 Γερ[μ]ανικοῦ Αὐτοκράτορος, μ[η(νὸς)][ Νέου Σεβαστο]ῦ̣ δ.
+20 Τρύφων Διονυσίου ἔχω τὰς το̣ῦ̣ [ἀργυρίου δρα]χμὰς
+21 ἑκατὸν τέσσαρας κεφαλαίου [καὶ] ἀ̣π̣ο̣δ̣ώ̣σωι καθότι
+22 πρόκειται. Ζωίλος Ζωίλου [ἔγρα]ψα [ὑπὲρ αὐτ]ο̣ῦ̣
+23 μὴ εἰδότος γράμματα. (ἔτους) β Ν̣[έρω]νος Κλαυδίου
+24 Καίσαρος Σεβαστοῦ Γερμανικ[οῦ] Αὐτοκράτορο[ς μη(νὸς)] Νέου
+25 Σε[βαστ]οῦ δ.
+26 ἔτους δευτέρου Νέρω[νος] Κλαυδίου Καίσαρος
+27 Σεβαστοῦ Γερμανικοῦ Αὐτοκρ[άτορος] μη(νὸς) Νέου Σεβαστοῦ δ.
+28 Ἀμμώ(νιος) καὶ Ἐπίμαχ(ος) τρα(πεζεῖται) σεση(μειώμεθα).
+29 Θοῶνις Θοώνιος ἀπέχωι τὸ προκείμενον κεφαλαῖον
+30 καὶ οὐδὲν ἐνκαλῶι. Στρατό̣ν̣ι̣κ̣ο̣ς̣ Ἀπίωνος ἔγραψα
+31 ὑπὲρ αὐτοῦ μὴ εἰδότος γράμματα. (ἔτους) β Νέρωνος
+32 Κλαυδίου Καίσαρος Σεβαστοῦ Γερμανικοῦ
+33 Αὐτοκράτορος, Μεχεὶρ [α].
+34 ἔτους δευτέρου Νέρωνος Κλαυδίου Καίσαρος
+35 Σεβαστοῦ Γερμανικοῦ Αὐτοκράτορος, Μεχ(εὶρ) α. δ̣ι̣ὰ̣ τῆς
+36 Ἀμμω(νίου) καὶ Ἐπιμά[χ(ου)] [τ]ρ(απέζης) γέγ(ονεν) ἡ δ̣[ιαγ]ραφή·
+
+English translation:
+1 Tryphon son of Dionysius, Persian of the epigone, to Thoonis
+2 son of Thoonis, greeting. I acknowledge that I have from you at
+3 the Sarapeum at the city of Oxyrhynchus through the
+4 bank of Ammonius and Epimachus, of silver
+5 of imperial and Ptolemaic coinage, one hundred and four
+6 drachmas, total 104 drachmas of silver of Ptolemaic coinage, of capital,
+7 to which nothing at all has been added, which I will also repay
+8 to you on the thirtieth of Tybi of the present
+9 second year of Nero Claudius Caesar
+10 Augustus Germanicus Imperator without
+11 any delay. If I do not repay as
+12 written, I will pay you the whole aforesaid
+13 capital with one-half more and, for the over-
+14 due time, the customary interest, the right of execu-
+15 tion being yours upon me and upon all my
+16 property. The note of hand is valid wher-
+17 ever it is produced and for everyone who produces it.
+18 Year two of Nero Claudius Caesar Augustus
+19 Germanicus Imperator, month Neos Sebastos 4.
+20 I, Tryphon son of Dionysius, have the one hundred and four drachmas
+21 of silver of capital and I will repay as
+22 aforesaid. I, Zoilus son of Zoilus, wrote for him
+23 as he does not know letters. Year 2 of Nero Claudius
+24 Caesar Augustus Germanicus Imperator, month Neos
+25 Sebastos 4.
+26 Year two of Nero Claudius Caesar
+27 Augustus Germanicus Imperator, month Neos Sebastos 4.
+28 We, Ammonius and Epimachus, bankers, have signed.
+29 I, Thoonis son of Thoonis, have received the aforesaid capital
+30 and make no claim. I, Stratonicus son of Apion, wrote
+31 for him as he does not know letters. Year 2 of Nero
+32 Claudius Caesar Augustus Germanicus
+33 Imperator, Mecheir 1.
+34 Year two of Nero Claudius Caesar
+35 Augustus Germanicus Imperator, Mecheir 1. The payment was made through the
+36 bank of Ammonius and Epimachus.
+
+Repaid on Mecheir 1 (ll. 29-36).
+Date: Neos Sebastos 4, year 2 of Nero (= 1 November AD 55).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-SB.12.10781r-1,Marcus Antonius Asclepiades,Herais daughter of Peteuris,,drachma (silver),,AD 121,,Oxyrhynchus,"Source: SB 12 10781r (= P.Oxy. 3 592) (https://papyri.info/ddbdp/sb;12;10781r)
+
+Original Text:
+1 [...].[...]..[...]
+2 τοῦ δεδ[ομένου ὑπομνήματος ἀντίγραφον μεταδοθήτω ὡς ὑπόκειται. ἔρρωσο.]
+3 (ἔτους) ζ Αὐτοκράτορος Καίσαρος Τραιανο[ῦ] Ἁδρ[ι]ανοῦ Σεβ[αστοῦ]..[...]
+4 Σαραπίωνι γενομένῳ πρυτανικῷ ἀρχον\τ/ ἱ̈ερεῖ καὶ ἀρχιδικαστῇ κα[ὶ πρὸς τῇ ἐπιμε]
+5 λείᾳ τῶν χρηματιστῶν καὶ τῶν ἄλλων κριτηρίων
+6 παρὰ Ἡραί̈δος τῆς Πετεύριος τοῦ Σαραπίωνος τῶν ἀπʼ Ὀξυρύγχων [πόλεως. ἐπεὶ]
+7 πεποίηταί μοι Μάρ[κος Ἀ]ντώνιος Ἀσκλεπιάδης τῷ ἕκτῳ ἔτε[ι Ἁδριανοῦ]
+8 Καίσαρος τοῦ κυρί[ου ][...] Χοιὰχ ἔνγραπτον ἀσφάλειαν ὡμο[λόγησε παρασχεῖν]
+9 [παρʼ ἐμ]οῦ διὰ χε[ιρὸ]ς [ἐξ] οἴκ[ο]υ ἀργυρίου Σεβαστοῦ νομίσμ[ατος δραχμάς ][...]
+10 [...]....................[...]
+11 [...]
+
+English translation:
+1 [...]
+2 Of the [memorandum] submitted [let a copy be served as below. Farewell.]
+3 Year 7 of Imperator Caesar Trajan Hadrian Augustus [...]
+4 To Sarapion, former prytanis, archon, priest and archidicastes and [in charge]
+5 of the chrematistae and the other courts,
+6 from Herais daughter of Peteuris, grandson of Sarapion, of the city of Oxyrhynchus. [Since]
+7 Marcus Antonius Asclepiades made me in the sixth year [of Hadrian]
+8 Caesar the lord, [...] Choiak, a written security, [acknowledging that he had received]
+9 [from me] from hand out of the house, of silver of imperial coinage, [drachmas] [...]
+10 [...]
+11 [...]
+
+Loan in ll. 7-9 (petition, year 7 of Hadrian); the sum is lost.
+Date: Choiak, year 6 of Hadrian (= November/December AD 121).
+Place: not stated; the place of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-SB.14.11491-1,Tryphon son of Dionysius; Onnophris son of Dionysius; Sareus daughter of Apion,Tryphaena daughter of [...]orion,314,drachma (silver),,AD 59,"until Neos Sebastos 30, year 6 of Nero (= 27 November AD 59)",Oxyrhynchus,"Source: SB 14 11491 (= P.Oxy. 2 320) (https://papyri.info/ddbdp/sb;14;11491)
+
+Original Text:
+1 ⟦ ἔτους πέμπ̣του Νέρωνος Κλα[υδ]ί̣ου Καίσαρος Σεβαστοῦ Γερμα̣νι̣κ[ο]ῦ ⟧
+2 ⟦ Αὐτοκράτορ[ος] Παῦν[ι] κε ἐν Ὀ[ξυ]ρύγχων πόλει τῆς Θηβαί̣δο(ς). ⟧
+3 ⟦ ἐδάνεισα[ν] Τ̣ρ̣ύφαινα [...]ωριω̣ν[ο]ς̣ τῶν ἀπʼ Ὀξυρύγχων πό̣λεω(ς) ⟧
+4 ⟦ μετὰ κυρίου̣ τ̣ο̣ῦ {τοῦ̣} τῆς ἀδελφ[ῆς] αὐτῆς Τρυφαίνης θυγατρὸς ⟧
+5 ⟦ Ἰσιδώρας ἀν̣[δ]ρ̣ὸς Διονυσίου τοῦ Ἀμμωνίου Τρύφωνι καὶ ⟧
+6 ⟦ Ὀννώφρει [ἀ]μ̣φοτέροις Διονυσίου Πέρσαις τῆς ἐπιγονῆς ⟧
+7 ⟦ καὶ τῆι το[ῦ Τρ]ύφωνος γυναικὶ Σαρεῦτι Ἀπίωνος Περ[σίν]η̣ι̣ ⟧
+8 ⟦ μετὰ κυρίο̣[υ] τ̣οῦ προγ̣εγραμμένου ἀνδρὸς Τρύφωνος πᾶσι ⟧
+9 ⟦ ..τῶν ἀπὸ τῆς αὐτῆς πόλεως ἐν ἀγυιᾶι ἀργυρίου Σεβαστοῦ ⟧
+10 ⟦ καὶ Πτολεμα̣ικοῦ νομίσματος δραχμὰς τριακοσίας δέκα ⟧
+11 ⟦ τέσσαρας κε[φα]λαίου αἷς οὐδὲν τῷ καθόλου προσῆκται· ⟧
+12 ⟦ ἀποδό[τ]ωσ[α]ν δὲ οἱ δεδανεισμένοι Τρυφαίνηι τὰς τοῦ ⟧
+13 ⟦ ἀρ̣γ̣υρίου̣ δρ̣α̣[χ]μὰ̣[ς τ]ε̣τ̣ρ̣α̣κοσίας δέκα τέσσαρας τῆι τριακάδι ⟧
+14 ⟦ τ̣[οῦ] Νέο̣υ̣ [Σ]ε̣β̣α̣σ̣τ̣ο̣ῦ̣ [μ]ηνὸς τοῦ ἰσιόντος ἕκτου ἔτους ⟧
+15 ⟦ Ν̣έρω̣ν̣[ος Κλαυδίο]υ̣ Κ̣α̣[ίσ]α[ρος] Σεβ̣α̣σ̣τ̣ο̣ῦ̣ Γ̣ερμαν̣ι̣κ̣ο̣ῦ̣ Αὐτοκράτορος ⟧
+16 ⟦ χωρὶς [πάσης ὑπ]ε̣ρ̣θέ[σ]εως. ἐὰ̣ν δὲ μὴ ἀποδῶσι καθὰ ⟧
+17 ⟦ γέγραπ̣[ται ἐκ]τ̣ι̣σ̣άτω̣[σ]α̣ν [οἱ] δ̣ε̣δ̣ανεισμένοι Τ̣ρ̣υφαί[ν]ῃ ⟧
+18 ⟦ τ̣[ὸ] μὲ̣[ν] κ̣[εφάλαιον μεθʼ ἡ]μ̣ιολ̣ίας τ̣ο̣ῦ̣ δὲ ὑπ̣ερ̣π̣εσό̣ντο̣ς χρόνο̣(υ) ⟧
+19 ⟦ τ̣[οὺ]ς̣ κ̣αθ̣ήκο̣ν̣τ[ας τόκου]ς, ὄντες ἀλλήλων ἔγγυοι εἰς ἔκτεισ(ιν), ⟧
+20 ⟦ κ[αὶ ἡ] π̣ρ̣ᾶξις [ἔ]στω̣ Τ̣ρυφαίνῃ ἔκ τε τῶν δεδανεισμένων ⟧
+21 ⟦ καὶ ἐξ οὗ ἐὰν αἱρῆ̣[ται καὶ] ἐκ τῶν ὑπαρχόντων αὐτο̣ῖ̣ς πάντω(ν) ⟧
+22 ⟦ καθάπε̣ρ ἐ̣γ δ̣ί̣κης. κυρία ἡ συγγραφ̣ή̣. — ⟧
+23 ⟦ ἔτους πέμπτου Νέρωνος Κλαυδίου Καίσαρος ⟧
+24 ⟦ Σεβαστοῦ Γε̣ρ̣μανικοῦ Αὐτοκράτορος Παῦνι π[έμπτῃ] ⟧
+25 ⟦ καὶ εἰκάδι. διʼ Ἀπολλωνίου τὸ πρὶν κεχρη(ματικότος) Σεκούν̣[δο]υ ⟧
+26 ⟦ τοῦ συνεσταμένου ὑπὸ τῶν μετόχων ἀγο(ρανόμων) κεχρη(μάτισται). ⟧
+
+English translation:
+1 ⟦ Year five of Nero Claudius Caesar Augustus Germanicus ⟧
+2 ⟦ Imperator, Payni 25, in the city of Oxyrhynchus in the Thebaid. ⟧
+3 ⟦ Tryphaena daughter of [...]orion, of the city of Oxyrhynchus, ⟧
+4 ⟦ with her guardian, the husband of her sister Tryphaena daughter ⟧
+5 ⟦ of Isidora, Dionysius son of Ammonius, lent to Tryphon and ⟧
+6 ⟦ Onnophris, both sons of Dionysius, Persians of the epigone, ⟧
+7 ⟦ and to Tryphon's wife Sareus daughter of Apion, Persian, ⟧
+8 ⟦ with her guardian, her aforesaid husband Tryphon, all ⟧
+9 ⟦ of the same city, in the street, of silver of imperial ⟧
+10 ⟦ and Ptolemaic coinage, three hundred and four- ⟧
+11 ⟦ teen drachmas of capital, to which nothing at all has been added. ⟧
+12 ⟦ The borrowers are to repay to Tryphaena the ⟧
+13 ⟦ four hundred and fourteen drachmas of silver on the thirtieth ⟧
+14 ⟦ of the month Neos Sebastos of the coming sixth year ⟧
+15 ⟦ of Nero Claudius Caesar Augustus Germanicus Imperator ⟧
+16 ⟦ without any delay. If they do not repay as ⟧
+17 ⟦ written, the borrowers are to pay to Tryphaena ⟧
+18 ⟦ the capital with one-half more and, for the overdue time, ⟧
+19 ⟦ the customary interest, being sureties for each other for payment, ⟧
+20 ⟦ and the right of execution is to be Tryphaena's upon the borrowers ⟧
+21 ⟦ and upon whichever of them she chooses and upon all their property ⟧
+22 ⟦ as if by a court judgment. The contract is valid. — ⟧
+23 ⟦ Year five of Nero Claudius Caesar ⟧
+24 ⟦ Augustus Germanicus Imperator, Payni twenty- ⟧
+25 ⟦ fifth. Registered through Apollonius, formerly called Secundus, ⟧
+26 ⟦ appointed by the partner agoranomi. ⟧
+
+The whole contract is crossed out; the repayment clause (l. 13) has 414 drachmas against 314 lent (ll. 10-11).
+Date: Payni 25, year 5 of Nero (= 19 June AD 59).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-SB.20.14096-1,Adrastus son of Adrastus,Sarapous daughter of Sarapion,500,drachma (silver),,AD 74,,Oxyrhynchus,"Source: SB 20 14096 (= P.Oxy. 2 362) (https://papyri.info/ddbdp/sb;20;14096)
+
+Original Text:
+1 β̣[...]..λ πλ
+2 ἔτους ἑβδόμου Αὐτοκράτορος Καίσαρος Οὐεσπασιανοῦ
+3 Σεβαστοῦ Μεχείρ κϛ ἐν Ὀξυρύγχων πόλει τῆς Θηβαίδος.
+4 ὁμολογεῖ Σαραποῦς Σ̣αραπίωνος τοῦ Θοώνιος μητρὸς Σινθεῦ
+5 τος τῆς Ὀννώφ[ρ]ιος μετὰ κυρίου τοῦ ἑαυτῆς ἀνεψιοῦ
+6 Ἀπολλωνίου το[ῦ] Ἀπολλωνίου τοῦ Πεκύσιος μητρὸς .σ̣ι
+7 μ̣ειτος τῆς Θο̣[ώ]ν̣ιος Ἀδράστωι Ἀδράστου τοῦ Ἡρακλήου
+8 μητρὸς Τανα̣[ρ]ο̣οῦτος τῆς Ὥρου, πάντες τῶν ἀπʼ Ὀξυ
+9 ρύγχων πόλεως, ἐν ἀγυιᾷ, ἀπέχειν παρʼ αὐτοῦ ἀργυρί
+10 ου Σεβαστοῦ νομ̣[ίσ]μ̣ατος δραχμὰς πεντακοσίας κεφα
+11 λαίου ἃς ἐδάνε̣[ισεν] αὐτῶι κατὰ συγγραφὴν [γε]γονυῖαν
+12 διὰ τοῦ ἐν τ̣[ῇ αὐτ]ῇ πόλει μνημονείου τ[ῷ] Νέωι
+13 Σεβαστῶι μ[ηνὶ το]ῦ ἐνεστῶτος ἑβδόμο[υ ἔ]τους
+14 Αὐτοκράτ[ορος Κα]ίσαρος Οὐεσπασιανοῦ Σ̣[εβ]α̣στοῦ
+15 ἣν καὶ αὐτό[θεν ἀ]ν̣αδέδωκεν αὐτῷ κεχ[ιασ]μένην
+16 εἰς ἀκύρωσ[ιν κα]ὶ μη{ι}δὲν ἐγκαλεῖν μη[δʼ ἐ]γκαλέ̣
+17 σειν μηδʼ ἐπ[ελεύσ]εσθαι Σαραποῦν μηδʼ ἄ[λλ]ον ὑπὲρ
+18 αὐτ̣ῆ̣ς̣ [τῷ Ἀδράστ]ωι μηδὲ τοῖς παρʼ [αὐτοῦ περὶ] μ̣η
+19 δ[ενὸς ][...]
+19 [...]
+
+English translation:
+1 [...]
+2 Year seven of Imperator Caesar Vespasian
+3 Augustus, Mecheir 26, in the city of Oxyrhynchus in the Thebaid.
+4 Sarapous daughter of Sarapion, grandson of Thoonis, her mother being Sinthe-
+5 us daughter of Onnophris, with her guardian, her cousin
+6 Apollonius son of Apollonius, grandson of Pekysis, his mother being [...]
+7 daughter of Thoonis, acknowledges to Adrastus son of Adrastus, grandson of Heracleus,
+8 his mother being Tanaroous daughter of Horus, all from the city of Oxy-
+9 rhynchus, in the street, that she has received from him, of silver
+10 of imperial coinage, five hundred drachmas of capi-
+11 tal, which she lent him by a contract made
+12 through the record office in the same city in the month
+13 Neos Sebastos of the present seventh year
+14 of Imperator Caesar Vespasian Augustus,
+15 which she has also forthwith returned to him crossed out
+16 for cancellation, and that she makes no claim and will make no claim
+17 and will not proceed, neither Sarapous nor anyone else on
+18 her behalf, against Adrastus or his successors about any-
+19 thing [...]
+19 [...]
+
+Loan in ll. 9-14; the document is the receipt for its repayment (Mecheir 26, year 7 of Vespasian).
+Date: Neos Sebastos, year 7 of Vespasian (= October/November AD 74).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-SB.26.16745-1,[...]os; Ptole[...],Theoxenus,32,artaba (wheat),,66-65 BC,"until Payni, year 16 (= June/July 65 BC)",Oxyrhynchus,"Source: SB 26 16745 (= P.Oxy. 4 836) (https://papyri.info/ddbdp/sb;26;16745)
+
+Original Text:
+1 [...]
+1 [...]........[...]
+2 [ἐν τῶι στρα]τ̣ι̣ωτικῶ̣[ι] [...]
+3 [...]ο̣ς καὶ Πτο̣λ̣ε̣[μ][...]
+4 [...]. ἀνφοτέροις Πέρ̣[σαις τῆς]
+5 [ἐπιγον]ῆς, οἱ τρεῖς ἀγυιᾶς Κ̣λ̣ε̣ο̣
+6 π̣ά̣τ̣ρ̣ας Ἀφροδίτης, πυροῦ στερεοῦ
+7 ἀρτάβας τριάκοντα δύο. ἀπο
+8 δότωσαν δὲ οἱ δεδανεισμένοι
+9 Θεοξένῳ τὰς τριάκοντα
+10 δύο ἀρτάβας τῶν πυρῶν ἐν
+11 μηνὶ Παῦνι τοῦ ἑκκαιδεκάτου ἔ
+12 τους ἐν Ὀξυρύγχων πόλει πυρὸν
+13 στερεὸν νέον καθαρὸν ἄ̣δ̣ο̣λ̣ον̣
+14 μέτρῳ τετραχοινίκῳ ἀγ⟨ο⟩ρανο
+15 μικῷ καταστήσαντες τοῖς
+16 ἰδίοις ἀν̣η̣λώμασι. ἐὰν δὲ μὴ
+17 ἀποδῶσι καθὰ γέγραπται, ἀ
+18 ποτεισάτωσαν οἱ δεδαν⟨ε⟩ισ
+19 μένοι Θεοξένῳ τιμὴν ἑκά
+20 στης ἀρτάβης ἧς ἐὰν μὴ ἀπο
+21 δῶσι χαλκοῦ δραχμὰς ἑξακ
+22 ι̣σ̣χ̣ι̣λ̣ίας. ἔγγυ(οι) ἀλλήλων οἱ δε
+23 δανεισμένοι τῶν κατὰ τὴν
+24 συγγραφὴν πάντων εἰς ἔ
+25 κτη̣σιν, ἡ δὲ πρᾶξ[ι]ς ἔστω
+26 Θεοξένῳ ἔκ τε ἀμφοτέρων
+27 καὶ ἐξ οὗ ἐὰν αἱρῆται αὐτῶν
+28 καὶ ἐκ τῶν ὑπαρχόντων
+29 αὐτοῖς πάντων καθάπερ
+30 ἐγ δίκης. κυρία ἡ συγγραφή.
+31 vestig
+
+English translation:
+1 [...]
+1 [...]
+2 [in the] military [...] [...]
+3 [...] and Ptole[...]
+4 [...] both Persians [of the]
+5 [epigone], the three in the street of Cleo-
+6 patra Aphrodite, of hard wheat
+7 thirty-two artabas. The bor-
+8 rowers are to repay
+9 to Theoxenus the thirty-
+10 two artabas of wheat in
+11 the month of Payni of the sixteenth
+12 year in the city of Oxyrhynchus, wheat
+13 hard, new, clean, unadulterated,
+14 by the four-choenix measure of the agora-
+15 nomi, delivering it at their
+16 own expense. If they do not
+17 repay as written, the
+18 borrowers are to pay
+19 to Theoxenus as the price of each
+20 artaba they do not re-
+21 pay six thousand drachmas
+22 of copper. The borrowers are sureties for each other
+23 for everything in the
+24 contract, for pay-
+25 ment, and the right of execution is to be
+26 Theoxenus' upon both of them
+27 and upon whichever of them he chooses
+28 and upon all their
+29 property as if
+30 by a court judgment. The contract is valid.
+31 (traces)
+
+Date: year 16 of Ptolemy XII (HGV).
+Place: not stated; the place of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-Stud.Pal.4.p.114-1,Pauseiris son of Pauseirion; Theodous daughter of Thallus,,,,,AD 102,,Oxyrhynchus,"Source: Stud.Pal. 4 p. 114 (= P.Oxy. 3 636) (https://papyri.info/ddbdp/stud.pal;4;pg114)
+
+Original Text:
+1 Σαραπίωνι καὶ Σαραπιάδῃ βιβλ(ιοφύλαξιν)
+2 παρὰ Πτόλλιδος Ἀμόιτος τοῦ Πτόλλιδος μητρὸς
+3 Πλουτάρχης Θέωνος ἀπʼ Ὀξυρύγχων πόλεως.
+4 προσαπογράφομαι ἐπὶ τοῦ παρόντος ἀπὸ τῶν
+5 κατηντηκότων εἴς με ἐξ ὀνόματος τῆς γυ
+6 ναικός μου Δημητροῦτος Μνησιθέου τοῦ Θέω
+7 νος μητρὸς [...]ειας Ἀπολλωνίου ἀπὸ τῆς αὐτῆ[ς]
+8 πόλε̣ω[ς] ἀκολο[ύθ]ως ᾗ πεποίηται σὺν ἐμοὶ δια̣
+9 θήκῃ διὰ τοῦ ἐ[ν τ]ῇ αὐτῇ πόλει ἀγορανομί
+10 ου τῷ Χοιὰχ μηνὶ τοῦ ἕκτου ἔτους Τραιανοῦ
+11 Καίσαρος τοῦ κυρίου ἐφʼ ᾗ ἀμεταθέτῳ ἐτε
+12 λεύτησεν ἄτεκνος, δίκαιον τρίτου μέρου[ς]
+13 οἰκίας καὶ αἰθρίου καὶ ἑτέρων χρηστηρίων
+14 ἐπʼ ἀμφόδου Τεμ[γ]ενούθεως μεταπεπτωκότος
+15 εἰς αὐτὴν ἐξ ὀν[ό]ματος Παυσείριος Παυσειρίωνο[ς]
+16 το[ῦ] Εὐδαίμονο[ς] μητρὸς Σινθωνίας Θώνιος ἀπὸ
+17 [τῆς αὐ]τῆς πόλεω[ς] ἀπὸ ἐκπρ[ο]θέσ[μ]ου δανείου γ[ε]
+18 [γο]νότος ὑπό τ̣ε̣ α[ὐ]τοῦ καὶ τῆς γυν[αι]κὸς αὐτοῦ Θε
+19 [οδ]οῦτος Θάλλου τοῦ διὰ τοῦ ἐν τῇ αὐτῇ πόλει
+20 [μν]ημονείου τὰ εἰσαγόμενα δὲ [το]ῦ̣ πρώτου ἔτου[ς]
+21 [Τρ]αιανοῦ Καίσαρ[ος το]ῦ κυρίου ἐπὶ τῆς γυναικό[ς]
+22 [μου] π̣αρὰ Μν[ησίθ]εον Θέωνο[ς] τοῦ Μνησιθ[έου]
+23 [μητρὸς] Ημε̣.[...] ἀπὸ τῆς α[ὐτῆ]ς πόλεως
+24 [...]α..[...]εθε...
+
+English translation:
+1 To Sarapion and Sarapias, keepers of the archives,
+2 from Ptollis son of Amois, grandson of Ptollis, his mother being
+3 Plutarche daughter of Theon, of the city of Oxyrhynchus.
+4 I register in addition at present, of the property
+5 that has come to me in the name of my
+6 wife Demetrous daughter of Mnesitheus, grandson of The-
+7 on, her mother being [...]eia daughter of Apollonius, of the same
+8 city, in accordance with the will she made with me
+9 through the agoranomus' office in the same city
+10 in the month of Choiak of the sixth year of Trajan
+11 Caesar the lord, under which, unrevoked, she
+12 died childless: the right to a third part
+13 of a house and hall and other appurtenances
+14 in the quarter of Temgenouthis, which had passed
+15 to her in the name of Pauseiris son of Pauseirion,
+16 grandson of Eudaemon, his mother being Sinthonia daughter of Thonis, of
+17 the same city, from an overdue loan
+18 made by him and his wife The-
+19 odous daughter of Thallus through the record office in the same city,
+20 the proceedings brought in the first year
+21 of Trajan Caesar the lord on behalf of my wife
+22 against (?) Mnesitheus son of Theon, grandson of Mnesitheus,
+23 [his mother being] [...], of the same city,
+24 [...]
+
+Loan in ll. 14-19; the house share passed from it to the declarant's wife Demetrous; the lender is not named.
+Date: not stated; the year of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-ZPE.222.179-1,Apollonia daughter of Demetrius,Selene daughter of Heron,1120,drachma (silver),,AD 79-80,"until the 30th of [...], year [...] of Titus",Oxyrhynchus,"Source: ZPE 222 (2022) 179 (= P.Oxy. 2 373) (https://papyri.info/ddbdp/zpe;222;179)
+
+Original Text:
+1 [ἔτους] [δε]υτέρου Αὐτοκράτορος Τίτου Καίσαρ[ος Οὐεσπασιανοῦ Σεβαστοῦ] [...]
+2 λ̣ ἐ̣ν̣ Ὀξυρύγχων πόλει τῆς Θηβ̣α̣[ΐδος.]
+3 ἐδάνισεν [Σε]λ̣ήνη Ἥρωνος τοῦ Ἥρωνος μητ[ρὸς] [...] [τῶν ἀπ’ Ὀ]
+4 ξυρύγχων πόλεως μετὰ κυρίου τοῦ ἑαυτῆ[ς] [...................... ]
+5 τοῦ Ψάμ̣μ̣ιδος μητρὸς Διδύμης τῆς̣ [...] [τῶν ἀπὸ τῆς αὐτῆς πόλεως]
+6 Ἀπολλω[νί]ᾳ Δημητρίου ἀστῇ Περσείνῃ [τῆ]ς ἐπ̣[ιγονῆς μετὰ κυρίου] [6-7]
+7 κλέους [τοῦ] Θεμιστοκλέους Καισαρείου τοῦ καὶ Ζ̣[ηνείου ἐν ἀγυιᾷ ἀργυρίου]
+8 Σεβαστοῦ νομίσματος δραχμὰς χιλίας ἑκατὸ̣[ν εἴκοσι] [κεφαλαίου, αἷς οὐδὲν τῷ]
+9 καθόλου προσῆκται· ἀποδότω δὲ ἡ δεδανισμ̣[ένη] [τῇ Σελήνῃ τὰς τοῦ ἀργυρί]
+10 ου δραχμὰς χιλίας ἑκατὸν εἴκοσι τῇ τρι̣α̣κ[άδι] [τοῦ] [5-7] [μηνὸς τοῦ] [6-8]
+11 ἔτους Αὐτοκράτορος Τίτου Καίσαρος Οὐεσπασι̣[ανοῦ χωρὶς πάσης ὑ]
+12 περθέσεως. ἐὰν δὲ μὴ ἀποδῷ καθὰ γέγραπ[ται, συγχωρεῖ ἡ δεδανεισμέ]
+13 νη μένειν περὶ τὴν Σελήνην καὶ τοὺς παρ’ αὐ[τῆς μεταληψομένους ἀντὶ]
+14 τοῦ προκειμένου κεφαλαίου ἀπὸ τοῦ ὡρισμέ[νου τῆς ἀποδόσεως χρόνου τὴν]
+15 κράτησιν καὶ κυρείαν εἰς τὸν ἀεὶ χ̣ρόνον κα[τοικικῆς καὶ ὠνημένης εἰς κατοικί]
+16 αν γῆς σιτοφόρου σπορίμο[υ] ἐξ ὠ[ρ]θογωνείου ἀρ[ουρῶν δέκα ἀπὸ τῶν ὑπαρχουσῶν]
+17 αὐτῇ περὶ Σιναροι τῆς κ[άτω τοπ]αρχίας ἐκ το[ῦ] [7-10] ἀρουρῶν [4-7]
+18 κοντα ἑπτὰ ἀφ’ ἧς ἐὰν αἱ[ρῆται α]ὐτῶν ἡ Σελή[νη] [...]
+19 ται σχοινισμούς· γείτο[νε]ς̣ τ̣ῶ̣ν̣ ἀρου[ρῶν νότου] [...]
+20 βορρᾶ γύης, ἀπηλιώτου πλευρισμός, λιβὸς θε[...]
+21 καὶ ἐξῖναι τ[ῇ] Σ̣ελήνῃ ἀπὸ τῆσδε τῆς σ̣υν̣[γραφῆς] [μετεπιγράφεθαι]
+22 διὰ τῶν καταλοχισμῶν τὰς δέκα ἀρούρας, μ[ὴ προσδεηθείσῃ τῆς τῆς δεδανεισ]
+23 μένης παρουσίας μηδὲ συνεπιγραφῆς κα̣[ὶ ἀποφέρεσθαι τὰ ἐξ αὐτῶν περι]
+24 εσόμενα [κα]ὶ̣ χρᾶσθαι καὶ οἰκονομεῖν περ̣[ὶ αὐτῶν καθ’ ὃν ἐὰν αἱρῆται τρό]
+25 πον, ἐφ’ ἃς καὶ μηδεμίαν τῇ δεδανισμέ[νῃ ἢ τοῖς παρ’ αὐτῆς μεταληψομένοις]
+26 καταλείπ̣ε̣σθαι ἔφοδον ἀλλὰ καὶ ἐπάναγκ[ον τὴν δεδανεισμένην παρέξεσθαι]
+27 τῇ Σελήνῃ καὶ τοῖς παρ’ αὐτῆς διὰ πα[ντὸς μὲν βεβαίας, καθαρὰς δὲ καὶ]
+28 ἀπὸ δημοσίω̣ν̣ [καὶ τῶν ἄλλων τελεσμάτων πάντων τῶν ἔμπροσθεν]
+29 χ̣ρόνων μέ̣[χρι] [...]
+30 ἀπὸ δὲ τοῦ ν̣[ῦν] [...]
+31 αὐτῶν οὔτε̣ [...]
+32 κατ’ οὐδένα [τρόπον] [...]
+33 ὡς δεδήλωτ[αι] [...]
+34 ..α̣.[...]
+34 [...]
+
+English translation:
+1 [Year] two of Imperator Titus Caesar [Vespasian Augustus] [...]
+2 30, in the city of Oxyrhynchus in the Thebaid.
+3 Selene daughter of Heron, grandson of Heron, her mother being [...], [of the city of O-]
+4 xyrhynchus, with her guardian [...]
+5 son of Psammis, his mother being Didyme daughter of [...], [of the same city],
+6 lent to Apollonia daughter of Demetrius, citizen, Persian of the epigone, [with her guardian] [...]-
+7 cles son of Themistocles, of the tribe Kaisareios and deme Zeneios, [in the street, of silver]
+8 of imperial coinage, one thousand one hundred [and twenty] drachmas [of capital, to which nothing]
+9 at all has been added. The borrower is to repay [to Selene the] one thousand
+10 one hundred and twenty drachmas [of silver] on the thirtieth [of the month] [...]
+11 year of Imperator Titus Caesar Vespasian [without any]
+12 delay. If she does not repay as written, [the borrower agrees]
+13 that there shall remain with Selene and her [successors, in place of]
+14 the aforesaid capital, from the time fixed [for repayment],
+15 possession and ownership for all time of [ten arouras of catoecic and purchased]
+16 grain-bearing, sown land, in a rectangle, [of the arouras belonging]
+17 to her near Sinaru in the lower toparchy, in the kleros of [...], of the arouras [...]-
+18 ty-seven, from whichever part of them Selene chooses [...]
+19 measurements; the neighbours of the arouras: [south] [...]
+20 north a field, east a boundary strip, west [...]
+21 and Selene may, on the basis of this contract, [have transferred to herself]
+22 through the catoecic registers the ten arouras, [without needing the]
+23 presence or co-signature [of the borrower, and carry off their produce]
+24 and use and manage [them in whatever way she chooses],
+25 no claim on them being left to the borrower [or her successors],
+26 but the borrower is obliged [to guarantee them]
+27 to Selene and her successors at all [times, secure and free]
+28 from public dues [and all other charges of earlier]
+29 times up to [...]
+30 and from now [...]
+31 of them neither [...]
+32 in no [way] [...]
+33 as has been declared [...]
+34 [...]
+34 [...]
+
+Date: year 2 of Titus; month lost.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."

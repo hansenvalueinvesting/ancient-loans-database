@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (P.Oxy. 2-5)**
+- Added 30 loans from P.Oxy. 2-5 (all 599 numbers reviewed; 401 with a text on papyri.info): ALD-P.Oxy.2.237-1 - ALD-P.Oxy.4.808-1, ALD-P.Dubl.6-1, ALD-SB.10.10222-1 - ALD-SB.26.16745-1, ALD-Stud.Pal.4.p.114-1, ALD-ZPE.222.179-1 (re-edited texts under their current edition). 16 loan-like texts added to `need_review.md`. Note of ALD-P.Oxy.1.133-1 re-rendered (spacing of illegible letters in l. 28). Database: 36 loans.
+
 **2026-11-07 (notes)**
 - Notes of the 6 P.Oxy. 1 loans: remarks shortened, no "Notes:" heading, nothing repeated from the fields.
 

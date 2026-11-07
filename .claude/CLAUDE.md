@@ -252,8 +252,14 @@ by Claude under that grant (Roman-world pass):
   Decisions (Hansen, Nov 2026, P.Oxy. 1): loan in progress / not shown to be made -> excluded, listed in
   `need_review.md`; advances (προχρεία) with no repayment stated -> not loans for now; undated loan -> document's
   year, said in notes; loan place not stated -> document's place (HGV), said in notes; credit line always.
+  Decisions (Hansen, Nov 2026, P.Oxy. 2-4): IDs and Source use the current edition ("use the current source"), the
+  P.Oxy. number in brackets; loans whose interest is paid by living in a house (ἐνοίκησις / ἐνοικισμός ἀντὶ τῶν
+  τόκων) are not loans ("that isn't a loan, that's rent"; P.Oxy. 2 339 = P.Oxy. 8 1105, SB 20 14097, SB 8 9765 left
+  out); advances inside leases, even when repaid -> need_review.md. A long document: only the loan passage in the
+  notes, marked as an excerpt (P.Oxy. 2 237).
   Done: P.Oxy. 1 (211 numbers; 177 with text; 30 candidates read): 6 rows (68-1, 68-2, 70-1, 98-1, 130-1, 133-1);
-  4 in need_review.md. Everything else in
+  4 in need_review.md. P.Oxy. 2-5 (599 numbers; 401 with text; 81 candidates read): 30 rows from 26 documents;
+  16 in need_review.md. Next: P.Oxy. 6. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
