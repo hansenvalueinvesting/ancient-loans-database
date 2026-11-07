@@ -279,7 +279,9 @@ by Claude under that grant (Roman-world pass):
   persons: standard form with a qualifier in brackets (Hansen: "add parentheses after the name as needed as long as it
   can be standardized"): `state (public granary)`, `Oxyrhynchus (city council)`, `Apion (heirs)`, `friends (unnamed)`.
   P.Oxy. 22-31 (293 numbers; 105 with text; 14 candidates read; vols. 23, 25, 26, 28-30 literary): 2 rows
-  (22 2350, 27 2471); 3 in need_review.md. Next: P.Oxy. 32. Everything else in
+  (22 2350, 27 2471); 3 in need_review.md. P.Oxy. 32-41 (379 numbers; 249 with text; 18 candidates read; vols. 32, 35,
+  37, 39 literary): 7 rows (34 2722, 36 2774, 36 2775 x2, 38 2834, 38 2848 Vo, 41 2956); 1 in need_review.md (36 2773,
+  loom used in place of interest; open for Hansen). Next: P.Oxy. 42. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

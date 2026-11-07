@@ -4,6 +4,7 @@ Loan-like transactions found while reviewing sources but not entered in `ald.csv
 
 | Source | Date | Place | What | Why not entered |
 |---|---|---|---|---|
+| [P.Oxy. 36 2773](https://papyri.info/ddbdp/p.oxy;36;2773) | AD 82 | Oxyrhynchus | Heracles and Ptollas, sons of Ptolemaeus, receive 12 drachmas from Diogas; instead of interest the lender has the use of their weaving loom for 6 months, then the money is repaid and the loom returned | Use of property in place of interest (like rent paid by habitation) |
 | [P.Oxy. 31 2587](https://papyri.info/ddbdp/p.oxy;31;2587) | AD 289 | Antinoopolis (?) | Receipt: Aurelius Polydeuces receives 1000 drachmas of new coin out of 1000 drachmas of Ptolemaic silver that Aurelius Hermeias owes him | Debt not shown to be a loan |
 | [P.Oxy. 31 2586](https://papyri.info/ddbdp/p.oxy;31;2586) | AD 264 | Oxyrhynchus | Apprenticeship contract: Hermias receives an advance (προχρεία) of 400 drachmas from Dioscorus, to be repaid at the end of the term | Advance inside a work contract |
 | [P.Oxy. 24 2411](https://papyri.info/ddbdp/p.oxy;24;2411) | AD 159-160 | Mendesian nome | Petition about mortgaged property and a loan owed by Apollonius (later strategus) and another debtor; capital and interest about 4 talents 2980 drachmas; letter of the dioecetes Mallius Crassus | Fragmentary; parties and terms of the loan unclear |
