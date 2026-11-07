@@ -6,8 +6,11 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (rename)**
+- `semi_loans.md` renamed `need_review.md`.
+
 **2026-11-07 (P.Oxy. 1)**
-- Added ALD-P.Oxy.1.68-1 - ALD-P.Oxy.1.133-1 (6 loans): P.Oxy. 1, all 211 numbers reviewed (177 with a text on papyri.info). 4 loan-like texts not entered listed in `semi_loans.md`. Notes now end with a Notes section and the credit line. Database: 6 loans.
+- Added ALD-P.Oxy.1.68-1 - ALD-P.Oxy.1.133-1 (6 loans): P.Oxy. 1, all 211 numbers reviewed (177 with a text on papyri.info). 4 loan-like texts not entered listed in `need_review.md`. Notes now end with a Notes section and the credit line. Database: 6 loans.
 
 **2026-11-07 (restart)**
 - New structure: 10 fields (id, borrower, lender, volume, currency, interest, date, duration, place, notes); notes = hyperlinked source, original text, English translation; period, source and source_url columns dropped; year renamed date. New IDs: `ALD-` + source citation + loan number, e.g. `ALD-P.Oxy.3.506-1`. Codebook and website updated.

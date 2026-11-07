@@ -13,7 +13,7 @@ below applies to any source as the database expands.
 - Never change inclusion rules, `reference/codebook.md`, field formats or the schema on your own. If a
   source raises a question the rules do not answer, ask Hansen; do not decide it and do not label
   your own choices as Hansen's.
-- Do not add tools, scripts or data files to the repo other than `ald.csv`, `semi_loans.md` and the archive `ald1.csv`. Working files live in the
+- Do not add tools, scripts or data files to the repo other than `ald.csv`, `need_review.md` and the archive `ald1.csv`. Working files live in the
   session's scratch folder (they are lost when the session ends, so record results in `ald.csv` and
   the README change log).
 - Work on `main`; commit and push directly to `main` (Hansen, Oct 2026). Be concise and organized.
@@ -30,7 +30,7 @@ below applies to any source as the database expands.
   rows sorted by id in natural order (numbers compared as numbers: P.Oxy. 1 68 before 1 130). Edit it with a script in the scratch folder; commit with the README change-log entry.
   The old Supabase project (`zzlrdlkdngxkkcrtolpx`, paused): Hansen asked to delete it (Nov 2026); the connector has no
   delete tool, so Hansen deletes it in the Supabase dashboard.
-- **Semi-loans: `semi_loans.md`** (Hansen, Nov 2026: "keep track of these 'semi loans' that we do not formally
+- **Need review: `need_review.md`** (Hansen, Nov 2026: "keep track of these 'semi loans' that we do not formally (renamed from `semi_loans.md`, Hansen, Nov 2026)
   include. i can review them by hand"): loan-like transactions not entered (loan not shown to be made, advances,
   pawns, antichretic arrangements), one table row each with link and reason; most recent review first.
 - **Archive: `ald1.csv`** (Hansen, Nov 2026: "empty out ald.csv so it starts blank, and move all current data into
@@ -249,10 +249,10 @@ by Claude under that grant (Roman-world pass):
   data (github.com/papyri/idp.data; texts now under `DDbDP/<n>/<id>.xml`, find a volume by `ddb-hybrid` idno; the
   `Historical/<series>/<vol>/` stubs list every number with `reprint-in` pointers to later re-editions).
   Decisions (Hansen, Nov 2026, P.Oxy. 1): loan in progress / not shown to be made -> excluded, listed in
-  `semi_loans.md`; advances (προχρεία) with no repayment stated -> not loans for now; undated loan -> document's
+  `need_review.md`; advances (προχρεία) with no repayment stated -> not loans for now; undated loan -> document's
   year, said in notes; loan place not stated -> document's place (HGV), said in notes; credit line always.
   Done: P.Oxy. 1 (211 numbers; 177 with text; 30 candidates read): 6 rows (68-1, 68-2, 70-1, 98-1, 130-1, 133-1);
-  4 semi-loans. Everything else in
+  4 in need_review.md. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
