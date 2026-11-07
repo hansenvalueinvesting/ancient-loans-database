@@ -160,6 +160,82 @@ function setStatus(msg) {
   $('status').textContent = msg;
 }
 
+// ---------- map and chart (index page) ----------
+
+// Place -> [latitude, longitude, Pleiades ID]. A new place in ald.csv needs a line here (coordinates from
+// its Pleiades record, reprPoint, which is [longitude, latitude]).
+const PLACES = {
+  'Oxyrhynchus': [28.542574, 30.65172, 736983],
+  'Palosis': [28.675965, 30.798219, 736988],
+};
+
+const viz = { map: null, layer: null, chart: null };
+
+// Loans at each mapped place, as circles sized by number of loans; clicking a circle filters by that place.
+function drawMap(rows) {
+  if (!window.L) return;
+  if (!viz.map) {
+    $('map').style.height = '420px';
+    viz.map = L.map('map').setView([29.5, 31], 6);
+    // Base map: Digital Atlas of the Roman Empire (ancient place names).
+    L.tileLayer('https://dh.gu.se/tiles/imperium/{z}/{x}/{y}.png', {
+      maxZoom: 11, attribution: '<a href="https://imperium.ahlfeldt.se/">Digital Atlas of the Roman Empire</a> (CC BY 4.0)',
+    }).addTo(viz.map);
+    viz.layer = L.layerGroup().addTo(viz.map);
+  }
+  viz.layer.clearLayers();
+  const counts = new Map();
+  rows.forEach((l) => counts.set(l.place, (counts.get(l.place) || 0) + 1));
+  let off = 0;
+  [...counts].forEach(([place, n]) => {
+    const p = PLACES[place];
+    if (!p) { off += n; return; }
+    L.circleMarker([p[0], p[1]], { radius: 6 + 4 * Math.sqrt(n), weight: 1, fillOpacity: 0.6 })
+      .bindTooltip(`${esc(place)}: ${n.toLocaleString()} loan${n === 1 ? '' : 's'}`)
+      .on('click', () => { if (!state.picked.place.has(place)) pick('place', place); })
+      .addTo(viz.layer);
+  });
+  $('map-note').textContent = off ? `${off.toLocaleString()} loan${off === 1 ? '' : 's'} not on the map (place unknown or not yet located).` : '';
+}
+
+// Number of loans per quarter-century; a loan dated to a range counts at the middle of its range.
+const BIN = 25;
+function drawChart(rows) {
+  if (!window.Chart) return;
+  const mids = rows.filter((l) => l.yearStart != null).map((l) => (l.yearStart + l.yearEnd) / 2);
+  const undated = rows.length - mids.length;
+  // Bins start at multiples of 25 on a scale without a year 0 (1 BC is followed by AD 1).
+  const astro = (y) => (y < 0 ? y + 1 : y);           // 1 BC -> 0, AD 1 -> 1
+  const unastro = (a) => (a <= 0 ? a - 1 : a);
+  const bin = (m) => Math.floor((astro(m) - 1) / BIN);
+  const labels = [], data = [];
+  if (mids.length) {
+    const lo = Math.min(...mids.map(bin)), hi = Math.max(...mids.map(bin));
+    for (let b = lo; b <= hi; b++) {
+      const a = unastro(b * BIN + 1), z = unastro(b * BIN + BIN);
+      labels.push(a < 0 && z < 0 ? `${-a}-${-z} BC` : a < 0 ? `${-a} BC-AD ${z}` : `AD ${a}-${z}`);
+      data.push(mids.filter((m) => bin(m) === b).length);
+    }
+  }
+  if (!viz.chart) {
+    viz.chart = new Chart($('chart-time'), {
+      type: 'bar',
+      data: { labels, datasets: [{ label: 'Loans', data }] },
+      options: {
+        aspectRatio: 3, animation: false,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: 'Loans' } },
+                  x: { title: { display: true, text: 'Date (25-year periods; a date range counts at its middle)' } } },
+      },
+    });
+  } else {
+    viz.chart.data.labels = labels;
+    viz.chart.data.datasets[0].data = data;
+    viz.chart.update();
+  }
+  $('chart-note').textContent = undated ? `${undated.toLocaleString()} undated loan${undated === 1 ? '' : 's'} not shown.` : '';
+}
+
 // ---------- filtering & table ----------
 
 // A loan matches when it is in any picked value of each multi-select filter, its year range
@@ -200,6 +276,8 @@ function render() {
     th.textContent = th.dataset.label + (th.dataset.sort === state.sortKey ? (state.sortDir === 1 ? ' ▲' : ' ▼') : '');
   });
   const bad = ['f-from', 'f-to'].filter((id) => Number.isNaN(parseYear($(id).value)));
+  drawMap(state.shown);
+  drawChart(state.shown);
   setStatus(bad.length
     ? 'Year not understood: enter a year like 100 BC or AD 57.'
     : `${state.shown.length.toLocaleString()} of ${state.all.length.toLocaleString()} loans`);
