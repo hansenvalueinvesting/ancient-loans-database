@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (interest method)**
+- ALD-P.Oxy.1.98-1: calculated interest now (extra sum / sum lent / years) = 1.68-1.75 (was 3.29, a rate on the balance still owed). Database: 36 loans.
+
 **2026-11-07 (calculated interest)**
 - Calculated rates where no rate is stated but the sums and dates are given, with the working in the notes: ALD-P.Oxy.1.98-1 (3.29), ALD-SB.14.11491-1 (72.25). Database: 36 loans.
 

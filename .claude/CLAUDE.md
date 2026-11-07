@@ -262,7 +262,7 @@ by Claude under that grant (Roman-world pass):
   as a number (two decimals; range if a date is uncertain; empty if not computable); the written term goes in the
   notes as `Term: ...`. Column names `duration (years)` and `interest (%)` (Hansen); interest = % per year (simple, monthly
   rate x 12), the written rate in the notes as `Interest: ...`; no stated rate but sums and dates given -> calculated
-  rate, working shown in the notes (Hansen).
+  rate (extra sum / sum lent / years, also for instalments: Hansen chose the straightforward method), working in the notes.
   Done: P.Oxy. 1 (211 numbers; 177 with text; 30 candidates read): 6 rows (68-1, 68-2, 70-1, 98-1, 130-1, 133-1);
   4 in need_review.md. P.Oxy. 2-5 (599 numbers; 401 with text; 81 candidates read): 30 rows from 26 documents;
   16 in need_review.md. Next: P.Oxy. 6. Everything else in
