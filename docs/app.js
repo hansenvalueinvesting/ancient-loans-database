@@ -185,7 +185,7 @@ function sortRows(rows) {
     const blank = (v) => v === '' || Number.isNaN(v);
     if (blank(x)) return blank(y) ? 0 : 1;
     if (blank(y)) return -1;
-    return (numeric ? x - y : String(x).localeCompare(String(y))) * d;
+    return (numeric ? x - y : String(x).localeCompare(String(y), undefined, { numeric: true })) * d;
   });
 }
 
