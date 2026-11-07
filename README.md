@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (restart)**
+- Database restarted. `ald.csv` emptied (header only); all 1,349 previous loans (ALD-000001 - 001802) moved unchanged to `ald1.csv` as an archive. Database: 0 loans.
+
 **2026-10-18 (data moved from Supabase to `ald.csv`)**
 - The data now lives in `ald.csv` in this repository, like the Ancient Taxation Database; the website reads the CSV. Exported from Supabase and checked field by field (checksums of all fields and notes identical). Supabase schema file and release workflow removed; the period table is now in the codebook.
 - The export holds 1,349 loans, not the 944 last logged: 405 of the 555 rows removed by the formal-loan audit only for a missing borrower, lender or principal had been put back in the database (a restore Hansen approved) without a change-log entry. The other 150 of those 555 were not restored: ALD-000703, 000705 - 000706, 000708, 000713 - 000715, 000718 - 000720, 000724 - 000725, 000733, 000735, 000740, 000746, 000753 - 000756, 000758, 000765, 000769, 000772, 000780, 000785 - 000786, 000790, 000793, 000796, 000806, 000816, 000829 - 000830, 000832, 000835 - 000836, 000840, 000842, 000845, 000858, 000860 - 000863, 000985, 000987 - 000989, 000993 - 000997, 001001, 001008, 001010, 001012, 001015, 001019 - 001021, 001032, 001035 - 001037, 001039, 001041, 001045, 001048, 001052, 001064, 001067 - 001071, 001256 - 001257, 001266, 001272, 001280 - 001281, 001284 - 001285, 001290 - 001301, 001304 - 001310, 001313, 001315 - 001316, 001318 - 001319, 001321, 001324 - 001327, 001330, 001334, 001337, 001343 - 001344, 001349 - 001352, 001359, 001369 - 001370, 001372, 001374, 001377, 001380 - 001381, 001383 - 001384, 001388 - 001395, 001411 - 001412, 001414 - 001419, 001426. Database: 1,349 loans.

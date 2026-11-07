@@ -13,7 +13,7 @@ below applies to any source as the database expands.
 - Never change inclusion rules, `reference/codebook.md`, field formats or the schema on your own. If a
   source raises a question the rules do not answer, ask Hansen; do not decide it and do not label
   your own choices as Hansen's.
-- Do not add tools, scripts or data files to the repo other than `ald.csv`. Working files live in the
+- Do not add tools, scripts or data files to the repo other than `ald.csv` (and the archive `ald1.csv`, below). Working files live in the
   session's scratch folder (they are lost when the session ends, so record results in `ald.csv` and
   the README change log).
 - Work on `main`; commit and push directly to `main` (Hansen, Oct 2026). Be concise and organized.
@@ -26,7 +26,11 @@ below applies to any source as the database expands.
   Supabase, like the taxation database). Columns in this order: id, period, year, place, amount,
   currency, borrower, lender, interest, duration, source, source_url, notes. UTF-8, RFC 4180 quoting,
   rows sorted by id. Edit it with a script in the scratch folder; commit with the README change-log entry.
-  The old Supabase project (`zzlrdlkdngxkkcrtolpx`) is no longer used; kept until Hansen says to delete it.
+  The old Supabase project (`zzlrdlkdngxkkcrtolpx`, paused): Hansen asked to delete it (Nov 2026); the connector has no
+  delete tool, so Hansen deletes it in the Supabase dashboard.
+- **Archive: `ald1.csv`** (Hansen, Nov 2026: "empty out ald.csv so it starts blank, and move all current data into
+  ald1.csv just so we don't lose it in case i decide to shift back"): the 1,349 rows as of the restart, unchanged.
+  Not read by the site; do not edit it.
 - **Repo**: `README.md` (brief description + change log), `ald.csv`, `docs/` (GitHub Pages site),
   `reference/codebook.md`. The review ledger `reviewed.md` was removed (Hansen, Oct 2026); its last
   version is in git history (`git show 4d2672d:reviewed.md`).
@@ -232,6 +236,9 @@ by Claude under that grant (Roman-world pass):
    below; commit.
 
 ## Status
+- Nov 2026 RESTART (Hansen): "clear all the data ... and restart building it in a more organized way". `ald.csv`
+  emptied (header only); all previous data in `ald1.csv`. A new ID system is being decided with Hansen; everything
+  below describes the old build (now in `ald1.csv`) and is history unless Hansen carries a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
   data moved from Supabase to `ald.csv`; site reads the CSV; `reference/schema.sql`, the release workflow
   and the Supabase permission removed. Notes below about SQL, the connector and `U&` literals are history.
