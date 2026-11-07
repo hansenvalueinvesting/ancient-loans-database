@@ -252,8 +252,9 @@ by Claude under that grant (Roman-world pass):
   Decisions (Hansen, Nov 2026, P.Oxy. 1): loan in progress / not shown to be made -> excluded, listed in
   `need_review.md`; advances (προχρεία) with no repayment stated -> not loans for now; undated loan -> document's
   year, said in notes; loan place not stated -> document's place (HGV), said in notes; credit line always.
-  Decisions (Hansen, Nov 2026, P.Oxy. 2-4): IDs and Source use the P.Oxy. number ("use P.Oxy, because that is what
-  you're reading it from"), the edition whose text is given in brackets (`P.Oxy. 2 304 (= SB 10 10246)`); loans whose interest is paid by living in a house (ἐνοίκησις / ἐνοικισμός ἀντὶ τῶν
+  Decisions (Hansen, Nov 2026, P.Oxy. 2-4): IDs and Source use the edition that prints the text, as scholars cite it
+  (Hansen: "change the entire IDs and everything to those correct places"), the first publication in brackets
+  (`SB 10 10246 (= P.Oxy. 2 304 descr.)`); the P.Oxy. order is only the order of work; loans whose interest is paid by living in a house (ἐνοίκησις / ἐνοικισμός ἀντὶ τῶν
   τόκων) are not loans ("that isn't a loan, that's rent"; P.Oxy. 2 339 = P.Oxy. 8 1105, SB 20 14097, SB 8 9765 left
   out); advances inside leases, even when repaid -> need_review.md. A long document: only the loan passage in the
   notes, marked as an excerpt (P.Oxy. 2 237).
