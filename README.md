@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (calculated interest)**
+- Calculated rates where no rate is stated but the sums and dates are given, with the working in the notes: ALD-P.Oxy.1.98-1 (3.29), ALD-SB.14.11491-1 (72.25). Database: 36 loans.
+
 **2026-11-07 (interest)**
 - Columns renamed `interest (%)` and `duration (years)`. Interest is now the rate in percent per year (simple, monthly rate x 12): 6 loans with a rate (12, 6 or 8); the rate as written and loans called interest-bearing without a rate are in the notes (`Interest: ...`). Database: 36 loans.
 

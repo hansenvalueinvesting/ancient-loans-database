@@ -287,7 +287,7 @@ Date: Pharmouthi, year 15 of Septimius Severus and Caracalla.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.1.98-1,Archias freedman of Amoitas son of Zoilus,Chaeremon son of Theon,700,drachma (silver),,AD 137,4.08-4.24,Oxyrhynchus,"Source: P.Oxy. 1 98 (https://papyri.info/ddbdp/p.oxy;1;98)
+ALD-P.Oxy.1.98-1,Archias freedman of Amoitas son of Zoilus,Chaeremon son of Theon,700,drachma (silver),3.29,AD 137,4.08-4.24,Oxyrhynchus,"Source: P.Oxy. 1 98 (https://papyri.info/ddbdp/p.oxy;1;98)
 
 Original Text:
 1 αλ̣ δ.
@@ -344,6 +344,7 @@ English translation:
 25 [...]
 
 Loan in ll. 10-18; the document is the receipt for the last 168 drachmas (AD 141/2).
+Interest: calculated, not stated: 700 drachmas repaid in 50 monthly instalments of 15 (750 in all, ll. 15-18), the first taken as one month after the loan; the rate at which the instalments repay exactly 700 is 0.274% per month = 3.29% per year.
 Term: 50 monthly instalments of 15 drachmas from Hadrianos, year 22 of Hadrian (= Nov/Dec AD 137); the 50th falls in Tybi, year 5 of Antoninus Pius (= December AD 141/January AD 142).
 Date: Hathyr, year 22 of Hadrian (= Oct/Nov AD 137).
 
@@ -2496,7 +2497,7 @@ Date: Choiak, year 6 of Hadrian (= November/December AD 121).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.14.11491-1,Tryphon son of Dionysius; Onnophris son of Dionysius; Sareus daughter of Apion,Tryphaena daughter of [...]orion,314,drachma (silver),,AD 59,0.44,Oxyrhynchus,"Source: SB 14 11491 (= P.Oxy. 2 320 descr.) (https://papyri.info/ddbdp/sb;14;11491)
+ALD-SB.14.11491-1,Tryphon son of Dionysius; Onnophris son of Dionysius; Sareus daughter of Apion,Tryphaena daughter of [...]orion,314,drachma (silver),72.25,AD 59,0.44,Oxyrhynchus,"Source: SB 14 11491 (= P.Oxy. 2 320 descr.) (https://papyri.info/ddbdp/sb;14;11491)
 
 Original Text:
 1 ⟦ ἔτους πέμπ̣του Νέρωνος Κλα[υδ]ί̣ου Καίσαρος Σεβαστοῦ Γερμα̣νι̣κ[ο]ῦ ⟧
@@ -2554,7 +2555,7 @@ English translation:
 25 ⟦ fifth. Registered through Apollonius, formerly called Secundus, ⟧
 26 ⟦ appointed by the partner agoranomi. ⟧
 
-The whole contract is crossed out; the repayment clause (l. 13) has 414 drachmas against 314 lent (ll. 10-11).
+Interest: calculated, not stated: 414 drachmas due (l. 13) on 314 lent (ll. 10-11), i.e. 100 drachmas over 161 days (19 June - 27 November AD 59); 100 / 314 / (161 / 365.25) = 72.25% per year. The contract says nothing is added to the capital (l. 11), and the whole contract is crossed out.
 Term: until Neos Sebastos 30, year 6 of Nero (= 27 November AD 59).
 Date: Payni 25, year 5 of Nero (= 19 June AD 59).
 
