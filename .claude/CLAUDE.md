@@ -267,7 +267,9 @@ by Claude under that grant (Roman-world pass):
   rate (extra sum / sum lent / years, also for instalments: Hansen chose the straightforward method), working in the notes.
   Done: P.Oxy. 1 (211 numbers; 177 with text; 30 candidates read): 6 rows (68-1, 68-2, 70-1, 98-1, 130-1, 133-1);
   4 in need_review.md. P.Oxy. 2-5 (599 numbers; 401 with text; 81 candidates read): 30 rows from 26 documents;
-  16 in need_review.md. Next: P.Oxy. 6. Everything else in
+  16 in need_review.md. P.Oxy. 6-8 (325 numbers; 232 with text; 41 candidates read): 4 rows (7 1040, 7 1042, 8 1118,
+  8 1132); 10 in need_review.md (8 1130 moved there by Hansen: possibly an advance purchase of flax). Open for
+  Hansen: state seed loans (P.Oxy. 7 1024, 7 1031; excluded in the old build). Next: P.Oxy. 9. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (P.Oxy. 6-8)**
+- Added 4 loans from P.Oxy. 6-8 (all 325 numbers reviewed; 232 with a text on papyri.info): ALD-P.Oxy.7.1040-1, ALD-P.Oxy.7.1042-1, ALD-P.Oxy.8.1118-1, ALD-P.Oxy.8.1132-1. 10 texts added to `need_review.md` (incl. P.Oxy. 8 1130). Database: 40 loans.
+
 **2026-11-07 (interest method)**
 - ALD-P.Oxy.1.98-1: calculated interest now (extra sum / sum lent / years) = 1.68-1.75 (was 3.29, a rate on the balance still owed). Database: 36 loans.
 
