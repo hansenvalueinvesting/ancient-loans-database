@@ -4,6 +4,10 @@ Loan-like transactions found while reviewing sources but not entered in `ald.csv
 
 | Source | Date | Place | What | Why not entered |
 |---|---|---|---|---|
+| [P.Oxy. 16 1977](https://papyri.info/ddbdp/p.oxy;16;1977) | VI cent. AD | Oxyrhynchus | Serenus, pronoetes, acknowledges that he has (owes) Ammonius 142 artabas of wheat, to be provided at the threshing of indiction 4 | Not shown to be a loan (estate dues?) |
+| [P.Oxy. 16 1975](https://papyri.info/ddbdp/p.oxy;16;1975) | AD 496 | Oxyrhynchite nome | Aurelius Apollos receives from Aurelius Paulus 3 solidi "as an advance" (λόγῳ προχρείας) on his two arouras, after an earlier document of 15 solidi of capital | Advance on land; the earlier 15 solidi not called a loan |
+| [P.Oxy. 16 1972](https://papyri.info/ddbdp/p.oxy;16;1972) | AD 560 | Oxyrhynchite nome | Anoup, priest, son of Sourous, with his brother Aurelius Apollos as surety, to Apphous, for "the debt stated below" | The debt and its terms are lost |
+| [P.Oxy. 16 1890](https://papyri.info/ddbdp/p.oxy;16;1890) | AD 508 | Oxyrhynchus | Lease of a mill-bakery; the lessor provides the lessees 12 solidi "as an advance" (προχρεία) | Advance inside a lease (Hansen: need review) |
 | [P.Oxy. 14 1726](https://papyri.info/ddbdp/p.oxy;14;1726) | early III cent. AD | Oxyrhynchus | Account of fees for contracts, incl. "loan of 2000 drachmas, Aurelius Theon" and "loan of 300 drachmas, Aurelius Sarapion" | Account entries; roles of the persons not stated |
 | [P.Oxy. 14 1714](https://papyri.info/ddbdp/p.oxy;14;1714_1dupl) | AD 285-304 (?) | Oxyrhynchus | Aurelia Apia has from Aurelius Amois a deposit (παραθήκη) of [1]10 talents | Deposit, not called a loan |
 | [P.Oxy. 14 1713](https://papyri.info/ddbdp/p.oxy;14;1713) | AD 279 | Oxyrhynchus | Aurelius Serenus alias Sarapion has from Aurelius Harpocration a deposit (παραθήκη) of 148 talents 1280 drachmas, returnable on demand (crossed out) | Deposit, not called a loan |
