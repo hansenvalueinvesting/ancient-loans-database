@@ -258,6 +258,9 @@ by Claude under that grant (Roman-world pass):
   τόκων) are not loans ("that isn't a loan, that's rent"; P.Oxy. 2 339 = P.Oxy. 8 1105, SB 20 14097, SB 8 9765 left
   out); advances inside leases, even when repaid -> need_review.md. A long document: only the loan passage in the
   notes, marked as an excerpt (P.Oxy. 2 237).
+  Columns are standardized for a spreadsheet; the notes hold everything else (Hansen, Nov 2026). duration = years
+  as a number (two decimals; range if a date is uncertain; empty if not computable); the written term goes in the
+  notes as `Term: ...`.
   Done: P.Oxy. 1 (211 numbers; 177 with text; 30 candidates read): 6 rows (68-1, 68-2, 70-1, 98-1, 130-1, 133-1);
   4 in need_review.md. P.Oxy. 2-5 (599 numbers; 401 with text; 81 candidates read): 30 rows from 26 documents;
   16 in need_review.md. Next: P.Oxy. 6. Everything else in

@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-07 (duration)**
+- `duration` is now the term in years as a number (e.g. `0.28`, `1.92-2.00` when a date is known only to the month); the term as written moved to the notes (`Term: ...`). 14 loans have a computed duration; 2 terms are not computable (dates lost). Database: 36 loans.
+
 **2026-11-07 (IDs, final)**
 - The 11 texts only described in P.Oxy. now carry the citation of the edition that prints their text, as scholars cite them (Hansen): ALD-P.Oxy.2.304-1 -> ALD-SB.10.10246-1, 2.305-1 -> ALD-SB.10.10222-1, 2.319-1 -> ALD-SB.10.10238-1, 2.320-1 -> ALD-SB.14.11491-1, 2.323-1 -> ALD-SB.10.10234-1, 2.343-1 -> ALD-P.Dubl.6-1, 2.362-1 -> ALD-SB.20.14096-1, 2.373-1 -> ALD-ZPE.222.179-1, 3.592-1 -> ALD-SB.12.10781.Ro-1, 3.636-1 -> ALD-Stud.Pal.4.p.114-1, 4.836-1 -> ALD-SB.26.16745-1 (all old IDs ALD-P.Oxy.). Source lines read e.g. "SB 10 10246 (= P.Oxy. 2 304 descr.)"; same in `need_review.md`. Database: 36 loans.
 
