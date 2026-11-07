@@ -4,6 +4,9 @@ Loan-like transactions found while reviewing sources but not entered in `ald.csv
 
 | Source | Date | Place | What | Why not entered |
 |---|---|---|---|---|
+| [P.Oxy. 31 2587](https://papyri.info/ddbdp/p.oxy;31;2587) | AD 289 | Antinoopolis (?) | Receipt: Aurelius Polydeuces receives 1000 drachmas of new coin out of 1000 drachmas of Ptolemaic silver that Aurelius Hermeias owes him | Debt not shown to be a loan |
+| [P.Oxy. 31 2586](https://papyri.info/ddbdp/p.oxy;31;2586) | AD 264 | Oxyrhynchus | Apprenticeship contract: Hermias receives an advance (προχρεία) of 400 drachmas from Dioscorus, to be repaid at the end of the term | Advance inside a work contract |
+| [P.Oxy. 24 2411](https://papyri.info/ddbdp/p.oxy;24;2411) | AD 159-160 | Mendesian nome | Petition about mortgaged property and a loan owed by Apollonius (later strategus) and another debtor; capital and interest about 4 talents 2980 drachmas; letter of the dioecetes Mallius Crassus | Fragmentary; parties and terms of the loan unclear |
 | [P.Oxy. 16 1977](https://papyri.info/ddbdp/p.oxy;16;1977) | VI cent. AD | Oxyrhynchus | Serenus, pronoetes, acknowledges that he has (owes) Ammonius 142 artabas of wheat, to be provided at the threshing of indiction 4 | Not shown to be a loan (estate dues?) |
 | [P.Oxy. 16 1975](https://papyri.info/ddbdp/p.oxy;16;1975) | AD 496 | Oxyrhynchite nome | Aurelius Apollos receives from Aurelius Paulus 3 solidi "as an advance" (λόγῳ προχρείας) on his two arouras, after an earlier document of 15 solidi of capital | Advance on land; the earlier 15 solidi not called a loan |
 | [P.Oxy. 16 1972](https://papyri.info/ddbdp/p.oxy;16;1972) | AD 560 | Oxyrhynchite nome | Anoup, priest, son of Sourous, with his brother Aurelius Apollos as surety, to Apphous, for "the debt stated below" | The debt and its terms are lost |
