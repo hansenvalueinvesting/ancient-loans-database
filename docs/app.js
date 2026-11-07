@@ -7,8 +7,8 @@ const $ = (id) => document.getElementById(id);
 const state = { all: [], picked: {}, sortKey: 'id', sortDir: 1, shown: [] };
 
 // CSV columns (in order) and the columns shown in the table.
-const COLS = ['id', 'period', 'year', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source', 'source_url', 'notes'];
-const LIST_COLS = ['id', 'period', 'year', 'place', 'amount', 'currency', 'borrower', 'lender', 'interest', 'duration', 'source'];
+const COLS = ['id', 'borrower', 'lender', 'amount', 'interest', 'date', 'duration', 'place', 'source'];
+const LIST_COLS = COLS;
 
 // ---------- data ----------
 
@@ -30,7 +30,7 @@ function parseCsv(text) {
   return rows.filter((r) => r.some((v) => v !== ''));
 }
 
-// Year field → first and last year it may fall in (BC negative); null if blank.
+// Date field → first and last year it may fall in (BC negative); null if blank.
 // 'AD 57' → 57, 57; '100 BC' → -100, -100; 'AD 101-200' → 101, 200; '24-23 BC' → -24, -23; '30 BC-AD 14' → -30, 14.
 function yearRange(y) {
   let m = y.match(/^AD (\d+)(?:-(\d+))?$/);
@@ -48,7 +48,7 @@ async function fetchLoans() {
   const [head, ...body] = parseCsv(await res.text());
   return body.map((r) => {
     const l = Object.fromEntries(head.map((h, i) => [h, r[i] ?? '']));
-    [l.yearStart, l.yearEnd] = yearRange(l.year);
+    [l.yearStart, l.yearEnd] = yearRange(l.date);
     return l;
   });
 }
@@ -72,8 +72,8 @@ const fmtYear = (n) => (n < 0 ? `${-n} BC` : `AD ${n}`);
 // ---------- multi-select filters (type to search, pick several) ----------
 
 // Columns with a multi-select filter. A blank value is offered as BLANK[col].
-const MULTI = ['period', 'place', 'currency'];
-const BLANK = { period: '(period unknown)', place: '(place unknown)', currency: '(currency unknown)' };
+const MULTI = ['place'];
+const BLANK = { place: '(place unknown)' };
 const shownValue = (col, v) => (v === '' ? BLANK[col] : v);
 
 // Fill each filter's suggestion list with the values not yet picked, with their number of loans.
@@ -111,7 +111,7 @@ function pick(col, v) {
 }
 
 // ---------- filters in the URL (shareable links) ----------
-// #from=100 BC&to=AD 100&period=Early Roman Egypt&place=Oxyrhynchus|Tebtunis (Arsinoite nome)&currency=drachma&q=Sarapion
+// #from=100 BC&to=AD 100&place=Oxyrhynchus|Tebtunis (Arsinoite nome)&q=Sarapion
 
 function writeHash() {
   const prm = new URLSearchParams();
@@ -135,24 +135,18 @@ function readHash() {
 
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-// Amounts are text: a whole number or a fraction, e.g. '100', '12 1/6', '2/3', or a sum in several
-// units as the document writes it, e.g. '2 talents 4800 drachmas' (no numeric value; sorts last).
+// Amounts are numbers with their unit, e.g. '100 drachma', '12 1/6 artaba (wheat)'. Sorts by the
+// leading number (whole number and/or fraction); a sum starting with a lost part sorts last.
 function amountValue(s) {
-  const m = String(s).match(/^(?:(\d+)(?: (\d+)\/(\d+))?|(\d+)\/(\d+))$/);
+  const m = String(s).match(/^(?:(\d+)(?: (\d+)\/(\d+))?|(\d+)\/(\d+))(?= |$)/);
   if (!m) return NaN;
   return m[4] ? m[4] / m[5] : Number(m[1]) + (m[2] ? m[2] / m[3] : 0);
 }
 const fmtAmount = (s) => String(s).replace(/(^| )(\d+)(?=$| [^\d])/g, (m, sp, w) => sp + Number(w).toLocaleString());
 
-const fmtSource = (l) => (l.source_url
-  ? `<a href="${esc(l.source_url)}" target="_blank" rel="noopener">${esc(l.source)}</a>`
-  : esc(l.source));
-
 // One field of a loan as HTML.
 function cellHtml(l, c) {
   if (c === 'amount') return fmtAmount(l.amount);
-  if (c === 'source') return fmtSource(l);
-  if (c === 'notes') return esc(l.notes).replace(/\n/g, '<br>');
   return esc(l[c]);
 }
 
@@ -178,8 +172,8 @@ function filtered() {
 
 function sortRows(rows) {
   const { sortKey: k, sortDir: d } = state;
-  const numeric = k === 'year' || k === 'amount';
-  const num = (l) => (k === 'year' ? (l.yearStart ?? NaN) : amountValue(l.amount));
+  const numeric = k === 'date' || k === 'amount';
+  const num = (l) => (k === 'date' ? (l.yearStart ?? NaN) : amountValue(l.amount));
   return rows.sort((a, b) => {
     const x = numeric ? num(a) : a[k], y = numeric ? num(b) : b[k];
     const blank = (v) => v === '' || Number.isNaN(v);
@@ -220,8 +214,9 @@ async function load() {
     return setStatus(`Could not load data. ${err.message}`);
   }
   const ys = state.all.map((l) => l.yearStart).filter((y) => y != null);
-  $('f-from').placeholder = fmtYear(Math.min(...ys));
-  $('f-to').placeholder = fmtYear(Math.max(...state.all.map((l) => l.yearEnd).filter((y) => y != null)));
+  const ye = state.all.map((l) => l.yearEnd).filter((y) => y != null);
+  if (ys.length) $('f-from').placeholder = fmtYear(Math.min(...ys));
+  if (ye.length) $('f-to').placeholder = fmtYear(Math.max(...ye));
   readHash();
   update();
 }
@@ -250,7 +245,7 @@ async function loadLoan() {
     document.title = `${l.id} | Ancient Loans Database`;
     $('loan-id').textContent = l.id;
     const label = (c) => c[0].toUpperCase() + c.slice(1);
-    $('loan').innerHTML = COLS.slice(1).filter((c) => c !== 'source_url').map((c) =>
+    $('loan').innerHTML = COLS.slice(1).map((c) =>
       `<tr><th align="left">${label(c)}</th><td>${cellHtml(l, c)}</td></tr>`).join('');
     setStatus('');
   } catch (err) {

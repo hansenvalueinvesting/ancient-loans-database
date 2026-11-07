@@ -1,1 +1,1 @@
-id,period,year,place,amount,currency,borrower,lender,interest,duration,source,source_url,notes
+id,borrower,lender,amount,interest,date,duration,place,source

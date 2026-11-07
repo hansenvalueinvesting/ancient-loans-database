@@ -11,7 +11,7 @@
   <p>Open working record of documented loans in the ancient world. Maintained by Hansen Zheng.</p>
 
   <p><small>This is a work in progress and may contain mistakes. Spotted a mistake or have data to share? I’d love to hear from you: <a href="mailto:hansen.zheng@outlook.com">hansen.zheng@outlook.com</a><br>
-  IDs are assigned in sequential order as loans are added to the database.</small></p>
+</small></p>
 
   <h2>Filters</h2>
   <p>
@@ -19,22 +19,12 @@
     <label>To year <input id="f-to" type="text" size="8"></label>
   </p>
   <p>
-    <label>Period <input id="f-period" list="dl-period" placeholder="Type to search, Enter to add"></label>
-    <span id="picked-period"></span>
-    <datalist id="dl-period"></datalist>
-  </p>
-  <p>
     <label>Place <input id="f-place" list="dl-place" placeholder="Type to search, Enter to add"></label>
     <span id="picked-place"></span>
     <datalist id="dl-place"></datalist>
   </p>
   <p>
-    <label>Currency <input id="f-currency" list="dl-currency" placeholder="Type to search, Enter to add"></label>
-    <span id="picked-currency"></span>
-    <datalist id="dl-currency"></datalist>
-  </p>
-  <p>
-    <label>Search <input id="f-search" type="search" placeholder="ID, period, year, place, person, source"></label>
+    <label>Search <input id="f-search" type="search" placeholder="ID, person, amount, date, place, source"></label>
     <button id="btn-reset" type="button">Reset</button>
     <button id="btn-csv" type="button">Download CSV</button>
   </p>
@@ -45,15 +35,13 @@
     <thead>
       <tr>
         <th data-sort="id">ID</th>
-        <th data-sort="period">Period</th>
-        <th data-sort="year">Year</th>
-        <th data-sort="place">Place</th>
-        <th data-sort="amount">Amount</th>
-        <th data-sort="currency">Currency</th>
         <th data-sort="borrower">Borrower</th>
         <th data-sort="lender">Lender</th>
+        <th data-sort="amount">Amount</th>
         <th data-sort="interest">Interest</th>
+        <th data-sort="date">Date</th>
         <th data-sort="duration">Duration</th>
+        <th data-sort="place">Place</th>
         <th data-sort="source">Source</th>
       </tr>
     </thead>
@@ -63,7 +51,7 @@
   <hr>
   <p>Data CC BY 4.0, code MIT</p>
 
-  <script src="config.js?v=2026-10-18"></script>
-  <script src="app.js?v=2026-10-18"></script>
+  <script src="config.js?v=2026-11-07"></script>
+  <script src="app.js?v=2026-11-07"></script>
 </body>
 </html>
