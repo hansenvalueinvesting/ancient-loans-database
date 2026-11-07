@@ -270,7 +270,8 @@ by Claude under that grant (Roman-world pass):
   16 in need_review.md. P.Oxy. 6-8 (325 numbers; 232 with text; 41 candidates read): 4 rows (7 1040, 7 1042, 8 1118,
   8 1132); 10 in need_review.md (8 1130 moved there by Hansen: possibly an advance purchase of flax). State seed
   loans are kept, described as such in the notes (Hansen, Nov 2026: "we can keep state seed loans, just add a note in
-  the description"): P.Oxy. 7 1024 entered; 7 1031 (application only) in need_review.md. Next: P.Oxy. 9. Everything else in
+  the description"): P.Oxy. 7 1024 entered; 7 1031 (application only) in need_review.md. P.Oxy. 9-11 (229 numbers; 140 with text; 20 candidates read; vol. 11
+  almost all literary): 3 rows (10 1262 Ro, 10 1282, SB 14 11847); 3 in need_review.md. Next: P.Oxy. 12. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

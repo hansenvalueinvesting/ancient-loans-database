@@ -4,6 +4,9 @@ Loan-like transactions found while reviewing sources but not entered in `ald.csv
 
 | Source | Date | Place | What | Why not entered |
 |---|---|---|---|---|
+| [P.Oxy. 10 1318](https://papyri.info/ddbdp/p.oxy;10;1318) | AD 308 | Oxyrhynchus | End of a contract: "I have received as a loan the silver [...]" (HGV keywords: work, wages) | Parties and sum lost; possibly an advance for work |
+| [P.Oxy. 10 1281](https://papyri.info/ddbdp/p.oxy;10;1281) | AD 21 | Sinary (Oxyrhynchite nome) | Harpaesis son of Panrymis, linen-weaver: "I have borrowed the price of the hundred linen cloths of Sinary, 300 drachmas of silver of capital" from Josephus | Price of cloths to be woven: possibly an advance payment for goods, not a loan |
+| P.Oxy. 9 1203 | AD 69-71 | Oxyrhynchus | Petition of creditors to the strategus (HGV) | No text on papyri.info yet |
 | [P.Oxy. 7 1031](https://papyri.info/ddbdp/p.oxy;7;1031) | AD 228 | Oxyrhynchus | Aurelius Biaius son of Biaius applies for a state seed loan of 30 artabas of wheat for 30 arouras near Sko | Application only; the loan is not shown to be made |
 | [P.Oxy. 8 1130](https://papyri.info/ddbdp/p.oxy;8;1130) | AD 484 | Oxyrhynchite nome | Aurelius Abraam son of Ision receives from Aurelius Isak son of Nilus, merchant of Alexandria, 10 solidi "as a loan", with 20 bundles of flax "as interest", repayable in Phaophi; an earlier contract between them stays valid (sum not given) | Called a loan, but the docket reads "10 solidi for 20 bundles of flax": possibly an advance purchase of flax (Hansen: need review) |
 | [P.Oxy. 8 1158](https://papyri.info/ddbdp/p.oxy;8;1158) | III cent. AD | Alexandria | Letter: the baker Aretion is to pay over 4 talents "which he took from us" in Alexandria | Loan or payment unclear |
