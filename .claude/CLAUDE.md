@@ -30,9 +30,10 @@ below applies to any source as the database expands.
   rows sorted by id in natural order (numbers compared as numbers: P.Oxy. 1 68 before 1 130). Edit it with a script in the scratch folder; commit with the README change-log entry.
   The old Supabase project (`zzlrdlkdngxkkcrtolpx`, paused): Hansen asked to delete it (Nov 2026); the connector has no
   delete tool, so Hansen deletes it in the Supabase dashboard.
-- **Need review: `need_review.md`** (Hansen, Nov 2026: "keep track of these 'semi loans' that we do not formally (renamed from `semi_loans.md`, Hansen, Nov 2026)
+- **Need review: `need_review.md`** (Hansen, Nov 2026: "keep track of these 'semi loans' that we do not formally
   include. i can review them by hand"): loan-like transactions not entered (loan not shown to be made, advances,
-  pawns, antichretic arrangements), one table row each with link and reason; most recent review first.
+  pawns, antichretic arrangements), one table row each with link and reason; most recent review first. Renamed from
+  `semi_loans.md` (Hansen, Nov 2026).
 - **Archive: `ald1.csv`** (Hansen, Nov 2026: "empty out ald.csv so it starts blank, and move all current data into
   ald1.csv just so we don't lose it in case i decide to shift back"): the 1,349 rows as of the restart, unchanged.
   Not read by the site; do not edit it.
