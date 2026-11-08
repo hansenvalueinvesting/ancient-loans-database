@@ -310,7 +310,10 @@ by Claude under that grant (Roman-world pass):
   idp sparse checkout needs `Historical/p.oxy/<vol>` added per volume): 10 rows (44 3198, 45 3266, 47 3351, 49 3468,
   3485, 3487, 3490, 50 3557, 3560, 3599; plus 48 3393, a loan with no sum from unnamed moneylenders, added by Hansen:
   "add"); 7 in need_review.md (43 3134 deposit, 3146 fund transfer, 49 3466 pledge, 3474 seed-loan application, 3493/3494 mirror acknowledgements, 50 3560 earlier lien,
-  3589 advance in lease); 47 3355 excluded (habitation in place of interest). Next: P.Oxy. 52. Everything else in
+  3589 advance in lease); 47 3355 excluded (habitation in place of interest). P.Oxy. 52-61 (486 numbers; 294 with text;
+  29 candidates read; vols. 52-53 almost all literary): 4 rows (55 3798, 61 4120, 4124, 4125); 5 in need_review.md (56 3863,
+  57 3902-3906 seed applications, 58 3938 debt fragment, 58 3943-3946 advance fragments, 61 4117 possible writing
+  exercise). Next: P.Oxy. 62. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

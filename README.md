@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-08 (P.Oxy. 52-61)**
+- Added 4 loans from P.Oxy. 52-61 (all 486 numbers reviewed; 294 with a text on papyri.info): ALD-P.Oxy.55.3798-1, ALD-P.Oxy.61.4120-1, ALD-P.Oxy.61.4124-1, ALD-P.Oxy.61.4125-1. 5 entries added to `need_review.md`. Database: 90 loans.
+
 **2026-11-08 (P.Oxy. 48 3393)**
 - Added ALD-P.Oxy.48.3393-1 (Hansen: "add"; loan from unnamed moneylenders, sum not given), moved from `need_review.md`. Database: 86 loans.
 
