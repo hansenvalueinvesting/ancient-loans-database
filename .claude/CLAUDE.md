@@ -74,6 +74,9 @@ below applies to any source as the database expands.
   URL key stay `place`.
   Search (Hansen, Nov 2026): `,` narrows (all terms of a group: `X,y` = loans with X and y), `;` adds groups
   (`X;y` = loans with X plus loans with y); the box shows how.
+  Phones (Hansen, Nov 2026: "the interface is a mess on mobile"): one small <style> in index.html, for screens up to
+  700 px only (the only CSS on the site): inputs no wider than the screen, map and chart stacked (320 px high), the loans
+  table scrolls sideways.
   Filters in one row, wrapping as needed (Hansen, Nov 2026); `<nobr>` keeps each label with its box.
   Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
   "always classify into one thing"; Early/Late Roman Egypt): column `period`, entered with each row

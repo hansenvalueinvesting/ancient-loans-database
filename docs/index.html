@@ -6,6 +6,16 @@
   <title>Ancient Loans Database</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <meta name="description" content="Open working record of documented loans in the ancient world.">
+  <style>
+    /* Phones only (the site is otherwise plain HTML): nothing wider than the screen; map and chart stacked; the loans table scrolls sideways. */
+    @media (max-width: 700px) {
+      input { max-width: 100%; box-sizing: border-box; }
+      nobr { white-space: normal; }
+      #viz, #viz tbody, #viz tr, #viz td { display: block; width: auto; }
+      #loans-box { overflow-x: auto; }
+      #map, #chart-box { height: 320px !important; }
+    }
+  </style>
 </head>
 <body>
   <h1>Ancient Loans Database</h1>
@@ -28,7 +38,7 @@
 
   <p id="status" role="status">Loading…</p>
 
-  <table width="100%" cellpadding="0" cellspacing="12">
+  <table id="viz" width="100%" cellpadding="0" cellspacing="12">
     <tr valign="top">
       <td width="50%">
         <h2>Map</h2>
@@ -46,6 +56,7 @@
 
   <h2>Loans</h2>
 
+  <div id="loans-box">
   <table id="loans" border="1" cellpadding="4" cellspacing="0">
     <thead>
       <tr>
@@ -62,6 +73,7 @@
     </thead>
     <tbody></tbody>
   </table>
+  </div>
 
   <hr>
   <p>Data CC BY 4.0, code MIT. Place coordinates: <a href="https://pleiades.stoa.org">Pleiades</a> (CC BY 3.0). Map: <a href="https://imperium.ahlfeldt.se/">Digital Atlas of the Roman Empire</a>, Johan Åhlfeldt (CC BY 4.0).</p>
