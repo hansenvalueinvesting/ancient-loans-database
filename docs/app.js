@@ -294,15 +294,19 @@ function drawChart(rows) {
 // ---------- filtering & table ----------
 
 // A loan matches when it is in any picked value of each multi-select filter, its year range
-// overlaps the year filter, and it contains the search text.
+// overlaps the year filter, and it contains any of the search terms (separated by ;).
 function filtered() {
-  const s = $('f-search').value.trim().toLowerCase();
+  // Search: several terms separated by ';' match a loan containing any of them.
+  const terms = $('f-search').value.toLowerCase().split(';').map((x) => x.trim()).filter(Boolean);
   const from = parseYear($('f-from').value), to = parseYear($('f-to').value);
   return state.all.filter((l) => {
     if (MULTI.some((col) => state.picked[col].size && !state.picked[col].has(l[col]))) return false;
     if (from != null && (l.yearEnd == null || l.yearEnd < from)) return false;
     if (to != null && (l.yearStart == null || l.yearStart > to)) return false;
-    if (s && !LIST_COLS.map((c) => l[c]).join(' ').toLowerCase().includes(s)) return false;
+    if (terms.length) {
+      const text = LIST_COLS.map((c) => l[c]).join(' ').toLowerCase();
+      if (!terms.some((x) => text.includes(x))) return false;
+    }
     return true;
   });
 }
