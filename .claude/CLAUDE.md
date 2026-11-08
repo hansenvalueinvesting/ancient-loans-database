@@ -314,7 +314,9 @@ by Claude under that grant (Roman-world pass):
   3589 advance in lease); 47 3355 excluded (habitation in place of interest). P.Oxy. 52-61 (486 numbers; 294 with text;
   29 candidates read; vols. 52-53 almost all literary): 4 rows (55 3798, 61 4120, 4124, 4125); 5 in need_review.md (56 3863,
   57 3902-3906 seed applications, 58 3938 debt fragment, 58 3943-3946 advance fragments, 61 4117 possible writing
-  exercise). Next: P.Oxy. 62. Everything else in
+  exercise). P.Oxy. 62-71 (526 numbers; 270 with text; 28 candidates read): 11 rows (63 4394, 4397 x2, 4398, 64 4439,
+  66 4532, 70 4772, 71 4826, 4828, 4831, 4835); 4 in need_review.md (63 4353, 4393, 67 4596, 68 4690); 63 4395 excluded
+  (bread-dole rights used in place of interest, like rent). Next: P.Oxy. 72. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

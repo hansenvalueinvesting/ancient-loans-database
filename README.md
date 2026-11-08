@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-08 (P.Oxy. 62-71)**
+- Added 11 loans from P.Oxy. 62-71 (all 526 numbers reviewed; 270 with a text on papyri.info): ALD-P.Oxy.63.4394-1 - ALD-P.Oxy.71.4835-1. 4 entries added to `need_review.md`. Map: Alexandria and Constantinople located (Pleiades). Database: 101 loans.
+
 **2026-11-08 (column order)**
 - Columns reordered (Hansen): id, place, date, duration (years), borrower, lender, volume, currency, interest (%), notes; same order on the site. No data changed. Database: 90 loans.
 

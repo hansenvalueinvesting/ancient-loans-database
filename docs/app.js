@@ -171,6 +171,8 @@ const PLACES = {
   'Oxyrhynchus': [28.542574, 30.65172, 736983],
   'Palosis': [28.675965, 30.798219, 736988],
   'Sinary': [28.77959, 30.771891, 737047],
+  'Alexandria': [31.201435, 29.909773, 727070],
+  'Constantinople': [41.006593, 28.965635, 520998],
 };
 
 const viz = { map: null, layer: null, chart: null, rows: [] };
