@@ -55,7 +55,10 @@ below applies to any source as the database expands.
   also have a chart showing loans over time"): on the main page above the table, both follow the filters. Map: Leaflet
   (cdnjs) on Digital Atlas of the Roman Empire tiles (CC BY 4.0). Every loan individually, no aggregates (Hansen,
   Nov 2026: "i want to see every single individual loan, not aggreagates"): one dot per loan, loans at one place
-  spread around it in a sunflower pattern (fixed pixel spacing, redone on zoom); hover = loan summary, click = loan page. Coordinates: lookup `PLACES` in `docs/app.js` from Pleiades reprPoint (Hansen chose a lookup in the site code
+  spread around it in a sunflower pattern (fixed pixel spacing, redone on zoom); hover = loan summary, click = loan page. Zoomed out, a place's
+  dots merge into one blob sized by its number of loans (Hansen, Nov 2026: "when we zoom out ... merge them into one big
+  blob"): blob whenever the dots would spread more than 2 km (`SPREAD_KM`) from the place; click the blob = zoom in
+  until the dots show (tiles enlarged beyond their native zoom 11, up to 15). Coordinates: lookup `PLACES` in `docs/app.js` from Pleiades reprPoint (Hansen chose a lookup in the site code
   over new columns); a new place in `ald.csv` needs a line there, else it is counted as "not on the map". Chart:
   Chart.js (cdnjs) scatter as a timeline, one dot per loan at its exact date (a date range at its midpoint, Hansen);
   stacked only when loans have the same date (Hansen, Nov 2026: "no stacking unless its genuinely in the same time

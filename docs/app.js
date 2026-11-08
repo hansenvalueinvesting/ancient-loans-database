@@ -176,8 +176,14 @@ const loanTip = (l) => [l.id, l.date, [fmtVolume(l.volume), l.currency].filter(B
   [l.borrower && `borrower: ${l.borrower}`, l.lender && `lender: ${l.lender}`].filter(Boolean).join('; ')].filter(Boolean);
 const openLoan = (l) => { location.href = `loan.html?id=${encodeURIComponent(l.id)}`; };
 
-// Map: one dot per loan. Loans at the same place are laid out around it in a sunflower pattern
-// (fixed spacing in screen pixels, redone on zoom), so every loan stays visible. Click a dot = open the loan.
+// Map: one dot per loan. Loans at the same place are laid out around it in a sunflower pattern (fixed spacing
+// in screen pixels, redone on zoom), so every loan stays visible. Zoomed out, when the dots of a place would
+// spread more than SPREAD_KM from it, they merge into one blob sized by the number of loans; clicking the blob
+// zooms in until its loans show as dots. Click a dot = open the loan.
+const SPREAD_KM = 2;
+const DOT_GAP = 7, DOT_R = 3.5;                         // pixels
+const spreadPx = (n) => DOT_GAP * Math.sqrt(Math.max(n - 1, 0)) + DOT_R;
+const kmPerPx = (lat, z) => (40075.016686 * Math.cos(lat * Math.PI / 180)) / (256 * 2 ** z);
 function drawMap(rows) {
   if (!window.L) return;
   if (!viz.map) {
@@ -185,7 +191,7 @@ function drawMap(rows) {
     viz.map = L.map('map').setView([29.5, 31], 6);
     // Base map: Digital Atlas of the Roman Empire (ancient place names).
     L.tileLayer('https://dh.gu.se/tiles/imperium/{z}/{x}/{y}.png', {
-      maxZoom: 11, attribution: '<a href="https://imperium.ahlfeldt.se/">Digital Atlas of the Roman Empire</a> (CC BY 4.0)',
+      maxNativeZoom: 11, maxZoom: 15, attribution: '<a href="https://imperium.ahlfeldt.se/">Digital Atlas of the Roman Empire</a> (CC BY 4.0)',
     }).addTo(viz.map);
     viz.layer = L.layerGroup().addTo(viz.map);
     viz.map.on('zoomend', () => drawMap(viz.rows));
@@ -198,11 +204,24 @@ function drawMap(rows) {
   byPlace.forEach((loans, place) => {
     const p = PLACES[place];
     if (!p) { off += loans.length; return; }
+    const z = viz.map.getZoom();
+    if (spreadPx(loans.length) * kmPerPx(p[0], z) > SPREAD_KM) {
+      const n = loans.length;
+      L.circleMarker([p[0], p[1]], { radius: 6 + 3 * Math.sqrt(n), weight: 1, color: '#123', fillColor: '#3388ff', fillOpacity: 0.7 })
+        .bindTooltip(`${esc(place)}: ${n.toLocaleString()} loan${n === 1 ? '' : 's'} (click to zoom in)`)
+        .on('click', () => {
+          let zz = z;
+          while (zz < viz.map.getMaxZoom() && spreadPx(n) * kmPerPx(p[0], zz) > SPREAD_KM) zz++;
+          viz.map.setView([p[0], p[1]], zz);
+        })
+        .addTo(viz.layer);
+      return;
+    }
     const c = viz.map.latLngToLayerPoint([p[0], p[1]]);
     loans.forEach((l, i) => {
-      const r = 7 * Math.sqrt(i), a = i * 2.39996;   // golden angle
+      const r = DOT_GAP * Math.sqrt(i), a = i * 2.39996;   // golden angle
       const pos = viz.map.layerPointToLatLng(L.point(c.x + r * Math.cos(a), c.y + r * Math.sin(a)));
-      L.circleMarker(pos, { radius: 3.5, weight: 1, color: '#123', fillColor: '#3388ff', fillOpacity: 0.9 })
+      L.circleMarker(pos, { radius: DOT_R, weight: 1, color: '#123', fillColor: '#3388ff', fillOpacity: 0.9 })
         .bindTooltip([esc(place), ...loanTip(l).map(esc)].join('<br>'))
         .on('click', () => openLoan(l))
         .addTo(viz.layer);
