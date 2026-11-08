@@ -169,9 +169,15 @@ const PLACES = {
   'Palosis': [28.675965, 30.798219, 736988],
 };
 
-const viz = { map: null, layer: null, chart: null };
+const viz = { map: null, layer: null, chart: null, rows: [] };
 
-// Loans at each mapped place, as circles sized by number of loans; clicking a circle filters by that place.
+// Short description of one loan for tooltips.
+const loanTip = (l) => [l.id, l.date, [fmtVolume(l.volume), l.currency].filter(Boolean).join(' '),
+  [l.borrower && `borrower: ${l.borrower}`, l.lender && `lender: ${l.lender}`].filter(Boolean).join('; ')].filter(Boolean);
+const openLoan = (l) => { location.href = `loan.html?id=${encodeURIComponent(l.id)}`; };
+
+// Map: one dot per loan. Loans at the same place are laid out around it in a sunflower pattern
+// (fixed spacing in screen pixels, redone on zoom), so every loan stays visible. Click a dot = open the loan.
 function drawMap(rows) {
   if (!window.L) return;
   if (!viz.map) {
@@ -182,55 +188,69 @@ function drawMap(rows) {
       maxZoom: 11, attribution: '<a href="https://imperium.ahlfeldt.se/">Digital Atlas of the Roman Empire</a> (CC BY 4.0)',
     }).addTo(viz.map);
     viz.layer = L.layerGroup().addTo(viz.map);
+    viz.map.on('zoomend', () => drawMap(viz.rows));
   }
+  viz.rows = rows;
   viz.layer.clearLayers();
-  const counts = new Map();
-  rows.forEach((l) => counts.set(l.place, (counts.get(l.place) || 0) + 1));
+  const byPlace = new Map();
+  rows.forEach((l) => { if (!byPlace.has(l.place)) byPlace.set(l.place, []); byPlace.get(l.place).push(l); });
   let off = 0;
-  [...counts].forEach(([place, n]) => {
+  byPlace.forEach((loans, place) => {
     const p = PLACES[place];
-    if (!p) { off += n; return; }
-    L.circleMarker([p[0], p[1]], { radius: 6 + 4 * Math.sqrt(n), weight: 1, fillOpacity: 0.6 })
-      .bindTooltip(`${esc(place)}: ${n.toLocaleString()} loan${n === 1 ? '' : 's'}`)
-      .on('click', () => { if (!state.picked.place.has(place)) pick('place', place); })
-      .addTo(viz.layer);
+    if (!p) { off += loans.length; return; }
+    const c = viz.map.latLngToLayerPoint([p[0], p[1]]);
+    loans.forEach((l, i) => {
+      const r = 7 * Math.sqrt(i), a = i * 2.39996;   // golden angle
+      const pos = viz.map.layerPointToLatLng(L.point(c.x + r * Math.cos(a), c.y + r * Math.sin(a)));
+      L.circleMarker(pos, { radius: 3.5, weight: 1, color: '#123', fillColor: '#3388ff', fillOpacity: 0.9 })
+        .bindTooltip([esc(place), ...loanTip(l).map(esc)].join('<br>'))
+        .on('click', () => openLoan(l))
+        .addTo(viz.layer);
+    });
   });
   $('map-note').textContent = off ? `${off.toLocaleString()} loan${off === 1 ? '' : 's'} not on the map (place unknown or not yet located).` : '';
 }
 
-// Number of loans per quarter-century; a loan dated to a range counts at the middle of its range.
+// Chart: one dot per loan at its date (a date range at its middle); loans in the same 25-year period are
+// stacked so none hide each other. Click a dot = open the loan.
 const BIN = 25;
 function drawChart(rows) {
   if (!window.Chart) return;
-  const mids = rows.filter((l) => l.yearStart != null).map((l) => (l.yearStart + l.yearEnd) / 2);
-  const undated = rows.length - mids.length;
-  // Bins start at multiples of 25 on a scale without a year 0 (1 BC is followed by AD 1).
-  const astro = (y) => (y < 0 ? y + 1 : y);           // 1 BC -> 0, AD 1 -> 1
-  const unastro = (a) => (a <= 0 ? a - 1 : a);
-  const bin = (m) => Math.floor((astro(m) - 1) / BIN);
-  const labels = [], data = [];
-  if (mids.length) {
-    const lo = Math.min(...mids.map(bin)), hi = Math.max(...mids.map(bin));
-    for (let b = lo; b <= hi; b++) {
-      const a = unastro(b * BIN + 1), z = unastro(b * BIN + BIN);
-      labels.push(a < 0 && z < 0 ? `${-a}-${-z} BC` : a < 0 ? `${-a} BC-AD ${z}` : `AD ${a}-${z}`);
-      data.push(mids.filter((m) => bin(m) === b).length);
-    }
-  }
+  const dated = rows.filter((l) => l.yearStart != null)
+    .map((l) => ({ l, mid: (l.yearStart + l.yearEnd) / 2 })).sort((a, b) => a.mid - b.mid);
+  const undated = rows.length - dated.length;
+  const astro = (y) => (y < 0 ? y + 1 : y);            // scale without a year 0: 1 BC -> 0, AD 1 -> 1
+  const stack = new Map();
+  const points = dated.map(({ l, mid }) => {
+    const b = Math.floor((astro(mid) - 1) / BIN);
+    stack.set(b, (stack.get(b) || 0) + 1);
+    return { x: mid, y: stack.get(b), loan: l };
+  });
+  // Axis in years, BC negative; ticks every 25 years (0 marks the turn from BC to AD).
+  const yearLabel = (y) => (y < 0 ? `${-y} BC` : y === 0 ? 'BC | AD' : `AD ${y}`);
+  const xs = points.map((p) => p.x);
+  const xmin = xs.length ? Math.floor(Math.min(...xs) / BIN) * BIN : 0, xmax = xs.length ? Math.ceil(Math.max(...xs) / BIN) * BIN : BIN;
   if (!viz.chart) {
     viz.chart = new Chart($('chart-time'), {
-      type: 'bar',
-      data: { labels, datasets: [{ label: 'Loans', data }] },
+      type: 'scatter',
+      data: { datasets: [{ data: points, pointRadius: 4, pointHoverRadius: 6, backgroundColor: '#3388ff' }] },
       options: {
         aspectRatio: 3, animation: false,
-        plugins: { legend: { display: false } },
-        scales: { y: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: 'Loans' } },
-                  x: { title: { display: true, text: 'Date (25-year periods; a date range counts at its middle)' } } },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (ctx) => loanTip(ctx.raw.loan) } },
+        },
+        onClick: (e, els) => { if (els.length) openLoan(els[0].element.$context.raw.loan); },
+        scales: {
+          x: { min: xmin, max: xmax, ticks: { stepSize: BIN, callback: yearLabel },
+               title: { display: true, text: 'Date (a date range at its middle)' } },
+          y: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: 'Loans in the same 25 years' } },
+        },
       },
     });
   } else {
-    viz.chart.data.labels = labels;
-    viz.chart.data.datasets[0].data = data;
+    viz.chart.data.datasets[0].data = points;
+    Object.assign(viz.chart.options.scales.x, { min: xmin, max: xmax });
     viz.chart.update();
   }
   $('chart-note').textContent = undated ? `${undated.toLocaleString()} undated loan${undated === 1 ? '' : 's'} not shown.` : '';

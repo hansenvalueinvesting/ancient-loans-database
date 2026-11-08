@@ -53,10 +53,12 @@ below applies to any source as the database expands.
   with a new page breaks the site).
   Map and chart (Hansen, Nov 2026: "first have a map, where we plot the locations of the loans on the map. and we
   also have a chart showing loans over time"): on the main page above the table, both follow the filters. Map: Leaflet
-  (cdnjs) on Digital Atlas of the Roman Empire tiles (CC BY 4.0); circles sized by number of loans, click = filter by
-  place. Coordinates: lookup `PLACES` in `docs/app.js` from Pleiades reprPoint (Hansen chose a lookup in the site code
+  (cdnjs) on Digital Atlas of the Roman Empire tiles (CC BY 4.0). Every loan individually, no aggregates (Hansen,
+  Nov 2026: "i want to see every single individual loan, not aggreagates"): one dot per loan, loans at one place
+  spread around it in a sunflower pattern (fixed pixel spacing, redone on zoom); hover = loan summary, click = loan page. Coordinates: lookup `PLACES` in `docs/app.js` from Pleiades reprPoint (Hansen chose a lookup in the site code
   over new columns); a new place in `ald.csv` needs a line there, else it is counted as "not on the map". Chart:
-  Chart.js (cdnjs), loans per 25-year period; a date range counts at its midpoint (Hansen); undated loans not shown.
+  Chart.js (cdnjs) scatter, one dot per loan at its date (a date range at its midpoint, Hansen); loans of the same
+  25-year period stacked upward; hover = loan summary, click = loan page; undated loans not shown.
   Filters in one row, wrapping as needed (Hansen, Nov 2026); `<nobr>` keeps each label with its box.
   Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
   "always classify into one thing"; Early/Late Roman Egypt): column `period`, entered with each row
