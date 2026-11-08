@@ -1,5 +1,5 @@
-id,borrower,lender,volume,currency,interest (%),date,duration (years),place,notes
-ALD-P.Dubl.6-1,Harthoonis son of Harthoonis,Heraclas,,,,AD 99,,Oxyrhynchus,"Source: P.Dubl. 6 (= P.Oxy. 2 343 descr.) (https://papyri.info/ddbdp/p.dubl;;6)
+id,place,date,duration (years),borrower,lender,volume,currency,interest (%),notes
+ALD-P.Dubl.6-1,Oxyrhynchus,AD 99,,Harthoonis son of Harthoonis,Heraclas,,,,"Source: P.Dubl. 6 (= P.Oxy. 2 343 descr.) (https://papyri.info/ddbdp/p.dubl;;6)
 
 Original Text:
 1 [...]
@@ -49,7 +49,7 @@ Loan in ll. 3-12; notice of the mortgage securing it.
 Date: Sebastos, year 3 of Trajan (= August/September AD 99).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.1.68-1,Sarapion; Dionysius,Theon son of Pausiris,,,,AD 112-113,,Oxyrhynchus,"Source: P.Oxy. 1 68 (https://papyri.info/ddbdp/p.oxy;1;68)
+ALD-P.Oxy.1.68-1,Oxyrhynchus,AD 112-113,,Sarapion; Dionysius,Theon son of Pausiris,,,,"Source: P.Oxy. 1 68 (https://papyri.info/ddbdp/p.oxy;1;68)
 
 Original Text:
 1 [...]
@@ -138,7 +138,7 @@ Date: about 18 years before the petition (AD 131): Sarapion lived 2 years after 
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.1.68-2,Sarapion,Theon son of Pausiris,,,,AD 131,,Oxyrhynchus,"Source: P.Oxy. 1 68 (https://papyri.info/ddbdp/p.oxy;1;68)
+ALD-P.Oxy.1.68-2,Oxyrhynchus,AD 131,,Sarapion,Theon son of Pausiris,,,,"Source: P.Oxy. 1 68 (https://papyri.info/ddbdp/p.oxy;1;68)
 
 Original Text:
 1 [...]
@@ -227,7 +227,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.1.70-1,Agathus Daimon alias Enthesmus,Ptolemaeus alias Heraclides,3000,drachma (silver),8,AD 207,,Oxyrhynchus,"Source: P.Oxy. 1 70 (https://papyri.info/ddbdp/p.oxy;1;70)
+ALD-P.Oxy.1.70-1,Oxyrhynchus,AD 207,,Agathus Daimon alias Enthesmus,Ptolemaeus alias Heraclides,3000,drachma (silver),8,"Source: P.Oxy. 1 70 (https://papyri.info/ddbdp/p.oxy;1;70)
 
 Original Text:
 1 Αὐρη[λίῳ] Ἡραπίωνι τῷ κρατίστῳ ἐπιστρ(ατήγῳ)
@@ -287,7 +287,7 @@ Date: Pharmouthi, year 15 of Septimius Severus and Caracalla.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.1.98-1,Archias freedman of Amoitas son of Zoilus,Chaeremon son of Theon,700,drachma (silver),1.68-1.75,AD 137,4.08-4.24,Oxyrhynchus,"Source: P.Oxy. 1 98 (https://papyri.info/ddbdp/p.oxy;1;98)
+ALD-P.Oxy.1.98-1,Oxyrhynchus,AD 137,4.08-4.24,Archias freedman of Amoitas son of Zoilus,Chaeremon son of Theon,700,drachma (silver),1.68-1.75,"Source: P.Oxy. 1 98 (https://papyri.info/ddbdp/p.oxy;1;98)
 
 Original Text:
 1 αλ̣ δ.
@@ -349,7 +349,7 @@ Term: 50 monthly instalments of 15 drachmas from Hadrianos, year 22 of Hadrian (
 Date: Hathyr, year 22 of Hadrian (= Oct/Nov AD 137).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.1.130-1,Anoup,,15,solidus (gold),,AD 546-549,,Oxyrhynchus,"Source: P.Oxy. 1 130 (https://papyri.info/ddbdp/p.oxy;1;130)
+ALD-P.Oxy.1.130-1,Oxyrhynchus,AD 546-549,,Anoup,,15,solidus (gold),,"Source: P.Oxy. 1 130 (https://papyri.info/ddbdp/p.oxy;1;130)
 
 Original Text:
 1 ⳨ τῷ ἐμῷ ἀγαθῷ δεσπότῃ φιλοχρίστῳ φιλοπτόχῳ παν
@@ -406,7 +406,7 @@ Date: after the animals died in the 10th and 11th indictions (AD 546-548), befor
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.1.133-1,Phoebammon son of Pekysius; Anoup son of Aritsi; Menas; Koulaetb son of Iohannes; Anoup son of Priscus; Heraclides son of Palmas; Phib son of Iulius,Flavius Apion,200,artaba (wheat),,AD 550,0.60-0.68,Oxyrhynchus,"Source: P.Oxy. 1 133 (https://papyri.info/ddbdp/p.oxy;1;133)
+ALD-P.Oxy.1.133-1,Oxyrhynchus,AD 550,0.60-0.68,Phoebammon son of Pekysius; Anoup son of Aritsi; Menas; Koulaetb son of Iohannes; Anoup son of Priscus; Heraclides son of Palmas; Phib son of Iulius,Flavius Apion,200,artaba (wheat),,"Source: P.Oxy. 1 133 (https://papyri.info/ddbdp/p.oxy;1;133)
 
 Original Text:
 (recto)
@@ -481,7 +481,7 @@ Term: until Payni of the current year 227 and 196 (Oxyrhynchite era), indiction 
 Date: Phaophi 22, indiction 14, year 24 of Justinian (= 19 October AD 550).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.237-1,Chaeremon son of Phanias,Dionysia daughter of Chaeremon,,talent,,AD 183-184,,Oxyrhynchus,"Source: P.Oxy. 2 237 (https://papyri.info/ddbdp/p.oxy;2;237)
+ALD-P.Oxy.2.237-1,Oxyrhynchus,AD 183-184,,Chaeremon son of Phanias,Dionysia daughter of Chaeremon,,talent,,"Source: P.Oxy. 2 237 (https://papyri.info/ddbdp/p.oxy;2;237)
 
 Original Text:
 21 γον γεγενῆσθαι τοῦ γὰρ Ἀσκλη[πιάδ]ου τῷ κδ (ἔτει) [ἀ]παιτοῦ[ν]τος καὶ μὴ ἀπολαμβάνοντος τὸ ὤφλημα ἀν̣α̣γκάσθαι
@@ -511,7 +511,7 @@ Date: year 24 of Commodus.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.241-1,Thomphyas,Thonis son of Harpaesis,400 [...],drachma,,AD 98-99,,Oxyrhynchus,"Source: P.Oxy. 2 241 (https://papyri.info/ddbdp/p.oxy;2;241)
+ALD-P.Oxy.2.241-1,Oxyrhynchus,AD 98-99,,Thomphyas,Thonis son of Harpaesis,400 [...],drachma,,"Source: P.Oxy. 2 241 (https://papyri.info/ddbdp/p.oxy;2;241)
 
 Original Text:
 1 Καικιλλις Κλήμης
@@ -594,7 +594,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.243-1,Dionysius alias Amois son of Phanias alias Amois,Didymus son of Sarapion,1300,drachma (silver),12,AD 79,1.00,Oxyrhynchus,"Source: P.Oxy. 2 243 (https://papyri.info/ddbdp/p.oxy;2;243)
+ALD-P.Oxy.2.243-1,Oxyrhynchus,AD 79,1.00,Dionysius alias Amois son of Phanias alias Amois,Didymus son of Sarapion,1300,drachma (silver),12,"Source: P.Oxy. 2 243 (https://papyri.info/ddbdp/p.oxy;2;243)
 
 Original Text:
 (recto)
@@ -706,7 +706,7 @@ Term: 12 months from Pharmouthi, year 11 of Vespasian (= March/April AD 79).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.269-1,Dioscorus son of Zenodorus,Tryphon son of Dionysius,52,drachma (silver),,AD 57,0.28,Oxyrhynchus,"Source: P.Oxy. 2 269 (https://papyri.info/ddbdp/p.oxy;2;269)
+ALD-P.Oxy.2.269-1,Oxyrhynchus,AD 57,0.28,Dioscorus son of Zenodorus,Tryphon son of Dionysius,52,drachma (silver),,"Source: P.Oxy. 2 269 (https://papyri.info/ddbdp/p.oxy;2;269)
 
 Original Text:
 (1)
@@ -795,7 +795,7 @@ Term: until Kaisareios 30, year 3 of Nero (= 23 August AD 57).
 Date: Germanikeios 18, year 3 of Nero (= 13 May AD 57).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.270-1,Lucia alias Thaisas daughter of Lucius,Heraclides son of Apollonius,3500,drachma (silver),12,AD 94,1.92-2.00,Oxyrhynchus,"Source: P.Oxy. 2 270 (https://papyri.info/ddbdp/p.oxy;2;270)
+ALD-P.Oxy.2.270-1,Oxyrhynchus,AD 94,1.92-2.00,Lucia alias Thaisas daughter of Lucius,Heraclides son of Apollonius,3500,drachma (silver),12,"Source: P.Oxy. 2 270 (https://papyri.info/ddbdp/p.oxy;2;270)
 
 Original Text:
 1 ἔτους τρισκαιδεκάτου Αὐτοκράτορος Καίσαρος Δομιτιανοῦ Σεβαστοῦ
@@ -915,7 +915,7 @@ Term: until Tybi 30, year 15 of Domitian (= 26 January AD 96).
 Date: Mecheir, year 13 of Domitian (= January/February AD 94).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.271-1,Pnepheros son of Papontos,,200,drachma (silver),,AD 55,,Oxyrhynchus,"Source: P.Oxy. 2 271 (https://papyri.info/ddbdp/p.oxy;2;271)
+ALD-P.Oxy.2.271-1,Oxyrhynchus,AD 55,,Pnepheros son of Papontos,,200,drachma (silver),,"Source: P.Oxy. 2 271 (https://papyri.info/ddbdp/p.oxy;2;271)
 
 Original Text:
 1 ἀντίγρα(φον). ἔτους δευτέρου Νέρωνος Κλα[υδίου Κ]αίσαρος Σεβαστοῦ Γερμ[ανικ]οῦ Αὐτοκράτορος,
@@ -980,7 +980,7 @@ Interest: interest-bearing, rate not stated.
 Date: epagomenal days of Kaisareios, year 1 of Nero (= 24-28 August AD 55).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.274-1,Dius son of Ptollion; Dionysia,Sarapion alias Diogenes,,,,AD 88,,Oxyrhynchus,"Source: P.Oxy. 2 274 (https://papyri.info/ddbdp/p.oxy;2;274)
+ALD-P.Oxy.2.274-1,Oxyrhynchus,AD 88,,Dius son of Ptollion; Dionysia,Sarapion alias Diogenes,,,,"Source: P.Oxy. 2 274 (https://papyri.info/ddbdp/p.oxy;2;274)
 
 Original Text:
 (ctr)
@@ -1106,7 +1106,7 @@ Loan in ll. 8-17, the first of three loan contracts securing a mortgage on a hou
 Date: Kaisareios, year 7 of Domitian (= July/August AD 88).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.274-2,Dius son of Ptollion; Dionysia,Sarapion alias Diogenes,,,,AD 88,,Oxyrhynchus,"Source: P.Oxy. 2 274 (https://papyri.info/ddbdp/p.oxy;2;274)
+ALD-P.Oxy.2.274-2,Oxyrhynchus,AD 88,,Dius son of Ptollion; Dionysia,Sarapion alias Diogenes,,,,"Source: P.Oxy. 2 274 (https://papyri.info/ddbdp/p.oxy;2;274)
 
 Original Text:
 (ctr)
@@ -1232,7 +1232,7 @@ Loan in ll. 8-17, the second of three loan contracts securing a mortgage on a ho
 Date: Phaophi, year 8 of Domitian (= September/October AD 88).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.274-3,Dius son of Ptollion; Dionysia,Sarapion alias Diogenes,,,,AD 89,,Oxyrhynchus,"Source: P.Oxy. 2 274 (https://papyri.info/ddbdp/p.oxy;2;274)
+ALD-P.Oxy.2.274-3,Oxyrhynchus,AD 89,,Dius son of Ptollion; Dionysia,Sarapion alias Diogenes,,,,"Source: P.Oxy. 2 274 (https://papyri.info/ddbdp/p.oxy;2;274)
 
 Original Text:
 (ctr)
@@ -1358,7 +1358,7 @@ Loan in ll. 8-17, the third of three loan contracts securing a mortgage on a hou
 Date: Mecheir, year 8 of Domitian (= January/February AD 89).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.286-1,[...]; Thaesis,Philumene daughter of Heron,2000,drachma (silver),,AD 77,,Oxyrhynchus,"Source: P.Oxy. 2 286 (https://papyri.info/ddbdp/p.oxy;2;286)
+ALD-P.Oxy.2.286-1,Oxyrhynchus,AD 77,,[...]; Thaesis,Philumene daughter of Heron,2000,drachma (silver),,"Source: P.Oxy. 2 286 (https://papyri.info/ddbdp/p.oxy;2;286)
 
 Original Text:
 (recto)
@@ -1437,7 +1437,7 @@ Interest: interest-bearing, rate not stated.
 Date: Pharmouthi, year 9 of Vespasian (= March/April AD 77).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.2.299-1,Dionysius,Horus,8,drachma,,AD 76-100,,Oxyrhynchus,"Source: P.Oxy. 2 299 (https://papyri.info/ddbdp/p.oxy;2;299)
+ALD-P.Oxy.2.299-1,Oxyrhynchus,AD 76-100,,Dionysius,Horus,8,drachma,,"Source: P.Oxy. 2 299 (https://papyri.info/ddbdp/p.oxy;2;299)
 
 Original Text:
 1 Ὧρος Ἀπίωνι τῷ τειμειωτάτωι χαίρειν.
@@ -1460,7 +1460,7 @@ Date: not stated; the date of the document (HGV).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.485-1,Sarapias daughter of Podon,Serenus,900,drachma (silver),12,AD 177,0.96,Oxyrhynchus,"Source: P.Oxy. 3 485 (https://papyri.info/ddbdp/p.oxy;3;485)
+ALD-P.Oxy.3.485-1,Oxyrhynchus,AD 177,0.96,Sarapias daughter of Podon,Serenus,900,drachma (silver),12,"Source: P.Oxy. 3 485 (https://papyri.info/ddbdp/p.oxy;3;485)
 
 Original Text:
 (ctr)
@@ -1590,7 +1590,7 @@ Term: until Kaisareios 30, year 18 of Marcus Aurelius and Commodus (= 23 August 
 Date: Sebastos 11, year 18 of Marcus Aurelius and Commodus (= 8 September AD 177).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.506-1,Thatres daughter of Apollonius; Teteorion daughter of Apollonius; Demas daughter of Apollonius,Sarapion son of Herodes,1000,drachma (silver),6,AD 143,2.66-2.74,Oxyrhynchus,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
+ALD-P.Oxy.3.506-1,Oxyrhynchus,AD 143,2.66-2.74,Thatres daughter of Apollonius; Teteorion daughter of Apollonius; Demas daughter of Apollonius,Sarapion son of Herodes,1000,drachma (silver),6,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
 
 Original Text:
 (r,FrA)
@@ -1732,7 +1732,7 @@ Term: interest at the end of each 12 months; capital until Kaisareios 30, year 9
 Date: Hadrianos, year 7 of Antoninus Pius (= November/December AD 143).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.506-2,Thatres daughter of Apollonius; Teteorion daughter of Apollonius,Sarapion son of Herodes,1; 600,talent (silver); drachma (silver),,AD 143,,Oxyrhynchus,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
+ALD-P.Oxy.3.506-2,Oxyrhynchus,AD 143,,Thatres daughter of Apollonius; Teteorion daughter of Apollonius,Sarapion son of Herodes,1; 600,talent (silver); drachma (silver),,"Source: P.Oxy. 3 506 (https://papyri.info/ddbdp/p.oxy;3;506)
 
 Original Text:
 (r,FrA)
@@ -1873,7 +1873,7 @@ Interest: interest-bearing, rate not stated.
 Date: Hadrianos, year 7 of Antoninus Pius (= November/December AD 143).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.507-1,Harmiusis,Diogenes son of Sarapion,260,drachma (silver),12,AD 146,0.92-1.00,Oxyrhynchus,"Source: P.Oxy. 3 507 (https://papyri.info/ddbdp/p.oxy;3;507)
+ALD-P.Oxy.3.507-1,Oxyrhynchus,AD 146,0.92-1.00,Harmiusis,Diogenes son of Sarapion,260,drachma (silver),12,"Source: P.Oxy. 3 507 (https://papyri.info/ddbdp/p.oxy;3;507)
 
 Original Text:
 1 Ἁρμιῦσ[ις ][...]
@@ -1969,7 +1969,7 @@ Date: Pharmouthi, year 9 of Antoninus Pius (= March/April AD 146; HGV, BL I 325)
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.508-1,Rufus son of Diocles,Heraclas son of Heraclas,450,drachma (silver),,AD 99,,Oxyrhynchus,"Source: P.Oxy. 3 508 (https://papyri.info/ddbdp/p.oxy;3;508)
+ALD-P.Oxy.3.508-1,Oxyrhynchus,AD 99,,Rufus son of Diocles,Heraclas son of Heraclas,450,drachma (silver),,"Source: P.Oxy. 3 508 (https://papyri.info/ddbdp/p.oxy;3;508)
 
 Original Text:
 1 ἔτους πέμπτου Αὐτοκράτορος Καίσαρος
@@ -2036,7 +2036,7 @@ Interest: interest-bearing, rate not stated.
 Date: Mecheir, year 2 of Trajan (= January/February AD 99).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.508-2,Diocles son of Diocles,Heraclas son of Heraclas,416,drachma (silver),,AD 99-100,,Oxyrhynchus,"Source: P.Oxy. 3 508 (https://papyri.info/ddbdp/p.oxy;3;508)
+ALD-P.Oxy.3.508-2,Oxyrhynchus,AD 99-100,,Diocles son of Diocles,Heraclas son of Heraclas,416,drachma (silver),,"Source: P.Oxy. 3 508 (https://papyri.info/ddbdp/p.oxy;3;508)
 
 Original Text:
 1 ἔτους πέμπτου Αὐτοκράτορος Καίσαρος
@@ -2102,7 +2102,7 @@ Loan in ll. 20-26, made in the name of Stephanus alias Amois with Heraclas' mone
 Date: Tybi, year 3 of Trajan (= December AD 99/January AD 100).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.3.510-1,[...]; Dionysius,Artemidorus,472,drachma (silver),,AD 100,1.01-1.09,Oxyrhynchus,"Source: P.Oxy. 3 510 (https://papyri.info/ddbdp/p.oxy;3;510)
+ALD-P.Oxy.3.510-1,Oxyrhynchus,AD 100,1.01-1.09,[...]; Dionysius,Artemidorus,472,drachma (silver),,"Source: P.Oxy. 3 510 (https://papyri.info/ddbdp/p.oxy;3;510)
 
 Original Text:
 1 [...]
@@ -2170,7 +2170,7 @@ Term: until epagomenal day 5, year 4 of Trajan (= 28 August AD 101).
 Date: Kaisareios, year 3 of Trajan (= July/August AD 100).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.4.808-1,Pausiris son of Petsiris,Harpalus son of Hermon,210,drachma (silver),,AD 64,0.00-0.08,Palosis,"Source: P.Oxy. 4 808 (https://papyri.info/ddbdp/p.oxy;4;808)
+ALD-P.Oxy.4.808-1,Palosis,AD 64,0.00-0.08,Pausiris son of Petsiris,Harpalus son of Hermon,210,drachma (silver),,"Source: P.Oxy. 4 808 (https://papyri.info/ddbdp/p.oxy;4;808)
 
 Original Text:
 (1)
@@ -2195,7 +2195,7 @@ Term: until Neroneios 30, year 11 of Nero (= 26 December AD 64).
 Date: Neroneios of the current year, year 11 of Nero (= November/December AD 64).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.7.1024-1,Apollonius son of Heliodorus,state (public granary),1 1/4,artaba (wheat),,AD 129,,Oxyrhynchus,"Source: P.Oxy. 7 1024 (https://papyri.info/ddbdp/p.oxy;7;1024)
+ALD-P.Oxy.7.1024-1,Oxyrhynchus,AD 129,,Apollonius son of Heliodorus,state (public granary),1 1/4,artaba (wheat),,"Source: P.Oxy. 7 1024 (https://papyri.info/ddbdp/p.oxy;7;1024)
 
 Original Text:
 1 Ἀσκληπιάδης στρατηγὸς
@@ -2299,7 +2299,7 @@ Date: Hathyr 17, year 14 of Hadrian (= 13 November AD 129).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.7.1040-1,Aurelius Pekysis son of Pauseiris; Aurelius Petenouphis son of Pekysis,Aurelius Theon son of Didymus,4,artaba (wheat),78.72-89.96,AD 225,0.56-0.64,Oxyrhynchus,"Source: P.Oxy. 7 1040 (https://papyri.info/ddbdp/p.oxy;7;1040dupl)
+ALD-P.Oxy.7.1040-1,Oxyrhynchus,AD 225,0.56-0.64,Aurelius Pekysis son of Pauseiris; Aurelius Petenouphis son of Pekysis,Aurelius Theon son of Didymus,4,artaba (wheat),78.72-89.96,"Source: P.Oxy. 7 1040 (https://papyri.info/ddbdp/p.oxy;7;1040dupl)
 
 Original Text:
 (r,2)
@@ -2423,7 +2423,7 @@ Date: Hathyr 8, year 5 of Severus Alexander (= 4 November AD 225).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.7.1042-1,Aurelius Ioannes son of Anoup,Flavius Phib,1/3,solidus (gold),,AD 578,,Oxyrhynchus,"Source: P.Oxy. 7 1042 (https://papyri.info/ddbdp/p.oxy;7;1042)
+ALD-P.Oxy.7.1042-1,Oxyrhynchus,AD 578,,Aurelius Ioannes son of Anoup,Flavius Phib,1/3,solidus (gold),,"Source: P.Oxy. 7 1042 (https://papyri.info/ddbdp/p.oxy;7;1042)
 
 Original Text:
 (recto)
@@ -2509,7 +2509,7 @@ Date: Pachon 15, indiction 11, year 13 of Justin II (= 10 May AD 578).
 Place: the text calls the city the new city of Justin (Iustinopolis, i.e. Oxyrhynchus; HGV).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.8.1118-1,[...]as; Chenenoubis,,,,,AD 1-200,,Oxyrhynchus,"Source: P.Oxy. 8 1118 (https://papyri.info/ddbdp/p.oxy;8;1118)
+ALD-P.Oxy.8.1118-1,Oxyrhynchus,AD 1-200,,[...]as; Chenenoubis,,,,,"Source: P.Oxy. 8 1118 (https://papyri.info/ddbdp/p.oxy;8;1118)
 
 Original Text:
 1 [...]ω̣ς ἀξιῶι συντάξαι γράψα[ι] τῷ τῆς Μικρᾶς
@@ -2549,7 +2549,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.8.1132-1,Tryphon son of Heraclides,Chaeremon son of Sarapion,600,drachma (silver),4,AD 162,,Oxyrhynchus,"Source: P.Oxy. 8 1132 (https://papyri.info/ddbdp/p.oxy;8;1132)
+ALD-P.Oxy.8.1132-1,Oxyrhynchus,AD 162,,Tryphon son of Heraclides,Chaeremon son of Sarapion,600,drachma (silver),4,"Source: P.Oxy. 8 1132 (https://papyri.info/ddbdp/p.oxy;8;1132)
 
 Original Text:
 1 [Σ]α̣ρ̣α̣π̣
@@ -2602,7 +2602,7 @@ Interest: 2 drachmas a month on 600 drachmas (ll. 13-14); 24 / 600 = 4% per year
 Date: epagomenal days of year 2 of Marcus Aurelius and Lucius Verus (= 24-28 August AD 162).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.10.1262.Ro-1,Apollonius son of Timagenes alias Didymus,state (public granary),,,,AD 197,,Oxyrhynchus,"Source: P.Oxy. 10 1262 Ro (https://papyri.info/ddbdp/p.oxy;10;1262r)
+ALD-P.Oxy.10.1262.Ro-1,Oxyrhynchus,AD 197,,Apollonius son of Timagenes alias Didymus,state (public granary),,,,"Source: P.Oxy. 10 1262 Ro (https://papyri.info/ddbdp/p.oxy;10;1262r)
 
 Original Text:
 1 Λουκρητ[ί]ῳ Νείλ(ῳ) στρα(τηγῷ) Ὀξ(υρυγχίτου)
@@ -2653,7 +2653,7 @@ Date: year 6 of Septimius Severus and Caracalla (end of AD 197, HGV).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.10.1282-1,Amois son of Apollonius; Tekosis daughter of Thonis,Papontos son of Amois,400,drachma (silver),,AD 78,,Oxyrhynchus,"Source: P.Oxy. 10 1282 (https://papyri.info/ddbdp/p.oxy;10;1282)
+ALD-P.Oxy.10.1282-1,Oxyrhynchus,AD 78,,Amois son of Apollonius; Tekosis daughter of Thonis,Papontos son of Amois,400,drachma (silver),,"Source: P.Oxy. 10 1282 (https://papyri.info/ddbdp/p.oxy;10;1282)
 
 Original Text:
 1 κ̣..ο̣λ π̣λ.
@@ -2756,7 +2756,7 @@ Interest: interest-bearing, rate not stated.
 Date: Neos Sebastos, year 11 of Vespasian (= October/November AD 78).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.12.1471-1,Teteoris daughter of P[...],Marcus Longinus,38,drachma (silver),12,AD 81,0.31,Oxyrhynchus,"Source: P.Oxy. 12 1471 (https://papyri.info/ddbdp/p.oxy;12;1471)
+ALD-P.Oxy.12.1471-1,Oxyrhynchus,AD 81,0.31,Teteoris daughter of P[...],Marcus Longinus,38,drachma (silver),12,"Source: P.Oxy. 12 1471 (https://papyri.info/ddbdp/p.oxy;12;1471)
 
 Original Text:
 1 ⟦ ὀφ(είλημα). κ̣ό̣λ̣(λημα) [...]γ̣. ⟧
@@ -2859,7 +2859,7 @@ Date: Tybi 5, year 1 of Domitian (= 31 December AD 81).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.12.1473-1,Apollonarion daughter of Chaeremon,Horion son of Hierax,2; 3000,talent; drachma,12,AD 197-198,,Oxyrhynchus,"Source: P.Oxy. 12 1473 (https://papyri.info/ddbdp/p.oxy;12;1473)
+ALD-P.Oxy.12.1473-1,Oxyrhynchus,AD 197-198,,Apollonarion daughter of Chaeremon,Horion son of Hierax,2; 3000,talent; drachma,12,"Source: P.Oxy. 12 1473 (https://papyri.info/ddbdp/p.oxy;12;1473)
 
 Original Text:
 3 [...]εισα̣[...]....[...]ην ἀμπέλου πρόσοδ[ον(?)][...][ λ]όγου̣ ὀκταδρ[άχμου ][...]
@@ -2912,7 +2912,7 @@ Interest: 1 drachma per mina per month (l. 4), stated for the sums owed.
 Date: year 6 of Septimius Severus and Caracalla (= AD 197/198).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.12.1474-1,Pekysis son of Pausirion,Aurelia Didyme alias Dionysia,45,artaba (wheat),0,AD 214,0.52-0.60,Oxyrhynchus,"Source: P.Oxy. 12 1474 (https://papyri.info/ddbdp/p.oxy;12;1474)
+ALD-P.Oxy.12.1474-1,Oxyrhynchus,AD 214,0.52-0.60,Pekysis son of Pausirion,Aurelia Didyme alias Dionysia,45,artaba (wheat),0,"Source: P.Oxy. 12 1474 (https://papyri.info/ddbdp/p.oxy;12;1474)
 
 Original Text:
 1 Αὐρηλίῳ Ἀνουβίωνι στρα(τηγῷ) Ὀξυρυγχ(ίτου)
@@ -2973,7 +2973,7 @@ Date: Choiak 20, year 23 of Caracalla (= 16 December AD 214).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.12.1501-1,Tiberius Claudius Didymus alias Heraclius,Oxyrhynchus (city council),,drachma,,AD 201-225,,Oxyrhynchus,"Source: P.Oxy. 12 1501 (https://papyri.info/ddbdp/p.oxy;12;1501)
+ALD-P.Oxy.12.1501-1,Oxyrhynchus,AD 201-225,,Tiberius Claudius Didymus alias Heraclius,Oxyrhynchus (city council),,drachma,,"Source: P.Oxy. 12 1501 (https://papyri.info/ddbdp/p.oxy;12;1501)
 
 Original Text:
 1 Αὐρήλιος Ἀμμώνιος ἐξ(ηγητεύσας) βουλευτὴς
@@ -2997,7 +2997,7 @@ Receipt of the treasurer of the council funds of Oxyrhynchus for repayment of dr
 Date: not stated; the year of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.14.1640-1,Aurelius Calpurnius,,15,artaba (wheat),,AD 252,0.61-0.68,Oxyrhynchus,"Source: P.Oxy. 14 1640 (https://papyri.info/ddbdp/p.oxy;14;1640_2dupl)
+ALD-P.Oxy.14.1640-1,Oxyrhynchus,AD 252,0.61-0.68,Aurelius Calpurnius,,15,artaba (wheat),,"Source: P.Oxy. 14 1640 (https://papyri.info/ddbdp/p.oxy;14;1640_2dupl)
 
 Original Text:
 1 [...]
@@ -3055,7 +3055,7 @@ Date: Phaophi 20, year 3 of Trebonianus Gallus and Volusianus (= 17 October AD 2
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.14.1648-1,Saras son of Zoilus alias Amois,,1000,drachma,7.20,AD 185,,Oxyrhynchus,"Source: P.Oxy. 14 1648 (https://papyri.info/ddbdp/p.oxy;14;1648)
+ALD-P.Oxy.14.1648-1,Oxyrhynchus,AD 185,,Saras son of Zoilus alias Amois,,1000,drachma,7.20,"Source: P.Oxy. 14 1648 (https://papyri.info/ddbdp/p.oxy;14;1648)
 
 Original Text:
 68 δημοσίωσις Σαρᾶτος Ζωίλου προσωνομασ(μένου) Ἀμόιτος·
@@ -3075,7 +3075,7 @@ Date: Payni, year 25 of Commodus, the only late-2nd-century reign with a year 25
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.14.1665-1,Aurelius Sarapion,friends (unnamed),40,metretes (oil),,AD 201-300,,Oxyrhynchus,"Source: P.Oxy. 14 1665 (https://papyri.info/ddbdp/p.oxy;14;1665)
+ALD-P.Oxy.14.1665-1,Oxyrhynchus,AD 201-300,,Aurelius Sarapion,friends (unnamed),40,metretes (oil),,"Source: P.Oxy. 14 1665 (https://papyri.info/ddbdp/p.oxy;14;1665)
 
 Original Text:
 (recto)
@@ -3146,7 +3146,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.14.1711-1,Aurelius Alexander son of Alexander,Aurelius Gelasius,2; 4800,talent (silver); drachma (silver),,AD 276-300,,Oxyrhynchus,"Source: P.Oxy. 14 1711 (https://papyri.info/ddbdp/p.oxy;14;1711dupl)
+ALD-P.Oxy.14.1711-1,Oxyrhynchus,AD 276-300,,Aurelius Alexander son of Alexander,Aurelius Gelasius,2; 4800,talent (silver); drachma (silver),,"Source: P.Oxy. 14 1711 (https://papyri.info/ddbdp/p.oxy;14;1711dupl)
 
 Original Text:
 1 Αὐρήλιος Ἀλέξανδρος Ἀλεξάνδρου μητρὸς
@@ -3199,7 +3199,7 @@ Date: not preserved; the date of the document (HGV).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.14.1715-1,Aurelius Agathus Daimon son of Agathus Daimon,Aurelius Horion son of Thonis,6,talent (silver),,AD 292,,Oxyrhynchus,"Source: P.Oxy. 14 1715 (https://papyri.info/ddbdp/p.oxy;14;1715)
+ALD-P.Oxy.14.1715-1,Oxyrhynchus,AD 292,,Aurelius Agathus Daimon son of Agathus Daimon,Aurelius Horion son of Thonis,6,talent (silver),,"Source: P.Oxy. 14 1715 (https://papyri.info/ddbdp/p.oxy;14;1715)
 
 Original Text:
 1 Αὐ[ρήλ]ιος Ὡρίων Θώνιος μητρὸς
@@ -3265,7 +3265,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.14.1716-1,Aurelius Palex son of Parammon; Aurelia Sinthonis daughter of Thonius,Flavius Septimius Serenius Apollonius,300,talent (silver),,AD 333,,Oxyrhynchus,"Source: P.Oxy. 14 1716 (https://papyri.info/ddbdp/p.oxy;14;1716)
+ALD-P.Oxy.14.1716-1,Oxyrhynchus,AD 333,,Aurelius Palex son of Parammon; Aurelia Sinthonis daughter of Thonius,Flavius Septimius Serenius Apollonius,300,talent (silver),,"Source: P.Oxy. 14 1716 (https://papyri.info/ddbdp/p.oxy;14;1716)
 
 Original Text:
 1 ὑπατείας Φλαουίου Δαλματίου ἀ[δ]ελφ[ο]ῦ τοῦ δεσπότου ἡμῶν
@@ -3336,7 +3336,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.14.1724-1,Ariston,,3000,drachma (silver),,AD 201-225,,Oxyrhynchus,"Source: P.Oxy. 14 1724 (https://papyri.info/ddbdp/p.oxy;14;1724)
+ALD-P.Oxy.14.1724-1,Oxyrhynchus,AD 201-225,,Ariston,,3000,drachma (silver),,"Source: P.Oxy. 14 1724 (https://papyri.info/ddbdp/p.oxy;14;1724)
 
 Original Text:
 (2)
@@ -3366,7 +3366,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.14.1724-2,Harmiusis son of Harmiusis,,1600,drachma (silver),,AD 201-225,,Oxyrhynchus,"Source: P.Oxy. 14 1724 (https://papyri.info/ddbdp/p.oxy;14;1724)
+ALD-P.Oxy.14.1724-2,Oxyrhynchus,AD 201-225,,Harmiusis son of Harmiusis,,1600,drachma (silver),,"Source: P.Oxy. 14 1724 (https://papyri.info/ddbdp/p.oxy;14;1724)
 
 Original Text:
 (2)
@@ -3396,7 +3396,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.16.1891-1,Aurelius Theon son of Ioannes,Flavius Apphous son of Eulogius,2,solidus (gold),12,AD 495,0.91-0.99,Oxyrhynchus,"Source: P.Oxy. 16 1891 (https://papyri.info/ddbdp/p.oxy;16;1891)
+ALD-P.Oxy.16.1891-1,Oxyrhynchus,AD 495,0.91-0.99,Aurelius Theon son of Ioannes,Flavius Apphous son of Eulogius,2,solidus (gold),12,"Source: P.Oxy. 16 1891 (https://papyri.info/ddbdp/p.oxy;16;1891)
 
 Original Text:
 (recto)
@@ -3465,7 +3465,7 @@ Term: one solidus in Tybi of the present year (= December AD 495/January AD 496)
 Date: Choiak 2, indiction 4 (= 29 November AD 495).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.16.1892-1,Areotes son of Phib,Epimachus son of Justus,3,solidus (gold),,AD 581,2.09-2.25,Oxyrhynchus,"Source: P.Oxy. 16 1892 (https://papyri.info/ddbdp/p.oxy;16;1892)
+ALD-P.Oxy.16.1892-1,Oxyrhynchus,AD 581,2.09-2.25,Areotes son of Phib,Epimachus son of Justus,3,solidus (gold),,"Source: P.Oxy. 16 1892 (https://papyri.info/ddbdp/p.oxy;16;1892)
 
 Original Text:
 (recto)
@@ -3572,7 +3572,7 @@ Date: Thoth, indiction 15, year 7 of Tiberius II (= August/September AD 581).
 Place: the borrower is from the estate Apel; the lender is of Oxyrhynchus.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.16.1969-1,[...] son of Martyrius; [...] daughter of Phoebammon,Flavius Philoxenus,2,solidus (gold),12,AD 484,0.95-1.94,Oxyrhynchus,"Source: P.Oxy. 16 1969 (https://papyri.info/ddbdp/p.oxy;16;1969)
+ALD-P.Oxy.16.1969-1,Oxyrhynchus,AD 484,0.95-1.94,[...] son of Martyrius; [...] daughter of Phoebammon,Flavius Philoxenus,2,solidus (gold),12,"Source: P.Oxy. 16 1969 (https://papyri.info/ddbdp/p.oxy;16;1969)
 
 Original Text:
 1 [ὑπατ]είας Φλα[ο]υίου Θε[ο]δωρίχου τοῦ λαμπρ(οτάτου) Θὼθ κγ ἰνδικ(τίωνος) η.
@@ -3619,7 +3619,7 @@ Term: in a month (lost) of indiction 9 (= September AD 485 - August AD 486) (l. 
 Date: Thoth 23, indiction 8 (= 20 September AD 484).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.16.1970-1,Aurelius Georgius son of Andreas; Aurelius Anoup son of Andreas,Flavius Anastasius,4,solidus (gold),,AD 554,0.39-0.47,Oxyrhynchus,"Source: P.Oxy. 16 1970 (https://papyri.info/ddbdp/p.oxy;16;1970)
+ALD-P.Oxy.16.1970-1,Oxyrhynchus,AD 554,0.39-0.47,Aurelius Georgius son of Andreas; Aurelius Anoup son of Andreas,Flavius Anastasius,4,solidus (gold),,"Source: P.Oxy. 16 1970 (https://papyri.info/ddbdp/p.oxy;16;1970)
 
 Original Text:
 (recto)
@@ -3703,7 +3703,7 @@ Term: out of the first instalment of the borrowers' wages from the estate, in Ha
 Date: Payni 14, indiction 2, year 27 of Justinian (= 8 June AD 554).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.16.1971-1,,,7,solidus (gold),,AD 476-525,,Oxyrhynchus,"Source: P.Oxy. 16 1971 (https://papyri.info/ddbdp/p.oxy;16;1971)
+ALD-P.Oxy.16.1971-1,Oxyrhynchus,AD 476-525,,,,7,solidus (gold),,"Source: P.Oxy. 16 1971 (https://papyri.info/ddbdp/p.oxy;16;1971)
 
 Original Text:
 (recto)
@@ -3740,7 +3740,7 @@ Date: not preserved; the date of the document (HGV).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.16.1976-1,Aurelius Areotes son of Phoebammon; Aurelius Samuel son of Victor,Apion (heirs),11,artaba (wheat),,AD 582,,Oxyrhynchus,"Source: P.Oxy. 16 1976 (https://papyri.info/ddbdp/p.oxy;16;1976)
+ALD-P.Oxy.16.1976-1,Oxyrhynchus,AD 582,,Aurelius Areotes son of Phoebammon; Aurelius Samuel son of Victor,Apion (heirs),11,artaba (wheat),,"Source: P.Oxy. 16 1976 (https://papyri.info/ddbdp/p.oxy;16;1976)
 
 Original Text:
 (recto)
@@ -3809,7 +3809,7 @@ Term: at the threshing of indiction 2 (summer AD 583) (ll. 19-20).
 Date: Hathyr 27, indiction 1, year 1 of Maurice (= 23 November AD 582).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.17.2134.Ro-1,Helene daughter of Aphelix,Spartas son of Pausanias,1800,drachma (silver),6,AD 170,1.69,Oxyrhynchus,"Source: P.Oxy. 17 2134 Ro (https://papyri.info/ddbdp/p.oxy;17;2134r)
+ALD-P.Oxy.17.2134.Ro-1,Oxyrhynchus,AD 170,1.69,Helene daughter of Aphelix,Spartas son of Pausanias,1800,drachma (silver),6,"Source: P.Oxy. 17 2134 Ro (https://papyri.info/ddbdp/p.oxy;17;2134r)
 
 Original Text:
 8 [σιν ἀντί]γραφον [ὑπόκειται.] Ἑλένη ἀφήλικος τοῦ Ψοσναῦτος μητρὸς Εὐδαιμονίδος μετὰ κυρίου ἐνγύου εἰς
@@ -3878,7 +3878,7 @@ Date: Mecheir 24, year 10 of Marcus Aurelius (= 18 February AD 170).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.18.2185-1,Heraclides son of Heraclides,state (public granary),41 3/4,artaba (wheat),,AD 92,,Oxyrhynchus,"Source: P.Oxy. 18 2185 (https://papyri.info/ddbdp/p.oxy;18;2185)
+ALD-P.Oxy.18.2185-1,Oxyrhynchus,AD 92,,Heraclides son of Heraclides,state (public granary),41 3/4,artaba (wheat),,"Source: P.Oxy. 18 2185 (https://papyri.info/ddbdp/p.oxy;18;2185)
 
 Original Text:
 1 [Κλ]αύδιος Ἄρειος στρα(τηγὸς) Ὀξυρυγ̣χ(ίτου)
@@ -3956,7 +3956,7 @@ Date: year 12 of Domitian (= AD 92/93; HGV AD 92).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.19.2237-1,Aurelius Theodorus son of Megas alias Didymus,Flavius Didymus son of Timotheus,5 3/4,solidus (gold),,AD 498,0.28-0.36,Oxyrhynchus,"Source: P.Oxy. 19 2237 (https://papyri.info/ddbdp/p.oxy;19;2237)
+ALD-P.Oxy.19.2237-1,Oxyrhynchus,AD 498,0.28-0.36,Aurelius Theodorus son of Megas alias Didymus,Flavius Didymus son of Timotheus,5 3/4,solidus (gold),,"Source: P.Oxy. 19 2237 (https://papyri.info/ddbdp/p.oxy;19;2237)
 
 Original Text:
 (recto)
@@ -4021,7 +4021,7 @@ Term: in Pachon of the present year 174 (and) 143, indiction 6 (= April/May AD 4
 Date: Tybi 20, indiction 6 (= 15 January AD 498).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.22.2350-1,Aurelius Papontos son of Vestinus,,4 1/2,artaba (wheat),,AD 223,,Oxyrhynchus,"Source: P.Oxy. 22 2350 (https://papyri.info/ddbdp/p.oxy;22;2350)
+ALD-P.Oxy.22.2350-1,Oxyrhynchus,AD 223,,Aurelius Papontos son of Vestinus,,4 1/2,artaba (wheat),,"Source: P.Oxy. 22 2350 (https://papyri.info/ddbdp/p.oxy;22;2350)
 
 Original Text:
 (3)
@@ -4089,7 +4089,7 @@ Date: Hathyr 15, year 3 of Severus Alexander (= 12 November AD 223).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.27.2471-1,Chaeremon son of Ale[...],Tiberius Claudius Demetrius son of Bion; Tiberius Claudius Isidorus son of Bion,13,talent (silver),,AD 48,,Oxyrhynchus,"Source: P.Oxy. 27 2471 (https://papyri.info/ddbdp/p.oxy;27;2471)
+ALD-P.Oxy.27.2471-1,Oxyrhynchus,AD 48,,Chaeremon son of Ale[...],Tiberius Claudius Demetrius son of Bion; Tiberius Claudius Isidorus son of Bion,13,talent (silver),,"Source: P.Oxy. 27 2471 (https://papyri.info/ddbdp/p.oxy;27;2471)
 
 Original Text:
 1 [...][ ἀρχιδικαστῇ καὶ] π̣ρὸς τῆι ἐ[πιμε]λείᾳ τῶν χ[ρημ]ατιστῶν
@@ -4151,7 +4151,7 @@ Date: Pharmouthi, year 8 of Claudius (= March/April AD 48).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.34.2722-1,Thonis son of Psenephthas,Thonis son of Hephaestas,600,drachma (silver),12,AD 154,2.99,Oxyrhynchus,"Source: P.Oxy. 34 2722 (https://papyri.info/ddbdp/p.oxy;34;2722)
+ALD-P.Oxy.34.2722-1,Oxyrhynchus,AD 154,2.99,Thonis son of Psenephthas,Thonis son of Hephaestas,600,drachma (silver),12,"Source: P.Oxy. 34 2722 (https://papyri.info/ddbdp/p.oxy;34;2722)
 
 Original Text:
 2 Θῶνις Ψενεφθᾶτος τοῦ Ψενεφθᾶτος μ[η]τρὸς̣ ......
@@ -4214,7 +4214,7 @@ Date: Pharmouthi 4, year 17 of Antoninus Pius (= 30 March AD 154).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.36.2774-1,Agathus Daimon son of Diogenes,Pausanias son of Sarapion,7500,drachma (silver),6,AD 129,1.00-1.08,Oxyrhynchus,"Source: P.Oxy. 36 2774 (https://papyri.info/ddbdp/p.oxy;36;2774)
+ALD-P.Oxy.36.2774-1,Oxyrhynchus,AD 129,1.00-1.08,Agathus Daimon son of Diogenes,Pausanias son of Sarapion,7500,drachma (silver),6,"Source: P.Oxy. 36 2774 (https://papyri.info/ddbdp/p.oxy;36;2774)
 
 Original Text:
 1 Ἀ̣[γαθ]ὸς Δαίμων Δι[ογ]ένους τοῦ Θέωνος Σωσικόσμιος ὁ καὶ
@@ -4259,7 +4259,7 @@ Date: the date line is lost; written before Hathyr of year 14 of Hadrian (HGV: 2
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.36.2775-1,Aurelius Tourbon son of Ausir[...]; Aurelius [...]as son of Ausir[...],state (treasury),29,artaba (wheat),,AD 276-300,,Oxyrhynchus,"Source: P.Oxy. 36 2775 (https://papyri.info/ddbdp/p.oxy;36;2775dupl)
+ALD-P.Oxy.36.2775-1,Oxyrhynchus,AD 276-300,,Aurelius Tourbon son of Ausir[...]; Aurelius [...]as son of Ausir[...],state (treasury),29,artaba (wheat),,"Source: P.Oxy. 36 2775 (https://papyri.info/ddbdp/p.oxy;36;2775dupl)
 
 Original Text:
 1 |_Αὐρήλιοι Τ_|ούρ̣[βων καὶ ][...]ας ἀμ|_φό
@@ -4321,7 +4321,7 @@ Date: year 5 / year 6 of an unnamed emperor; the date of the document (HGV, late
 Place: the borrowers live in the hamlet formerly of the priests (their village name is lost); the place of the document (HGV).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.36.2775-2,Aurelius Tourbon son of Ausir[...]; Aurelius [...]as son of Ausir[...],state (treasury),18,artaba (wheat),,AD 276-300,,Oxyrhynchus,"Source: P.Oxy. 36 2775 (https://papyri.info/ddbdp/p.oxy;36;2775dupl)
+ALD-P.Oxy.36.2775-2,Oxyrhynchus,AD 276-300,,Aurelius Tourbon son of Ausir[...]; Aurelius [...]as son of Ausir[...],state (treasury),18,artaba (wheat),,"Source: P.Oxy. 36 2775 (https://papyri.info/ddbdp/p.oxy;36;2775dupl)
 
 Original Text:
 1 |_Αὐρήλιοι Τ_|ούρ̣[βων καὶ ][...]ας ἀμ|_φό
@@ -4383,7 +4383,7 @@ Date: year 5 / year 6 of an unnamed emperor; the date of the document (HGV, late
 Place: the borrowers live in the hamlet formerly of the priests (their village name is lost); the place of the document (HGV).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.38.2834-1,Mnesitheus son of Petesouchos,O[...] son of Mnesitheus,125,artaba (wheat),,AD 42,,Oxyrhynchus,"Source: P.Oxy. 38 2834 (https://papyri.info/ddbdp/p.oxy;38;2834)
+ALD-P.Oxy.38.2834-1,Oxyrhynchus,AD 42,,Mnesitheus son of Petesouchos,O[...] son of Mnesitheus,125,artaba (wheat),,"Source: P.Oxy. 38 2834 (https://papyri.info/ddbdp/p.oxy;38;2834)
 
 Original Text:
 1 Ο[...]..[...][ Μ]νησιθέου Μνη[σ]ι̣θ̣έ̣ω̣ι̣ Πετε
@@ -4411,7 +4411,7 @@ Date: not stated; the year of the document (receipt of Epeiph 25, year 2 of Clau
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.38.2848.Vo-1,Dionysius son of Sarapion alias Harpocration,Oxyrhynchus (city funds),12; 1700,talent (silver); drachma (silver),,AD 225,,Oxyrhynchus,"Source: P.Oxy. 38 2848 Vo (https://papyri.info/ddbdp/p.oxy;38;2848v)
+ALD-P.Oxy.38.2848.Vo-1,Oxyrhynchus,AD 225,,Dionysius son of Sarapion alias Harpocration,Oxyrhynchus (city funds),12; 1700,talent (silver); drachma (silver),,"Source: P.Oxy. 38 2848 Vo (https://papyri.info/ddbdp/p.oxy;38;2848v)
 
 Original Text:
 (verso)
@@ -4440,7 +4440,7 @@ Date: reported on Mecheir 4, year 4 of Severus Alexander (= 29 January AD 225); 
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.41.2956-1,Cleochares son of Chaeremon alias Antonius; Cleochares son of Chaeremon alias Antonius,state (public granary),28 1/4,artaba (wheat),,AD 148,,Oxyrhynchus,"Source: P.Oxy. 41 2956 (https://papyri.info/ddbdp/p.oxy;41;2956)
+ALD-P.Oxy.41.2956-1,Oxyrhynchus,AD 148,,Cleochares son of Chaeremon alias Antonius; Cleochares son of Chaeremon alias Antonius,state (public granary),28 1/4,artaba (wheat),,"Source: P.Oxy. 41 2956 (https://papyri.info/ddbdp/p.oxy;41;2956)
 
 Original Text:
 (recto)
@@ -4532,7 +4532,7 @@ Date: Tybi 1, year 12 of Antoninus Pius (= 27 December AD 148; HGV also consider
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.44.3198-1,Herais daughter of Plutogenes,Prepousa,144,drachma (silver),12,AD 145-171,0.41-0.49,Oxyrhynchus,"Source: P.Oxy. 44 3198 (https://papyri.info/ddbdp/p.oxy;44;3198)
+ALD-P.Oxy.44.3198-1,Oxyrhynchus,AD 145-171,0.41-0.49,Herais daughter of Plutogenes,Prepousa,144,drachma (silver),12,"Source: P.Oxy. 44 3198 (https://papyri.info/ddbdp/p.oxy;44;3198)
 
 Original Text:
 1 Ἡρ̣α̣ὶς Πλουτογένους τοῦ Ἀντιόχου ἀπὸ Πτο
@@ -4579,7 +4579,7 @@ Date: Tybi, year 9 of an unnamed emperor (HGV: 27 December AD 145 - 25 January A
 Place: not stated; the place of the document (the borrower is from Ptolemais in the Thinite nome).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.45.3266-1,Aurelius Eulogius son of Leonteus,Flavius Annianus,500,talent (silver),24,AD 337,0.54-0.62,Oxyrhynchus,"Source: P.Oxy. 45 3266 (https://papyri.info/ddbdp/p.oxy;45;3266rpdupl)
+ALD-P.Oxy.45.3266-1,Oxyrhynchus,AD 337,0.54-0.62,Aurelius Eulogius son of Leonteus,Flavius Annianus,500,talent (silver),24,"Source: P.Oxy. 45 3266 (https://papyri.info/ddbdp/p.oxy;45;3266rpdupl)
 
 Original Text:
 1 ὑπατείας Φλαουίου Φιλικιανοῦ καὶ Φαβίου Τιτιανοῦ
@@ -4638,7 +4638,7 @@ Date: Mesore 20, consulship of Felicianus and Titianus (= 13 August AD 337).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.47.3351-1,,[...] son of Sarapion,200,drachma (silver),,AD 34,0.50,Oxyrhynchus,"Source: P.Oxy. 47 3351 (https://papyri.info/ddbdp/p.oxy;47;3351)
+ALD-P.Oxy.47.3351-1,Oxyrhynchus,AD 34,0.50,,[...] son of Sarapion,200,drachma (silver),,"Source: P.Oxy. 47 3351 (https://papyri.info/ddbdp/p.oxy;47;3351)
 
 Original Text:
 1 [...]
@@ -4683,7 +4683,7 @@ Term: Mesore 30, year 20 of Tiberius (= 23 August AD 34) (ll. 6-8).
 Date: Mecheir 26, year 20 of Tiberius (= 20 February AD 34).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.48.3393-1,Aurelius Dorotheus son of Aphynchius; Aurelius Papnuthius son of Aphynchius,moneylenders (unnamed),,,,AD 365,,Oxyrhynchus,"Source: P.Oxy. 48 3393 (https://papyri.info/ddbdp/p.oxy;48;3393)
+ALD-P.Oxy.48.3393-1,Oxyrhynchus,AD 365,,Aurelius Dorotheus son of Aphynchius; Aurelius Papnuthius son of Aphynchius,moneylenders (unnamed),,,,"Source: P.Oxy. 48 3393 (https://papyri.info/ddbdp/p.oxy;48;3393)
 
 Original Text:
 1 ὑ̈πατείας τῶν δεσποτῶν ἡμῶν Οὐαλεντινιανοῦ καὶ Οὐάλεντος
@@ -4747,7 +4747,7 @@ Date: not stated; the year of the document (Payni 14, consulship of Valentinian 
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.49.3468-1,Apollonius [...]; Theon son of Hasychis,Harsiesis,200,drachma (silver),,AD 1-100,,Oxyrhynchus,"Source: P.Oxy. 49 3468 (https://papyri.info/ddbdp/p.oxy;49;3468)
+ALD-P.Oxy.49.3468-1,Oxyrhynchus,AD 1-100,,Apollonius [...]; Theon son of Hasychis,Harsiesis,200,drachma (silver),,"Source: P.Oxy. 49 3468 (https://papyri.info/ddbdp/p.oxy;49;3468)
 
 Original Text:
 (ctr)
@@ -4828,7 +4828,7 @@ Date: not stated; the year of the document.
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.49.3485-1,Hermogenes son of Hermogenes; Hermias son of Zenodorus,Ischyrion son of Dionysius,108,drachma (silver),,AD 38,0.34,Sinary,"Source: P.Oxy. 49 3485 (https://papyri.info/ddbdp/p.oxy;49;3485)
+ALD-P.Oxy.49.3485-1,Sinary,AD 38,0.34,Hermogenes son of Hermogenes; Hermias son of Zenodorus,Ischyrion son of Dionysius,108,drachma (silver),,"Source: P.Oxy. 49 3485 (https://papyri.info/ddbdp/p.oxy;49;3485)
 
 Original Text:
 (recto)
@@ -4922,7 +4922,7 @@ Term: Choiak 30, year 3 of Gaius (= 26 December AD 38) (ll. 10-13); the borrower
 Date: Mesore 30, year 2 of Gaius (= 23 August AD 38).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.49.3487-1,Sarapion son of Ptolemaeus,Tausoreus daughter of Panemgeus,72,drachma (silver),,AD 63,,Oxyrhynchus,"Source: P.Oxy. 49 3487 (https://papyri.info/ddbdp/p.oxy;49;3487)
+ALD-P.Oxy.49.3487-1,Oxyrhynchus,AD 63,,Sarapion son of Ptolemaeus,Tausoreus daughter of Panemgeus,72,drachma (silver),,"Source: P.Oxy. 49 3487 (https://papyri.info/ddbdp/p.oxy;49;3487)
 
 Original Text:
 1 : ϛ
@@ -5014,7 +5014,7 @@ Loan in ll. 10-19: lent by a wife to her husband under a note of hand, paid thro
 Date: Neroneios Sebastos (= Choiak), year 10 of Nero (= November/December AD 63).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.49.3490-1,Amois son of Pompeius,Theon son of Theon,200,drachma (silver),,AD 140-141,,Oxyrhynchus,"Source: P.Oxy. 49 3490 (https://papyri.info/ddbdp/p.oxy;49;3490)
+ALD-P.Oxy.49.3490-1,Oxyrhynchus,AD 140-141,,Amois son of Pompeius,Theon son of Theon,200,drachma (silver),,"Source: P.Oxy. 49 3490 (https://papyri.info/ddbdp/p.oxy;49;3490)
 
 Original Text:
 1 Ἀμόϊς Πομπηΐ̈[ο]υ τοῦ Πομπηΐ̈ου [μητρὸς]
@@ -5051,7 +5051,7 @@ Date: the date line is lost; year 4 of Antoninus Pius from the term (HGV: AD 140
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.50.3557-1,Apollonius son of Sarapion,Eudaemon son of Pet[...]uris alias Apollonius,300 [...] 8,drachma (silver),,AD 118,0.16-0.24,Oxyrhynchus,"Source: P.Oxy. 50 3557 (https://papyri.info/ddbdp/p.oxy;50;3557)
+ALD-P.Oxy.50.3557-1,Oxyrhynchus,AD 118,0.16-0.24,Apollonius son of Sarapion,Eudaemon son of Pet[...]uris alias Apollonius,300 [...] 8,drachma (silver),,"Source: P.Oxy. 50 3557 (https://papyri.info/ddbdp/p.oxy;50;3557)
 
 Original Text:
 1 Χρύσερμος ἱερεὺς καὶ ἀρχιδικαστὴς Ὀξυρυγχείτου στρ(ατηγῷ)
@@ -5125,7 +5125,7 @@ Date: Neos Sebastos (= Hathyr), year 3 of Hadrian (= October/November AD 118).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.50.3560-1,Myrtilus,Apollonides son of Leonides,160,drachma (silver),12,AD 163,0.41-0.49,Talao,"Source: P.Oxy. 50 3560 (https://papyri.info/ddbdp/p.oxy;50;3560)
+ALD-P.Oxy.50.3560-1,Talao,AD 163,0.41-0.49,Myrtilus,Apollonides son of Leonides,160,drachma (silver),12,"Source: P.Oxy. 50 3560 (https://papyri.info/ddbdp/p.oxy;50;3560)
 
 Original Text:
 1 παρε(τέθη)
@@ -5198,7 +5198,7 @@ Date: Phaophi, year 4 of Marcus Aurelius and Lucius Verus (= September/October A
 Earlier liens on the same property (ll. 19-28) are listed in need_review.md.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.50.3599-1,Aurelius Timagenes son of Philoxenus; Aurelius Mouses son of Phoebammon,Flavius Dorotheus son of Joseph,1,solidus (gold),,AD 460,0.30-0.38,Oxyrhynchite nome,"Source: P.Oxy. 50 3599 (https://papyri.info/ddbdp/p.oxy;50;3599)
+ALD-P.Oxy.50.3599-1,Oxyrhynchite nome,AD 460,0.30-0.38,Aurelius Timagenes son of Philoxenus; Aurelius Mouses son of Phoebammon,Flavius Dorotheus son of Joseph,1,solidus (gold),,"Source: P.Oxy. 50 3599 (https://papyri.info/ddbdp/p.oxy;50;3599)
 
 Original Text:
 (recto)
@@ -5273,7 +5273,7 @@ Date: Choiak 13, indiction 14 (= 9 December AD 460).
 Place: not stated; the place of the document (HGV: Oxyrhynchite nome); the borrowers are of Oxyrhynchus, the lender of Upper Cynopolis.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.55.3798-1,Epimachus son of Epimachus,Artemis daughter of Eudaemon,300,drachma (silver),12,AD 142,,Oxyrhynchus,"Source: P.Oxy. 55 3798 (https://papyri.info/ddbdp/p.oxy;55;3798)
+ALD-P.Oxy.55.3798-1,Oxyrhynchus,AD 142,,Epimachus son of Epimachus,Artemis daughter of Eudaemon,300,drachma (silver),12,"Source: P.Oxy. 55 3798 (https://papyri.info/ddbdp/p.oxy;55;3798)
 
 Original Text:
 (recto)
@@ -5405,7 +5405,7 @@ Date: Phaophi of the past year 6 of Antoninus Pius (= September/October AD 142).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.61.4120-1,Aurelius Asclepiades son of Didymus,Aurelius Apollonius,1; 2200,talent (silver); drachma (silver),,AD 286,,Oxyrhynchus,"Source: P.Oxy. 61 4120 (https://papyri.info/ddbdp/p.oxy;61;4120)
+ALD-P.Oxy.61.4120-1,Oxyrhynchus,AD 286,,Aurelius Asclepiades son of Didymus,Aurelius Apollonius,1; 2200,talent (silver); drachma (silver),,"Source: P.Oxy. 61 4120 (https://papyri.info/ddbdp/p.oxy;61;4120)
 
 Original Text:
 (recto)
@@ -5508,7 +5508,7 @@ Date: Pachon of year 2 and 1 of Diocletian and Maximian (= April/May AD 286).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.61.4124-1,Aurelius Choous son of Cames,Aurelius Ammon son of Theon,3; 3000,talent (silver); drachma (silver),0,AD 318,0.00-0.08,Oxyrhynchus,"Source: P.Oxy. 61 4124 (https://papyri.info/ddbdp/p.oxy;61;4124)
+ALD-P.Oxy.61.4124-1,Oxyrhynchus,AD 318,0.00-0.08,Aurelius Choous son of Cames,Aurelius Ammon son of Theon,3; 3000,talent (silver); drachma (silver),0,"Source: P.Oxy. 61 4124 (https://papyri.info/ddbdp/p.oxy;61;4124)
 
 Original Text:
 (r,1)
@@ -5601,7 +5601,7 @@ Date: the month is lost; consulship of Licinius (5th) and Crispus (1st) = AD 318
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-P.Oxy.61.4125-1,Aurelius Apphous son of Theon,Aurelius Aphthonius son of Stratonicus,2; 4000,talent (silver); drachma (silver),,AD 322,0.08,Oxyrhynchus,"Source: P.Oxy. 61 4125 (https://papyri.info/ddbdp/p.oxy;61;4125)
+ALD-P.Oxy.61.4125-1,Oxyrhynchus,AD 322,0.08,Aurelius Apphous son of Theon,Aurelius Aphthonius son of Stratonicus,2; 4000,talent (silver); drachma (silver),,"Source: P.Oxy. 61 4125 (https://papyri.info/ddbdp/p.oxy;61;4125)
 
 Original Text:
 (1)
@@ -5693,7 +5693,7 @@ Date: Pharmouthi 3, after the consulship of Licinius (6th) and Licinius Caesar (
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.10.10222-1,Heraclius son of Soterichus; Thermutharion freedwoman of Sotades,Thoonis son of Patbeus,104,drachma (silver),,AD 20,0.12,Oxyrhynchus,"Source: SB 10 10222 (= P.Oxy. 2 305 descr.) (https://papyri.info/ddbdp/sb;10;10222)
+ALD-SB.10.10222-1,Oxyrhynchus,AD 20,0.12,Heraclius son of Soterichus; Thermutharion freedwoman of Sotades,Thoonis son of Patbeus,104,drachma (silver),,"Source: SB 10 10222 (= P.Oxy. 2 305 descr.) (https://papyri.info/ddbdp/sb;10;10222)
 
 Original Text:
 1 Ἡράκλειος Σωτηρίχου Πέρσ[η]ς τῆς ἐπιγονῆς
@@ -5769,7 +5769,7 @@ Term: until Mecheir 30, year 6 of Tiberius (= 25 February AD 20).
 Date: Tybi 16, year 6 of Tiberius (= 12 January AD 20).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.10.10234-1,[...],[...]os son of Satyrus,100,drachma (silver),,AD 35,,Oxyrhynchus,"Source: SB 10 10234 (= P.Oxy. 2 323 descr.) (https://papyri.info/ddbdp/sb;10;10234)
+ALD-SB.10.10234-1,Oxyrhynchus,AD 35,,[...],[...]os son of Satyrus,100,drachma (silver),,"Source: SB 10 10234 (= P.Oxy. 2 323 descr.) (https://papyri.info/ddbdp/sb;10;10234)
 
 Original Text:
 1 [...]...[...]. Πνεφερ[ῶ]τος
@@ -5816,7 +5816,7 @@ Date: Neos Sebastos 21, year 22 of Tiberius (= 18 November AD 35).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.10.10238-1,Thamounis daughter of Onnophris,Tryphon son of Dionysius,16,drachma (silver),,AD 37,0.77-1.67,Oxyrhynchus,"Source: SB 10 10238 (= P.Oxy. 2 319 descr.) (https://papyri.info/ddbdp/sb;10;10238)
+ALD-SB.10.10238-1,Oxyrhynchus,AD 37,0.77-1.67,Thamounis daughter of Onnophris,Tryphon son of Dionysius,16,drachma (silver),,"Source: SB 10 10238 (= P.Oxy. 2 319 descr.) (https://papyri.info/ddbdp/sb;10;10238)
 
 Original Text:
 1 [Θαμοῦνις τῆς Ὀν]ν̣ώφριο[ς] [Περ]σείνη μετ[ὰ κ]υρίου
@@ -5879,7 +5879,7 @@ Term: until the 30th of [...], year 3 of Gaius (= AD 38/39).
 Date: Choiak 24, year 2 of Gaius (= 20 December AD 37).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.10.10246-1,Tryphon son of Dionysius,Thoonis son of Thoonis,104,drachma (silver),,AD 55,0.24,Oxyrhynchus,"Source: SB 10 10246 (= P.Oxy. 2 304 descr.) (https://papyri.info/ddbdp/sb;10;10246)
+ALD-SB.10.10246-1,Oxyrhynchus,AD 55,0.24,Tryphon son of Dionysius,Thoonis son of Thoonis,104,drachma (silver),,"Source: SB 10 10246 (= P.Oxy. 2 304 descr.) (https://papyri.info/ddbdp/sb;10;10246)
 
 Original Text:
 1 Τρύφων Διονυσίου Πέρ[σης τῆς ἐ]π̣ι̣γ̣ο̣ν̣ῆ̣ς̣ Θοώνει
@@ -5962,7 +5962,7 @@ Term: until Tybi 30, year 2 of Nero (= 26 January AD 56).
 Date: Neos Sebastos 4, year 2 of Nero (= 1 November AD 55).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.12.10781.Ro-1,Marcus Antonius Asclepiades,Herais daughter of Peteuris,,drachma (silver),,AD 121,,Oxyrhynchus,"Source: SB 12 10781 Ro (= P.Oxy. 3 592 Ro descr.) (https://papyri.info/ddbdp/sb;12;10781r)
+ALD-SB.12.10781.Ro-1,Oxyrhynchus,AD 121,,Marcus Antonius Asclepiades,Herais daughter of Peteuris,,drachma (silver),,"Source: SB 12 10781 Ro (= P.Oxy. 3 592 Ro descr.) (https://papyri.info/ddbdp/sb;12;10781r)
 
 Original Text:
 1 [...].[...]..[...]
@@ -5995,7 +5995,7 @@ Date: Choiak, year 6 of Hadrian (= November/December AD 121).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.14.11491-1,Tryphon son of Dionysius; Onnophris son of Dionysius; Sareus daughter of Apion,Tryphaena daughter of [...]orion,314,drachma (silver),72.25,AD 59,0.44,Oxyrhynchus,"Source: SB 14 11491 (= P.Oxy. 2 320 descr.) (https://papyri.info/ddbdp/sb;14;11491)
+ALD-SB.14.11491-1,Oxyrhynchus,AD 59,0.44,Tryphon son of Dionysius; Onnophris son of Dionysius; Sareus daughter of Apion,Tryphaena daughter of [...]orion,314,drachma (silver),72.25,"Source: SB 14 11491 (= P.Oxy. 2 320 descr.) (https://papyri.info/ddbdp/sb;14;11491)
 
 Original Text:
 1 ⟦ ἔτους πέμπ̣του Νέρωνος Κλα[υδ]ί̣ου Καίσαρος Σεβαστοῦ Γερμα̣νι̣κ[ο]ῦ ⟧
@@ -6058,7 +6058,7 @@ Term: until Neos Sebastos 30, year 6 of Nero (= 27 November AD 59).
 Date: Payni 25, year 5 of Nero (= 19 June AD 59).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.14.11847-1,,Sarapion son of [...],,,,AD 91,,Oxyrhynchus,"Source: SB 14 11847 (= P.Oxy. 10 1317 descr.) (https://papyri.info/ddbdp/sb;14;11847)
+ALD-SB.14.11847-1,Oxyrhynchus,AD 91,,,Sarapion son of [...],,,,"Source: SB 14 11847 (= P.Oxy. 10 1317 descr.) (https://papyri.info/ddbdp/sb;14;11847)
 
 Original Text:
 1 ἀντίγραφον. ἔτους δεκ[άτου Αὐτοκράτορος]
@@ -6083,7 +6083,7 @@ Date: Soterios 27, year 10 of Domitian (= 21 June AD 91).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.20.14096-1,Adrastus son of Adrastus,Sarapous daughter of Sarapion,500,drachma (silver),,AD 74,,Oxyrhynchus,"Source: SB 20 14096 (= P.Oxy. 2 362 descr.) (https://papyri.info/ddbdp/sb;20;14096)
+ALD-SB.20.14096-1,Oxyrhynchus,AD 74,,Adrastus son of Adrastus,Sarapous daughter of Sarapion,500,drachma (silver),,"Source: SB 20 14096 (= P.Oxy. 2 362 descr.) (https://papyri.info/ddbdp/sb;20;14096)
 
 Original Text:
 1 β̣[...]..λ πλ
@@ -6133,7 +6133,7 @@ Loan in ll. 9-14; the document is the receipt for its repayment (Mecheir 26, yea
 Date: Neos Sebastos, year 7 of Vespasian (= October/November AD 74).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.26.16745-1,[...]os; Ptole[...],Theoxenus,32,artaba (wheat),,66-65 BC,,Oxyrhynchus,"Source: SB 26 16745 (= P.Oxy. 4 836 descr.) (https://papyri.info/ddbdp/sb;26;16745)
+ALD-SB.26.16745-1,Oxyrhynchus,66-65 BC,,[...]os; Ptole[...],Theoxenus,32,artaba (wheat),,"Source: SB 26 16745 (= P.Oxy. 4 836 descr.) (https://papyri.info/ddbdp/sb;26;16745)
 
 Original Text:
 1 [...]
@@ -6208,7 +6208,7 @@ Date: year 16 of Ptolemy XII (HGV).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-SB.30.17614-1,Aurelius Sarapion alias Apollonius,[...]ieus,5225,drachma,12,AD 269,,Oxyrhynchus,"Source: SB 30 17614 (= P.Oxy. 12 1561 descr.) (https://papyri.info/ddbdp/sb;30;17614)
+ALD-SB.30.17614-1,Oxyrhynchus,AD 269,,Aurelius Sarapion alias Apollonius,[...]ieus,5225,drachma,12,"Source: SB 30 17614 (= P.Oxy. 12 1561 descr.) (https://papyri.info/ddbdp/sb;30;17614)
 
 Original Text:
 1 [...]
@@ -6264,7 +6264,7 @@ Date: Thoth, year 2 of Claudius II (= August/September AD 269).
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-Stud.Pal.4.p.114-1,Pauseiris son of Pauseirion; Theodous daughter of Thallus,,,,,AD 102,,Oxyrhynchus,"Source: Stud.Pal. 4 p. 114 (= P.Oxy. 3 636 descr.) (https://papyri.info/ddbdp/stud.pal;4;pg114)
+ALD-Stud.Pal.4.p.114-1,Oxyrhynchus,AD 102,,Pauseiris son of Pauseirion; Theodous daughter of Thallus,,,,,"Source: Stud.Pal. 4 p. 114 (= P.Oxy. 3 636 descr.) (https://papyri.info/ddbdp/stud.pal;4;pg114)
 
 Original Text:
 1 Σαραπίωνι καὶ Σαραπιάδῃ βιβλ(ιοφύλαξιν)
@@ -6322,7 +6322,7 @@ Loan in ll. 14-19; the house share passed from it to the declarant's wife Demetr
 Date: not stated; the year of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
-ALD-ZPE.222.179-1,Apollonia daughter of Demetrius,Selene daughter of Heron,1120,drachma (silver),,AD 79-80,,Oxyrhynchus,"Source: ZPE 222 (2022) 179 (= P.Oxy. 2 373 descr.) (https://papyri.info/ddbdp/zpe;222;179)
+ALD-ZPE.222.179-1,Oxyrhynchus,AD 79-80,,Apollonia daughter of Demetrius,Selene daughter of Heron,1120,drachma (silver),,"Source: ZPE 222 (2022) 179 (= P.Oxy. 2 373 descr.) (https://papyri.info/ddbdp/zpe;222;179)
 
 Original Text:
 1 [ἔτους] [δε]υτέρου Αὐτοκράτορος Τίτου Καίσαρ[ος Οὐεσπασιανοῦ Σεβαστοῦ] [...]

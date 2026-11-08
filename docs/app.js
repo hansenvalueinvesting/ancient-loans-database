@@ -7,7 +7,7 @@ const $ = (id) => document.getElementById(id);
 const state = { all: [], picked: {}, sortKey: 'id', sortDir: 1, shown: [] };
 
 // CSV columns (in order) and the columns shown in the table.
-const COLS = ['id', 'borrower', 'lender', 'volume', 'currency', 'interest (%)', 'date', 'duration (years)', 'place', 'notes'];
+const COLS = ['id', 'place', 'date', 'duration (years)', 'borrower', 'lender', 'volume', 'currency', 'interest (%)', 'notes'];  // order set by Hansen (Nov 2026)
 const LIST_COLS = COLS.slice(0, -1);
 
 // ---------- data ----------
