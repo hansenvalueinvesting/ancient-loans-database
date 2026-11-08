@@ -211,31 +211,30 @@ function drawMap(rows) {
   $('map-note').textContent = off ? `${off.toLocaleString()} loan${off === 1 ? '' : 's'} not on the map (place unknown or not yet located).` : '';
 }
 
-// Chart: one dot per loan at its date (a date range at its middle); loans in the same 25-year period are
-// stacked so none hide each other. Click a dot = open the loan.
-const BIN = 25;
+// Chart: a timeline with one dot per loan at its exact date (a date range at its middle). Only loans with the
+// same date (same year or same range) are stacked, so none hide each other. Click a dot = open the loan.
+const BIN = 25;   // tick spacing of the timeline, in years
 function drawChart(rows) {
   if (!window.Chart) return;
   const dated = rows.filter((l) => l.yearStart != null)
     .map((l) => ({ l, mid: (l.yearStart + l.yearEnd) / 2 })).sort((a, b) => a.mid - b.mid);
   const undated = rows.length - dated.length;
-  const astro = (y) => (y < 0 ? y + 1 : y);            // scale without a year 0: 1 BC -> 0, AD 1 -> 1
   const stack = new Map();
   const points = dated.map(({ l, mid }) => {
-    const b = Math.floor((astro(mid) - 1) / BIN);
-    stack.set(b, (stack.get(b) || 0) + 1);
-    return { x: mid, y: stack.get(b), loan: l };
+    stack.set(l.date, (stack.get(l.date) || 0) + 1);
+    return { x: mid, y: stack.get(l.date), loan: l };
   });
   // Axis in years, BC negative; ticks every 25 years (0 marks the turn from BC to AD).
   const yearLabel = (y) => (y < 0 ? `${-y} BC` : y === 0 ? 'BC | AD' : `AD ${y}`);
   const xs = points.map((p) => p.x);
+  const ymax = Math.max(3, ...points.map((p) => p.y)) + 1;
   const xmin = xs.length ? Math.floor(Math.min(...xs) / BIN) * BIN : 0, xmax = xs.length ? Math.ceil(Math.max(...xs) / BIN) * BIN : BIN;
   if (!viz.chart) {
     viz.chart = new Chart($('chart-time'), {
       type: 'scatter',
       data: { datasets: [{ data: points, pointRadius: 4, pointHoverRadius: 6, backgroundColor: '#3388ff' }] },
       options: {
-        aspectRatio: 3, animation: false,
+        aspectRatio: 5, animation: false,
         plugins: {
           legend: { display: false },
           tooltip: { callbacks: { label: (ctx) => loanTip(ctx.raw.loan) } },
@@ -244,13 +243,14 @@ function drawChart(rows) {
         scales: {
           x: { min: xmin, max: xmax, ticks: { stepSize: BIN, callback: yearLabel },
                title: { display: true, text: 'Date (a date range at its middle)' } },
-          y: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: 'Loans in the same 25 years' } },
+          y: { min: 0, max: ymax, ticks: { stepSize: 1, precision: 0 }, title: { display: true, text: 'Loans with the same date' } },
         },
       },
     });
   } else {
     viz.chart.data.datasets[0].data = points;
     Object.assign(viz.chart.options.scales.x, { min: xmin, max: xmax });
+    viz.chart.options.scales.y.max = ymax;
     viz.chart.update();
   }
   $('chart-note').textContent = undated ? `${undated.toLocaleString()} undated loan${undated === 1 ? '' : 's'} not shown.` : '';

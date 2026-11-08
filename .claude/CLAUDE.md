@@ -57,8 +57,9 @@ below applies to any source as the database expands.
   Nov 2026: "i want to see every single individual loan, not aggreagates"): one dot per loan, loans at one place
   spread around it in a sunflower pattern (fixed pixel spacing, redone on zoom); hover = loan summary, click = loan page. Coordinates: lookup `PLACES` in `docs/app.js` from Pleiades reprPoint (Hansen chose a lookup in the site code
   over new columns); a new place in `ald.csv` needs a line there, else it is counted as "not on the map". Chart:
-  Chart.js (cdnjs) scatter, one dot per loan at its date (a date range at its midpoint, Hansen); loans of the same
-  25-year period stacked upward; hover = loan summary, click = loan page; undated loans not shown.
+  Chart.js (cdnjs) scatter as a timeline, one dot per loan at its exact date (a date range at its midpoint, Hansen);
+  stacked only when loans have the same date (Hansen, Nov 2026: "no stacking unless its genuinely in the same time
+  range"; not by 25-year periods); hover = loan summary, click = loan page; undated loans not shown.
   Filters in one row, wrapping as needed (Hansen, Nov 2026); `<nobr>` keeps each label with its box.
   Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
   "always classify into one thing"; Early/Late Roman Egypt): column `period`, entered with each row
