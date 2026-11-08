@@ -319,7 +319,11 @@ by Claude under that grant (Roman-world pass):
   57 3902-3906 seed applications, 58 3938 debt fragment, 58 3943-3946 advance fragments, 61 4117 possible writing
   exercise). P.Oxy. 62-71 (526 numbers; 270 with text; 28 candidates read): 11 rows (63 4394, 4397 x2, 4398, 64 4439,
   66 4532, 70 4772, 71 4826, 4828, 4831, 4835); 4 in need_review.md (63 4353, 4393, 67 4596, 68 4690); 63 4395 excluded
-  (bread-dole rights used in place of interest, like rent). Next: P.Oxy. 72. Everything else in
+  (bread-dole rights used in place of interest, like rent). P.Oxy. 72-88 (595 numbers; 444 with text; 37 candidates read;
+  vol. 88 has no texts yet; the series on papyri.info ends here): 16 rows (72 4896, 4897, 4902, 4903, 4904, 4907, 4918, 4921,
+  75 5052, 77 5109, 5122, 5124, 78 5173, 79 5211, 85 5520, 87 5592); 7 in need_review.md (72 4891, 4922, 4930 + 75 5070
+  + 83 5368 "I have and owe" acknowledgements, 74 4984, 75 5052 unwritten debt, 78 5169 paramone loan, 82 5320).
+  P.Oxy. done. Next series: Hansen to choose. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
