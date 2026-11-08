@@ -239,7 +239,7 @@ function drawMap(rows) {
 
 // Chart: a timeline with one dot per loan at its exact date (a date range at its middle). Only loans with the
 // same date (same year or same range) are stacked, so none hide each other. Click a dot = open the loan.
-const BIN = 25;   // tick spacing of the timeline, in years
+const BIN = 25;   // the full timeline starts and ends on a multiple of 25 years
 function drawChart(rows) {
   if (!window.Chart) return;
   const dated = rows.filter((l) => l.yearStart != null)
@@ -264,10 +264,16 @@ function drawChart(rows) {
         plugins: {
           legend: { display: false },
           tooltip: { callbacks: { label: (ctx) => loanTip(ctx.raw.loan) } },
+          // Zoom along the timeline: mouse wheel or pinch; drag to pan; not beyond the full range of the data.
+          zoom: {
+            zoom: { wheel: { enabled: true }, pinch: { enabled: true }, mode: 'x' },
+            pan: { enabled: true, mode: 'x' },
+            limits: { x: { min: 'original', max: 'original', minRange: 2 } },
+          },
         },
         onClick: (e, els) => { if (els.length) openLoan(els[0].element.$context.raw.loan); },
         scales: {
-          x: { min: xmin, max: xmax, ticks: { stepSize: BIN, callback: yearLabel },
+          x: { min: xmin, max: xmax, ticks: { maxTicksLimit: 25, callback: (v) => (Number.isInteger(v) ? yearLabel(v) : '') },
                title: { display: true, text: 'Timeline' } },
           y: { min: 0, max: ymax, ticks: { stepSize: 1, precision: 0 }, title: { display: true, text: '# of loans' } },
         },
@@ -278,6 +284,7 @@ function drawChart(rows) {
     Object.assign(viz.chart.options.scales.x, { min: xmin, max: xmax });
     viz.chart.options.scales.y.max = ymax;
     viz.chart.update();
+    if (viz.chart.resetZoom) viz.chart.resetZoom('none');
   }
   $('chart-note').textContent = undated ? `${undated.toLocaleString()} undated loan${undated === 1 ? '' : 's'} not shown.` : '';
 }
@@ -421,6 +428,7 @@ if ($('loan')) {
     update();
   });
   $('btn-csv').addEventListener('click', downloadCsv);
+  $('btn-zoom').addEventListener('click', () => { if (viz.chart && viz.chart.resetZoom) viz.chart.resetZoom(); });
   document.querySelectorAll('th[data-sort]').forEach((th) => th.addEventListener('click', () => {
     state.sortDir = state.sortKey === th.dataset.sort ? -state.sortDir : 1;
     state.sortKey = th.dataset.sort;
