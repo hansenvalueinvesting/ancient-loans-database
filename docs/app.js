@@ -170,6 +170,7 @@ function setStatus(msg) {
 const PLACES = {
   'Oxyrhynchus': [28.542574, 30.65172, 736983],
   'Palosis': [28.675965, 30.798219, 736988],
+  'Sinary': [28.77959, 30.771891, 737047],
 };
 
 const viz = { map: null, layer: null, chart: null, rows: [] };

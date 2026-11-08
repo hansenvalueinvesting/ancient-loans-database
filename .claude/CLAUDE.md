@@ -306,7 +306,11 @@ by Claude under that grant (Roman-world pass):
   (22 2350, 27 2471); 3 in need_review.md. P.Oxy. 32-41 (379 numbers; 249 with text; 18 candidates read; vols. 32, 35,
   37, 39 literary): 7 rows (34 2722, 36 2774, 36 2775 x2, 38 2834, 38 2848 Vo, 41 2956); 36 2773 (use of a loom in place of interest)
   excluded entirely (Hansen, Nov 2026: "exclude"; like rent paid by habitation). ALD-SB.14.11847-1 stays in the
-  data (Hansen: not moved to need_review.md). Next: P.Oxy. 42. Everything else in
+  data (Hansen: not moved to need_review.md). P.Oxy. 42-51 (640 numbers; 499 with text; 40 candidates read; the
+  idp sparse checkout needs `Historical/p.oxy/<vol>` added per volume): 10 rows (44 3198, 45 3266, 47 3351, 49 3468,
+  3485, 3487, 3490, 50 3557, 3560, 3599); 8 in need_review.md (43 3134 deposit, 3146 fund transfer, 48 3393 loan with no
+  sum or lender, 49 3466 pledge, 3474 seed-loan application, 3493/3494 mirror acknowledgements, 50 3560 earlier lien,
+  3589 advance in lease); 47 3355 excluded (habitation in place of interest). Next: P.Oxy. 52. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
