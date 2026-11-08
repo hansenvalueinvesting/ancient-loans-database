@@ -66,6 +66,8 @@ below applies to any source as the database expands.
   Interactive (Hansen, Nov 2026: "i can zoom in and out of it"): chartjs-plugin-zoom + hammer.js (cdnjs); wheel or
   pinch zooms the timeline, drag pans, limited to the full range; "Reset zoom" button; filters reset the zoom.
   Heading "Loans Over Time" (Hansen).
+  Map and chart side by side under the filters (Hansen, Nov 2026: "can the two visuals be side by side"): an HTML table
+  with two 50% cells (no CSS); both 420 px high (heights set in app.js).
   Loan page: a map under the location, the place marked (Hansen, Nov 2026). The place column is shown on the site as
   "Location" (Hansen, Nov 2026: "call it location instead of place"; `colLabel` in app.js); the ald.csv column and the
   URL key stay `place`.

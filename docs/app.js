@@ -256,11 +256,13 @@ function drawChart(rows) {
   const ymax = Math.max(3, ...points.map((p) => p.y)) + 1;
   const xmin = xs.length ? Math.floor(Math.min(...xs) / BIN) * BIN : 0, xmax = xs.length ? Math.ceil(Math.max(...xs) / BIN) * BIN : BIN;
   if (!viz.chart) {
+    $('chart-box').style.height = '420px';   // same height as the map beside it
+    $('chart-box').style.position = 'relative';
     viz.chart = new Chart($('chart-time'), {
       type: 'scatter',
       data: { datasets: [{ data: points, pointRadius: 4, pointHoverRadius: 6, backgroundColor: '#3388ff' }] },
       options: {
-        aspectRatio: 5, animation: false,
+        maintainAspectRatio: false, animation: false,
         plugins: {
           legend: { display: false },
           tooltip: { callbacks: { label: (ctx) => loanTip(ctx.raw.loan) } },
