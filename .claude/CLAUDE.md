@@ -63,6 +63,9 @@ below applies to any source as the database expands.
   Chart.js (cdnjs) scatter as a timeline, one dot per loan at its exact date (a date range at its midpoint, Hansen);
   stacked only when loans have the same date (Hansen, Nov 2026: "no stacking unless its genuinely in the same time
   range"; not by 25-year periods); hover = loan summary, click = loan page; undated loans not shown.
+  Loan page: a map under the location, the place marked (Hansen, Nov 2026). The place column is shown on the site as
+  "Location" (Hansen, Nov 2026: "call it location instead of place"; `colLabel` in app.js); the ald.csv column and the
+  URL key stay `place`.
   Filters in one row, wrapping as needed (Hansen, Nov 2026); `<nobr>` keeps each label with its box.
   Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
   "always classify into one thing"; Early/Late Roman Egypt): column `period`, entered with each row

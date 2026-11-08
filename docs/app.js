@@ -73,7 +73,7 @@ const fmtYear = (n) => (n < 0 ? `${-n} BC` : `AD ${n}`);
 
 // Columns with a multi-select filter. A blank value is offered as BLANK[col].
 const MULTI = ['place'];
-const BLANK = { place: '(place unknown)' };
+const BLANK = { place: '(location unknown)' };
 const shownValue = (col, v) => (v === '' ? BLANK[col] : v);
 
 // Fill each filter's suggestion list with the values not yet picked, with their number of loans.
@@ -156,6 +156,9 @@ function cellHtml(l, c) {
   return esc(l[c]);
 }
 
+// Column name as shown on the site: 'interest (%)' -> 'Interest (%)'; the place column is shown as 'Location'.
+const colLabel = (c) => (c === 'place' ? 'Location' : c[0].toUpperCase() + c.slice(1));
+
 function setStatus(msg) {
   $('status').textContent = msg;
 }
@@ -184,15 +187,19 @@ const SPREAD_KM = 2;
 const DOT_GAP = 7, DOT_R = 3.5;                         // pixels
 const spreadPx = (n) => DOT_GAP * Math.sqrt(Math.max(n - 1, 0)) + DOT_R;
 const kmPerPx = (lat, z) => (40075.016686 * Math.cos(lat * Math.PI / 180)) / (256 * 2 ** z);
+// A Leaflet map in el on the Digital Atlas of the Roman Empire (ancient place names).
+function baseMap(el) {
+  el.style.height = '420px';
+  const m = L.map(el);
+  L.tileLayer('https://dh.gu.se/tiles/imperium/{z}/{x}/{y}.png', {
+    maxNativeZoom: 11, maxZoom: 15, attribution: '<a href="https://imperium.ahlfeldt.se/">Digital Atlas of the Roman Empire</a> (CC BY 4.0)',
+  }).addTo(m);
+  return m;
+}
 function drawMap(rows) {
   if (!window.L) return;
   if (!viz.map) {
-    $('map').style.height = '420px';
-    viz.map = L.map('map').setView([29.5, 31], 6);
-    // Base map: Digital Atlas of the Roman Empire (ancient place names).
-    L.tileLayer('https://dh.gu.se/tiles/imperium/{z}/{x}/{y}.png', {
-      maxNativeZoom: 11, maxZoom: 15, attribution: '<a href="https://imperium.ahlfeldt.se/">Digital Atlas of the Roman Empire</a> (CC BY 4.0)',
-    }).addTo(viz.map);
+    viz.map = baseMap($('map')).setView([29.5, 31], 6);
     viz.layer = L.layerGroup().addTo(viz.map);
     viz.map.on('zoomend', () => drawMap(viz.rows));
   }
@@ -227,7 +234,7 @@ function drawMap(rows) {
         .addTo(viz.layer);
     });
   });
-  $('map-note').textContent = off ? `${off.toLocaleString()} loan${off === 1 ? '' : 's'} not on the map (place unknown or not yet located).` : '';
+  $('map-note').textContent = off ? `${off.toLocaleString()} loan${off === 1 ? '' : 's'} not on the map (location unknown or not yet located).` : '';
 }
 
 // Chart: a timeline with one dot per loan at its exact date (a date range at its middle). Only loans with the
@@ -367,9 +374,15 @@ async function loadLoan() {
     if (!l) return setStatus(`Loan ${id} not found.`);
     document.title = `${l.id} | Ancient Loans Database`;
     $('loan-id').textContent = l.id;
-    const label = (c) => c[0].toUpperCase() + c.slice(1);  // 'interest (%)' -> 'Interest (%)'
     $('loan').innerHTML = COLS.slice(1).map((c) =>
-      `<tr><th align="left">${label(c)}</th><td>${cellHtml(l, c)}</td></tr>`).join('');
+      `<tr><th align="left">${colLabel(c)}</th><td>${cellHtml(l, c)}${c === 'place' ? '<div id="loan-map"></div>' : ''}</td></tr>`).join('');
+    // Under the location: a map with the place marked (if its coordinates are known).
+    const p = PLACES[l.place];
+    if (p && window.L) {
+      const m = baseMap($('loan-map')).setView([p[0], p[1]], 9);
+      L.circleMarker([p[0], p[1]], { radius: 7, weight: 1, color: '#123', fillColor: '#3388ff', fillOpacity: 0.9 })
+        .bindTooltip(esc(l.place)).addTo(m);
+    }
     setStatus('');
   } catch (err) {
     setStatus(`Could not load data. ${err.message}`);
