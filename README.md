@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-08 (P.Oxy. 48 3393)**
+- Added ALD-P.Oxy.48.3393-1 (Hansen: "add"; loan from unnamed moneylenders, sum not given), moved from `need_review.md`. Database: 86 loans.
+
 **2026-11-08 (P.Oxy. 42-51)**
 - Added 10 loans from P.Oxy. 42-51 (all 640 numbers reviewed; 499 with a text on papyri.info): ALD-P.Oxy.44.3198-1 - ALD-P.Oxy.50.3599-1. 8 entries added to `need_review.md`. Map: Sinary located (Pleiades). Database: 85 loans.
 
