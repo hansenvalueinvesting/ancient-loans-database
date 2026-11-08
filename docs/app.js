@@ -242,8 +242,8 @@ function drawChart(rows) {
         onClick: (e, els) => { if (els.length) openLoan(els[0].element.$context.raw.loan); },
         scales: {
           x: { min: xmin, max: xmax, ticks: { stepSize: BIN, callback: yearLabel },
-               title: { display: true, text: 'Date (a date range at its middle)' } },
-          y: { min: 0, max: ymax, ticks: { stepSize: 1, precision: 0 }, title: { display: true, text: 'Loans with the same date' } },
+               title: { display: true, text: 'Timeline' } },
+          y: { min: 0, max: ymax, ticks: { stepSize: 1, precision: 0 }, title: { display: true, text: '# of loans' } },
         },
       },
     });
