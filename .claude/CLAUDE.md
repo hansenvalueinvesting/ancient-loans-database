@@ -71,7 +71,8 @@ below applies to any source as the database expands.
   Loan page: a map under the location, the place marked (Hansen, Nov 2026). The place column is shown on the site as
   "Location" (Hansen, Nov 2026: "call it location instead of place"; `colLabel` in app.js); the ald.csv column and the
   URL key stay `place`.
-  Search: several terms separated by `;` (Hansen, Nov 2026); a loan matches if it contains any of them.
+  Search (Hansen, Nov 2026): `,` narrows (all terms of a group: `X,y` = loans with X and y), `;` adds groups
+  (`X;y` = loans with X plus loans with y); the box shows how.
   Filters in one row, wrapping as needed (Hansen, Nov 2026); `<nobr>` keeps each label with its box.
   Historical period (Hansen, Oct 2026: "add it in front of everything, and make it filterable";
   "always classify into one thing"; Early/Late Roman Egypt): column `period`, entered with each row

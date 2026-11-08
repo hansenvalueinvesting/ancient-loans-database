@@ -294,18 +294,20 @@ function drawChart(rows) {
 // ---------- filtering & table ----------
 
 // A loan matches when it is in any picked value of each multi-select filter, its year range
-// overlaps the year filter, and it contains any of the search terms (separated by ;).
+// overlaps the year filter, and it matches the search (see groups below).
 function filtered() {
-  // Search: several terms separated by ';' match a loan containing any of them.
-  const terms = $('f-search').value.toLowerCase().split(';').map((x) => x.trim()).filter(Boolean);
+  // Search: ',' narrows (a loan must contain every term of a group), ';' adds (a loan may match any group).
+  // 'X,y' = loans with both X and y; 'X;y' = loans with X plus loans with y.
+  const groups = $('f-search').value.toLowerCase().split(';')
+    .map((g) => g.split(',').map((x) => x.trim()).filter(Boolean)).filter((g) => g.length);
   const from = parseYear($('f-from').value), to = parseYear($('f-to').value);
   return state.all.filter((l) => {
     if (MULTI.some((col) => state.picked[col].size && !state.picked[col].has(l[col]))) return false;
     if (from != null && (l.yearEnd == null || l.yearEnd < from)) return false;
     if (to != null && (l.yearStart == null || l.yearStart > to)) return false;
-    if (terms.length) {
+    if (groups.length) {
       const text = LIST_COLS.map((c) => l[c]).join(' ').toLowerCase();
-      if (!terms.some((x) => text.includes(x))) return false;
+      if (!groups.some((g) => g.every((x) => text.includes(x)))) return false;
     }
     return true;
   });
