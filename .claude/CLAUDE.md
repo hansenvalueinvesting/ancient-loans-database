@@ -365,7 +365,12 @@ by Claude under that grant (Roman-world pass):
   (Hansen: "matronymics and patronymics technically do count as names"): `son of Quintus Axius`, no "(unnamed)"; the same for husband, wife and mother (Hansen: "take husband or wife the
   same way ... since it is specific enough to trace to a name"): `wife of Orseus`, `husband of Thermouthis`, `mother of Harmaeis`; undated loans take the speech's or letter's year, and the
   note always says how the date was found ("the year of the speech"; or e.g. "two years ago" -> speech year minus 2).
-  Kings and cities as parties: `Ariobarzanes III (king of Cappadocia)`, `Salamis (city)`. 16 rows; place `Rome` (Pleiades 423025). Everything else in
+  Kings and cities as parties: `Ariobarzanes III (king of Cappadocia)`, `Salamis (city)`. 16 rows; place `Rome` (Pleiades 423025). Other Latin authors (Hansen, Nov 2026: "go on to the other authors"): same method; 1,668 passages
+  with loan words in 45 authors; read: histories, biographies, letters, essays, anecdote collections (525 passages, shown as
+  keyword windows, full sections pulled for candidates); set aside unread as not reporting real loans: poetry, comedy,
+  novels, declamations, Quintilian, technical works, Christian authors (say so if Hansen wants them read). 11 rows (Caes.,
+  Nep., Sall., Liv., Sen., Gell., Plin.); state and city parties `Rome (state)`, `Carthage (city)`; a source with no date ->
+  date empty (Sen. Ben. 4.39.1); a text error in the digital edition is kept and noted (Plin. Ep. 6.8.4 "Konjunktivs"). Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

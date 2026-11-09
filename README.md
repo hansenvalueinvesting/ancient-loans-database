@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-09 (Latin authors)**
+- Added 11 loans from Latin authors other than Cicero (Perseus, CC BY-SA 4.0): ALD-Caes.BC.1.39.3-1 - ALD-Sen.Ben.4.39.1-1 (Caesar, Nepos, Sallust, Livy, Seneca, Gellius, Pliny the Younger; 210 BC - AD 107). 9 entries added to `need_review.md`. Database: 240 loans.
+
 **2026-11-09 (spouses)**
 - Husbands, wives and mothers identified by a named person stand without "(unnamed)" (Hansen), as patronymics: 25 rows of the Michigan registers (P.Mich. 2 121 Vo, 5 237, 238 Ro, 240, 2 128), e.g. "Orseus; wife of Orseus". Database: 229 loans.
 
