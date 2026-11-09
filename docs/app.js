@@ -191,10 +191,11 @@ const openLoan = (l) => { location.href = `loan.html?id=${encodeURIComponent(l.i
 
 // Map: one dot per loan. Loans at the same place are laid out around it in a sunflower pattern (fixed spacing
 // in screen pixels, redone on zoom), so every loan stays visible. Zoomed out, when the dots of a place would
-// spread more than SPREAD_KM from it, they merge into one blob sized by the number of loans; clicking the blob
+// spread more than SPREAD_KM from it, they merge into one blob sized by the number of loans (relative to the largest place, capped at BLOB_MAX); clicking the blob
 // zooms in until its loans show as dots. Click a dot = open the loan.
 const SPREAD_KM = 2;
 const DOT_GAP = 7, DOT_R = 3.5;                         // pixels
+const BLOB_MIN = 5, BLOB_MAX = 21;                      // blob radius in pixels: the largest place gets BLOB_MAX, the rest scale by area
 const spreadPx = (n) => DOT_GAP * Math.sqrt(Math.max(n - 1, 0)) + DOT_R;
 const kmPerPx = (lat, z) => (40075.016686 * Math.cos(lat * Math.PI / 180)) / (256 * 2 ** z);
 // A Leaflet map in el on the Digital Atlas of the Roman Empire (ancient place names).
@@ -217,6 +218,7 @@ function drawMap(rows) {
   viz.layer.clearLayers();
   const byPlace = new Map();
   rows.forEach((l) => { if (!byPlace.has(l.place)) byPlace.set(l.place, []); byPlace.get(l.place).push(l); });
+  const nMax = Math.max(1, ...[...byPlace.values()].map((v) => v.length));
   let off = 0;
   byPlace.forEach((loans, place) => {
     const p = PLACES[place];
@@ -224,7 +226,7 @@ function drawMap(rows) {
     const z = viz.map.getZoom();
     if (spreadPx(loans.length) * kmPerPx(p[0], z) > SPREAD_KM) {
       const n = loans.length;
-      L.circleMarker([p[0], p[1]], { radius: 5 + 1.5 * Math.sqrt(n), weight: 1, color: '#123', fillColor: '#3388ff', fillOpacity: 0.7 })
+      L.circleMarker([p[0], p[1]], { radius: BLOB_MIN + (BLOB_MAX - BLOB_MIN) * Math.sqrt(n / nMax), weight: 1, color: '#123', fillColor: '#3388ff', fillOpacity: 0.7 })
         .bindTooltip(`${esc(place)}: ${n.toLocaleString()} loan${n === 1 ? '' : 's'} (click to zoom in)`)
         .on('click', () => {
           let zz = z;
