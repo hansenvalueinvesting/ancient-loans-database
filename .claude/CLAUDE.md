@@ -380,7 +380,7 @@ by Claude under that grant (Roman-world pass):
   so you are actually just reading the whole thing"; papyri already reviewed by keyword/tag (P.Oxy., P.Mich.) are to be
   reread in full too, after the Roman and Greek literature ("go for the roman and greek ones first. make sure we don't have
   any dupes"). Method: every work split into chunks; helper agents read each chunk completely and report specific loans;
-  each report checked against the text before entry; new rows matched against existing rows so no loan is entered twice. Progress is counted by texts read (Hansen, Nov 2026: "i want to think about this as reading texts"; work in small steps): first stop after 126 Latin works by 14 authors (see coverage_log.md); 16 loans reported there, not yet checked or entered. Everything else in
+  each report checked against the text before entry; new rows matched against existing rows so no loan is entered twice. Progress is counted by texts read (Hansen, Nov 2026: "i want to think about this as reading texts"; work in small steps): coverage_log.md keeps, under "Texts read in full", a plain list of the names of completed texts, in-progress texts marked "(IN PROGRESS)" (Hansen: "don't generalize"; table format unchanged). First stop: 126 Latin works; 16 loans reported, not yet checked or entered. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
