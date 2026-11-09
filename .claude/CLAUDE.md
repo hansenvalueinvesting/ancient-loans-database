@@ -35,7 +35,7 @@ below applies to any source as the database expands.
   include. i can review them by hand"): loan-like transactions not entered (loan not shown to be made, advances,
   pawns, antichretic arrangements), one table row each with link and reason; most recent review first. Renamed from
   `semi_loans.md` (Hansen, Nov 2026).
-- **Coverage log: `coverage_log.md`** (Hansen, Nov 2026): only a plain list of the names of completed texts, one per line
+- **Coverage log: `coverage_log.md`** (Hansen, Nov 2026): only a plain list of the names of completed texts, one "- " item per line (as Hansen formatted it)
   ("Author, Title"), texts in progress marked "(IN PROGRESS)"; no table, heading or other formatting ("i want the coverage
   log to be only this altogether"). Update it with every batch.
 - **Archive: `ald1.csv`** (Hansen, Nov 2026: "empty out ald.csv so it starts blank, and move all current data into

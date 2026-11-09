@@ -3,125 +3,125 @@
 - Plautus, Titus Maccius, Aulularia
 - Plautus, Titus Maccius, Bacchides
 - Plautus, Titus Maccius, Captivi
-Plautus, Titus Maccius, Casina
-Plautus, Titus Maccius, Cistellaria
-Plautus, Titus Maccius, Curculio
-Plautus, Titus Maccius, Epidicus
-Plautus, Titus Maccius, Menaechmi
-Plautus, Titus Maccius, Mercator
-Plautus, Titus Maccius, Miles Gloriosus
-Plautus, Titus Maccius, Mostellaria
-Plautus, Titus Maccius, Persa
-Plautus, Titus Maccius, Poenulus
-Plautus, Titus Maccius, Pseudolus
-Plautus, Titus Maccius, Rudens
-Plautus, Titus Maccius, Stichus
-Plautus, Titus Maccius, Trinummus
-Plautus, Titus Maccius, Truculentus
-Terence, Andria
-Terence, Heautontimorumenos
-Terence, Eunuchus
-Terence, Phormio
-Terence, Hecyra
-Terence, Adelphi
-Pseudo-Caesar, De Bello Africo
-Pseudo-Caesar, De Bello Alexandrino
-Pseudo-Caesar, De Bello Hispaniensi
-Julius Caesar, Gallic War
-Julius Caesar, Civil War
-Catullus, C. Valerius, Carmina
-Cicero, Marcus Tullius, Pro P. Quinctio
-Cicero, Marcus Tullius, Pro S. Roscio Amerino
-Cicero, Marcus Tullius, Pro Q. Roscio Comoedo
-Cicero, Marcus Tullius, Divinatio in Q. Caecilium
-Cicero, Marcus Tullius, In C. Verrem
-Cicero, Marcus Tullius, Pro M. Tullio
-Cicero, Marcus Tullius, Pro Fonteio
-Cicero, Marcus Tullius, Pro A. Caecina
-Cicero, Marcus Tullius, De Imperio Cn. Pompei Ad Quirites
-Cicero, Marcus Tullius, Pro A. Cluentio
-Cicero, Marcus Tullius, De Lege Agraria
-Cicero, Marcus Tullius, Pro C. Rabirio Perduellionis Reo Ad Quirites
-Cicero, Marcus Tullius, In Catilinam
-Cicero, Marcus Tullius, Pro L. Murena
-Cicero, Marcus Tullius, Pro P. Sulla
-Cicero, Marcus Tullius, Pro Archia Poeta
-Cicero, Marcus Tullius, Pro L. Flacco
-Cicero, Marcus Tullius, Cum Populo Gratias Egit
-Cicero, Marcus Tullius, Cum Senatui Gratias Egit
-Cicero, Marcus Tullius, De Domo Sua Ad Pontifices
-Cicero, Marcus Tullius, De Haruspicum Responso In P. Clodium
-Cicero, Marcus Tullius, Pro P. Sestio
-Cicero, Marcus Tullius, Against Vatinius
-Cicero, Marcus Tullius, Pro M. Caelio
-Cicero, Marcus Tullius, De Provinciis Consularibus
-Cicero, Marcus Tullius, Pro L. Cornelio Balbo
-Cicero, Marcus Tullius, In L. Calpurnium Pisonem
-Cicero, Marcus Tullius, Pro Cn. Plancio
-Cicero, Marcus Tullius, Pro M. Scauro
-Cicero, Marcus Tullius, Pro C. Rabirio Postumo
-Cicero, Marcus Tullius, Pro T. Annio Milone
-Cicero, Marcus Tullius, Pro M. Marcello
-Cicero, Marcus Tullius, Pro Q. Ligario
-Cicero, Marcus Tullius, Pro Rege Deiotaro
-Cicero, Marcus Tullius, Philippicae
-Cicero, Marcus Tullius, De Inventione
-Cicero, Marcus Tullius, On Oratory
-Cicero, Marcus Tullius, Partitiones Oratoriae
-Cicero, Marcus Tullius, Brutus
-Cicero, Marcus Tullius, Orator
-Cicero, Marcus Tullius, De Optimo Genere Oratorum
-Cicero, Marcus Tullius, Topica
-Cicero, Marcus Tullius, De Republica
-Cicero, Marcus Tullius, Academica
-Cicero, Marcus Tullius, Lucullus
-Cicero, Marcus Tullius, Paradoxa Stoicorum
-Cicero, Marcus Tullius, de Finibus Bonorum et Malorum
-Cicero, Marcus Tullius, Tusculanae Disputationes
-Cicero, Marcus Tullius, De Natura Deorum
-Cicero, Marcus Tullius, De Senectute
-Cicero, Marcus Tullius, De Amicitia
-Cicero, Marcus Tullius, De Divinatione
-Cicero, Marcus Tullius, De Fato
-Cicero, Marcus Tullius, De Officiis
-Cicero, Marcus Tullius, Letters to his Friends
-Cicero, Marcus Tullius, Letters to Atticus
-Cicero, Marcus Tullius, Letters to his brother Quintus
-Cicero, Marcus Tullius, Letters to Brutus
-Cicero, Marcus Tullius, Timaeus
-Quintus Tullius Cicero, Commentariolum Petitionis
-Lucretius, De Rerum Natura
-Nepos, Cornelius, Miltiades
-Nepos, Cornelius, Themistocles
-Nepos, Cornelius, Aristides
-Nepos, Cornelius, Pausanias
-Nepos, Cornelius, Cimon
-Nepos, Cornelius, Lysander
-Nepos, Cornelius, Alcibiades
-Nepos, Cornelius, Thrasybulus
-Nepos, Cornelius, Conon
-Nepos, Cornelius, Dion
-Nepos, Cornelius, Iphicrates
-Nepos, Cornelius, Chabrias
-Nepos, Cornelius, Timotheus
-Nepos, Cornelius, Datames
-Nepos, Cornelius, Epaminondas
-Nepos, Cornelius, Pelopidas
-Nepos, Cornelius, Agesilaus
-Nepos, Cornelius, Eumenes
-Nepos, Cornelius, Phocion
-Nepos, Cornelius, Timoleon
-Nepos, Cornelius, De Regibus
-Nepos, Cornelius, Hamilcar
-Nepos, Cornelius, Hannibal
-Nepos, Cornelius, Cato
-Nepos, Cornelius, Atticus
-Propertius, Sextus, Elegiae
-Sallust, Catilinae Coniuratio
-Sallust, Bellum Iugurthinum
-Sallust, Historiae
-Tibullus, Elegiae
-Tibullus, Sulpicia Elegiae
-P. Vergilius Maro (Virgil), Eclogues
-P. Vergilius Maro (Virgil), Georgics
-P. Vergilius Maro (Virgil), Aeneid (IN PROGRESS)
+- Plautus, Titus Maccius, Casina
+- Plautus, Titus Maccius, Cistellaria
+- Plautus, Titus Maccius, Curculio
+- Plautus, Titus Maccius, Epidicus
+- Plautus, Titus Maccius, Menaechmi
+- Plautus, Titus Maccius, Mercator
+- Plautus, Titus Maccius, Miles Gloriosus
+- Plautus, Titus Maccius, Mostellaria
+- Plautus, Titus Maccius, Persa
+- Plautus, Titus Maccius, Poenulus
+- Plautus, Titus Maccius, Pseudolus
+- Plautus, Titus Maccius, Rudens
+- Plautus, Titus Maccius, Stichus
+- Plautus, Titus Maccius, Trinummus
+- Plautus, Titus Maccius, Truculentus
+- Terence, Andria
+- Terence, Heautontimorumenos
+- Terence, Eunuchus
+- Terence, Phormio
+- Terence, Hecyra
+- Terence, Adelphi
+- Pseudo-Caesar, De Bello Africo
+- Pseudo-Caesar, De Bello Alexandrino
+- Pseudo-Caesar, De Bello Hispaniensi
+- Julius Caesar, Gallic War
+- Julius Caesar, Civil War
+- Catullus, C. Valerius, Carmina
+- Cicero, Marcus Tullius, Pro P. Quinctio
+- Cicero, Marcus Tullius, Pro S. Roscio Amerino
+- Cicero, Marcus Tullius, Pro Q. Roscio Comoedo
+- Cicero, Marcus Tullius, Divinatio in Q. Caecilium
+- Cicero, Marcus Tullius, In C. Verrem
+- Cicero, Marcus Tullius, Pro M. Tullio
+- Cicero, Marcus Tullius, Pro Fonteio
+- Cicero, Marcus Tullius, Pro A. Caecina
+- Cicero, Marcus Tullius, De Imperio Cn. Pompei Ad Quirites
+- Cicero, Marcus Tullius, Pro A. Cluentio
+- Cicero, Marcus Tullius, De Lege Agraria
+- Cicero, Marcus Tullius, Pro C. Rabirio Perduellionis Reo Ad Quirites
+- Cicero, Marcus Tullius, In Catilinam
+- Cicero, Marcus Tullius, Pro L. Murena
+- Cicero, Marcus Tullius, Pro P. Sulla
+- Cicero, Marcus Tullius, Pro Archia Poeta
+- Cicero, Marcus Tullius, Pro L. Flacco
+- Cicero, Marcus Tullius, Cum Populo Gratias Egit
+- Cicero, Marcus Tullius, Cum Senatui Gratias Egit
+- Cicero, Marcus Tullius, De Domo Sua Ad Pontifices
+- Cicero, Marcus Tullius, De Haruspicum Responso In P. Clodium
+- Cicero, Marcus Tullius, Pro P. Sestio
+- Cicero, Marcus Tullius, Against Vatinius
+- Cicero, Marcus Tullius, Pro M. Caelio
+- Cicero, Marcus Tullius, De Provinciis Consularibus
+- Cicero, Marcus Tullius, Pro L. Cornelio Balbo
+- Cicero, Marcus Tullius, In L. Calpurnium Pisonem
+- Cicero, Marcus Tullius, Pro Cn. Plancio
+- Cicero, Marcus Tullius, Pro M. Scauro
+- Cicero, Marcus Tullius, Pro C. Rabirio Postumo
+- Cicero, Marcus Tullius, Pro T. Annio Milone
+- Cicero, Marcus Tullius, Pro M. Marcello
+- Cicero, Marcus Tullius, Pro Q. Ligario
+- Cicero, Marcus Tullius, Pro Rege Deiotaro
+- Cicero, Marcus Tullius, Philippicae
+- Cicero, Marcus Tullius, De Inventione
+- Cicero, Marcus Tullius, On Oratory
+- Cicero, Marcus Tullius, Partitiones Oratoriae
+- Cicero, Marcus Tullius, Brutus
+- Cicero, Marcus Tullius, Orator
+- Cicero, Marcus Tullius, De Optimo Genere Oratorum
+- Cicero, Marcus Tullius, Topica
+- Cicero, Marcus Tullius, De Republica
+- Cicero, Marcus Tullius, Academica
+- Cicero, Marcus Tullius, Lucullus
+- Cicero, Marcus Tullius, Paradoxa Stoicorum
+- Cicero, Marcus Tullius, de Finibus Bonorum et Malorum
+- Cicero, Marcus Tullius, Tusculanae Disputationes
+- Cicero, Marcus Tullius, De Natura Deorum
+- Cicero, Marcus Tullius, De Senectute
+- Cicero, Marcus Tullius, De Amicitia
+- Cicero, Marcus Tullius, De Divinatione
+- Cicero, Marcus Tullius, De Fato
+- Cicero, Marcus Tullius, De Officiis
+- Cicero, Marcus Tullius, Letters to his Friends
+- Cicero, Marcus Tullius, Letters to Atticus
+- Cicero, Marcus Tullius, Letters to his brother Quintus
+- Cicero, Marcus Tullius, Letters to Brutus
+- Cicero, Marcus Tullius, Timaeus
+- Quintus Tullius Cicero, Commentariolum Petitionis
+- Lucretius, De Rerum Natura
+- Nepos, Cornelius, Miltiades
+- Nepos, Cornelius, Themistocles
+- Nepos, Cornelius, Aristides
+- Nepos, Cornelius, Pausanias
+- Nepos, Cornelius, Cimon
+- Nepos, Cornelius, Lysander
+- Nepos, Cornelius, Alcibiades
+- Nepos, Cornelius, Thrasybulus
+- Nepos, Cornelius, Conon
+- Nepos, Cornelius, Dion
+- Nepos, Cornelius, Iphicrates
+- Nepos, Cornelius, Chabrias
+- Nepos, Cornelius, Timotheus
+- Nepos, Cornelius, Datames
+- Nepos, Cornelius, Epaminondas
+- Nepos, Cornelius, Pelopidas
+- Nepos, Cornelius, Agesilaus
+- Nepos, Cornelius, Eumenes
+- Nepos, Cornelius, Phocion
+- Nepos, Cornelius, Timoleon
+- Nepos, Cornelius, De Regibus
+- Nepos, Cornelius, Hamilcar
+- Nepos, Cornelius, Hannibal
+- Nepos, Cornelius, Cato
+- Nepos, Cornelius, Atticus
+- Propertius, Sextus, Elegiae
+- Sallust, Catilinae Coniuratio
+- Sallust, Bellum Iugurthinum
+- Sallust, Historiae
+- Tibullus, Elegiae
+- Tibullus, Sulpicia Elegiae
+- P. Vergilius Maro (Virgil), Eclogues
+- P. Vergilius Maro (Virgil), Georgics
+- P. Vergilius Maro (Virgil), Aeneid (IN PROGRESS)
