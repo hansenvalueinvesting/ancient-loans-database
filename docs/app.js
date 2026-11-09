@@ -224,7 +224,7 @@ function drawMap(rows) {
     const z = viz.map.getZoom();
     if (spreadPx(loans.length) * kmPerPx(p[0], z) > SPREAD_KM) {
       const n = loans.length;
-      L.circleMarker([p[0], p[1]], { radius: 6 + 3 * Math.sqrt(n), weight: 1, color: '#123', fillColor: '#3388ff', fillOpacity: 0.7 })
+      L.circleMarker([p[0], p[1]], { radius: 5 + 1.5 * Math.sqrt(n), weight: 1, color: '#123', fillColor: '#3388ff', fillOpacity: 0.7 })
         .bindTooltip(`${esc(place)}: ${n.toLocaleString()} loan${n === 1 ? '' : 's'} (click to zoom in)`)
         .on('click', () => {
           let zz = z;
