@@ -35,9 +35,9 @@ below applies to any source as the database expands.
   include. i can review them by hand"): loan-like transactions not entered (loan not shown to be made, advances,
   pawns, antichretic arrangements), one table row each with link and reason; most recent review first. Renamed from
   `semi_loans.md` (Hansen, Nov 2026).
-- **Coverage log: `coverage_log.md`** (Hansen, Nov 2026: "this is to keep track of how far/how much we have reviewed. keep
-  this up to date and clean"): one table row per collection (series, volumes, numbers reviewed, with text, loans,
-  status); update it with every batch.
+- **Coverage log: `coverage_log.md`** (Hansen, Nov 2026): only a plain list of the names of completed texts, one per line
+  ("Author, Title"), texts in progress marked "(IN PROGRESS)"; no table, heading or other formatting ("i want the coverage
+  log to be only this altogether"). Update it with every batch.
 - **Archive: `ald1.csv`** (Hansen, Nov 2026: "empty out ald.csv so it starts blank, and move all current data into
   ald1.csv just so we don't lose it in case i decide to shift back"): the 1,349 rows as of the restart, unchanged.
   Not read by the site; do not edit it.
@@ -380,7 +380,7 @@ by Claude under that grant (Roman-world pass):
   so you are actually just reading the whole thing"; papyri already reviewed by keyword/tag (P.Oxy., P.Mich.) are to be
   reread in full too, after the Roman and Greek literature ("go for the roman and greek ones first. make sure we don't have
   any dupes"). Method: every work split into chunks; helper agents read each chunk completely and report specific loans;
-  each report checked against the text before entry; new rows matched against existing rows so no loan is entered twice. Progress is counted by texts read (Hansen, Nov 2026: "i want to think about this as reading texts"; work in small steps): coverage_log.md keeps, under "Texts read in full", a plain list of the names of completed texts, in-progress texts marked "(IN PROGRESS)" (Hansen: "don't generalize"; table format unchanged). First stop: 126 Latin works; 16 loans reported, not yet checked or entered. Everything else in
+  each report checked against the text before entry; new rows matched against existing rows so no loan is entered twice. Progress is counted by texts read (Hansen, Nov 2026: "i want to think about this as reading texts"; work in small steps): coverage_log.md is the list of texts read (see Architecture). First stop: 126 Latin works; 16 loans reported, not yet checked or entered. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
