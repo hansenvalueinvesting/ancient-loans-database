@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-09 (Cicero, lenders)**
+- Lender left empty where the source names none (Hansen): ALD-Cic.Att.8.6.4-1, ALD-Cic.Att.11.13.4-2, ALD-Cic.Verr.2.1.28-1 (were "others (unnamed)"). Database: 229 loans.
+
 **2026-11-09 (Cicero)**
 - Added 16 loans from Cicero (all works in the Perseus Latin texts, 281 passages with loan vocabulary read; texts CC BY-SA 4.0): ALD-Cic.Att.5.21.10-1 - ALD-Cic.Verr.2.1.28-1 (letters to Atticus, Pro Flacco, In Pisonem, Pro Rabirio Postumo, De haruspicum responso, In Verrem; 73-44 BC). 10 entries added to `need_review.md`. Map: Rome located (Pleiades). Database: 229 loans.
 
