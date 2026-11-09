@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-09 (P.Mich. registers)**
+- Added 71 loans from the record-office registers and abstracts of Tebtunis (Hansen: "enter them"): ALD-P.Mich.2.121.Vo-1 - 27 (AD 42), ALD-P.Mich.5.237-1 - 2 (AD 43), ALD-P.Mich.5.238.Ro-1 - 36 (AD 46), ALD-P.Mich.5.240-1 - 3, ALD-P.Mich.2.128-1 (AD 46), ALD-P.Mich.5.241-1 - 2 (AD 16). One row per loan entry; entries repeated in other registers (P.Mich. 2 124, 128; 5 239, 240) entered once, variants in the notes; loans with habitation in place of interest left out. 6 entries added to `need_review.md`. Database: 203 loans.
+
 **2026-11-09 (P.Mich.)**
 - Added 15 loans from the Michigan papyri (P.Mich. 1-21; 866 numbers reviewed, 787 with a text online): ALD-C.Epist.Lat.154-1, ALD-P.Mich.1.32-1 - ALD-P.Mich.12.633-1. The record-office registers (P.Mich. 2, 5) are not yet entered. 7 entries added to `need_review.md`. Map: seven Egyptian places located (Pleiades). `coverage_log.md` (Hansen) restructured. Database: 132 loans.
 

@@ -329,8 +329,10 @@ by Claude under that grant (Roman-world pass):
   P.Oxy. done (87 volumes with texts; vol. 88 folder empty). Michigan papyri (Hansen, Nov 2026: "lets work next on the
   UMich collection"): P.Mich. 1-21 (866 numbers; 787 with text; 87 candidates read): 15 rows (1 32, 3 182, 190, 5 232, 328,
   332, 335, 336, C.Epist.Lat. 154 = 7 438, 9 566, 567, 11 606, 607, 614, 12 633); 7 in need_review.md; excluded as rent
-  (habitation in place of interest): 3 188, 189, 9 570, 10 585, 11 605, 12 635. Open for Hansen: the record-office
-  registers and abstracts (P.Mich. 2 121v, 124, 126, 128; 5 237-241; about 90 abbreviated loan entries). Still to do in
+  (habitation in place of interest): 3 188, 189, 9 570, 10 585, 11 605, 12 635. Record-office registers and abstracts entered (Hansen, Nov 2026: "enter them, yes"): 71 rows (P.Mich. 2 121 Vo x27, 5 237 x2,
+  5 238 Ro x36, 5 240 x3, 2 128 x1, 5 241 x2); one row per entry; "loan of X to Y" = X lent to Y, the last sum = the office's fee;
+  repeated entries (P.Mich. 2 124, 128; 5 239, 240) once, variant readings in the notes; habitation-in-place-of-interest
+  pairs ("of the same capital" after an ἐνοικήσεως) excluded; sum lost -> volume empty; 6 in need_review.md. Still to do in
   the Michigan collection: O.Mich., P.Mich.Aphrod., P.Mich.Mchl., P.Cair.Mich. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
