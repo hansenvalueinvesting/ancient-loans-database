@@ -375,8 +375,12 @@ by Claude under that grant (Roman-world pass):
   Nep., Sall., Liv., Sen., Gell., Plin.); state and city parties `Rome (state)`, `Carthage (city)`; a source with no date ->
   date empty (Sen. Ben. 4.39.1); a text error in the digital edition is kept and noted (Plin. Ep. 6.8.4 "Konjunktivs").
   Method change (Hansen, Nov 2026: "lets read in full, that's the only way to do this for any text"): every text is read in
-  full, not selected by keyword; the Cicero and Latin passes above were keyword-based and are to be redone in full (how, and
-  whether papyri already reviewed by keyword/tag are reread, awaits Hansen). Everything else in
+  full, not selected by keyword; the Cicero and Latin passes above were keyword-based and are to be redone in full. Hansen (Nov
+  2026): "yes, absolutely use helper agents"; "go in whatever order makes sense, without referencing anything we've done so far,
+  so you are actually just reading the whole thing"; papyri already reviewed by keyword/tag (P.Oxy., P.Mich.) are to be
+  reread in full too, after the Roman and Greek literature ("go for the roman and greek ones first. make sure we don't have
+  any dupes"). Method: every work split into chunks; helper agents read each chunk completely and report specific loans;
+  each report checked against the text before entry; new rows matched against existing rows so no loan is entered twice. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

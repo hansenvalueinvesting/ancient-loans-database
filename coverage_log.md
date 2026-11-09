@@ -2,6 +2,8 @@
 
 What has been reviewed for the database, series by series (Hansen, Nov 2026: "just treat it as series by series"; a series counts as done when every number of it in the online source (papyri.info; EDCS for Latin tablets) is reviewed; texts of the same holding published in other series are covered with those series). Updated with every batch; most recent first.
 
+To do (Hansen, Nov 2026): every text is to be read in full. The papyrus series above (P.Oxy., P.Mich. and the other Michigan series) were reviewed by HGV loan tags and loan vocabulary, with only the matches read; they are to be reread in full after the Latin and Greek literature. The Cicero and Latin-author rows were also keyword-based and are being redone by full reading.
+
 | Series name | Series | Volumes | Numbers reviewed | With a text online | Loans entered | Status |
 |---|---|---|---|---|---|---|
 | Latin authors other than Cicero (Perseus: 45 authors, incl. Livy, Caesar, Sallust, Nepos, Tacitus, Suetonius, Pliny the Elder and Younger, Seneca, Valerius Maximus, Gellius, Curtius, Florus, Ammianus, Historia Augusta) | Latin lit. | all works in Perseus | 1,668 passages with loan words; 525 read (histories, biographies, letters, essays, anecdote collections) | 1,668 | 6 | Done for histories, biography, letters, essays; set aside unread: poetry, comedy, novels, declamations, rhetoric (Quintilian), technical works, Christian authors (9 entries in need_review.md) |
