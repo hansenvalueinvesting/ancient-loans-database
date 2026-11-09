@@ -32,9 +32,9 @@ below applies to any source as the database expands.
   The old Supabase project (`zzlrdlkdngxkkcrtolpx`, paused): Hansen asked to delete it (Nov 2026); the connector has no
   delete tool, so Hansen deletes it in the Supabase dashboard.
 - **Need review: `need_review.md`** (Hansen, Nov 2026: "keep track of these 'semi loans' that we do not formally
-  include. i can review them by hand"): loan-like transactions not entered (loan not shown to be made, advances,
-  pawns, antichretic arrangements), one table row each with link and reason; most recent review first. Renamed from
-  `semi_loans.md` (Hansen, Nov 2026).
+  include. i can review them by hand"): loan-like transactions not entered. Format (Hansen, Nov 2026): only a table, no
+  description, columns Source | Lines | Text (the passage: original, line by line with line numbers, copied by script from
+  the edition, then an English translation) | Flagged for review (reason); one row per document or passage; most recent first.
 - **Coverage log: `coverage_log.md`** (Hansen, Nov 2026): only a plain list of the names of completed texts, one "- " item per line (as Hansen formatted it)
   ("Author, Title"), texts in progress marked "(IN PROGRESS)"; no table, heading or other formatting ("i want the coverage
   log to be only this altogether"). Update it with every batch.

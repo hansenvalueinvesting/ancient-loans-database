@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (need_review.md reorganized)**
+- need_review.md reorganized for review by hand (Hansen): columns Source, Lines, Text (original and English), Flagged for review; no description; entries grouping several documents split into one row per document (153 rows).
+
 **2026-11-10 (Latin full reading, first stop: 126 works)**
 - The 16 loans reported by the full reading of 126 Latin works (see coverage_log.md) checked against the texts, ald.csv and need_review.md: 12 already in the data; 2 already in need_review.md (Verr. 2.3.165, the tax companies not named; Caesar's claim on Cicero, Att. 5.1.2 / 7.3.11); 2 added to need_review.md (Verr. 2.1.100-102, Att. 11.11.2). No rows added.
 - ALD-Cic.Flac.51-1: borrower corrected from "Apollonides" to Lysanias ("abduxisti Temno Apollonidem" = took him from Temnus to the town of Apollonis).
