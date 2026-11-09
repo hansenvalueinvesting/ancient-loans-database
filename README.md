@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-09 (Murecine tablets)**
+- Added 10 loans from the Murecine tablets (archive of the Sulpicii, Puteoli, AD 37-52; all 127 tablets of TPSulp. reviewed, texts from EDCS via LIST, CC BY 4.0): ALD-TPSulp.51-1 - ALD-TPSulp.67-1. 9 entries added to `need_review.md`. Map: Puteoli located (Pleiades). Database: 213 loans.
+
 **2026-11-09 (Michigan series done)**
 - Reviewed the remaining Michigan series: O.Mich. 1-4 (1,142 numbers), P.Cair.Mich. 1-3 (60), P.Mich.Aphrod. (1), P.Mich.Mchl. (28), O.Mich.Copt. (1, no text); 14 candidates read, no loans. 3 entries added to `need_review.md`. Database: 203 loans (unchanged).
 

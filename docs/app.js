@@ -180,6 +180,7 @@ const PLACES = {
   'Karanis': [29.518241, 30.903426, 736932],
   'Theadelphia': [29.348065, 30.49696, 737081],
   'Antinoopolis': [27.810563, 30.881003, 756518],
+  'Puteoli': [40.825838, 14.1217415, 432815],
 };
 
 const viz = { map: null, layer: null, chart: null, rows: [] };

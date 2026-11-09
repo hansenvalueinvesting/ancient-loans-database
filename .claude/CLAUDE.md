@@ -337,7 +337,18 @@ by Claude under that grant (Roman-world pass):
   collection (Hansen, Nov 2026: "finish the UMich data"): O.Mich. 1-4, P.Cair.Mich. 1-3, P.Mich.Aphrod., P.Mich.Mchl.,
   O.Mich.Copt. (1,232 numbers; 14 candidates read): no loans; 3 in need_review.md (P.Mich.Aphrod. 1 settlement,
   P.Mich.Mchl. 17 repaid advance, O.Mich. 1 148 debt). Michigan series done. Coverage is counted series by series (Hansen, Nov 2026: "just treat it as series by series"):
-  a collection's texts published in other series (SB, journals) are covered with those series, not as part of the collection. Everything else in
+  a collection's texts published in other series (SB, journals) are covered with those series, not as part of the collection.
+  Roman loans outside Egypt (Hansen, Nov 2026: "i want to see roman"; "without consulting our old data"; order agreed:
+  Murecine tablets, then Cicero and the other Latin and Greek authors, Iucundus last). Source for Latin tablets: EDCS
+  (edcs.hist.uzh.ch; open JSON: /data/indexes/citations/<source id>.json lists a publication's records, /data/monument/
+  <first 3 digits>/<8-digit id>.json gives the text; TPSulp. = source id 3751), credited via LIST (Zenodo 10473706, CC BY 4.0),
+  which holds the same texts. Notes: lines split at the EDCS line divisions, (n) = one face or copy of the tablet; source
+  link = https://edcs.hist.uzh.ch/monument/<id>; date = consuls and Roman day converted, year as EDCS dates it.
+  Currency `sestertius`; place `Puteoli` (Pleiades 432815). Done: TPSulp. (127 tablets): 10 rows (51-57, 60, 63, 67);
+  cash-book entries (nomina arcaria: sum "paid out" at the borrower's request) counted as loans (60, 63); loan wording
+  wholly restored (50), "received and owe" without a loan word (59), heading lost (61, 62, 64, 65), balance of loans
+  restated (68), debts, receipts, a freight-contract sum (78), pledge/fiducia notices -> need_review.md; leases of
+  granaries, mandates, court papers excluded. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
