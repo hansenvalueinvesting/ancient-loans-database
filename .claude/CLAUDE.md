@@ -353,13 +353,16 @@ by Claude under that grant (Roman-world pass):
   not), all 58 works; passages = the smallest citable sections containing loan words (mutu-, faen-/fen-, usur-, versur-,
   creditor, debitor, syngraph-, chirograph-, aes alienum, credid-, centesim-), editors' apparatus notes stripped; 281 read.
   Kept: a specific loan actually made with at least one party named (loans by unnamed others kept when the borrower is
-  named, as for Tiro, lender left empty); debts not called loans, planned borrowing, lending by many unnamed parties -> need_review.md.
+  named, as for Tiro: lender `others (unnamed)`); debts not called loans, planned borrowing, lending by many unnamed parties -> need_review.md.
   Notes: the passage section by section (label = section number), own translation; source link = Scaife reader URL;
   credit = edition + Perseus licence; ID = ALD-Cic.<work>.<first section>-<n> (Att., Fam., Flac., Pis., Rab.Post.,
   Har.resp., Verr.). Date = the year the loan was made where the text shows it (Salamis loan 56 BC, under Lentulus and
   Philippus), otherwise the year of the letter or speech, said in the notes; a reign or term as a range (80-58 BC).
   Hansen (Nov 2026): "for data you can't get, leave the box blank. leave notes if specific clarification is needed, but don't if it
-  isn't needed" (unnamed lenders -> lender empty, no placeholder); undated loans take the speech's or letter's year, and the
+  isn't needed"; parties the source mentions but does not name keep the descriptive form with "(unnamed)" (Hansen: "i think
+  "friends (unnamed)" is a great way to do this. lets do that for all, incl cicero too"): `others (unnamed)`, `friends (unnamed)`,
+  `wife of X (unnamed)`; a party the source does not mention at all -> empty; patronymics and matronymics count as names
+  (Hansen: "matronymics and patronymics technically do count as names"): `son of Quintus Axius`, no "(unnamed)"; undated loans take the speech's or letter's year, and the
   note always says how the date was found ("the year of the speech"; or e.g. "two years ago" -> speech year minus 2).
   Kings and cities as parties: `Ariobarzanes III (king of Cappadocia)`, `Salamis (city)`. 16 rows; place `Rome` (Pleiades 423025). Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
