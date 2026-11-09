@@ -55,6 +55,7 @@ below applies to any source as the database expands.
   Script tags carry a version (`app.js?v=2026-10-18`): change it in `index.html` and `loan.html` whenever
   `app.js` or `config.js` changes (GitHub Pages lets browsers cache files 10 minutes; an old cached script
   with a new page breaks the site).
+  Tab icon (Hansen, Nov 2026): `docs/favicon.png`, Hansen's GitHub profile picture cut to a circle (64 px).
   Map and chart (Hansen, Nov 2026: "first have a map, where we plot the locations of the loans on the map. and we
   also have a chart showing loans over time"): on the main page above the table, both follow the filters. Map: Leaflet
   (cdnjs) on Digital Atlas of the Roman Empire tiles (CC BY 4.0). Opens on the whole Mediterranean at any screen width (Hansen, Nov 2026): fitBounds 27-50 N, 9 W-44 E, zoomSnap 0.25 (zoom 4 on desktop, about 3.25 on phones). Every loan individually, no aggregates (Hansen,
