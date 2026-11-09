@@ -13,7 +13,7 @@ below applies to any source as the database expands.
 - Never change inclusion rules, `reference/codebook.md`, field formats or the schema on your own. If a
   source raises a question the rules do not answer, ask Hansen; do not decide it and do not label
   your own choices as Hansen's.
-- Do not add tools, scripts or data files to the repo other than `ald.csv`, `need_review.md` and the archive `ald1.csv`. Working files live in the
+- Do not add tools, scripts or data files to the repo other than `ald.csv`, `need_review.md`, `coverage_log.md` and the archive `ald1.csv`. Working files live in the
   session's scratch folder (they are lost when the session ends, so record results in `ald.csv` and
   the README change log).
 - Work on `main`; commit and push directly to `main` (Hansen, Oct 2026). Be concise and organized.
@@ -35,6 +35,9 @@ below applies to any source as the database expands.
   include. i can review them by hand"): loan-like transactions not entered (loan not shown to be made, advances,
   pawns, antichretic arrangements), one table row each with link and reason; most recent review first. Renamed from
   `semi_loans.md` (Hansen, Nov 2026).
+- **Coverage log: `coverage_log.md`** (Hansen, Nov 2026: "this is to keep track of how far/how much we have reviewed. keep
+  this up to date and clean"): one table row per collection (series, volumes, numbers reviewed, with text, loans,
+  status); update it with every batch.
 - **Archive: `ald1.csv`** (Hansen, Nov 2026: "empty out ald.csv so it starts blank, and move all current data into
   ald1.csv just so we don't lose it in case i decide to shift back"): the 1,349 rows as of the restart, unchanged.
   Not read by the site; do not edit it.
@@ -323,7 +326,12 @@ by Claude under that grant (Roman-world pass):
   vol. 88 has no texts yet; the series on papyri.info ends here): 16 rows (72 4896, 4897, 4902, 4903, 4904, 4907, 4918, 4921,
   75 5052, 77 5109, 5122, 5124, 78 5173, 79 5211, 85 5520, 87 5592); 7 in need_review.md (72 4891, 4922, 4930 + 75 5070
   + 83 5368 "I have and owe" acknowledgements, 74 4984, 75 5052 unwritten debt, 78 5169 paramone loan, 82 5320).
-  P.Oxy. done. Next series: Hansen to choose. Everything else in
+  P.Oxy. done (87 volumes with texts; vol. 88 folder empty). Michigan papyri (Hansen, Nov 2026: "lets work next on the
+  UMich collection"): P.Mich. 1-21 (866 numbers; 787 with text; 87 candidates read): 15 rows (1 32, 3 182, 190, 5 232, 328,
+  332, 335, 336, C.Epist.Lat. 154 = 7 438, 9 566, 567, 11 606, 607, 614, 12 633); 7 in need_review.md; excluded as rent
+  (habitation in place of interest): 3 188, 189, 9 570, 10 585, 11 605, 12 635. Open for Hansen: the record-office
+  registers and abstracts (P.Mich. 2 121v, 124, 126, 128; 5 237-241; about 90 abbreviated loan entries). Still to do in
+  the Michigan collection: O.Mich., P.Mich.Aphrod., P.Mich.Mchl., P.Cair.Mich. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

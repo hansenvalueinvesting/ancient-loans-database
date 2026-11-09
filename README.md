@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-09 (P.Mich.)**
+- Added 15 loans from the Michigan papyri (P.Mich. 1-21; 866 numbers reviewed, 787 with a text online): ALD-C.Epist.Lat.154-1, ALD-P.Mich.1.32-1 - ALD-P.Mich.12.633-1. The record-office registers (P.Mich. 2, 5) are not yet entered. 7 entries added to `need_review.md`. Map: seven Egyptian places located (Pleiades). `coverage_log.md` (Hansen) restructured. Database: 132 loans.
+
 **2026-11-08 (P.Oxy. 72-88)**
 - Added 16 loans from P.Oxy. 72-88, the last volumes on papyri.info (all 595 numbers reviewed; 444 with a text): ALD-P.Oxy.72.4896-1 - ALD-P.Oxy.87.5592-1. 7 entries added to `need_review.md`. P.Oxy. series complete. Database: 117 loans.
 
