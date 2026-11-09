@@ -1,8 +1,8 @@
-Plautus, Titus Maccius, Amphitruo
-Plautus, Titus Maccius, Asinaria
-Plautus, Titus Maccius, Aulularia
-Plautus, Titus Maccius, Bacchides
-Plautus, Titus Maccius, Captivi
+- Plautus, Titus Maccius, Amphitruo
+- Plautus, Titus Maccius, Asinaria
+- Plautus, Titus Maccius, Aulularia
+- Plautus, Titus Maccius, Bacchides
+- Plautus, Titus Maccius, Captivi
 Plautus, Titus Maccius, Casina
 Plautus, Titus Maccius, Cistellaria
 Plautus, Titus Maccius, Curculio
