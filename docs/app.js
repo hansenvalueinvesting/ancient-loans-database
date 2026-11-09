@@ -181,6 +181,7 @@ const PLACES = {
   'Theadelphia': [29.348065, 30.49696, 737081],
   'Antinoopolis': [27.810563, 30.881003, 756518],
   'Puteoli': [40.825838, 14.1217415, 432815],
+  'Rome': [41.8899769864849, 12.491258174554883, 423025],
 };
 
 const viz = { map: null, layer: null, chart: null, rows: [] };

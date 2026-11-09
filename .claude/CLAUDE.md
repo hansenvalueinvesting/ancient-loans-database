@@ -345,10 +345,20 @@ by Claude under that grant (Roman-world pass):
   which holds the same texts. Notes: lines split at the EDCS line divisions, (n) = one face or copy of the tablet; source
   link = https://edcs.hist.uzh.ch/monument/<id>; date = consuls and Roman day converted, year as EDCS dates it.
   Currency `sestertius`; place `Puteoli` (Pleiades 432815). Done: TPSulp. (127 tablets): 10 rows (51-57, 60, 63, 67);
-  cash-book entries (nomina arcaria: sum "paid out" at the borrower's request) counted as loans (60, 63); loan wording
+  cash-book entries (nomina arcaria: sum "paid out" at the borrower's request) counted as loans (60, 63; Hansen, Nov 2026:
+  "for the decisions, yes"; also the EDCS year for undated-consul tablets, TPSulp. 57; "use EDCS as needed"); loan wording
   wholly restored (50), "received and owe" without a loan word (59), heading lost (61, 62, 64, 65), balance of loans
   restated (68), debts, receipts, a freight-contract sum (78), pledge/fiducia notices -> need_review.md; leases of
-  granaries, mandates, court papers excluded. Everything else in
+  granaries, mandates, court papers excluded. Cicero (Hansen, Nov 2026: "begin cicero"): Perseus canonical-latinLit (CC BY-SA 4.0; git clone works, the GitHub web pages do
+  not), all 58 works; passages = the smallest citable sections containing loan words (mutu-, faen-/fen-, usur-, versur-,
+  creditor, debitor, syngraph-, chirograph-, aes alienum, credid-, centesim-), editors' apparatus notes stripped; 281 read.
+  Kept: a specific loan actually made with at least one party named (loans by unnamed "others" kept when the borrower is
+  named, as for Tiro); debts not called loans, planned borrowing, lending by many unnamed parties -> need_review.md.
+  Notes: the passage section by section (label = section number), own translation; source link = Scaife reader URL;
+  credit = edition + Perseus licence; ID = ALD-Cic.<work>.<first section>-<n> (Att., Fam., Flac., Pis., Rab.Post.,
+  Har.resp., Verr.). Date = the year the loan was made where the text shows it (Salamis loan 56 BC, under Lentulus and
+  Philippus), otherwise the year of the letter or speech, said in the notes; a reign or term as a range (80-58 BC).
+  Kings and cities as parties: `Ariobarzanes III (king of Cappadocia)`, `Salamis (city)`. 16 rows; place `Rome` (Pleiades 423025). Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
