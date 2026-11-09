@@ -352,8 +352,11 @@ by Claude under that grant (Roman-world pass):
   granaries, mandates, court papers excluded. Cicero (Hansen, Nov 2026: "begin cicero"): Perseus canonical-latinLit (CC BY-SA 4.0; git clone works, the GitHub web pages do
   not), all 58 works; passages = the smallest citable sections containing loan words (mutu-, faen-/fen-, usur-, versur-,
   creditor, debitor, syngraph-, chirograph-, aes alienum, credid-, centesim-), editors' apparatus notes stripped; 281 read.
-  Kept: a specific loan actually made with at least one party named (loans by unnamed others kept when the borrower is
-  named, as for Tiro: lender `others (unnamed)`); debts not called loans, planned borrowing, lending by many unnamed parties -> need_review.md.
+  Kept: specific loans only (Hansen, Nov 2026: "i only want you to include specific loans, not literally any mention of
+  lending"): one identifiable transaction whose lender and borrower are both identified (named, or a named city, state or
+  king); a passing mention of borrowing from unnamed others or a group, with no sum (Caesar borrowing from his officers,
+  Tiro or Catilina borrowing "from others", Rome borrowing from private citizens) is not entered (10 such rows removed);
+  a single loan with a sum and one unnamed party stays (Sen. Ben. 4.39.1, Zeno's 500 denarii to "a certain man"); debts not called loans, planned borrowing, lending by many unnamed parties -> need_review.md.
   Notes: the passage section by section (label = section number), own translation; source link = Scaife reader URL;
   credit = edition + Perseus licence; ID = ALD-Cic.<work>.<first section>-<n> (Att., Fam., Flac., Pis., Rab.Post.,
   Har.resp., Verr.). Date = the year the loan was made where the text shows it (Salamis loan 56 BC, under Lentulus and

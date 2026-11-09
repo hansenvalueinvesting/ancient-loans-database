@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-09 (specific loans only)**
+- Removed 10 literary rows that mention borrowing without a specific loan (Hansen: "i only want you to include specific loans, not literally any mention of lending"): ALD-Caes.BC.1.39.3-1, ALD-Caes.BC.3.60.5-1, ALD-Cic.Att.8.6.4-1, ALD-Cic.Att.11.13.4-2, ALD-Cic.Att.16.15.5-1, ALD-Cic.Verr.2.1.28-1, ALD-Liv.31.13.2-1, ALD-Liv.32.2.2-1, ALD-Plin.Ep.3.11.2-2, ALD-Sall.Cat.24-1. Database: 230 loans.
+
 **2026-11-09 (Latin authors)**
 - Added 11 loans from Latin authors other than Cicero (Perseus, CC BY-SA 4.0): ALD-Caes.BC.1.39.3-1 - ALD-Sen.Ben.4.39.1-1 (Caesar, Nepos, Sallust, Livy, Seneca, Gellius, Pliny the Younger; 210 BC - AD 107). 9 entries added to `need_review.md`. Database: 240 loans.
 
