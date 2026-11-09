@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-09 (spouses)**
+- Husbands, wives and mothers identified by a named person stand without "(unnamed)" (Hansen), as patronymics: 25 rows of the Michigan registers (P.Mich. 2 121 Vo, 5 237, 238 Ro, 240, 2 128), e.g. "Orseus; wife of Orseus". Database: 229 loans.
+
 **2026-11-09 (unnamed parties)**
 - Unnamed parties keep the form "others (unnamed)" (Hansen): ALD-Cic.Att.8.6.4-1, ALD-Cic.Att.11.13.4-2, ALD-Cic.Verr.2.1.28-1. Patronymics and matronymics count as names, "(unnamed)" dropped: ALD-Cic.Att.10.11.2-1 (son of Quintus Axius), ALD-P.Mich.5.238.Ro-7 (son of Thenkebkis). Database: 229 loans.
 

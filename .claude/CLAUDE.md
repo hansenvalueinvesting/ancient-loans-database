@@ -361,8 +361,9 @@ by Claude under that grant (Roman-world pass):
   Hansen (Nov 2026): "for data you can't get, leave the box blank. leave notes if specific clarification is needed, but don't if it
   isn't needed"; parties the source mentions but does not name keep the descriptive form with "(unnamed)" (Hansen: "i think
   "friends (unnamed)" is a great way to do this. lets do that for all, incl cicero too"): `others (unnamed)`, `friends (unnamed)`,
-  `wife of X (unnamed)`; a party the source does not mention at all -> empty; patronymics and matronymics count as names
-  (Hansen: "matronymics and patronymics technically do count as names"): `son of Quintus Axius`, no "(unnamed)"; undated loans take the speech's or letter's year, and the
+  `another (unnamed)`; a party the source does not mention at all -> empty; patronymics and matronymics count as names
+  (Hansen: "matronymics and patronymics technically do count as names"): `son of Quintus Axius`, no "(unnamed)"; the same for husband, wife and mother (Hansen: "take husband or wife the
+  same way ... since it is specific enough to trace to a name"): `wife of Orseus`, `husband of Thermouthis`, `mother of Harmaeis`; undated loans take the speech's or letter's year, and the
   note always says how the date was found ("the year of the speech"; or e.g. "two years ago" -> speech year minus 2).
   Kings and cities as parties: `Ariobarzanes III (king of Cappadocia)`, `Salamis (city)`. 16 rows; place `Rome` (Pleiades 423025). Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
