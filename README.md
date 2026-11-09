@@ -6,8 +6,8 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
-**2026-11-09 (Michigan collection done)**
-- Reviewed the rest of the Michigan collection: O.Mich. 1-4 (1,142 numbers), P.Cair.Mich. 1-3 (60), P.Mich.Aphrod. (1), P.Mich.Mchl. (28), O.Mich.Copt. (1, no text); 14 candidates read, no loans. 3 entries added to `need_review.md`. Database: 203 loans (unchanged).
+**2026-11-09 (Michigan series done)**
+- Reviewed the remaining Michigan series: O.Mich. 1-4 (1,142 numbers), P.Cair.Mich. 1-3 (60), P.Mich.Aphrod. (1), P.Mich.Mchl. (28), O.Mich.Copt. (1, no text); 14 candidates read, no loans. 3 entries added to `need_review.md`. Database: 203 loans (unchanged).
 
 **2026-11-09 (P.Mich. registers)**
 - Added 71 loans from the record-office registers and abstracts of Tebtunis (Hansen: "enter them"): ALD-P.Mich.2.121.Vo-1 - 27 (AD 42), ALD-P.Mich.5.237-1 - 2 (AD 43), ALD-P.Mich.5.238.Ro-1 - 36 (AD 46), ALD-P.Mich.5.240-1 - 3, ALD-P.Mich.2.128-1 (AD 46), ALD-P.Mich.5.241-1 - 2 (AD 16). One row per loan entry; entries repeated in other registers (P.Mich. 2 124, 128; 5 239, 240) entered once, variants in the notes; loans with habitation in place of interest left out. 6 entries added to `need_review.md`. Database: 203 loans.

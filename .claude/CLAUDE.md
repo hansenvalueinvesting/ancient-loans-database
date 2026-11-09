@@ -336,7 +336,8 @@ by Claude under that grant (Roman-world pass):
   pairs ("of the same capital" after an ἐνοικήσεως) excluded; sum lost -> volume empty; 6 in need_review.md. Rest of the Michigan
   collection (Hansen, Nov 2026: "finish the UMich data"): O.Mich. 1-4, P.Cair.Mich. 1-3, P.Mich.Aphrod., P.Mich.Mchl.,
   O.Mich.Copt. (1,232 numbers; 14 candidates read): no loans; 3 in need_review.md (P.Mich.Aphrod. 1 settlement,
-  P.Mich.Mchl. 17 repaid advance, O.Mich. 1 148 debt). Michigan collection done. Everything else in
+  P.Mich.Mchl. 17 repaid advance, O.Mich. 1 148 debt). Michigan series done. Coverage is counted series by series (Hansen, Nov 2026: "just treat it as series by series"):
+  a collection's texts published in other series (SB, journals) are covered with those series, not as part of the collection. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):

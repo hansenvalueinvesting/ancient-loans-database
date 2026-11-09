@@ -1,8 +1,8 @@
 # Coverage log
 
-What has been reviewed for the database, collection by collection (Hansen, Nov 2026). Updated with every batch; most recent first.
+What has been reviewed for the database, series by series (Hansen, Nov 2026: "just treat it as series by series"; a series counts as done when every number of it on papyri.info is reviewed; texts of the same holding published in other series are covered with those series). Updated with every batch; most recent first.
 
-| Collection | Series | Volumes | Numbers reviewed | With a text online | Loans entered | Status |
+| Series name | Series | Volumes | Numbers reviewed | With a text online | Loans entered | Status |
 |---|---|---|---|---|---|---|
 | University of Michigan papyri | P.Mich. | 1-21 (vol. 16 not online) | 866 | 787 | 86 | Done (incl. the record-office registers and abstracts, P.Mich. 2 121-128, 5 237-241: 71 loans) |
 | University of Michigan ostraca | O.Mich. | 1-4 | 1,142 | 1,140 | 0 | Done (1 in need_review.md) |
