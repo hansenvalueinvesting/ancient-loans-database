@@ -7,7 +7,7 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 ## Change log
 
 **2026-11-10 (Latin full reading, first stop: 126 works)**
-- The 16 loans reported by the full reading of 126 Latin works (see coverage_log.md) checked against the texts and against ald.csv: 12 already in the data; added ALD-Cic.Verr.2.3.165-1 (Verres' loan of the public grain money to the tax companies of Sicily at 2% a month); 3 to need_review.md (Verr. 2.1.100-102, Att. 7.3.11, Att. 11.11.2).
+- The 16 loans reported by the full reading of 126 Latin works (see coverage_log.md) checked against the texts, ald.csv and need_review.md: 12 already in the data; 2 already in need_review.md (Verr. 2.3.165, the tax companies not named; Caesar's claim on Cicero, Att. 5.1.2 / 7.3.11); 2 added to need_review.md (Verr. 2.1.100-102, Att. 11.11.2). No rows added.
 - ALD-Cic.Flac.51-1: borrower corrected from "Apollonides" to Lysanias ("abduxisti Temno Apollonidem" = took him from Temnus to the town of Apollonis).
 
 **2026-11-09 (specific loans only)**

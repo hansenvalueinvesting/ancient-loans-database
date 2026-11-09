@@ -124,4 +124,3 @@
 - Tibullus, Sulpicia Elegiae
 - P. Vergilius Maro (Virgil), Eclogues
 - P. Vergilius Maro (Virgil), Georgics
-- P. Vergilius Maro (Virgil), Aeneid (IN PROGRESS)
