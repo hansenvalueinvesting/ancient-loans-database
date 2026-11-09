@@ -57,7 +57,7 @@ below applies to any source as the database expands.
   with a new page breaks the site).
   Map and chart (Hansen, Nov 2026: "first have a map, where we plot the locations of the loans on the map. and we
   also have a chart showing loans over time"): on the main page above the table, both follow the filters. Map: Leaflet
-  (cdnjs) on Digital Atlas of the Roman Empire tiles (CC BY 4.0). Opens on the whole Mediterranean (center 39.5 N 17.5 E, zoom 4; Hansen, Nov 2026). Every loan individually, no aggregates (Hansen,
+  (cdnjs) on Digital Atlas of the Roman Empire tiles (CC BY 4.0). Opens on the whole Mediterranean at any screen width (Hansen, Nov 2026): fitBounds 27-50 N, 9 W-44 E, zoomSnap 0.25 (zoom 4 on desktop, about 3.25 on phones). Every loan individually, no aggregates (Hansen,
   Nov 2026: "i want to see every single individual loan, not aggreagates"): one dot per loan, loans at one place
   spread around it in a sunflower pattern (fixed pixel spacing, redone on zoom); hover = loan summary, click = loan page. Zoomed out, a place's
   dots merge into one blob sized by its number of loans (Hansen, Nov 2026: "the big circles are too big"; "cap it at this size, and just have everything scale relatively": the largest place shown

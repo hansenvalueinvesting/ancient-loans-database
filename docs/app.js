@@ -203,7 +203,7 @@ const kmPerPx = (lat, z) => (40075.016686 * Math.cos(lat * Math.PI / 180)) / (25
 // A Leaflet map in el on the Digital Atlas of the Roman Empire (ancient place names).
 function baseMap(el) {
   el.style.height = '420px';
-  const m = L.map(el);
+  const m = L.map(el, { zoomSnap: 0.25 });
   L.tileLayer('https://dh.gu.se/tiles/imperium/{z}/{x}/{y}.png', {
     maxNativeZoom: 11, maxZoom: 15, attribution: '<a href="https://imperium.ahlfeldt.se/">Digital Atlas of the Roman Empire</a> (CC BY 4.0)',
   }).addTo(m);
@@ -212,7 +212,7 @@ function baseMap(el) {
 function drawMap(rows) {
   if (!window.L) return;
   if (!viz.map) {
-    viz.map = baseMap($('map')).setView([39.5, 17.5], 4);
+    viz.map = baseMap($('map')).fitBounds([[27, -9], [50, 44]]);   // the whole Mediterranean, at any screen width
     viz.layer = L.layerGroup().addTo(viz.map);
     viz.map.on('zoomend', () => drawMap(viz.rows));
   }
