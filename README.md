@@ -6,6 +6,10 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading, first stop: 126 works)**
+- The 16 loans reported by the full reading of 126 Latin works (see coverage_log.md) checked against the texts and against ald.csv: 12 already in the data; added ALD-Cic.Verr.2.3.165-1 (Verres' loan of the public grain money to the tax companies of Sicily at 2% a month); 3 to need_review.md (Verr. 2.1.100-102, Att. 7.3.11, Att. 11.11.2).
+- ALD-Cic.Flac.51-1: borrower corrected from "Apollonides" to Lysanias ("abduxisti Temno Apollonidem" = took him from Temnus to the town of Apollonis).
+
 **2026-11-09 (specific loans only)**
 - Removed 10 literary rows that mention borrowing without a specific loan (Hansen: "i only want you to include specific loans, not literally any mention of lending"): ALD-Caes.BC.1.39.3-1, ALD-Caes.BC.3.60.5-1, ALD-Cic.Att.8.6.4-1, ALD-Cic.Att.11.13.4-2, ALD-Cic.Att.16.15.5-1, ALD-Cic.Verr.2.1.28-1, ALD-Liv.31.13.2-1, ALD-Liv.32.2.2-1, ALD-Plin.Ep.3.11.2-2, ALD-Sall.Cat.24-1. Database: 230 loans.
 

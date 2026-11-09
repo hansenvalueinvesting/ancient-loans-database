@@ -381,7 +381,7 @@ by Claude under that grant (Roman-world pass):
   so you are actually just reading the whole thing"; papyri already reviewed by keyword/tag (P.Oxy., P.Mich.) are to be
   reread in full too, after the Roman and Greek literature ("go for the roman and greek ones first. make sure we don't have
   any dupes"). Method: every work split into chunks; helper agents read each chunk completely and report specific loans;
-  each report checked against the text before entry; new rows matched against existing rows so no loan is entered twice. Progress is counted by texts read (Hansen, Nov 2026: "i want to think about this as reading texts"; work in small steps): coverage_log.md is the list of texts read (see Architecture). First stop: 126 Latin works; 16 loans reported, not yet checked or entered. Everything else in
+  each report checked against the text before entry; new rows matched against existing rows so no loan is entered twice. Progress is counted by texts read (Hansen, Nov 2026: "i want to think about this as reading texts"; work in small steps): coverage_log.md is the list of texts read (see Architecture). First stop: 126 Latin works; 16 loans reported: 12 already in the data, 1 added (ALD-Cic.Verr.2.3.165-1), 3 to need_review.md, ALD-Cic.Flac.51-1 borrower corrected to Lysanias; the 94 borderline cases from the agents not yet reviewed. Place `Sicilia` (Pleiades 462492) added to PLACES. Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
