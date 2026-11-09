@@ -373,7 +373,10 @@ by Claude under that grant (Roman-world pass):
   keyword windows, full sections pulled for candidates); set aside unread as not reporting real loans: poetry, comedy,
   novels, declamations, Quintilian, technical works, Christian authors (say so if Hansen wants them read). 11 rows (Caes.,
   Nep., Sall., Liv., Sen., Gell., Plin.); state and city parties `Rome (state)`, `Carthage (city)`; a source with no date ->
-  date empty (Sen. Ben. 4.39.1); a text error in the digital edition is kept and noted (Plin. Ep. 6.8.4 "Konjunktivs"). Everything else in
+  date empty (Sen. Ben. 4.39.1); a text error in the digital edition is kept and noted (Plin. Ep. 6.8.4 "Konjunktivs").
+  Method change (Hansen, Nov 2026: "lets read in full, that's the only way to do this for any text"): every text is read in
+  full, not selected by keyword; the Cicero and Latin passes above were keyword-based and are to be redone in full (how, and
+  whether papyri already reviewed by keyword/tag are reread, awaits Hansen). Everything else in
   this file (Data standards, Method, Status below) describes the old build and is history unless Hansen carries
   a rule over.
 - Oct 2026 (Hansen: "i want to pivot from using supabase to doing the data like the taxation database"):
