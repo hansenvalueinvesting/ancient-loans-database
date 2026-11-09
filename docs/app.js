@@ -197,7 +197,7 @@ const openLoan = (l) => { location.href = `loan.html?id=${encodeURIComponent(l.i
 // zooms in until its loans show as dots. Click a dot = open the loan.
 const SPREAD_KM = 2;
 const DOT_GAP = 7, DOT_R = 3.5;                         // pixels
-const BLOB_MIN = 5, BLOB_MAX = 21;                      // blob radius in pixels: the largest place gets BLOB_MAX, the rest scale by area
+const BLOB_MIN = 5, BLOB_MAX = 10;                      // blob radius in pixels: the largest place gets BLOB_MAX, the rest scale by area
 const spreadPx = (n) => DOT_GAP * Math.sqrt(Math.max(n - 1, 0)) + DOT_R;
 const kmPerPx = (lat, z) => (40075.016686 * Math.cos(lat * Math.PI / 180)) / (256 * 2 ** z);
 // A Leaflet map in el on the Digital Atlas of the Roman Empire (ancient place names).
@@ -212,7 +212,7 @@ function baseMap(el) {
 function drawMap(rows) {
   if (!window.L) return;
   if (!viz.map) {
-    viz.map = baseMap($('map')).setView([29.5, 31], 6);
+    viz.map = baseMap($('map')).setView([39.5, 17.5], 4);
     viz.layer = L.layerGroup().addTo(viz.map);
     viz.map.on('zoomend', () => drawMap(viz.rows));
   }

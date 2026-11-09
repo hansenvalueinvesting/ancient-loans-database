@@ -57,11 +57,11 @@ below applies to any source as the database expands.
   with a new page breaks the site).
   Map and chart (Hansen, Nov 2026: "first have a map, where we plot the locations of the loans on the map. and we
   also have a chart showing loans over time"): on the main page above the table, both follow the filters. Map: Leaflet
-  (cdnjs) on Digital Atlas of the Roman Empire tiles (CC BY 4.0). Every loan individually, no aggregates (Hansen,
+  (cdnjs) on Digital Atlas of the Roman Empire tiles (CC BY 4.0). Opens on the whole Mediterranean (center 39.5 N 17.5 E, zoom 4; Hansen, Nov 2026). Every loan individually, no aggregates (Hansen,
   Nov 2026: "i want to see every single individual loan, not aggreagates"): one dot per loan, loans at one place
   spread around it in a sunflower pattern (fixed pixel spacing, redone on zoom); hover = loan summary, click = loan page. Zoomed out, a place's
   dots merge into one blob sized by its number of loans (Hansen, Nov 2026: "the big circles are too big"; "cap it at this size, and just have everything scale relatively": the largest place shown
-  gets 21 px radius, the others scale by area, sqrt(n / largest), minimum 5 px) (Hansen, Nov 2026: "when we zoom out ... merge them into one big
+  gets 10 px radius (Hansen, Nov 2026: "no bigger than what we have for puteoli"), the others scale by area, sqrt(n / largest), minimum 5 px) (Hansen, Nov 2026: "when we zoom out ... merge them into one big
   blob"): blob whenever the dots would spread more than 2 km (`SPREAD_KM`) from the place; click the blob = zoom in
   until the dots show (tiles enlarged beyond their native zoom 11, up to 15). Coordinates: lookup `PLACES` in `docs/app.js` from Pleiades reprPoint (Hansen chose a lookup in the site code
   over new columns); a new place in `ald.csv` needs a line there, else it is counted as "not on the map". Chart:
