@@ -4,5 +4,10 @@ What has been reviewed for the database, collection by collection (Hansen, Nov 2
 
 | Collection | Series | Volumes | Numbers reviewed | With a text online | Loans entered | Status |
 |---|---|---|---|---|---|---|
-| University of Michigan papyri | P.Mich. | 1-21 (vol. 16 not online) | 866 | 787 | 86 | In progress: P.Mich. 1-21 done (incl. the record-office registers and abstracts, P.Mich. 2 121-128, 5 237-241: 71 loans); O.Mich., P.Mich.Aphrod., P.Mich.Mchl. and P.Cair.Mich. not started |
+| University of Michigan papyri | P.Mich. | 1-21 (vol. 16 not online) | 866 | 787 | 86 | Done (incl. the record-office registers and abstracts, P.Mich. 2 121-128, 5 237-241: 71 loans) |
+| University of Michigan ostraca | O.Mich. | 1-4 | 1,142 | 1,140 | 0 | Done (1 in need_review.md) |
+| Cairo-Michigan papyri | P.Cair.Mich. | 1-3 | 60 | 47 | 0 | Done |
+| Michigan papyri from Aphrodito | P.Mich.Aphrod. | 1 | 1 | 1 | 0 | Done (1 in need_review.md) |
+| Michigan papyri (Michael collection) | P.Mich.Mchl. | 1 | 28 | 27 | 0 | Done (1 in need_review.md; P.Mich.Mchl. re-editions of P.Mich. texts already counted there) |
+| Michigan Coptic ostraca | O.Mich.Copt. | 1 | 1 | 0 | 0 | Done (no text online) |
 | Oxyrhynchus Papyri | P.Oxy. | 1-87 | 5,170 | 3,505 | 117 | Done: all 87 volumes |
