@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading: Celsus, Columella, Curtius Rufus, Horace)**
+- 9 works read in full (see coverage_log.md): no loans; 1 entry to need_review.md (Hor. Ep. 1.7, a promised loan); 4 borderline cases dropped (royal and soldiers' debts in Curtius 10.2; Damasippus' unnamed creditor and Nasica's debt in Horace's Satires). No data change.
+
 **2026-11-10 (94 borderline cases from the Latin full reading)**
 - The 94 borderline cases flagged by the reading agents (126 Latin works) reviewed: 28 added to need_review.md (debts not said to arise from loans, loans of objects for use, sureties, planned or disputed loans, forced levies, lending to unnamed communities); 16 already in need_review.md or ald.csv; 50 dropped as not loans (troops "lent", gifts, bribes, rhetoric, general statements, debts with no identified party) or cases Hansen already removed (Caes. BC 1.39.3, 3.60.5, Verr. 2.1.28, Att. 16.15.5, Sall. Cat. 24). No data change.
 

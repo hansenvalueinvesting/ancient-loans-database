@@ -124,3 +124,12 @@
 - Tibullus, Sulpicia Elegiae
 - P. Vergilius Maro (Virgil), Eclogues
 - P. Vergilius Maro (Virgil), Georgics
+- Celsus, Aulus Cornelius, De Medicina
+- Columella, Lucius Junius Moderatus, Res Rustica
+- Curtius Rufus, Quintus, Historiarum Alexandri Magni
+- Horace, Carmina
+- Horace, Carmen Saeculare
+- Horace, Epodi
+- Horace, Satires
+- Horace, Epistulae
+- Horace, Ars Poetica
