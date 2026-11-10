@@ -134,3 +134,5 @@
 - Horace, Epistulae
 - Horace, Ars Poetica
 - Titus Livius (Livy), History of Rome
+- Persius, Saturae
+- Pliny, the Elder, Naturalis Historia
