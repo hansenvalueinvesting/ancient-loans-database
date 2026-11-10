@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading: Seneca's prose, Statius' Silvae)**
+- Seneca's De Beneficiis, De Clementia and Letters, and Statius' Silvae read in full: 1 loan reported, already in the data (Zeno's 500 denarii, ALD-Sen.Ben.4.39.1-1); 2 borderline cases dropped (Marius Nepos' debts paid by Tiberius as a gift, Ben. 2.7; the moneylender Caecilius, Ep. 118.2, already in need_review.md from Cic. Att. 1.12.1). Skipped as invented: the elder Seneca's declamations, Seneca's tragedies and Apocolocyntosis, Statius' Thebaid and Achilleid. No data change.
+
 **2026-11-10 (Latin full reading: Quintilian)**
 - Quintilian's Institutio Oratoria read in full: 2 loans reported, both already recorded (Rabirius Postumus' loans to Ptolemy XII, Inst. 9.2.17 = ALD-Cic.Rab.Post.4; Clodia's gold to Caelius, Inst. 5.13.30 = Cic. Cael. 30 in need_review.md); 1 borderline case dropped (Thebans' 100 talents to the Thessalians, 5.10.111, a declamation theme). No data change.
 

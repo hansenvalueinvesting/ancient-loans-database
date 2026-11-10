@@ -137,3 +137,7 @@
 - Persius, Saturae
 - Pliny, the Elder, Naturalis Historia
 - Quintilian, Institutio Oratoria
+- Seneca, Lucius Annaeus, De Beneficiis
+- Seneca, Lucius Annaeus, De Clementia
+- Seneca, Lucius Annaeus, Epistulae
+- Statius, P. Papinius (Publius Papinius), Silvae
