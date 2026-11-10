@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading: Martial, Pliny the Younger, Suetonius)**
+- Read in full: no new loans. Pliny Ep. 3.11.2 and 6.8.4 and Suet. Claud. 16.2 (Rabirius Postumus) already in the data. 5 entries to need_review.md: Martial 3.41 and 9.102 (loans in epigrams, persons possibly invented), Plin. Ep. 2.4.1-2 (Calvina's father's debts) and 3.19.8 (a planned loan), Suet. Vesp. 4.3 (Vespasian's estates mortgaged to his brother). Dropped: Martial's other epigram debts and pawns, Caesar's freedman's debt (Iul. 2.1), Caligula's lending, Vitellius' pawned pearl; Iul. 27.1, Aug. 41.1 and Tib. 48.1 already in need_review.md. Skipped as invented: Silius Italicus.
+
 **2026-11-10 (Latin full reading: Valerius Maximus, Vitruvius, Apuleius, Florus, Gellius, Juvenal)**
 - Added ALD-Apul.Apol.76-1: Herennius Rufinus borrowed 400,000 sesterces from an unnamed creditor for his daughter's dowry (Apul. Apol. 76, 92; date of the speech, AD 158-159).
 - Gellius 12.12.2 (Sulla's 2,000,000 sesterces to Cicero) already in the data. 2 entries to need_review.md (Val. Max. 6.2.11, Galba's surety for Pompeius' debt; Apul. Apol. 71, 93, Pudentilla's money owed to her sons). Dropped: Considius (4.8.3) and Veturius' bondage (6.1.9) already in need_review.md; a fictitious expensilatio (Val. Max. 8.2.2); a surety for a fine (4.4.7); contributions to the treasury (Florus 1.22); unproven or generic loans (Gell. 14.2, 17.6); a deposit, a loan sought and a pawn in Juvenal's Satires. Skipped as invented: Apuleius' Metamorphoses, Valerius Flaccus.

@@ -148,3 +148,6 @@
 - Florus, Lucius Annaeus, Epitome Rerum Romanorum
 - Gellius, Aulus, Noctes Atticae
 - Juvenal, Saturae
+- Martial, Epigrammata
+- Pliny, the Younger, Epistulae
+- Suetonius, De Vita Caesarum (Divus Julius to Domitianus)
