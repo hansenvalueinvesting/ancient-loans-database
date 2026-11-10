@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading: Livy)**
+- Livy read in full (all books in Perseus): no loan entered. 3 entries to need_review.md: King Hiero's silver and grain for the propraetor Otacilius, later "to be repaid" (23.21.5, 23.38.12); Antiochus' 400 talents owed to Eumenes (37.45.15); the books of Numa taken by the praetor Petilius (40.29). Borderline cases dropped: debts and loans of unnamed persons, lending to or by many unnamed parties (Manlius' 400 debtors and Publilius' bondage already in need_review.md), contributions and loans of citizens to the state (31.13 and 32.2 removed earlier by Hansen), deposits, supplies on credit, proposals not carried out.
+
 **2026-11-10 (Latin full reading: Celsus, Columella, Curtius Rufus, Horace)**
 - 9 works read in full (see coverage_log.md): no loans; 1 entry to need_review.md (Hor. Ep. 1.7, a promised loan); 4 borderline cases dropped (royal and soldiers' debts in Curtius 10.2; Damasippus' unnamed creditor and Nasica's debt in Horace's Satires). No data change.
 
