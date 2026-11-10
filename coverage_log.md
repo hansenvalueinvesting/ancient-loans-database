@@ -151,3 +151,9 @@
 - Martial, Epigrammata
 - Pliny, the Younger, Epistulae
 - Suetonius, De Vita Caesarum (Divus Julius to Domitianus)
+- Tacitus, Cornelius, Agricola
+- Tacitus, Cornelius, Germania
+- Tacitus, Cornelius, Dialogus
+- Tacitus, Cornelius, Historiae
+- Tacitus, Cornelius, Annales
+- Apicius, De Re Coquinaria

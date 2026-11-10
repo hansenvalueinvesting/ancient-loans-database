@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading: Tacitus, Apicius)**
+- Tacitus (all five works) and Apicius read in full: no loans entered. 2 entries to need_review.md: Hist. 3.65 (Flavius Sabinus believed to have lent to Vespasian on security of his house and lands, cf. Suet. Vesp. 4.3) and Ann. 2.34 (Piso's claim on Urgulania). Dropped: a borrowed house (Dial. 9.3), contributions to the war later recovered (Hist. 2.84); Hist. 4.47 and Ann. 6.17 already in need_review.md.
+
 **2026-11-10 (Latin full reading: Martial, Pliny the Younger, Suetonius)**
 - Read in full: no new loans. Pliny Ep. 3.11.2 and 6.8.4 and Suet. Claud. 16.2 (Rabirius Postumus) already in the data. 5 entries to need_review.md: Martial 3.41 and 9.102 (loans in epigrams, persons possibly invented), Plin. Ep. 2.4.1-2 (Calvina's father's debts) and 3.19.8 (a planned loan), Suet. Vesp. 4.3 (Vespasian's estates mortgaged to his brother). Dropped: Martial's other epigram debts and pawns, Caesar's freedman's debt (Iul. 2.1), Caligula's lending, Vitellius' pawned pearl; Iul. 27.1, Aug. 41.1 and Tib. 48.1 already in need_review.md. Skipped as invented: Silius Italicus.
 
