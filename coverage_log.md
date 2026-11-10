@@ -141,3 +141,10 @@
 - Seneca, Lucius Annaeus, De Clementia
 - Seneca, Lucius Annaeus, Epistulae
 - Statius, P. Papinius (Publius Papinius), Silvae
+- Valerius Maximus, Facta et Dicta Memorabilia
+- Vitruvius Pollio, On Architecture
+- Apuleius, Apologia
+- Apuleius, Florida
+- Florus, Lucius Annaeus, Epitome Rerum Romanorum
+- Gellius, Aulus, Noctes Atticae
+- Juvenal, Saturae

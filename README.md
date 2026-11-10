@@ -6,6 +6,10 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading: Valerius Maximus, Vitruvius, Apuleius, Florus, Gellius, Juvenal)**
+- Added ALD-Apul.Apol.76-1: Herennius Rufinus borrowed 400,000 sesterces from an unnamed creditor for his daughter's dowry (Apul. Apol. 76, 92; date of the speech, AD 158-159).
+- Gellius 12.12.2 (Sulla's 2,000,000 sesterces to Cicero) already in the data. 2 entries to need_review.md (Val. Max. 6.2.11, Galba's surety for Pompeius' debt; Apul. Apol. 71, 93, Pudentilla's money owed to her sons). Dropped: Considius (4.8.3) and Veturius' bondage (6.1.9) already in need_review.md; a fictitious expensilatio (Val. Max. 8.2.2); a surety for a fine (4.4.7); contributions to the treasury (Florus 1.22); unproven or generic loans (Gell. 14.2, 17.6); a deposit, a loan sought and a pawn in Juvenal's Satires. Skipped as invented: Apuleius' Metamorphoses, Valerius Flaccus.
+
 **2026-11-10 (Latin full reading: Seneca's prose, Statius' Silvae)**
 - Seneca's De Beneficiis, De Clementia and Letters, and Statius' Silvae read in full: 1 loan reported, already in the data (Zeno's 500 denarii, ALD-Sen.Ben.4.39.1-1); 2 borderline cases dropped (Marius Nepos' debts paid by Tiberius as a gift, Ben. 2.7; the moneylender Caecilius, Ep. 118.2, already in need_review.md from Cic. Att. 1.12.1). Skipped as invented: the elder Seneca's declamations, Seneca's tragedies and Apocolocyntosis, Statius' Thebaid and Achilleid. No data change.
 
