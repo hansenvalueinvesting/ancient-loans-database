@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading: Quintilian)**
+- Quintilian's Institutio Oratoria read in full: 2 loans reported, both already recorded (Rabirius Postumus' loans to Ptolemy XII, Inst. 9.2.17 = ALD-Cic.Rab.Post.4; Clodia's gold to Caelius, Inst. 5.13.30 = Cic. Cael. 30 in need_review.md); 1 borderline case dropped (Thebans' 100 talents to the Thessalians, 5.10.111, a declamation theme). No data change.
+
 **2026-11-10 (Latin full reading: Persius, Pliny the Elder)**
 - Persius and Pliny's Natural History read in full: no loans; 5 borderline cases dropped (Hirrius' eels, 9.55, removed earlier by Hansen; Nicomedes' offer for Cnidus' debt, Crassus Dives' bankruptcy, Sicyon's debts, Milo's total debts: no identified loan). No data change.
 
