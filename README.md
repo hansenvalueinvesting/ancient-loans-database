@@ -6,6 +6,10 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading: Ammianus to Claudian)**
+- Added ALD-Aug.Ep.61.1-1: Augustine borrowed 17 solidi from Macedonius to pay Fascius' tax debt (Augustine, Select Letters 61 = Ep. 268; date: his episcopate, AD 396-430).
+- Ammianus, Augustine's letters, Ausonius, Bede, Boethius, Cato's De agricultura and Claudian read in full. 1 entry to need_review.md (Auson. Ep. 16, Theon's 14 Philippi recorded in a note). Dropped: a debt transferred to the fisc and grain sold and restored (Amm. 18.5, 28.1), a debt from a price (Aug. Ep. 21), a book lent for copying (Bede 4.16), Basilius' debts (Boeth. Cons. 1.4).
+
 **2026-11-10 (Latin full reading: Historia Augusta)**
 - The 30 lives of the Historia Augusta read in full: no loans; 5 borderline cases dropped (Hadrian's and Pertinax's debts with no lender; lending to many unnamed people by Antoninus Pius and Pertinax; an allowance of equipment to be returned, Claud. 14). No data change.
 

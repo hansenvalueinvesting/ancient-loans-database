@@ -187,3 +187,53 @@
 - Scriptores Historiae Augustae, Probus
 - Scriptores Historiae Augustae, Firmus Saturninus, Proculus et Bonosus
 - Scriptores Historiae Augustae, Carus et Carinus et Numerianus
+- Ammianus Marcellinus, Res Gestae
+- Augustine, Saint, Epistulae
+- Ausonius, Decimus Magnus, De Bissula
+- Ausonius, Decimus Magnus, Caesares
+- Ausonius, Decimus Magnus, Cento Nuptialis
+- Ausonius, Decimus Magnus, Commemoratio Professorum Burdigalensium
+- Ausonius, Decimus Magnus, Cupido Cruciatus
+- Ausonius, Decimus Magnus, De Herediolo
+- Ausonius, Decimus Magnus, Eclogarum Liber
+- Ausonius, Decimus Magnus, Ephemeris
+- Ausonius, Decimus Magnus, Epicedion in Patrem
+- Ausonius, Decimus Magnus, Epigrammaton Liber
+- Ausonius, Decimus Magnus, Epistulae
+- Ausonius, Decimus Magnus, Epitaphia
+- Ausonius, Decimus Magnus, Genethliacon ad Ausonium Nepotem
+- Ausonius, Decimus Magnus, Gratiarum Actio
+- Ausonius, Decimus Magnus, Griphus Ternarii Numeri
+- Ausonius, Decimus Magnus, Liber Protrepticus ad Nepotem
+- Ausonius, Decimus Magnus, [Libri de Fastis] Conclusio
+- Ausonius, Decimus Magnus, Ludus Septem Sapientum
+- Ausonius, Decimus Magnus, Mosella
+- Ausonius, Decimus Magnus, Oratio Versibus Rhopalicis
+- Ausonius, Decimus Magnus, Ordo Urbium Nobilium
+- Ausonius, Decimus Magnus, Parentalia
+- Ausonius, Decimus Magnus, Praefatiunculae
+- Ausonius, Decimus Magnus, Precationes
+- Ausonius, Decimus Magnus, Versus Paschales Prosodic
+- Ausonius, Decimus Magnus, Technopaegnion
+- Bede, Historia Ecclesiastica Gentis Anglorum
+- Boethius, De consolatione philosophiae
+- Boethius, Quomodo Substantiae in Eo Quod Sint Bonae Sint Cum Non Sint Substantialia Bona
+- Boethius, De Fide Catholica
+- Boethius, Liber De Persona et Duabus Naturis Contra Eutychen Et Nestorium
+- Boethius, Quomodo Trinitas Unus Deus Ac Non Tres Dii (De Trinitate)
+- Boethius, Utrum Pater Et Filius Ac Spiritus Sanctus De Divinitate Substantialiter Praedicentur Liber
+- Cato, Marcus Porcius, De agricultura
+- Claudian, Carminum minorum corpusculum
+- Claudian, de bello Gildonico
+- Claudian, de Bello Gothico
+- Claudian, de consulatu Stilichonis
+- Claudian, de raptu Proserpinae
+- Claudian, Epithalamium de nuptiis Honorii Augusti
+- Claudian, Fescinnina de nuptiis Honorii Augusti
+- Claudian, In Eutropium
+- Claudian, In Rufinum
+- Claudian, Panegyricus de tertio consulatu Honorii Augusti
+- Claudian, Panegyricus de quarto consulatu Honorii Augusti
+- Claudian, Panegyricus de sexto consulatu Honorii Augusti
+- Claudian, Panegyricus dictus Manlio Theodoro consuli
+- Claudian, Panegyricus dictus Probino et Olybrio consulibus
