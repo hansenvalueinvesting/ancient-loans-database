@@ -157,3 +157,33 @@
 - Tacitus, Cornelius, Historiae
 - Tacitus, Cornelius, Annales
 - Apicius, De Re Coquinaria
+- Scriptores Historiae Augustae, De Vita Hadriani
+- Scriptores Historiae Augustae, Helius
+- Scriptores Historiae Augustae, Antoninus Pius
+- Scriptores Historiae Augustae, Marcus Antoninus Philosophus
+- Scriptores Historiae Augustae, Verus
+- Scriptores Historiae Augustae, Avidius Casius
+- Scriptores Historiae Augustae, Commodus Antoninus
+- Scriptores Historiae Augustae, Pertinax
+- Scriptores Historiae Augustae, Didius Julianus
+- Scriptores Historiae Augustae, Severus
+- Scriptores Historiae Augustae, Pescennius Niger
+- Scriptores Historiae Augustae, Clodinus Albinus
+- Scriptores Historiae Augustae, Antoninus Caracalla
+- Scriptores Historiae Augustae, Antoninus Geta
+- Scriptores Historiae Augustae, Opilius Macrinus
+- Scriptores Historiae Augustae, Diadumenus Antoninus
+- Scriptores Historiae Augustae, Antoninus Heliogobalus
+- Scriptores Historiae Augustae, Alexander Severus
+- Scriptores Historiae Augustae, Maximini Duo
+- Scriptores Historiae Augustae, Gordiani Tres
+- Scriptores Historiae Augustae, Maximus et Balbinus
+- Scriptores Historiae Augustae, Valeriani Duo
+- Scriptores Historiae Augustae, Gallieni Duo
+- Scriptores Historiae Augustae, Tyranni Triginta
+- Scriptores Historiae Augustae, Divus Claudius
+- Scriptores Historiae Augustae, Divus Aurelianus
+- Scriptores Historiae Augustae, Tacitus
+- Scriptores Historiae Augustae, Probus
+- Scriptores Historiae Augustae, Firmus Saturninus, Proculus et Bonosus
+- Scriptores Historiae Augustae, Carus et Carinus et Numerianus

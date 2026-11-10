@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-10 (Latin full reading: Historia Augusta)**
+- The 30 lives of the Historia Augusta read in full: no loans; 5 borderline cases dropped (Hadrian's and Pertinax's debts with no lender; lending to many unnamed people by Antoninus Pius and Pertinax; an allowance of equipment to be returned, Claud. 14). No data change.
+
 **2026-11-10 (Latin full reading: Tacitus, Apicius)**
 - Tacitus (all five works) and Apicius read in full: no loans entered. 2 entries to need_review.md: Hist. 3.65 (Flavius Sabinus believed to have lent to Vespasian on security of his house and lands, cf. Suet. Vesp. 4.3) and Ann. 2.34 (Piso's claim on Urgulania). Dropped: a borrowed house (Dial. 9.3), contributions to the war later recovered (Hist. 2.84); Hist. 4.47 and Ann. 6.17 already in need_review.md.
 
