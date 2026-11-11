@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-11 (register notes corrected)**
+- P.Mich. register rows (69): the note line on sums corrected. The sum in the genitive ("of n drachmas") is the loan's amount and is the volume; a second sum after it is the record office's fee. P.Mich. 2 121 Vo (27 rows) records no fees; its notes had wrongly called the sum a fee. Volumes unchanged (they were already the loan amounts).
+
 **2026-11-11 (lease advances in money and paramone loans)**
 - Hansen: an advance inside a lease is a loan if money is given, not goods; paramone loans (work in place of interest, principal repaid) are loans.
 - Added ALD-P.Oxy.50.3589-1, P.Oxy.8.1125-1, SB.10.10274-1 (lease advances in money) and ALD-P.Mich.10.587-1, P.Oxy.78.5169-1 (paramone loans; interest column blank, the service in the notes); removed from need_review.md.
