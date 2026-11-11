@@ -6,6 +6,10 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-11 (rule change: need_review.md re-judged, papyri and tablets)**
+- Added 14 rows from need_review.md (entries removed there): ALD-TPSulp.59-1, TPSulp.61-1, TPSulp.78-1, P.Mich.Mchl.17-1, P.Mich.9.573-1, P.Mich.13.669-1, P.Mich.15.728-1, P.Oxy.3.511-1, P.Oxy.4.799-1, P.Oxy.31.2586-1, P.Oxy.50.3560-2, P.Oxy.67.4596-1, P.Oxy.75.5070-1, P.Oxy.83.5368-1: money received and owed back ("received and owe", "have and owe"), advances repaid in money outside leases, a cash-book entry, a freight-contract sum to be repaid, a lien naming a loan, an account entry with an unnamed lender.
+- Kept in need_review.md for Hansen: advances inside leases (Hansen's earlier rule), paramone loans (service in place of interest), debts of unstated origin, applications, deposits, pawns, fragmentary texts.
+
 **2026-11-11 (rule change: need_review.md re-judged, literary passages)**
 - Hansen's rule change: a loan need not be called a loan; money lent and returned counts; groups are valid lenders and borrowers.
 - Restored the 10 literary rows removed earlier for group or unnamed parties: ALD-Caes.BC.1.39.3-1, Caes.BC.3.60.5-1, Cic.Att.8.6.4-1, Cic.Att.11.13.4-2, Cic.Att.16.15.5-1, Cic.Verr.2.1.28-1, Liv.31.13.2-1, Liv.32.2.2-1, Plin.Ep.3.11.2-2, Sall.Cat.24-1.
