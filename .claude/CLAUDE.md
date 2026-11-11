@@ -358,6 +358,7 @@ by Claude under that grant (Roman-world pass):
   king); a passing mention of borrowing from unnamed others or a group, with no sum (Caesar borrowing from his officers,
   Tiro or Catilina borrowing "from others", Rome borrowing from private citizens) is not entered (10 such rows removed);
   a single loan with a sum and one unnamed party stays (Sen. Ben. 4.39.1, Zeno's 500 denarii to "a certain man"); debts not called loans, planned borrowing, lending by many unnamed parties -> need_review.md.
+  RULE CHANGE (Hansen, Nov 2026, supersedes the strict rules above and below where they differ): "a loan doesn't need to be named a loan explicitly if it literally is a loan. that's for you to judge. if there is money being lent, returned (with or without interest), it basically is a loan, and you will take it that way. groups are fine, they function as lenders or borrowers." -> money (or goods) handed over to be returned = loan, whatever the wording; groups (unnamed or named: friends, tax companies, a city's citizens) are valid lenders/borrowers.
   Notes: the passage section by section (label = section number), own translation; source link = Scaife reader URL;
   credit = edition + Perseus licence; ID = ALD-Cic.<work>.<first section>-<n> (Att., Fam., Flac., Pis., Rab.Post.,
   Har.resp., Verr.). Date = the year the loan was made where the text shows it (Salamis loan 56 BC, under Lentulus and
