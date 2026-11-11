@@ -6,6 +6,11 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-11 (lease advances in money and paramone loans)**
+- Hansen: an advance inside a lease is a loan if money is given, not goods; paramone loans (work in place of interest, principal repaid) are loans.
+- Added ALD-P.Oxy.50.3589-1, P.Oxy.8.1125-1, SB.10.10274-1 (lease advances in money) and ALD-P.Mich.10.587-1, P.Oxy.78.5169-1 (paramone loans; interest column blank, the service in the notes); removed from need_review.md.
+- Left in need_review.md (need explanation): P.Oxy. 16 1890 (no repayment stated), P.Oxy. 4 729 (repayment line damaged), P.Mich. 18 792 (cattle plus a 500-drachma instalment), P.Oxy. 14 1630 (advance mixed with expenses); goods advances P.Oxy. 82 5320 and SB 20 14338 stay out.
+
 **2026-11-11 (rule change: need_review.md re-judged, papyri and tablets)**
 - Added 14 rows from need_review.md (entries removed there): ALD-TPSulp.59-1, TPSulp.61-1, TPSulp.78-1, P.Mich.Mchl.17-1, P.Mich.9.573-1, P.Mich.13.669-1, P.Mich.15.728-1, P.Oxy.3.511-1, P.Oxy.4.799-1, P.Oxy.31.2586-1, P.Oxy.50.3560-2, P.Oxy.67.4596-1, P.Oxy.75.5070-1, P.Oxy.83.5368-1: money received and owed back ("received and owe", "have and owe"), advances repaid in money outside leases, a cash-book entry, a freight-contract sum to be repaid, a lien naming a loan, an account entry with an unnamed lender.
 - Kept in need_review.md for Hansen: advances inside leases (Hansen's earlier rule), paramone loans (service in place of interest), debts of unstated origin, applications, deposits, pawns, fragmentary texts.
