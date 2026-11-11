@@ -6,6 +6,13 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-11 (rule change: need_review.md re-judged, literary passages)**
+- Hansen's rule change: a loan need not be called a loan; money lent and returned counts; groups are valid lenders and borrowers.
+- Restored the 10 literary rows removed earlier for group or unnamed parties: ALD-Caes.BC.1.39.3-1, Caes.BC.3.60.5-1, Cic.Att.8.6.4-1, Cic.Att.11.13.4-2, Cic.Att.16.15.5-1, Cic.Verr.2.1.28-1, Liv.31.13.2-1, Liv.32.2.2-1, Plin.Ep.3.11.2-2, Sall.Cat.24-1.
+- Added 23 rows from need_review.md (25 entries removed there): ALD-Cic.Att.7.7.2-1, Cic.Att.11.11.2-1, Cic.Caecin.16-1, Cic.Fam.1.7.6-1, Cic.Flac.56-1, Cic.Leg.agr.2.83-1, Cic.Verr.2.1.91-1, Cic.Verr.2.1.100-1, Cic.Verr.2.2.170-1/-2, Cic.Verr.2.3.165-1, Cic.Verr.2.4.53-1, Liv.6.20.6-1, Liv.23.21.5-1, Nep.Att.2-1, SHA.Alex.Sev.21-1/-2, SHA.Pius.2-1, Suet.Aug.41.1-1, Suet.Iul.27.1-1, Suet.Vesp.4.3-1 (with Tac. Hist. 3.65), Tac.Ann.6.17-1 (with Suet. Tib. 48.1), Val.Max.4.8.3-1.
+- Kept in need_review.md: debts of unstated origin, sureties, planned or requested loans, forced levies, loans of objects for use, possibly invented epigram persons.
+- Site: Athens added to the map places; script version 2026-11-11.
+
 **2026-11-11 (Latin full reading: Tertullian; Latin literature in Perseus finished)**
 - Tertullian (30 works) and Pseudo-Tertullian read in full: no loans; borderline cases dropped (Marcion's money given to the church and returned, Anaxagoras' deposit, Christians borrowing from pagans in general). The full reading of the Latin literature in Perseus (canonical-latinLit) is complete, works of fiction skipped (see coverage_log.md).
 
