@@ -6,6 +6,10 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-11 (Latin full reading: Jerome to Sidonius)**
+- Added ALD-Sid.Ep.4.24-1: Turpio borrowed from Maximus Palatinus by a written bond at 1% a month (Sidonius, Ep. 4.24; date: about AD 460-467, ten years before the letter).
+- Jerome's letters, Minucius Felix, Prudentius, Seneca's moral essays (De Ira etc.) and Sidonius read in full. Dropped: Arvandus' debts to unnamed creditors (Sid. Ep. 1.7) and books lent for copying or use (Sid. Ep. 5.2, 9.11).
+
 **2026-11-10 (Latin full reading: Ammianus to Claudian)**
 - Added ALD-Aug.Ep.61.1-1: Augustine borrowed 17 solidi from Macedonius to pay Fascius' tax debt (Augustine, Select Letters 61 = Ep. 268; date: his episcopate, AD 396-430).
 - Ammianus, Augustine's letters, Ausonius, Bede, Boethius, Cato's De agricultura and Claudian read in full. 1 entry to need_review.md (Auson. Ep. 16, Theon's 14 Philippi recorded in a note). Dropped: a debt transferred to the fisc and grain sold and restored (Amm. 18.5, 28.1), a debt from a price (Aug. Ep. 21), a book lent for copying (Bede 4.16), Basilius' debts (Boeth. Cons. 1.4).

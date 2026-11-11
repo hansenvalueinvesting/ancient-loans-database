@@ -237,3 +237,26 @@
 - Claudian, Panegyricus de sexto consulatu Honorii Augusti
 - Claudian, Panegyricus dictus Manlio Theodoro consuli
 - Claudian, Panegyricus dictus Probino et Olybrio consulibus
+- Jerome, Saint, Epistolae
+- Minucius Felix, Marcus, Octavius
+- Prudentius, Liber Peristephanon
+- Prudentius, Psychomachia
+- Prudentius, Praefatio
+- Prudentius, Cathemerina
+- Prudentius, Apotheosis
+- Prudentius, Hamartigenia
+- Prudentius, Contra Orationem Symmachi
+- Prudentius, Dittochaeon
+- Prudentius, Epilogus
+- Seneca, Lucius Annaeus, De Brevitate Vitae
+- Seneca, Lucius Annaeus, De Consolatione ad Helviam
+- Seneca, Lucius Annaeus, De Consolatione ad Marciam
+- Seneca, Lucius Annaeus, De Consolatione ad Polybium
+- Seneca, Lucius Annaeus, De Constantia
+- Seneca, Lucius Annaeus, De Ira
+- Seneca, Lucius Annaeus, De Otio
+- Seneca, Lucius Annaeus, De Providentia
+- Seneca, Lucius Annaeus, De Tranquillitate Animi
+- Seneca, Lucius Annaeus, De Vita Beata
+- Sidonius Apollinaris, Carmina
+- Sidonius Apollinaris, Epistulae
