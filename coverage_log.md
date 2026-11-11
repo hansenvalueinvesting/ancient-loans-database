@@ -260,3 +260,34 @@
 - Seneca, Lucius Annaeus, De Vita Beata
 - Sidonius Apollinaris, Carmina
 - Sidonius Apollinaris, Epistulae
+- Tertullian, Ad Martyras
+- Tertullian, Ad Nationes Libri Duo
+- Tertullian, Ad Scapulam
+- Tertullian, Adversus Hermogenem
+- Tertullian, Adversus Judaeos Liber
+- Tertullian, Adversus Marcionem
+- Tertullian, Adversus Praxean
+- Tertullian, Adversus Valentinianos
+- Tertullian, Apologeticum
+- Tertullian, De Anima
+- Tertullian, De Baptismo
+- Tertullian, De Carne Christi
+- Tertullian, De Corona
+- Tertullian, De Cultu Feminarum
+- Tertullian, De Exhortatione Castitatis Liber
+- Tertullian, De Fuga in Persecutione
+- Tertullian, De idolatria
+- Tertullian, De ieiunio adversus psychicos
+- Tertullian, De Monogamia
+- Tertullian, De Oratione
+- Tertullian, De Paenitentia
+- Tertullian, De Pallio
+- Tertullian, De Patientia
+- Tertullian, De Praescriptionibus Hereticorum
+- Tertullian, De Pudicitia
+- Tertullian, De Carnis Resurrectione
+- Tertullian, De Spectaculis
+- Tertullian, De Testimionio Animae
+- Tertullian, De Virginibus Velandis
+- Tertullian, Scorpiace
+- Pseudo-Tertullian, Ad Uxorem

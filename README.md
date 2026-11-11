@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-11 (Latin full reading: Tertullian; Latin literature in Perseus finished)**
+- Tertullian (30 works) and Pseudo-Tertullian read in full: no loans; borderline cases dropped (Marcion's money given to the church and returned, Anaxagoras' deposit, Christians borrowing from pagans in general). The full reading of the Latin literature in Perseus (canonical-latinLit) is complete, works of fiction skipped (see coverage_log.md).
+
 **2026-11-11 (Latin full reading: Jerome to Sidonius)**
 - Added ALD-Sid.Ep.4.24-1: Turpio borrowed from Maximus Palatinus by a written bond at 1% a month (Sidonius, Ep. 4.24; date: about AD 460-467, ten years before the letter).
 - Jerome's letters, Minucius Felix, Prudentius, Seneca's moral essays (De Ira etc.) and Sidonius read in full. Dropped: Arvandus' debts to unnamed creditors (Sid. Ep. 1.7) and books lent for copying or use (Sid. Ep. 5.2, 9.11).
