@@ -1341,6 +1341,26 @@ Date: no date in HGV for this column; the entry stands before the heading ""mont
 Place: registered at the record office of Tebtunis.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Mich.2.128-2,Tebtunis,AD 46,,Thenmarsisuchus,Castoras,100,drachma (silver),,"Source: P.Mich. 2 128 (https://papyri.info/ddbdp/p.mich;2;128col2)
+
+Original Text:
+(2dupl)
+17 ὁμο(λογία) Θενμαρσισούχο(υ) πρ[ὸ(ς)][ Καστ]ωρᾶν τρ[ο]φιω καὶ δ
+18 ανεί(ου) ἀργ(υρίου) (δραχμῶν) ρ. (δραχμαὶ) η
+
+English translation:
+(2dupl)
+17 Agreement of Thenmarsisuchus with [Cast]oras concerning a nursling and a l-
+18 -oan of 100 drachmas of silver: 8 drachmas (fee).
+
+Excerpt: the entry and the agreement it refers to (col. 2dupl, ll. 17-18) of a register of contracts of the record office of Tebtunis (column 2 of P.Mich. 2 128).
+Register entry: ""loan of X to Y"" means X lent to Y. The sum in the genitive (""of n drachmas"") is the loan's amount; a second sum after it (""n drachmas"") is the record office's fee, not part of the loan.
+Register entry of an agreement concerning a nursling (τροφῖμος) and a loan (δάνειον). 8 drachmas is the record office's fee.
+This entry is an agreement (ὁμολογία) of the first party with the second; the party who acknowledges is taken as the borrower.
+Date: the entry follows the entries of Mesore 25 and the 2nd epagomenal day (ll. 1-3) of year 6 of Claudius, i.e. late August AD 46.
+Place: registered at the record office of Tebtunis.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
 ALD-P.Mich.3.182-1,Crocodilopolis,182 BC,,Irene daughter of Orpheus,Nicander,44; 4800,talent (copper); drachma (copper),,"Source: P.Mich. 3 182 (https://papyri.info/ddbdp/p.mich;3;182)
 
 Original Text:
@@ -2485,6 +2505,50 @@ Date: Choiak 22, year 7 of Claudius (= 18 December AD 46), from the register's m
 Place: registered at the record office of Tebtunis.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Mich.5.238.Ro-37,Tebtunis,AD 46,,Heraclides,Lysimachus,,,,"Source: P.Mich. 5 238 Ro (https://papyri.info/ddbdp/p.mich;5;238r)
+
+Original Text:
+(r,1)
+1 ἔτους ἑβδόμου Τιβερίου Κλαυδίου Καίσαρος Σεβαστοῦ
+2 Γερμανικοῦ Αὐτοκράτορος μηνὸς Σεβαστοῦ
+19 ιβ ὁμο(λογία) Λυσιμάχο(υ) πρὸ(ς) Ἡρακλείδη(ν) ἀποχῆ(ς) (ἡμίσους) μέρο(υς) δανη(ου) ἀργ(υρίου) (δραχμαὶ) δ
+
+English translation:
+(r,1)
+1 Year seven of Tiberius Claudius Caesar Augustus
+2 Germanicus Imperator, month Sebastos.
+19 12. Agreement of Lysimachus with Heraclides of a receipt for half of a loan, of silver: 4 drachmas (fee).
+
+Excerpt: the heading (ll. 1-2) and the entry (l. 19) of the register of contracts of the record office of Tebtunis, Sebastos (Thoth) to Choiak of year 7 of Claudius (AD 46).
+Register entry: ""loan of X to Y"" means X lent to Y. The sum in the genitive (""of n drachmas"") is the loan's amount; a second sum after it (""n drachmas"") is the record office's fee, not part of the loan.
+Register entry of a receipt (ἀποχή) for half of a loan: Lysimachus acknowledges to Heraclides the repayment of half; the loan's sum is not given; 4 drachmas is the record office's fee.
+Date: the receipt is entered on Thoth 12, year 7 of Claudius (= 9 September AD 46); the loan was made earlier, date not stated.
+Place: registered at the record office of Tebtunis.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Mich.5.238.Ro-38,Tebtunis,AD 46,,Siphon,Cronion,,,,"Source: P.Mich. 5 238 Ro (https://papyri.info/ddbdp/p.mich;5;238r)
+
+Original Text:
+(r,1)
+1 ἔτους ἑβδόμου Τιβερίου Κλαυδίου Καίσαρος Σεβαστοῦ
+2 Γερμανικοῦ Αὐτοκράτορος μηνὸς Σεβαστοῦ
+(r,2)
+81 ὁμο(λογία) Κρονίωνο(ς) πρὸ(ς) Σίφωνα ἀποχῆ(ς) (ἡμίσους) μέρο(υς) δανή(ου) (ὀβολοὶ) ια
+
+English translation:
+(r,1)
+1 Year seven of Tiberius Claudius Caesar Augustus
+2 Germanicus Imperator, month Sebastos.
+(r,2)
+81 Agreement of Cronion with Siphon of a receipt for half of a loan: 11 obols (fee).
+
+Excerpt: the heading (ll. 1-2) and the entry (l. 81) of the register of contracts of the record office of Tebtunis, Sebastos (Thoth) to Choiak of year 7 of Claudius (AD 46).
+Register entry: ""loan of X to Y"" means X lent to Y. The sum in the genitive (""of n drachmas"") is the loan's amount; a second sum after it (""n drachmas"") is the record office's fee, not part of the loan.
+Register entry of a receipt (ἀποχή) for half of a loan: Cronion acknowledges to Siphon the repayment of half; the loan's sum is not given; 11 obols is the record office's fee.
+Date: the receipt is entered after the entries of Thoth 30, year 7 of Claudius (= 27 September AD 46), before Phaophi 2; the loan was made earlier, date not stated.
+Place: registered at the record office of Tebtunis.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
 ALD-P.Mich.5.240-1,Tebtunis,AD 46,,Siliboeis; wife of Siliboeis,Ptolemaeus,140 [...],drachma (silver),,"Source: P.Mich. 5 240 (https://papyri.info/ddbdp/p.mich;5;240)
 
 Original Text:
@@ -2532,6 +2596,85 @@ Excerpt: the entry (col. 1, l. 32) of a register of contracts of the record offi
 Register entry: ""loan of X to Y"" means X lent to Y. The sum in the genitive (""of n drachmas"") is the loan's amount; a second sum after it (""n drachmas"") is the record office's fee, not part of the loan.
 Probably the same entry as P.Mich. 2 128, col. 3, l. 11 (loan of Heracles to Paalous, fee 6 drachmas; sum read α.η.).
 Date: the entry stands in the section before the heading ""month Sebastos"" (Thoth, year 7 of Claudius, from 29 August AD 46), i.e. at the end of year 6 (summer AD 46). HGV dates the document AD 46-47.
+Place: registered at the record office of Tebtunis.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Mich.5.240-4,Tebtunis,AD 46,,Thenmarsisuchus,Diodora,,,,"Source: P.Mich. 5 240 (https://papyri.info/ddbdp/p.mich;5;240)
+
+Original Text:
+(1)
+13 [ὁμ]ο(λογία) Θενμαρσισούχο(υ) πρὸ(ς) Διοδώρα(ν) τροφίμο(υ) καὶ δανή(ου) ...[...]
+
+English translation:
+(1)
+13 Agreement of Thenmarsisuchus with Diodora concerning a nursling and a loan [...].
+
+Excerpt: the entry (col. 1, l. 13) of a register of contracts of the record office of Tebtunis (HGV: AD 46-47).
+Register entry: ""loan of X to Y"" means X lent to Y. The sum in the genitive (""of n drachmas"") is the loan's amount; a second sum after it (""n drachmas"") is the record office's fee, not part of the loan.
+Register entry of an agreement concerning a nursling (τροφῖμος) and a loan (δάνειον). The sum is lost.
+This entry is an agreement (ὁμολογία) of the first party with the second; the party who acknowledges is taken as the borrower.
+Date: the entry stands in the section before the heading ""month Sebastos"" (Thoth, year 7 of Claudius, from 29 August AD 46), i.e. at the end of year 6 (summer AD 46). HGV dates the document AD 46-47.
+Place: registered at the record office of Tebtunis.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Mich.5.240-5,Tebtunis,AD 46-47,,Tapontos; husband of Tapontos,Cronion,,,,"Source: P.Mich. 5 240 (https://papyri.info/ddbdp/p.mich;5;240)
+
+Original Text:
+(2)
+63 [ὁμο(λογία) Ταπο]ντῶτος καὶ το(ῦ) ἀνδρὸ(ς) πρὸ(ς) Κρονίωνα τροφίμο(υ) καὶ δανή(ου) (δραχμαὶ) δ (ὀβολοὶ) ζ
+
+English translation:
+(2)
+63 Agreement of Tapontos and her husband with Cronion concerning a nursling and a loan: 4 drachmas 7 obols (fee).
+
+Excerpt: the entry (col. 2, l. 63) of a register of contracts of the record office of Tebtunis (HGV: AD 46-47).
+Register entry: ""loan of X to Y"" means X lent to Y. The sum in the genitive (""of n drachmas"") is the loan's amount; a second sum after it (""n drachmas"") is the record office's fee, not part of the loan.
+Register entry of an agreement concerning a nursling (τροφῖμος) and a loan (δάνειον). The loan's sum is not given; 4 drachmas 7 obols is the record office's fee.
+This entry is an agreement (ὁμολογία) of the first party with the second; the party who acknowledges is taken as the borrower.
+Probably the same entry as P.Mich. 2 128, col. 3, l. 45 (mostly lost).
+Date: HGV dates the document AD 46-47.
+Place: registered at the record office of Tebtunis.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Mich.5.240-6,Tebtunis,AD 46-47,,Taonnophris,Stotoetis,12,drachma,,"Source: P.Mich. 5 240 (https://papyri.info/ddbdp/p.mich;5;240)
+
+Original Text:
+(2)
+64 [ὁμο(λογία) ][Ταο]ν̣νόφριο(ς) πρὸ(ς) Στοτοῆτιν τροφίμο(υ) καὶ δανή(ου) (δραχμῶν) ιβ καὶ οἴνο(υ) κε(ραμίων) β (δραχμῶν) δ
+65 (γίνονται) ἀργ(υρίου) (δραχμαὶ) ιϛ (ὀβολοὶ) δ πρὸς ταύτας ἱστὸς ἐνεχυρ(αζόμενος)
+
+English translation:
+(2)
+64 Agreement of Taonnophris with Stotoetis concerning a nursling and a loan of 12 drachmas and 2 keramia of wine: 4 drachmas (fee).
+65 Total 16 drachmas 4 obols of silver; against these a loom is pledged.
+
+Excerpt: the entry and the agreement it refers to (col. 2, ll. 64-65) of a register of contracts of the record office of Tebtunis (HGV: AD 46-47).
+Register entry: ""loan of X to Y"" means X lent to Y. The sum in the genitive (""of n drachmas"") is the loan's amount; a second sum after it (""n drachmas"") is the record office's fee, not part of the loan.
+Register entry of an agreement concerning a nursling (τροφῖμος) and a loan (δάνειον). One loan of money and wine; the 2 keramia of wine are a separate row. 4 drachmas is the record office's fee; l. 65 totals the fees of ll. 63-64; a loom is given as security.
+This entry is an agreement (ὁμολογία) of the first party with the second; the party who acknowledges is taken as the borrower.
+Probably the same entry as P.Mich. 2 128, col. 3, l. 46 (partly lost).
+Date: HGV dates the document AD 46-47.
+Place: registered at the record office of Tebtunis.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Mich.5.240-7,Tebtunis,AD 46-47,,Taonnophris,Stotoetis,2,keramion (wine),,"Source: P.Mich. 5 240 (https://papyri.info/ddbdp/p.mich;5;240)
+
+Original Text:
+(2)
+64 [ὁμο(λογία) ][Ταο]ν̣νόφριο(ς) πρὸ(ς) Στοτοῆτιν τροφίμο(υ) καὶ δανή(ου) (δραχμῶν) ιβ καὶ οἴνο(υ) κε(ραμίων) β (δραχμῶν) δ
+65 (γίνονται) ἀργ(υρίου) (δραχμαὶ) ιϛ (ὀβολοὶ) δ πρὸς ταύτας ἱστὸς ἐνεχυρ(αζόμενος)
+
+English translation:
+(2)
+64 Agreement of Taonnophris with Stotoetis concerning a nursling and a loan of 12 drachmas and 2 keramia of wine: 4 drachmas (fee).
+65 Total 16 drachmas 4 obols of silver; against these a loom is pledged.
+
+Excerpt: the entry and the agreement it refers to (col. 2, ll. 64-65) of a register of contracts of the record office of Tebtunis (HGV: AD 46-47).
+Register entry: ""loan of X to Y"" means X lent to Y. The sum in the genitive (""of n drachmas"") is the loan's amount; a second sum after it (""n drachmas"") is the record office's fee, not part of the loan.
+Register entry of an agreement concerning a nursling (τροφῖμος) and a loan (δάνειον). One loan of money and wine; the 12 drachmas are a separate row. 4 drachmas is the record office's fee; l. 65 totals the fees of ll. 63-64; a loom is given as security.
+This entry is an agreement (ὁμολογία) of the first party with the second; the party who acknowledges is taken as the borrower.
+Probably the same entry as P.Mich. 2 128, col. 3, l. 46 (partly lost).
+Date: HGV dates the document AD 46-47.
 Place: registered at the record office of Tebtunis.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
@@ -3427,6 +3570,42 @@ Term: whenever the lender wishes.
 Date: HGV: 4th-5th century.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Mich.18.792-1,Oxyrhynchus,AD 221,,Aurelius Philotas son of Petemounis,Aurelia Heraclia daughter of Diogenes,500,drachma,,"Source: P.Mich. 18 792 (https://papyri.info/ddbdp/p.mich;18;792)
+
+Original Text:
+1 [Αὐρήλιο]ς Φιλώτας̣ Πετεμού[νιος μη(τρὸς)]
+2 Ταηρ[ακλ]είδου ἀπ’ Ὀξυρύγχων πόλ[εως][, καταγι]
+3 νόμεν[ος] ἐν Σερύφει, Αὐρηλίᾳ Ἡρα[κλείᾳ] [θυγα]
+4 τρὶ Διογέ[ν]ους ἐξηγητ[εύ]σαντος τῆς α[ὐτῆς πό]
+5 λεως διὰ Α[ὐ]ρηλίου Ἑρ[μ]α̣ί̣ο̣υ̣ [ἐπ]ι̣τ̣ρ̣ό̣π̣[ου χαί]
+6 ρειν. ὁμο[λ]ογῶ παρει[λ]ηφέναι παρὰ [σοῦ ἐν]
+7 προχρ[ι]ᾳ πρὸς ὑπηρεσίαν π̣οτισμ̣[ῶν]
+8 οὗ ἔχω σ[ο]υ̣ ἐν μισθώσει ἀμπελικοῦ [κτή]
+9 ματος Νήσου καλουμένου περὶ Σ[ε]ρ̣[ῦφιν]
+10 ἀκολούθ̣ως ᾗ ἔχω μ[ι]σθώσει βοϊ̣[κὰ κτή]
+11 νη ἐν συν̣τιμήσει δ[ραχ]μῶν χει[λίων]
+12 πεντακοσίων, ἔ̣[τι δ]ὲ καὶ ἐσχη[κέναι]
+13 ἀπὸ τῶν δ̣[ι]ὰ τῆς αὐτῆς̣ [μισ]θ̣ώσεως δ[ηλουμέ]
+14 νων λαβ̣εῖν με παρ[ὰ σο]ῦ ὁμοίως ἐ[ν προχρείᾳ]
+15 κατὰ μέρο̣[ς] δραχμῶν χειλίων πε[ντακο]
+16 σίων τ̣ὰς τῆς πρώ[τ]ης δόσεως τ[οῦ ὄντος]
+17 μηνὸς Ἁ̣θὺρ δραχμὰ̣[ς] πεντακοσ̣[ίας][ ]
+18 καὶ πάντα ἀποδώσειν ἀκολούθω[ς τῇ]
+19 μισθώσ̣ει, τὰ δὲ κτή[ν]η ἐπὶ τῇ περ[ὶ αὐ]
+20 τῶν ενγεγραμμενῃ αἱρέσει, μενο[υσῶν]
+
+English translation:
+1-6 Aurelius Philotas son of Petemounis, his mother being Taheracleides, from the city of Oxyrhynchus, residing in Seryphis, to Aurelia Heraclia daughter of Diogenes, former exegetes of the same city, through Aurelius Hermaeus, guardian, greetings.
+6-12 I acknowledge that I have received from you as an advance (προχρεία), for the service of the irrigation of the vineyard estate called ""Island"" near Seryphis, which I hold from you on lease, in accordance with the lease I hold, cattle at a valuation of one thousand five hundred drachmas,
+12-17 and further that I have had, of the one thousand five hundred drachmas which it is stated in the same lease that I am to receive from you likewise as an advance in instalments, the five hundred drachmas of the first instalment of the present month Hathyr;
+18-20 and that I will repay everything in accordance with the lease, and the cattle on the terms written concerning them, [...]
+
+Excerpt: ll. 1-20. Money advance (προχρεία) inside a vineyard lease: Philotas has received 500 drachmas, the first instalment of a 1,500-drachma advance in money stated in the lease, to be repaid in accordance with the lease. The cattle valued at 1,500 drachmas given in the same acknowledgement are goods, not entered; the remaining 1,000 drachmas had not yet been paid.
+Term: in accordance with the lease; not stated here.
+Date: Hathyr (HGV: 29 October AD 221).
+Place: not stated; the place of the document (HGV: Oxyrhynchus); the lessee lives in Seryphis.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
 ALD-P.Mich.Mchl.17-1,Karanis,AD 195,,Onesimus son of Amerimnus,Ptolemaeus son of Ptolemaeus,300,drachma (silver),,"Source: P.Mich.Mchl. 17 (https://papyri.info/ddbdp/p.mich.mchl;;17)
 
 Original Text:
@@ -3750,6 +3929,132 @@ Loan in ll. 10-18; the document is the receipt for the last 168 drachmas (AD 141
 Interest: calculated, not stated: 700 drachmas repaid in 50 monthly instalments of 15 (750 in all, ll. 15-18), i.e. 50 drachmas; 50 / 700 / 4.08-4.24 years (the duration) = 1.68-1.75% per year.
 Term: 50 monthly instalments of 15 drachmas from Hadrianos, year 22 of Hadrian (= Nov/Dec AD 137); the 50th falls in Tybi, year 5 of Antoninus Pius (= December AD 141/January AD 142).
 Date: Hathyr, year 22 of Hadrian (= Oct/Nov AD 137).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.1.104-1,Oxyrhynchus,AD 96,,Soeris daughter of Harpocras,Atres son of Teraus,600,drachma (silver),,"Source: P.Oxy. 1 104 (https://papyri.info/ddbdp/p.oxy;1;104)
+
+Original Text:
+1 ἔτους ἕκτου δεκάτου Αὐτοκράτορος Καίσαρος Δομιτιανοῦ
+2 Σεβαστοῦ Γερμανικοῦ, Χοίακ λ, ἐν Ὀξυρύγχων πόλει τῆς Θηβαίδος,
+3 ἀγαθῆι τύχῃ.
+4 τάδε διέθετο [ν]οοῦσα καὶ φρονοῦσ[α] Σο[ῆ]ρις Ἁρποχρᾶτος ἀπελευθέρου
+5 Σαραπίωνος τοῦ Χαιρήμον[ο]ς μη[τ]ρὸ[ς] Τνεφερῶτος τῆς Ἀννίου,
+6 τῶν ἀπʼ Ὀξυρύγχων πόλεως, μετὰ κυρί[ου] τοῦ ἀνδρὸς Ἀτρευς μητρὸς Τεραῦ
+7 τος τῆς καὶ Θαυβάστιος τῆς Φατρ[ε]υς, [τ]ῶν ἀπὸ τῆς αὐτῆς πόλεως, ἐν ἀ
+8 γυιᾷ. εἴη μέν μοι ὑγιαίνουσαν κυρί[α]ν ε[ἶν]αι τῶν ἐμαυτῆς, χρᾶσθαι καὶ διοι
+9 κεῖν περὶ αὐτῶν καθʼ ὃν [ἐὰ]ν αἱρ[ῶμα]ι τρόπον. μετὰ δὲ τὴν ἐσομένην
+10 μου τελευτὴν συνχωρῶ ε[ἶ]ναι τοῦ υ[ἱ]οῦ μου Ἀρεώτου χρηματίζοντος
+11 μητρὸς ἐμα̣υ̣τῆς τῆς Σοήριος, ἐὰν ζῇ, εἰ δὲ μή, τῆς τούτου γενεᾶς, τὴν ὑπάρ
+12 χουσάν μοι ἐπὶ τοῦ πρὸς Ὀξυρύγχων πόλει Σαραπείου ἐπʼ ἀμφόδου
+13 πρότερον Ἱππέω[ν] παρεμβολῆς οἰκίαν καὶ αὐλὴν σὺν εἰσόδοις
+14 καὶ ἐξόδοις καὶ τοῖς συνκυροῦσι, ἐφʼ ᾧ ὁ σημαινος ἀνὴρ Ἁτρῆς ἕξει
+15 τὴν ἐνοίκησιν καὶ τὰ πε[ρ]ιεσόμενα ἐνοίκια τῆς σημαινομένης
+16 οἰκίας καὶ αὐλῆς ἐπὶ τὸν [τ]ῆς ζωῆς αὐτοῦ χρόνον χωρὶς ἐνοικίου,
+17 ὑπὸ μηδενὸς ἐγβαλλομενον, ᾧ χορηγήσει ὁ αὐτὸς υἱὸς Ἀρεώτης
+18 κατʼ ἔτος ἀργυρίου δρ[α]χμὰς τεσσαράκοντα ὀκτὼ ἄχρι οὗ ἐκπληρω
+19 θ̣ῶσι ἀργυρίου δραχμαὶ τριακόσιαι, οὖσαι ἑσταμέναι πρὸς ἀλλήλους
+20 ὑπὲρ διαλύσεως καὶ συμφωνίας π̣ε̣ρὶ̣ τῶν ὀφειλομένων ὑπʼ ἐμοῦ τῷ
+21 αὐτῷ [ἀ]νδρὶ Ἀτρῇ κατὰ ἀσφάλειαν διὰ τραπέζης ἐνοικισμοῦ τῆς
+22 αὐτ[ῆ]ς οἰκίας καὶ αὐ[λ]ῆς ἀργυρίου δραχμῶν ἑξακοσίων . καὶ δώσει
+
+English translation:
+1-3 Year sixteen of Imperator Caesar Domitian Augustus Germanicus, Choiak 30, at Oxyrhynchus city of the Thebaid. With good fortune.
+4-8 Soeris daughter of Harpocras, freedman of Sarapion son of Chaeremon, her mother being Tnepheros daughter of Annius, of those from the city of Oxyrhynchus, with her husband Atres, his mother being Teraus alias Thaubastis daughter of Phatres, of those from the same city, as guardian, in the street, being sound of mind and intelligence, has made this will.
+8-9 May I, while in health, be mistress of my own property, to use and manage it in whatever way I choose.
+9-14 After my death I grant that there shall belong to my son Areotes, styled as of his mother, myself Soeris, if he is alive, and if not, to his descendants, the house and courtyard belonging to me near the Sarapeum at Oxyrhynchus in the quarter formerly of the Cavalry Camp, with its entrances and exits and appurtenances,
+14-22 on condition that my said husband Atres shall have the habitation and any rents accruing from the said house and courtyard for his lifetime, without paying rent, and shall not be ejected by anyone; to whom the same son Areotes shall pay each year forty-eight drachmas of silver until three hundred drachmas of silver are paid in full, this being the sum fixed between them for the settlement and agreement concerning the six hundred drachmas of silver owed by me to the same husband Atres under a security, made through a bank, for the habitation (ἐνοικισμός) of the same house and courtyard.
+
+Excerpt: ll. 1-22 of Soeris' will. She owes her husband Atres 600 silver drachmas under a security made through a bank for the habitation (ἐνοικισμός) of her house: an antichretic loan, the lender living in the house in place of interest; the will settles it at 300 drachmas, paid by her son at 48 drachmas a year (ll. 17-22).
+Interest: none in money; the lender's habitation of the house replaces it.
+Date: not stated; the date of the will, Choiak 30, year 16 of Domitian (= 26 December AD 96); the loan was made before.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.1.114-1,Oxyrhynchus,AD 101-300,,Eunoia (?),Sarapion,2,mina,,"Source: P.Oxy. 1 114 (https://papyri.info/ddbdp/p.oxy;1;114)
+
+Original Text:
+(recto)
+1 [...]
+1 τὰς μακαλ̣ας ο.....πο̣σ....[...]μ̣α. νῦν
+2 μελησάτω σοι λυτρώσασθαι τὰ ἐμὰ παρὰ Σαρα
+3 πίωνα. κεῖται πρὸς β μνᾶς· πεπλήρωκα τὸν
+4 τόκον μέχρι τοῦ Ἐπεὶφ πρὸς στατῆρα τῆς μνᾶς·
+5 δερματικομαφόρτιν λιβάνινον, δερματικομα
+6 φόρτιν ὀνύχινον, χιτὼν καὶ μαφόρτιν λευκὸν
+7 ἀληθινοπόρφυρον, φακιάριον λακωνόσημον,
+8 λινούδιον ἐμπόρφυρον, ψέλια β, μανάκιν,
+9 λωδίκιν, Ἀφροδίτη, σκάφιν, ληκύθιν κασ
+10 σιτέρινον, μέγα καὶ στάμνον. παρὰ Ὀνήτορα
+11 κόμισαι τὰ κλάλια τὰ β. πρὸς ὀκτὼ χέρας κείτα[ι]
+12 ἀπὸ Τῦβι πέρυσι πρὸς στατῆρα τῆς μνᾶς. ἐὰν μὴ
+13 ἀρκεσθῇ τὸ κέρμα διὰ τὴν ἀμέλειαν τῆς κυρίας
+14 ἡμῶν Θεαγενίδος, ἐὰν οὖν μὴ ἀρκεσθῇ τὸ κέρ
+15 μα, πώλησον τὰ ψέλια εἰς συμπλήρωσιν τοῦ
+16 κέρματος. ἄσπασαι πολλὰ Ἀί̈αν καὶ Εὐτυχίαν
+17 ἐρρῶσθαί [σ]ε [ε]ὔχομαι. καὶ Ἀλεξάνδραν. ἀσπάζεται
+18 Ἀί̈αν Ξάνθιλλα καὶ πάντας
+19 τοὺς αὐτῆς.
+(verso)
+20 [...] (x) ἀπὸ Εὐνοί[ας].
+
+English translation:
+(recto)
+1 [...] [...] now
+2-4 take care to redeem my things from Sarapion. They lie (in pledge) for 2 minas; I have paid the interest up to Epeiph at the rate of a stater per mina:
+5-10 a frankincense-coloured cloak with leather (?), an onyx-coloured cloak with leather (?), a tunic and a white cloak of true purple, a Laconian-striped head-scarf, a purple linen cloth, 2 bracelets, a necklace, a blanket, an Aphrodite, a basin, a tin oil-flask, a large one and a jar.
+10-12 From Onetor get the 2 bracelets (?). They have been lying (in pledge) for eight [...] since Tybi of last year at the rate of a stater per mina.
+12-16 If the money is not enough because of the negligence of our mistress Theagenis, if then the money is not enough, sell the bracelets to make up the money.
+16-19 Greet Aias and Eutychia warmly. I pray for your health. And Alexandra. Xanthilla greets Aias and all hers.
+(verso)
+20 [...] from Eunoia.
+
+Loan on pledge: the writer's clothes and household goods lie in pledge with Sarapion for 2 minas; interest has been paid up to Epeiph (ll. 2-10). The writer is named only on the verso (""from Eunoia"").
+Interest: a stater per mina (l. 4), the period not stated; no yearly rate given.
+Date: HGV: 2nd-3rd century AD.
+Place: not stated; the place of the document (HGV: Oxyrhynchus).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.1.114-2,Oxyrhynchus,AD 101-300,,Eunoia (?),Onetor,,,,"Source: P.Oxy. 1 114 (https://papyri.info/ddbdp/p.oxy;1;114)
+
+Original Text:
+(recto)
+1 [...]
+1 τὰς μακαλ̣ας ο.....πο̣σ....[...]μ̣α. νῦν
+2 μελησάτω σοι λυτρώσασθαι τὰ ἐμὰ παρὰ Σαρα
+3 πίωνα. κεῖται πρὸς β μνᾶς· πεπλήρωκα τὸν
+4 τόκον μέχρι τοῦ Ἐπεὶφ πρὸς στατῆρα τῆς μνᾶς·
+5 δερματικομαφόρτιν λιβάνινον, δερματικομα
+6 φόρτιν ὀνύχινον, χιτὼν καὶ μαφόρτιν λευκὸν
+7 ἀληθινοπόρφυρον, φακιάριον λακωνόσημον,
+8 λινούδιον ἐμπόρφυρον, ψέλια β, μανάκιν,
+9 λωδίκιν, Ἀφροδίτη, σκάφιν, ληκύθιν κασ
+10 σιτέρινον, μέγα καὶ στάμνον. παρὰ Ὀνήτορα
+11 κόμισαι τὰ κλάλια τὰ β. πρὸς ὀκτὼ χέρας κείτα[ι]
+12 ἀπὸ Τῦβι πέρυσι πρὸς στατῆρα τῆς μνᾶς. ἐὰν μὴ
+13 ἀρκεσθῇ τὸ κέρμα διὰ τὴν ἀμέλειαν τῆς κυρίας
+14 ἡμῶν Θεαγενίδος, ἐὰν οὖν μὴ ἀρκεσθῇ τὸ κέρ
+15 μα, πώλησον τὰ ψέλια εἰς συμπλήρωσιν τοῦ
+16 κέρματος. ἄσπασαι πολλὰ Ἀί̈αν καὶ Εὐτυχίαν
+17 ἐρρῶσθαί [σ]ε [ε]ὔχομαι. καὶ Ἀλεξάνδραν. ἀσπάζεται
+18 Ἀί̈αν Ξάνθιλλα καὶ πάντας
+19 τοὺς αὐτῆς.
+(verso)
+20 [...] (x) ἀπὸ Εὐνοί[ας].
+
+English translation:
+(recto)
+1 [...] [...] now
+2-4 take care to redeem my things from Sarapion. They lie (in pledge) for 2 minas; I have paid the interest up to Epeiph at the rate of a stater per mina:
+5-10 a frankincense-coloured cloak with leather (?), an onyx-coloured cloak with leather (?), a tunic and a white cloak of true purple, a Laconian-striped head-scarf, a purple linen cloth, 2 bracelets, a necklace, a blanket, an Aphrodite, a basin, a tin oil-flask, a large one and a jar.
+10-12 From Onetor get the 2 bracelets (?). They have been lying (in pledge) for eight [...] since Tybi of last year at the rate of a stater per mina.
+12-16 If the money is not enough because of the negligence of our mistress Theagenis, if then the money is not enough, sell the bracelets to make up the money.
+16-19 Greet Aias and Eutychia warmly. I pray for your health. And Alexandra. Xanthilla greets Aias and all hers.
+(verso)
+20 [...] from Eunoia.
+
+Loan on pledge: two bracelets (?) lie in pledge with Onetor ""for eight [...]"" since Tybi of the previous year (ll. 10-12); the unit of the sum is unclear.
+Interest: a stater per mina (l. 12), the period not stated; no yearly rate given.
+Date: HGV: 2nd-3rd century AD; the pledge dates from Tybi of the year before the letter.
+Place: not stated; the place of the document (HGV: Oxyrhynchus).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
 ALD-P.Oxy.1.130-1,Oxyrhynchus,AD 546-549,,Anoup,,15,solidus (gold),,"Source: P.Oxy. 1 130 (https://papyri.info/ddbdp/p.oxy;1;130)
@@ -5600,6 +5905,56 @@ Term: when the borrower is on the spot (ἐπὶ τῶν τόπων).
 Date: Thoth 6, year 7 of Trajan (= 4 September AD 103).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.3.530-1,Oxyrhynchus,AD 101-200,,Dionysius,Sarapion son of Apis,100,drachma (silver),,"Source: P.Oxy. 3 530 (https://papyri.info/ddbdp/p.oxy;3;530)
+
+Original Text:
+1 Διονύσ[ιος] Τεθ[εῦτι] τῆι [μητρ]ὶ χ̣[αίρειν].
+10 καρτερ[ῶ ][...]υδε α̣π̣α̣.μ[...]ι̣ εν̣[...]ε̣θη. κόμισ[αι]
+11 παρὰ Χ[αιρ]ήμονος τ[ο]ῦ κομίζοντός σο[ι] τὸ [ἐπι]
+12 στόλιον ἀργυρίου δραχμὰς ἑκατὸν δέκ[α]
+13 δύο, ἐξ ὧν δώσεις Σαραπίωνι τῶι φίλω[ι]
+14 τῶι τοῦ Ἀπεὶ λυτρώσασά μου τὰ ἱ̈μάτια
+15 δραχμὰς ἑκατὸν καὶ εἰς λ[ό]γον τόκου
+16 δραχμὰς ὀκτὼ καὶ σοὶ εἰς δαπάνην τῆς
+17 ἱορτῆς δραχμὰς τέσσαρας . εἰ πλεῖον δέ μοι
+18 παρέκει[το] πάλιν σοι ἀπεστάλκειν, καὶ
+19 τοῦτο πέ[μ]πων κέχρημαι. ἀποδοῦσα οὖν
+20 αὐτῶι ἀπολήμψῃ τὰ ἱ̈μάτια ὑγῆ καὶ
+21 ἐν ἀσφαλεῖ ποιήσῃς. μὴ ἀγωνία δὲ περὶ
+29 [Θερ]μουθάριον. ἔρρω(σο). μη(νὸς) Καισαρείου κ.
+
+English translation:
+1 Dionysius to Tetheus his mother, greetings.
+10-11 [...] I persevere [...]. Receive
+11-17 from Chaeremon, who brings you the letter, one hundred and twelve drachmas of silver, from which you will give to Sarapion the friend, the son of Apis, one hundred drachmas, redeeming my clothes, and on account of interest eight drachmas, and to you for the expenses of the festival four drachmas.
+17-19 If I had had more at hand, I would have sent it to you again; and in sending this I have borrowed (?).
+19-21 Having paid him, then, you will get back the clothes intact and keep them safe.
+22 [...]
+29 Farewell. Month Kaisareios 20.
+
+Excerpt: ll. 1, 10-22, 29. Loan on pledge: Dionysius sends his mother money to redeem his clothes from Sarapion son of Apis: 100 drachmas of principal and 8 drachmas of interest (ll. 13-16).
+Interest: 8 drachmas on 100 (l. 15-16), the period not stated; no yearly rate given.
+Date: HGV: 2nd century AD; the loan was made before the letter (Kaisareios 20).
+Place: not stated; the place of the document (HGV: Oxyrhynchus), where the clothes are redeemed.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.4.729-1,Oxyrhynchus,AD 138,,,Sarapion,3000,drachma (silver),0,"Source: P.Oxy. 4 729 (https://papyri.info/ddbdp/p.oxy;4;729)
+
+Original Text:
+13 [τροχοῦ ][...] καὶ δώσει τοῖς αὐτοῖς μεμισθωμέν[ο]ις εἰς λόγον προχρείας ἀργυρίου δραχμὰς τρισχειλίας, ἐξ ὧν ὑπολογιθήσονται αἱ διδόμεναι τοῖς ὑδροπαρόχοις ὑπὲρ ποτισμῶν τοῦ αὐ
+14 [τοῦ κτήματος ἀπὸ Φαῶφι εἰκάδος τοῦ ἐνεστῶ]τος δευτέρου καὶ εἰκοστοῦ ἔτους ἕως Φαῶφι εἰκάδος τοῦ εἰσιόντος τρίτου καὶ εἰκοστοῦ ἔτους ἀκολούθως ᾗ ἔχει ὁ Σαραπίων μισθώσει ἣν καὶ εἶναι κυρίαν δραχμὰς δισχειλιας
+15 [...][ ἃ]ς ἀποδώσει αὐτοῖς τῷ μὲν Ἀθὺρ μηνὶ δ[ρ]αχμὰς διακοσίας Τῦβι ⟨διακοσίας⟩ καὶ Μεχεὶρ τὰς λοιπὰς δραχμὰς ἑξακοσίας, τὰς δὲ ἐπὶ τὸ αὐτὸ δραχμὰς τρισχειλίας ἀποδώσουσι ἐξενίαυ
+16 [τα ][...]τ̣ουσι οἶνον ἀτόκους̣. τὰ̣ ⟨δὲ⟩ [δέο]ντα̣ κ̣τήνη παρὰ τῷ ὑδροπαρόχῳ βόας πέντε καὶ μόσχους τρεῖς παραλήμψονται οἱ αὐτοὶ μεμισθωμένοι ἐν συντιμήσει τῇ εἰκάδι τοῦ
+
+English translation:
+13-14 [...] and he (the lessor) will give to the same lessees, on account of advance, three thousand drachmas of silver, from which will be deducted the sums given to the water-suppliers for the irrigations of the same [estate from Phaophi 20 of the present] twenty-second year until Phaophi 20 of the coming twenty-third year, in accordance with the lease which Sarapion holds, which is also to be valid, two thousand drachmas
+15-16 [...] which he will pay them: in the month of Hathyr two hundred drachmas, Tybi ⟨two hundred⟩, and Mecheir the remaining six hundred drachmas; and the three thousand drachmas in total they will repay [...] wine (?), free of interest.
+
+Excerpt: ll. 13-16 of a lease of a vineyard. Money advance (προχρεία) inside the lease: the lessor Sarapion gives the lessees (names lost) 3,000 silver drachmas in instalments, from which the payments to the water-suppliers are deducted; the lessees will repay the 3,000 drachmas free of interest (l. 15-16; the term is damaged).
+Interest: free of interest (ἀτόκους, l. 16).
+Date: 17 October AD 138 (HGV).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
 ALD-P.Oxy.4.799-1,Oxyrhynchus,AD 1,,Taurinus; Senithes,,300,drachma,,"Source: P.Oxy. 4 799 (https://papyri.info/ddbdp/p.oxy;4;799)
 
 Original Text:
@@ -6035,6 +6390,69 @@ Advance in money inside a lease (the beginning, with the lessee's name, is lost)
 Interest: one drachma per mina per month from Thoth (ll. 4-6), i.e. 1% per month, 12% per year.
 Term: Payni of the present year (= May/June), interest running from Thoth (= August/September); 0.66-0.82 years.
 Date: HGV: 2nd century AD.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.8.1130-1,Senokomis,AD 484,0.40-0.48,Aurelius Abraam son of Ision,Aurelius Isak son of Nilus,10,solidus (gold),,"Source: P.Oxy. 8 1130 (https://papyri.info/ddbdp/p.oxy;8;1130)
+
+Original Text:
+(recto)
+1 χμγ
+2 μετὰ τὴν ὑ̈πατεια Φλ(αουίου) Τρωκώνδη τοῦ λαμπροτάτου
+3 Παχὼν θ τῆς ζ ἰνδικτί(ωνος).
+4 Αὐρ[ήλ]ι[ος] Ἀβραὰμ υ̣[ἱὸ]ς Ἰσίω[νος] καὶ Σοφία⟨ς⟩ ἀπὸ κώμης Σενοκώ
+5 μεος τοῦ Ὀξυρυγχίτου νομοῦ Α[ὐ]ρηλίῳ Ἰσὰκ υἱ̈ῷ Νίλω ἀπὸ
+6 τῆς μεγαλωπόλεος Ἀλεξανδρίας πραγματευτῇ χαίρειν.
+7 ὁμολογῶ κυρίου καὶ βεβαίου ὤντος τοῦ προτέρων μου
+8 γραμματῖον καὶ νῦν ἐσχηκέναι με παρὰ σοῦ ἐν χρήσει διὰ
+9 χιρὸς ἐξ οἴκου σου εἰς ἰδίαν μ[ο]υ καὶ ἀναγκέαν χρίαν
+10 χρυσοῦ ν[ομ]ισμάτια δεσποτι[κ]ὰ δώκε[ι]μα εὔσταθμα ἁπλᾶ
+11 ἀριθμῷ δέκα, γί(νεται) χρ(υσοῦ) νο(μισμάτια) ι, κεφαλέου, καὶ ὑπὲρ διαφώρου
+12 αὐτῶν ἄχρει τῆς ἑξῆς δηλουμένης προθεσμίας σιππίου
+13 καθαροῦ εὐάρεστου ἀπὸ τοῦ [σ]ταθμοῦ τῆς κώμης
+14 δεσμίδια ε[ἴ]κωσε[ι], γ̣ί̣(νεται) δ̣(εσμίδια) κ, ἀκίνδυν[α] ὄντα ἀπὸ παντὸς κινδύνου
+15 ἐπάναγκες ἀποδώ[σ]ω σοι ἐν τῷ Φαῶφι μηνὶ τοῦ ἐνεσ
+16 τώτου ἔτους ρξα̣ ρ̣λ̣ ἀρχῆς τῆς ὀγδώης ἰνδικτίωνος ἀνυπερ
+17 θέτως καὶ ἄνευ πάσης ἀντιλογίας, καὶ ἐπὶ τούτοις οὐκ ἐξέσ
+18 θαι μοι λέγειν δεδω[κ]έναι τι ἐκ τοῦ προγεγραμμένου χρέους
+19 χωρὶς ἐνγράφους ἐντάγιον ἢ συναποχῆ⟨ς⟩ ὒ πρὸ ἀνακωμιτῆς
+20 καὶ λητρώσε[ως] τοῦδέ μου γραμματίου. οἰ δὲ τῆς προθεσμίας
+21 ἐνστώσης τὴν ἀπόδωσείν σοι μοὶ ποιήσωμαι καὶ βουληθῇς
+22 ἀξιωθεὶς συνδοῦναί μοι ἑτέραν προθεσμίαν, ταῦτα τελέσω σοι
+23 καὶ τοῦ μετὰ ταῦτα χρώνον τῶν αὐτῶν τόκον, γιγνομένης ⟨σ⟩οι
+24 τῆς πράξεος παρά δε ἐμοῦ καὶ ἐκ τῶν ὑπαρχώντον μοι πάντον.
+25 κύριον τὸ γραμματῖον ἁπλοῦν γραφὲν καὶ ἐπερωτηθεὶς ὡμολόγησα.
+26 Αὐρήλιος Ἀβραὰμ υἱὸς Ἰσίωνος ὁ προκίμενος ἔσχον
+27 ἐν χρύσει τὰ τοῦ χρυσοῦ νομισμάτια δέκα χορὶς τὸ
+28 πρότερον γραμματῖον καιφάλεο καὶ ὑπὲρ διαφόρου αὐτὸν
+29 σιππίου δεσμίδια εἴκ[ο]σι ὡς πρόκιται. Βάνος διάκωνος
+30 υἱὸς Πέτρος ἔγραψα ὑπὲρ αὐτοῦ γράμματα μοὶ εἰτώτος. ⳨
+31 ☧ διʼ ἐμοῦ Πέτρου ἐγράφη.
+(verso)
+32 γραμ(ματεῖον) Ἀβραὰμ Ἰσίωνος ἀπὸ Σενοκόμ(εως) χρ(υσοῦ) νο(μισματίων) ι ὑπὲρ σιππίου δ̣(εσμιδίων) κ κα̣ὶ ν̣.[...]
+33 ⳨ [Ἀ]β̣[ρ]αὰμ Εἰσίωνος ἀπὸ Σενοκώμεος κ̣α̣ὶ̣ τόκου̣ μ̣[...]. κ̣αὶ α.[...]
+
+English translation:
+(recto)
+1 643 (Christian symbol, numerical)
+2-3 After the consulship of Flavius Trocondes, vir clarissimus, Pachon 9 of the 7th indiction.
+4-6 Aurelius Abraam son of Ision and Sophia, from the village of Senokomis of the Oxyrhynchite nome, to Aurelius Isak son of Nilus, from the great city of Alexandria, merchant, greetings.
+7-14 I acknowledge, my earlier note remaining valid and secure, that I have now also received from you as a loan (ἐν χρήσει), from hand to hand out of your house, for my own urgent need, imperial gold solidi, approved, of good weight, simple, ten in number, total 10 gold solidi, of capital, and for their interest until the term stated below twenty bundles of clean, satisfactory flax by the weight of the village, total 20 bundles,
+14-17 free from all risk, which I will necessarily repay to you in the month of Phaophi of the current year 161 130, the beginning of the eighth indiction, without delay and without any dispute;
+17-20 and on these terms I shall not be permitted to say that I have paid anything of the aforementioned debt without a written receipt or joint receipt, or before the return and cancellation of this my note.
+20-24 If, when the term has arrived, I do not make the repayment to you, and you, being asked, wish to grant me another term, I will pay you these and, for the time after that, interest on the same, you having the right of execution against me and against all my possessions.
+25 This note, written in a single copy, is valid, and having been asked the formal question I consented.
+26-29 I, Aurelius Abraam son of Ision, the aforesaid, have received as a loan the ten gold solidi, apart from the earlier note, of capital, and for their interest twenty bundles of flax, as stated above.
+29-30 I, Banus, deacon, son of Petrus, wrote for him as he does not know letters.
+31 Written through me, Petrus.
+(verso)
+32 Note of Abraam son of Ision from Senokomis, for 10 gold solidi for 20 bundles of flax and [...]
+33 Abraam son of Ision from Senokomis, and interest [...] and [...]
+
+Loan (ἐν χρήσει) of 10 gold solidi, with interest paid in kind: 20 bundles of flax until the term; the principal is to be repaid in Phaophi. The docket reads ""for 20 bundles of flax"". An earlier note of the same borrower is mentioned (ll. 7-8, 28), its sum not given.
+Interest: twenty bundles of flax until the term (ll. 11-14), paid in kind; no rate in money.
+Term: Phaophi of the current year 161/130 (Oxyrhynchite era), the beginning of the 8th indiction (= 28 September - 27 October AD 484); 0.40-0.48 years.
+Date: Pachon 9, indiction 7 (= 4 May AD 484, HGV).
+Place: the borrower is from Senokomis (HGV: Senokomis, Oxyrhynchite nome).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
 ALD-P.Oxy.8.1132-1,Oxyrhynchus,AD 162,,Tryphon son of Heraclides,Chaeremon son of Sarapion,600,drachma (silver),4,"Source: P.Oxy. 8 1132 (https://papyri.info/ddbdp/p.oxy;8;1132)
@@ -8042,6 +8460,36 @@ Date: Tybi 1, year 12 of Antoninus Pius (= 27 December AD 148; HGV also consider
 Place: not stated; the place of the document.
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.43.3146-1,Oxyrhynchus,AD 347,,Aurelius Sozon son of Marcus,Flavius Alexander,1500,myriad (denarius),,"Source: P.Oxy. 43 3146 (https://papyri.info/ddbdp/p.oxy;43;3146)
+
+Original Text:
+1 ⟦ ὑπατείας Οὐολκακίου Ῥουφίνου τοῦ̣ λ̣α̣μ̣(προτάτου) ἐπάρχου ⟧
+2 ⟦ τοῦ ἱ̈εροῦ πραιτωρίου καὶ Φλαουίου Εὐσεβίου τοῦ ⟧
+3 ⟦ λαμ(προτάτου) κόμιτος, Παχὼν ιε. ⟧
+4 ⟦ Αὐρήλιος Σώζων Μά̣ρ̣κου Ἀλεξανδρεὺς ⟧
+5 ⟦ καταγινόμενος ἐν τῇ λαμ(πρᾷ) καὶ λαμ(προτάτῃ) Ὀξυρ(υγχιτῶν) πόλει ⟧
+6 ⟦ Φλαουίῳ Ἀλεξάνδρῳ ἀναφερομέν̣ῳ τῇ δεσποτι ⟧
+7 ⟦ κῇ ἐξουσίᾳ χαίρειν. ὁμ[ο]λ̣ογῶ ἐσχηκέναι παρὰ ⟧
+8 ⟦ σοῦ κατʼ ἐπιθήκην ἐπὶ τῆσδε τῆς Ὀξυρυγχιτῶν ⟧
+9 ⟦ πόλεως ἀπὸ τοῦ δεσποτικοῦ λόγου ἀργυρίου Σεβασ ⟧
+10 ⟦ τῶν νομίσμ[α]τος δηναρίων μυριάδας χιλίας ⟧
+11 ⟦ πεντακοσίας (γίνονται) (δηναρίων) (μυριάδας) Αφ, ἅσπερ ἐπάναγκες ⟧
+12 ⟦ ἀποδώσω σ̣ο̣ι̣ δ̣ι̣[ὰ τοῦ ][...]τέρου παι̣δ̣[ὸ]ς ⟧
+13 ⟦ Πολυχρονίου [ἐ]πὶ τῆς λαμ(προτάτης) Ἀλεξανδρίας ἐπὰν ⟧
+14 ⟦ εὐτυχῶς ἐκῖσαι παραγένηται ἀνυπερ ⟧
+15 ⟦ θέτως καὶ ἀναντιρή̣τ̣ως, ἅμα δὲ τῇ το[ῦ] ἀργυρίου ⟧
+
+English translation:
+1-3 (Crossed out:) In the consulship of Vulcacius Rufinus, vir clarissimus, prefect of the sacred praetorium, and Flavius Eusebius, vir clarissimus, comes, Pachon 15.
+4-7 Aurelius Sozon son of Marcus, Alexandrian, residing in the illustrious and most illustrious city of the Oxyrhynchites, to Flavius Alexander, reporting to the imperial authority, greetings.
+7-11 I acknowledge that I have received from you by way of a supplement (?), here in the city of the Oxyrhynchites, from the imperial account, one thousand five hundred myriads of denarii of silver of the coinage of the Augusti, total 1,500 myriads of denarii,
+11-15 which I will necessarily repay to you through [...] servant Polychronius at the most illustrious Alexandria when he happily arrives there, without delay and without dispute, and together with the silver [...]
+
+Crossed-out acknowledgement: Sozon has received at Oxyrhynchus, from the imperial account, 1,500 myriads of denarii, to be repaid to Flavius Alexander through his servant at Alexandria. The whole text is crossed out, perhaps cancelled.
+Term: when the servant Polychronius arrives at Alexandria; not dated.
+Date: Pachon 15, consuls Vulcacius Rufinus and Flavius Eusebius (= 10 May AD 347).
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
 ALD-P.Oxy.44.3198-1,Oxyrhynchus,AD 145-171,0.41-0.49,Herais daughter of Plutogenes,Prepousa,144,drachma (silver),12,"Source: P.Oxy. 44 3198 (https://papyri.info/ddbdp/p.oxy;44;3198)
 
 Original Text:
@@ -9316,6 +9764,37 @@ Two copies of the same note of hand (the first broken off).
 Term: by Pachon 2 of year 16, 14, 6 (= 27 April AD 322) (ll. 20-22); interest only for overdue time.
 Date: Pharmouthi 3, after the consulship of Licinius (6th) and Licinius Caesar (2nd) (= 29 March AD 322).
 Place: not stated; the place of the document.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
+ALD-P.Oxy.63.4393-1,Oxyrhynchus,AD 465-498,,Aurelia Aeous,,4,chrysinon (gold),,"Source: P.Oxy. 63 4393 (https://papyri.info/ddbdp/p.oxy;63;4393)
+
+Original Text:
+1 Φλαο[υ]ΐ̣[ῳ Φοι]βάμμωνι π̣ο̣λιτ̣ε̣υομένῳ πατρὶ π[ό]λ̣ε̣ω̣ς̣ Ὀ̣ξ̣[υ]ρ̣υγ̣χίτου
+2 παρὰ Αὐ̣ρ̣η̣λίας Ἀηοῦ ἀπὸ τῆς αὐτῆς πόλεως.
+3 τῶν ἀνθρωπίνων ὑπεξῆλθεν ὁ ἐμὸς ἀνὴρ ἐποφίλων
+4 χρέα. ὁ δὲ υἱός μου Ἀείων, γυναῖκα̣{ν} ἑαυ̣[τ]ῷ̣ ἀγαγὼ̣[ν] καὶ
+5 ἐκ τῆς̣ τ̣οῦ πατρὸς αὐτοῦ εὐ̣π̣ορίας τ̣ῶν π̣[ραγ]μάτ̣ων̣
+6 εὑρών, μ̣ελετᾷ ἐπικλᾶσαι̣ ἐμοὶ τῇ μη̣τ̣[ρ]ὶ̣ μ̣έρος
+7 τοῦ χρέους, ἀντιποιούμενος καὶ τοῦ γ̣ον̣ι̣κοῦ μου
+8 οἰκήματος. ὅθεν πα[ρ]α̣καλῶ σου τὴν
+9 στερρότητα ὥστε κελεῦσαι τοῦτον παρ̣α̣στῆναι,
+10 ἐπειδήπερ καὶ περιεποιήσατο ἑαυτῷ πράγματα,
+11 ἔχοντα καὶ τοὺς νηπίους ἀδελφοὺς αὐτοῦ συνκά
+12 μνοντας, καὶ ἀκροάσασθ̣αι ἡμῶν καὶ τύπον
+13 δίκαιον παρασχεῖν. φαίνομαι γὰρ ὑπὲρ α̣ὐ̣το̣[ῦ] ἐν τῷ χρυσαρ
+14 γύρῳ ὑποθεμένη τὸ θυγάτριόν μου εἰς τέσσαρα χ̣[ρύ]σ̣ι̣ν̣α.
+15 Αὐρηλία Ἀηοῦ ἐπιδέδωκα.
+
+English translation:
+1-2 To Flavius Phoebammon, councillor, pater civitatis of the city of the Oxyrhynchites, from Aurelia Aeous, from the same city.
+3-8 My husband departed from human affairs owing debts. My son Aeion, having taken a wife for himself and having found (a living) from his father's wealth of property, is planning to shift onto me, his mother, a part of the debt, laying claim also to my parental house.
+8-13 Therefore I beg your firmness to order him to be brought, since he has acquired property for himself while his young brothers are suffering along with me, and to hear us and give a just ruling.
+13-14 For it is apparent that on his behalf, for the chrysargyron (tax), I pawned my little daughter for four gold coins.
+15 I, Aurelia Aeous, have submitted (this).
+
+Loan on pledge, known from Aurelia Aeous' petition: to pay the chrysargyron tax for her son Aeion she pawned her little daughter for four gold coins (ll. 13-14). The lender is not named.
+Date: not stated; HGV dates the petition AD 465-498; the loan was made before.
+Place: not stated; the place of the document (HGV: Oxyrhynchus).
 
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info (github.com/papyri/idp.data), licensed CC BY 3.0."
 ALD-P.Oxy.63.4394-1,Alexandria,AD 492,,Flavius Julianus son of Eusebius; Flavius Olympiodorus son of Eutychianus,Flavius Maximinus son of Gaius,1455,solidus (gold),6,"Source: P.Oxy. 63 4394 (https://papyri.info/ddbdp/p.oxy;63;4394)

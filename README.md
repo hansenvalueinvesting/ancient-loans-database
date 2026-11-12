@@ -6,6 +6,10 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-12 (need_review.md re-judged under the working definition)**
+- Added 16 rows from need_review.md (entries removed there): loans on pledge or pawn ALD-P.Oxy.1.114-1/-2, P.Oxy.3.530-1, P.Oxy.63.4393-1; antichretic loan (habitation in place of interest) ALD-P.Oxy.1.104-1; loan with interest in flax ALD-P.Oxy.8.1130-1; ALD-P.Oxy.43.3146-1 (crossed out); money advances in leases ALD-P.Oxy.4.729-1, P.Mich.18.792-1 (the 500-drachma instalment; the cattle not entered); register entries ALD-P.Mich.5.240-4 to -7, P.Mich.2.128-2 (nursling-and-loan agreements), P.Mich.5.238.Ro-37/-38 (loans named in receipts for half repayment). 301 rows.
+- Flags of SB 20 14338 and P.Oxy. 82 5320 restated under the definition. Site: Senokomis added to the map places; script version 2026-11-12.
+
 **2026-11-12 (working definition of a loan)**
 - New working definition of a loan (Roman mutuum / Greek daneion: money or fungible goods transferred, to be repaid in equivalent later, with or without interest), with a four-part test, a table of borderline cases and an evidence standard; it replaces the earlier rules. Shown on the site: "What is a loan?" (top right of the main page).
 - All 285 rows audited against it: all meet it; none removed.
