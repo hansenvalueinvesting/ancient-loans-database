@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-12 (site: label)**
+- The keyword box is labelled "Search" again.
+
 **2026-11-12 (site: keyword search)**
 - The search box is now "Keywords", like Location: type a word and press Enter to add it; added keywords show as buttons (click to remove); a loan must contain every keyword. Script version 2026-11-12c.
 
