@@ -397,3 +397,7 @@ Texts read in full.
 
 ### Murecine tablets
 - TPSulp. 1-127
+
+### P.Oxy.
+- vols. 1-26
+- vols. 27-87 (IN PROGRESS)
