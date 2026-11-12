@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-12 (site: "What is a loan?" popup)**
+- The popup is now a small window (at most 640 px wide and 80% of the screen high, scrolling inside) with Hansen's text: definition, testing criteria, interest note, evidence standard.
+
 **2026-11-12 (antichretic loans in the record-office registers)**
 - Under the working definition, habitation agreements (ἐνοίκησις: the lender lives in the borrower's house in place of interest) are loans. Added 31 register entries: ALD-P.Mich.2.121.Vo-28 to -38, P.Mich.5.237-3, P.Mich.5.238.Ro-39 to -54, P.Mich.2.128-3 to -5; copies of the same entry in P.Mich. 5 240 and 2 128 entered once (noted). 332 rows.
 

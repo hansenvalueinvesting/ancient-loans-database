@@ -100,7 +100,7 @@ below applies to any source as the database expands.
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
-WORKING DEFINITION (Hansen, Nov 2026: "apply your definition of a loan in our database ... and apply your method moving forward"; supersedes every rule below where they differ; shown on the site under "What is a loan?", `docs/index.html`):
+WORKING DEFINITION (Hansen, Nov 2026: "apply your definition of a loan in our database ... and apply your method moving forward"; supersedes every rule below where they differ; shown on the site under "What is a loan?", `docs/index.html`: a small popup (native <dialog>, max 640 px wide, 80% of the screen high, scrolls inside) whose text is Hansen's draft (Nov 2026): definition, Testing Criteria, interest note, Evidence Standard; no table of borderline cases on the site):
 a loan = the lender transfers money or other fungible goods to the borrower, who takes ownership and may spend or consume them,
 and is obliged to return an equivalent quantity of the same kind later, with or without interest (Roman mutuum, Greek daneion).
 Test, all four: (1) transfer actually made (not promised, requested, planned); (2) the borrower may use/consume (loan of a specific
