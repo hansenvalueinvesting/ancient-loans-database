@@ -6,8 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
-**2026-11-12 (P.Oxy. reread in full: vols. 56-67, in progress)**
-- New row: ALD-P.Oxy.57.3908-1 (state seed loan; 57 3909 is a copy of the same order). 353 rows.
+**2026-11-12 (P.Oxy. reread in full: vols. 56-87; P.Oxy. done)**
+- Task files P080-P102 read in full. New rows: ALD-P.Oxy.57.3908-1 (state seed loan; 57 3909 is a copy of the same order), P.Oxy.82.5327-1 (4 solidi supplied to Joseph, named in a petition). 354 rows.
+- To need_review.md: P.Oxy. 58 3915, 59 3979, 63 4355, 66 4531, 67 4624, 78 5175, 86 5565.
 
 **2026-11-12 (P.Oxy. reread in full: vols. 27-55)**
 - Task files P049-P079 read in full. New rows: ALD-P.Oxy.42.3060-1 (8 drachmas borrowed, named in a letter), P.Oxy.48.3419-1 (loan of Dioscorus on pledges, no sum), P.Oxy.50.3574-1 (money lent on surety, named in a petition, no sum). 352 rows.
