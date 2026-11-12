@@ -36,9 +36,10 @@ below applies to any source as the database expands.
   include. i can review them by hand"): loan-like transactions not entered. Format (Hansen, Nov 2026): only a table, no
   description, columns Source | Lines | Text (the passage: original, line by line with line numbers, copied by script from
   the edition, then an English translation) | Flagged for review (reason); one row per document or passage; most recent first.
-- **Coverage log: `coverage_log.md`** (Hansen, Nov 2026): only a plain list of the names of completed texts, one "- " item per line (as Hansen formatted it)
-  ("Author, Title"), texts in progress marked "(IN PROGRESS)"; no table, heading or other formatting ("i want the coverage
-  log to be only this altogether"). Update it with every batch.
+- **Coverage log: `coverage_log.md`** (Hansen, Nov 2026: "more organized, and easier to read, without cluttering with
+  unnecessary descriptions"): texts read in full only, grouped by corpus (`## Latin literature (Perseus)`, `## Documents`)
+  and author or series (`### Cicero`, alphabetical), one "- Title" per line; texts in progress marked "(IN PROGRESS)"; no
+  other descriptions. Searched-only corpora (P.Oxy., P.Mich. by keyword/tag) are not listed. Update it with every batch.
 - **Archive: `ald1.csv`** (Hansen, Nov 2026: "empty out ald.csv so it starts blank, and move all current data into
   ald1.csv just so we don't lose it in case i decide to shift back"): the 1,349 rows as of the restart, unchanged.
   Not read by the site; do not edit it.

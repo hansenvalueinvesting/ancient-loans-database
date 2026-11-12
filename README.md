@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-12 (coverage log reorganized)**
+- coverage_log.md grouped by corpus and author (alphabetical), titles only; the Murecine tablets (TPSulp. 1-127, read in full) added.
+
 **2026-11-12 (site: label)**
 - The keyword box is labelled "Search" again.
 

@@ -1,293 +1,399 @@
-- Plautus, Titus Maccius, Amphitruo
-- Plautus, Titus Maccius, Asinaria
-- Plautus, Titus Maccius, Aulularia
-- Plautus, Titus Maccius, Bacchides
-- Plautus, Titus Maccius, Captivi
-- Plautus, Titus Maccius, Casina
-- Plautus, Titus Maccius, Cistellaria
-- Plautus, Titus Maccius, Curculio
-- Plautus, Titus Maccius, Epidicus
-- Plautus, Titus Maccius, Menaechmi
-- Plautus, Titus Maccius, Mercator
-- Plautus, Titus Maccius, Miles Gloriosus
-- Plautus, Titus Maccius, Mostellaria
-- Plautus, Titus Maccius, Persa
-- Plautus, Titus Maccius, Poenulus
-- Plautus, Titus Maccius, Pseudolus
-- Plautus, Titus Maccius, Rudens
-- Plautus, Titus Maccius, Stichus
-- Plautus, Titus Maccius, Trinummus
-- Plautus, Titus Maccius, Truculentus
-- Terence, Andria
-- Terence, Heautontimorumenos
-- Terence, Eunuchus
-- Terence, Phormio
-- Terence, Hecyra
-- Terence, Adelphi
-- Pseudo-Caesar, De Bello Africo
-- Pseudo-Caesar, De Bello Alexandrino
-- Pseudo-Caesar, De Bello Hispaniensi
-- Julius Caesar, Gallic War
-- Julius Caesar, Civil War
-- Catullus, C. Valerius, Carmina
-- Cicero, Marcus Tullius, Pro P. Quinctio
-- Cicero, Marcus Tullius, Pro S. Roscio Amerino
-- Cicero, Marcus Tullius, Pro Q. Roscio Comoedo
-- Cicero, Marcus Tullius, Divinatio in Q. Caecilium
-- Cicero, Marcus Tullius, In C. Verrem
-- Cicero, Marcus Tullius, Pro M. Tullio
-- Cicero, Marcus Tullius, Pro Fonteio
-- Cicero, Marcus Tullius, Pro A. Caecina
-- Cicero, Marcus Tullius, De Imperio Cn. Pompei Ad Quirites
-- Cicero, Marcus Tullius, Pro A. Cluentio
-- Cicero, Marcus Tullius, De Lege Agraria
-- Cicero, Marcus Tullius, Pro C. Rabirio Perduellionis Reo Ad Quirites
-- Cicero, Marcus Tullius, In Catilinam
-- Cicero, Marcus Tullius, Pro L. Murena
-- Cicero, Marcus Tullius, Pro P. Sulla
-- Cicero, Marcus Tullius, Pro Archia Poeta
-- Cicero, Marcus Tullius, Pro L. Flacco
-- Cicero, Marcus Tullius, Cum Populo Gratias Egit
-- Cicero, Marcus Tullius, Cum Senatui Gratias Egit
-- Cicero, Marcus Tullius, De Domo Sua Ad Pontifices
-- Cicero, Marcus Tullius, De Haruspicum Responso In P. Clodium
-- Cicero, Marcus Tullius, Pro P. Sestio
-- Cicero, Marcus Tullius, Against Vatinius
-- Cicero, Marcus Tullius, Pro M. Caelio
-- Cicero, Marcus Tullius, De Provinciis Consularibus
-- Cicero, Marcus Tullius, Pro L. Cornelio Balbo
-- Cicero, Marcus Tullius, In L. Calpurnium Pisonem
-- Cicero, Marcus Tullius, Pro Cn. Plancio
-- Cicero, Marcus Tullius, Pro M. Scauro
-- Cicero, Marcus Tullius, Pro C. Rabirio Postumo
-- Cicero, Marcus Tullius, Pro T. Annio Milone
-- Cicero, Marcus Tullius, Pro M. Marcello
-- Cicero, Marcus Tullius, Pro Q. Ligario
-- Cicero, Marcus Tullius, Pro Rege Deiotaro
-- Cicero, Marcus Tullius, Philippicae
-- Cicero, Marcus Tullius, De Inventione
-- Cicero, Marcus Tullius, On Oratory
-- Cicero, Marcus Tullius, Partitiones Oratoriae
-- Cicero, Marcus Tullius, Brutus
-- Cicero, Marcus Tullius, Orator
-- Cicero, Marcus Tullius, De Optimo Genere Oratorum
-- Cicero, Marcus Tullius, Topica
-- Cicero, Marcus Tullius, De Republica
-- Cicero, Marcus Tullius, Academica
-- Cicero, Marcus Tullius, Lucullus
-- Cicero, Marcus Tullius, Paradoxa Stoicorum
-- Cicero, Marcus Tullius, de Finibus Bonorum et Malorum
-- Cicero, Marcus Tullius, Tusculanae Disputationes
-- Cicero, Marcus Tullius, De Natura Deorum
-- Cicero, Marcus Tullius, De Senectute
-- Cicero, Marcus Tullius, De Amicitia
-- Cicero, Marcus Tullius, De Divinatione
-- Cicero, Marcus Tullius, De Fato
-- Cicero, Marcus Tullius, De Officiis
-- Cicero, Marcus Tullius, Letters to his Friends
-- Cicero, Marcus Tullius, Letters to Atticus
-- Cicero, Marcus Tullius, Letters to his brother Quintus
-- Cicero, Marcus Tullius, Letters to Brutus
-- Cicero, Marcus Tullius, Timaeus
-- Quintus Tullius Cicero, Commentariolum Petitionis
-- Lucretius, De Rerum Natura
-- Nepos, Cornelius, Miltiades
-- Nepos, Cornelius, Themistocles
-- Nepos, Cornelius, Aristides
-- Nepos, Cornelius, Pausanias
-- Nepos, Cornelius, Cimon
-- Nepos, Cornelius, Lysander
-- Nepos, Cornelius, Alcibiades
-- Nepos, Cornelius, Thrasybulus
-- Nepos, Cornelius, Conon
-- Nepos, Cornelius, Dion
-- Nepos, Cornelius, Iphicrates
-- Nepos, Cornelius, Chabrias
-- Nepos, Cornelius, Timotheus
-- Nepos, Cornelius, Datames
-- Nepos, Cornelius, Epaminondas
-- Nepos, Cornelius, Pelopidas
-- Nepos, Cornelius, Agesilaus
-- Nepos, Cornelius, Eumenes
-- Nepos, Cornelius, Phocion
-- Nepos, Cornelius, Timoleon
-- Nepos, Cornelius, De Regibus
-- Nepos, Cornelius, Hamilcar
-- Nepos, Cornelius, Hannibal
-- Nepos, Cornelius, Cato
-- Nepos, Cornelius, Atticus
-- Propertius, Sextus, Elegiae
-- Sallust, Catilinae Coniuratio
-- Sallust, Bellum Iugurthinum
-- Sallust, Historiae
-- Tibullus, Elegiae
-- Tibullus, Sulpicia Elegiae
-- P. Vergilius Maro (Virgil), Eclogues
-- P. Vergilius Maro (Virgil), Georgics
-- Celsus, Aulus Cornelius, De Medicina
-- Columella, Lucius Junius Moderatus, Res Rustica
-- Curtius Rufus, Quintus, Historiarum Alexandri Magni
-- Horace, Carmina
-- Horace, Carmen Saeculare
-- Horace, Epodi
-- Horace, Satires
-- Horace, Epistulae
-- Horace, Ars Poetica
-- Titus Livius (Livy), History of Rome
-- Persius, Saturae
-- Pliny, the Elder, Naturalis Historia
-- Quintilian, Institutio Oratoria
-- Seneca, Lucius Annaeus, De Beneficiis
-- Seneca, Lucius Annaeus, De Clementia
-- Seneca, Lucius Annaeus, Epistulae
-- Statius, P. Papinius (Publius Papinius), Silvae
-- Valerius Maximus, Facta et Dicta Memorabilia
-- Vitruvius Pollio, On Architecture
-- Apuleius, Apologia
-- Apuleius, Florida
-- Florus, Lucius Annaeus, Epitome Rerum Romanorum
-- Gellius, Aulus, Noctes Atticae
-- Juvenal, Saturae
-- Martial, Epigrammata
-- Pliny, the Younger, Epistulae
-- Suetonius, De Vita Caesarum (Divus Julius to Domitianus)
-- Tacitus, Cornelius, Agricola
-- Tacitus, Cornelius, Germania
-- Tacitus, Cornelius, Dialogus
-- Tacitus, Cornelius, Historiae
-- Tacitus, Cornelius, Annales
-- Apicius, De Re Coquinaria
-- Scriptores Historiae Augustae, De Vita Hadriani
-- Scriptores Historiae Augustae, Helius
-- Scriptores Historiae Augustae, Antoninus Pius
-- Scriptores Historiae Augustae, Marcus Antoninus Philosophus
-- Scriptores Historiae Augustae, Verus
-- Scriptores Historiae Augustae, Avidius Casius
-- Scriptores Historiae Augustae, Commodus Antoninus
-- Scriptores Historiae Augustae, Pertinax
-- Scriptores Historiae Augustae, Didius Julianus
-- Scriptores Historiae Augustae, Severus
-- Scriptores Historiae Augustae, Pescennius Niger
-- Scriptores Historiae Augustae, Clodinus Albinus
-- Scriptores Historiae Augustae, Antoninus Caracalla
-- Scriptores Historiae Augustae, Antoninus Geta
-- Scriptores Historiae Augustae, Opilius Macrinus
-- Scriptores Historiae Augustae, Diadumenus Antoninus
-- Scriptores Historiae Augustae, Antoninus Heliogobalus
-- Scriptores Historiae Augustae, Alexander Severus
-- Scriptores Historiae Augustae, Maximini Duo
-- Scriptores Historiae Augustae, Gordiani Tres
-- Scriptores Historiae Augustae, Maximus et Balbinus
-- Scriptores Historiae Augustae, Valeriani Duo
-- Scriptores Historiae Augustae, Gallieni Duo
-- Scriptores Historiae Augustae, Tyranni Triginta
-- Scriptores Historiae Augustae, Divus Claudius
-- Scriptores Historiae Augustae, Divus Aurelianus
-- Scriptores Historiae Augustae, Tacitus
-- Scriptores Historiae Augustae, Probus
-- Scriptores Historiae Augustae, Firmus Saturninus, Proculus et Bonosus
-- Scriptores Historiae Augustae, Carus et Carinus et Numerianus
-- Ammianus Marcellinus, Res Gestae
-- Augustine, Saint, Epistulae
-- Ausonius, Decimus Magnus, De Bissula
-- Ausonius, Decimus Magnus, Caesares
-- Ausonius, Decimus Magnus, Cento Nuptialis
-- Ausonius, Decimus Magnus, Commemoratio Professorum Burdigalensium
-- Ausonius, Decimus Magnus, Cupido Cruciatus
-- Ausonius, Decimus Magnus, De Herediolo
-- Ausonius, Decimus Magnus, Eclogarum Liber
-- Ausonius, Decimus Magnus, Ephemeris
-- Ausonius, Decimus Magnus, Epicedion in Patrem
-- Ausonius, Decimus Magnus, Epigrammaton Liber
-- Ausonius, Decimus Magnus, Epistulae
-- Ausonius, Decimus Magnus, Epitaphia
-- Ausonius, Decimus Magnus, Genethliacon ad Ausonium Nepotem
-- Ausonius, Decimus Magnus, Gratiarum Actio
-- Ausonius, Decimus Magnus, Griphus Ternarii Numeri
-- Ausonius, Decimus Magnus, Liber Protrepticus ad Nepotem
-- Ausonius, Decimus Magnus, [Libri de Fastis] Conclusio
-- Ausonius, Decimus Magnus, Ludus Septem Sapientum
-- Ausonius, Decimus Magnus, Mosella
-- Ausonius, Decimus Magnus, Oratio Versibus Rhopalicis
-- Ausonius, Decimus Magnus, Ordo Urbium Nobilium
-- Ausonius, Decimus Magnus, Parentalia
-- Ausonius, Decimus Magnus, Praefatiunculae
-- Ausonius, Decimus Magnus, Precationes
-- Ausonius, Decimus Magnus, Versus Paschales Prosodic
-- Ausonius, Decimus Magnus, Technopaegnion
-- Bede, Historia Ecclesiastica Gentis Anglorum
-- Boethius, De consolatione philosophiae
-- Boethius, Quomodo Substantiae in Eo Quod Sint Bonae Sint Cum Non Sint Substantialia Bona
-- Boethius, De Fide Catholica
-- Boethius, Liber De Persona et Duabus Naturis Contra Eutychen Et Nestorium
-- Boethius, Quomodo Trinitas Unus Deus Ac Non Tres Dii (De Trinitate)
-- Boethius, Utrum Pater Et Filius Ac Spiritus Sanctus De Divinitate Substantialiter Praedicentur Liber
-- Cato, Marcus Porcius, De agricultura
-- Claudian, Carminum minorum corpusculum
-- Claudian, de bello Gildonico
-- Claudian, de Bello Gothico
-- Claudian, de consulatu Stilichonis
-- Claudian, de raptu Proserpinae
-- Claudian, Epithalamium de nuptiis Honorii Augusti
-- Claudian, Fescinnina de nuptiis Honorii Augusti
-- Claudian, In Eutropium
-- Claudian, In Rufinum
-- Claudian, Panegyricus de tertio consulatu Honorii Augusti
-- Claudian, Panegyricus de quarto consulatu Honorii Augusti
-- Claudian, Panegyricus de sexto consulatu Honorii Augusti
-- Claudian, Panegyricus dictus Manlio Theodoro consuli
-- Claudian, Panegyricus dictus Probino et Olybrio consulibus
-- Jerome, Saint, Epistolae
-- Minucius Felix, Marcus, Octavius
-- Prudentius, Liber Peristephanon
-- Prudentius, Psychomachia
-- Prudentius, Praefatio
-- Prudentius, Cathemerina
-- Prudentius, Apotheosis
-- Prudentius, Hamartigenia
-- Prudentius, Contra Orationem Symmachi
-- Prudentius, Dittochaeon
-- Prudentius, Epilogus
-- Seneca, Lucius Annaeus, De Brevitate Vitae
-- Seneca, Lucius Annaeus, De Consolatione ad Helviam
-- Seneca, Lucius Annaeus, De Consolatione ad Marciam
-- Seneca, Lucius Annaeus, De Consolatione ad Polybium
-- Seneca, Lucius Annaeus, De Constantia
-- Seneca, Lucius Annaeus, De Ira
-- Seneca, Lucius Annaeus, De Otio
-- Seneca, Lucius Annaeus, De Providentia
-- Seneca, Lucius Annaeus, De Tranquillitate Animi
-- Seneca, Lucius Annaeus, De Vita Beata
-- Sidonius Apollinaris, Carmina
-- Sidonius Apollinaris, Epistulae
-- Tertullian, Ad Martyras
-- Tertullian, Ad Nationes Libri Duo
-- Tertullian, Ad Scapulam
-- Tertullian, Adversus Hermogenem
-- Tertullian, Adversus Judaeos Liber
-- Tertullian, Adversus Marcionem
-- Tertullian, Adversus Praxean
-- Tertullian, Adversus Valentinianos
-- Tertullian, Apologeticum
-- Tertullian, De Anima
-- Tertullian, De Baptismo
-- Tertullian, De Carne Christi
-- Tertullian, De Corona
-- Tertullian, De Cultu Feminarum
-- Tertullian, De Exhortatione Castitatis Liber
-- Tertullian, De Fuga in Persecutione
-- Tertullian, De idolatria
-- Tertullian, De ieiunio adversus psychicos
-- Tertullian, De Monogamia
-- Tertullian, De Oratione
-- Tertullian, De Paenitentia
-- Tertullian, De Pallio
-- Tertullian, De Patientia
-- Tertullian, De Praescriptionibus Hereticorum
-- Tertullian, De Pudicitia
-- Tertullian, De Carnis Resurrectione
-- Tertullian, De Spectaculis
-- Tertullian, De Testimionio Animae
-- Tertullian, De Virginibus Velandis
-- Tertullian, Scorpiace
-- Pseudo-Tertullian, Ad Uxorem
+# Coverage log
+
+Texts read in full.
+
+## Latin literature (Perseus)
+
+### Ammianus Marcellinus
+- Res Gestae
+
+### Apicius
+- De Re Coquinaria
+
+### Apuleius
+- Apologia
+- Florida
+
+### Augustine
+- Epistulae
+
+### Ausonius
+- De Bissula
+- Caesares
+- Cento Nuptialis
+- Commemoratio Professorum Burdigalensium
+- Cupido Cruciatus
+- De Herediolo
+- Eclogarum Liber
+- Ephemeris
+- Epicedion in Patrem
+- Epigrammaton Liber
+- Epistulae
+- Epitaphia
+- Genethliacon ad Ausonium Nepotem
+- Gratiarum Actio
+- Griphus Ternarii Numeri
+- Liber Protrepticus ad Nepotem
+- [Libri de Fastis] Conclusio
+- Ludus Septem Sapientum
+- Mosella
+- Oratio Versibus Rhopalicis
+- Ordo Urbium Nobilium
+- Parentalia
+- Praefatiunculae
+- Precationes
+- Versus Paschales Prosodic
+- Technopaegnion
+
+### Bede
+- Historia Ecclesiastica Gentis Anglorum
+
+### Boethius
+- De consolatione philosophiae
+- Quomodo Substantiae in Eo Quod Sint Bonae Sint Cum Non Sint Substantialia Bona
+- De Fide Catholica
+- Liber De Persona et Duabus Naturis Contra Eutychen Et Nestorium
+- Quomodo Trinitas Unus Deus Ac Non Tres Dii (De Trinitate)
+- Utrum Pater Et Filius Ac Spiritus Sanctus De Divinitate Substantialiter Praedicentur Liber
+
+### Cato
+- De agricultura
+
+### Catullus
+- Carmina
+
+### Celsus
+- De Medicina
+
+### Cicero
+- Pro P. Quinctio
+- Pro S. Roscio Amerino
+- Pro Q. Roscio Comoedo
+- Divinatio in Q. Caecilium
+- In C. Verrem
+- Pro M. Tullio
+- Pro Fonteio
+- Pro A. Caecina
+- De Imperio Cn. Pompei Ad Quirites
+- Pro A. Cluentio
+- De Lege Agraria
+- Pro C. Rabirio Perduellionis Reo Ad Quirites
+- In Catilinam
+- Pro L. Murena
+- Pro P. Sulla
+- Pro Archia Poeta
+- Pro L. Flacco
+- Cum Populo Gratias Egit
+- Cum Senatui Gratias Egit
+- De Domo Sua Ad Pontifices
+- De Haruspicum Responso In P. Clodium
+- Pro P. Sestio
+- Against Vatinius
+- Pro M. Caelio
+- De Provinciis Consularibus
+- Pro L. Cornelio Balbo
+- In L. Calpurnium Pisonem
+- Pro Cn. Plancio
+- Pro M. Scauro
+- Pro C. Rabirio Postumo
+- Pro T. Annio Milone
+- Pro M. Marcello
+- Pro Q. Ligario
+- Pro Rege Deiotaro
+- Philippicae
+- De Inventione
+- On Oratory
+- Partitiones Oratoriae
+- Brutus
+- Orator
+- De Optimo Genere Oratorum
+- Topica
+- De Republica
+- Academica
+- Lucullus
+- Paradoxa Stoicorum
+- de Finibus Bonorum et Malorum
+- Tusculanae Disputationes
+- De Natura Deorum
+- De Senectute
+- De Amicitia
+- De Divinatione
+- De Fato
+- De Officiis
+- Letters to his Friends
+- Letters to Atticus
+- Letters to his brother Quintus
+- Letters to Brutus
+- Timaeus
+
+### Claudian
+- Carminum minorum corpusculum
+- de bello Gildonico
+- de Bello Gothico
+- de consulatu Stilichonis
+- de raptu Proserpinae
+- Epithalamium de nuptiis Honorii Augusti
+- Fescinnina de nuptiis Honorii Augusti
+- In Eutropium
+- In Rufinum
+- Panegyricus de tertio consulatu Honorii Augusti
+- Panegyricus de quarto consulatu Honorii Augusti
+- Panegyricus de sexto consulatu Honorii Augusti
+- Panegyricus dictus Manlio Theodoro consuli
+- Panegyricus dictus Probino et Olybrio consulibus
+
+### Columella
+- Res Rustica
+
+### Curtius Rufus
+- Historiarum Alexandri Magni
+
+### Florus
+- Epitome Rerum Romanorum
+
+### Gellius
+- Noctes Atticae
+
+### Horace
+- Carmina
+- Carmen Saeculare
+- Epodi
+- Satires
+- Epistulae
+- Ars Poetica
+
+### Jerome
+- Epistolae
+
+### Julius Caesar
+- Gallic War
+- Civil War
+
+### Juvenal
+- Saturae
+
+### Livy
+- History of Rome
+
+### Lucretius
+- De Rerum Natura
+
+### Martial
+- Epigrammata
+
+### Minucius Felix
+- Octavius
+
+### Nepos
+- Miltiades
+- Themistocles
+- Aristides
+- Pausanias
+- Cimon
+- Lysander
+- Alcibiades
+- Thrasybulus
+- Conon
+- Dion
+- Iphicrates
+- Chabrias
+- Timotheus
+- Datames
+- Epaminondas
+- Pelopidas
+- Agesilaus
+- Eumenes
+- Phocion
+- Timoleon
+- De Regibus
+- Hamilcar
+- Hannibal
+- Cato
+- Atticus
+
+### Persius
+- Saturae
+
+### Plautus
+- Amphitruo
+- Asinaria
+- Aulularia
+- Bacchides
+- Captivi
+- Casina
+- Cistellaria
+- Curculio
+- Epidicus
+- Menaechmi
+- Mercator
+- Miles Gloriosus
+- Mostellaria
+- Persa
+- Poenulus
+- Pseudolus
+- Rudens
+- Stichus
+- Trinummus
+- Truculentus
+
+### Pliny the Elder
+- Naturalis Historia
+
+### Pliny the Younger
+- Epistulae
+
+### Propertius
+- Elegiae
+
+### Prudentius
+- Liber Peristephanon
+- Psychomachia
+- Praefatio
+- Cathemerina
+- Apotheosis
+- Hamartigenia
+- Contra Orationem Symmachi
+- Dittochaeon
+- Epilogus
+
+### Pseudo-Caesar
+- De Bello Africo
+- De Bello Alexandrino
+- De Bello Hispaniensi
+
+### Pseudo-Tertullian
+- Ad Uxorem
+
+### Quintilian
+- Institutio Oratoria
+
+### Quintus Cicero
+- Commentariolum Petitionis
+
+### Sallust
+- Catilinae Coniuratio
+- Bellum Iugurthinum
+- Historiae
+
+### Scriptores Historiae Augustae
+- De Vita Hadriani
+- Helius
+- Antoninus Pius
+- Marcus Antoninus Philosophus
+- Verus
+- Avidius Casius
+- Commodus Antoninus
+- Pertinax
+- Didius Julianus
+- Severus
+- Pescennius Niger
+- Clodinus Albinus
+- Antoninus Caracalla
+- Antoninus Geta
+- Opilius Macrinus
+- Diadumenus Antoninus
+- Antoninus Heliogobalus
+- Alexander Severus
+- Maximini Duo
+- Gordiani Tres
+- Maximus et Balbinus
+- Valeriani Duo
+- Gallieni Duo
+- Tyranni Triginta
+- Divus Claudius
+- Divus Aurelianus
+- Tacitus
+- Probus
+- Firmus Saturninus, Proculus et Bonosus
+- Carus et Carinus et Numerianus
+
+### Seneca
+- De Beneficiis
+- De Clementia
+- Epistulae
+- De Brevitate Vitae
+- De Consolatione ad Helviam
+- De Consolatione ad Marciam
+- De Consolatione ad Polybium
+- De Constantia
+- De Ira
+- De Otio
+- De Providentia
+- De Tranquillitate Animi
+- De Vita Beata
+
+### Sidonius Apollinaris
+- Carmina
+- Epistulae
+
+### Statius
+- Silvae
+
+### Suetonius
+- De Vita Caesarum (Divus Julius to Domitianus)
+
+### Tacitus
+- Agricola
+- Germania
+- Dialogus
+- Historiae
+- Annales
+
+### Terence
+- Andria
+- Heautontimorumenos
+- Eunuchus
+- Phormio
+- Hecyra
+- Adelphi
+
+### Tertullian
+- Ad Martyras
+- Ad Nationes Libri Duo
+- Ad Scapulam
+- Adversus Hermogenem
+- Adversus Judaeos Liber
+- Adversus Marcionem
+- Adversus Praxean
+- Adversus Valentinianos
+- Apologeticum
+- De Anima
+- De Baptismo
+- De Carne Christi
+- De Corona
+- De Cultu Feminarum
+- De Exhortatione Castitatis Liber
+- De Fuga in Persecutione
+- De idolatria
+- De ieiunio adversus psychicos
+- De Monogamia
+- De Oratione
+- De Paenitentia
+- De Pallio
+- De Patientia
+- De Praescriptionibus Hereticorum
+- De Pudicitia
+- De Carnis Resurrectione
+- De Spectaculis
+- De Testimionio Animae
+- De Virginibus Velandis
+- Scorpiace
+
+### Tibullus
+- Elegiae
+- Sulpicia Elegiae
+
+### Valerius Maximus
+- Facta et Dicta Memorabilia
+
+### Virgil
+- Eclogues
+- Georgics
+
+### Vitruvius
+- On Architecture
+
+## Documents
+
+### Murecine tablets
+- TPSulp. 1-127
