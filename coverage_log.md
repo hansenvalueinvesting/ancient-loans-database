@@ -399,5 +399,5 @@ Texts read in full.
 - TPSulp. 1-127
 
 ### P.Oxy.
-- vols. 1-26
-- vols. 27-87 (IN PROGRESS)
+- vols. 1-55
+- vols. 56-87 (IN PROGRESS)
