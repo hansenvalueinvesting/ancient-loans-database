@@ -6,6 +6,10 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-12 (working definition of a loan)**
+- New working definition of a loan (Roman mutuum / Greek daneion: money or fungible goods transferred, to be repaid in equivalent later, with or without interest), with a four-part test, a table of borderline cases and an evidence standard; it replaces the earlier rules. Shown on the site: "What is a loan?" (top right of the main page).
+- All 285 rows audited against it: all meet it; none removed.
+
 **2026-11-11 (register notes corrected)**
 - P.Mich. register rows (69): the note line on sums corrected. The sum in the genitive ("of n drachmas") is the loan's amount and is the volume; a second sum after it is the record office's fee. P.Mich. 2 121 Vo (27 rows) records no fees; its notes had wrongly called the sum a fee. Volumes unchanged (they were already the loan amounts).
 

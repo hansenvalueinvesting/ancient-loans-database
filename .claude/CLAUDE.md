@@ -100,6 +100,24 @@ below applies to any source as the database expands.
 - Everything recorded must be true and verifiable in the source; empty = unknown; never guess.
 
 ### What counts (Hansen)
+WORKING DEFINITION (Hansen, Nov 2026: "apply your definition of a loan in our database ... and apply your method moving forward"; supersedes every rule below where they differ; shown on the site under "What is a loan?", `docs/index.html`):
+a loan = the lender transfers money or other fungible goods to the borrower, who takes ownership and may spend or consume them,
+and is obliged to return an equivalent quantity of the same kind later, with or without interest (Roman mutuum, Greek daneion).
+Test, all four: (1) transfer actually made (not promised, requested, planned); (2) the borrower may use/consume (loan of a specific
+object for use = commodatum, not a loan); (3) obligation to repay an equivalent (not work or other goods); (4) deferral. Interest not
+required, may be replaced by use of property (antichresis, incl. habitation) or a person's service (paramone); wording irrelevant;
+parties may be persons, groups, cities, states, temples, rulers. YES: loan contracts/acknowledgements of money or goods received;
+interest-free and eranos loans; secured loans (mortgage, pledge or pawn, surety, sale with right of redemption) = the loan itself;
+antichresis and paramone where the principal is repaid; maritime loans; state/temple seed or grain loans; money paid on someone's
+behalf at their request, to be reimbursed; cash advances repaid in money (incl. inside leases and work contracts). NO: paramone where
+the service pays off the principal; advances repaid in goods or work; credit sales/deferred prices; deposits; loans for use; pledge
+or pawn with no loan shown; debts of unstated origin (unless money/goods received are shown); rent, wages, tax, tribute, fine, gift,
+bribe, dowry; forced levies (unless repayment stated); old debts restated (no new loan); requested/promised/planned loans;
+generalisations, hypotheticals, metaphors, fiction. Evidence: specific (one transaction, or an identifiable set by one lender or to
+one borrower), real (not fiction), shown in the preserved text (not only in editorial restoration), one record per transaction
+(money and goods parts separately; the same loan in several sources once). Scholarly basis: Gaius Inst. 3.90 (mutuum vs commodatum,
+depositum, pignus); Finley 1952 (security); Millett 1991 (eranos, friendly loans); Migeotte 1984 (public loans); papyrological loan
+law (Kuhnert, Rupprecht, Taubenschlag). Applied Nov 2026: the 285 rows audited (all meet it, none removed); need_review.md re-judged.
 PRINCIPLE (Hansen, Oct 2026): "the idea for the database is just that every loan should be an unique, seperate debt
 transaction being recorded" (one row = one distinct debt transaction; no totals, no duplicates).
 CURRENT RULE (Hansen, Oct 2026, supersedes the formal-loan rule below): "lets remove my rule for that. the only

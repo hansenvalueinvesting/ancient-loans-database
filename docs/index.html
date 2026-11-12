@@ -19,6 +19,52 @@
   </style>
 </head>
 <body>
+  <div align="right"><button type="button" onclick="document.getElementById('loan-def').showModal()">What is a loan?</button></div>
+  <dialog id="loan-def">
+    <h2 tabindex="-1" autofocus>What is a loan?</h2>
+    <p>The working definition this database uses for every source.</p>
+    <p><b>A loan</b> is a transaction in which one party (the lender) transfers money or other fungible goods (grain, wine, oil, metal) to another party (the borrower), who takes ownership and may spend or consume them, and who is obliged to return an equivalent quantity of the same kind at a later time, with or without an added payment for the use (interest). This is the Roman <i>mutuum</i> and the Greek <i>daneion</i>, the core form of credit in the scholarship on the ancient economy.</p>
+    <h3>The test: all four must hold</h3>
+    <ol>
+      <li><b>Transfer.</b> Money or fungible goods actually pass from lender to borrower; a promise, request or plan is not enough.</li>
+      <li><b>Use by the borrower.</b> The borrower may spend or consume them. Lending an object to be handed back itself (a loan for use) is not credit.</li>
+      <li><b>Obligation to repay an equivalent:</b> the same quantity and kind, not a counter-performance in work or other goods.</li>
+      <li><b>Deferral.</b> Repayment falls at a later time, fixed, on demand or open.</li>
+    </ol>
+    <p>Interest is not required, and may be replaced by another benefit to the lender (use of property, a person's service). The source need not use the word "loan". Lenders and borrowers may be persons, groups, cities, states, temples or rulers.</p>
+    <h3>Borderline cases</h3>
+    <table border="1" cellpadding="4" cellspacing="0">
+      <tr><th>Transaction</th><th>Loan?</th></tr>
+      <tr><td>Loan contract or acknowledgement of money or goods received, to be repaid</td><td>Yes</td></tr>
+      <tr><td>Interest-free loan among friends (incl. Greek <i>eranos</i>)</td><td>Yes</td></tr>
+      <tr><td>Secured loan (mortgage, pledge or pawn, surety, sale with right of redemption used as security)</td><td>Yes, the loan itself</td></tr>
+      <tr><td>Loan where use of property (antichresis) or a person's service (paramone) replaces interest</td><td>Yes</td></tr>
+      <tr><td>Paramone where the service pays off the principal itself</td><td>No</td></tr>
+      <tr><td>Maritime loan</td><td>Yes</td></tr>
+      <tr><td>State or temple loan of seed or grain, repaid in kind</td><td>Yes</td></tr>
+      <tr><td>Money paid on someone's behalf at their request, to be reimbursed</td><td>Yes</td></tr>
+      <tr><td>Cash advance to be repaid in money (also inside a lease or work contract)</td><td>Yes</td></tr>
+      <tr><td>Advance repaid in goods or by work (prepayment for a harvest, product or labour)</td><td>No</td></tr>
+      <tr><td>Credit sale or deferred payment of a price</td><td>No</td></tr>
+      <tr><td>Deposit for safekeeping</td><td>No</td></tr>
+      <tr><td>Loan of a specific object for use (<i>commodatum</i>)</td><td>No</td></tr>
+      <tr><td>Pledge or pawn with no loan shown</td><td>No</td></tr>
+      <tr><td>Debt of unstated origin ("I owe you X")</td><td>Only if money or goods received are shown</td></tr>
+      <tr><td>Rent, wages, tax, tribute, fine, gift, bribe, dowry</td><td>No</td></tr>
+      <tr><td>Forced levy called a "loan"</td><td>Only if repayment is stated</td></tr>
+      <tr><td>Old debt restated or consolidated</td><td>No new loan</td></tr>
+      <tr><td>Loan requested, promised or planned</td><td>No</td></tr>
+      <tr><td>Generalisations, hypothetical cases, metaphors, fiction</td><td>No</td></tr>
+    </table>
+    <h3>Evidence standard</h3>
+    <ul>
+      <li><b>Specific:</b> an identifiable transaction, or an identifiable set of them by one lender or to one borrower.</li>
+      <li><b>Real:</b> presented by the source as having happened; fiction and myth are not used.</li>
+      <li><b>Shown in the preserved text:</b> a loan supplied only by an editor's restoration is not shown.</li>
+      <li><b>One record per transaction:</b> money and goods lent in one contract are recorded separately; the same loan in several sources is recorded once.</li>
+    </ul>
+    <form method="dialog"><button>Close</button></form>
+  </dialog>
   <h1>Ancient Loans Database</h1>
   <p>Open working record of documented loans in the ancient world. Maintained by Hansen Zheng.</p>
 
