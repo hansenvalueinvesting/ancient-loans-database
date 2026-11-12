@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-12 (antichretic loans in the record-office registers)**
+- Under the working definition, habitation agreements (ἐνοίκησις: the lender lives in the borrower's house in place of interest) are loans. Added 31 register entries: ALD-P.Mich.2.121.Vo-28 to -38, P.Mich.5.237-3, P.Mich.5.238.Ro-39 to -54, P.Mich.2.128-3 to -5; copies of the same entry in P.Mich. 5 240 and 2 128 entered once (noted). 332 rows.
+
 **2026-11-12 (need_review.md re-judged under the working definition)**
 - Added 16 rows from need_review.md (entries removed there): loans on pledge or pawn ALD-P.Oxy.1.114-1/-2, P.Oxy.3.530-1, P.Oxy.63.4393-1; antichretic loan (habitation in place of interest) ALD-P.Oxy.1.104-1; loan with interest in flax ALD-P.Oxy.8.1130-1; ALD-P.Oxy.43.3146-1 (crossed out); money advances in leases ALD-P.Oxy.4.729-1, P.Mich.18.792-1 (the 500-drachma instalment; the cattle not entered); register entries ALD-P.Mich.5.240-4 to -7, P.Mich.2.128-2 (nursling-and-loan agreements), P.Mich.5.238.Ro-37/-38 (loans named in receipts for half repayment). 301 rows.
 - Flags of SB 20 14338 and P.Oxy. 82 5320 restated under the definition. Site: Senokomis added to the map places; script version 2026-11-12.
