@@ -6,6 +6,9 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-12 (site: keyword search)**
+- The search box is now "Keywords", like Location: type a word and press Enter to add it; added keywords show as buttons (click to remove); a loan must contain every keyword. Script version 2026-11-12c.
+
 **2026-11-12 (antichretic loans excluded earlier as rent; map Reset zoom)**
 - Under the working definition, loans with use of property in place of interest are loans. Added ALD-P.Oxy.36.2773-1 (use of a loom), P.Oxy.47.3355-1, P.Oxy.63.4395-1 (bread-dole rights), P.Mich.3.188-1, P.Mich.3.189-1, P.Mich.10.585-1, P.Mich.11.605-1, P.Mich.12.635-1 (habitation), SB.20.14097-1, SB.8.9765-1 (loans named in cancellations). 342 rows. To need_review.md: P.Oxy. 8 1105 (= 2 339; application only), P.Mich. 9 570 (direction restored, sum lost).
 - Site: "Reset zoom" button under the map (back to the whole Mediterranean); Bacchias added to the map places; script version 2026-11-12b.

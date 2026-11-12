@@ -78,8 +78,9 @@ below applies to any source as the database expands.
   Loan page: a map under the location, the place marked (Hansen, Nov 2026). The place column is shown on the site as
   "Location" (Hansen, Nov 2026: "call it location instead of place"; `colLabel` in app.js); the ald.csv column and the
   URL key stay `place`.
-  Search (Hansen, Nov 2026): `,` narrows (all terms of a group: `X,y` = loans with X and y), `;` adds groups
-  (`X;y` = loans with X plus loans with y); the box shows how.
+  Keywords (Hansen, Nov 2026: "make it essentially keyword search ... type a word and click enter to add it", like
+  Location; replaces the `,`/`;` search box): each word added with Enter shows as a button (click to remove); a loan must
+  contain every keyword (in the table columns); URL key `q=word1|word2`.
   Phones (Hansen, Nov 2026: "the interface is a mess on mobile"): one small <style> in index.html, for screens up to
   700 px only (the only CSS on the site): inputs no wider than the screen, map and chart stacked (320 px high), the loans
   table scrolls sideways.

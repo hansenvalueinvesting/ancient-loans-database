@@ -4,7 +4,7 @@
 const { CSV_URL } = window.ALD_CONFIG;
 
 const $ = (id) => document.getElementById(id);
-const state = { all: [], picked: {}, sortKey: 'id', sortDir: 1, shown: [] };
+const state = { all: [], picked: {}, keywords: new Set(), sortKey: 'id', sortDir: 1, shown: [] };
 
 // CSV columns (in order) and the columns shown in the table.
 const COLS = ['id', 'place', 'date', 'duration (years)', 'borrower', 'lender', 'volume', 'currency', 'interest (%)', 'notes'];  // order set by Hansen (Nov 2026)
@@ -93,6 +93,8 @@ function showPicked() {
     $(`picked-${col}`).innerHTML = [...state.picked[col]].map((v) =>
       `<button type="button" data-col="${col}" data-value="${esc(v)}" title="Remove">${esc(shownValue(col, v))} ×</button>`).join(' ');
   });
+  $('picked-q').innerHTML = [...state.keywords].map((k) =>
+    `<button type="button" data-value="${esc(k)}" title="Remove">${esc(k)} ×</button>`).join(' ');
 }
 
 // Typed text → the value it names (exact, else the only or first value containing it); null if none.
@@ -111,14 +113,14 @@ function pick(col, v) {
 }
 
 // ---------- filters in the URL (shareable links) ----------
-// #from=100 BC&to=AD 100&place=Oxyrhynchus|Tebtunis (Arsinoite nome)&q=Sarapion
+// #from=100 BC&to=AD 100&place=Oxyrhynchus|Tebtunis (Arsinoite nome)&q=Sarapion|talent
 
 function writeHash() {
   const prm = new URLSearchParams();
   if ($('f-from').value.trim()) prm.set('from', $('f-from').value.trim());
   if ($('f-to').value.trim()) prm.set('to', $('f-to').value.trim());
   MULTI.forEach((col) => { if (state.picked[col].size) prm.set(col, [...state.picked[col]].join('|')); });
-  if ($('f-search').value.trim()) prm.set('q', $('f-search').value.trim());
+  if (state.keywords.size) prm.set('q', [...state.keywords].join('|'));
   const h = prm.toString();
   history.replaceState(null, '', h ? `#${h}` : location.pathname + location.search);
 }
@@ -127,7 +129,8 @@ function readHash() {
   const prm = new URLSearchParams(location.hash.slice(1));
   $('f-from').value = prm.get('from') || '';
   $('f-to').value = prm.get('to') || '';
-  $('f-search').value = prm.get('q') || '';
+  $('f-search').value = '';
+  state.keywords = new Set(prm.has('q') ? prm.get('q').split('|').map((k) => k.trim().toLowerCase()).filter(Boolean) : []);
   MULTI.forEach((col) => { state.picked[col] = new Set(prm.has(col) ? prm.get(col).split('|') : []); });
 }
 
@@ -311,20 +314,17 @@ function drawChart(rows) {
 // ---------- filtering & table ----------
 
 // A loan matches when it is in any picked value of each multi-select filter, its year range
-// overlaps the year filter, and it matches the search (see groups below).
+// overlaps the year filter, and it contains every keyword (keywords narrow: each one added must appear).
 function filtered() {
-  // Search: ',' narrows (a loan must contain every term of a group), ';' adds (a loan may match any group).
-  // 'X,y' = loans with both X and y; 'X;y' = loans with X plus loans with y.
-  const groups = $('f-search').value.toLowerCase().split(';')
-    .map((g) => g.split(',').map((x) => x.trim()).filter(Boolean)).filter((g) => g.length);
+  const kws = [...state.keywords];
   const from = parseYear($('f-from').value), to = parseYear($('f-to').value);
   return state.all.filter((l) => {
     if (MULTI.some((col) => state.picked[col].size && !state.picked[col].has(l[col]))) return false;
     if (from != null && (l.yearEnd == null || l.yearEnd < from)) return false;
     if (to != null && (l.yearStart == null || l.yearStart > to)) return false;
-    if (groups.length) {
+    if (kws.length) {
       const text = LIST_COLS.map((c) => l[c]).join(' ').toLowerCase();
-      if (!groups.some((g) => g.every((x) => text.includes(x)))) return false;
+      if (!kws.every((k) => text.includes(k))) return false;
     }
     return true;
   });
@@ -446,10 +446,26 @@ if ($('loan')) {
       update();
     });
   });
-  ['f-from', 'f-to', 'f-search'].forEach((id) => $(id).addEventListener('input', () => { render(); writeHash(); }));
+  ['f-from', 'f-to'].forEach((id) => $(id).addEventListener('input', () => { render(); writeHash(); }));
+  // Keywords: type a word, Enter adds it; clicking a keyword removes it.
+  $('f-search').addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter') return;
+    e.preventDefault();
+    const k = $('f-search').value.trim().toLowerCase();
+    if (k) state.keywords.add(k);
+    $('f-search').value = '';
+    update();
+  });
+  $('picked-q').addEventListener('click', (e) => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    state.keywords.delete(b.dataset.value);
+    update();
+  });
   $('btn-reset').addEventListener('click', () => {
     ['f-from', 'f-to', 'f-search', ...MULTI.map((c) => `f-${c}`)].forEach((id) => { $(id).value = ''; });
     MULTI.forEach((col) => state.picked[col].clear());
+    state.keywords.clear();
     update();
   });
   $('btn-csv').addEventListener('click', downloadCsv);
