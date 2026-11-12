@@ -398,8 +398,11 @@ Texts read in full.
 ### Murecine tablets
 - TPSulp. 1-127
 
-### P.Mich.
-- vols. 1-21 (IN PROGRESS)
+### Michigan collection
+- O.Mich. 1-4
+- P.Cair.Mich. 1-3
+- P.Mich. 1-21
+- P.Mich.Mchl.
 
 ### P.Oxy.
 - vols. 1-87

@@ -6,6 +6,10 @@ Data: `ald.csv` (one row per loan). Field definitions: `reference/codebook.md`. 
 
 ## Change log
 
+**2026-11-12 (Michigan collection reread in full; reread of P.Oxy. and Michigan done)**
+- Task files P103-P140 read in full: P.Mich. 1-21, P.Cair.Mich. 1-3, P.Mich.Mchl., O.Mich. 1-4. New row: ALD-P.Mich.18.771-1 (1,300 copper drachmas lent between tax contractors, 195 BC). 355 rows.
+- To need_review.md: P.Mich. 1 35, 1 56, 1 119, 3 200, 5 282dupl, 8 492, 8 521, 9 554, 15 755, 20 816.
+
 **2026-11-12 (P.Oxy. reread in full: vols. 56-87; P.Oxy. done)**
 - Task files P080-P102 read in full. New rows: ALD-P.Oxy.57.3908-1 (state seed loan; 57 3909 is a copy of the same order), P.Oxy.82.5327-1 (4 solidi supplied to Joseph, named in a petition). 354 rows.
 - To need_review.md: P.Oxy. 58 3915, 59 3979, 63 4355, 66 4531, 67 4624, 78 5175, 86 5565.
