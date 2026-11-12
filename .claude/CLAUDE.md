@@ -70,7 +70,7 @@ below applies to any source as the database expands.
   Chart.js (cdnjs) scatter as a timeline, one dot per loan at its exact date (a date range at its midpoint, Hansen);
   stacked only when loans have the same date (Hansen, Nov 2026: "no stacking unless its genuinely in the same time
   range"; not by 25-year periods); hover = loan summary, click = loan page; undated loans not shown.
-  Interactive (Hansen, Nov 2026: "i can zoom in and out of it"): chartjs-plugin-zoom + hammer.js (cdnjs); wheel or
+  Map "Reset zoom" button under the map (Hansen, Nov 2026), back to the opening view. Interactive (Hansen, Nov 2026: "i can zoom in and out of it"): chartjs-plugin-zoom + hammer.js (cdnjs); wheel or
   pinch zooms the timeline, drag pans, limited to the full range; "Reset zoom" button; filters reset the zoom.
   Heading "Loans Over Time" (Hansen).
   Map and chart side by side under the filters (Hansen, Nov 2026: "can the two visuals be side by side"): an HTML table
@@ -117,7 +117,7 @@ generalisations, hypotheticals, metaphors, fiction. Evidence: specific (one tran
 one borrower), real (not fiction), shown in the preserved text (not only in editorial restoration), one record per transaction
 (money and goods parts separately; the same loan in several sources once). Scholarly basis: Gaius Inst. 3.90 (mutuum vs commodatum,
 depositum, pignus); Finley 1952 (security); Millett 1991 (eranos, friendly loans); Migeotte 1984 (public loans); papyrological loan
-law (Kuhnert, Rupprecht, Taubenschlag). Applied Nov 2026: the 285 rows audited (all meet it, none removed); need_review.md re-judged: 16 rows added (301 rows). Next under it: the antichretic loans excluded earlier as rent (habitation, loom, bread-dole in place of interest: P.Oxy. 2 339 = 8 1105, SB 20 14097, SB 8 9765, P.Oxy. 36 2773, 47 3355, 63 4395, P.Mich. 3 188, 189, 9 570, 10 585, 11 605, 12 635, and the register entries of habitation agreements with a sum).
+law (Kuhnert, Rupprecht, Taubenschlag). Applied Nov 2026: the 285 rows audited (all meet it, none removed); need_review.md re-judged: 16 rows added (301 rows). Done under it (342 rows): 31 habitation register entries and 10 antichretic documents (P.Oxy. 8 1105 and P.Mich. 9 570 to need_review.md); formerly listed as next: the antichretic loans excluded earlier as rent (habitation, loom, bread-dole in place of interest: P.Oxy. 2 339 = 8 1105, SB 20 14097, SB 8 9765, P.Oxy. 36 2773, 47 3355, 63 4395, P.Mich. 3 188, 189, 9 570, 10 585, 11 605, 12 635, and the register entries of habitation agreements with a sum).
 PRINCIPLE (Hansen, Oct 2026): "the idea for the database is just that every loan should be an unique, seperate debt
 transaction being recorded" (one row = one distinct debt transaction; no totals, no duplicates).
 CURRENT RULE (Hansen, Oct 2026, supersedes the formal-loan rule below): "lets remove my rule for that. the only

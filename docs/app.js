@@ -171,6 +171,7 @@ const PLACES = {
   'Oxyrhynchus': [28.542574, 30.65172, 736983],
   'Palosis': [28.675965, 30.798219, 736988],
   'Senokomis': [28.549991, 30.709449, 737043],
+  'Bacchias': [29.536946, 31.0041595, 736896],
   'Sinary': [28.77959, 30.771891, 737047],
   'Alexandria': [31.201435, 29.909773, 727070],
   'Constantinople': [41.006593, 28.965635, 520998],
@@ -453,6 +454,7 @@ if ($('loan')) {
   });
   $('btn-csv').addEventListener('click', downloadCsv);
   $('btn-zoom').addEventListener('click', () => { if (viz.chart && viz.chart.resetZoom) viz.chart.resetZoom(); });
+  $('btn-map-zoom').addEventListener('click', () => { if (viz.map) viz.map.fitBounds([[27, -9], [50, 44]]); });
   document.querySelectorAll('th[data-sort]').forEach((th) => th.addEventListener('click', () => {
     state.sortDir = state.sortKey === th.dataset.sort ? -state.sortDir : 1;
     state.sortKey = th.dataset.sort;
